@@ -1,8 +1,6 @@
 import { ExternalLink } from 'lucide-react';
 import type { ChatSource } from '~/chat/contract';
-
-const mmss = (s: number) =>
-  `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, '0')}`;
+import { mmss } from '~/domain/format-time';
 
 /**
  * Renders as soon as the sources frame arrives — before the first answer

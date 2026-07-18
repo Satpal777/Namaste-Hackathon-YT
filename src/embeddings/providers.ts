@@ -5,6 +5,12 @@ import type { EmbeddingProvider } from './embedding-provider';
 
 export type EmbeddingProviderName = 'gemini' | 'openai';
 
+/** The single mapping from provider to its API-key variable — shared so config and seeding cannot drift. */
+export const API_KEY_ENV_VAR: Record<EmbeddingProviderName, string> = {
+  gemini: 'GOOGLE_GENERATIVE_AI_API_KEY',
+  openai: 'OPENAI_API_KEY',
+};
+
 /**
  * Dev default is Gemini (free tier); the submitted build runs OpenAI. Both
  * stay working — switching is one flag, pointing at an already-seeded

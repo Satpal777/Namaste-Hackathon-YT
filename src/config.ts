@@ -1,4 +1,4 @@
-import type { EmbeddingProviderName } from './embeddings/providers';
+import { API_KEY_ENV_VAR, type EmbeddingProviderName } from './embeddings/providers';
 
 /**
  * One PROVIDER flag switches chat *and* embeddings together — the judging
@@ -31,7 +31,6 @@ const CHAT_DEFAULTS = {
   gemini: {
     baseURL: 'https://generativelanguage.googleapis.com/v1beta/openai/',
     model: 'gemini-2.5-flash',
-    apiKeyVar: 'GOOGLE_GENERATIVE_AI_API_KEY',
     // gemini-embedding-001 cosine scores run high; irrelevant text still lands
     // near ~0.5.
     abstentionThreshold: 0.55,
@@ -39,7 +38,6 @@ const CHAT_DEFAULTS = {
   openai: {
     baseURL: 'https://api.openai.com/v1',
     model: 'gpt-4o-mini',
-    apiKeyVar: 'OPENAI_API_KEY',
     // text-embedding-3-small scores run much lower across the board.
     abstentionThreshold: 0.3,
   },
@@ -52,7 +50,8 @@ export function loadConfig(env: NodeJS.ProcessEnv = process.env): AppConfig {
   }
 
   const defaults = CHAT_DEFAULTS[provider];
-  const chatApiKey = env.CHAT_API_KEY ?? env[defaults.apiKeyVar];
+  const apiKeyVar = API_KEY_ENV_VAR[provider];
+  const chatApiKey = env.CHAT_API_KEY ?? env[apiKeyVar];
 
   return {
     databaseUrl: required(env, 'DATABASE_URL'),
@@ -64,8 +63,7 @@ export function loadConfig(env: NodeJS.ProcessEnv = process.env): AppConfig {
     chat: {
       baseURL: env.CHAT_BASE_URL ?? defaults.baseURL,
       apiKey:
-        chatApiKey ??
-        missing(`CHAT_API_KEY or ${defaults.apiKeyVar} (PROVIDER=${provider})`),
+        chatApiKey ?? missing(`CHAT_API_KEY or ${apiKeyVar} (PROVIDER=${provider})`),
       model: env.CHAT_MODEL ?? defaults.model,
     },
     abstentionThreshold: env.ABSTENTION_THRESHOLD

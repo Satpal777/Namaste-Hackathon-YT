@@ -11,8 +11,8 @@ export default function HomePage() {
               Ask Namaste JavaScript
             </h1>
             <p className="text-xs text-muted-foreground">
-              Chat over Seasons 1 &amp; 2 of the series — answers cite the exact
-              second in the video.
+              Chat over the 17 English-captioned episodes of Seasons 1 &amp; 2 —
+              answers cite the exact second in the video.
             </p>
           </div>
           <a

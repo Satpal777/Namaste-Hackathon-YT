@@ -1,7 +1,5 @@
+import { mmss } from '../domain/format-time';
 import type { HydratedChunk } from './hydrated-chunk';
-
-const mmss = (s: number) =>
-  `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, '0')}`;
 
 /**
  * Numbered excerpts + answer-only-from-context + inline [n] markers. JSON mode

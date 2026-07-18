@@ -25,7 +25,7 @@ export type NamasteUIMessage = UIMessage<never, { sources: ChatSource[] }>;
  * synthesising an answer from irrelevant context.
  */
 export const ABSTENTION_MESSAGE =
-  "I couldn't find this in the uploaded videos. Try asking about a JavaScript concept the Namaste JavaScript series covers — hoisting, closures, the event loop, promises.";
+  "I couldn't find this in the uploaded videos. Try asking about a JavaScript concept the indexed episodes cover — hoisting, execution context, promises, or async/await.";
 
 /**
  * Shown when the hard global daily budget cap is exhausted. A cost cap, not a

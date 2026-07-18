@@ -19,7 +19,11 @@ import { deterministicUuid } from '../src/db/deterministic-uuid';
 import * as schema from '../src/db/schema';
 import { DEMO_WORKSPACE_ID } from '../src/db/workspace';
 import type { Transcript } from '../src/domain/transcript';
-import { createEmbeddingProvider, type EmbeddingProviderName } from '../src/embeddings/providers';
+import {
+  API_KEY_ENV_VAR,
+  createEmbeddingProvider,
+  type EmbeddingProviderName,
+} from '../src/embeddings/providers';
 import { collectionNameFor } from '../src/vectors/collection-name';
 import { QdrantVectorStore } from '../src/vectors/qdrant-vector-store';
 import type { VectorPoint } from '../src/vectors/vector-store';
@@ -155,7 +159,7 @@ console.log(`\nTotal chunks: ${allChunks.length}`);
 
 const providers: EmbeddingProviderName[] = ['gemini', 'openai'];
 for (const name of providers) {
-  const keyVar = name === 'gemini' ? 'GOOGLE_GENERATIVE_AI_API_KEY' : 'OPENAI_API_KEY';
+  const keyVar = API_KEY_ENV_VAR[name];
   if (!process.env[keyVar]) {
     console.warn(`skipping ${name}: ${keyVar} not set`);
     continue;

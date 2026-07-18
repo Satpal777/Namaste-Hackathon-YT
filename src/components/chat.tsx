@@ -82,14 +82,15 @@ export function Chat() {
   );
 }
 
+function messageText(message: NamasteUIMessage): string {
+  return message.parts.map((p) => (p.type === 'text' ? p.text : '')).join('');
+}
+
 function Message({ message }: { message: NamasteUIMessage }) {
   if (message.role === 'user') {
-    const text = message.parts
-      .map((p) => (p.type === 'text' ? p.text : ''))
-      .join('');
     return (
       <div className="ml-auto max-w-[85%] rounded-2xl rounded-br-md bg-primary px-4 py-2.5 text-sm text-primary-foreground">
-        {text}
+        {messageText(message)}
       </div>
     );
   }
@@ -99,9 +100,7 @@ function Message({ message }: { message: NamasteUIMessage }) {
       (p): p is Extract<typeof p, { type: 'data-sources' }> =>
         p.type === 'data-sources',
     )?.data ?? [];
-  const text = message.parts
-    .map((p) => (p.type === 'text' ? p.text : ''))
-    .join('');
+  const text = messageText(message);
 
   return (
     <div className="max-w-full text-sm leading-relaxed">

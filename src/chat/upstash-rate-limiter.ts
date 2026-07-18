@@ -23,18 +23,18 @@ export function createUpstashRateLimiter(options: UpstashRateLimiterOptions): Ra
 
   return {
     async check(ip) {
-      // The cap is checked first: when the day's budget is gone, the answer is
-      // the same for everyone, whatever their personal window says.
+      // Per-IP first: a hammering IP must not spend the shared daily budget.
+      // Only requests that pass their personal window count against the cap.
+      const { success } = await limiter.limit(ip);
+      if (!success) return 'ip-limited';
+
       const day = new Date().toISOString().slice(0, 10);
       const key = `njs:daily:${day}`;
       const used = await redis.incr(key);
       if (used === 1) {
         await redis.expire(key, 60 * 60 * 24 * 2);
       }
-      if (used > dailyCap) return 'daily-cap-reached';
-
-      const { success } = await limiter.limit(ip);
-      return success ? 'ok' : 'ip-limited';
+      return used > dailyCap ? 'daily-cap-reached' : 'ok';
     },
   };
 }
