@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-18T14:52:11.688Z",
+  "fetchedAt": "2026-07-18T15:59:41.542Z",
   "channel": {
     "channelId": "UC3N9i_KvKZYP4F84FPIzgPQ",
     "title": "Akshay Saini",
@@ -112,6 +112,20 @@
       "publishedText": "5 years ago",
       "languageCode": "en",
       "segmentCount": 603
+    },
+    {
+      "videoId": "t1nFAMws5FI",
+      "title": "CRAZY JS INTERVIEW 🤯ft. Closures | Namaste 🙏 JavaScript Ep. 12",
+      "durationSeconds": 1965,
+      "publishedText": "5 years ago",
+      "error": "No transcript for video t1nFAMws5FI: no English caption track (available: hi)"
+    },
+    {
+      "videoId": "eBTBG4nda2A",
+      "title": "setTimeout + Closures Interview Question 🔥 | Namaste 🙏 JavaScript Ep. 11",
+      "durationSeconds": 1063,
+      "publishedText": "5 years ago",
+      "error": "No transcript for video eBTBG4nda2A: caption fetch returned HTTP 429"
     },
     {
       "videoId": "qikxEIxsXco",
