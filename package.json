@@ -1,0 +1,20 @@
+{
+  "name": "namaste-hackathon-yt",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "transcript:spike": "tsx scripts/fetch-one-transcript.ts"
+  },
+  "dependencies": {
+    "youtubei.js": "^17.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.1",
+    "tsx": "^4.23.1",
+    "typescript": "^7.0.2",
+    "vitest": "^4.1.10"
+  }
+}
