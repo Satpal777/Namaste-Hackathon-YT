@@ -1,0 +1,3022 @@
+{
+  "videoId": "SHINoHxvTso",
+  "videoTitle": "FIRST CLASS FUNCTIONS 🔥ft. Anonymous Functions | Namaste JavaScript Ep. 13",
+  "languageCode": "en",
+  "segments": [
+    {
+      "startSeconds": 0,
+      "endSeconds": 4.24,
+      "text": "once i was giving interview for a very"
+    },
+    {
+      "startSeconds": 1.76,
+      "endSeconds": 6.72,
+      "text": "reputed indian startup i won't take the"
+    },
+    {
+      "startSeconds": 4.24,
+      "endSeconds": 9.519,
+      "text": "name but that startup was a very famous"
+    },
+    {
+      "startSeconds": 6.72,
+      "endSeconds": 11.519,
+      "text": "online food ordering startup the"
+    },
+    {
+      "startSeconds": 9.519,
+      "endSeconds": 14.24,
+      "text": "interviewer over there asked me"
+    },
+    {
+      "startSeconds": 11.519,
+      "endSeconds": 16.4,
+      "text": "that what is an anonymous function i"
+    },
+    {
+      "startSeconds": 14.24,
+      "endSeconds": 18.56,
+      "text": "just quickly said that a function"
+    },
+    {
+      "startSeconds": 16.4,
+      "endSeconds": 21.279,
+      "text": "without a name is an anonymous function"
+    },
+    {
+      "startSeconds": 18.56,
+      "endSeconds": 24.16,
+      "text": "that was easy right then she moved on to"
+    },
+    {
+      "startSeconds": 21.279,
+      "endSeconds": 26.88,
+      "text": "the next question which was what are"
+    },
+    {
+      "startSeconds": 24.16,
+      "endSeconds": 27.76,
+      "text": "first class functions in javascript"
+    },
+    {
+      "startSeconds": 26.88,
+      "endSeconds": 28.56,
+      "text": "okay"
+    },
+    {
+      "startSeconds": 27.76,
+      "endSeconds": 30.48,
+      "text": "so"
+    },
+    {
+      "startSeconds": 28.56,
+      "endSeconds": 32.719,
+      "text": "now i got nervous"
+    },
+    {
+      "startSeconds": 30.48,
+      "endSeconds": 34.079,
+      "text": "because i never knew what first class"
+    },
+    {
+      "startSeconds": 32.719,
+      "endSeconds": 35.92,
+      "text": "functions are"
+    },
+    {
+      "startSeconds": 34.079,
+      "endSeconds": 37.44,
+      "text": "i have heard of callback functions i"
+    },
+    {
+      "startSeconds": 35.92,
+      "endSeconds": 39.2,
+      "text": "have heard of higher order functions"
+    },
+    {
+      "startSeconds": 37.44,
+      "endSeconds": 41.2,
+      "text": "i've heard of arrow functions pure"
+    },
+    {
+      "startSeconds": 39.2,
+      "endSeconds": 43.84,
+      "text": "functions but i haven't heard of first"
+    },
+    {
+      "startSeconds": 41.2,
+      "endSeconds": 46.32,
+      "text": "class functions what are they"
+    },
+    {
+      "startSeconds": 43.84,
+      "endSeconds": 48.719,
+      "text": "and i got nervous the interviewer she"
+    },
+    {
+      "startSeconds": 46.32,
+      "endSeconds": 51.039,
+      "text": "was looking directly into my eyes and"
+    },
+    {
+      "startSeconds": 48.719,
+      "endSeconds": 53.28,
+      "text": "i was gone"
+    },
+    {
+      "startSeconds": 51.039,
+      "endSeconds": 55.6,
+      "text": "i said that i don't know okay i don't"
+    },
+    {
+      "startSeconds": 53.28,
+      "endSeconds": 58.16,
+      "text": "know the answer to this question so then"
+    },
+    {
+      "startSeconds": 55.6,
+      "endSeconds": 60.48,
+      "text": "she moved on to the next question which"
+    },
+    {
+      "startSeconds": 58.16,
+      "endSeconds": 62.8,
+      "text": "was what is the difference between a"
+    },
+    {
+      "startSeconds": 60.48,
+      "endSeconds": 64.559,
+      "text": "function statement and a function"
+    },
+    {
+      "startSeconds": 62.8,
+      "endSeconds": 67.52,
+      "text": "expression"
+    },
+    {
+      "startSeconds": 64.559,
+      "endSeconds": 68.72,
+      "text": "and now that nervousness from here went"
+    },
+    {
+      "startSeconds": 67.52,
+      "endSeconds": 71.68,
+      "text": "till here"
+    },
+    {
+      "startSeconds": 68.72,
+      "endSeconds": 74.08,
+      "text": "okay i i didn't know i i didn't know"
+    },
+    {
+      "startSeconds": 71.68,
+      "endSeconds": 75.76,
+      "text": "what a function expression statement is"
+    },
+    {
+      "startSeconds": 74.08,
+      "endSeconds": 76.96,
+      "text": "so many things were going upon in my"
+    },
+    {
+      "startSeconds": 75.76,
+      "endSeconds": 79.119,
+      "text": "head"
+    },
+    {
+      "startSeconds": 76.96,
+      "endSeconds": 80.64,
+      "text": "i thought that statement expression both"
+    },
+    {
+      "startSeconds": 79.119,
+      "endSeconds": 82.72,
+      "text": "were looking like the same so when the"
+    },
+    {
+      "startSeconds": 80.64,
+      "endSeconds": 84.32,
+      "text": "nervousness went to the next level i"
+    },
+    {
+      "startSeconds": 82.72,
+      "endSeconds": 87.28,
+      "text": "firmly said that"
+    },
+    {
+      "startSeconds": 84.32,
+      "endSeconds": 89.6,
+      "text": "a statement which has functioned in it"
+    },
+    {
+      "startSeconds": 87.28,
+      "endSeconds": 92,
+      "text": "is a function statement"
+    },
+    {
+      "startSeconds": 89.6,
+      "endSeconds": 94,
+      "text": "and oh my god"
+    },
+    {
+      "startSeconds": 92,
+      "endSeconds": 94.96,
+      "text": "the reaction of that interviewer was"
+    },
+    {
+      "startSeconds": 94,
+      "endSeconds": 96.96,
+      "text": "like"
+    },
+    {
+      "startSeconds": 94.96,
+      "endSeconds": 99.52,
+      "text": "she is just going to kill me there and"
+    },
+    {
+      "startSeconds": 96.96,
+      "endSeconds": 102.24,
+      "text": "there itself she made a she made such a"
+    },
+    {
+      "startSeconds": 99.52,
+      "endSeconds": 104.64,
+      "text": "weird face i mean like if i close my"
+    },
+    {
+      "startSeconds": 102.24,
+      "endSeconds": 107.28,
+      "text": "eyes i can still like recall that face"
+    },
+    {
+      "startSeconds": 104.64,
+      "endSeconds": 108.799,
+      "text": "okay and i knew that i am like gone in"
+    },
+    {
+      "startSeconds": 107.28,
+      "endSeconds": 111.119,
+      "text": "the interview like"
+    },
+    {
+      "startSeconds": 108.799,
+      "endSeconds": 113.2,
+      "text": "finished"
+    },
+    {
+      "startSeconds": 111.119,
+      "endSeconds": 115.759,
+      "text": "so this video is dedicated to that"
+    },
+    {
+      "startSeconds": 113.2,
+      "endSeconds": 118.399,
+      "text": "interview and that interviewer so let's"
+    },
+    {
+      "startSeconds": 115.759,
+      "endSeconds": 122.24,
+      "text": "see what all these things are and uh"
+    },
+    {
+      "startSeconds": 118.399,
+      "endSeconds": 124.159,
+      "text": "let's dive deep into the code now okay"
+    },
+    {
+      "startSeconds": 122.24,
+      "endSeconds": 127.2,
+      "text": "so let's move so we will be covering all"
+    },
+    {
+      "startSeconds": 124.159,
+      "endSeconds": 129.759,
+      "text": "these topics let's go upon these slowly"
+    },
+    {
+      "startSeconds": 127.2,
+      "endSeconds": 133.44,
+      "text": "one by one okay so first of all let us"
+    },
+    {
+      "startSeconds": 129.759,
+      "endSeconds": 135.52,
+      "text": "see what a function statement is okay so"
+    },
+    {
+      "startSeconds": 133.44,
+      "endSeconds": 137.04,
+      "text": "so you know how we create a function"
+    },
+    {
+      "startSeconds": 135.52,
+      "endSeconds": 138.72,
+      "text": "there is one way to create a function"
+    },
+    {
+      "startSeconds": 137.04,
+      "endSeconds": 141.76,
+      "text": "like this so if we write a function"
+    },
+    {
+      "startSeconds": 138.72,
+      "endSeconds": 143.36,
+      "text": "keyword and we give a name so this is a"
+    },
+    {
+      "startSeconds": 141.76,
+      "endSeconds": 144.16,
+      "text": "function statement"
+    },
+    {
+      "startSeconds": 143.36,
+      "endSeconds": 147.36,
+      "text": "okay"
+    },
+    {
+      "startSeconds": 144.16,
+      "endSeconds": 149.12,
+      "text": "so if i so suppose our function does"
+    },
+    {
+      "startSeconds": 147.36,
+      "endSeconds": 151.44,
+      "text": "nothing but just a console log okay"
+    },
+    {
+      "startSeconds": 149.12,
+      "endSeconds": 152.72,
+      "text": "let's just console log and let's give it"
+    },
+    {
+      "startSeconds": 151.44,
+      "endSeconds": 156.239,
+      "text": "a call"
+    },
+    {
+      "startSeconds": 152.72,
+      "endSeconds": 158,
+      "text": "that's it right so this way of creating"
+    },
+    {
+      "startSeconds": 156.239,
+      "endSeconds": 159.68,
+      "text": "a function is known as a function"
+    },
+    {
+      "startSeconds": 158,
+      "endSeconds": 161.2,
+      "text": "statement that's it"
+    },
+    {
+      "startSeconds": 159.68,
+      "endSeconds": 162.4,
+      "text": "that's all"
+    },
+    {
+      "startSeconds": 161.2,
+      "endSeconds": 164.56,
+      "text": "okay"
+    },
+    {
+      "startSeconds": 162.4,
+      "endSeconds": 166.56,
+      "text": "and remember i have told you several"
+    },
+    {
+      "startSeconds": 164.56,
+      "endSeconds": 168.64,
+      "text": "times throughout these videos that"
+    },
+    {
+      "startSeconds": 166.56,
+      "endSeconds": 170.4,
+      "text": "functions are very beautiful in"
+    },
+    {
+      "startSeconds": 168.64,
+      "endSeconds": 172.56,
+      "text": "javascript and functions are like the"
+    },
+    {
+      "startSeconds": 170.4,
+      "endSeconds": 173.36,
+      "text": "heart of javascript right"
+    },
+    {
+      "startSeconds": 172.56,
+      "endSeconds": 176.239,
+      "text": "so"
+    },
+    {
+      "startSeconds": 173.36,
+      "endSeconds": 179.28,
+      "text": "a beautiful feature of function is that"
+    },
+    {
+      "startSeconds": 176.239,
+      "endSeconds": 182.08,
+      "text": "you can assign it to a variable also"
+    },
+    {
+      "startSeconds": 179.28,
+      "endSeconds": 185.04,
+      "text": "okay so suppose if i have a var b we can"
+    },
+    {
+      "startSeconds": 182.08,
+      "endSeconds": 187.68,
+      "text": "assign a function to it okay we can"
+    },
+    {
+      "startSeconds": 185.04,
+      "endSeconds": 190,
+      "text": "assign a function to it function acts"
+    },
+    {
+      "startSeconds": 187.68,
+      "endSeconds": 192,
+      "text": "like a value okay you might have heard"
+    },
+    {
+      "startSeconds": 190,
+      "endSeconds": 195.04,
+      "text": "this before i am revising it function"
+    },
+    {
+      "startSeconds": 192,
+      "endSeconds": 196.959,
+      "text": "acts like a value okay so you it's it's"
+    },
+    {
+      "startSeconds": 195.04,
+      "endSeconds": 199.04,
+      "text": "like a value which you are"
+    },
+    {
+      "startSeconds": 196.959,
+      "endSeconds": 201.519,
+      "text": "initializing you are initializing this b"
+    },
+    {
+      "startSeconds": 199.04,
+      "endSeconds": 204.159,
+      "text": "with a value like putting function"
+    },
+    {
+      "startSeconds": 201.519,
+      "endSeconds": 206.239,
+      "text": "this into b so this is how beautiful"
+    },
+    {
+      "startSeconds": 204.159,
+      "endSeconds": 208.239,
+      "text": "functions are in javascript in many"
+    },
+    {
+      "startSeconds": 206.239,
+      "endSeconds": 209.84,
+      "text": "programming languages you can't do this"
+    },
+    {
+      "startSeconds": 208.239,
+      "endSeconds": 213.36,
+      "text": "and people coming from like other"
+    },
+    {
+      "startSeconds": 209.84,
+      "endSeconds": 215.36,
+      "text": "languages might find this crazy but"
+    },
+    {
+      "startSeconds": 213.36,
+      "endSeconds": 217.12,
+      "text": "what this you can do okay"
+    },
+    {
+      "startSeconds": 215.36,
+      "endSeconds": 219.92,
+      "text": "let's just log something inside this"
+    },
+    {
+      "startSeconds": 217.12,
+      "endSeconds": 220.64,
+      "text": "also so let me do a console log of"
+    },
+    {
+      "startSeconds": 219.92,
+      "endSeconds": 222.239,
+      "text": "be"
+    },
+    {
+      "startSeconds": 220.64,
+      "endSeconds": 224.239,
+      "text": "called okay"
+    },
+    {
+      "startSeconds": 222.239,
+      "endSeconds": 225.84,
+      "text": "so this is known as a function"
+    },
+    {
+      "startSeconds": 224.239,
+      "endSeconds": 227.76,
+      "text": "expression and this is known as a"
+    },
+    {
+      "startSeconds": 225.84,
+      "endSeconds": 230.239,
+      "text": "function statement both are ways to"
+    },
+    {
+      "startSeconds": 227.76,
+      "endSeconds": 232.239,
+      "text": "create function and i was using this"
+    },
+    {
+      "startSeconds": 230.239,
+      "endSeconds": 234.159,
+      "text": "since many years in our programming but"
+    },
+    {
+      "startSeconds": 232.239,
+      "endSeconds": 234.959,
+      "text": "i never knew what the difference between"
+    },
+    {
+      "startSeconds": 234.159,
+      "endSeconds": 237.84,
+      "text": "these"
+    },
+    {
+      "startSeconds": 234.959,
+      "endSeconds": 240.08,
+      "text": "jargons are like and in the interview i"
+    },
+    {
+      "startSeconds": 237.84,
+      "endSeconds": 242.08,
+      "text": "i was using this right a lot in my code"
+    },
+    {
+      "startSeconds": 240.08,
+      "endSeconds": 243.76,
+      "text": "but i never knew in the interview that"
+    },
+    {
+      "startSeconds": 242.08,
+      "endSeconds": 245.04,
+      "text": "this is what it is"
+    },
+    {
+      "startSeconds": 243.76,
+      "endSeconds": 246.56,
+      "text": "right"
+    },
+    {
+      "startSeconds": 245.04,
+      "endSeconds": 248.319,
+      "text": "so"
+    },
+    {
+      "startSeconds": 246.56,
+      "endSeconds": 249.84,
+      "text": "the interviewer did not ask me what it"
+    },
+    {
+      "startSeconds": 248.319,
+      "endSeconds": 252,
+      "text": "is the interviewer asked me the"
+    },
+    {
+      "startSeconds": 249.84,
+      "endSeconds": 253.76,
+      "text": "difference between function statement"
+    },
+    {
+      "startSeconds": 252,
+      "endSeconds": 255.2,
+      "text": "and a function expression so what is the"
+    },
+    {
+      "startSeconds": 253.76,
+      "endSeconds": 256.959,
+      "text": "difference between"
+    },
+    {
+      "startSeconds": 255.2,
+      "endSeconds": 259.04,
+      "text": "these two"
+    },
+    {
+      "startSeconds": 256.959,
+      "endSeconds": 261.519,
+      "text": "so the major difference between these"
+    },
+    {
+      "startSeconds": 259.04,
+      "endSeconds": 262.32,
+      "text": "two is hoisting"
+    },
+    {
+      "startSeconds": 261.519,
+      "endSeconds": 264,
+      "text": "okay"
+    },
+    {
+      "startSeconds": 262.32,
+      "endSeconds": 266.4,
+      "text": "so let's first see how do you call this"
+    },
+    {
+      "startSeconds": 264,
+      "endSeconds": 268.56,
+      "text": "function okay so you call this function"
+    },
+    {
+      "startSeconds": 266.4,
+      "endSeconds": 269.919,
+      "text": "by just calling it like this you know"
+    },
+    {
+      "startSeconds": 268.56,
+      "endSeconds": 272.08,
+      "text": "and even in the case of function"
+    },
+    {
+      "startSeconds": 269.919,
+      "endSeconds": 274.16,
+      "text": "expression you call it like this right"
+    },
+    {
+      "startSeconds": 272.08,
+      "endSeconds": 276.72,
+      "text": "if i call it if i run this program so"
+    },
+    {
+      "startSeconds": 274.16,
+      "endSeconds": 278.96,
+      "text": "see it prints a call and it prints b"
+    },
+    {
+      "startSeconds": 276.72,
+      "endSeconds": 280.8,
+      "text": "called right so that is how we call it"
+    },
+    {
+      "startSeconds": 278.96,
+      "endSeconds": 282.479,
+      "text": "but the difference between creating"
+    },
+    {
+      "startSeconds": 280.8,
+      "endSeconds": 283.919,
+      "text": "functions with these two types is"
+    },
+    {
+      "startSeconds": 282.479,
+      "endSeconds": 286.479,
+      "text": "hosting"
+    },
+    {
+      "startSeconds": 283.919,
+      "endSeconds": 290.32,
+      "text": "so how does hoisting come into picture"
+    },
+    {
+      "startSeconds": 286.479,
+      "endSeconds": 292.479,
+      "text": "so what if i call this function a"
+    },
+    {
+      "startSeconds": 290.32,
+      "endSeconds": 293.919,
+      "text": "even before creating it"
+    },
+    {
+      "startSeconds": 292.479,
+      "endSeconds": 295.6,
+      "text": "okay so"
+    },
+    {
+      "startSeconds": 293.919,
+      "endSeconds": 298.08,
+      "text": "here i am creating the function but i"
+    },
+    {
+      "startSeconds": 295.6,
+      "endSeconds": 300.08,
+      "text": "want to call it before creating it and"
+    },
+    {
+      "startSeconds": 298.08,
+      "endSeconds": 302,
+      "text": "similarly for b also"
+    },
+    {
+      "startSeconds": 300.08,
+      "endSeconds": 304.32,
+      "text": "so you have seen my hosting video right"
+    },
+    {
+      "startSeconds": 302,
+      "endSeconds": 306.24,
+      "text": "so what do you think the output will be"
+    },
+    {
+      "startSeconds": 304.32,
+      "endSeconds": 309.36,
+      "text": "if i call these functions before even"
+    },
+    {
+      "startSeconds": 306.24,
+      "endSeconds": 311.28,
+      "text": "creating them in code what will happen"
+    },
+    {
+      "startSeconds": 309.36,
+      "endSeconds": 313.6,
+      "text": "can you give it a guess"
+    },
+    {
+      "startSeconds": 311.28,
+      "endSeconds": 316.4,
+      "text": "yes let's just see so one will throw out"
+    },
+    {
+      "startSeconds": 313.6,
+      "endSeconds": 317.84,
+      "text": "an error which one the b"
+    },
+    {
+      "startSeconds": 316.4,
+      "endSeconds": 319.28,
+      "text": "so that is the difference between a"
+    },
+    {
+      "startSeconds": 317.84,
+      "endSeconds": 322.08,
+      "text": "function statement and a function"
+    },
+    {
+      "startSeconds": 319.28,
+      "endSeconds": 324.639,
+      "text": "expression so during the hosting phase"
+    },
+    {
+      "startSeconds": 322.08,
+      "endSeconds": 327.039,
+      "text": "during the memory creation phase a is"
+    },
+    {
+      "startSeconds": 324.639,
+      "endSeconds": 328.32,
+      "text": "created a memory and this function is"
+    },
+    {
+      "startSeconds": 327.039,
+      "endSeconds": 330.639,
+      "text": "assigned to a"
+    },
+    {
+      "startSeconds": 328.32,
+      "endSeconds": 332.479,
+      "text": "but in case of a function expression"
+    },
+    {
+      "startSeconds": 330.639,
+      "endSeconds": 333.52,
+      "text": "this b is treated like any other"
+    },
+    {
+      "startSeconds": 332.479,
+      "endSeconds": 336.479,
+      "text": "variable"
+    },
+    {
+      "startSeconds": 333.52,
+      "endSeconds": 339.52,
+      "text": "it is assigned undefined initially"
+    },
+    {
+      "startSeconds": 336.479,
+      "endSeconds": 341.84,
+      "text": "until the code hits this line itself"
+    },
+    {
+      "startSeconds": 339.52,
+      "endSeconds": 344,
+      "text": "so when the javascript engine executes"
+    },
+    {
+      "startSeconds": 341.84,
+      "endSeconds": 347.36,
+      "text": "this line by line and it reaches this"
+    },
+    {
+      "startSeconds": 344,
+      "endSeconds": 349.759,
+      "text": "line then only this function is assigned"
+    },
+    {
+      "startSeconds": 347.36,
+      "endSeconds": 351.199,
+      "text": "to this variable b until then it is"
+    },
+    {
+      "startSeconds": 349.759,
+      "endSeconds": 353.84,
+      "text": "undefined"
+    },
+    {
+      "startSeconds": 351.199,
+      "endSeconds": 356.479,
+      "text": "okay so here the value is undefined and"
+    },
+    {
+      "startSeconds": 353.84,
+      "endSeconds": 357.919,
+      "text": "you can and you can't call that b right"
+    },
+    {
+      "startSeconds": 356.479,
+      "endSeconds": 359.44,
+      "text": "that is the major difference between"
+    },
+    {
+      "startSeconds": 357.919,
+      "endSeconds": 361.28,
+      "text": "function statement and a function"
+    },
+    {
+      "startSeconds": 359.44,
+      "endSeconds": 363.28,
+      "text": "expression so now let's move on to"
+    },
+    {
+      "startSeconds": 361.28,
+      "endSeconds": 365.52,
+      "text": "function declaration so function"
+    },
+    {
+      "startSeconds": 363.28,
+      "endSeconds": 368.479,
+      "text": "declaration is nothing this is another"
+    },
+    {
+      "startSeconds": 365.52,
+      "endSeconds": 369.52,
+      "text": "jargon and function statement is also"
+    },
+    {
+      "startSeconds": 368.479,
+      "endSeconds": 372.479,
+      "text": "known as"
+    },
+    {
+      "startSeconds": 369.52,
+      "endSeconds": 374.56,
+      "text": "function declaration okay so they both"
+    },
+    {
+      "startSeconds": 372.479,
+      "endSeconds": 376.24,
+      "text": "are the same thing if you say"
+    },
+    {
+      "startSeconds": 374.56,
+      "endSeconds": 378.72,
+      "text": "function declaration or a function"
+    },
+    {
+      "startSeconds": 376.24,
+      "endSeconds": 380.479,
+      "text": "statement these are both the same things"
+    },
+    {
+      "startSeconds": 378.72,
+      "endSeconds": 382.8,
+      "text": "so now let's move on to the anonymous"
+    },
+    {
+      "startSeconds": 380.479,
+      "endSeconds": 384.96,
+      "text": "functions so anonymous functions as you"
+    },
+    {
+      "startSeconds": 382.8,
+      "endSeconds": 386.4,
+      "text": "know a function without a name is an"
+    },
+    {
+      "startSeconds": 384.96,
+      "endSeconds": 388.96,
+      "text": "anonymous function"
+    },
+    {
+      "startSeconds": 386.4,
+      "endSeconds": 389.759,
+      "text": "this is an anonymous function"
+    },
+    {
+      "startSeconds": 388.96,
+      "endSeconds": 391.28,
+      "text": "okay"
+    },
+    {
+      "startSeconds": 389.759,
+      "endSeconds": 393.44,
+      "text": "but let me tell you a little more about"
+    },
+    {
+      "startSeconds": 391.28,
+      "endSeconds": 395.12,
+      "text": "anonymous functions so anonymous"
+    },
+    {
+      "startSeconds": 393.44,
+      "endSeconds": 398,
+      "text": "functions"
+    },
+    {
+      "startSeconds": 395.12,
+      "endSeconds": 399.52,
+      "text": "does not have their own identity okay"
+    },
+    {
+      "startSeconds": 398,
+      "endSeconds": 401.919,
+      "text": "when i say it does not have its own"
+    },
+    {
+      "startSeconds": 399.52,
+      "endSeconds": 404.319,
+      "text": "identity that means if you create an"
+    },
+    {
+      "startSeconds": 401.919,
+      "endSeconds": 407.759,
+      "text": "anonymous function like this this will"
+    },
+    {
+      "startSeconds": 404.319,
+      "endSeconds": 410.16,
+      "text": "result out to be a syntax error okay so"
+    },
+    {
+      "startSeconds": 407.759,
+      "endSeconds": 411.919,
+      "text": "via syntax error let me tell you an"
+    },
+    {
+      "startSeconds": 410.16,
+      "endSeconds": 414.08,
+      "text": "anonymous function looks like a function"
+    },
+    {
+      "startSeconds": 411.919,
+      "endSeconds": 416.24,
+      "text": "statement right it looks like similar to"
+    },
+    {
+      "startSeconds": 414.08,
+      "endSeconds": 417.68,
+      "text": "that right see if you clearly see this"
+    },
+    {
+      "startSeconds": 416.24,
+      "endSeconds": 420.479,
+      "text": "looks exactly same as a function"
+    },
+    {
+      "startSeconds": 417.68,
+      "endSeconds": 422,
+      "text": "statement but it has no name"
+    },
+    {
+      "startSeconds": 420.479,
+      "endSeconds": 423.599,
+      "text": "but according to ecmascript"
+    },
+    {
+      "startSeconds": 422,
+      "endSeconds": 425.599,
+      "text": "specification a function statement"
+    },
+    {
+      "startSeconds": 423.599,
+      "endSeconds": 427.759,
+      "text": "should always have a name so this is a"
+    },
+    {
+      "startSeconds": 425.599,
+      "endSeconds": 430.72,
+      "text": "invalid syntax let me run and show it to"
+    },
+    {
+      "startSeconds": 427.759,
+      "endSeconds": 433.039,
+      "text": "you so if i save this run this so this"
+    },
+    {
+      "startSeconds": 430.72,
+      "endSeconds": 435.52,
+      "text": "is c a syntax error and clearly see the"
+    },
+    {
+      "startSeconds": 433.039,
+      "endSeconds": 437.599,
+      "text": "message which it says a function state"
+    },
+    {
+      "startSeconds": 435.52,
+      "endSeconds": 438.479,
+      "text": "function statements require a function"
+    },
+    {
+      "startSeconds": 437.599,
+      "endSeconds": 441.52,
+      "text": "name"
+    },
+    {
+      "startSeconds": 438.479,
+      "endSeconds": 443.919,
+      "text": "okay so see it's a function statements"
+    },
+    {
+      "startSeconds": 441.52,
+      "endSeconds": 446.16,
+      "text": "okay this function statements it is type"
+    },
+    {
+      "startSeconds": 443.919,
+      "endSeconds": 448.4,
+      "text": "of a function statement and it requires"
+    },
+    {
+      "startSeconds": 446.16,
+      "endSeconds": 450,
+      "text": "a name okay you need to give a name over"
+    },
+    {
+      "startSeconds": 448.4,
+      "endSeconds": 452.56,
+      "text": "here you can't leave it anonymous and"
+    },
+    {
+      "startSeconds": 450,
+      "endSeconds": 454.24,
+      "text": "create anonymous functions like this"
+    },
+    {
+      "startSeconds": 452.56,
+      "endSeconds": 456.08,
+      "text": "so now when you can't create it like"
+    },
+    {
+      "startSeconds": 454.24,
+      "endSeconds": 458.479,
+      "text": "this what is the use of it"
+    },
+    {
+      "startSeconds": 456.08,
+      "endSeconds": 462.4,
+      "text": "so anonymous functions are used in a"
+    },
+    {
+      "startSeconds": 458.479,
+      "endSeconds": 464.16,
+      "text": "place where functions are used as values"
+    },
+    {
+      "startSeconds": 462.4,
+      "endSeconds": 466.08,
+      "text": "so i have said this a lot of times let"
+    },
+    {
+      "startSeconds": 464.16,
+      "endSeconds": 468.96,
+      "text": "me repeat it once again functions are"
+    },
+    {
+      "startSeconds": 466.08,
+      "endSeconds": 471.28,
+      "text": "like very beautiful in javascript i love"
+    },
+    {
+      "startSeconds": 468.96,
+      "endSeconds": 473.759,
+      "text": "functions and functions i think are"
+    },
+    {
+      "startSeconds": 471.28,
+      "endSeconds": 477.12,
+      "text": "heart of javascript they are so powerful"
+    },
+    {
+      "startSeconds": 473.759,
+      "endSeconds": 479.36,
+      "text": "you can use them as values also right"
+    },
+    {
+      "startSeconds": 477.12,
+      "endSeconds": 482.639,
+      "text": "and anonymous functions are used when"
+    },
+    {
+      "startSeconds": 479.36,
+      "endSeconds": 485.039,
+      "text": "the functions are used as values okay"
+    },
+    {
+      "startSeconds": 482.639,
+      "endSeconds": 486.96,
+      "text": "when they are used as values so when i"
+    },
+    {
+      "startSeconds": 485.039,
+      "endSeconds": 490,
+      "text": "say they are used as values that means"
+    },
+    {
+      "startSeconds": 486.96,
+      "endSeconds": 491.759,
+      "text": "that you can use use it to assign it to"
+    },
+    {
+      "startSeconds": 490,
+      "endSeconds": 494.16,
+      "text": "some variable so just like you assign"
+    },
+    {
+      "startSeconds": 491.759,
+      "endSeconds": 496.96,
+      "text": "any other value to a variable okay you"
+    },
+    {
+      "startSeconds": 494.16,
+      "endSeconds": 498.319,
+      "text": "can assign this anonymous function also"
+    },
+    {
+      "startSeconds": 496.96,
+      "endSeconds": 500.96,
+      "text": "to a variable"
+    },
+    {
+      "startSeconds": 498.319,
+      "endSeconds": 503.36,
+      "text": "so it acts like a value here you can use"
+    },
+    {
+      "startSeconds": 500.96,
+      "endSeconds": 505.28,
+      "text": "anonymous functions but in function"
+    },
+    {
+      "startSeconds": 503.36,
+      "endSeconds": 507.52,
+      "text": "statements you cannot use an anonymous"
+    },
+    {
+      "startSeconds": 505.28,
+      "endSeconds": 509.199,
+      "text": "function okay so that is why it says"
+    },
+    {
+      "startSeconds": 507.52,
+      "endSeconds": 511.84,
+      "text": "function statements"
+    },
+    {
+      "startSeconds": 509.199,
+      "endSeconds": 513.44,
+      "text": "require a function name okay you know"
+    },
+    {
+      "startSeconds": 511.84,
+      "endSeconds": 515.2,
+      "text": "this knowledge of knowing what is a"
+    },
+    {
+      "startSeconds": 513.44,
+      "endSeconds": 517.279,
+      "text": "function statement or expression a"
+    },
+    {
+      "startSeconds": 515.2,
+      "endSeconds": 519.519,
+      "text": "declaration and all these things is very"
+    },
+    {
+      "startSeconds": 517.279,
+      "endSeconds": 521.44,
+      "text": "important also it helps you a lot if you"
+    },
+    {
+      "startSeconds": 519.519,
+      "endSeconds": 523.919,
+      "text": "are debugging programs so if you read"
+    },
+    {
+      "startSeconds": 521.44,
+      "endSeconds": 525.839,
+      "text": "clearly the message right so function"
+    },
+    {
+      "startSeconds": 523.919,
+      "endSeconds": 528.24,
+      "text": "statement so here it's not an expression"
+    },
+    {
+      "startSeconds": 525.839,
+      "endSeconds": 530.24,
+      "text": "it's a statement so these things these"
+    },
+    {
+      "startSeconds": 528.24,
+      "endSeconds": 531.839,
+      "text": "keywords will kind of click your mind"
+    },
+    {
+      "startSeconds": 530.24,
+      "endSeconds": 533.04,
+      "text": "and you will better understand"
+    },
+    {
+      "startSeconds": 531.839,
+      "endSeconds": 534.399,
+      "text": "javascript"
+    },
+    {
+      "startSeconds": 533.04,
+      "endSeconds": 536.32,
+      "text": "and generally you might have seen that"
+    },
+    {
+      "startSeconds": 534.399,
+      "endSeconds": 538.32,
+      "text": "when we are reading blog articles or we"
+    },
+    {
+      "startSeconds": 536.32,
+      "endSeconds": 541.04,
+      "text": "are reading books sometimes"
+    },
+    {
+      "startSeconds": 538.32,
+      "endSeconds": 543.279,
+      "text": "we it is very confusing right the author"
+    },
+    {
+      "startSeconds": 541.04,
+      "endSeconds": 545.2,
+      "text": "uses the term expression somewhere it is"
+    },
+    {
+      "startSeconds": 543.279,
+      "endSeconds": 547.519,
+      "text": "a statement somewhere so this is what it"
+    },
+    {
+      "startSeconds": 545.2,
+      "endSeconds": 549.36,
+      "text": "means okay so this knowledge will be"
+    },
+    {
+      "startSeconds": 547.519,
+      "endSeconds": 551.04,
+      "text": "very helpful when you are reading some"
+    },
+    {
+      "startSeconds": 549.36,
+      "endSeconds": 552.959,
+      "text": "books of javascript some blogs of"
+    },
+    {
+      "startSeconds": 551.04,
+      "endSeconds": 554.56,
+      "text": "javascript some stack overflow answers"
+    },
+    {
+      "startSeconds": 552.959,
+      "endSeconds": 556.48,
+      "text": "this all knowledge will be very helpful"
+    },
+    {
+      "startSeconds": 554.56,
+      "endSeconds": 558.56,
+      "text": "for that so now let's just see what is a"
+    },
+    {
+      "startSeconds": 556.48,
+      "endSeconds": 560.56,
+      "text": "named function expression okay so let me"
+    },
+    {
+      "startSeconds": 558.56,
+      "endSeconds": 563.92,
+      "text": "just first of all remove these errors"
+    },
+    {
+      "startSeconds": 560.56,
+      "endSeconds": 566.88,
+      "text": "okay let me just comment it out and"
+    },
+    {
+      "startSeconds": 563.92,
+      "endSeconds": 568,
+      "text": "let me bring these calls uh over here"
+    },
+    {
+      "startSeconds": 566.88,
+      "endSeconds": 570.16,
+      "text": "once again"
+    },
+    {
+      "startSeconds": 568,
+      "endSeconds": 572.72,
+      "text": "so now let me tell you what is a named"
+    },
+    {
+      "startSeconds": 570.16,
+      "endSeconds": 575.36,
+      "text": "function expression so a named function"
+    },
+    {
+      "startSeconds": 572.72,
+      "endSeconds": 577.519,
+      "text": "expression is like exactly the same as"
+    },
+    {
+      "startSeconds": 575.36,
+      "endSeconds": 579.44,
+      "text": "this function expression but when this"
+    },
+    {
+      "startSeconds": 577.519,
+      "endSeconds": 581.279,
+      "text": "anonymous function instead of using an"
+    },
+    {
+      "startSeconds": 579.44,
+      "endSeconds": 583.279,
+      "text": "anonymous function here we use a"
+    },
+    {
+      "startSeconds": 581.279,
+      "endSeconds": 585.76,
+      "text": "function with a name suppose if i gave"
+    },
+    {
+      "startSeconds": 583.279,
+      "endSeconds": 587.279,
+      "text": "it a name so this becomes a named"
+    },
+    {
+      "startSeconds": 585.76,
+      "endSeconds": 589.76,
+      "text": "function expression"
+    },
+    {
+      "startSeconds": 587.279,
+      "endSeconds": 591.92,
+      "text": "it's kind of weird right"
+    },
+    {
+      "startSeconds": 589.76,
+      "endSeconds": 593.44,
+      "text": "you are like kind of giving a name to"
+    },
+    {
+      "startSeconds": 591.92,
+      "endSeconds": 595.279,
+      "text": "the function here also and you are"
+    },
+    {
+      "startSeconds": 593.44,
+      "endSeconds": 598.72,
+      "text": "giving the name to the function here"
+    },
+    {
+      "startSeconds": 595.279,
+      "endSeconds": 600.88,
+      "text": "also it's it's like weird right but this"
+    },
+    {
+      "startSeconds": 598.72,
+      "endSeconds": 602.8,
+      "text": "is possible in javascript like you can"
+    },
+    {
+      "startSeconds": 600.88,
+      "endSeconds": 604.88,
+      "text": "have the name of a function itself and"
+    },
+    {
+      "startSeconds": 602.8,
+      "endSeconds": 607.2,
+      "text": "then put it into an expression so this"
+    },
+    {
+      "startSeconds": 604.88,
+      "endSeconds": 609.36,
+      "text": "is known as a named function expression"
+    },
+    {
+      "startSeconds": 607.2,
+      "endSeconds": 611.92,
+      "text": "remember a named function expression now"
+    },
+    {
+      "startSeconds": 609.36,
+      "endSeconds": 615.839,
+      "text": "here there is a corner case also there"
+    },
+    {
+      "startSeconds": 611.92,
+      "endSeconds": 618.16,
+      "text": "is a gaucha okay so uh so you know we"
+    },
+    {
+      "startSeconds": 615.839,
+      "endSeconds": 620.079,
+      "text": "can call this b function like this but"
+    },
+    {
+      "startSeconds": 618.16,
+      "endSeconds": 622.8,
+      "text": "what do you think what will happen if i"
+    },
+    {
+      "startSeconds": 620.079,
+      "endSeconds": 624.399,
+      "text": "do something like this x y z so can you"
+    },
+    {
+      "startSeconds": 622.8,
+      "endSeconds": 626.399,
+      "text": "guess what will happen if you just call"
+    },
+    {
+      "startSeconds": 624.399,
+      "endSeconds": 627.36,
+      "text": "this function x y z like this give a"
+    },
+    {
+      "startSeconds": 626.399,
+      "endSeconds": 629.76,
+      "text": "guess"
+    },
+    {
+      "startSeconds": 627.36,
+      "endSeconds": 632.24,
+      "text": "so you will get an error okay so it is a"
+    },
+    {
+      "startSeconds": 629.76,
+      "endSeconds": 634.64,
+      "text": "very famous output question also so you"
+    },
+    {
+      "startSeconds": 632.24,
+      "endSeconds": 636.8,
+      "text": "might get a mcq where"
+    },
+    {
+      "startSeconds": 634.64,
+      "endSeconds": 639.2,
+      "text": "the person might have called this xyz"
+    },
+    {
+      "startSeconds": 636.8,
+      "endSeconds": 641.12,
+      "text": "like this but it will throw out to be an"
+    },
+    {
+      "startSeconds": 639.2,
+      "endSeconds": 643.76,
+      "text": "error okay so this will give a reference"
+    },
+    {
+      "startSeconds": 641.12,
+      "endSeconds": 647.36,
+      "text": "error that xyz is not defined okay so"
+    },
+    {
+      "startSeconds": 643.76,
+      "endSeconds": 650.48,
+      "text": "why it gives xyz is not defined so"
+    },
+    {
+      "startSeconds": 647.36,
+      "endSeconds": 652.64,
+      "text": "if we see clearly this x y z if you put"
+    },
+    {
+      "startSeconds": 650.48,
+      "endSeconds": 655.279,
+      "text": "a function like this right if you use"
+    },
+    {
+      "startSeconds": 652.64,
+      "endSeconds": 658.56,
+      "text": "this function as a value so in this case"
+    },
+    {
+      "startSeconds": 655.279,
+      "endSeconds": 662,
+      "text": "this x y z is not created in the"
+    },
+    {
+      "startSeconds": 658.56,
+      "endSeconds": 664.24,
+      "text": "outer scope okay so this xyz is not a"
+    },
+    {
+      "startSeconds": 662,
+      "endSeconds": 667.12,
+      "text": "function inside this outer scope in this"
+    },
+    {
+      "startSeconds": 664.24,
+      "endSeconds": 669.519,
+      "text": "close global scope but it is created as"
+    },
+    {
+      "startSeconds": 667.12,
+      "endSeconds": 671.839,
+      "text": "a local variable okay when i say a local"
+    },
+    {
+      "startSeconds": 669.519,
+      "endSeconds": 673.92,
+      "text": "variable if you try to if you want to"
+    },
+    {
+      "startSeconds": 671.839,
+      "endSeconds": 676.399,
+      "text": "access this function inside this"
+    },
+    {
+      "startSeconds": 673.92,
+      "endSeconds": 679.6,
+      "text": "function okay if you want to access this"
+    },
+    {
+      "startSeconds": 676.399,
+      "endSeconds": 681.839,
+      "text": "function inside this function"
+    },
+    {
+      "startSeconds": 679.6,
+      "endSeconds": 685.12,
+      "text": "okay so suppose if you want to access"
+    },
+    {
+      "startSeconds": 681.839,
+      "endSeconds": 687.44,
+      "text": "xyz you can access it over here right"
+    },
+    {
+      "startSeconds": 685.12,
+      "endSeconds": 689.68,
+      "text": "you can access this function see it"
+    },
+    {
+      "startSeconds": 687.44,
+      "endSeconds": 691.92,
+      "text": "prints xyz and you can access this"
+    },
+    {
+      "startSeconds": 689.68,
+      "endSeconds": 693.68,
+      "text": "function over here but if you try to use"
+    },
+    {
+      "startSeconds": 691.92,
+      "endSeconds": 695.92,
+      "text": "it outside like this it will throw out"
+    },
+    {
+      "startSeconds": 693.68,
+      "endSeconds": 697.6,
+      "text": "to be an error where it is okay let's go"
+    },
+    {
+      "startSeconds": 695.92,
+      "endSeconds": 699.92,
+      "text": "to console so it it gives you a"
+    },
+    {
+      "startSeconds": 697.6,
+      "endSeconds": 702.079,
+      "text": "reference error that xyz is not defined"
+    },
+    {
+      "startSeconds": 699.92,
+      "endSeconds": 704.16,
+      "text": "okay so this is what is called as a name"
+    },
+    {
+      "startSeconds": 702.079,
+      "endSeconds": 706.64,
+      "text": "function expression and if you just"
+    },
+    {
+      "startSeconds": 704.16,
+      "endSeconds": 708.48,
+      "text": "don't give a name over here it is like a"
+    },
+    {
+      "startSeconds": 706.64,
+      "endSeconds": 710.8,
+      "text": "normal function expression or you might"
+    },
+    {
+      "startSeconds": 708.48,
+      "endSeconds": 713.279,
+      "text": "call it as an anonymous function to"
+    },
+    {
+      "startSeconds": 710.8,
+      "endSeconds": 715.12,
+      "text": "create a function expression okay so"
+    },
+    {
+      "startSeconds": 713.279,
+      "endSeconds": 717.12,
+      "text": "something like this so let me just"
+    },
+    {
+      "startSeconds": 715.12,
+      "endSeconds": 719.279,
+      "text": "revert it once again"
+    },
+    {
+      "startSeconds": 717.12,
+      "endSeconds": 720.48,
+      "text": "um and just remove this"
+    },
+    {
+      "startSeconds": 719.279,
+      "endSeconds": 723.519,
+      "text": "xyz"
+    },
+    {
+      "startSeconds": 720.48,
+      "endSeconds": 725.279,
+      "text": "and let's move on to the next part okay"
+    },
+    {
+      "startSeconds": 723.519,
+      "endSeconds": 726.32,
+      "text": "one more thing which i have often seen"
+    },
+    {
+      "startSeconds": 725.279,
+      "endSeconds": 728.639,
+      "text": "is that"
+    },
+    {
+      "startSeconds": 726.32,
+      "endSeconds": 731.04,
+      "text": "a lot of programmer use parameters and"
+    },
+    {
+      "startSeconds": 728.639,
+      "endSeconds": 734.399,
+      "text": "arguments as interchangeably terms but"
+    },
+    {
+      "startSeconds": 731.04,
+      "endSeconds": 736.48,
+      "text": "no they are very different okay so these"
+    },
+    {
+      "startSeconds": 734.399,
+      "endSeconds": 738.72,
+      "text": "two things parameter and arguments are"
+    },
+    {
+      "startSeconds": 736.48,
+      "endSeconds": 741.839,
+      "text": "very different okay so whenever you are"
+    },
+    {
+      "startSeconds": 738.72,
+      "endSeconds": 744.88,
+      "text": "creating a function so whatever you put"
+    },
+    {
+      "startSeconds": 741.839,
+      "endSeconds": 746.88,
+      "text": "over here right these these identifier"
+    },
+    {
+      "startSeconds": 744.88,
+      "endSeconds": 748.8,
+      "text": "or this labels right"
+    },
+    {
+      "startSeconds": 746.88,
+      "endSeconds": 750.56,
+      "text": "over here are known as parameters so"
+    },
+    {
+      "startSeconds": 748.8,
+      "endSeconds": 752.639,
+      "text": "that is why you can call it as a param"
+    },
+    {
+      "startSeconds": 750.56,
+      "endSeconds": 756.32,
+      "text": "param1 okay so you might have seen the"
+    },
+    {
+      "startSeconds": 752.639,
+      "endSeconds": 758.56,
+      "text": "syntax written a lot of places so this"
+    },
+    {
+      "startSeconds": 756.32,
+      "endSeconds": 760.8,
+      "text": "identifier or the label"
+    },
+    {
+      "startSeconds": 758.56,
+      "endSeconds": 763.36,
+      "text": "or this variable okay this is a local"
+    },
+    {
+      "startSeconds": 760.8,
+      "endSeconds": 766.16,
+      "text": "variable in the function scope okay so"
+    },
+    {
+      "startSeconds": 763.36,
+      "endSeconds": 767.839,
+      "text": "this this param1 and param two are local"
+    },
+    {
+      "startSeconds": 766.16,
+      "endSeconds": 770.32,
+      "text": "variables inside this function you"
+    },
+    {
+      "startSeconds": 767.839,
+      "endSeconds": 773.68,
+      "text": "cannot access this param1 and param two"
+    },
+    {
+      "startSeconds": 770.32,
+      "endSeconds": 776,
+      "text": "outside okay so these local variables or"
+    },
+    {
+      "startSeconds": 773.68,
+      "endSeconds": 777.92,
+      "text": "you can call it them as the identifiers"
+    },
+    {
+      "startSeconds": 776,
+      "endSeconds": 781.36,
+      "text": "or the labels so whatever you might call"
+    },
+    {
+      "startSeconds": 777.92,
+      "endSeconds": 783.2,
+      "text": "them so these are the parameters"
+    },
+    {
+      "startSeconds": 781.36,
+      "endSeconds": 785.04,
+      "text": "parameters of a function"
+    },
+    {
+      "startSeconds": 783.2,
+      "endSeconds": 788.24,
+      "text": "and the arguments which you pass over"
+    },
+    {
+      "startSeconds": 785.04,
+      "endSeconds": 791.6,
+      "text": "here like if i uh give a one and a two"
+    },
+    {
+      "startSeconds": 788.24,
+      "endSeconds": 793.04,
+      "text": "so this is known as arguments a lot of"
+    },
+    {
+      "startSeconds": 791.6,
+      "endSeconds": 795.04,
+      "text": "people you know"
+    },
+    {
+      "startSeconds": 793.04,
+      "endSeconds": 797.2,
+      "text": "use this as interchangeably and don't"
+    },
+    {
+      "startSeconds": 795.04,
+      "endSeconds": 799.76,
+      "text": "know this that is why often when you"
+    },
+    {
+      "startSeconds": 797.2,
+      "endSeconds": 801.76,
+      "text": "read a blog or you read a book then"
+    },
+    {
+      "startSeconds": 799.76,
+      "endSeconds": 803.519,
+      "text": "somebody is using an argument somewhere"
+    },
+    {
+      "startSeconds": 801.76,
+      "endSeconds": 805.839,
+      "text": "if somebody using parameter so you"
+    },
+    {
+      "startSeconds": 803.519,
+      "endSeconds": 808.639,
+      "text": "should actually have a mental model of"
+    },
+    {
+      "startSeconds": 805.839,
+      "endSeconds": 810.16,
+      "text": "what that person is talking about that"
+    },
+    {
+      "startSeconds": 808.639,
+      "endSeconds": 812,
+      "text": "is when you will understand these blogs"
+    },
+    {
+      "startSeconds": 810.16,
+      "endSeconds": 814.639,
+      "text": "and articles and books right"
+    },
+    {
+      "startSeconds": 812,
+      "endSeconds": 817.92,
+      "text": "so once again the values which we pass"
+    },
+    {
+      "startSeconds": 814.639,
+      "endSeconds": 818.639,
+      "text": "inside a function are known as arguments"
+    },
+    {
+      "startSeconds": 817.92,
+      "endSeconds": 821.2,
+      "text": "and"
+    },
+    {
+      "startSeconds": 818.639,
+      "endSeconds": 823.36,
+      "text": "these label and identifier which gets"
+    },
+    {
+      "startSeconds": 821.2,
+      "endSeconds": 825.44,
+      "text": "those values are known as parameters"
+    },
+    {
+      "startSeconds": 823.36,
+      "endSeconds": 827.279,
+      "text": "okay so now let's move on to the most"
+    },
+    {
+      "startSeconds": 825.44,
+      "endSeconds": 829.12,
+      "text": "critical part which is first class"
+    },
+    {
+      "startSeconds": 827.279,
+      "endSeconds": 831.44,
+      "text": "functions okay"
+    },
+    {
+      "startSeconds": 829.12,
+      "endSeconds": 833.44,
+      "text": "so what are first class functions so"
+    },
+    {
+      "startSeconds": 831.44,
+      "endSeconds": 834.639,
+      "text": "this is a very heavy term for what we"
+    },
+    {
+      "startSeconds": 833.44,
+      "endSeconds": 836.639,
+      "text": "already know"
+    },
+    {
+      "startSeconds": 834.639,
+      "endSeconds": 838.56,
+      "text": "so as i already told you and let me"
+    },
+    {
+      "startSeconds": 836.639,
+      "endSeconds": 841.12,
+      "text": "repeat it once again because it is very"
+    },
+    {
+      "startSeconds": 838.56,
+      "endSeconds": 843.76,
+      "text": "important functions are very beautiful"
+    },
+    {
+      "startSeconds": 841.12,
+      "endSeconds": 846.72,
+      "text": "in javascript functions are very strong"
+    },
+    {
+      "startSeconds": 843.76,
+      "endSeconds": 847.68,
+      "text": "functions are heart of javascript"
+    },
+    {
+      "startSeconds": 846.72,
+      "endSeconds": 849.76,
+      "text": "and"
+    },
+    {
+      "startSeconds": 847.68,
+      "endSeconds": 852.639,
+      "text": "just because it is like that"
+    },
+    {
+      "startSeconds": 849.76,
+      "endSeconds": 854.88,
+      "text": "we call them as a first class functions"
+    },
+    {
+      "startSeconds": 852.639,
+      "endSeconds": 857.44,
+      "text": "so the functions are so beautiful so"
+    },
+    {
+      "startSeconds": 854.88,
+      "endSeconds": 860.639,
+      "text": "beautiful that instead of these"
+    },
+    {
+      "startSeconds": 857.44,
+      "endSeconds": 864.399,
+      "text": "arguments we can even pass functions"
+    },
+    {
+      "startSeconds": 860.639,
+      "endSeconds": 867.199,
+      "text": "inside another functions as an arguments"
+    },
+    {
+      "startSeconds": 864.399,
+      "endSeconds": 869.68,
+      "text": "okay listen to this carefully arguments"
+    },
+    {
+      "startSeconds": 867.199,
+      "endSeconds": 872,
+      "text": "so functions are treated as values right"
+    },
+    {
+      "startSeconds": 869.68,
+      "endSeconds": 874.72,
+      "text": "i told like you can use an anonymous"
+    },
+    {
+      "startSeconds": 872,
+      "endSeconds": 877.04,
+      "text": "function to pass in as a value also okay"
+    },
+    {
+      "startSeconds": 874.72,
+      "endSeconds": 879.36,
+      "text": "that is how beautiful functions are and"
+    },
+    {
+      "startSeconds": 877.04,
+      "endSeconds": 881.279,
+      "text": "you can receive that in the parameters"
+    },
+    {
+      "startSeconds": 879.36,
+      "endSeconds": 884.24,
+      "text": "okay so if i pass this anonymous"
+    },
+    {
+      "startSeconds": 881.279,
+      "endSeconds": 886.32,
+      "text": "function inside param1 and i try to"
+    },
+    {
+      "startSeconds": 884.24,
+      "endSeconds": 888.079,
+      "text": "access this panel and see what we get"
+    },
+    {
+      "startSeconds": 886.32,
+      "endSeconds": 890.56,
+      "text": "okay this is a perfectly valid"
+    },
+    {
+      "startSeconds": 888.079,
+      "endSeconds": 892.72,
+      "text": "javascript okay see we got this"
+    },
+    {
+      "startSeconds": 890.56,
+      "endSeconds": 894.639,
+      "text": "anonymous function inside it right and"
+    },
+    {
+      "startSeconds": 892.72,
+      "endSeconds": 895.76,
+      "text": "there is one more way to pass this"
+    },
+    {
+      "startSeconds": 894.639,
+      "endSeconds": 897.839,
+      "text": "function"
+    },
+    {
+      "startSeconds": 895.76,
+      "endSeconds": 900,
+      "text": "okay inside this function okay suppose"
+    },
+    {
+      "startSeconds": 897.839,
+      "endSeconds": 903.92,
+      "text": "it was a named function let's call it as"
+    },
+    {
+      "startSeconds": 900,
+      "endSeconds": 906.959,
+      "text": "uh x y z okay and if i pass this x y z"
+    },
+    {
+      "startSeconds": 903.92,
+      "endSeconds": 909.04,
+      "text": "like this we can do that too okay so"
+    },
+    {
+      "startSeconds": 906.959,
+      "endSeconds": 911.519,
+      "text": "it's like passing another function"
+    },
+    {
+      "startSeconds": 909.04,
+      "endSeconds": 913.68,
+      "text": "inside a function right we are passing"
+    },
+    {
+      "startSeconds": 911.519,
+      "endSeconds": 915.36,
+      "text": "this x y z inside b"
+    },
+    {
+      "startSeconds": 913.68,
+      "endSeconds": 916.8,
+      "text": "that's how beautiful functions are and"
+    },
+    {
+      "startSeconds": 915.36,
+      "endSeconds": 919.68,
+      "text": "we can do that"
+    },
+    {
+      "startSeconds": 916.8,
+      "endSeconds": 922.32,
+      "text": "and not just this if we pass this"
+    },
+    {
+      "startSeconds": 919.68,
+      "endSeconds": 924.839,
+      "text": "function into this function we can also"
+    },
+    {
+      "startSeconds": 922.32,
+      "endSeconds": 928.079,
+      "text": "return a function from a function"
+    },
+    {
+      "startSeconds": 924.839,
+      "endSeconds": 930.32,
+      "text": "okay crazy it sounds right so we can"
+    },
+    {
+      "startSeconds": 928.079,
+      "endSeconds": 932.399,
+      "text": "return a function from a function we can"
+    },
+    {
+      "startSeconds": 930.32,
+      "endSeconds": 933.6,
+      "text": "return an anonymous function from a"
+    },
+    {
+      "startSeconds": 932.399,
+      "endSeconds": 935.92,
+      "text": "function"
+    },
+    {
+      "startSeconds": 933.6,
+      "endSeconds": 939.6,
+      "text": "and what will happen is when you invoke"
+    },
+    {
+      "startSeconds": 935.92,
+      "endSeconds": 942.079,
+      "text": "this b right when you call this b"
+    },
+    {
+      "startSeconds": 939.6,
+      "endSeconds": 944.56,
+      "text": "this function will be returned over here"
+    },
+    {
+      "startSeconds": 942.079,
+      "endSeconds": 947.44,
+      "text": "right so let's just try to do a console"
+    },
+    {
+      "startSeconds": 944.56,
+      "endSeconds": 948.56,
+      "text": "log of this okay so if i do a console"
+    },
+    {
+      "startSeconds": 947.44,
+      "endSeconds": 950.959,
+      "text": "log of this"
+    },
+    {
+      "startSeconds": 948.56,
+      "endSeconds": 953.519,
+      "text": "so uh and"
+    },
+    {
+      "startSeconds": 950.959,
+      "endSeconds": 956.8,
+      "text": "let me just remove this x y z"
+    },
+    {
+      "startSeconds": 953.519,
+      "endSeconds": 958.56,
+      "text": "and let me just remove this x y z also"
+    },
+    {
+      "startSeconds": 956.8,
+      "endSeconds": 960.959,
+      "text": "and if i now"
+    },
+    {
+      "startSeconds": 958.56,
+      "endSeconds": 963.04,
+      "text": "run this code so see"
+    },
+    {
+      "startSeconds": 960.959,
+      "endSeconds": 964.88,
+      "text": "when we call this function so"
+    },
+    {
+      "startSeconds": 963.04,
+      "endSeconds": 967.36,
+      "text": "this function anonymous functions were"
+    },
+    {
+      "startSeconds": 964.88,
+      "endSeconds": 969.44,
+      "text": "returned from b and we did a console log"
+    },
+    {
+      "startSeconds": 967.36,
+      "endSeconds": 971.279,
+      "text": "so it prints an anonymous function and"
+    },
+    {
+      "startSeconds": 969.44,
+      "endSeconds": 974.16,
+      "text": "if it was a named function we can return"
+    },
+    {
+      "startSeconds": 971.279,
+      "endSeconds": 976.48,
+      "text": "that too okay so what is first class"
+    },
+    {
+      "startSeconds": 974.16,
+      "endSeconds": 978.32,
+      "text": "functions so first class functions is"
+    },
+    {
+      "startSeconds": 976.48,
+      "endSeconds": 981.6,
+      "text": "nothing but this only"
+    },
+    {
+      "startSeconds": 978.32,
+      "endSeconds": 983.839,
+      "text": "the ability to use functions as values"
+    },
+    {
+      "startSeconds": 981.6,
+      "endSeconds": 985.519,
+      "text": "is known as first class functions"
+    },
+    {
+      "startSeconds": 983.839,
+      "endSeconds": 987.92,
+      "text": "so let me repeat it once again the"
+    },
+    {
+      "startSeconds": 985.519,
+      "endSeconds": 990.399,
+      "text": "ability of functions to be used as"
+    },
+    {
+      "startSeconds": 987.92,
+      "endSeconds": 992.959,
+      "text": "values and can be pass this in an"
+    },
+    {
+      "startSeconds": 990.399,
+      "endSeconds": 995.12,
+      "text": "argument to another functions and can be"
+    },
+    {
+      "startSeconds": 992.959,
+      "endSeconds": 998.399,
+      "text": "returned from the functions"
+    },
+    {
+      "startSeconds": 995.12,
+      "endSeconds": 1000.24,
+      "text": "is this ability is known as first class"
+    },
+    {
+      "startSeconds": 998.399,
+      "endSeconds": 1002.56,
+      "text": "functions in javascript"
+    },
+    {
+      "startSeconds": 1000.24,
+      "endSeconds": 1004.48,
+      "text": "nothing more than that okay these"
+    },
+    {
+      "startSeconds": 1002.56,
+      "endSeconds": 1007.199,
+      "text": "ability of these functions to use an n"
+    },
+    {
+      "startSeconds": 1004.48,
+      "endSeconds": 1009.44,
+      "text": "value and assign it to a variable and"
+    },
+    {
+      "startSeconds": 1007.199,
+      "endSeconds": 1011.759,
+      "text": "can be passed into another functions and"
+    },
+    {
+      "startSeconds": 1009.44,
+      "endSeconds": 1014.16,
+      "text": "can be returned out of another functions"
+    },
+    {
+      "startSeconds": 1011.759,
+      "endSeconds": 1016.48,
+      "text": "this ability all over all together is"
+    },
+    {
+      "startSeconds": 1014.16,
+      "endSeconds": 1018.32,
+      "text": "known as first class functions"
+    },
+    {
+      "startSeconds": 1016.48,
+      "endSeconds": 1020.48,
+      "text": "that is what is first class functions"
+    },
+    {
+      "startSeconds": 1018.32,
+      "endSeconds": 1022.399,
+      "text": "and it's not just in javascript it is a"
+    },
+    {
+      "startSeconds": 1020.48,
+      "endSeconds": 1025.36,
+      "text": "programming concept it's in other"
+    },
+    {
+      "startSeconds": 1022.399,
+      "endSeconds": 1028.079,
+      "text": "languages also not in every language but"
+    },
+    {
+      "startSeconds": 1025.36,
+      "endSeconds": 1030,
+      "text": "in many languages also so our interview"
+    },
+    {
+      "startSeconds": 1028.079,
+      "endSeconds": 1032.079,
+      "text": "question can be what are first class"
+    },
+    {
+      "startSeconds": 1030,
+      "endSeconds": 1034.4,
+      "text": "functions in javascript so you have to"
+    },
+    {
+      "startSeconds": 1032.079,
+      "endSeconds": 1036.4,
+      "text": "explain it like this okay when they are"
+    },
+    {
+      "startSeconds": 1034.4,
+      "endSeconds": 1038.079,
+      "text": "treated as a value parsed into another"
+    },
+    {
+      "startSeconds": 1036.4,
+      "endSeconds": 1040.319,
+      "text": "functions or returned from another"
+    },
+    {
+      "startSeconds": 1038.079,
+      "endSeconds": 1043.12,
+      "text": "functions so this is known as a first"
+    },
+    {
+      "startSeconds": 1040.319,
+      "endSeconds": 1045.199,
+      "text": "class functions okay this ability is"
+    },
+    {
+      "startSeconds": 1043.12,
+      "endSeconds": 1046.559,
+      "text": "known as the first class functions"
+    },
+    {
+      "startSeconds": 1045.199,
+      "endSeconds": 1049.36,
+      "text": "that's all it is"
+    },
+    {
+      "startSeconds": 1046.559,
+      "endSeconds": 1051.44,
+      "text": "right so if you read blog articles or if"
+    },
+    {
+      "startSeconds": 1049.36,
+      "endSeconds": 1053.679,
+      "text": "you read books okay so a lot of times"
+    },
+    {
+      "startSeconds": 1051.44,
+      "endSeconds": 1056.16,
+      "text": "you might also find a statement which is"
+    },
+    {
+      "startSeconds": 1053.679,
+      "endSeconds": 1058.32,
+      "text": "functions are first class citizens let"
+    },
+    {
+      "startSeconds": 1056.16,
+      "endSeconds": 1062,
+      "text": "me repeat it once again functions are"
+    },
+    {
+      "startSeconds": 1058.32,
+      "endSeconds": 1064.84,
+      "text": "first class citizens okay so let me"
+    },
+    {
+      "startSeconds": 1062,
+      "endSeconds": 1066.799,
+      "text": "write it down first class"
+    },
+    {
+      "startSeconds": 1064.84,
+      "endSeconds": 1067.919,
+      "text": "citizens okay"
+    },
+    {
+      "startSeconds": 1066.799,
+      "endSeconds": 1070.96,
+      "text": "so"
+    },
+    {
+      "startSeconds": 1067.919,
+      "endSeconds": 1072.4,
+      "text": "when i say first class citizens it means"
+    },
+    {
+      "startSeconds": 1070.96,
+      "endSeconds": 1075.28,
+      "text": "the same thing"
+    },
+    {
+      "startSeconds": 1072.4,
+      "endSeconds": 1078,
+      "text": "first class functions functions are used"
+    },
+    {
+      "startSeconds": 1075.28,
+      "endSeconds": 1080,
+      "text": "as first class citizens so it's both the"
+    },
+    {
+      "startSeconds": 1078,
+      "endSeconds": 1082.24,
+      "text": "same thing okay so if you read it in"
+    },
+    {
+      "startSeconds": 1080,
+      "endSeconds": 1085.039,
+      "text": "some blog or if you read it in some book"
+    },
+    {
+      "startSeconds": 1082.24,
+      "endSeconds": 1086.48,
+      "text": "assume that this ability to be used like"
+    },
+    {
+      "startSeconds": 1085.039,
+      "endSeconds": 1088.72,
+      "text": "values"
+    },
+    {
+      "startSeconds": 1086.48,
+      "endSeconds": 1091.679,
+      "text": "makes the function as first class"
+    },
+    {
+      "startSeconds": 1088.72,
+      "endSeconds": 1093.84,
+      "text": "citizens in javascript i know this is"
+    },
+    {
+      "startSeconds": 1091.679,
+      "endSeconds": 1096.4,
+      "text": "kind of like a playing with english and"
+    },
+    {
+      "startSeconds": 1093.84,
+      "endSeconds": 1098.24,
+      "text": "words right but that's how it is and it"
+    },
+    {
+      "startSeconds": 1096.4,
+      "endSeconds": 1100.24,
+      "text": "is important to know all these things"
+    },
+    {
+      "startSeconds": 1098.24,
+      "endSeconds": 1102.16,
+      "text": "because if we read it in some book we"
+    },
+    {
+      "startSeconds": 1100.24,
+      "endSeconds": 1103.919,
+      "text": "should understand what that author is"
+    },
+    {
+      "startSeconds": 1102.16,
+      "endSeconds": 1106.64,
+      "text": "trying to say right"
+    },
+    {
+      "startSeconds": 1103.919,
+      "endSeconds": 1108.88,
+      "text": "javascript has a very vast community"
+    },
+    {
+      "startSeconds": 1106.64,
+      "endSeconds": 1111.6,
+      "text": "right a lot of people are writing stack"
+    },
+    {
+      "startSeconds": 1108.88,
+      "endSeconds": 1113.6,
+      "text": "overflow answers blogs blogs articles"
+    },
+    {
+      "startSeconds": 1111.6,
+      "endSeconds": 1116.08,
+      "text": "this that and they use all sort of"
+    },
+    {
+      "startSeconds": 1113.6,
+      "endSeconds": 1117.919,
+      "text": "notations so what i try to do is i am"
+    },
+    {
+      "startSeconds": 1116.08,
+      "endSeconds": 1120.08,
+      "text": "just giving you this knowledge so that"
+    },
+    {
+      "startSeconds": 1117.919,
+      "endSeconds": 1121.76,
+      "text": "next time you read these blog articles"
+    },
+    {
+      "startSeconds": 1120.08,
+      "endSeconds": 1123.76,
+      "text": "you will properly understand what that"
+    },
+    {
+      "startSeconds": 1121.76,
+      "endSeconds": 1126.799,
+      "text": "author is trying to say if somebody says"
+    },
+    {
+      "startSeconds": 1123.76,
+      "endSeconds": 1128.559,
+      "text": "that functions are first class citizens"
+    },
+    {
+      "startSeconds": 1126.799,
+      "endSeconds": 1130.96,
+      "text": "that means he is referring to first"
+    },
+    {
+      "startSeconds": 1128.559,
+      "endSeconds": 1132.96,
+      "text": "class functions that means the ability"
+    },
+    {
+      "startSeconds": 1130.96,
+      "endSeconds": 1135.28,
+      "text": "of these functions to be used as values"
+    },
+    {
+      "startSeconds": 1132.96,
+      "endSeconds": 1137.52,
+      "text": "passed inside another function get out"
+    },
+    {
+      "startSeconds": 1135.28,
+      "endSeconds": 1139.679,
+      "text": "from the function and like returned out"
+    },
+    {
+      "startSeconds": 1137.52,
+      "endSeconds": 1142,
+      "text": "from the functions use them to assign"
+    },
+    {
+      "startSeconds": 1139.679,
+      "endSeconds": 1144,
+      "text": "into a variable all these things make"
+    },
+    {
+      "startSeconds": 1142,
+      "endSeconds": 1146.24,
+      "text": "say functions as the first class"
+    },
+    {
+      "startSeconds": 1144,
+      "endSeconds": 1148.64,
+      "text": "citizens in javascript"
+    },
+    {
+      "startSeconds": 1146.24,
+      "endSeconds": 1151.2,
+      "text": "remember will you remember this lifetime"
+    },
+    {
+      "startSeconds": 1148.64,
+      "endSeconds": 1152.96,
+      "text": "remember this lifetime okay so one more"
+    },
+    {
+      "startSeconds": 1151.2,
+      "endSeconds": 1155.12,
+      "text": "doubt you might get is that what if i"
+    },
+    {
+      "startSeconds": 1152.96,
+      "endSeconds": 1157.919,
+      "text": "use a letter const over here so suppose"
+    },
+    {
+      "startSeconds": 1155.12,
+      "endSeconds": 1160.4,
+      "text": "if i use a letter const over here so in"
+    },
+    {
+      "startSeconds": 1157.919,
+      "endSeconds": 1162.64,
+      "text": "that case also it behaves the same way"
+    },
+    {
+      "startSeconds": 1160.4,
+      "endSeconds": 1165.44,
+      "text": "just like let and const normal variables"
+    },
+    {
+      "startSeconds": 1162.64,
+      "endSeconds": 1168.16,
+      "text": "do they are in a temporal dead zone"
+    },
+    {
+      "startSeconds": 1165.44,
+      "endSeconds": 1170.72,
+      "text": "until it encounters this statement okay"
+    },
+    {
+      "startSeconds": 1168.16,
+      "endSeconds": 1172.4,
+      "text": "so you it is treated exactly the same if"
+    },
+    {
+      "startSeconds": 1170.72,
+      "endSeconds": 1174.88,
+      "text": "you want to get more information it is"
+    },
+    {
+      "startSeconds": 1172.4,
+      "endSeconds": 1176.64,
+      "text": "in the latin cons video right go watch"
+    },
+    {
+      "startSeconds": 1174.88,
+      "endSeconds": 1178.88,
+      "text": "that again if you are still confused"
+    },
+    {
+      "startSeconds": 1176.64,
+      "endSeconds": 1180.96,
+      "text": "about it so in the latin const video"
+    },
+    {
+      "startSeconds": 1178.88,
+      "endSeconds": 1183.679,
+      "text": "whatever rules are applied the same"
+    },
+    {
+      "startSeconds": 1180.96,
+      "endSeconds": 1186.48,
+      "text": "rules are applied to these also so these"
+    },
+    {
+      "startSeconds": 1183.679,
+      "endSeconds": 1188.64,
+      "text": "are nothing this const b is nothing but"
+    },
+    {
+      "startSeconds": 1186.48,
+      "endSeconds": 1191.039,
+      "text": "just like a constant another variable"
+    },
+    {
+      "startSeconds": 1188.64,
+      "endSeconds": 1193.12,
+      "text": "and this function over here is acting"
+    },
+    {
+      "startSeconds": 1191.039,
+      "endSeconds": 1196.16,
+      "text": "just like any other value which is being"
+    },
+    {
+      "startSeconds": 1193.12,
+      "endSeconds": 1198.4,
+      "text": "assigned to this b okay so that's how"
+    },
+    {
+      "startSeconds": 1196.16,
+      "endSeconds": 1200.08,
+      "text": "and that's what it is okay"
+    },
+    {
+      "startSeconds": 1198.4,
+      "endSeconds": 1201.44,
+      "text": "so now this function statement in a"
+    },
+    {
+      "startSeconds": 1200.08,
+      "endSeconds": 1203.44,
+      "text": "function expression or a function"
+    },
+    {
+      "startSeconds": 1201.44,
+      "endSeconds": 1206.4,
+      "text": "declaration these all things can also be"
+    },
+    {
+      "startSeconds": 1203.44,
+      "endSeconds": 1209.12,
+      "text": "written using arrow functions okay arrow"
+    },
+    {
+      "startSeconds": 1206.4,
+      "endSeconds": 1212.799,
+      "text": "functions has come up as a part of es6"
+    },
+    {
+      "startSeconds": 1209.12,
+      "endSeconds": 1215.2,
+      "text": "you can call it as ecmascript 2015 and"
+    },
+    {
+      "startSeconds": 1212.799,
+      "endSeconds": 1218.4,
+      "text": "this let const arrow functions these"
+    },
+    {
+      "startSeconds": 1215.2,
+      "endSeconds": 1220,
+      "text": "things were introduced in es6 okay so"
+    },
+    {
+      "startSeconds": 1218.4,
+      "endSeconds": 1221.679,
+      "text": "these function statements function"
+    },
+    {
+      "startSeconds": 1220,
+      "endSeconds": 1224.48,
+      "text": "expression this all things can be"
+    },
+    {
+      "startSeconds": 1221.679,
+      "endSeconds": 1226.799,
+      "text": "created using arrow functions also okay"
+    },
+    {
+      "startSeconds": 1224.48,
+      "endSeconds": 1228.559,
+      "text": "but let's not do this in this video"
+    },
+    {
+      "startSeconds": 1226.799,
+      "endSeconds": 1229.679,
+      "text": "because i haven't told you what an arrow"
+    },
+    {
+      "startSeconds": 1228.559,
+      "endSeconds": 1231.679,
+      "text": "function is"
+    },
+    {
+      "startSeconds": 1229.679,
+      "endSeconds": 1234,
+      "text": "up till now in this series i have seen a"
+    },
+    {
+      "startSeconds": 1231.679,
+      "endSeconds": 1235.44,
+      "text": "lot of people asking in comments that"
+    },
+    {
+      "startSeconds": 1234,
+      "endSeconds": 1236.799,
+      "text": "what will happen in case of arrow"
+    },
+    {
+      "startSeconds": 1235.44,
+      "endSeconds": 1238.72,
+      "text": "functions error functions error"
+    },
+    {
+      "startSeconds": 1236.799,
+      "endSeconds": 1241.12,
+      "text": "functions don't worry people"
+    },
+    {
+      "startSeconds": 1238.72,
+      "endSeconds": 1243.039,
+      "text": "i am covering the basics first of all"
+    },
+    {
+      "startSeconds": 1241.12,
+      "endSeconds": 1245.2,
+      "text": "okay the basics of javascript because"
+    },
+    {
+      "startSeconds": 1243.039,
+      "endSeconds": 1247.6,
+      "text": "when javascript was built it was not"
+    },
+    {
+      "startSeconds": 1245.2,
+      "endSeconds": 1249.6,
+      "text": "built with arrow functions right it used"
+    },
+    {
+      "startSeconds": 1247.6,
+      "endSeconds": 1252.32,
+      "text": "to have where it used to have function"
+    },
+    {
+      "startSeconds": 1249.6,
+      "endSeconds": 1255.6,
+      "text": "keyword so let us first explore these"
+    },
+    {
+      "startSeconds": 1252.32,
+      "endSeconds": 1257.2,
+      "text": "basic nitty gritty things about uh these"
+    },
+    {
+      "startSeconds": 1255.6,
+      "endSeconds": 1259.76,
+      "text": "this beauty of javascript which was"
+    },
+    {
+      "startSeconds": 1257.2,
+      "endSeconds": 1262.159,
+      "text": "originally made right and we will slowly"
+    },
+    {
+      "startSeconds": 1259.76,
+      "endSeconds": 1265.039,
+      "text": "transition towards this es6 new things"
+    },
+    {
+      "startSeconds": 1262.159,
+      "endSeconds": 1266.72,
+      "text": "also you know i am not avoiding let"
+    },
+    {
+      "startSeconds": 1265.039,
+      "endSeconds": 1268.559,
+      "text": "const or"
+    },
+    {
+      "startSeconds": 1266.72,
+      "endSeconds": 1271.12,
+      "text": "arrow functions or something because"
+    },
+    {
+      "startSeconds": 1268.559,
+      "endSeconds": 1272.96,
+      "text": "those things are being used a lot right"
+    },
+    {
+      "startSeconds": 1271.12,
+      "endSeconds": 1274.96,
+      "text": "i will make a separate video all"
+    },
+    {
+      "startSeconds": 1272.96,
+      "endSeconds": 1276.64,
+      "text": "together just for covering arrow"
+    },
+    {
+      "startSeconds": 1274.96,
+      "endSeconds": 1278,
+      "text": "functions that will be a very"
+    },
+    {
+      "startSeconds": 1276.64,
+      "endSeconds": 1281.039,
+      "text": "interesting video i will be covering"
+    },
+    {
+      "startSeconds": 1278,
+      "endSeconds": 1283.52,
+      "text": "everything like how how this keyword"
+    },
+    {
+      "startSeconds": 1281.039,
+      "endSeconds": 1285.44,
+      "text": "works and how arrow function syntax"
+    },
+    {
+      "startSeconds": 1283.52,
+      "endSeconds": 1286.88,
+      "text": "works how higher order function works"
+    },
+    {
+      "startSeconds": 1285.44,
+      "endSeconds": 1289.12,
+      "text": "and how"
+    },
+    {
+      "startSeconds": 1286.88,
+      "endSeconds": 1290.64,
+      "text": "statements declaration expression"
+    },
+    {
+      "startSeconds": 1289.12,
+      "endSeconds": 1292.64,
+      "text": "everything we will be covering in arrow"
+    },
+    {
+      "startSeconds": 1290.64,
+      "endSeconds": 1294.24,
+      "text": "function series just keep calm and wait"
+    },
+    {
+      "startSeconds": 1292.64,
+      "endSeconds": 1296,
+      "text": "no issues everything will be covered"
+    },
+    {
+      "startSeconds": 1294.24,
+      "endSeconds": 1299.679,
+      "text": "slowly slowly slowly slowly slowly"
+    },
+    {
+      "startSeconds": 1296,
+      "endSeconds": 1301.44,
+      "text": "slowly slowly slowly slowly slowly and"
+    },
+    {
+      "startSeconds": 1299.679,
+      "endSeconds": 1303.039,
+      "text": "trust me i'm not going anywhere i'll"
+    },
+    {
+      "startSeconds": 1301.44,
+      "endSeconds": 1305.36,
+      "text": "teach you everything just keep on"
+    },
+    {
+      "startSeconds": 1303.039,
+      "endSeconds": 1307.6,
+      "text": "watching this series and watch it in the"
+    },
+    {
+      "startSeconds": 1305.36,
+      "endSeconds": 1309.28,
+      "text": "sequence okay in the next video we will"
+    },
+    {
+      "startSeconds": 1307.6,
+      "endSeconds": 1311.12,
+      "text": "be covering callbacks and higher order"
+    },
+    {
+      "startSeconds": 1309.28,
+      "endSeconds": 1312.799,
+      "text": "functions those are very very very"
+    },
+    {
+      "startSeconds": 1311.12,
+      "endSeconds": 1315.36,
+      "text": "important topics in javascript if you"
+    },
+    {
+      "startSeconds": 1312.799,
+      "endSeconds": 1317.84,
+      "text": "want to learn functional programming"
+    },
+    {
+      "startSeconds": 1315.36,
+      "endSeconds": 1319.919,
+      "text": "okay so don't miss that video that is a"
+    },
+    {
+      "startSeconds": 1317.84,
+      "endSeconds": 1321.44,
+      "text": "very crucial video but before moving on"
+    },
+    {
+      "startSeconds": 1319.919,
+      "endSeconds": 1323.44,
+      "text": "to that video give this video a thumbs"
+    },
+    {
+      "startSeconds": 1321.44,
+      "endSeconds": 1325.6,
+      "text": "up it gives me a huge motivation and see"
+    },
+    {
+      "startSeconds": 1323.44,
+      "endSeconds": 1328.6,
+      "text": "you in the next video till then thank"
+    },
+    {
+      "startSeconds": 1325.6,
+      "endSeconds": 1344.54,
+      "text": "you for watching namaste javascript"
+    },
+    {
+      "startSeconds": 1328.6,
+      "endSeconds": 1347.609,
+      "text": "[Music]"
+    },
+    {
+      "startSeconds": 1344.54,
+      "endSeconds": 1347.609,
+      "text": "[Applause]"
+    },
+    {
+      "startSeconds": 1347.919,
+      "endSeconds": 1350.919,
+      "text": "me"
+    }
+  ]
+}

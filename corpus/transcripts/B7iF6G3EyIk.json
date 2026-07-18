@@ -1,0 +1,1232 @@
+{
+  "videoId": "B7iF6G3EyIk",
+  "videoTitle": "undefined vs not defined in JS 🤔 | Namaste JavaScript Ep. 6",
+  "languageCode": "en",
+  "segments": [
+    {
+      "startSeconds": 0.08,
+      "endSeconds": 5.04,
+      "text": "Undefined is a very special keyword in"
+    },
+    {
+      "startSeconds": 2.24,
+      "endSeconds": 7.68,
+      "text": "JavaScript and it is not there in other"
+    },
+    {
+      "startSeconds": 5.04,
+      "endSeconds": 10.48,
+      "text": "languages. It has a lot to do with how"
+    },
+    {
+      "startSeconds": 7.68,
+      "endSeconds": 12.48,
+      "text": "JavaScript code is executed. So as we"
+    },
+    {
+      "startSeconds": 10.48,
+      "endSeconds": 15.28,
+      "text": "have studied in the previous videos also"
+    },
+    {
+      "startSeconds": 12.48,
+      "endSeconds": 17.52,
+      "text": "that JavaScript code is executed in a"
+    },
+    {
+      "startSeconds": 15.28,
+      "endSeconds": 20.16,
+      "text": "different way. It creates a global"
+    },
+    {
+      "startSeconds": 17.52,
+      "endSeconds": 22.64,
+      "text": "execution context and allocates memory"
+    },
+    {
+      "startSeconds": 20.16,
+      "endSeconds": 24.16,
+      "text": "to all the variables and functions even"
+    },
+    {
+      "startSeconds": 22.64,
+      "endSeconds": 27.279,
+      "text": "before a single line of code is"
+    },
+    {
+      "startSeconds": 24.16,
+      "endSeconds": 30,
+      "text": "executed. Remember this. So undefined"
+    },
+    {
+      "startSeconds": 27.279,
+      "endSeconds": 32.16,
+      "text": "comes into picture here only. Let us see"
+    },
+    {
+      "startSeconds": 30,
+      "endSeconds": 35.2,
+      "text": "with the code also. So suppose we"
+    },
+    {
+      "startSeconds": 32.16,
+      "endSeconds": 37.76,
+      "text": "created a variable a is equals to 7."
+    },
+    {
+      "startSeconds": 35.2,
+      "endSeconds": 40.879,
+      "text": "Right? So even before this line of code"
+    },
+    {
+      "startSeconds": 37.76,
+      "endSeconds": 43.68,
+      "text": "is executed, right? JavaScript is trying"
+    },
+    {
+      "startSeconds": 40.879,
+      "endSeconds": 46.32,
+      "text": "to allocate memory to this a. Right?"
+    },
+    {
+      "startSeconds": 43.68,
+      "endSeconds": 48.8,
+      "text": "Memory space to a even before this line"
+    },
+    {
+      "startSeconds": 46.32,
+      "endSeconds": 50.64,
+      "text": "of code is run. Okay? Let me show you"
+    },
+    {
+      "startSeconds": 48.8,
+      "endSeconds": 52.48,
+      "text": "with the help of debugger. So I am"
+    },
+    {
+      "startSeconds": 50.64,
+      "endSeconds": 55.68,
+      "text": "putting the debugger right before this"
+    },
+    {
+      "startSeconds": 52.48,
+      "endSeconds": 58,
+      "text": "line is executed. Okay."
+    },
+    {
+      "startSeconds": 55.68,
+      "endSeconds": 61.92,
+      "text": "So let us see an interesting thing. So"
+    },
+    {
+      "startSeconds": 58,
+      "endSeconds": 64.559,
+      "text": "if we refresh the page, this A, this"
+    },
+    {
+      "startSeconds": 61.92,
+      "endSeconds": 67.28,
+      "text": "line hasn't been executed yet, right?"
+    },
+    {
+      "startSeconds": 64.559,
+      "endSeconds": 69.68,
+      "text": "But JavaScript has already allocated"
+    },
+    {
+      "startSeconds": 67.28,
+      "endSeconds": 72.96,
+      "text": "memory to this A. Okay? So we have"
+    },
+    {
+      "startSeconds": 69.68,
+      "endSeconds": 75.76,
+      "text": "already reserved memory for A now. Okay?"
+    },
+    {
+      "startSeconds": 72.96,
+      "endSeconds": 79.119,
+      "text": "So if we see here is the reserved"
+    },
+    {
+      "startSeconds": 75.76,
+      "endSeconds": 81.36,
+      "text": "memory. So right now A is undefined. So"
+    },
+    {
+      "startSeconds": 79.119,
+      "endSeconds": 83.6,
+      "text": "at this point if you try to in the"
+    },
+    {
+      "startSeconds": 81.36,
+      "endSeconds": 85.439,
+      "text": "console, if you try to log what A is."
+    },
+    {
+      "startSeconds": 83.6,
+      "endSeconds": 86.96,
+      "text": "See, I have hold the program. I have"
+    },
+    {
+      "startSeconds": 85.439,
+      "endSeconds": 88.799,
+      "text": "held the program like I have put a"
+    },
+    {
+      "startSeconds": 86.96,
+      "endSeconds": 90.88,
+      "text": "debugger right so I have hold the"
+    },
+    {
+      "startSeconds": 88.799,
+      "endSeconds": 94.159,
+      "text": "program at that state itself. So if you"
+    },
+    {
+      "startSeconds": 90.88,
+      "endSeconds": 96.96,
+      "text": "try to log a right now it is undefined."
+    },
+    {
+      "startSeconds": 94.159,
+      "endSeconds": 98.96,
+      "text": "So why this happened? Okay so when it"
+    },
+    {
+      "startSeconds": 96.96,
+      "endSeconds": 102.56,
+      "text": "allocates memory to all the variables"
+    },
+    {
+      "startSeconds": 98.96,
+      "endSeconds": 106.159,
+      "text": "and functions to the variables it tries"
+    },
+    {
+      "startSeconds": 102.56,
+      "endSeconds": 108.64,
+      "text": "to put a placeholder right it is like a"
+    },
+    {
+      "startSeconds": 106.159,
+      "endSeconds": 111.36,
+      "text": "placeholder which is placed in the"
+    },
+    {
+      "startSeconds": 108.64,
+      "endSeconds": 114.72,
+      "text": "memory. Okay that special keyword is"
+    },
+    {
+      "startSeconds": 111.36,
+      "endSeconds": 117.84,
+      "text": "undefined. So if we try to log this so"
+    },
+    {
+      "startSeconds": 114.72,
+      "endSeconds": 120.32,
+      "text": "you get undefined in it. So undefined is"
+    },
+    {
+      "startSeconds": 117.84,
+      "endSeconds": 122.24,
+      "text": "like taking memory it is it is very"
+    },
+    {
+      "startSeconds": 120.32,
+      "endSeconds": 124.399,
+      "text": "different than not defined. Okay. So"
+    },
+    {
+      "startSeconds": 122.24,
+      "endSeconds": 127.2,
+      "text": "suppose if I try to access something"
+    },
+    {
+      "startSeconds": 124.399,
+      "endSeconds": 130.16,
+      "text": "else right. So suppose if I try to do a"
+    },
+    {
+      "startSeconds": 127.2,
+      "endSeconds": 133.12,
+      "text": "console log of X over here. Okay. So"
+    },
+    {
+      "startSeconds": 130.16,
+      "endSeconds": 135.68,
+      "text": "which we have not allocated memory to."
+    },
+    {
+      "startSeconds": 133.12,
+      "endSeconds": 137.68,
+      "text": "Okay. If we run this code if we run this"
+    },
+    {
+      "startSeconds": 135.68,
+      "endSeconds": 140.16,
+      "text": "code we have not allocated any memory to"
+    },
+    {
+      "startSeconds": 137.68,
+      "endSeconds": 143.84,
+      "text": "X. Right? So what will happen if we try"
+    },
+    {
+      "startSeconds": 140.16,
+      "endSeconds": 147.76,
+      "text": "to find X? you won't find anything that"
+    },
+    {
+      "startSeconds": 143.84,
+      "endSeconds": 151.2,
+      "text": "is known as not defined but we have"
+    },
+    {
+      "startSeconds": 147.76,
+      "endSeconds": 154.48,
+      "text": "allocated memory to a if you try to"
+    },
+    {
+      "startSeconds": 151.2,
+      "endSeconds": 157.519,
+      "text": "console log a we can find that so even"
+    },
+    {
+      "startSeconds": 154.48,
+      "endSeconds": 160.16,
+      "text": "before I put this where a is equals to 7"
+    },
+    {
+      "startSeconds": 157.519,
+      "endSeconds": 163.599,
+      "text": "right so suppose if I try to log a over"
+    },
+    {
+      "startSeconds": 160.16,
+      "endSeconds": 166.8,
+      "text": "here even before putting seven to a I am"
+    },
+    {
+      "startSeconds": 163.599,
+      "endSeconds": 169.36,
+      "text": "trying to log this a so what happens is"
+    },
+    {
+      "startSeconds": 166.8,
+      "endSeconds": 172.879,
+      "text": "what happens is"
+    },
+    {
+      "startSeconds": 169.36,
+      "endSeconds": 174.72,
+      "text": "let me just run it so In the console you"
+    },
+    {
+      "startSeconds": 172.879,
+      "endSeconds": 177.76,
+      "text": "will find that we have printed"
+    },
+    {
+      "startSeconds": 174.72,
+      "endSeconds": 179.68,
+      "text": "undefined. This a was printed undefined."
+    },
+    {
+      "startSeconds": 177.76,
+      "endSeconds": 182.159,
+      "text": "This is the value which JavaScript"
+    },
+    {
+      "startSeconds": 179.68,
+      "endSeconds": 184.48,
+      "text": "engine allocated to a while creating the"
+    },
+    {
+      "startSeconds": 182.159,
+      "endSeconds": 187.519,
+      "text": "memory. Okay. But once this line has"
+    },
+    {
+      "startSeconds": 184.48,
+      "endSeconds": 190.319,
+      "text": "been executed after this line you will"
+    },
+    {
+      "startSeconds": 187.519,
+      "endSeconds": 193.28,
+      "text": "see that the value of a has changed to"
+    },
+    {
+      "startSeconds": 190.319,
+      "endSeconds": 195.76,
+      "text": "7. Okay. Let me just remove that x. If"
+    },
+    {
+      "startSeconds": 193.28,
+      "endSeconds": 199.599,
+      "text": "you try to log here see it was undefined"
+    },
+    {
+      "startSeconds": 195.76,
+      "endSeconds": 202.48,
+      "text": "before. This undefined was coming from"
+    },
+    {
+      "startSeconds": 199.599,
+      "endSeconds": 205.04,
+      "text": "the place just because JavaScript engine"
+    },
+    {
+      "startSeconds": 202.48,
+      "endSeconds": 208.879,
+      "text": "allocated undefined that special"
+    },
+    {
+      "startSeconds": 205.04,
+      "endSeconds": 210.959,
+      "text": "placeholder to a okay not like not"
+    },
+    {
+      "startSeconds": 208.879,
+      "endSeconds": 213.76,
+      "text": "defined not defined in something which"
+    },
+    {
+      "startSeconds": 210.959,
+      "endSeconds": 216,
+      "text": "has not been allocated memory okay so"
+    },
+    {
+      "startSeconds": 213.76,
+      "endSeconds": 218.959,
+      "text": "this is the difference between undefined"
+    },
+    {
+      "startSeconds": 216,
+      "endSeconds": 221.92,
+      "text": "and not defined okay we'll see something"
+    },
+    {
+      "startSeconds": 218.959,
+      "endSeconds": 223.44,
+      "text": "more so remember undefined is not equal"
+    },
+    {
+      "startSeconds": 221.92,
+      "endSeconds": 225.36,
+      "text": "to empty some people think that"
+    },
+    {
+      "startSeconds": 223.44,
+      "endSeconds": 227.36,
+      "text": "undefined means empty like it is not"
+    },
+    {
+      "startSeconds": 225.36,
+      "endSeconds": 229.84,
+      "text": "taking up any memory space or something."
+    },
+    {
+      "startSeconds": 227.36,
+      "endSeconds": 232.239,
+      "text": "No, it is a special keyword. It takes up"
+    },
+    {
+      "startSeconds": 229.84,
+      "endSeconds": 234.56,
+      "text": "its own memory. But you can assume it to"
+    },
+    {
+      "startSeconds": 232.239,
+      "endSeconds": 237.12,
+      "text": "be like a placeholder which is kept for"
+    },
+    {
+      "startSeconds": 234.56,
+      "endSeconds": 239.28,
+      "text": "the time being until the variable is"
+    },
+    {
+      "startSeconds": 237.12,
+      "endSeconds": 241.2,
+      "text": "assigned some other value. Okay. Till"
+    },
+    {
+      "startSeconds": 239.28,
+      "endSeconds": 243.76,
+      "text": "that point, it will store this"
+    },
+    {
+      "startSeconds": 241.2,
+      "endSeconds": 245.68,
+      "text": "placeholder known as undefined. Okay."
+    },
+    {
+      "startSeconds": 243.76,
+      "endSeconds": 249.12,
+      "text": "And one more thing I would show you"
+    },
+    {
+      "startSeconds": 245.68,
+      "endSeconds": 251.92,
+      "text": "right now is suppose if I do um suppose"
+    },
+    {
+      "startSeconds": 249.12,
+      "endSeconds": 254.799,
+      "text": "this is undefined, right? So if I never"
+    },
+    {
+      "startSeconds": 251.92,
+      "endSeconds": 257.28,
+      "text": "put any value inside a right like I just"
+    },
+    {
+      "startSeconds": 254.799,
+      "endSeconds": 259.68,
+      "text": "declared that okay where a and I never"
+    },
+    {
+      "startSeconds": 257.28,
+      "endSeconds": 262.24,
+      "text": "put any value to it. So it will"
+    },
+    {
+      "startSeconds": 259.68,
+      "endSeconds": 264.96,
+      "text": "throughout our whole program have this"
+    },
+    {
+      "startSeconds": 262.24,
+      "endSeconds": 267.84,
+      "text": "value undefined that placeholder kept"
+    },
+    {
+      "startSeconds": 264.96,
+      "endSeconds": 270.24,
+      "text": "inside a. And to show you that it is"
+    },
+    {
+      "startSeconds": 267.84,
+      "endSeconds": 272.88,
+      "text": "something in JavaScript we can also do"
+    },
+    {
+      "startSeconds": 270.24,
+      "endSeconds": 277.68,
+      "text": "something like this. Okay. Uh so suppose"
+    },
+    {
+      "startSeconds": 272.88,
+      "endSeconds": 280.24,
+      "text": "if I have my uh if a is equal equal"
+    },
+    {
+      "startSeconds": 277.68,
+      "endSeconds": 282.4,
+      "text": "equal to undefined. So equal equal equal"
+    },
+    {
+      "startSeconds": 280.24,
+      "endSeconds": 284.56,
+      "text": "to you might not be aware of this syntax"
+    },
+    {
+      "startSeconds": 282.4,
+      "endSeconds": 286.56,
+      "text": "but see it is just checking whether two"
+    },
+    {
+      "startSeconds": 284.56,
+      "endSeconds": 288.479,
+      "text": "things are equal or not and strictly"
+    },
+    {
+      "startSeconds": 286.56,
+      "endSeconds": 290.56,
+      "text": "checking we will talk about it later in"
+    },
+    {
+      "startSeconds": 288.479,
+      "endSeconds": 292.08,
+      "text": "the videos okay that will be interesting"
+    },
+    {
+      "startSeconds": 290.56,
+      "endSeconds": 294,
+      "text": "but for now just assume that it is"
+    },
+    {
+      "startSeconds": 292.08,
+      "endSeconds": 296.88,
+      "text": "checking two things are equal or not so"
+    },
+    {
+      "startSeconds": 294,
+      "endSeconds": 299.36,
+      "text": "if we try to see that a is equal equal"
+    },
+    {
+      "startSeconds": 296.88,
+      "endSeconds": 301.52,
+      "text": "to undefined okay that undefined is a"
+    },
+    {
+      "startSeconds": 299.36,
+      "endSeconds": 304.56,
+      "text": "thing or not so if we try to do a"
+    },
+    {
+      "startSeconds": 301.52,
+      "endSeconds": 306.88,
+      "text": "console log of"
+    },
+    {
+      "startSeconds": 304.56,
+      "endSeconds": 308.72,
+      "text": "over here let us just log it a is"
+    },
+    {
+      "startSeconds": 306.88,
+      "endSeconds": 313.039,
+      "text": "undefined"
+    },
+    {
+      "startSeconds": 308.72,
+      "endSeconds": 318.479,
+      "text": "Okay. And if we try to do something like"
+    },
+    {
+      "startSeconds": 313.039,
+      "endSeconds": 324.16,
+      "text": "else, we just console log"
+    },
+    {
+      "startSeconds": 318.479,
+      "endSeconds": 327.199,
+      "text": "a um string a is not undefined. Okay. So"
+    },
+    {
+      "startSeconds": 324.16,
+      "endSeconds": 331.039,
+      "text": "if we try to check like this, what you"
+    },
+    {
+      "startSeconds": 327.199,
+      "endSeconds": 334.08,
+      "text": "will see? See a is undefined. Okay. A is"
+    },
+    {
+      "startSeconds": 331.039,
+      "endSeconds": 336.479,
+      "text": "undefined. It is like it goes into this"
+    },
+    {
+      "startSeconds": 334.08,
+      "endSeconds": 339.36,
+      "text": "if it meets this condition. It go inside"
+    },
+    {
+      "startSeconds": 336.479,
+      "endSeconds": 342.72,
+      "text": "this if block. And suppose if I put some"
+    },
+    {
+      "startSeconds": 339.36,
+      "endSeconds": 346.32,
+      "text": "value in a okay a is equals to 10"
+    },
+    {
+      "startSeconds": 342.72,
+      "endSeconds": 348.96,
+      "text": "meanwhile so it will say that a is not"
+    },
+    {
+      "startSeconds": 346.32,
+      "endSeconds": 351.52,
+      "text": "undefined it has some value in it okay"
+    },
+    {
+      "startSeconds": 348.96,
+      "endSeconds": 354.72,
+      "text": "now the a is replaced that undefined is"
+    },
+    {
+      "startSeconds": 351.52,
+      "endSeconds": 356.56,
+      "text": "replaced by 10 interesting right now"
+    },
+    {
+      "startSeconds": 354.72,
+      "endSeconds": 358.08,
+      "text": "when we are talking about undefined let"
+    },
+    {
+      "startSeconds": 356.56,
+      "endSeconds": 361.12,
+      "text": "me tell you a little bit more about"
+    },
+    {
+      "startSeconds": 358.08,
+      "endSeconds": 363.84,
+      "text": "JavaScript and variables in it okay so"
+    },
+    {
+      "startSeconds": 361.12,
+      "endSeconds": 366.4,
+      "text": "you know JavaScript is a loosely typed"
+    },
+    {
+      "startSeconds": 363.84,
+      "endSeconds": 369.199,
+      "text": "language so loosely typed means that it"
+    },
+    {
+      "startSeconds": 366.4,
+      "endSeconds": 371.52,
+      "text": "does not attaches its variables to any"
+    },
+    {
+      "startSeconds": 369.199,
+      "endSeconds": 374.639,
+      "text": "specific data type. So suppose if I"
+    },
+    {
+      "startSeconds": 371.52,
+      "endSeconds": 376.88,
+      "text": "created a and put in string in it. So"
+    },
+    {
+      "startSeconds": 374.639,
+      "endSeconds": 378.88,
+      "text": "later on in the program I can also put"
+    },
+    {
+      "startSeconds": 376.88,
+      "endSeconds": 381.759,
+      "text": "numbers in it. I can also put boolean in"
+    },
+    {
+      "startSeconds": 378.88,
+      "endSeconds": 384.16,
+      "text": "it. It is like uh very JavaScript is"
+    },
+    {
+      "startSeconds": 381.759,
+      "endSeconds": 386.16,
+      "text": "very flexible in this case. Right? It is"
+    },
+    {
+      "startSeconds": 384.16,
+      "endSeconds": 388.319,
+      "text": "loosely typed. That is known as loosely"
+    },
+    {
+      "startSeconds": 386.16,
+      "endSeconds": 390.72,
+      "text": "type language. If it was strict type"
+    },
+    {
+      "startSeconds": 388.319,
+      "endSeconds": 394.319,
+      "text": "then uh just like other languages just"
+    },
+    {
+      "startSeconds": 390.72,
+      "endSeconds": 397.36,
+      "text": "like C or C++ if you assign a variable"
+    },
+    {
+      "startSeconds": 394.319,
+      "endSeconds": 400.88,
+      "text": "that if it is a string a so it will only"
+    },
+    {
+      "startSeconds": 397.36,
+      "endSeconds": 403.199,
+      "text": "hold string it won't hold numbers or"
+    },
+    {
+      "startSeconds": 400.88,
+      "endSeconds": 405.199,
+      "text": "booleans or anything else but it is not"
+    },
+    {
+      "startSeconds": 403.199,
+      "endSeconds": 407.12,
+      "text": "the case in JavaScript you can put"
+    },
+    {
+      "startSeconds": 405.199,
+      "endSeconds": 411.28,
+      "text": "anything and everything inside this"
+    },
+    {
+      "startSeconds": 407.12,
+      "endSeconds": 414.72,
+      "text": "variable okay so if I do a"
+    },
+    {
+      "startSeconds": 411.28,
+      "endSeconds": 417.12,
+      "text": "for the time being it can like just hold"
+    },
+    {
+      "startSeconds": 414.72,
+      "endSeconds": 420.24,
+      "text": "undefined okay if I do a console So log"
+    },
+    {
+      "startSeconds": 417.12,
+      "endSeconds": 422.72,
+      "text": "over here it will just hold undefined."
+    },
+    {
+      "startSeconds": 420.24,
+      "endSeconds": 425.919,
+      "text": "Okay. And if I later on put a is equals"
+    },
+    {
+      "startSeconds": 422.72,
+      "endSeconds": 428.72,
+      "text": "to 10 here. So and try to log it again."
+    },
+    {
+      "startSeconds": 425.919,
+      "endSeconds": 432.08,
+      "text": "So it will it can hold numbers also. And"
+    },
+    {
+      "startSeconds": 428.72,
+      "endSeconds": 434.56,
+      "text": "it can also hold a string again. Okay."
+    },
+    {
+      "startSeconds": 432.08,
+      "endSeconds": 439.36,
+      "text": "So this is a perfectly valid JavaScript"
+    },
+    {
+      "startSeconds": 434.56,
+      "endSeconds": 441.52,
+      "text": "code. Okay. Um I mistyped it. No issues."
+    },
+    {
+      "startSeconds": 439.36,
+      "endSeconds": 444.24,
+      "text": "So it it is a perfectly fine JavaScript"
+    },
+    {
+      "startSeconds": 441.52,
+      "endSeconds": 446.72,
+      "text": "code. Okay. And if I log this a once"
+    },
+    {
+      "startSeconds": 444.24,
+      "endSeconds": 449.68,
+      "text": "again. Okay. So see what the output will"
+    },
+    {
+      "startSeconds": 446.72,
+      "endSeconds": 451.759,
+      "text": "be undefined. So until unless any value"
+    },
+    {
+      "startSeconds": 449.68,
+      "endSeconds": 454.88,
+      "text": "is specified there is a placeholder"
+    },
+    {
+      "startSeconds": 451.759,
+      "endSeconds": 457.84,
+      "text": "undefined. When you put in 10 so it is"
+    },
+    {
+      "startSeconds": 454.88,
+      "endSeconds": 460.319,
+      "text": "10 now. And when you put in string hello"
+    },
+    {
+      "startSeconds": 457.84,
+      "endSeconds": 462.08,
+      "text": "world it is hello world now. Okay. So"
+    },
+    {
+      "startSeconds": 460.319,
+      "endSeconds": 464.479,
+      "text": "JavaScript is very flexible in this"
+    },
+    {
+      "startSeconds": 462.08,
+      "endSeconds": 467.199,
+      "text": "case. That is why JavaScript is known as"
+    },
+    {
+      "startSeconds": 464.479,
+      "endSeconds": 469.44,
+      "text": "loosely type language. Loosely type"
+    },
+    {
+      "startSeconds": 467.199,
+      "endSeconds": 471.68,
+      "text": "language are also known as weekly type"
+    },
+    {
+      "startSeconds": 469.44,
+      "endSeconds": 473.759,
+      "text": "language. Weekly typeyped language. So"
+    },
+    {
+      "startSeconds": 471.68,
+      "endSeconds": 476.08,
+      "text": "it does not mean that it is weak in any"
+    },
+    {
+      "startSeconds": 473.759,
+      "endSeconds": 478.72,
+      "text": "sense. It does not have any deficiency"
+    },
+    {
+      "startSeconds": 476.08,
+      "endSeconds": 480.879,
+      "text": "or something. It is not weak at all. In"
+    },
+    {
+      "startSeconds": 478.72,
+      "endSeconds": 484.479,
+      "text": "fact, I feel that the language is more"
+    },
+    {
+      "startSeconds": 480.879,
+      "endSeconds": 486.56,
+      "text": "stronger. Okay, because it is handling a"
+    },
+    {
+      "startSeconds": 484.479,
+      "endSeconds": 488.639,
+      "text": "lot of stuff behind the scenes. Okay,"
+    },
+    {
+      "startSeconds": 486.56,
+      "endSeconds": 490.16,
+      "text": "you give it string, it handles"
+    },
+    {
+      "startSeconds": 488.639,
+      "endSeconds": 492,
+      "text": "automatically behind the scenes. It"
+    },
+    {
+      "startSeconds": 490.16,
+      "endSeconds": 494.56,
+      "text": "okay, it's a string. You give it a"
+    },
+    {
+      "startSeconds": 492,
+      "endSeconds": 496.479,
+      "text": "number, it takes it and puts number in"
+    },
+    {
+      "startSeconds": 494.56,
+      "endSeconds": 499.039,
+      "text": "it and manages all these things behind"
+    },
+    {
+      "startSeconds": 496.479,
+      "endSeconds": 501.12,
+      "text": "it. So, it is not weak at all for sure."
+    },
+    {
+      "startSeconds": 499.039,
+      "endSeconds": 504.479,
+      "text": "In fact, I feel that it is more flexible"
+    },
+    {
+      "startSeconds": 501.12,
+      "endSeconds": 507.28,
+      "text": "and beautiful in this case. Okay. So and"
+    },
+    {
+      "startSeconds": 504.479,
+      "endSeconds": 509.599,
+      "text": "it has to do a lot of things while"
+    },
+    {
+      "startSeconds": 507.28,
+      "endSeconds": 511.68,
+      "text": "coercion also. Okay. When you change one"
+    },
+    {
+      "startSeconds": 509.599,
+      "endSeconds": 513.599,
+      "text": "type to another type, it is doing a lot"
+    },
+    {
+      "startSeconds": 511.68,
+      "endSeconds": 516.159,
+      "text": "of stuff. We might cover that in the"
+    },
+    {
+      "startSeconds": 513.599,
+      "endSeconds": 518.24,
+      "text": "later videos. For now, just understand"
+    },
+    {
+      "startSeconds": 516.159,
+      "endSeconds": 520.159,
+      "text": "that JavaScript is a loosely typed"
+    },
+    {
+      "startSeconds": 518.24,
+      "endSeconds": 522.8,
+      "text": "language and some people also call it as"
+    },
+    {
+      "startSeconds": 520.159,
+      "endSeconds": 524.64,
+      "text": "a weakly type language. Okay. So let me"
+    },
+    {
+      "startSeconds": 522.8,
+      "endSeconds": 526.88,
+      "text": "tell you an important thing. Never do"
+    },
+    {
+      "startSeconds": 524.64,
+      "endSeconds": 530.399,
+      "text": "this mistake. Okay. Never do this"
+    },
+    {
+      "startSeconds": 526.88,
+      "endSeconds": 532.88,
+      "text": "mistake of doing something like this. A"
+    },
+    {
+      "startSeconds": 530.399,
+      "endSeconds": 535.68,
+      "text": "is equal to undefined. What does that"
+    },
+    {
+      "startSeconds": 532.88,
+      "endSeconds": 538.959,
+      "text": "mean? See, undefined is a value. It is a"
+    },
+    {
+      "startSeconds": 535.68,
+      "endSeconds": 541.36,
+      "text": "keyword in JavaScript. And it is totally"
+    },
+    {
+      "startSeconds": 538.959,
+      "endSeconds": 544.24,
+      "text": "possible to assign undefined to any"
+    },
+    {
+      "startSeconds": 541.36,
+      "endSeconds": 546.399,
+      "text": "variable. But it is kind of a mistake"
+    },
+    {
+      "startSeconds": 544.24,
+      "endSeconds": 548.56,
+      "text": "and it is a bad thing to do in"
+    },
+    {
+      "startSeconds": 546.399,
+      "endSeconds": 551.04,
+      "text": "JavaScript. Okay, you should not do it"
+    },
+    {
+      "startSeconds": 548.56,
+      "endSeconds": 553.2,
+      "text": "because see what first of all what is"
+    },
+    {
+      "startSeconds": 551.04,
+      "endSeconds": 556.32,
+      "text": "undefined? So undefined is like a"
+    },
+    {
+      "startSeconds": 553.2,
+      "endSeconds": 560.72,
+      "text": "placeholder which is kept inside the"
+    },
+    {
+      "startSeconds": 556.32,
+      "endSeconds": 563.519,
+      "text": "variables. Uh and it states that in the"
+    },
+    {
+      "startSeconds": 560.72,
+      "endSeconds": 566.08,
+      "text": "whole code that variable was not"
+    },
+    {
+      "startSeconds": 563.519,
+      "endSeconds": 568.24,
+      "text": "assigned anything right. So it is meant"
+    },
+    {
+      "startSeconds": 566.08,
+      "endSeconds": 570.56,
+      "text": "for a specific purpose. So it is not"
+    },
+    {
+      "startSeconds": 568.24,
+      "endSeconds": 572.8,
+      "text": "generally a good way to put undefined"
+    },
+    {
+      "startSeconds": 570.56,
+      "endSeconds": 574.88,
+      "text": "like this. Though it is a totally okay"
+    },
+    {
+      "startSeconds": 572.8,
+      "endSeconds": 577.12,
+      "text": "to do this. Okay. If you just log it"
+    },
+    {
+      "startSeconds": 574.88,
+      "endSeconds": 579.04,
+      "text": "once again, if you log a once again, you"
+    },
+    {
+      "startSeconds": 577.12,
+      "endSeconds": 581.519,
+      "text": "will see that okay you you can put"
+    },
+    {
+      "startSeconds": 579.04,
+      "endSeconds": 584,
+      "text": "undefined once again. But it can lead to"
+    },
+    {
+      "startSeconds": 581.519,
+      "endSeconds": 586.08,
+      "text": "a lot of inconsistencies. So it is not a"
+    },
+    {
+      "startSeconds": 584,
+      "endSeconds": 588.64,
+      "text": "good practice to do this. I won't say"
+    },
+    {
+      "startSeconds": 586.08,
+      "endSeconds": 591.12,
+      "text": "it's a mistake but it's not a good"
+    },
+    {
+      "startSeconds": 588.64,
+      "endSeconds": 593.279,
+      "text": "practice or a healthy practice to put"
+    },
+    {
+      "startSeconds": 591.12,
+      "endSeconds": 595.44,
+      "text": "undefined into any variable. So don't do"
+    },
+    {
+      "startSeconds": 593.279,
+      "endSeconds": 598.24,
+      "text": "this mistake. Right? Let us just keep"
+    },
+    {
+      "startSeconds": 595.44,
+      "endSeconds": 602.24,
+      "text": "undefined for its own purpose. Right?"
+    },
+    {
+      "startSeconds": 598.24,
+      "endSeconds": 604.959,
+      "text": "Undefined was meant to know okay that"
+    },
+    {
+      "startSeconds": 602.24,
+      "endSeconds": 607.839,
+      "text": "whether that variable was assigned"
+    },
+    {
+      "startSeconds": 604.959,
+      "endSeconds": 610.959,
+      "text": "anything or not. Okay? So let it be used"
+    },
+    {
+      "startSeconds": 607.839,
+      "endSeconds": 613.6,
+      "text": "for that space only and for the JS"
+    },
+    {
+      "startSeconds": 610.959,
+      "endSeconds": 616.72,
+      "text": "community let us not ever put undefined"
+    },
+    {
+      "startSeconds": 613.6,
+      "endSeconds": 618.959,
+      "text": "into any variable. Okay. So it's just a"
+    },
+    {
+      "startSeconds": 616.72,
+      "endSeconds": 621.12,
+      "text": "request. That's all for now. In the next"
+    },
+    {
+      "startSeconds": 618.959,
+      "endSeconds": 623.279,
+      "text": "video we'll be covering the scope chain."
+    },
+    {
+      "startSeconds": 621.12,
+      "endSeconds": 625.68,
+      "text": "It is a very beautiful topic I would say"
+    },
+    {
+      "startSeconds": 623.279,
+      "endSeconds": 627.519,
+      "text": "and it is very hot interview topic also."
+    },
+    {
+      "startSeconds": 625.68,
+      "endSeconds": 629.76,
+      "text": "Okay. In the interview a lot of people"
+    },
+    {
+      "startSeconds": 627.519,
+      "endSeconds": 631.68,
+      "text": "ask about what is a scope chain. So"
+    },
+    {
+      "startSeconds": 629.76,
+      "endSeconds": 633.519,
+      "text": "definitely watch that video. So before"
+    },
+    {
+      "startSeconds": 631.68,
+      "endSeconds": 636.079,
+      "text": "moving on to that video, just like"
+    },
+    {
+      "startSeconds": 633.519,
+      "endSeconds": 637.2,
+      "text": "always give this video a thumbs up and"
+    },
+    {
+      "startSeconds": 636.079,
+      "endSeconds": 640.13,
+      "text": "thank you for watching Namaste"
+    },
+    {
+      "startSeconds": 637.2,
+      "endSeconds": 662.309,
+      "text": "JavaScript."
+    },
+    {
+      "startSeconds": 640.13,
+      "endSeconds": 662.309,
+      "text": "[Music]"
+    }
+  ]
+}

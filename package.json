@@ -6,13 +6,19 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "test:watch": "vitest",
-    "transcript:spike": "tsx scripts/fetch-one-transcript.ts"
+    "transcript:spike": "tsx scripts/fetch-one-transcript.ts",
+    "seed:corpus": "tsx scripts/seed-corpus.ts",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate"
   },
   "dependencies": {
+    "@neondatabase/serverless": "^1.1.0",
+    "drizzle-orm": "^0.45.2",
     "youtubei.js": "^17.2.0"
   },
   "devDependencies": {
     "@types/node": "^26.1.1",
+    "drizzle-kit": "^0.31.10",
     "tsx": "^4.23.1",
     "typescript": "^7.0.2",
     "vitest": "^4.1.10"

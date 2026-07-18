@@ -1,0 +1,209 @@
+{
+  "fetchedAt": "2026-07-18T14:52:11.688Z",
+  "channel": {
+    "channelId": "UC3N9i_KvKZYP4F84FPIzgPQ",
+    "title": "Akshay Saini",
+    "handle": "@akshaymarch7"
+  },
+  "videos": [
+    {
+      "videoId": "9T4z98JcHR0",
+      "title": "this keyword in JavaScript  🔥 |  Ep.06 - Namaste JavaScript Season 2 🙏",
+      "durationSeconds": 3209,
+      "publishedText": "2 years ago",
+      "languageCode": "en",
+      "segmentCount": 1185
+    },
+    {
+      "videoId": "DlTVt1rZjIo",
+      "title": "Promise APIs + Interview Questions 🔥 | S.02 Ep.05 - Namaste JavaScript  | all, allSettled, race, any",
+      "durationSeconds": 3598,
+      "publishedText": "2 years ago",
+      "languageCode": "en",
+      "segmentCount": 1331
+    },
+    {
+      "videoId": "6nv3qy3oNkc",
+      "title": "async await | Namaste JavaScript - Season 02 - Ep 04",
+      "durationSeconds": 4161,
+      "publishedText": "2 years ago",
+      "languageCode": "en",
+      "segmentCount": 1671
+    },
+    {
+      "videoId": "U74BJcr8NeQ",
+      "title": "Creating a Promise, Chaining & Error Handling | Ep 03 Season 02 Namaste JavaScript",
+      "durationSeconds": 2341,
+      "publishedText": "3 years ago",
+      "languageCode": "en",
+      "segmentCount": 915
+    },
+    {
+      "videoId": "ap-6PPAuK1Y",
+      "title": "Promises | Ep 02  Season 02 - Namaste JavaScript",
+      "durationSeconds": 2346,
+      "publishedText": "3 years ago",
+      "languageCode": "en",
+      "segmentCount": 922
+    },
+    {
+      "videoId": "yEKtJGha3yM",
+      "title": "Callback Hell | Ep  01 Season 02 - Namaste JavaScript",
+      "durationSeconds": 928,
+      "publishedText": "3 years ago",
+      "languageCode": "en",
+      "segmentCount": 361
+    },
+    {
+      "videoId": "78Homn79Qsk",
+      "title": "Namaste JavaScript - Season 02 Ep. 0 - Trailer",
+      "durationSeconds": 140,
+      "publishedText": "3 years ago",
+      "languageCode": "en",
+      "segmentCount": 54
+    },
+    {
+      "videoId": "zdp0zrpKzIE",
+      "title": "map, filter & reduce 🙏 Namaste JavaScript Ep. 19 🔥",
+      "durationSeconds": 2262,
+      "publishedText": "4 years ago",
+      "languageCode": "en",
+      "segmentCount": 853
+    },
+    {
+      "videoId": "HkWxvB1RJq0",
+      "title": "Higher-Order Functions ft. Functional Programming | Namaste JavaScript Ep. 18",
+      "durationSeconds": 1443,
+      "publishedText": "5 years ago",
+      "error": "No transcript for video HkWxvB1RJq0: no English caption track (available: hi)"
+    },
+    {
+      "videoId": "nqsPmuicJJc",
+      "title": "TRUST ISSUES with setTimeout() | Namaste JavaScript Ep.17",
+      "durationSeconds": 1571,
+      "publishedText": "5 years ago",
+      "error": "No transcript for video nqsPmuicJJc: no English caption track (available: hi)"
+    },
+    {
+      "videoId": "2WJL19wDH68",
+      "title": "JS Engine EXPOSED 🔥 Google's V8 Architecture 🚀 | Namaste JavaScript Ep. 16",
+      "durationSeconds": 1710,
+      "publishedText": "5 years ago",
+      "error": "No transcript for video 2WJL19wDH68: no English caption track (available: hi)"
+    },
+    {
+      "videoId": "8zKuNo4ay8E",
+      "title": "Asynchronous JavaScript & EVENT LOOP from scratch 🔥 | Namaste JavaScript Ep.15",
+      "durationSeconds": 2505,
+      "publishedText": "5 years ago",
+      "error": "No transcript for video 8zKuNo4ay8E: no English caption track (available: hi)"
+    },
+    {
+      "videoId": "btj35dh3_U8",
+      "title": "Callback Functions in JS ft. Event Listeners 🔥| Namaste JavaScript Ep. 14",
+      "durationSeconds": 1406,
+      "publishedText": "5 years ago",
+      "error": "No transcript for video btj35dh3_U8: no English caption track (available: hi)"
+    },
+    {
+      "videoId": "SHINoHxvTso",
+      "title": "FIRST CLASS FUNCTIONS 🔥ft. Anonymous Functions | Namaste JavaScript Ep. 13",
+      "durationSeconds": 1350,
+      "publishedText": "5 years ago",
+      "languageCode": "en",
+      "segmentCount": 603
+    },
+    {
+      "videoId": "qikxEIxsXco",
+      "title": "Closures in JS 🔥 | Namaste JavaScript Episode 10",
+      "durationSeconds": 1364,
+      "publishedText": "5 years ago",
+      "error": "No transcript for video qikxEIxsXco: no English caption track (available: hi)"
+    },
+    {
+      "videoId": "VIJxU2NYG-Y",
+      "title": "QnA - Namaste JavaScript | Diwali Special 🔥 - Akshay Saini",
+      "durationSeconds": 862,
+      "publishedText": "5 years ago",
+      "languageCode": "en",
+      "segmentCount": 339
+    },
+    {
+      "videoId": "lW_erSjyMeM",
+      "title": "BLOCK SCOPE & Shadowing in JS 🔥| Namaste JavaScript 🙏 Ep. 9",
+      "durationSeconds": 1197,
+      "publishedText": "5 years ago",
+      "error": "No transcript for video lW_erSjyMeM: no English caption track (available: hi)"
+    },
+    {
+      "videoId": "BNC6slYCj50",
+      "title": "let & const in JS 🔥Temporal Dead Zone | | Namaste JavaScript Ep. 8",
+      "durationSeconds": 1301,
+      "publishedText": "5 years ago",
+      "error": "No transcript for video BNC6slYCj50: no English caption track (available: hi)"
+    },
+    {
+      "videoId": "uH-tVP8MUs8",
+      "title": "The Scope Chain, 🔥Scope & Lexical Environment | Namaste JavaScript Ep. 7",
+      "durationSeconds": 1188,
+      "publishedText": "5 years ago",
+      "languageCode": "en",
+      "segmentCount": 444
+    },
+    {
+      "videoId": "B7iF6G3EyIk",
+      "title": "undefined vs not defined in JS 🤔 | Namaste JavaScript Ep. 6",
+      "durationSeconds": 661,
+      "publishedText": "5 years ago",
+      "languageCode": "en",
+      "segmentCount": 245
+    },
+    {
+      "videoId": "QCRpVw2KXf8",
+      "title": "SHORTEST JS Program 🔥window & this keyword | Namaste JavaScript Ep. 5",
+      "durationSeconds": 513,
+      "publishedText": "5 years ago",
+      "error": "No transcript for video QCRpVw2KXf8: no English caption track (available: hi)"
+    },
+    {
+      "videoId": "gSDncyuGw0s",
+      "title": "How functions work in JS ❤️ & Variable Environment | Namaste JavaScript Ep. 4",
+      "durationSeconds": 1305,
+      "publishedText": "5 years ago",
+      "languageCode": "en",
+      "segmentCount": 504
+    },
+    {
+      "videoId": "Fnlnw8uY6jo",
+      "title": "Hoisting in JavaScript 🔥(variables & functions) | Namaste JavaScript Ep. 3",
+      "durationSeconds": 1151,
+      "publishedText": "5 years ago",
+      "languageCode": "en",
+      "segmentCount": 436
+    },
+    {
+      "videoId": "iLWTnMzWtj4",
+      "title": "How JavaScript Code is executed? ❤️& Call Stack | Namaste JavaScript Ep. 2",
+      "durationSeconds": 1422,
+      "publishedText": "5 years ago",
+      "languageCode": "en",
+      "segmentCount": 403
+    },
+    {
+      "videoId": "ZvbzSrg0afE",
+      "title": "How JavaScript Works 🔥& Execution Context | Namaste JavaScript Ep.1",
+      "durationSeconds": 294,
+      "publishedText": "5 years ago",
+      "languageCode": "en-IN",
+      "segmentCount": 73
+    },
+    {
+      "videoId": "pN6jk0uUrD8",
+      "title": "Namaste JavaScript 🙏 Course - JS Video Tutorials by Akshay Saini",
+      "durationSeconds": 133,
+      "publishedText": "5 years ago",
+      "languageCode": "en-IN",
+      "segmentCount": 27
+    }
+  ]
+}

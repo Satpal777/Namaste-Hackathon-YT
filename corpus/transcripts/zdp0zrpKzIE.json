@@ -1,0 +1,4272 @@
+{
+  "videoId": "zdp0zrpKzIE",
+  "videoTitle": "map, filter & reduce 🙏 Namaste JavaScript Ep. 19 🔥",
+  "languageCode": "en",
+  "segments": [
+    {
+      "startSeconds": 0.32,
+      "endSeconds": 4.4,
+      "text": "map filter and reduce are higher order"
+    },
+    {
+      "startSeconds": 2.24,
+      "endSeconds": 7.16,
+      "text": "functions in JavaScript do know what"
+    },
+    {
+      "startSeconds": 4.4,
+      "endSeconds": 8.8,
+      "text": "higher order functions are shame on you"
+    },
+    {
+      "startSeconds": 7.16,
+      "endSeconds": 10.12,
+      "text": "go ahead check my previous video in this"
+    },
+    {
+      "startSeconds": 8.8,
+      "endSeconds": 12.759,
+      "text": "series you will get to know what higher"
+    },
+    {
+      "startSeconds": 10.12,
+      "endSeconds": 12.759,
+      "text": "order functions"
+    },
+    {
+      "startSeconds": 14.16,
+      "endSeconds": 19.16,
+      "text": "are most of the people understand what"
+    },
+    {
+      "startSeconds": 16.8,
+      "endSeconds": 20.64,
+      "text": "map filter and reduce are but don't know"
+    },
+    {
+      "startSeconds": 19.16,
+      "endSeconds": 23.039,
+      "text": "where to use"
+    },
+    {
+      "startSeconds": 20.64,
+      "endSeconds": 24.8,
+      "text": "it in this video we will be covering"
+    },
+    {
+      "startSeconds": 23.039,
+      "endSeconds": 27.16,
+      "text": "what is map filter and reduce and we"
+    },
+    {
+      "startSeconds": 24.8,
+      "endSeconds": 29.119,
+      "text": "will take a lot of examples to see where"
+    },
+    {
+      "startSeconds": 27.16,
+      "endSeconds": 31.23,
+      "text": "you can use these functions so let's"
+    },
+    {
+      "startSeconds": 29.119,
+      "endSeconds": 34.289,
+      "text": "just begin let's roll the"
+    },
+    {
+      "startSeconds": 31.23,
+      "endSeconds": 34.289,
+      "text": "[Music]"
+    },
+    {
+      "startSeconds": 37.44,
+      "endSeconds": 41.52,
+      "text": "intro"
+    },
+    {
+      "startSeconds": 39.36,
+      "endSeconds": 43.52,
+      "text": "hey first of all let's just start with"
+    },
+    {
+      "startSeconds": 41.52,
+      "endSeconds": 45.6,
+      "text": "our map function so map function is"
+    },
+    {
+      "startSeconds": 43.52,
+      "endSeconds": 48.68,
+      "text": "basically used to transform an array"
+    },
+    {
+      "startSeconds": 45.6,
+      "endSeconds": 50.84,
+      "text": "suppose we have this array 51 326 are"
+    },
+    {
+      "startSeconds": 48.68,
+      "endSeconds": 52.76,
+      "text": "the values in it and suppose if we want"
+    },
+    {
+      "startSeconds": 50.84,
+      "endSeconds": 55.32,
+      "text": "to transform it what do I mean by"
+    },
+    {
+      "startSeconds": 52.76,
+      "endSeconds": 57.039,
+      "text": "transformation so transformation means"
+    },
+    {
+      "startSeconds": 55.32,
+      "endSeconds": 59.399,
+      "text": "suppose if you want to transform each"
+    },
+    {
+      "startSeconds": 57.039,
+      "endSeconds": 62.28,
+      "text": "and every value of this array and get a"
+    },
+    {
+      "startSeconds": 59.399,
+      "endSeconds": 64.239,
+      "text": "new array out of it so this is one of"
+    },
+    {
+      "startSeconds": 62.28,
+      "endSeconds": 66.799,
+      "text": "the transformation of this array which"
+    },
+    {
+      "startSeconds": 64.239,
+      "endSeconds": 68.56,
+      "text": "is which is double of this array okay"
+    },
+    {
+      "startSeconds": 66.799,
+      "endSeconds": 70.759,
+      "text": "when I say double it means each and"
+    },
+    {
+      "startSeconds": 68.56,
+      "endSeconds": 73.52,
+      "text": "every value in this transformed array is"
+    },
+    {
+      "startSeconds": 70.759,
+      "endSeconds": 75.759,
+      "text": "double the original value or this is one"
+    },
+    {
+      "startSeconds": 73.52,
+      "endSeconds": 77.72,
+      "text": "of the transformation which means that"
+    },
+    {
+      "startSeconds": 75.759,
+      "endSeconds": 80.2,
+      "text": "each and every value is triple the"
+    },
+    {
+      "startSeconds": 77.72,
+      "endSeconds": 82,
+      "text": "original value and one of the"
+    },
+    {
+      "startSeconds": 80.2,
+      "endSeconds": 84.64,
+      "text": "transformation could be finding out"
+    },
+    {
+      "startSeconds": 82,
+      "endSeconds": 87.32,
+      "text": "binary of each of these individual"
+    },
+    {
+      "startSeconds": 84.64,
+      "endSeconds": 89,
+      "text": "elements in that original array so these"
+    },
+    {
+      "startSeconds": 87.32,
+      "endSeconds": 91.96,
+      "text": "three are the transformation and there"
+    },
+    {
+      "startSeconds": 89,
+      "endSeconds": 94.479,
+      "text": "can be a lot okay so I'm just giving you"
+    },
+    {
+      "startSeconds": 91.96,
+      "endSeconds": 96.799,
+      "text": "an example that if you want to transform"
+    },
+    {
+      "startSeconds": 94.479,
+      "endSeconds": 98.68,
+      "text": "this whole array you can do it with map"
+    },
+    {
+      "startSeconds": 96.799,
+      "endSeconds": 101.28,
+      "text": "function and here is when maap function"
+    },
+    {
+      "startSeconds": 98.68,
+      "endSeconds": 103.119,
+      "text": "is used so let's now see how we can"
+    },
+    {
+      "startSeconds": 101.28,
+      "endSeconds": 105.24,
+      "text": "write that code so to find out the"
+    },
+    {
+      "startSeconds": 103.119,
+      "endSeconds": 108.96,
+      "text": "output let's just initialize a variable"
+    },
+    {
+      "startSeconds": 105.24,
+      "endSeconds": 111.24,
+      "text": "const output okay and how we will call a"
+    },
+    {
+      "startSeconds": 108.96,
+      "endSeconds": 113.2,
+      "text": "map function on an array let's now see"
+    },
+    {
+      "startSeconds": 111.24,
+      "endSeconds": 115.56,
+      "text": "that so first of all we need to write"
+    },
+    {
+      "startSeconds": 113.2,
+      "endSeconds": 118.399,
+      "text": "the array which is ARR in this case and"
+    },
+    {
+      "startSeconds": 115.56,
+      "endSeconds": 120.399,
+      "text": "we used to have a DOT operator and after"
+    },
+    {
+      "startSeconds": 118.399,
+      "endSeconds": 122.84,
+      "text": "that we write map okay"
+    },
+    {
+      "startSeconds": 120.399,
+      "endSeconds": 125.719,
+      "text": "and then basically you have to pass in a"
+    },
+    {
+      "startSeconds": 122.84,
+      "endSeconds": 127.64,
+      "text": "function inside this a function which"
+    },
+    {
+      "startSeconds": 125.719,
+      "endSeconds": 129.8,
+      "text": "basically tells you that what"
+    },
+    {
+      "startSeconds": 127.64,
+      "endSeconds": 131.76,
+      "text": "transformation do we need do we want to"
+    },
+    {
+      "startSeconds": 129.8,
+      "endSeconds": 133.68,
+      "text": "double do we want to Triple or do we"
+    },
+    {
+      "startSeconds": 131.76,
+      "endSeconds": 136,
+      "text": "want to find binary or what do we need"
+    },
+    {
+      "startSeconds": 133.68,
+      "endSeconds": 137.84,
+      "text": "to do what is the transformation logic"
+    },
+    {
+      "startSeconds": 136,
+      "endSeconds": 140.12,
+      "text": "what we need to apply to each and every"
+    },
+    {
+      "startSeconds": 137.84,
+      "endSeconds": 143.2,
+      "text": "value of this array that is what we need"
+    },
+    {
+      "startSeconds": 140.12,
+      "endSeconds": 145.2,
+      "text": "to pass inside this map for over here"
+    },
+    {
+      "startSeconds": 143.2,
+      "endSeconds": 148.2,
+      "text": "suppose let's take an example to double"
+    },
+    {
+      "startSeconds": 145.2,
+      "endSeconds": 150.4,
+      "text": "these values so let's just pass double"
+    },
+    {
+      "startSeconds": 148.2,
+      "endSeconds": 152.56,
+      "text": "inside it so this double should be a"
+    },
+    {
+      "startSeconds": 150.4,
+      "endSeconds": 155.4,
+      "text": "function isn't it so let's create a"
+    },
+    {
+      "startSeconds": 152.56,
+      "endSeconds": 157.879,
+      "text": "function double okay let's call it"
+    },
+    {
+      "startSeconds": 155.4,
+      "endSeconds": 160.28,
+      "text": "function double so what it will do is"
+    },
+    {
+      "startSeconds": 157.879,
+      "endSeconds": 161.72,
+      "text": "basically it will double the values how"
+    },
+    {
+      "startSeconds": 160.28,
+      "endSeconds": 167.08,
+      "text": "do you write a function to double these"
+    },
+    {
+      "startSeconds": 161.72,
+      "endSeconds": 170.48,
+      "text": "values just do a x into 2 great so this"
+    },
+    {
+      "startSeconds": 167.08,
+      "endSeconds": 173.08,
+      "text": "doubles the value of x it returns X into"
+    },
+    {
+      "startSeconds": 170.48,
+      "endSeconds": 176.239,
+      "text": "2 and we passed this transformation"
+    },
+    {
+      "startSeconds": 173.08,
+      "endSeconds": 178.92,
+      "text": "function okay in this array do map what"
+    },
+    {
+      "startSeconds": 176.239,
+      "endSeconds": 180.92,
+      "text": "does it internally do is it will run"
+    },
+    {
+      "startSeconds": 178.92,
+      "endSeconds": 183.28,
+      "text": "this function over for each and every"
+    },
+    {
+      "startSeconds": 180.92,
+      "endSeconds": 185.56,
+      "text": "value of this array and create a new"
+    },
+    {
+      "startSeconds": 183.28,
+      "endSeconds": 187.92,
+      "text": "array out of it and that new new array"
+    },
+    {
+      "startSeconds": 185.56,
+      "endSeconds": 189.959,
+      "text": "will be inside output so let's just do a"
+    },
+    {
+      "startSeconds": 187.92,
+      "endSeconds": 192.72,
+      "text": "console log and see what we get inside"
+    },
+    {
+      "startSeconds": 189.959,
+      "endSeconds": 196.04,
+      "text": "our output right so if we do a console"
+    },
+    {
+      "startSeconds": 192.72,
+      "endSeconds": 199.12,
+      "text": "log of output and save the file here we"
+    },
+    {
+      "startSeconds": 196.04,
+      "endSeconds": 202.84,
+      "text": "see something let me just show you see"
+    },
+    {
+      "startSeconds": 199.12,
+      "endSeconds": 205.4,
+      "text": "the output is 10 2 4 6 12 so suppose if"
+    },
+    {
+      "startSeconds": 202.84,
+      "endSeconds": 208.04,
+      "text": "you wanted to Triple these values so how"
+    },
+    {
+      "startSeconds": 205.4,
+      "endSeconds": 210.04,
+      "text": "would you do that you can just instead"
+    },
+    {
+      "startSeconds": 208.04,
+      "endSeconds": 212.36,
+      "text": "of passing double over here we we can"
+    },
+    {
+      "startSeconds": 210.04,
+      "endSeconds": 213.56,
+      "text": "use a function triple how do you write a"
+    },
+    {
+      "startSeconds": 212.36,
+      "endSeconds": 215.76,
+      "text": "function"
+    },
+    {
+      "startSeconds": 213.56,
+      "endSeconds": 217.599,
+      "text": "triple this basically is a"
+    },
+    {
+      "startSeconds": 215.76,
+      "endSeconds": 220.04,
+      "text": "transformation logic you can call it as"
+    },
+    {
+      "startSeconds": 217.599,
+      "endSeconds": 223.28,
+      "text": "a transformation logic okay so if we had"
+    },
+    {
+      "startSeconds": 220.04,
+      "endSeconds": 225.36,
+      "text": "to triple we just need to return what"
+    },
+    {
+      "startSeconds": 223.28,
+      "endSeconds": 228.84,
+      "text": "yes you guessed it absolutely right so"
+    },
+    {
+      "startSeconds": 225.36,
+      "endSeconds": 231.159,
+      "text": "we just want to do a x into 3 uh why"
+    },
+    {
+      "startSeconds": 228.84,
+      "endSeconds": 234.959,
+      "text": "okay okay we need to pass in triple over"
+    },
+    {
+      "startSeconds": 231.159,
+      "endSeconds": 238.64,
+      "text": "here right so if we refresh the page see"
+    },
+    {
+      "startSeconds": 234.959,
+      "endSeconds": 240.519,
+      "text": "we get this output 5 3 9 68 so that's"
+    },
+    {
+      "startSeconds": 238.64,
+      "endSeconds": 242.68,
+      "text": "what we wanted right the triple of these"
+    },
+    {
+      "startSeconds": 240.519,
+      "endSeconds": 245.28,
+      "text": "arrays now let us see how we can"
+    },
+    {
+      "startSeconds": 242.68,
+      "endSeconds": 247.959,
+      "text": "transform binary can anyone of you guess"
+    },
+    {
+      "startSeconds": 245.28,
+      "endSeconds": 250.519,
+      "text": "that let's just see so we just have to"
+    },
+    {
+      "startSeconds": 247.959,
+      "endSeconds": 252.959,
+      "text": "pass in binary over here right so what"
+    },
+    {
+      "startSeconds": 250.519,
+      "endSeconds": 254.56,
+      "text": "is the logic for writing binary let's"
+    },
+    {
+      "startSeconds": 252.959,
+      "endSeconds": 257.88,
+      "text": "just create a new"
+    },
+    {
+      "startSeconds": 254.56,
+      "endSeconds": 261.04,
+      "text": "function uh binary okay and how do you"
+    },
+    {
+      "startSeconds": 257.88,
+      "endSeconds": 267,
+      "text": "convert a number to a binary so you just"
+    },
+    {
+      "startSeconds": 261.04,
+      "endSeconds": 269.8,
+      "text": "need to return X do2 string of two isn't"
+    },
+    {
+      "startSeconds": 267,
+      "endSeconds": 273.16,
+      "text": "it and just pass in binary over here"
+    },
+    {
+      "startSeconds": 269.8,
+      "endSeconds": 275.68,
+      "text": "here so if we write this see what we got"
+    },
+    {
+      "startSeconds": 273.16,
+      "endSeconds": 279.32,
+      "text": "so we got this binary of each of these"
+    },
+    {
+      "startSeconds": 275.68,
+      "endSeconds": 282.24,
+      "text": "numbers so 5 is 1 1 and similarly so"
+    },
+    {
+      "startSeconds": 279.32,
+      "endSeconds": 284.4,
+      "text": "that's how we write map function now let"
+    },
+    {
+      "startSeconds": 282.24,
+      "endSeconds": 286.6,
+      "text": "me tell you one more thing in a lot of"
+    },
+    {
+      "startSeconds": 284.4,
+      "endSeconds": 288.88,
+      "text": "places you will find something like this"
+    },
+    {
+      "startSeconds": 286.6,
+      "endSeconds": 291.32,
+      "text": "that instead of writing the code like"
+    },
+    {
+      "startSeconds": 288.88,
+      "endSeconds": 293.84,
+      "text": "this some people also prefer to just put"
+    },
+    {
+      "startSeconds": 291.32,
+      "endSeconds": 296.68,
+      "text": "a function inside it and calm down my"
+    },
+    {
+      "startSeconds": 293.84,
+      "endSeconds": 298.199,
+      "text": "friends this is totally valid syntax in"
+    },
+    {
+      "startSeconds": 296.68,
+      "endSeconds": 300.16,
+      "text": "JavaScript people who are coming from"
+    },
+    {
+      "startSeconds": 298.199,
+      "endSeconds": 302,
+      "text": "different languages pull their ears when"
+    },
+    {
+      "startSeconds": 300.16,
+      "endSeconds": 304.12,
+      "text": "they see such syntax but this is a"
+    },
+    {
+      "startSeconds": 302,
+      "endSeconds": 306.8,
+      "text": "perfectly valid JavaScript code you can"
+    },
+    {
+      "startSeconds": 304.12,
+      "endSeconds": 308.919,
+      "text": "pass in functions like this okay that is"
+    },
+    {
+      "startSeconds": 306.8,
+      "endSeconds": 312.16,
+      "text": "what is known as high order functions"
+    },
+    {
+      "startSeconds": 308.919,
+      "endSeconds": 313.88,
+      "text": "remember okay so you can also write this"
+    },
+    {
+      "startSeconds": 312.16,
+      "endSeconds": 315.84,
+      "text": "and this will behave the same way see"
+    },
+    {
+      "startSeconds": 313.88,
+      "endSeconds": 317.72,
+      "text": "that you get the same output so this is"
+    },
+    {
+      "startSeconds": 315.84,
+      "endSeconds": 319.52,
+      "text": "one way of writing it and a lot of"
+    },
+    {
+      "startSeconds": 317.72,
+      "endSeconds": 322.479,
+      "text": "places you will also find that some"
+    },
+    {
+      "startSeconds": 319.52,
+      "endSeconds": 325.759,
+      "text": "people write Arrow functions inside it"
+    },
+    {
+      "startSeconds": 322.479,
+      "endSeconds": 328.16,
+      "text": "you just have this syntax okay so I'm"
+    },
+    {
+      "startSeconds": 325.759,
+      "endSeconds": 329.96,
+      "text": "just showing you in case you encounter"
+    },
+    {
+      "startSeconds": 328.16,
+      "endSeconds": 332.039,
+      "text": "this and you just don't know what is"
+    },
+    {
+      "startSeconds": 329.96,
+      "endSeconds": 333.88,
+      "text": "happening so this is the same thing okay"
+    },
+    {
+      "startSeconds": 332.039,
+      "endSeconds": 336.12,
+      "text": "this is basically an anonymous function"
+    },
+    {
+      "startSeconds": 333.88,
+      "endSeconds": 338.28,
+      "text": "over here which we pass in and in fact"
+    },
+    {
+      "startSeconds": 336.12,
+      "endSeconds": 340.56,
+      "text": "we can even remove this return statement"
+    },
+    {
+      "startSeconds": 338.28,
+      "endSeconds": 341.919,
+      "text": "so when there is only one line inside"
+    },
+    {
+      "startSeconds": 340.56,
+      "endSeconds": 344.639,
+      "text": "this function which is returning"
+    },
+    {
+      "startSeconds": 341.919,
+      "endSeconds": 346.759,
+      "text": "something so we can just directly like"
+    },
+    {
+      "startSeconds": 344.639,
+      "endSeconds": 351.28,
+      "text": "remove this and we can remove these"
+    },
+    {
+      "startSeconds": 346.759,
+      "endSeconds": 353.72,
+      "text": "curly braces as well so this is also the"
+    },
+    {
+      "startSeconds": 351.28,
+      "endSeconds": 355.16,
+      "text": "same thing what the function does so"
+    },
+    {
+      "startSeconds": 353.72,
+      "endSeconds": 357.72,
+      "text": "basically if you want to transform a"
+    },
+    {
+      "startSeconds": 355.16,
+      "endSeconds": 360.36,
+      "text": "number array to a binary array of those"
+    },
+    {
+      "startSeconds": 357.72,
+      "endSeconds": 362.639,
+      "text": "values you can do it like this okay this"
+    },
+    {
+      "startSeconds": 360.36,
+      "endSeconds": 365.24,
+      "text": "is a perfectly valid syntax and if You"
+    },
+    {
+      "startSeconds": 362.639,
+      "endSeconds": 368.08,
+      "text": "observe clearly my friends this actually"
+    },
+    {
+      "startSeconds": 365.24,
+      "endSeconds": 371,
+      "text": "makes a lot of sense see you write array"
+    },
+    {
+      "startSeconds": 368.08,
+      "endSeconds": 373.16,
+      "text": "do map so it is basically mapping each"
+    },
+    {
+      "startSeconds": 371,
+      "endSeconds": 376.16,
+      "text": "of these values and what is the mapping"
+    },
+    {
+      "startSeconds": 373.16,
+      "endSeconds": 379.16,
+      "text": "logic okay what is the mapping logic it"
+    },
+    {
+      "startSeconds": 376.16,
+      "endSeconds": 382.4,
+      "text": "is that X or each and every value is"
+    },
+    {
+      "startSeconds": 379.16,
+      "endSeconds": 384.599,
+      "text": "transformed to its binary okay so it is"
+    },
+    {
+      "startSeconds": 382.4,
+      "endSeconds": 386.44,
+      "text": "like mapping each and every value to"
+    },
+    {
+      "startSeconds": 384.599,
+      "endSeconds": 389.039,
+      "text": "another value and creating a array and"
+    },
+    {
+      "startSeconds": 386.44,
+      "endSeconds": 391.68,
+      "text": "returning it into output okay so that is"
+    },
+    {
+      "startSeconds": 389.039,
+      "endSeconds": 394,
+      "text": "what map function does and that's all it"
+    },
+    {
+      "startSeconds": 391.68,
+      "endSeconds": 396.16,
+      "text": "is so this was a very basic example we"
+    },
+    {
+      "startSeconds": 394,
+      "endSeconds": 398.28,
+      "text": "will cover a little more advanced"
+    },
+    {
+      "startSeconds": 396.16,
+      "endSeconds": 400.639,
+      "text": "example later on in this video but let"
+    },
+    {
+      "startSeconds": 398.28,
+      "endSeconds": 402.52,
+      "text": "us first see what filter and reduce does"
+    },
+    {
+      "startSeconds": 400.639,
+      "endSeconds": 404.56,
+      "text": "so first of all let us just get rid of"
+    },
+    {
+      "startSeconds": 402.52,
+      "endSeconds": 406.479,
+      "text": "all this code so let's now talk about"
+    },
+    {
+      "startSeconds": 404.56,
+      "endSeconds": 409.639,
+      "text": "filter function so filter function is"
+    },
+    {
+      "startSeconds": 406.479,
+      "endSeconds": 413.16,
+      "text": "basically used to filter what so filter"
+    },
+    {
+      "startSeconds": 409.639,
+      "endSeconds": 413.16,
+      "text": "function is basically used to"
+    },
+    {
+      "startSeconds": 414.45,
+      "endSeconds": 418.759,
+      "text": "[Applause]"
+    },
+    {
+      "startSeconds": 415.84,
+      "endSeconds": 420.639,
+      "text": "filter no no I'm not kidding but yes"
+    },
+    {
+      "startSeconds": 418.759,
+      "endSeconds": 423.24,
+      "text": "filter function is actually used to"
+    },
+    {
+      "startSeconds": 420.639,
+      "endSeconds": 425.68,
+      "text": "filter the values inside an array okay"
+    },
+    {
+      "startSeconds": 423.24,
+      "endSeconds": 428.56,
+      "text": "so if we are given this array right 51"
+    },
+    {
+      "startSeconds": 425.68,
+      "endSeconds": 430.68,
+      "text": "326 suppose we want to filter out all"
+    },
+    {
+      "startSeconds": 428.56,
+      "endSeconds": 432.599,
+      "text": "the values which are odd inside it"
+    },
+    {
+      "startSeconds": 430.68,
+      "endSeconds": 434.44,
+      "text": "suppose if we want to filter out each"
+    },
+    {
+      "startSeconds": 432.599,
+      "endSeconds": 436.8,
+      "text": "and every value which is greater than"
+    },
+    {
+      "startSeconds": 434.44,
+      "endSeconds": 439.56,
+      "text": "four inside this particular array so it"
+    },
+    {
+      "startSeconds": 436.8,
+      "endSeconds": 441.36,
+      "text": "will result out to 6 and five or maybe"
+    },
+    {
+      "startSeconds": 439.56,
+      "endSeconds": 443.879,
+      "text": "we just want to filter out all the even"
+    },
+    {
+      "startSeconds": 441.36,
+      "endSeconds": 446.16,
+      "text": "numbers inside array or maybe we want to"
+    },
+    {
+      "startSeconds": 443.879,
+      "endSeconds": 448.44,
+      "text": "uh filter out all the numbers which are"
+    },
+    {
+      "startSeconds": 446.16,
+      "endSeconds": 451.599,
+      "text": "divisible by three inside this"
+    },
+    {
+      "startSeconds": 448.44,
+      "endSeconds": 453.8,
+      "text": "particular array so you are kind of like"
+    },
+    {
+      "startSeconds": 451.599,
+      "endSeconds": 456.759,
+      "text": "taking this array as an input and"
+    },
+    {
+      "startSeconds": 453.8,
+      "endSeconds": 459.56,
+      "text": "finding out a array which has only the"
+    },
+    {
+      "startSeconds": 456.759,
+      "endSeconds": 462,
+      "text": "values which are filtered based on some"
+    },
+    {
+      "startSeconds": 459.56,
+      "endSeconds": 463.919,
+      "text": "logic okay so let's just see how we can"
+    },
+    {
+      "startSeconds": 462,
+      "endSeconds": 466.199,
+      "text": "write that so let's now take a very"
+    },
+    {
+      "startSeconds": 463.919,
+      "endSeconds": 469.759,
+      "text": "basic example and let's now try to"
+    },
+    {
+      "startSeconds": 466.199,
+      "endSeconds": 472.639,
+      "text": "filter out all the odd values inside"
+    },
+    {
+      "startSeconds": 469.759,
+      "endSeconds": 474.879,
+      "text": "this array okay so how we can do that so"
+    },
+    {
+      "startSeconds": 472.639,
+      "endSeconds": 478.12,
+      "text": "to find the output let us again create a"
+    },
+    {
+      "startSeconds": 474.879,
+      "endSeconds": 480.36,
+      "text": "const output okay and what we will do is"
+    },
+    {
+      "startSeconds": 478.12,
+      "endSeconds": 483.08,
+      "text": "now we will call a filter method over"
+    },
+    {
+      "startSeconds": 480.36,
+      "endSeconds": 485.56,
+      "text": "array so we will do array. filter and we"
+    },
+    {
+      "startSeconds": 483.08,
+      "endSeconds": 488,
+      "text": "will write the filter logic inside this"
+    },
+    {
+      "startSeconds": 485.56,
+      "endSeconds": 491.44,
+      "text": "so now the filter logic would be to find"
+    },
+    {
+      "startSeconds": 488,
+      "endSeconds": 494.479,
+      "text": "out odd values inside this array right"
+    },
+    {
+      "startSeconds": 491.44,
+      "endSeconds": 496.68,
+      "text": "so maybe we need to write a function"
+    },
+    {
+      "startSeconds": 494.479,
+      "endSeconds": 499.8,
+      "text": "over here which is basically which"
+    },
+    {
+      "startSeconds": 496.68,
+      "endSeconds": 502.8,
+      "text": "checks whether an value is odd or not so"
+    },
+    {
+      "startSeconds": 499.8,
+      "endSeconds": 505.599,
+      "text": "maybe let's write a logic is odd okay"
+    },
+    {
+      "startSeconds": 502.8,
+      "endSeconds": 508.84,
+      "text": "and this is basically again a function"
+    },
+    {
+      "startSeconds": 505.599,
+      "endSeconds": 513.599,
+      "text": "oh I misspelled it function is odd"
+    },
+    {
+      "startSeconds": 508.84,
+      "endSeconds": 516.68,
+      "text": "okay and is odd basically takes an value"
+    },
+    {
+      "startSeconds": 513.599,
+      "endSeconds": 519.039,
+      "text": "and checks whether this value X is odd"
+    },
+    {
+      "startSeconds": 516.68,
+      "endSeconds": 522,
+      "text": "or not how do you write that logic you"
+    },
+    {
+      "startSeconds": 519.039,
+      "endSeconds": 524.959,
+      "text": "just do a X Mod by two and it basically"
+    },
+    {
+      "startSeconds": 522,
+      "endSeconds": 527.6,
+      "text": "checks whether a value is odd or not so"
+    },
+    {
+      "startSeconds": 524.959,
+      "endSeconds": 531.44,
+      "text": "that is how it filters let's now see our"
+    },
+    {
+      "startSeconds": 527.6,
+      "endSeconds": 534.68,
+      "text": "output over here and if we print it see"
+    },
+    {
+      "startSeconds": 531.44,
+      "endSeconds": 536.64,
+      "text": "we get 513 and why there is no 2 and six"
+    },
+    {
+      "startSeconds": 534.68,
+      "endSeconds": 538.959,
+      "text": "because when this function was checked"
+    },
+    {
+      "startSeconds": 536.64,
+      "endSeconds": 540.76,
+      "text": "against 2 and six so basically it"
+    },
+    {
+      "startSeconds": 538.959,
+      "endSeconds": 542.8,
+      "text": "returned false false isn't it so"
+    },
+    {
+      "startSeconds": 540.76,
+      "endSeconds": 545.2,
+      "text": "similarly if we just had to filter out"
+    },
+    {
+      "startSeconds": 542.8,
+      "endSeconds": 548.16,
+      "text": "all the even values so how we could have"
+    },
+    {
+      "startSeconds": 545.2,
+      "endSeconds": 550.56,
+      "text": "done is maybe we just pass in a function"
+    },
+    {
+      "startSeconds": 548.16,
+      "endSeconds": 552.76,
+      "text": "filter even and how do you find even"
+    },
+    {
+      "startSeconds": 550.56,
+      "endSeconds": 557.8,
+      "text": "values so even values are the ones where"
+    },
+    {
+      "startSeconds": 552.76,
+      "endSeconds": 562.04,
+      "text": "X Mod by 2 is equal equal to0 isn't it"
+    },
+    {
+      "startSeconds": 557.8,
+      "endSeconds": 565.12,
+      "text": "right we can do a even right filter is"
+    },
+    {
+      "startSeconds": 562.04,
+      "endSeconds": 567.64,
+      "text": "even so if we see only two and six are"
+    },
+    {
+      "startSeconds": 565.12,
+      "endSeconds": 570.279,
+      "text": "filtered out now suppose if we want to"
+    },
+    {
+      "startSeconds": 567.64,
+      "endSeconds": 573.959,
+      "text": "find out all the values which are"
+    },
+    {
+      "startSeconds": 570.279,
+      "endSeconds": 576.68,
+      "text": "greater than 4 okay so what we should do"
+    },
+    {
+      "startSeconds": 573.959,
+      "endSeconds": 580.399,
+      "text": "over here again return X is greater than"
+    },
+    {
+      "startSeconds": 576.68,
+      "endSeconds": 583,
+      "text": "4 right so so it just gives you five and"
+    },
+    {
+      "startSeconds": 580.399,
+      "endSeconds": 585.88,
+      "text": "six right so that's how we can do or"
+    },
+    {
+      "startSeconds": 583,
+      "endSeconds": 589.44,
+      "text": "maybe just okay so we had a bad name"
+    },
+    {
+      "startSeconds": 585.88,
+      "endSeconds": 592.279,
+      "text": "greater than four okay greater than four"
+    },
+    {
+      "startSeconds": 589.44,
+      "endSeconds": 594.399,
+      "text": "and let's have a greater than four here"
+    },
+    {
+      "startSeconds": 592.279,
+      "endSeconds": 597,
+      "text": "so so this gives you again greater than"
+    },
+    {
+      "startSeconds": 594.399,
+      "endSeconds": 599.16,
+      "text": "four values right so that's how the"
+    },
+    {
+      "startSeconds": 597,
+      "endSeconds": 601,
+      "text": "filter function works and again over"
+    },
+    {
+      "startSeconds": 599.16,
+      "endSeconds": 602.88,
+      "text": "here in this filter function instead of"
+    },
+    {
+      "startSeconds": 601,
+      "endSeconds": 605.16,
+      "text": "just passing this greater than four like"
+    },
+    {
+      "startSeconds": 602.88,
+      "endSeconds": 608.12,
+      "text": "this maybe you can just copy this"
+    },
+    {
+      "startSeconds": 605.16,
+      "endSeconds": 610.6,
+      "text": "function and pass in directly over here"
+    },
+    {
+      "startSeconds": 608.12,
+      "endSeconds": 612.64,
+      "text": "like this okay it works perfectly fine"
+    },
+    {
+      "startSeconds": 610.6,
+      "endSeconds": 615.36,
+      "text": "again it gives the same result or maybe"
+    },
+    {
+      "startSeconds": 612.64,
+      "endSeconds": 617.839,
+      "text": "just use a arrow function so I'm just"
+    },
+    {
+      "startSeconds": 615.36,
+      "endSeconds": 621.04,
+      "text": "showing you all this so that you are"
+    },
+    {
+      "startSeconds": 617.839,
+      "endSeconds": 623.36,
+      "text": "habitual of uh seeing this type of code"
+    },
+    {
+      "startSeconds": 621.04,
+      "endSeconds": 625.76,
+      "text": "okay and you don't get frustrated when"
+    },
+    {
+      "startSeconds": 623.36,
+      "endSeconds": 628.279,
+      "text": "you see such code written okay and it"
+    },
+    {
+      "startSeconds": 625.76,
+      "endSeconds": 630.32,
+      "text": "makes sense to you so and maybe some"
+    },
+    {
+      "startSeconds": 628.279,
+      "endSeconds": 633.6,
+      "text": "people write like this as well so this"
+    },
+    {
+      "startSeconds": 630.32,
+      "endSeconds": 635.24,
+      "text": "is a perfectly valid code so this video"
+    },
+    {
+      "startSeconds": 633.6,
+      "endSeconds": 637.639,
+      "text": "is not just about explaining what the"
+    },
+    {
+      "startSeconds": 635.24,
+      "endSeconds": 639.68,
+      "text": "filter function is doing but also when"
+    },
+    {
+      "startSeconds": 637.639,
+      "endSeconds": 641.32,
+      "text": "you read the code you should be able to"
+    },
+    {
+      "startSeconds": 639.68,
+      "endSeconds": 643.399,
+      "text": "understand and build the mental model of"
+    },
+    {
+      "startSeconds": 641.32,
+      "endSeconds": 645.68,
+      "text": "what is happening in the code right so"
+    },
+    {
+      "startSeconds": 643.399,
+      "endSeconds": 648.32,
+      "text": "if you read this code you should be"
+    },
+    {
+      "startSeconds": 645.68,
+      "endSeconds": 651.839,
+      "text": "aware of that okay ARR do filter what is"
+    },
+    {
+      "startSeconds": 648.32,
+      "endSeconds": 654.36,
+      "text": "ARR ARR is this array right this array."
+    },
+    {
+      "startSeconds": 651.839,
+      "endSeconds": 658.56,
+      "text": "filter and what is the filter logic you"
+    },
+    {
+      "startSeconds": 654.36,
+      "endSeconds": 660.44,
+      "text": "only filter if x is greater than 4 okay"
+    },
+    {
+      "startSeconds": 658.56,
+      "endSeconds": 662.839,
+      "text": "that means all the values which are"
+    },
+    {
+      "startSeconds": 660.44,
+      "endSeconds": 665.16,
+      "text": "greater than four will be filtered out"
+    },
+    {
+      "startSeconds": 662.839,
+      "endSeconds": 668.16,
+      "text": "right suppose if I do all the values"
+    },
+    {
+      "startSeconds": 665.16,
+      "endSeconds": 670.8,
+      "text": "less than three would be filtered out so"
+    },
+    {
+      "startSeconds": 668.16,
+      "endSeconds": 673.92,
+      "text": "sorry three would be filtered out see"
+    },
+    {
+      "startSeconds": 670.8,
+      "endSeconds": 675.959,
+      "text": "you will get one and two right so so"
+    },
+    {
+      "startSeconds": 673.92,
+      "endSeconds": 678.079,
+      "text": "that's how you should be reading this"
+    },
+    {
+      "startSeconds": 675.959,
+      "endSeconds": 680.44,
+      "text": "code and understanding and writing this"
+    },
+    {
+      "startSeconds": 678.079,
+      "endSeconds": 682.24,
+      "text": "code okay so this was a very easy"
+    },
+    {
+      "startSeconds": 680.44,
+      "endSeconds": 684.2,
+      "text": "example but we will take a little more"
+    },
+    {
+      "startSeconds": 682.24,
+      "endSeconds": 686.88,
+      "text": "advanced example but first let us cover"
+    },
+    {
+      "startSeconds": 684.2,
+      "endSeconds": 688.839,
+      "text": "reduce a lot of people have texted me"
+    },
+    {
+      "startSeconds": 686.88,
+      "endSeconds": 690.88,
+      "text": "that please make reduce video please"
+    },
+    {
+      "startSeconds": 688.839,
+      "endSeconds": 693.76,
+      "text": "make red red video so here we are we"
+    },
+    {
+      "startSeconds": 690.88,
+      "endSeconds": 696.16,
+      "text": "will learn what is reduced now so first"
+    },
+    {
+      "startSeconds": 693.76,
+      "endSeconds": 698.68,
+      "text": "of all let us just get rid of this code"
+    },
+    {
+      "startSeconds": 696.16,
+      "endSeconds": 701.2,
+      "text": "okay so now let us see what is reduce so"
+    },
+    {
+      "startSeconds": 698.68,
+      "endSeconds": 703.079,
+      "text": "just like the name suggests reduce it"
+    },
+    {
+      "startSeconds": 701.2,
+      "endSeconds": 705.72,
+      "text": "actually does not reduce"
+    },
+    {
+      "startSeconds": 703.079,
+      "endSeconds": 708.32,
+      "text": "anything you know if I was given an"
+    },
+    {
+      "startSeconds": 705.72,
+      "endSeconds": 711.44,
+      "text": "option I would never name this function"
+    },
+    {
+      "startSeconds": 708.32,
+      "endSeconds": 713.399,
+      "text": "reduce okay because it is so confusing"
+    },
+    {
+      "startSeconds": 711.44,
+      "endSeconds": 715.88,
+      "text": "when it says reduce we don't know what"
+    },
+    {
+      "startSeconds": 713.399,
+      "endSeconds": 718.519,
+      "text": "it is reducing what does that reduce"
+    },
+    {
+      "startSeconds": 715.88,
+      "endSeconds": 720.56,
+      "text": "means okay filter makes sense map makes"
+    },
+    {
+      "startSeconds": 718.519,
+      "endSeconds": 721.56,
+      "text": "sense you are map in one to one value"
+    },
+    {
+      "startSeconds": 720.56,
+      "endSeconds": 724.04,
+      "text": "but says"
+    },
+    {
+      "startSeconds": 721.56,
+      "endSeconds": 726.079,
+      "text": "reduce so now let us just talk about the"
+    },
+    {
+      "startSeconds": 724.04,
+      "endSeconds": 728.279,
+      "text": "reduce function so reduce function is"
+    },
+    {
+      "startSeconds": 726.079,
+      "endSeconds": 731.12,
+      "text": "basically used at a place where you have"
+    },
+    {
+      "startSeconds": 728.279,
+      "endSeconds": 733.639,
+      "text": "to take all the elements of an array and"
+    },
+    {
+      "startSeconds": 731.12,
+      "endSeconds": 736.68,
+      "text": "come up with a single value out of them"
+    },
+    {
+      "startSeconds": 733.639,
+      "endSeconds": 738.639,
+      "text": "okay so um it sounds confusing but let"
+    },
+    {
+      "startSeconds": 736.68,
+      "endSeconds": 740.399,
+      "text": "me give you an example to give you an"
+    },
+    {
+      "startSeconds": 738.639,
+      "endSeconds": 742.8,
+      "text": "example maybe suppose if you have to"
+    },
+    {
+      "startSeconds": 740.399,
+      "endSeconds": 744.8,
+      "text": "take this array and you have to iterate"
+    },
+    {
+      "startSeconds": 742.8,
+      "endSeconds": 747.519,
+      "text": "over each and every element and find out"
+    },
+    {
+      "startSeconds": 744.8,
+      "endSeconds": 750.639,
+      "text": "sum of all these elements in this array"
+    },
+    {
+      "startSeconds": 747.519,
+      "endSeconds": 753,
+      "text": "right or maybe just try to iterate all"
+    },
+    {
+      "startSeconds": 750.639,
+      "endSeconds": 755.24,
+      "text": "these array and find out the largest or"
+    },
+    {
+      "startSeconds": 753,
+      "endSeconds": 757.32,
+      "text": "the maximum number inside this array so"
+    },
+    {
+      "startSeconds": 755.24,
+      "endSeconds": 760.44,
+      "text": "how would you do that here you can use"
+    },
+    {
+      "startSeconds": 757.32,
+      "endSeconds": 763.48,
+      "text": "reduce okay maybe to find sum or maybe"
+    },
+    {
+      "startSeconds": 760.44,
+      "endSeconds": 766.04,
+      "text": "to find maximum number inside this array"
+    },
+    {
+      "startSeconds": 763.48,
+      "endSeconds": 767.639,
+      "text": "okay so let's just take an example to"
+    },
+    {
+      "startSeconds": 766.04,
+      "endSeconds": 769.44,
+      "text": "see how we can write this reduce"
+    },
+    {
+      "startSeconds": 767.639,
+      "endSeconds": 771.399,
+      "text": "function but before moving on to that"
+    },
+    {
+      "startSeconds": 769.44,
+      "endSeconds": 773,
+      "text": "okay before moving on to that if I'll"
+    },
+    {
+      "startSeconds": 771.399,
+      "endSeconds": 774.959,
+      "text": "directly just jump on to writing the"
+    },
+    {
+      "startSeconds": 773,
+      "endSeconds": 777.079,
+      "text": "reduce function it will not make any"
+    },
+    {
+      "startSeconds": 774.959,
+      "endSeconds": 779.72,
+      "text": "sense to you first of all what we will"
+    },
+    {
+      "startSeconds": 777.079,
+      "endSeconds": 782.16,
+      "text": "do we will just write down a code how we"
+    },
+    {
+      "startSeconds": 779.72,
+      "endSeconds": 784.24,
+      "text": "used to write in a nonfunctional way"
+    },
+    {
+      "startSeconds": 782.16,
+      "endSeconds": 786.36,
+      "text": "okay non-functional programming way then"
+    },
+    {
+      "startSeconds": 784.24,
+      "endSeconds": 788.72,
+      "text": "we will move on to writing the reduced"
+    },
+    {
+      "startSeconds": 786.36,
+      "endSeconds": 790.399,
+      "text": "function okay that way you will be"
+    },
+    {
+      "startSeconds": 788.72,
+      "endSeconds": 792.24,
+      "text": "better able to understand the reduceed"
+    },
+    {
+      "startSeconds": 790.399,
+      "endSeconds": 794.56,
+      "text": "function so just bear with me for 2"
+    },
+    {
+      "startSeconds": 792.24,
+      "endSeconds": 796.839,
+      "text": "minutes okay so let us just first try to"
+    },
+    {
+      "startSeconds": 794.56,
+      "endSeconds": 800.16,
+      "text": "write a normal function okay let's call"
+    },
+    {
+      "startSeconds": 796.839,
+      "endSeconds": 802.88,
+      "text": "it find sum okay which finds the sum of"
+    },
+    {
+      "startSeconds": 800.16,
+      "endSeconds": 805.68,
+      "text": "these array right a r r if we pass on a"
+    },
+    {
+      "startSeconds": 802.88,
+      "endSeconds": 808.48,
+      "text": "RR inside it so to find sum of all these"
+    },
+    {
+      "startSeconds": 805.68,
+      "endSeconds": 811.079,
+      "text": "values of ARR what we will do we will"
+    },
+    {
+      "startSeconds": 808.48,
+      "endSeconds": 813.079,
+      "text": "basically have a variable which is sum"
+    },
+    {
+      "startSeconds": 811.079,
+      "endSeconds": 815,
+      "text": "and we will just assign it with zero"
+    },
+    {
+      "startSeconds": 813.079,
+      "endSeconds": 817.079,
+      "text": "right this will be a place where we will"
+    },
+    {
+      "startSeconds": 815,
+      "endSeconds": 819.279,
+      "text": "be calculating our sum and then what"
+    },
+    {
+      "startSeconds": 817.079,
+      "endSeconds": 822.04,
+      "text": "we'll do we'll just generally write a"
+    },
+    {
+      "startSeconds": 819.279,
+      "endSeconds": 825.079,
+      "text": "for Loop okay and then what we will do"
+    },
+    {
+      "startSeconds": 822.04,
+      "endSeconds": 827.32,
+      "text": "we will just iterate over each and every"
+    },
+    {
+      "startSeconds": 825.079,
+      "endSeconds": 829.279,
+      "text": "element right and what we will do we"
+    },
+    {
+      "startSeconds": 827.32,
+      "endSeconds": 831.56,
+      "text": "will just keep on appending that inside"
+    },
+    {
+      "startSeconds": 829.279,
+      "endSeconds": 835.36,
+      "text": "our sum variable sum is equals to sum"
+    },
+    {
+      "startSeconds": 831.56,
+      "endSeconds": 837.88,
+      "text": "plus a r r of I right and what we will"
+    },
+    {
+      "startSeconds": 835.36,
+      "endSeconds": 841.519,
+      "text": "do we will just do that again and again"
+    },
+    {
+      "startSeconds": 837.88,
+      "endSeconds": 843.959,
+      "text": "for each and every value of ARR of I and"
+    },
+    {
+      "startSeconds": 841.519,
+      "endSeconds": 846.199,
+      "text": "what we'll do we will just return the"
+    },
+    {
+      "startSeconds": 843.959,
+      "endSeconds": 848.36,
+      "text": "sum That's How we'll do right this is"
+    },
+    {
+      "startSeconds": 846.199,
+      "endSeconds": 852.839,
+      "text": "what the code will be let's just check"
+    },
+    {
+      "startSeconds": 848.36,
+      "endSeconds": 856.519,
+      "text": "it if we check the result how we what we"
+    },
+    {
+      "startSeconds": 852.839,
+      "endSeconds": 859.16,
+      "text": "can do some find some and and we call it"
+    },
+    {
+      "startSeconds": 856.519,
+      "endSeconds": 862.44,
+      "text": "with ARR and what's the result so we get"
+    },
+    {
+      "startSeconds": 859.16,
+      "endSeconds": 865,
+      "text": "17 over here so now if we had to do the"
+    },
+    {
+      "startSeconds": 862.44,
+      "endSeconds": 868.24,
+      "text": "same thing using reduce okay so reduce"
+    },
+    {
+      "startSeconds": 865,
+      "endSeconds": 870.16,
+      "text": "is used in this place where you need to"
+    },
+    {
+      "startSeconds": 868.24,
+      "endSeconds": 872.8,
+      "text": "iterate over all the elements and find"
+    },
+    {
+      "startSeconds": 870.16,
+      "endSeconds": 875.639,
+      "text": "out a particular value okay so in this"
+    },
+    {
+      "startSeconds": 872.8,
+      "endSeconds": 878.68,
+      "text": "case it was Sum right so how we can"
+    },
+    {
+      "startSeconds": 875.639,
+      "endSeconds": 880.88,
+      "text": "transform this logic and write a reduce"
+    },
+    {
+      "startSeconds": 878.68,
+      "endSeconds": 883.32,
+      "text": "function instead so now I'll show you"
+    },
+    {
+      "startSeconds": 880.88,
+      "endSeconds": 886.079,
+      "text": "that for that let's take a const let's"
+    },
+    {
+      "startSeconds": 883.32,
+      "endSeconds": 888.88,
+      "text": "call it output okay and over here we"
+    },
+    {
+      "startSeconds": 886.079,
+      "endSeconds": 892.56,
+      "text": "will write ar. reduce just like map and"
+    },
+    {
+      "startSeconds": 888.88,
+      "endSeconds": 895.44,
+      "text": "filter we use ar. reduce now this reduce"
+    },
+    {
+      "startSeconds": 892.56,
+      "endSeconds": 898.44,
+      "text": "takes a function inside it now this"
+    },
+    {
+      "startSeconds": 895.44,
+      "endSeconds": 900.519,
+      "text": "function has two parameters now listen"
+    },
+    {
+      "startSeconds": 898.44,
+      "endSeconds": 903.48,
+      "text": "to me very carefully this is the most"
+    },
+    {
+      "startSeconds": 900.519,
+      "endSeconds": 906.36,
+      "text": "confusing part for a lot of developers"
+    },
+    {
+      "startSeconds": 903.48,
+      "endSeconds": 908.6,
+      "text": "this function takes two parameters"
+    },
+    {
+      "startSeconds": 906.36,
+      "endSeconds": 911.92,
+      "text": "listen to me very carefully first is the"
+    },
+    {
+      "startSeconds": 908.6,
+      "endSeconds": 915.8,
+      "text": "ACC that's a accumulator and the second"
+    },
+    {
+      "startSeconds": 911.92,
+      "endSeconds": 918.36,
+      "text": "one is current okay I remember like this"
+    },
+    {
+      "startSeconds": 915.8,
+      "endSeconds": 920.279,
+      "text": "okay accumulator and current so now what"
+    },
+    {
+      "startSeconds": 918.36,
+      "endSeconds": 924.04,
+      "text": "are these accumulator and current let's"
+    },
+    {
+      "startSeconds": 920.279,
+      "endSeconds": 927.32,
+      "text": "just see in a moment so when you write"
+    },
+    {
+      "startSeconds": 924.04,
+      "endSeconds": 930.56,
+      "text": "like this right ar. reduce basically"
+    },
+    {
+      "startSeconds": 927.32,
+      "endSeconds": 933.12,
+      "text": "this function is iterated over each and"
+    },
+    {
+      "startSeconds": 930.56,
+      "endSeconds": 935.56,
+      "text": "every element of this array okay so this"
+    },
+    {
+      "startSeconds": 933.12,
+      "endSeconds": 938.04,
+      "text": "reduce basically iterates this function"
+    },
+    {
+      "startSeconds": 935.56,
+      "endSeconds": 941.199,
+      "text": "over each and every elements of this"
+    },
+    {
+      "startSeconds": 938.04,
+      "endSeconds": 944.12,
+      "text": "array and what it will do is this"
+    },
+    {
+      "startSeconds": 941.199,
+      "endSeconds": 947.079,
+      "text": "current or the second parameter"
+    },
+    {
+      "startSeconds": 944.12,
+      "endSeconds": 949,
+      "text": "represents the value of when when we are"
+    },
+    {
+      "startSeconds": 947.079,
+      "endSeconds": 950.72,
+      "text": "iterating right when we are iterating"
+    },
+    {
+      "startSeconds": 949,
+      "endSeconds": 953,
+      "text": "this function or we are running this"
+    },
+    {
+      "startSeconds": 950.72,
+      "endSeconds": 956.12,
+      "text": "function against each and every value"
+    },
+    {
+      "startSeconds": 953,
+      "endSeconds": 959.88,
+      "text": "this current represents the value like"
+    },
+    {
+      "startSeconds": 956.12,
+      "endSeconds": 962.759,
+      "text": "these values inside this reduce function"
+    },
+    {
+      "startSeconds": 959.88,
+      "endSeconds": 964.759,
+      "text": "okay so this function over here current"
+    },
+    {
+      "startSeconds": 962.759,
+      "endSeconds": 967.12,
+      "text": "will be these values and this"
+    },
+    {
+      "startSeconds": 964.759,
+      "endSeconds": 969.36,
+      "text": "accumulator right the first parameter"
+    },
+    {
+      "startSeconds": 967.12,
+      "endSeconds": 972.12,
+      "text": "basically is used to accumulate the"
+    },
+    {
+      "startSeconds": 969.36,
+      "endSeconds": 975.92,
+      "text": "values okay or accumulate the result"
+    },
+    {
+      "startSeconds": 972.12,
+      "endSeconds": 978.16,
+      "text": "what we have to get out of those values"
+    },
+    {
+      "startSeconds": 975.92,
+      "endSeconds": 981.04,
+      "text": "which are present in the arrays so in"
+    },
+    {
+      "startSeconds": 978.16,
+      "endSeconds": 983.759,
+      "text": "this example we needed to find the sum"
+    },
+    {
+      "startSeconds": 981.04,
+      "endSeconds": 986.279,
+      "text": "right so how did we do in a traditional"
+    },
+    {
+      "startSeconds": 983.759,
+      "endSeconds": 988.639,
+      "text": "way we initialize this sum and we were"
+    },
+    {
+      "startSeconds": 986.279,
+      "endSeconds": 990.6,
+      "text": "accumulating our sum inside this sum"
+    },
+    {
+      "startSeconds": 988.639,
+      "endSeconds": 993.44,
+      "text": "variable aable right so similarly we"
+    },
+    {
+      "startSeconds": 990.6,
+      "endSeconds": 996,
+      "text": "will use an accumulator to accumulate"
+    },
+    {
+      "startSeconds": 993.44,
+      "endSeconds": 999,
+      "text": "these values so what we will do and this"
+    },
+    {
+      "startSeconds": 996,
+      "endSeconds": 1001.199,
+      "text": "current is basically the current values"
+    },
+    {
+      "startSeconds": 999,
+      "endSeconds": 1004.399,
+      "text": "which are represented in this particular"
+    },
+    {
+      "startSeconds": 1001.199,
+      "endSeconds": 1007,
+      "text": "array so so if we have to compare this"
+    },
+    {
+      "startSeconds": 1004.399,
+      "endSeconds": 1009.839,
+      "text": "example and with this function this"
+    },
+    {
+      "startSeconds": 1007,
+      "endSeconds": 1013.92,
+      "text": "function find some with this function so"
+    },
+    {
+      "startSeconds": 1009.839,
+      "endSeconds": 1016.399,
+      "text": "the current is basically this ARR of I"
+    },
+    {
+      "startSeconds": 1013.92,
+      "endSeconds": 1018.639,
+      "text": "okay over here and the accumulator in"
+    },
+    {
+      "startSeconds": 1016.399,
+      "endSeconds": 1021.56,
+      "text": "this case is the sum so how would we"
+    },
+    {
+      "startSeconds": 1018.639,
+      "endSeconds": 1023.6,
+      "text": "write over here is so accumulator is"
+    },
+    {
+      "startSeconds": 1021.56,
+      "endSeconds": 1026.76,
+      "text": "equals to what we need to accumulate in"
+    },
+    {
+      "startSeconds": 1023.6,
+      "endSeconds": 1030.36,
+      "text": "it sum right so how do we calculate sum"
+    },
+    {
+      "startSeconds": 1026.76,
+      "endSeconds": 1033,
+      "text": "we would do a accumulator Plus+ now what"
+    },
+    {
+      "startSeconds": 1030.36,
+      "endSeconds": 1035.76,
+      "text": "a r r of i instead of a r r of I we"
+    },
+    {
+      "startSeconds": 1033,
+      "endSeconds": 1038.36,
+      "text": "basically write curve which is our"
+    },
+    {
+      "startSeconds": 1035.76,
+      "endSeconds": 1041.319,
+      "text": "current value right and what we will do"
+    },
+    {
+      "startSeconds": 1038.36,
+      "endSeconds": 1044.319,
+      "text": "we will just return this"
+    },
+    {
+      "startSeconds": 1041.319,
+      "endSeconds": 1047,
+      "text": "accumulator return this"
+    },
+    {
+      "startSeconds": 1044.319,
+      "endSeconds": 1049.6,
+      "text": "accumulator and one more thing to notice"
+    },
+    {
+      "startSeconds": 1047,
+      "endSeconds": 1051.72,
+      "text": "over here is so in this function"
+    },
+    {
+      "startSeconds": 1049.6,
+      "endSeconds": 1054.08,
+      "text": "basically this accumulator is acting"
+    },
+    {
+      "startSeconds": 1051.72,
+      "endSeconds": 1056.36,
+      "text": "like this sum variable right and it is"
+    },
+    {
+      "startSeconds": 1054.08,
+      "endSeconds": 1059,
+      "text": "just accumulating all these values it is"
+    },
+    {
+      "startSeconds": 1056.36,
+      "endSeconds": 1062.039,
+      "text": "just iterating this function is being"
+    },
+    {
+      "startSeconds": 1059,
+      "endSeconds": 1064.64,
+      "text": "run against each of these values inside"
+    },
+    {
+      "startSeconds": 1062.039,
+      "endSeconds": 1067.96,
+      "text": "this array and basically accumulator is"
+    },
+    {
+      "startSeconds": 1064.64,
+      "endSeconds": 1071,
+      "text": "just appending a sum of the current"
+    },
+    {
+      "startSeconds": 1067.96,
+      "endSeconds": 1072.88,
+      "text": "value to itself right so accumulator"
+    },
+    {
+      "startSeconds": 1071,
+      "endSeconds": 1075.6,
+      "text": "should be initialized with an initial"
+    },
+    {
+      "startSeconds": 1072.88,
+      "endSeconds": 1077.88,
+      "text": "value for the first go right so the"
+    },
+    {
+      "startSeconds": 1075.6,
+      "endSeconds": 1079.44,
+      "text": "initial value how do we pass an initial"
+    },
+    {
+      "startSeconds": 1077.88,
+      "endSeconds": 1082.32,
+      "text": "value to an accumulator"
+    },
+    {
+      "startSeconds": 1079.44,
+      "endSeconds": 1085.6,
+      "text": "so that is basically the second argument"
+    },
+    {
+      "startSeconds": 1082.32,
+      "endSeconds": 1088.559,
+      "text": "to this reduced function so this reduce"
+    },
+    {
+      "startSeconds": 1085.6,
+      "endSeconds": 1090.88,
+      "text": "function basically takes second argument"
+    },
+    {
+      "startSeconds": 1088.559,
+      "endSeconds": 1093.48,
+      "text": "so the first argument is a function and"
+    },
+    {
+      "startSeconds": 1090.88,
+      "endSeconds": 1096,
+      "text": "the second argument is any initial value"
+    },
+    {
+      "startSeconds": 1093.48,
+      "endSeconds": 1098.72,
+      "text": "which you need to pass inside this"
+    },
+    {
+      "startSeconds": 1096,
+      "endSeconds": 1101.48,
+      "text": "accumulator okay so the initial value"
+    },
+    {
+      "startSeconds": 1098.72,
+      "endSeconds": 1104.32,
+      "text": "over here would be zero for some isn't"
+    },
+    {
+      "startSeconds": 1101.48,
+      "endSeconds": 1107.24,
+      "text": "it this is how we will write this whole"
+    },
+    {
+      "startSeconds": 1104.32,
+      "endSeconds": 1110.159,
+      "text": "logic inside our reduce function and if"
+    },
+    {
+      "startSeconds": 1107.24,
+      "endSeconds": 1112.76,
+      "text": "we do a console log of output now let's"
+    },
+    {
+      "startSeconds": 1110.159,
+      "endSeconds": 1115.48,
+      "text": "do a console log of output and if we"
+    },
+    {
+      "startSeconds": 1112.76,
+      "endSeconds": 1118.12,
+      "text": "save it see we got 17 once again so"
+    },
+    {
+      "startSeconds": 1115.48,
+      "endSeconds": 1120.44,
+      "text": "basically this whole logic is exactly"
+    },
+    {
+      "startSeconds": 1118.12,
+      "endSeconds": 1122.88,
+      "text": "similar to this find Su"
+    },
+    {
+      "startSeconds": 1120.44,
+      "endSeconds": 1124.799,
+      "text": "logic so now let's come to a tricky"
+    },
+    {
+      "startSeconds": 1122.88,
+      "endSeconds": 1127.4,
+      "text": "example where you need to find out the"
+    },
+    {
+      "startSeconds": 1124.799,
+      "endSeconds": 1129.28,
+      "text": "maximum value inside this array so how"
+    },
+    {
+      "startSeconds": 1127.4,
+      "endSeconds": 1131.36,
+      "text": "let us first write down that logic over"
+    },
+    {
+      "startSeconds": 1129.28,
+      "endSeconds": 1134.12,
+      "text": "here let's just modify this find Su and"
+    },
+    {
+      "startSeconds": 1131.36,
+      "endSeconds": 1136.36,
+      "text": "try to find out find Max inside this"
+    },
+    {
+      "startSeconds": 1134.12,
+      "endSeconds": 1139.76,
+      "text": "array how do we find out the maximum"
+    },
+    {
+      "startSeconds": 1136.36,
+      "endSeconds": 1142.44,
+      "text": "inside that array let us suppose for now"
+    },
+    {
+      "startSeconds": 1139.76,
+      "endSeconds": 1144.919,
+      "text": "this sum is Max okay so we need to find"
+    },
+    {
+      "startSeconds": 1142.44,
+      "endSeconds": 1146.799,
+      "text": "out maximum value inside this value what"
+    },
+    {
+      "startSeconds": 1144.919,
+      "endSeconds": 1150.039,
+      "text": "we will do we will just iterate over"
+    },
+    {
+      "startSeconds": 1146.799,
+      "endSeconds": 1152.76,
+      "text": "each value and we will see if our"
+    },
+    {
+      "startSeconds": 1150.039,
+      "endSeconds": 1155.24,
+      "text": "current value is greater than maximum so"
+    },
+    {
+      "startSeconds": 1152.76,
+      "endSeconds": 1158.039,
+      "text": "maximum would be that current value"
+    },
+    {
+      "startSeconds": 1155.24,
+      "endSeconds": 1161.36,
+      "text": "right how will we write if our current"
+    },
+    {
+      "startSeconds": 1158.039,
+      "endSeconds": 1164.559,
+      "text": "value current value is AR RR of I is"
+    },
+    {
+      "startSeconds": 1161.36,
+      "endSeconds": 1165.76,
+      "text": "greater than maximum what we will do we"
+    },
+    {
+      "startSeconds": 1164.559,
+      "endSeconds": 1169.32,
+      "text": "will"
+    },
+    {
+      "startSeconds": 1165.76,
+      "endSeconds": 1173.4,
+      "text": "just override our maximum with the"
+    },
+    {
+      "startSeconds": 1169.32,
+      "endSeconds": 1177.36,
+      "text": "a RR of I else we don't do anything so"
+    },
+    {
+      "startSeconds": 1173.4,
+      "endSeconds": 1180.4,
+      "text": "we will just iterate and if our ARR or"
+    },
+    {
+      "startSeconds": 1177.36,
+      "endSeconds": 1183.52,
+      "text": "ARR of I or any of these values becomes"
+    },
+    {
+      "startSeconds": 1180.4,
+      "endSeconds": 1186.159,
+      "text": "greater than the maximum value then what"
+    },
+    {
+      "startSeconds": 1183.52,
+      "endSeconds": 1188.64,
+      "text": "happens maximum becomes this ARR of I"
+    },
+    {
+      "startSeconds": 1186.159,
+      "endSeconds": 1191.559,
+      "text": "and then we just return maximum right"
+    },
+    {
+      "startSeconds": 1188.64,
+      "endSeconds": 1193.919,
+      "text": "that's how it works isn't it so if I"
+    },
+    {
+      "startSeconds": 1191.559,
+      "endSeconds": 1196.159,
+      "text": "just comment down and just save it so if"
+    },
+    {
+      "startSeconds": 1193.919,
+      "endSeconds": 1199.6,
+      "text": "you find out some okay not find some"
+    },
+    {
+      "startSeconds": 1196.159,
+      "endSeconds": 1202.559,
+      "text": "find Max um let's run it and see if it"
+    },
+    {
+      "startSeconds": 1199.6,
+      "endSeconds": 1205.32,
+      "text": "works yes so we got the six right the"
+    },
+    {
+      "startSeconds": 1202.559,
+      "endSeconds": 1207.76,
+      "text": "six is the maximum value so now we have"
+    },
+    {
+      "startSeconds": 1205.32,
+      "endSeconds": 1210.2,
+      "text": "written our find Max function now we"
+    },
+    {
+      "startSeconds": 1207.76,
+      "endSeconds": 1212.52,
+      "text": "will write the same logic using reduce"
+    },
+    {
+      "startSeconds": 1210.2,
+      "endSeconds": 1215.48,
+      "text": "but this time we won't be doing any"
+    },
+    {
+      "startSeconds": 1212.52,
+      "endSeconds": 1217.919,
+      "text": "cheating okay we won't be doing using or"
+    },
+    {
+      "startSeconds": 1215.48,
+      "endSeconds": 1220.4,
+      "text": "we won't be using this as a reference"
+    },
+    {
+      "startSeconds": 1217.919,
+      "endSeconds": 1222.52,
+      "text": "and we would try to write down Reduce by"
+    },
+    {
+      "startSeconds": 1220.4,
+      "endSeconds": 1224.88,
+      "text": "ourselves okay how let's try to write it"
+    },
+    {
+      "startSeconds": 1222.52,
+      "endSeconds": 1227.6,
+      "text": "okay so if we do a const"
+    },
+    {
+      "startSeconds": 1224.88,
+      "endSeconds": 1229.919,
+      "text": "output okay can you just guess what we"
+    },
+    {
+      "startSeconds": 1227.6,
+      "endSeconds": 1234.36,
+      "text": "will do now yes you are absolutely right"
+    },
+    {
+      "startSeconds": 1229.919,
+      "endSeconds": 1238.2,
+      "text": "we will do a array. reduce right array"
+    },
+    {
+      "startSeconds": 1234.36,
+      "endSeconds": 1240.28,
+      "text": "do reduce and we will write a function"
+    },
+    {
+      "startSeconds": 1238.2,
+      "endSeconds": 1242.6,
+      "text": "over here right and this function takes"
+    },
+    {
+      "startSeconds": 1240.28,
+      "endSeconds": 1246.08,
+      "text": "two parameter what were those yes the"
+    },
+    {
+      "startSeconds": 1242.6,
+      "endSeconds": 1248.919,
+      "text": "accumulator and the current over here"
+    },
+    {
+      "startSeconds": 1246.08,
+      "endSeconds": 1251.48,
+      "text": "now what we will do first of all we have"
+    },
+    {
+      "startSeconds": 1248.919,
+      "endSeconds": 1253.919,
+      "text": "to think that the second argument to"
+    },
+    {
+      "startSeconds": 1251.48,
+      "endSeconds": 1256.24,
+      "text": "this reduced function would be the"
+    },
+    {
+      "startSeconds": 1253.919,
+      "endSeconds": 1259,
+      "text": "initial value of accumulator so the"
+    },
+    {
+      "startSeconds": 1256.24,
+      "endSeconds": 1261.88,
+      "text": "initial value to find out the maximum"
+    },
+    {
+      "startSeconds": 1259,
+      "endSeconds": 1263.64,
+      "text": "let us give it zero so why zero because"
+    },
+    {
+      "startSeconds": 1261.88,
+      "endSeconds": 1266.32,
+      "text": "we are just assuming that the array"
+    },
+    {
+      "startSeconds": 1263.64,
+      "endSeconds": 1268.28,
+      "text": "would be non-empty and it always have"
+    },
+    {
+      "startSeconds": 1266.32,
+      "endSeconds": 1270.64,
+      "text": "positive numbers so the least possible"
+    },
+    {
+      "startSeconds": 1268.28,
+      "endSeconds": 1273.2,
+      "text": "value the maximum could have would be"
+    },
+    {
+      "startSeconds": 1270.64,
+      "endSeconds": 1275.2,
+      "text": "zero right so that's why the initial"
+    },
+    {
+      "startSeconds": 1273.2,
+      "endSeconds": 1277.72,
+      "text": "value is zero now we'll try to write the"
+    },
+    {
+      "startSeconds": 1275.2,
+      "endSeconds": 1279.44,
+      "text": "main logic now remember what I told you"
+    },
+    {
+      "startSeconds": 1277.72,
+      "endSeconds": 1282,
+      "text": "this function will be called against"
+    },
+    {
+      "startSeconds": 1279.44,
+      "endSeconds": 1285.12,
+      "text": "each and every value of this array so"
+    },
+    {
+      "startSeconds": 1282,
+      "endSeconds": 1288.039,
+      "text": "what happens is now we want to and this"
+    },
+    {
+      "startSeconds": 1285.12,
+      "endSeconds": 1290.96,
+      "text": "accumulator is basically acting as the"
+    },
+    {
+      "startSeconds": 1288.039,
+      "endSeconds": 1293.48,
+      "text": "max now right so what we will do we will"
+    },
+    {
+      "startSeconds": 1290.96,
+      "endSeconds": 1297.2,
+      "text": "at each point of time for each and every"
+    },
+    {
+      "startSeconds": 1293.48,
+      "endSeconds": 1299.88,
+      "text": "current value we will check if our"
+    },
+    {
+      "startSeconds": 1297.2,
+      "endSeconds": 1302.24,
+      "text": "current value is greater than our"
+    },
+    {
+      "startSeconds": 1299.88,
+      "endSeconds": 1305.279,
+      "text": "maximum till Point okay maximum till"
+    },
+    {
+      "startSeconds": 1302.24,
+      "endSeconds": 1307.64,
+      "text": "point is our accumulator over here if it"
+    },
+    {
+      "startSeconds": 1305.279,
+      "endSeconds": 1310.679,
+      "text": "is then what we will do we will just"
+    },
+    {
+      "startSeconds": 1307.64,
+      "endSeconds": 1314.799,
+      "text": "assign the maximum value to that"
+    },
+    {
+      "startSeconds": 1310.679,
+      "endSeconds": 1316.76,
+      "text": "accumulator isn't it so now our maximum"
+    },
+    {
+      "startSeconds": 1314.799,
+      "endSeconds": 1318.76,
+      "text": "value or the accumulator becomes the"
+    },
+    {
+      "startSeconds": 1316.76,
+      "endSeconds": 1320.559,
+      "text": "current value okay so instead of of"
+    },
+    {
+      "startSeconds": 1318.76,
+      "endSeconds": 1322.559,
+      "text": "calling this accumulator let's call it"
+    },
+    {
+      "startSeconds": 1320.559,
+      "endSeconds": 1325.559,
+      "text": "Max that will make more sense so it's"
+    },
+    {
+      "startSeconds": 1322.559,
+      "endSeconds": 1328.2,
+      "text": "just a label right we use accumulator as"
+    },
+    {
+      "startSeconds": 1325.559,
+      "endSeconds": 1330.799,
+      "text": "a generic term but ideally let's call it"
+    },
+    {
+      "startSeconds": 1328.2,
+      "endSeconds": 1334.039,
+      "text": "Max so now assume so the initial value"
+    },
+    {
+      "startSeconds": 1330.799,
+      "endSeconds": 1337.679,
+      "text": "of Max was zero and we will check at"
+    },
+    {
+      "startSeconds": 1334.039,
+      "endSeconds": 1340.24,
+      "text": "each current value or each point that if"
+    },
+    {
+      "startSeconds": 1337.679,
+      "endSeconds": 1342.6,
+      "text": "the current is greater than our Max then"
+    },
+    {
+      "startSeconds": 1340.24,
+      "endSeconds": 1346.44,
+      "text": "what we will do our Max becomes current"
+    },
+    {
+      "startSeconds": 1342.6,
+      "endSeconds": 1348.64,
+      "text": "and we just return our Max great so"
+    },
+    {
+      "startSeconds": 1346.44,
+      "endSeconds": 1351.559,
+      "text": "that's how we should write it so let's"
+    },
+    {
+      "startSeconds": 1348.64,
+      "endSeconds": 1353,
+      "text": "just save this and try to do a console"
+    },
+    {
+      "startSeconds": 1351.559,
+      "endSeconds": 1356.279,
+      "text": "log of our"
+    },
+    {
+      "startSeconds": 1353,
+      "endSeconds": 1358.32,
+      "text": "output if we do it see we got six so"
+    },
+    {
+      "startSeconds": 1356.279,
+      "endSeconds": 1360.559,
+      "text": "that's how we write this logic I know"
+    },
+    {
+      "startSeconds": 1358.32,
+      "endSeconds": 1363.48,
+      "text": "there can still be some confusions with"
+    },
+    {
+      "startSeconds": 1360.559,
+      "endSeconds": 1366.08,
+      "text": "map filter and reduce that is why I have"
+    },
+    {
+      "startSeconds": 1363.48,
+      "endSeconds": 1368.36,
+      "text": "few more a little more real world"
+    },
+    {
+      "startSeconds": 1366.08,
+      "endSeconds": 1370.84,
+      "text": "examples for you for map filter and"
+    },
+    {
+      "startSeconds": 1368.36,
+      "endSeconds": 1373.08,
+      "text": "reduce just give me five more minutes we"
+    },
+    {
+      "startSeconds": 1370.84,
+      "endSeconds": 1375.159,
+      "text": "will run down through these examples and"
+    },
+    {
+      "startSeconds": 1373.08,
+      "endSeconds": 1377.88,
+      "text": "your knowledge of map filter and reduce"
+    },
+    {
+      "startSeconds": 1375.159,
+      "endSeconds": 1380.08,
+      "text": "will be more strengthened and trust me"
+    },
+    {
+      "startSeconds": 1377.88,
+      "endSeconds": 1382.039,
+      "text": "you won't forget this lifetime let's"
+    },
+    {
+      "startSeconds": 1380.08,
+      "endSeconds": 1384.24,
+      "text": "take few more examples you will love it"
+    },
+    {
+      "startSeconds": 1382.039,
+      "endSeconds": 1387,
+      "text": "seriously just hold"
+    },
+    {
+      "startSeconds": 1384.24,
+      "endSeconds": 1389.32,
+      "text": "on so first of all let's just get rid of"
+    },
+    {
+      "startSeconds": 1387,
+      "endSeconds": 1391.6,
+      "text": "this code and for the next example let"
+    },
+    {
+      "startSeconds": 1389.32,
+      "endSeconds": 1394.88,
+      "text": "us take a different a little more"
+    },
+    {
+      "startSeconds": 1391.6,
+      "endSeconds": 1397.919,
+      "text": "complicated version of this array okay"
+    },
+    {
+      "startSeconds": 1394.88,
+      "endSeconds": 1400.799,
+      "text": "so suppose we have this array of objects"
+    },
+    {
+      "startSeconds": 1397.919,
+      "endSeconds": 1402.799,
+      "text": "and each and every object over here has"
+    },
+    {
+      "startSeconds": 1400.799,
+      "endSeconds": 1406.44,
+      "text": "three properties which"
+    },
+    {
+      "startSeconds": 1402.799,
+      "endSeconds": 1409.12,
+      "text": "are first name last name and the age"
+    },
+    {
+      "startSeconds": 1406.44,
+      "endSeconds": 1411.84,
+      "text": "okay so this is basically like the data"
+    },
+    {
+      "startSeconds": 1409.12,
+      "endSeconds": 1414.559,
+      "text": "what we get from API assume that this is"
+    },
+    {
+      "startSeconds": 1411.84,
+      "endSeconds": 1417.32,
+      "text": "coming from some API okay this is the"
+    },
+    {
+      "startSeconds": 1414.559,
+      "endSeconds": 1419.48,
+      "text": "list of users right this is a more real"
+    },
+    {
+      "startSeconds": 1417.32,
+      "endSeconds": 1422.2,
+      "text": "world example so now suppose we are"
+    },
+    {
+      "startSeconds": 1419.48,
+      "endSeconds": 1425.6,
+      "text": "given a task to find out the list of"
+    },
+    {
+      "startSeconds": 1422.2,
+      "endSeconds": 1428.12,
+      "text": "full name of all these users okay list"
+    },
+    {
+      "startSeconds": 1425.6,
+      "endSeconds": 1430.559,
+      "text": "of full names so it will look something"
+    },
+    {
+      "startSeconds": 1428.12,
+      "endSeconds": 1434.2,
+      "text": "like this okay so the full name of the"
+    },
+    {
+      "startSeconds": 1430.559,
+      "endSeconds": 1436.799,
+      "text": "first user is AI and similarly we have"
+    },
+    {
+      "startSeconds": 1434.2,
+      "endSeconds": 1439.679,
+      "text": "the second item in the list should be"
+    },
+    {
+      "startSeconds": 1436.799,
+      "endSeconds": 1443,
+      "text": "Donald Trump so suppose if we have to"
+    },
+    {
+      "startSeconds": 1439.679,
+      "endSeconds": 1445.72,
+      "text": "find a list like that and we have and so"
+    },
+    {
+      "startSeconds": 1443,
+      "endSeconds": 1449.32,
+      "text": "on okay so we want to find a list with"
+    },
+    {
+      "startSeconds": 1445.72,
+      "endSeconds": 1451.72,
+      "text": "the full name okay so now can you guess"
+    },
+    {
+      "startSeconds": 1449.32,
+      "endSeconds": 1454.279,
+      "text": "what function would be used over"
+    },
+    {
+      "startSeconds": 1451.72,
+      "endSeconds": 1458,
+      "text": "here what function would be used over"
+    },
+    {
+      "startSeconds": 1454.279,
+      "endSeconds": 1460.12,
+      "text": "here so it is exactly you are absolutely"
+    },
+    {
+      "startSeconds": 1458,
+      "endSeconds": 1462.32,
+      "text": "right we would be using map over here"
+    },
+    {
+      "startSeconds": 1460.12,
+      "endSeconds": 1465,
+      "text": "let us just quickly write it so first of"
+    },
+    {
+      "startSeconds": 1462.32,
+      "endSeconds": 1467.84,
+      "text": "all as usual let's take our constant"
+    },
+    {
+      "startSeconds": 1465,
+      "endSeconds": 1471.12,
+      "text": "output and then what we do we will write"
+    },
+    {
+      "startSeconds": 1467.84,
+      "endSeconds": 1473.88,
+      "text": "user do map and what will we pass inside"
+    },
+    {
+      "startSeconds": 1471.12,
+      "endSeconds": 1477.279,
+      "text": "is now just just see carefully I am"
+    },
+    {
+      "startSeconds": 1473.88,
+      "endSeconds": 1480.36,
+      "text": "writing a arrow function directly we had"
+    },
+    {
+      "startSeconds": 1477.279,
+      "endSeconds": 1483.72,
+      "text": "X and what do we need to map it to so"
+    },
+    {
+      "startSeconds": 1480.36,
+      "endSeconds": 1486.159,
+      "text": "the x is basically this object right as"
+    },
+    {
+      "startSeconds": 1483.72,
+      "endSeconds": 1488.799,
+      "text": "I told you that this function which you"
+    },
+    {
+      "startSeconds": 1486.159,
+      "endSeconds": 1491.44,
+      "text": "pass inside map will run against each of"
+    },
+    {
+      "startSeconds": 1488.799,
+      "endSeconds": 1494.679,
+      "text": "these objects right each of these values"
+    },
+    {
+      "startSeconds": 1491.44,
+      "endSeconds": 1497,
+      "text": "inside this array so over here this x"
+    },
+    {
+      "startSeconds": 1494.679,
+      "endSeconds": 1499.559,
+      "text": "basically represent the first item of"
+    },
+    {
+      "startSeconds": 1497,
+      "endSeconds": 1502.559,
+      "text": "this users so basically this object so"
+    },
+    {
+      "startSeconds": 1499.559,
+      "endSeconds": 1505.799,
+      "text": "what this x should map to X and then"
+    },
+    {
+      "startSeconds": 1502.559,
+      "endSeconds": 1506.76,
+      "text": "what does this function return X do"
+    },
+    {
+      "startSeconds": 1505.799,
+      "endSeconds": 1512.039,
+      "text": "first"
+    },
+    {
+      "startSeconds": 1506.76,
+      "endSeconds": 1515.52,
+      "text": "name plus X do last name right so if we"
+    },
+    {
+      "startSeconds": 1512.039,
+      "endSeconds": 1518.039,
+      "text": "save it and that's all it is seriously"
+    },
+    {
+      "startSeconds": 1515.52,
+      "endSeconds": 1522.679,
+      "text": "that that's all you need to do if we"
+    },
+    {
+      "startSeconds": 1518.039,
+      "endSeconds": 1525.399,
+      "text": "just run this now see we got AI okay so"
+    },
+    {
+      "startSeconds": 1522.679,
+      "endSeconds": 1528,
+      "text": "we did not get the space as intented so"
+    },
+    {
+      "startSeconds": 1525.399,
+      "endSeconds": 1530.12,
+      "text": "let us just put a space also so we can"
+    },
+    {
+      "startSeconds": 1528,
+      "endSeconds": 1532.279,
+      "text": "do like this so so that's how it is"
+    },
+    {
+      "startSeconds": 1530.12,
+      "endSeconds": 1534.96,
+      "text": "right we got our current output this is"
+    },
+    {
+      "startSeconds": 1532.279,
+      "endSeconds": 1537.6,
+      "text": "what we wanted right now we got a list"
+    },
+    {
+      "startSeconds": 1534.96,
+      "endSeconds": 1540.36,
+      "text": "where we have full name of each of these"
+    },
+    {
+      "startSeconds": 1537.6,
+      "endSeconds": 1541.96,
+      "text": "objects so here is when we can use map"
+    },
+    {
+      "startSeconds": 1540.36,
+      "endSeconds": 1544.279,
+      "text": "so let's just take one more tricky"
+    },
+    {
+      "startSeconds": 1541.96,
+      "endSeconds": 1546.279,
+      "text": "example it would be really awesome okay"
+    },
+    {
+      "startSeconds": 1544.279,
+      "endSeconds": 1548.48,
+      "text": "so let's just see this this is tricky"
+    },
+    {
+      "startSeconds": 1546.279,
+      "endSeconds": 1551,
+      "text": "okay it is a challenge for you while I'm"
+    },
+    {
+      "startSeconds": 1548.48,
+      "endSeconds": 1553.08,
+      "text": "doing you should be able to do this okay"
+    },
+    {
+      "startSeconds": 1551,
+      "endSeconds": 1556.36,
+      "text": "suppose if this is the same array what"
+    },
+    {
+      "startSeconds": 1553.08,
+      "endSeconds": 1559.72,
+      "text": "we use and now we have to find out how"
+    },
+    {
+      "startSeconds": 1556.36,
+      "endSeconds": 1562.039,
+      "text": "many users have a particular age okay so"
+    },
+    {
+      "startSeconds": 1559.72,
+      "endSeconds": 1564.36,
+      "text": "let me just explain you if suppose this"
+    },
+    {
+      "startSeconds": 1562.039,
+      "endSeconds": 1567.24,
+      "text": "user list is given we need to find out"
+    },
+    {
+      "startSeconds": 1564.36,
+      "endSeconds": 1570.679,
+      "text": "that what are different age inside this"
+    },
+    {
+      "startSeconds": 1567.24,
+      "endSeconds": 1573.88,
+      "text": "array and how many people are with the"
+    },
+    {
+      "startSeconds": 1570.679,
+      "endSeconds": 1576.799,
+      "text": "same age so suppose how many people have"
+    },
+    {
+      "startSeconds": 1573.88,
+      "endSeconds": 1579.88,
+      "text": "age 26 inside this so there are two"
+    },
+    {
+      "startSeconds": 1576.799,
+      "endSeconds": 1583.6,
+      "text": "people with age 26 inside this right so"
+    },
+    {
+      "startSeconds": 1579.88,
+      "endSeconds": 1585.48,
+      "text": "our our map should be like this so it we"
+    },
+    {
+      "startSeconds": 1583.6,
+      "endSeconds": 1587.919,
+      "text": "should get and how many people are there"
+    },
+    {
+      "startSeconds": 1585.48,
+      "endSeconds": 1591.72,
+      "text": "with 75 age it is one how many people"
+    },
+    {
+      "startSeconds": 1587.919,
+      "endSeconds": 1594.72,
+      "text": "are with 50 age it is one so similarly"
+    },
+    {
+      "startSeconds": 1591.72,
+      "endSeconds": 1596.84,
+      "text": "suppose we had a very huge list of users"
+    },
+    {
+      "startSeconds": 1594.72,
+      "endSeconds": 1600.159,
+      "text": "so we need to find out that how many"
+    },
+    {
+      "startSeconds": 1596.84,
+      "endSeconds": 1602.679,
+      "text": "people are of a particular age okay so"
+    },
+    {
+      "startSeconds": 1600.159,
+      "endSeconds": 1605.919,
+      "text": "particular unique age I would say so"
+    },
+    {
+      "startSeconds": 1602.679,
+      "endSeconds": 1608.48,
+      "text": "there are two people with 26 okay and"
+    },
+    {
+      "startSeconds": 1605.919,
+      "endSeconds": 1611.32,
+      "text": "there is one person with 75 and one with"
+    },
+    {
+      "startSeconds": 1608.48,
+      "endSeconds": 1613.679,
+      "text": "50 so that's how we need to make this so"
+    },
+    {
+      "startSeconds": 1611.32,
+      "endSeconds": 1616.679,
+      "text": "now can you guess what would we use over"
+    },
+    {
+      "startSeconds": 1613.679,
+      "endSeconds": 1618.399,
+      "text": "here can you guess should we use map"
+    },
+    {
+      "startSeconds": 1616.679,
+      "endSeconds": 1621.84,
+      "text": "should we use filter should we use"
+    },
+    {
+      "startSeconds": 1618.399,
+      "endSeconds": 1623.96,
+      "text": "reduce or nothing we can't use anything"
+    },
+    {
+      "startSeconds": 1621.84,
+      "endSeconds": 1626.039,
+      "text": "I'll give you a moment to think think it"
+    },
+    {
+      "startSeconds": 1623.96,
+      "endSeconds": 1629.039,
+      "text": "think it once again pause the video and"
+    },
+    {
+      "startSeconds": 1626.039,
+      "endSeconds": 1631.72,
+      "text": "think it if you can't because this is"
+    },
+    {
+      "startSeconds": 1629.039,
+      "endSeconds": 1633.559,
+      "text": "really nice example okay if you're able"
+    },
+    {
+      "startSeconds": 1631.72,
+      "endSeconds": 1637.44,
+      "text": "to do this then your reduced concepts"
+    },
+    {
+      "startSeconds": 1633.559,
+      "endSeconds": 1639.679,
+      "text": "are clear oh I give you a hint so"
+    },
+    {
+      "startSeconds": 1637.44,
+      "endSeconds": 1641.919,
+      "text": "yes we would be using reduce we would be"
+    },
+    {
+      "startSeconds": 1639.679,
+      "endSeconds": 1645.919,
+      "text": "using reduce why why we would be using"
+    },
+    {
+      "startSeconds": 1641.919,
+      "endSeconds": 1650.2,
+      "text": "reduce because we are using this array"
+    },
+    {
+      "startSeconds": 1645.919,
+      "endSeconds": 1653,
+      "text": "and we need to find one value inside it"
+    },
+    {
+      "startSeconds": 1650.2,
+      "endSeconds": 1657.76,
+      "text": "okay we have we don't want a list over"
+    },
+    {
+      "startSeconds": 1653,
+      "endSeconds": 1660.159,
+      "text": "here now we wanted one object okay and"
+    },
+    {
+      "startSeconds": 1657.76,
+      "endSeconds": 1662.88,
+      "text": "object should have different unique"
+    },
+    {
+      "startSeconds": 1660.159,
+      "endSeconds": 1665.399,
+      "text": "values with the count of individual"
+    },
+    {
+      "startSeconds": 1662.88,
+      "endSeconds": 1669.24,
+      "text": "value so we would be using reduce over"
+    },
+    {
+      "startSeconds": 1665.399,
+      "endSeconds": 1672.76,
+      "text": "here because we want to reduce our array"
+    },
+    {
+      "startSeconds": 1669.24,
+      "endSeconds": 1675.32,
+      "text": "to a particular value which is an object"
+    },
+    {
+      "startSeconds": 1672.76,
+      "endSeconds": 1677.279,
+      "text": "okay that's great let's just try to"
+    },
+    {
+      "startSeconds": 1675.32,
+      "endSeconds": 1679.44,
+      "text": "write the logic now so just like always"
+    },
+    {
+      "startSeconds": 1677.279,
+      "endSeconds": 1682.08,
+      "text": "let us just create a const output for"
+    },
+    {
+      "startSeconds": 1679.44,
+      "endSeconds": 1684.519,
+      "text": "now and what should we do now okay we"
+    },
+    {
+      "startSeconds": 1682.08,
+      "endSeconds": 1686.6,
+      "text": "will just do a we will just write users."
+    },
+    {
+      "startSeconds": 1684.519,
+      "endSeconds": 1689.279,
+      "text": "reduce and remember what does reduce"
+    },
+    {
+      "startSeconds": 1686.6,
+      "endSeconds": 1691.24,
+      "text": "take reduce take a function it has the"
+    },
+    {
+      "startSeconds": 1689.279,
+      "endSeconds": 1694.519,
+      "text": "first parameter is accumulator the"
+    },
+    {
+      "startSeconds": 1691.24,
+      "endSeconds": 1697.32,
+      "text": "second parameter is current and we"
+    },
+    {
+      "startSeconds": 1694.519,
+      "endSeconds": 1700.88,
+      "text": "basically the second argument to this"
+    },
+    {
+      "startSeconds": 1697.32,
+      "endSeconds": 1703.72,
+      "text": "reduce function is basically the initial"
+    },
+    {
+      "startSeconds": 1700.88,
+      "endSeconds": 1706.44,
+      "text": "value of this accumulator so over here"
+    },
+    {
+      "startSeconds": 1703.72,
+      "endSeconds": 1708.159,
+      "text": "our accumulator is basically this object"
+    },
+    {
+      "startSeconds": 1706.44,
+      "endSeconds": 1710.6,
+      "text": "right the initial value of our"
+    },
+    {
+      "startSeconds": 1708.159,
+      "endSeconds": 1713.12,
+      "text": "accumulator what it will be the initial"
+    },
+    {
+      "startSeconds": 1710.6,
+      "endSeconds": 1715.44,
+      "text": "value would be empty object isn't it"
+    },
+    {
+      "startSeconds": 1713.12,
+      "endSeconds": 1717.919,
+      "text": "because when there is no data present in"
+    },
+    {
+      "startSeconds": 1715.44,
+      "endSeconds": 1720.24,
+      "text": "it there would be empty object and now"
+    },
+    {
+      "startSeconds": 1717.919,
+      "endSeconds": 1722.96,
+      "text": "we will slowly be appending these values"
+    },
+    {
+      "startSeconds": 1720.24,
+      "endSeconds": 1725.96,
+      "text": "to it right and remember what does this"
+    },
+    {
+      "startSeconds": 1722.96,
+      "endSeconds": 1728.88,
+      "text": "current function holds so this function"
+    },
+    {
+      "startSeconds": 1725.96,
+      "endSeconds": 1731,
+      "text": "when this function is iterated or is run"
+    },
+    {
+      "startSeconds": 1728.88,
+      "endSeconds": 1733.159,
+      "text": "against each of these values of this"
+    },
+    {
+      "startSeconds": 1731,
+      "endSeconds": 1735.399,
+      "text": "array because that's what reduce do"
+    },
+    {
+      "startSeconds": 1733.159,
+      "endSeconds": 1738.32,
+      "text": "right reduce was run this function"
+    },
+    {
+      "startSeconds": 1735.399,
+      "endSeconds": 1741.159,
+      "text": "against each of these values right so"
+    },
+    {
+      "startSeconds": 1738.32,
+      "endSeconds": 1743.96,
+      "text": "this current will be this particular"
+    },
+    {
+      "startSeconds": 1741.159,
+      "endSeconds": 1746.36,
+      "text": "object at the first point right what we"
+    },
+    {
+      "startSeconds": 1743.96,
+      "endSeconds": 1749.799,
+      "text": "need to do with it what we need to do"
+    },
+    {
+      "startSeconds": 1746.36,
+      "endSeconds": 1756.279,
+      "text": "can you just guess so we need to check"
+    },
+    {
+      "startSeconds": 1749.799,
+      "endSeconds": 1759.96,
+      "text": "if our accumulator of current do AG"
+    },
+    {
+      "startSeconds": 1756.279,
+      "endSeconds": 1762.44,
+      "text": "right current. AG what is current. age"
+    },
+    {
+      "startSeconds": 1759.96,
+      "endSeconds": 1766.08,
+      "text": "current. age is 26 we need to check if"
+    },
+    {
+      "startSeconds": 1762.44,
+      "endSeconds": 1768.799,
+      "text": "our accumulator of 26 is it even present"
+    },
+    {
+      "startSeconds": 1766.08,
+      "endSeconds": 1770.84,
+      "text": "or not right there could be a case like"
+    },
+    {
+      "startSeconds": 1768.799,
+      "endSeconds": 1774.08,
+      "text": "this empty object right so there is a"
+    },
+    {
+      "startSeconds": 1770.84,
+      "endSeconds": 1776.64,
+      "text": "case where our accumulator of 26 or"
+    },
+    {
+      "startSeconds": 1774.08,
+      "endSeconds": 1779.88,
+      "text": "accumulator of current. age is not there"
+    },
+    {
+      "startSeconds": 1776.64,
+      "endSeconds": 1782.12,
+      "text": "right if it is there we need we will do"
+    },
+    {
+      "startSeconds": 1779.88,
+      "endSeconds": 1784.6,
+      "text": "something but if it is not there what"
+    },
+    {
+      "startSeconds": 1782.12,
+      "endSeconds": 1787,
+      "text": "should we do so let's write the else"
+    },
+    {
+      "startSeconds": 1784.6,
+      "endSeconds": 1790.12,
+      "text": "condition first if our accumulator of"
+    },
+    {
+      "startSeconds": 1787,
+      "endSeconds": 1792.2,
+      "text": "age like 26 is not present then what we"
+    },
+    {
+      "startSeconds": 1790.12,
+      "endSeconds": 1796.6,
+      "text": "should do we should just initially"
+    },
+    {
+      "startSeconds": 1792.2,
+      "endSeconds": 1799.399,
+      "text": "assign it with one isn't it make sense"
+    },
+    {
+      "startSeconds": 1796.6,
+      "endSeconds": 1801.88,
+      "text": "so initially if our 26 was not there"
+    },
+    {
+      "startSeconds": 1799.399,
+      "endSeconds": 1805.32,
+      "text": "inside this object initial object we"
+    },
+    {
+      "startSeconds": 1801.88,
+      "endSeconds": 1807.039,
+      "text": "would just do a 26 and put in one inside"
+    },
+    {
+      "startSeconds": 1805.32,
+      "endSeconds": 1810.159,
+      "text": "it"
+    },
+    {
+      "startSeconds": 1807.039,
+      "endSeconds": 1812.399,
+      "text": "right and then so this function will"
+    },
+    {
+      "startSeconds": 1810.159,
+      "endSeconds": 1814.279,
+      "text": "basically run for each and every value"
+    },
+    {
+      "startSeconds": 1812.399,
+      "endSeconds": 1817,
+      "text": "right each and every value inside this"
+    },
+    {
+      "startSeconds": 1814.279,
+      "endSeconds": 1820.88,
+      "text": "array so suppose if it if now the"
+    },
+    {
+      "startSeconds": 1817,
+      "endSeconds": 1822.6,
+      "text": "current is this value okay this 75 so"
+    },
+    {
+      "startSeconds": 1820.88,
+      "endSeconds": 1825.32,
+      "text": "what it will do again it will check if"
+    },
+    {
+      "startSeconds": 1822.6,
+      "endSeconds": 1827.36,
+      "text": "accumulator of 75 is present or not no"
+    },
+    {
+      "startSeconds": 1825.32,
+      "endSeconds": 1829.159,
+      "text": "it is not there it will assign it to one"
+    },
+    {
+      "startSeconds": 1827.36,
+      "endSeconds": 1831.48,
+      "text": "so now this will be added to our"
+    },
+    {
+      "startSeconds": 1829.159,
+      "endSeconds": 1834.039,
+      "text": "accumulator now it will go to this"
+    },
+    {
+      "startSeconds": 1831.48,
+      "endSeconds": 1837.279,
+      "text": "object it will see 50 it will just"
+    },
+    {
+      "startSeconds": 1834.039,
+      "endSeconds": 1839.559,
+      "text": "append this 51 now is the tricky and an"
+    },
+    {
+      "startSeconds": 1837.279,
+      "endSeconds": 1842.12,
+      "text": "interesting case so if our accumulator"
+    },
+    {
+      "startSeconds": 1839.559,
+      "endSeconds": 1844.399,
+      "text": "of current of age or accumulator of 26"
+    },
+    {
+      "startSeconds": 1842.12,
+      "endSeconds": 1846.88,
+      "text": "is already present what we will do now"
+    },
+    {
+      "startSeconds": 1844.399,
+      "endSeconds": 1848.679,
+      "text": "we will just do a accumulator of current"
+    },
+    {
+      "startSeconds": 1846.88,
+      "endSeconds": 1851.64,
+      "text": "age and it's simple right we will just"
+    },
+    {
+      "startSeconds": 1848.679,
+      "endSeconds": 1854,
+      "text": "do a plus plus of accumulator of current"
+    },
+    {
+      "startSeconds": 1851.64,
+      "endSeconds": 1857.279,
+      "text": "age that's all we need to do isn't it"
+    },
+    {
+      "startSeconds": 1854,
+      "endSeconds": 1860.36,
+      "text": "and we will just return our accumulator"
+    },
+    {
+      "startSeconds": 1857.279,
+      "endSeconds": 1862.679,
+      "text": "from this function function simple right"
+    },
+    {
+      "startSeconds": 1860.36,
+      "endSeconds": 1865.639,
+      "text": "so let's just try to see"
+    },
+    {
+      "startSeconds": 1862.679,
+      "endSeconds": 1868.08,
+      "text": "this and let's just try to console loger"
+    },
+    {
+      "startSeconds": 1865.639,
+      "endSeconds": 1871.279,
+      "text": "output first of all okay and see if this"
+    },
+    {
+      "startSeconds": 1868.08,
+      "endSeconds": 1875.519,
+      "text": "works or not fingers crossed let's just"
+    },
+    {
+      "startSeconds": 1871.279,
+      "endSeconds": 1881,
+      "text": "run it yes so what we got see we got"
+    },
+    {
+      "startSeconds": 1875.519,
+      "endSeconds": 1883.36,
+      "text": "this object with 26 as 2 50 as 1 75 as 1"
+    },
+    {
+      "startSeconds": 1881,
+      "endSeconds": 1885.6,
+      "text": "and that's what we wanted right so this"
+    },
+    {
+      "startSeconds": 1883.36,
+      "endSeconds": 1887.679,
+      "text": "is how you can write the reduce function"
+    },
+    {
+      "startSeconds": 1885.6,
+      "endSeconds": 1889.08,
+      "text": "and leverage it I took this example"
+    },
+    {
+      "startSeconds": 1887.679,
+      "endSeconds": 1892.24,
+      "text": "because because I wanted to show you"
+    },
+    {
+      "startSeconds": 1889.08,
+      "endSeconds": 1894.44,
+      "text": "that reduce can be used in a lot of"
+    },
+    {
+      "startSeconds": 1892.24,
+      "endSeconds": 1897.44,
+      "text": "places okay so you need to have that"
+    },
+    {
+      "startSeconds": 1894.44,
+      "endSeconds": 1899.88,
+      "text": "mental model that if you have an array"
+    },
+    {
+      "startSeconds": 1897.44,
+      "endSeconds": 1902.639,
+      "text": "and you need to and you need to iterate"
+    },
+    {
+      "startSeconds": 1899.88,
+      "endSeconds": 1905.32,
+      "text": "over that array and come up to a single"
+    },
+    {
+      "startSeconds": 1902.639,
+      "endSeconds": 1908,
+      "text": "value out of it so most probably you can"
+    },
+    {
+      "startSeconds": 1905.32,
+      "endSeconds": 1909.88,
+      "text": "use reduce and do that stuff so"
+    },
+    {
+      "startSeconds": 1908,
+      "endSeconds": 1912.24,
+      "text": "basically that is where reduce comes"
+    },
+    {
+      "startSeconds": 1909.88,
+      "endSeconds": 1914.2,
+      "text": "into picture and this is what the power"
+    },
+    {
+      "startSeconds": 1912.24,
+      "endSeconds": 1916.24,
+      "text": "of functional programming is you can"
+    },
+    {
+      "startSeconds": 1914.2,
+      "endSeconds": 1919.279,
+      "text": "pass in these functions and you can"
+    },
+    {
+      "startSeconds": 1916.24,
+      "endSeconds": 1921.36,
+      "text": "leverage them to write such beautiful"
+    },
+    {
+      "startSeconds": 1919.279,
+      "endSeconds": 1924.08,
+      "text": "code we have already seen the examples"
+    },
+    {
+      "startSeconds": 1921.36,
+      "endSeconds": 1926.44,
+      "text": "of map and reduce right now let's just"
+    },
+    {
+      "startSeconds": 1924.08,
+      "endSeconds": 1928.2,
+      "text": "take a quick example of filter to revise"
+    },
+    {
+      "startSeconds": 1926.44,
+      "endSeconds": 1930.6,
+      "text": "and then we would end this video okay"
+    },
+    {
+      "startSeconds": 1928.2,
+      "endSeconds": 1933.32,
+      "text": "just give me two three more minutes okay"
+    },
+    {
+      "startSeconds": 1930.6,
+      "endSeconds": 1935.12,
+      "text": "very easy very very very easy okay this"
+    },
+    {
+      "startSeconds": 1933.32,
+      "endSeconds": 1937.399,
+      "text": "example is basically if we are given"
+    },
+    {
+      "startSeconds": 1935.12,
+      "endSeconds": 1939.76,
+      "text": "this user list we need to filter out or"
+    },
+    {
+      "startSeconds": 1937.399,
+      "endSeconds": 1944.039,
+      "text": "we need to find out the first name of"
+    },
+    {
+      "startSeconds": 1939.76,
+      "endSeconds": 1946.76,
+      "text": "all the people whose age is less than 30"
+    },
+    {
+      "startSeconds": 1944.039,
+      "endSeconds": 1949.519,
+      "text": "okay first name of all the people whose"
+    },
+    {
+      "startSeconds": 1946.76,
+      "endSeconds": 1951.679,
+      "text": "age is less than 30 Can You Solve IT"
+    },
+    {
+      "startSeconds": 1949.519,
+      "endSeconds": 1954.799,
+      "text": "pause for a moment pause this video and"
+    },
+    {
+      "startSeconds": 1951.679,
+      "endSeconds": 1957.08,
+      "text": "think okay first name of all the people"
+    },
+    {
+      "startSeconds": 1954.799,
+      "endSeconds": 1959.159,
+      "text": "whose age is less than 30 so let's just"
+    },
+    {
+      "startSeconds": 1957.08,
+      "endSeconds": 1962.12,
+      "text": "write it now okay so let's just quickly"
+    },
+    {
+      "startSeconds": 1959.159,
+      "endSeconds": 1965.32,
+      "text": "write it as always let's do a com com"
+    },
+    {
+      "startSeconds": 1962.12,
+      "endSeconds": 1968.2,
+      "text": "const output and let's just do a users."
+    },
+    {
+      "startSeconds": 1965.32,
+      "endSeconds": 1969.799,
+      "text": "filter now I would be writing a arrow"
+    },
+    {
+      "startSeconds": 1968.2,
+      "endSeconds": 1972.679,
+      "text": "function okay just quick carefully"
+    },
+    {
+      "startSeconds": 1969.799,
+      "endSeconds": 1975.559,
+      "text": "listen to me and I'm going a little slow"
+    },
+    {
+      "startSeconds": 1972.679,
+      "endSeconds": 1979.96,
+      "text": "if our x x over here would be this"
+    },
+    {
+      "startSeconds": 1975.559,
+      "endSeconds": 1983,
+      "text": "object right if our X do age is less"
+    },
+    {
+      "startSeconds": 1979.96,
+      "endSeconds": 1985.6,
+      "text": "than 30 filter out all these objects"
+    },
+    {
+      "startSeconds": 1983,
+      "endSeconds": 1988.48,
+      "text": "which have age less than 30 okay let's"
+    },
+    {
+      "startSeconds": 1985.6,
+      "endSeconds": 1990.84,
+      "text": "just save it and if we see the output so"
+    },
+    {
+      "startSeconds": 1988.48,
+      "endSeconds": 1993.519,
+      "text": "now we got all these objects which have"
+    },
+    {
+      "startSeconds": 1990.84,
+      "endSeconds": 1995.48,
+      "text": "age less than 30 right we got this"
+    },
+    {
+      "startSeconds": 1993.519,
+      "endSeconds": 1998.519,
+      "text": "object but remember the problem"
+    },
+    {
+      "startSeconds": 1995.48,
+      "endSeconds": 2002.159,
+      "text": "statement the problem statement was to"
+    },
+    {
+      "startSeconds": 1998.519,
+      "endSeconds": 2004.24,
+      "text": "find out the first name of those people"
+    },
+    {
+      "startSeconds": 2002.159,
+      "endSeconds": 2007.08,
+      "text": "so interesting isn't it now you tell me"
+    },
+    {
+      "startSeconds": 2004.24,
+      "endSeconds": 2010.799,
+      "text": "how we can do this we were expecting our"
+    },
+    {
+      "startSeconds": 2007.08,
+      "endSeconds": 2013.679,
+      "text": "output to be ake and Deepika right this"
+    },
+    {
+      "startSeconds": 2010.799,
+      "endSeconds": 2016.519,
+      "text": "is what we expected but instead we got"
+    },
+    {
+      "startSeconds": 2013.679,
+      "endSeconds": 2018.44,
+      "text": "this objects why I took this example was"
+    },
+    {
+      "startSeconds": 2016.519,
+      "endSeconds": 2022.72,
+      "text": "I wanted to tell you an interesting"
+    },
+    {
+      "startSeconds": 2018.44,
+      "endSeconds": 2025.72,
+      "text": "thing that a power of these functions is"
+    },
+    {
+      "startSeconds": 2022.72,
+      "endSeconds": 2028.2,
+      "text": "chaining okay you can chain map filter"
+    },
+    {
+      "startSeconds": 2025.72,
+      "endSeconds": 2031.2,
+      "text": "and reduce what I mean by chaining is"
+    },
+    {
+      "startSeconds": 2028.2,
+      "endSeconds": 2035,
+      "text": "suppose if you filter this array now you"
+    },
+    {
+      "startSeconds": 2031.2,
+      "endSeconds": 2039.2,
+      "text": "can run a map over it as well okay now"
+    },
+    {
+      "startSeconds": 2035,
+      "endSeconds": 2042.159,
+      "text": "we can write a DOT map in front of it"
+    },
+    {
+      "startSeconds": 2039.2,
+      "endSeconds": 2046.08,
+      "text": "also this is what I wanted to tell you"
+    },
+    {
+      "startSeconds": 2042.159,
+      "endSeconds": 2048.72,
+      "text": "now this map will be running on the"
+    },
+    {
+      "startSeconds": 2046.08,
+      "endSeconds": 2051.879,
+      "text": "output of this the output of this was"
+    },
+    {
+      "startSeconds": 2048.72,
+      "endSeconds": 2056.32,
+      "text": "these objects right and now we can do a"
+    },
+    {
+      "startSeconds": 2051.879,
+      "endSeconds": 2057.359,
+      "text": "map of these and find out x and x do"
+    },
+    {
+      "startSeconds": 2056.32,
+      "endSeconds": 2061.2,
+      "text": "first"
+    },
+    {
+      "startSeconds": 2057.359,
+      "endSeconds": 2063.72,
+      "text": "name make sense so we get the desired"
+    },
+    {
+      "startSeconds": 2061.2,
+      "endSeconds": 2065.76,
+      "text": "output right we got aay and Deepa right"
+    },
+    {
+      "startSeconds": 2063.72,
+      "endSeconds": 2068.079,
+      "text": "this is what we needed right we need to"
+    },
+    {
+      "startSeconds": 2065.76,
+      "endSeconds": 2070.079,
+      "text": "filter so how did this work let let just"
+    },
+    {
+      "startSeconds": 2068.079,
+      "endSeconds": 2072.079,
+      "text": "break down and see once again once again"
+    },
+    {
+      "startSeconds": 2070.079,
+      "endSeconds": 2075.359,
+      "text": "just give me one minute I'll explain you"
+    },
+    {
+      "startSeconds": 2072.079,
+      "endSeconds": 2077.52,
+      "text": "so First We Take users and that we when"
+    },
+    {
+      "startSeconds": 2075.359,
+      "endSeconds": 2079.879,
+      "text": "and what we did with this object is we"
+    },
+    {
+      "startSeconds": 2077.52,
+      "endSeconds": 2083.52,
+      "text": "filtered it out okay what we what did we"
+    },
+    {
+      "startSeconds": 2079.879,
+      "endSeconds": 2085.96,
+      "text": "filter we filter out X and X's age is"
+    },
+    {
+      "startSeconds": 2083.52,
+      "endSeconds": 2088.72,
+      "text": "less than 30 so all the people give me"
+    },
+    {
+      "startSeconds": 2085.96,
+      "endSeconds": 2092.04,
+      "text": "all the give me list of all these"
+    },
+    {
+      "startSeconds": 2088.72,
+      "endSeconds": 2094.72,
+      "text": "objects which has x. ages less than 30"
+    },
+    {
+      "startSeconds": 2092.04,
+      "endSeconds": 2097.72,
+      "text": "so what happened this user array now"
+    },
+    {
+      "startSeconds": 2094.72,
+      "endSeconds": 2100.32,
+      "text": "shrinked down and it removed all the"
+    },
+    {
+      "startSeconds": 2097.72,
+      "endSeconds": 2104.68,
+      "text": "these values okay it basically just was"
+    },
+    {
+      "startSeconds": 2100.32,
+      "endSeconds": 2108.28,
+      "text": "left with these people right the with x."
+    },
+    {
+      "startSeconds": 2104.68,
+      "endSeconds": 2113.88,
+      "text": "age less than 30 right and then we ran"
+    },
+    {
+      "startSeconds": 2108.28,
+      "endSeconds": 2115.4,
+      "text": "the map over these array okay and now"
+    },
+    {
+      "startSeconds": 2113.88,
+      "endSeconds": 2117.88,
+      "text": "what is the function which we pass"
+    },
+    {
+      "startSeconds": 2115.4,
+      "endSeconds": 2120.44,
+      "text": "inside map we just needed the first name"
+    },
+    {
+      "startSeconds": 2117.88,
+      "endSeconds": 2124.48,
+      "text": "so we did a x do first name so now"
+    },
+    {
+      "startSeconds": 2120.44,
+      "endSeconds": 2127.24,
+      "text": "basically the output what we got was"
+    },
+    {
+      "startSeconds": 2124.48,
+      "endSeconds": 2129.8,
+      "text": "exactly what we wanted isn't it it's"
+    },
+    {
+      "startSeconds": 2127.24,
+      "endSeconds": 2132.68,
+      "text": "beautiful isn't it this is how you can"
+    },
+    {
+      "startSeconds": 2129.8,
+      "endSeconds": 2134.64,
+      "text": "chain these methods also but now before"
+    },
+    {
+      "startSeconds": 2132.68,
+      "endSeconds": 2136.88,
+      "text": "we end this video I want to tell an"
+    },
+    {
+      "startSeconds": 2134.64,
+      "endSeconds": 2139.44,
+      "text": "interesting thing you can achieve the"
+    },
+    {
+      "startSeconds": 2136.88,
+      "endSeconds": 2144.119,
+      "text": "same thing instead of doing Dot filter"
+    },
+    {
+      "startSeconds": 2139.44,
+      "endSeconds": 2147.32,
+      "text": "and Dot map with a reduce also yes you"
+    },
+    {
+      "startSeconds": 2144.119,
+      "endSeconds": 2149.8,
+      "text": "can even use reduce to come up to this"
+    },
+    {
+      "startSeconds": 2147.32,
+      "endSeconds": 2152.76,
+      "text": "solution you just need to know how to"
+    },
+    {
+      "startSeconds": 2149.8,
+      "endSeconds": 2155.88,
+      "text": "write it okay so this is a task for you"
+    },
+    {
+      "startSeconds": 2152.76,
+      "endSeconds": 2159.04,
+      "text": "this is a homework for you can you can"
+    },
+    {
+      "startSeconds": 2155.88,
+      "endSeconds": 2162.04,
+      "text": "you just find out all all the people"
+    },
+    {
+      "startSeconds": 2159.04,
+      "endSeconds": 2165.119,
+      "text": "with age less than 30 and get the list"
+    },
+    {
+      "startSeconds": 2162.04,
+      "endSeconds": 2167.76,
+      "text": "of the first names of that using reduce"
+    },
+    {
+      "startSeconds": 2165.119,
+      "endSeconds": 2170.68,
+      "text": "so this is a challenge for you this is a"
+    },
+    {
+      "startSeconds": 2167.76,
+      "endSeconds": 2172.44,
+      "text": "homework for you I want you to code that"
+    },
+    {
+      "startSeconds": 2170.68,
+      "endSeconds": 2175.72,
+      "text": "in the comment section write down your"
+    },
+    {
+      "startSeconds": 2172.44,
+      "endSeconds": 2179.68,
+      "text": "code I want to see your code okay so you"
+    },
+    {
+      "startSeconds": 2175.72,
+      "endSeconds": 2182.359,
+      "text": "need to get to this point using a reduce"
+    },
+    {
+      "startSeconds": 2179.68,
+      "endSeconds": 2184.599,
+      "text": "but I gave you this example just to show"
+    },
+    {
+      "startSeconds": 2182.359,
+      "endSeconds": 2186.56,
+      "text": "you that you can change these methods"
+    },
+    {
+      "startSeconds": 2184.599,
+      "endSeconds": 2188.92,
+      "text": "that's all what my motive was but you"
+    },
+    {
+      "startSeconds": 2186.56,
+      "endSeconds": 2192.04,
+      "text": "can use a reduced to just get to this"
+    },
+    {
+      "startSeconds": 2188.92,
+      "endSeconds": 2194.56,
+      "text": "output okay and now in the next video we"
+    },
+    {
+      "startSeconds": 2192.04,
+      "endSeconds": 2197.48,
+      "text": "will be covering the polyils of map"
+    },
+    {
+      "startSeconds": 2194.56,
+      "endSeconds": 2199.319,
+      "text": "filter and reduce this is asked so many"
+    },
+    {
+      "startSeconds": 2197.48,
+      "endSeconds": 2201.64,
+      "text": "times in interviews and I'm telling you"
+    },
+    {
+      "startSeconds": 2199.319,
+      "endSeconds": 2203,
+      "text": "if you are giving interviews for full"
+    },
+    {
+      "startSeconds": 2201.64,
+      "endSeconds": 2206.52,
+      "text": "stack or UI"
+    },
+    {
+      "startSeconds": 2203,
+      "endSeconds": 2209.119,
+      "text": "roles poly of reduce poly of map filter"
+    },
+    {
+      "startSeconds": 2206.52,
+      "endSeconds": 2211.599,
+      "text": "reduce these things are asked so much so"
+    },
+    {
+      "startSeconds": 2209.119,
+      "endSeconds": 2213.68,
+      "text": "what we will do is this was coming I I"
+    },
+    {
+      "startSeconds": 2211.599,
+      "endSeconds": 2215.76,
+      "text": "was getting a lot of request in comments"
+    },
+    {
+      "startSeconds": 2213.68,
+      "endSeconds": 2218.04,
+      "text": "so I thought that let me make videos out"
+    },
+    {
+      "startSeconds": 2215.76,
+      "endSeconds": 2220.64,
+      "text": "of it so the next videos will be"
+    },
+    {
+      "startSeconds": 2218.04,
+      "endSeconds": 2222.28,
+      "text": "the polyfill of math filter and reduce"
+    },
+    {
+      "startSeconds": 2220.64,
+      "endSeconds": 2224,
+      "text": "we would be covering all of that we"
+    },
+    {
+      "startSeconds": 2222.28,
+      "endSeconds": 2226.359,
+      "text": "would be covering all the corner casing"
+    },
+    {
+      "startSeconds": 2224,
+      "endSeconds": 2228.68,
+      "text": "then I would exactly explain you how you"
+    },
+    {
+      "startSeconds": 2226.359,
+      "endSeconds": 2231.28,
+      "text": "have to tell in interviews so that you"
+    },
+    {
+      "startSeconds": 2228.68,
+      "endSeconds": 2233.2,
+      "text": "get 10 on the 10 in the interviews okay"
+    },
+    {
+      "startSeconds": 2231.28,
+      "endSeconds": 2235.2,
+      "text": "so are you ready so go ahead and check"
+    },
+    {
+      "startSeconds": 2233.2,
+      "endSeconds": 2237.24,
+      "text": "out that video before moving on to that"
+    },
+    {
+      "startSeconds": 2235.2,
+      "endSeconds": 2238.8,
+      "text": "video give this video a thumbs up just"
+    },
+    {
+      "startSeconds": 2237.24,
+      "endSeconds": 2240.68,
+      "text": "write down in comments whether you"
+    },
+    {
+      "startSeconds": 2238.8,
+      "endSeconds": 2242.079,
+      "text": "understood these Concepts or not and"
+    },
+    {
+      "startSeconds": 2240.68,
+      "endSeconds": 2245.079,
+      "text": "thank you so much for watching Namaste"
+    },
+    {
+      "startSeconds": 2242.079,
+      "endSeconds": 2245.079,
+      "text": "JavaScript"
+    },
+    {
+      "startSeconds": 2245.8,
+      "endSeconds": 2263.709,
+      "text": "[Music]"
+    }
+  ]
+}

@@ -1,0 +1,2227 @@
+{
+  "videoId": "uH-tVP8MUs8",
+  "videoTitle": "The Scope Chain, 🔥Scope & Lexical Environment | Namaste JavaScript Ep. 7",
+  "languageCode": "en",
+  "segments": [
+    {
+      "startSeconds": 0.16,
+      "endSeconds": 5.6,
+      "text": "Scope in JavaScript is directly related"
+    },
+    {
+      "startSeconds": 2.32,
+      "endSeconds": 8.08,
+      "text": "to lexical environment. Okay, lexical"
+    },
+    {
+      "startSeconds": 5.6,
+      "endSeconds": 10.4,
+      "text": "environment. I know it sounds a little"
+    },
+    {
+      "startSeconds": 8.08,
+      "endSeconds": 13.44,
+      "text": "complicated but it's a very classic"
+    },
+    {
+      "startSeconds": 10.4,
+      "endSeconds": 15.519,
+      "text": "concept in JavaScript. Okay, if you"
+    },
+    {
+      "startSeconds": 13.44,
+      "endSeconds": 17.84,
+      "text": "understand lexical environment, it will"
+    },
+    {
+      "startSeconds": 15.519,
+      "endSeconds": 20.32,
+      "text": "be very easy for you to understand scope"
+    },
+    {
+      "startSeconds": 17.84,
+      "endSeconds": 23.119,
+      "text": "the scope chain and it will also help us"
+    },
+    {
+      "startSeconds": 20.32,
+      "endSeconds": 25.039,
+      "text": "understand closures also. Okay, so just"
+    },
+    {
+      "startSeconds": 23.119,
+      "endSeconds": 27.279,
+      "text": "pay attention carefully and we'll be"
+    },
+    {
+      "startSeconds": 25.039,
+      "endSeconds": 29.599,
+      "text": "seeing a lot of examples today. So let's"
+    },
+    {
+      "startSeconds": 27.279,
+      "endSeconds": 33.44,
+      "text": "take a function and let's call this"
+    },
+    {
+      "startSeconds": 29.599,
+      "endSeconds": 37.28,
+      "text": "function a okay and along with this"
+    },
+    {
+      "startSeconds": 33.44,
+      "endSeconds": 39.92,
+      "text": "function let us also take a v b okay let"
+    },
+    {
+      "startSeconds": 37.28,
+      "endSeconds": 42.559,
+      "text": "us assign it 10 and what should we do is"
+    },
+    {
+      "startSeconds": 39.92,
+      "endSeconds": 46.399,
+      "text": "let us just invoke this function so what"
+    },
+    {
+      "startSeconds": 42.559,
+      "endSeconds": 50.079,
+      "text": "I'm trying to tell is that can we access"
+    },
+    {
+      "startSeconds": 46.399,
+      "endSeconds": 53.28,
+      "text": "this b inside a let us try to check so"
+    },
+    {
+      "startSeconds": 50.079,
+      "endSeconds": 56.079,
+      "text": "what do you think this will output okay"
+    },
+    {
+      "startSeconds": 53.28,
+      "endSeconds": 59.359,
+      "text": "if I do a console log inside a what do"
+    },
+    {
+      "startSeconds": 56.079,
+      "endSeconds": 62.079,
+      "text": "you think will be the output."
+    },
+    {
+      "startSeconds": 59.359,
+      "endSeconds": 65.04,
+      "text": "See when JavaScript engine reach this"
+    },
+    {
+      "startSeconds": 62.079,
+      "endSeconds": 68.64,
+      "text": "line and it tries to execute console log"
+    },
+    {
+      "startSeconds": 65.04,
+      "endSeconds": 71.439,
+      "text": "B, what will JavaScript do? JavaScript"
+    },
+    {
+      "startSeconds": 68.64,
+      "endSeconds": 73.84,
+      "text": "will try to find out whether B exists in"
+    },
+    {
+      "startSeconds": 71.439,
+      "endSeconds": 75.6,
+      "text": "the local memory space or not. Okay,"
+    },
+    {
+      "startSeconds": 73.84,
+      "endSeconds": 77.439,
+      "text": "when I say local memory space,"
+    },
+    {
+      "startSeconds": 75.6,
+      "endSeconds": 80.24,
+      "text": "JavaScript engine will try to find this"
+    },
+    {
+      "startSeconds": 77.439,
+      "endSeconds": 83.84,
+      "text": "B inside the local memory of this A's"
+    },
+    {
+      "startSeconds": 80.24,
+      "endSeconds": 86.56,
+      "text": "execution context. Okay, this function A"
+    },
+    {
+      "startSeconds": 83.84,
+      "endSeconds": 88.96,
+      "text": "is local memory. It will try to find out"
+    },
+    {
+      "startSeconds": 86.56,
+      "endSeconds": 91.36,
+      "text": "B and it won't be there, right? Because"
+    },
+    {
+      "startSeconds": 88.96,
+      "endSeconds": 94.24,
+      "text": "we never created B inside that function,"
+    },
+    {
+      "startSeconds": 91.36,
+      "endSeconds": 96.479,
+      "text": "isn't it? So now what will happen? Will"
+    },
+    {
+      "startSeconds": 94.24,
+      "endSeconds": 99.04,
+      "text": "it print undefined? Remember that"
+    },
+    {
+      "startSeconds": 96.479,
+      "endSeconds": 101.84,
+      "text": "special placeholder in case of host will"
+    },
+    {
+      "startSeconds": 99.04,
+      "endSeconds": 105.68,
+      "text": "it print undefined or will it print not"
+    },
+    {
+      "startSeconds": 101.84,
+      "endSeconds": 108,
+      "text": "defined like the B never existed or will"
+    },
+    {
+      "startSeconds": 105.68,
+      "endSeconds": 110.799,
+      "text": "it directly print the value 10? What"
+    },
+    {
+      "startSeconds": 108,
+      "endSeconds": 113.759,
+      "text": "will happen? Interesting, right? So if"
+    },
+    {
+      "startSeconds": 110.799,
+      "endSeconds": 117.52,
+      "text": "we run this code let us see it prints up"
+    },
+    {
+      "startSeconds": 113.759,
+      "endSeconds": 120.24,
+      "text": "10 right. So it prints up 10 that means"
+    },
+    {
+      "startSeconds": 117.52,
+      "endSeconds": 124.32,
+      "text": "somehow inside this function right this"
+    },
+    {
+      "startSeconds": 120.24,
+      "endSeconds": 128,
+      "text": "B can access the B which was outside"
+    },
+    {
+      "startSeconds": 124.32,
+      "endSeconds": 130.239,
+      "text": "this function. Okay so this was easy but"
+    },
+    {
+      "startSeconds": 128,
+      "endSeconds": 133.2,
+      "text": "let's make things a little more complex."
+    },
+    {
+      "startSeconds": 130.239,
+      "endSeconds": 137.92,
+      "text": "So if I put in another function inside"
+    },
+    {
+      "startSeconds": 133.2,
+      "endSeconds": 141.92,
+      "text": "this right inside this A and if I try to"
+    },
+    {
+      "startSeconds": 137.92,
+      "endSeconds": 143.92,
+      "text": "access B inside this function. Okay. If"
+    },
+    {
+      "startSeconds": 141.92,
+      "endSeconds": 145.599,
+      "text": "I try to access B inside this function"
+    },
+    {
+      "startSeconds": 143.92,
+      "endSeconds": 148.319,
+      "text": "what will happen now? What will it"
+    },
+    {
+      "startSeconds": 145.599,
+      "endSeconds": 150.72,
+      "text": "print? Think of it. Will I still get"
+    },
+    {
+      "startSeconds": 148.319,
+      "endSeconds": 153.04,
+      "text": "access to B or will it be undefined or"
+    },
+    {
+      "startSeconds": 150.72,
+      "endSeconds": 155.519,
+      "text": "not defined or anything else or null or"
+    },
+    {
+      "startSeconds": 153.04,
+      "endSeconds": 158.319,
+      "text": "something empty? What it will be? So can"
+    },
+    {
+      "startSeconds": 155.519,
+      "endSeconds": 160.879,
+      "text": "I access B? Let us just run and see. So"
+    },
+    {
+      "startSeconds": 158.319,
+      "endSeconds": 162.879,
+      "text": "let us invoke this function also. Okay."
+    },
+    {
+      "startSeconds": 160.879,
+      "endSeconds": 166.16,
+      "text": "So if we invoke this function now if I"
+    },
+    {
+      "startSeconds": 162.879,
+      "endSeconds": 169.36,
+      "text": "run my program. So here it is. So it can"
+    },
+    {
+      "startSeconds": 166.16,
+      "endSeconds": 172.239,
+      "text": "again access 10. So that means even"
+    },
+    {
+      "startSeconds": 169.36,
+      "endSeconds": 174.16,
+      "text": "inside the function which is inside"
+    },
+    {
+      "startSeconds": 172.239,
+      "endSeconds": 177.28,
+      "text": "another function which is inside the"
+    },
+    {
+      "startSeconds": 174.16,
+      "endSeconds": 179.68,
+      "text": "global scope I can access B. Right? And"
+    },
+    {
+      "startSeconds": 177.28,
+      "endSeconds": 182.56,
+      "text": "what if vice versa? Suppose if I had"
+    },
+    {
+      "startSeconds": 179.68,
+      "endSeconds": 185.68,
+      "text": "this B suppose if I take this B and if I"
+    },
+    {
+      "startSeconds": 182.56,
+      "endSeconds": 188,
+      "text": "put this B inside here right? If I put"
+    },
+    {
+      "startSeconds": 185.68,
+      "endSeconds": 190.879,
+      "text": "this B inside here, can I still access"
+    },
+    {
+      "startSeconds": 188,
+      "endSeconds": 194.64,
+      "text": "it inside C? Let us see. Yes, I can"
+    },
+    {
+      "startSeconds": 190.879,
+      "endSeconds": 199.68,
+      "text": "still access. But but but can I access"
+    },
+    {
+      "startSeconds": 194.64,
+      "endSeconds": 201.68,
+      "text": "this B outside this function? What do"
+    },
+    {
+      "startSeconds": 199.68,
+      "endSeconds": 204.8,
+      "text": "you think the output will be? What will"
+    },
+    {
+      "startSeconds": 201.68,
+      "endSeconds": 207.92,
+      "text": "happen if I run this? It says B is not"
+    },
+    {
+      "startSeconds": 204.8,
+      "endSeconds": 210.48,
+      "text": "defined. Interesting, isn't it? It says"
+    },
+    {
+      "startSeconds": 207.92,
+      "endSeconds": 212.56,
+      "text": "B is not defined. So here comes scope"
+    },
+    {
+      "startSeconds": 210.48,
+      "endSeconds": 215.12,
+      "text": "into picture. Now I'll tell you the"
+    },
+    {
+      "startSeconds": 212.56,
+      "endSeconds": 217.92,
+      "text": "easiest definition of scope. Okay, so"
+    },
+    {
+      "startSeconds": 215.12,
+      "endSeconds": 220.08,
+      "text": "scope means where you can access a"
+    },
+    {
+      "startSeconds": 217.92,
+      "endSeconds": 222.72,
+      "text": "specific variable or a function in our"
+    },
+    {
+      "startSeconds": 220.08,
+      "endSeconds": 224.72,
+      "text": "code. Okay, that is scope. See, there"
+    },
+    {
+      "startSeconds": 222.72,
+      "endSeconds": 228,
+      "text": "are two aspects to it. I'll tell you"
+    },
+    {
+      "startSeconds": 224.72,
+      "endSeconds": 230.319,
+      "text": "both. So, first is what is the scope of"
+    },
+    {
+      "startSeconds": 228,
+      "endSeconds": 232.959,
+      "text": "this variable? Okay, so what is the"
+    },
+    {
+      "startSeconds": 230.319,
+      "endSeconds": 235.84,
+      "text": "scope of this variable B? That means"
+    },
+    {
+      "startSeconds": 232.959,
+      "endSeconds": 237.92,
+      "text": "where can I access this variable B?"
+    },
+    {
+      "startSeconds": 235.84,
+      "endSeconds": 241.12,
+      "text": "Okay, that is scope. And the other way"
+    },
+    {
+      "startSeconds": 237.92,
+      "endSeconds": 244.239,
+      "text": "of seeing it is is B inside the scope."
+    },
+    {
+      "startSeconds": 241.12,
+      "endSeconds": 247.12,
+      "text": "Okay. So when I say is B inside the"
+    },
+    {
+      "startSeconds": 244.239,
+      "endSeconds": 250.319,
+      "text": "scope of function C. So that means can I"
+    },
+    {
+      "startSeconds": 247.12,
+      "endSeconds": 252.72,
+      "text": "access this B inside C? So there are two"
+    },
+    {
+      "startSeconds": 250.319,
+      "endSeconds": 256.16,
+      "text": "ways to look at it. First is what is the"
+    },
+    {
+      "startSeconds": 252.72,
+      "endSeconds": 258.959,
+      "text": "scope of a variable B and one is is B"
+    },
+    {
+      "startSeconds": 256.16,
+      "endSeconds": 260.88,
+      "text": "inside a scope of a function. So so so"
+    },
+    {
+      "startSeconds": 258.959,
+      "endSeconds": 263.12,
+      "text": "people use it in different ways but it's"
+    },
+    {
+      "startSeconds": 260.88,
+      "endSeconds": 264.96,
+      "text": "like almost the same thing. And as I"
+    },
+    {
+      "startSeconds": 263.12,
+      "endSeconds": 267.12,
+      "text": "told you in the beginning of the video"
+    },
+    {
+      "startSeconds": 264.96,
+      "endSeconds": 270.639,
+      "text": "scope is directly dependent on the"
+    },
+    {
+      "startSeconds": 267.12,
+      "endSeconds": 273.36,
+      "text": "lexical environment. Okay. Now let us"
+    },
+    {
+      "startSeconds": 270.639,
+      "endSeconds": 275.36,
+      "text": "see what is lexical environment with a"
+    },
+    {
+      "startSeconds": 273.36,
+      "endSeconds": 277.68,
+      "text": "visual representation. Visual will be"
+    },
+    {
+      "startSeconds": 275.36,
+      "endSeconds": 279.919,
+      "text": "the best way to fit inside our head that"
+    },
+    {
+      "startSeconds": 277.68,
+      "endSeconds": 282.24,
+      "text": "lexical environment. Let us see it. Now"
+    },
+    {
+      "startSeconds": 279.919,
+      "endSeconds": 284.56,
+      "text": "when we run this program a global"
+    },
+    {
+      "startSeconds": 282.24,
+      "endSeconds": 288.858,
+      "text": "execution context is created and it is"
+    },
+    {
+      "startSeconds": 284.56,
+      "endSeconds": 290.56,
+      "text": "put onto the call stack. Remember right"
+    },
+    {
+      "startSeconds": 288.858,
+      "endSeconds": 294.08,
+      "text": "[snorts] and let us make this call"
+    },
+    {
+      "startSeconds": 290.56,
+      "endSeconds": 296.56,
+      "text": "stack. So here is our call stack. Okay."
+    },
+    {
+      "startSeconds": 294.08,
+      "endSeconds": 298.72,
+      "text": "And what happens is a global execution"
+    },
+    {
+      "startSeconds": 296.56,
+      "endSeconds": 300.88,
+      "text": "context is created and it is pushed"
+    },
+    {
+      "startSeconds": 298.72,
+      "endSeconds": 303.36,
+      "text": "inside it. So let us make this global"
+    },
+    {
+      "startSeconds": 300.88,
+      "endSeconds": 306.16,
+      "text": "execution context. Okay, it is pushed"
+    },
+    {
+      "startSeconds": 303.36,
+      "endSeconds": 308.72,
+      "text": "onto the call stack. So this global"
+    },
+    {
+      "startSeconds": 306.16,
+      "endSeconds": 312.88,
+      "text": "execution context as you already know it"
+    },
+    {
+      "startSeconds": 308.72,
+      "endSeconds": 315.28,
+      "text": "is the global execution context. Okay,"
+    },
+    {
+      "startSeconds": 312.88,
+      "endSeconds": 317.759,
+      "text": "so this global execution context as you"
+    },
+    {
+      "startSeconds": 315.28,
+      "endSeconds": 320.8,
+      "text": "already know has memory and code section"
+    },
+    {
+      "startSeconds": 317.759,
+      "endSeconds": 323.12,
+      "text": "in it. Right? So what will happen when"
+    },
+    {
+      "startSeconds": 320.8,
+      "endSeconds": 324.72,
+      "text": "you run this program? It will try to"
+    },
+    {
+      "startSeconds": 323.12,
+      "endSeconds": 328.08,
+      "text": "assign"
+    },
+    {
+      "startSeconds": 324.72,
+      "endSeconds": 330,
+      "text": "values to the global variables and"
+    },
+    {
+      "startSeconds": 328.08,
+      "endSeconds": 332.72,
+      "text": "functions. Right? So it will try to"
+    },
+    {
+      "startSeconds": 330,
+      "endSeconds": 334.8,
+      "text": "assign value to a here. Right? A is in"
+    },
+    {
+      "startSeconds": 332.72,
+      "endSeconds": 337.52,
+      "text": "the global space. So let us try to"
+    },
+    {
+      "startSeconds": 334.8,
+      "endSeconds": 340.72,
+      "text": "assign that value. Okay? It will assign"
+    },
+    {
+      "startSeconds": 337.52,
+      "endSeconds": 342.639,
+      "text": "value to a here. It will point it to the"
+    },
+    {
+      "startSeconds": 340.72,
+      "endSeconds": 344.88,
+      "text": "function reference. Then what will"
+    },
+    {
+      "startSeconds": 342.639,
+      "endSeconds": 346.88,
+      "text": "happen? It will invoke this function."
+    },
+    {
+      "startSeconds": 344.88,
+      "endSeconds": 348.88,
+      "text": "What will happen? When you invoke a"
+    },
+    {
+      "startSeconds": 346.88,
+      "endSeconds": 350.96,
+      "text": "function, an execution context is"
+    },
+    {
+      "startSeconds": 348.88,
+      "endSeconds": 353.68,
+      "text": "created. Right? So let us create the"
+    },
+    {
+      "startSeconds": 350.96,
+      "endSeconds": 356.8,
+      "text": "execution context for A also now. So"
+    },
+    {
+      "startSeconds": 353.68,
+      "endSeconds": 359.6,
+      "text": "here we created an execution context for"
+    },
+    {
+      "startSeconds": 356.8,
+      "endSeconds": 364.16,
+      "text": "A also. It again has two parts the"
+    },
+    {
+      "startSeconds": 359.6,
+      "endSeconds": 366.72,
+      "text": "memory and the code. Right? And now this"
+    },
+    {
+      "startSeconds": 364.16,
+      "endSeconds": 370.639,
+      "text": "function A will reserve memory for this"
+    },
+    {
+      "startSeconds": 366.72,
+      "endSeconds": 373.199,
+      "text": "variable B. Isn't it? So B and this"
+    },
+    {
+      "startSeconds": 370.639,
+      "endSeconds": 375.44,
+      "text": "function C. Right? So B and C will be"
+    },
+    {
+      "startSeconds": 373.199,
+      "endSeconds": 378.4,
+      "text": "reserved this memory here. So what will"
+    },
+    {
+      "startSeconds": 375.44,
+      "endSeconds": 381.44,
+      "text": "happen? So initially B will be set to"
+    },
+    {
+      "startSeconds": 378.4,
+      "endSeconds": 384.88,
+      "text": "undefined and C will be set to the"
+    },
+    {
+      "startSeconds": 381.44,
+      "endSeconds": 387.12,
+      "text": "function reference right and once it"
+    },
+    {
+      "startSeconds": 384.88,
+      "endSeconds": 389.36,
+      "text": "starts executing the code now B will"
+    },
+    {
+      "startSeconds": 387.12,
+      "endSeconds": 391.039,
+      "text": "become 10 right this is how the code is"
+    },
+    {
+      "startSeconds": 389.36,
+      "endSeconds": 393.52,
+      "text": "executed remember from the previous"
+    },
+    {
+      "startSeconds": 391.039,
+      "endSeconds": 395.6,
+      "text": "videos. So what will happen now it will"
+    },
+    {
+      "startSeconds": 393.52,
+      "endSeconds": 397.919,
+      "text": "go to the next line. Okay it will put in"
+    },
+    {
+      "startSeconds": 395.6,
+      "endSeconds": 399.84,
+      "text": "10 over here and it will go to the next"
+    },
+    {
+      "startSeconds": 397.919,
+      "endSeconds": 401.52,
+      "text": "line. This is again a function"
+    },
+    {
+      "startSeconds": 399.84,
+      "endSeconds": 403.6,
+      "text": "invocation. What happens in a function"
+    },
+    {
+      "startSeconds": 401.52,
+      "endSeconds": 405.68,
+      "text": "invocation? Again an execution context"
+    },
+    {
+      "startSeconds": 403.6,
+      "endSeconds": 409.199,
+      "text": "is created. Let us quickly create one."
+    },
+    {
+      "startSeconds": 405.68,
+      "endSeconds": 412,
+      "text": "Okay. Uh and it is again pushed onto the"
+    },
+    {
+      "startSeconds": 409.199,
+      "endSeconds": 415.199,
+      "text": "call stack. Now this is the this is the"
+    },
+    {
+      "startSeconds": 412,
+      "endSeconds": 417.759,
+      "text": "execution context of C. Okay. This is"
+    },
+    {
+      "startSeconds": 415.199,
+      "endSeconds": 420.96,
+      "text": "the C and this is a function A"
+    },
+    {
+      "startSeconds": 417.759,
+      "endSeconds": 424.479,
+      "text": "invocation. Okay. So and again a memory"
+    },
+    {
+      "startSeconds": 420.96,
+      "endSeconds": 426.8,
+      "text": "is set up. Right? Again memory and code"
+    },
+    {
+      "startSeconds": 424.479,
+      "endSeconds": 428.56,
+      "text": "is here. Right? So there is nothing to"
+    },
+    {
+      "startSeconds": 426.8,
+      "endSeconds": 430.4,
+      "text": "set up in C. So let us keep it right"
+    },
+    {
+      "startSeconds": 428.56,
+      "endSeconds": 432.4,
+      "text": "here. So now I will tell you what is"
+    },
+    {
+      "startSeconds": 430.4,
+      "endSeconds": 434.72,
+      "text": "lexical environment. Just pay attention"
+    },
+    {
+      "startSeconds": 432.4,
+      "endSeconds": 438.08,
+      "text": "very carefully and listen to me. Okay?"
+    },
+    {
+      "startSeconds": 434.72,
+      "endSeconds": 441.199,
+      "text": "So whenever an execution context is"
+    },
+    {
+      "startSeconds": 438.08,
+      "endSeconds": 444.4,
+      "text": "created, a lexical environment is also"
+    },
+    {
+      "startSeconds": 441.199,
+      "endSeconds": 447.759,
+      "text": "created. Okay. So lexical environment is"
+    },
+    {
+      "startSeconds": 444.4,
+      "endSeconds": 450.88,
+      "text": "the local memory along with the lexical"
+    },
+    {
+      "startSeconds": 447.759,
+      "endSeconds": 452.479,
+      "text": "environment of its parent. Okay. So let"
+    },
+    {
+      "startSeconds": 450.88,
+      "endSeconds": 454.96,
+      "text": "me repeat it once again. It's a very"
+    },
+    {
+      "startSeconds": 452.479,
+      "endSeconds": 458.24,
+      "text": "core concept. Remember this. Lexical"
+    },
+    {
+      "startSeconds": 454.96,
+      "endSeconds": 460.96,
+      "text": "environment is the local memory along"
+    },
+    {
+      "startSeconds": 458.24,
+      "endSeconds": 463.599,
+      "text": "with the lexical environment of its"
+    },
+    {
+      "startSeconds": 460.96,
+      "endSeconds": 465.599,
+      "text": "parent. Okay. What is parent? First of"
+    },
+    {
+      "startSeconds": 463.599,
+      "endSeconds": 469.12,
+      "text": "all, let me tell you what is lexical."
+    },
+    {
+      "startSeconds": 465.599,
+      "endSeconds": 473.759,
+      "text": "Okay. So, lexical as a term means in"
+    },
+    {
+      "startSeconds": 469.12,
+      "endSeconds": 476.08,
+      "text": "hierarchy or in a sequence or in in this"
+    },
+    {
+      "startSeconds": 473.759,
+      "endSeconds": 480.24,
+      "text": "code terms. I'll tell you what lexical"
+    },
+    {
+      "startSeconds": 476.08,
+      "endSeconds": 483.039,
+      "text": "is. So, you can say that C function is"
+    },
+    {
+      "startSeconds": 480.24,
+      "endSeconds": 485.68,
+      "text": "lexically sitting inside a function."
+    },
+    {
+      "startSeconds": 483.039,
+      "endSeconds": 488.4,
+      "text": "Okay, this C function is lexically"
+    },
+    {
+      "startSeconds": 485.68,
+      "endSeconds": 491.599,
+      "text": "inside a function. Okay, that means"
+    },
+    {
+      "startSeconds": 488.4,
+      "endSeconds": 494.08,
+      "text": "lexical in order or in hierarchy. Okay,"
+    },
+    {
+      "startSeconds": 491.599,
+      "endSeconds": 496.96,
+      "text": "which is and in code terms you can"
+    },
+    {
+      "startSeconds": 494.08,
+      "endSeconds": 499.919,
+      "text": "assume it to be where that specific code"
+    },
+    {
+      "startSeconds": 496.96,
+      "endSeconds": 502.24,
+      "text": "is present physically inside the code,"
+    },
+    {
+      "startSeconds": 499.919,
+      "endSeconds": 504.8,
+      "text": "right? So this function C is present"
+    },
+    {
+      "startSeconds": 502.24,
+      "endSeconds": 508.96,
+      "text": "physically inside A, right? So that"
+    },
+    {
+      "startSeconds": 504.8,
+      "endSeconds": 511.44,
+      "text": "means C is lexically inside A and A is"
+    },
+    {
+      "startSeconds": 508.96,
+      "endSeconds": 514.479,
+      "text": "lexically inside the global scope."
+    },
+    {
+      "startSeconds": 511.44,
+      "endSeconds": 517.919,
+      "text": "Right? So this is known as lexical. So"
+    },
+    {
+      "startSeconds": 514.479,
+      "endSeconds": 520.64,
+      "text": "when I say lexical environment that"
+    },
+    {
+      "startSeconds": 517.919,
+      "endSeconds": 523.279,
+      "text": "means the local memory along with"
+    },
+    {
+      "startSeconds": 520.64,
+      "endSeconds": 525.04,
+      "text": "lexical environment of the parent. Let"
+    },
+    {
+      "startSeconds": 523.279,
+      "endSeconds": 527.92,
+      "text": "me show you visually. So whenever this"
+    },
+    {
+      "startSeconds": 525.04,
+      "endSeconds": 531.36,
+      "text": "execution context is created you also"
+    },
+    {
+      "startSeconds": 527.92,
+      "endSeconds": 534.08,
+      "text": "get reference to the lexical environment"
+    },
+    {
+      "startSeconds": 531.36,
+      "endSeconds": 536.32,
+      "text": "of its parent. Okay. So along with the"
+    },
+    {
+      "startSeconds": 534.08,
+      "endSeconds": 538.959,
+      "text": "memory space along with the variables"
+    },
+    {
+      "startSeconds": 536.32,
+      "endSeconds": 541.68,
+      "text": "and functions in this memory space you"
+    },
+    {
+      "startSeconds": 538.959,
+      "endSeconds": 543.839,
+      "text": "also get this orange thing. Okay. this"
+    },
+    {
+      "startSeconds": 541.68,
+      "endSeconds": 546.48,
+      "text": "orange thing you can assume it to be a"
+    },
+    {
+      "startSeconds": 543.839,
+      "endSeconds": 549.04,
+      "text": "reference to the lexical environment of"
+    },
+    {
+      "startSeconds": 546.48,
+      "endSeconds": 551.44,
+      "text": "its parent. Okay. So in this case this"
+    },
+    {
+      "startSeconds": 549.04,
+      "endSeconds": 554.399,
+      "text": "orange thing is pointing to the lexical"
+    },
+    {
+      "startSeconds": 551.44,
+      "endSeconds": 557.6,
+      "text": "environment of its parent. What is it?"
+    },
+    {
+      "startSeconds": 554.399,
+      "endSeconds": 560.88,
+      "text": "So lexical parent of c is a right in the"
+    },
+    {
+      "startSeconds": 557.6,
+      "endSeconds": 565.12,
+      "text": "code. So lexical lex it is because c is"
+    },
+    {
+      "startSeconds": 560.88,
+      "endSeconds": 567.04,
+      "text": "lexically inside a right. So that means"
+    },
+    {
+      "startSeconds": 565.12,
+      "endSeconds": 569.04,
+      "text": "it will get access to lexical"
+    },
+    {
+      "startSeconds": 567.04,
+      "endSeconds": 571.04,
+      "text": "environment of a also you know"
+    },
+    {
+      "startSeconds": 569.04,
+      "endSeconds": 573.04,
+      "text": "understand please understand this very"
+    },
+    {
+      "startSeconds": 571.04,
+      "endSeconds": 575.839,
+      "text": "carefully it will help us in longer run"
+    },
+    {
+      "startSeconds": 573.04,
+      "endSeconds": 578.8,
+      "text": "this is very important okay so this"
+    },
+    {
+      "startSeconds": 575.839,
+      "endSeconds": 581.279,
+      "text": "orange is the reference to the lexical"
+    },
+    {
+      "startSeconds": 578.8,
+      "endSeconds": 583.68,
+      "text": "environment of a and what is the lexical"
+    },
+    {
+      "startSeconds": 581.279,
+      "endSeconds": 587.68,
+      "text": "environment of a lexical environment of"
+    },
+    {
+      "startSeconds": 583.68,
+      "endSeconds": 590.48,
+      "text": "a is its memory space plus plus the"
+    },
+    {
+      "startSeconds": 587.68,
+      "endSeconds": 593.839,
+      "text": "lexical environment of a's parent okay"
+    },
+    {
+      "startSeconds": 590.48,
+      "endSeconds": 597.12,
+      "text": "so a also has this orange thing which is"
+    },
+    {
+      "startSeconds": 593.839,
+      "endSeconds": 600,
+      "text": "pointing to the lexical environment of"
+    },
+    {
+      "startSeconds": 597.12,
+      "endSeconds": 603.6,
+      "text": "the its parent. Okay. It is the lexical"
+    },
+    {
+      "startSeconds": 600,
+      "endSeconds": 605.68,
+      "text": "environment of global. Okay. And global"
+    },
+    {
+      "startSeconds": 603.6,
+      "endSeconds": 608.64,
+      "text": "also has this orange thing which is"
+    },
+    {
+      "startSeconds": 605.68,
+      "endSeconds": 610.959,
+      "text": "reference to its lexical parent. Right?"
+    },
+    {
+      "startSeconds": 608.64,
+      "endSeconds": 613.2,
+      "text": "Lexical environment of its parent. At"
+    },
+    {
+      "startSeconds": 610.959,
+      "endSeconds": 615.279,
+      "text": "global level this reference to the outer"
+    },
+    {
+      "startSeconds": 613.2,
+      "endSeconds": 618.399,
+      "text": "environment points to null, right?"
+    },
+    {
+      "startSeconds": 615.279,
+      "endSeconds": 621.04,
+      "text": "Because it has no parent. In case of a,"
+    },
+    {
+      "startSeconds": 618.399,
+      "endSeconds": 624.24,
+      "text": "it points to global, right? So that"
+    },
+    {
+      "startSeconds": 621.04,
+      "endSeconds": 626.959,
+      "text": "points to this thing. Okay, this thing"
+    },
+    {
+      "startSeconds": 624.24,
+      "endSeconds": 631.44,
+      "text": "lexical environment points to this thing"
+    },
+    {
+      "startSeconds": 626.959,
+      "endSeconds": 636.8,
+      "text": "and in case of C, it points to lexical"
+    },
+    {
+      "startSeconds": 631.44,
+      "endSeconds": 639.12,
+      "text": "environment of A. Right? So this is how"
+    },
+    {
+      "startSeconds": 636.8,
+      "endSeconds": 642.24,
+      "text": "lexical environment looks like in the"
+    },
+    {
+      "startSeconds": 639.12,
+      "endSeconds": 644.399,
+      "text": "memory. Okay? Now this is the lexical"
+    },
+    {
+      "startSeconds": 642.24,
+      "endSeconds": 647.2,
+      "text": "environment. But let us now see how this"
+    },
+    {
+      "startSeconds": 644.399,
+      "endSeconds": 650.8,
+      "text": "is used. Okay. So suppose if you try to"
+    },
+    {
+      "startSeconds": 647.2,
+      "endSeconds": 653.12,
+      "text": "do a console log of okay console log of"
+    },
+    {
+      "startSeconds": 650.8,
+      "endSeconds": 655.6,
+      "text": "B inside this function C. So I'll tell"
+    },
+    {
+      "startSeconds": 653.12,
+      "endSeconds": 658,
+      "text": "you what happens. Okay. When JavaScript"
+    },
+    {
+      "startSeconds": 655.6,
+      "endSeconds": 661.279,
+      "text": "engine encounters this line, right? So"
+    },
+    {
+      "startSeconds": 658,
+      "endSeconds": 664.32,
+      "text": "it tries to find out B inside the local"
+    },
+    {
+      "startSeconds": 661.279,
+      "endSeconds": 667.12,
+      "text": "memory of C. Okay. First of all, it will"
+    },
+    {
+      "startSeconds": 664.32,
+      "endSeconds": 669.92,
+      "text": "try to find out if there B exist in the"
+    },
+    {
+      "startSeconds": 667.12,
+      "endSeconds": 672.399,
+      "text": "local memory or not. Okay, it won't find"
+    },
+    {
+      "startSeconds": 669.92,
+      "endSeconds": 674.64,
+      "text": "because there is no B inside this local"
+    },
+    {
+      "startSeconds": 672.399,
+      "endSeconds": 678.56,
+      "text": "memory. Okay. So now what happened?"
+    },
+    {
+      "startSeconds": 674.64,
+      "endSeconds": 680.72,
+      "text": "JavaScript engine goes to this reference"
+    },
+    {
+      "startSeconds": 678.56,
+      "endSeconds": 684,
+      "text": "and goes to the lexical environment of"
+    },
+    {
+      "startSeconds": 680.72,
+      "endSeconds": 686.48,
+      "text": "its parent. Okay. So lexical means where"
+    },
+    {
+      "startSeconds": 684,
+      "endSeconds": 689.279,
+      "text": "it is lexically or physically present in"
+    },
+    {
+      "startSeconds": 686.48,
+      "endSeconds": 692.16,
+      "text": "the code. So C is physically present"
+    },
+    {
+      "startSeconds": 689.279,
+      "endSeconds": 694.32,
+      "text": "inside A. Right? So C is lexical parent"
+    },
+    {
+      "startSeconds": 692.16,
+      "endSeconds": 697.519,
+      "text": "is A. So it will go to the lexical"
+    },
+    {
+      "startSeconds": 694.32,
+      "endSeconds": 699.92,
+      "text": "environment of A. Okay. So now it will"
+    },
+    {
+      "startSeconds": 697.519,
+      "endSeconds": 702.88,
+      "text": "try to search for B inside the lexical"
+    },
+    {
+      "startSeconds": 699.92,
+      "endSeconds": 705.6,
+      "text": "environment of A. It finds out B over"
+    },
+    {
+      "startSeconds": 702.88,
+      "endSeconds": 708.64,
+      "text": "here. Okay. it finds out B over here. So"
+    },
+    {
+      "startSeconds": 705.6,
+      "endSeconds": 711.68,
+      "text": "it just goes back and it prints up B"
+    },
+    {
+      "startSeconds": 708.64,
+      "endSeconds": 714.079,
+      "text": "inside the console. That is why you see"
+    },
+    {
+      "startSeconds": 711.68,
+      "endSeconds": 716.56,
+      "text": "the value 10 printed on the console."
+    },
+    {
+      "startSeconds": 714.079,
+      "endSeconds": 719.44,
+      "text": "Okay, this is how it works. So suppose"
+    },
+    {
+      "startSeconds": 716.56,
+      "endSeconds": 721.68,
+      "text": "if B was not there inside A also suppose"
+    },
+    {
+      "startSeconds": 719.44,
+      "endSeconds": 723.519,
+      "text": "if we don't if we didn't had this line."
+    },
+    {
+      "startSeconds": 721.68,
+      "endSeconds": 725.92,
+      "text": "Okay, if we didn't had this line, so"
+    },
+    {
+      "startSeconds": 723.519,
+      "endSeconds": 728.48,
+      "text": "what would have happened after searching"
+    },
+    {
+      "startSeconds": 725.92,
+      "endSeconds": 731.68,
+      "text": "over here? It would have again gone to"
+    },
+    {
+      "startSeconds": 728.48,
+      "endSeconds": 735.68,
+      "text": "the lexical environment of A's parent."
+    },
+    {
+      "startSeconds": 731.68,
+      "endSeconds": 738.24,
+      "text": "Okay. So now it will have it would have"
+    },
+    {
+      "startSeconds": 735.68,
+      "endSeconds": 740.56,
+      "text": "tried to find out B inside this global"
+    },
+    {
+      "startSeconds": 738.24,
+      "endSeconds": 742.8,
+      "text": "execution context lexical environment."
+    },
+    {
+      "startSeconds": 740.56,
+      "endSeconds": 744.959,
+      "text": "Okay. That global lexical environment."
+    },
+    {
+      "startSeconds": 742.8,
+      "endSeconds": 746.959,
+      "text": "Okay. And there was no B over here also."
+    },
+    {
+      "startSeconds": 744.959,
+      "endSeconds": 750.24,
+      "text": "Suppose we never declared B anywhere in"
+    },
+    {
+      "startSeconds": 746.959,
+      "endSeconds": 752.32,
+      "text": "our code. Right? So what happens now? It"
+    },
+    {
+      "startSeconds": 750.24,
+      "endSeconds": 754.16,
+      "text": "goes to the lexical environment of"
+    },
+    {
+      "startSeconds": 752.32,
+      "endSeconds": 756.48,
+      "text": "global parent also because it was not"
+    },
+    {
+      "startSeconds": 754.16,
+      "endSeconds": 758.88,
+      "text": "there in global memory of global. Right?"
+    },
+    {
+      "startSeconds": 756.48,
+      "endSeconds": 761.12,
+      "text": "So it goes and searches for the uh"
+    },
+    {
+      "startSeconds": 758.88,
+      "endSeconds": 764,
+      "text": "lexical environment of global's parent."
+    },
+    {
+      "startSeconds": 761.12,
+      "endSeconds": 765.92,
+      "text": "Okay. And it finds null. So that means"
+    },
+    {
+      "startSeconds": 764,
+      "endSeconds": 767.92,
+      "text": "it ended. Right? Now there is no more"
+    },
+    {
+      "startSeconds": 765.92,
+      "endSeconds": 770.56,
+      "text": "lexical environments to search for."
+    },
+    {
+      "startSeconds": 767.92,
+      "endSeconds": 772.16,
+      "text": "Right? Physically we have moved to the"
+    },
+    {
+      "startSeconds": 770.56,
+      "endSeconds": 773.76,
+      "text": "outer environment. We have moved to"
+    },
+    {
+      "startSeconds": 772.16,
+      "endSeconds": 776.32,
+      "text": "another outer environment and we have"
+    },
+    {
+      "startSeconds": 773.76,
+      "endSeconds": 779.2,
+      "text": "exhausted. Right? Now we have reached"
+    },
+    {
+      "startSeconds": 776.32,
+      "endSeconds": 782,
+      "text": "null. Right? So what will happen now?"
+    },
+    {
+      "startSeconds": 779.2,
+      "endSeconds": 784.959,
+      "text": "The program stops and JS engine says"
+    },
+    {
+      "startSeconds": 782,
+      "endSeconds": 787.2,
+      "text": "that B is not defined. So you get that"
+    },
+    {
+      "startSeconds": 784.959,
+      "endSeconds": 790.639,
+      "text": "error. B is not defined. Then you will"
+    },
+    {
+      "startSeconds": 787.2,
+      "endSeconds": 792.639,
+      "text": "say that B is not in the scope. Right?"
+    },
+    {
+      "startSeconds": 790.639,
+      "endSeconds": 795.36,
+      "text": "Now let me tell you a beautiful thing."
+    },
+    {
+      "startSeconds": 792.639,
+      "endSeconds": 798.24,
+      "text": "Okay. So this way and this mechanism of"
+    },
+    {
+      "startSeconds": 795.36,
+      "endSeconds": 800,
+      "text": "finding the variables right like suppose"
+    },
+    {
+      "startSeconds": 798.24,
+      "endSeconds": 802.399,
+      "text": "B was first searched in the local"
+    },
+    {
+      "startSeconds": 800,
+      "endSeconds": 805.12,
+      "text": "memory. It was not there inside then it"
+    },
+    {
+      "startSeconds": 802.399,
+      "endSeconds": 807.519,
+      "text": "went to the reference of the outer"
+    },
+    {
+      "startSeconds": 805.12,
+      "endSeconds": 809.92,
+      "text": "parent right parent lexical environment."
+    },
+    {
+      "startSeconds": 807.519,
+      "endSeconds": 812.48,
+      "text": "It was not over here. Suppose this was"
+    },
+    {
+      "startSeconds": 809.92,
+      "endSeconds": 815.2,
+      "text": "not here. Okay. If it was not here then"
+    },
+    {
+      "startSeconds": 812.48,
+      "endSeconds": 817.519,
+      "text": "it moves to the parent of that lexical"
+    },
+    {
+      "startSeconds": 815.2,
+      "endSeconds": 820.48,
+      "text": "environment. Okay. It goes to the parent"
+    },
+    {
+      "startSeconds": 817.519,
+      "endSeconds": 824.88,
+      "text": "is goes to a parent. Okay. So this way"
+    },
+    {
+      "startSeconds": 820.48,
+      "endSeconds": 827.76,
+      "text": "of finding is known as scope chain. So a"
+    },
+    {
+      "startSeconds": 824.88,
+      "endSeconds": 830.079,
+      "text": "scope chain is nothing but this chain of"
+    },
+    {
+      "startSeconds": 827.76,
+      "endSeconds": 832.56,
+      "text": "all these lexical environment and the"
+    },
+    {
+      "startSeconds": 830.079,
+      "endSeconds": 834.8,
+      "text": "parent references. This is what is scope"
+    },
+    {
+      "startSeconds": 832.56,
+      "endSeconds": 836.56,
+      "text": "chain. Nothing else. Okay. So if"
+    },
+    {
+      "startSeconds": 834.8,
+      "endSeconds": 839.04,
+      "text": "JavaScript engine does not find anything"
+    },
+    {
+      "startSeconds": 836.56,
+      "endSeconds": 841.199,
+      "text": "in the local memory, it goes one next"
+    },
+    {
+      "startSeconds": 839.04,
+      "endSeconds": 842.88,
+      "text": "level of the scope chain. Okay. If it"
+    },
+    {
+      "startSeconds": 841.199,
+      "endSeconds": 844.959,
+      "text": "does not find in the local memory, it"
+    },
+    {
+      "startSeconds": 842.88,
+      "endSeconds": 846.72,
+      "text": "goes next level of the scope chain. And"
+    },
+    {
+      "startSeconds": 844.959,
+      "endSeconds": 848.88,
+      "text": "if it does not find, goes to the next"
+    },
+    {
+      "startSeconds": 846.72,
+      "endSeconds": 851.199,
+      "text": "level of the scope chain. Okay. So this"
+    },
+    {
+      "startSeconds": 848.88,
+      "endSeconds": 854.399,
+      "text": "whole chain of lexical environment is"
+    },
+    {
+      "startSeconds": 851.199,
+      "endSeconds": 856.639,
+      "text": "known as the scope chain. Okay, nothing"
+    },
+    {
+      "startSeconds": 854.399,
+      "endSeconds": 859.04,
+      "text": "else. So what did we whole studied"
+    },
+    {
+      "startSeconds": 856.639,
+      "endSeconds": 861.12,
+      "text": "right? We studied what is the scope,"
+    },
+    {
+      "startSeconds": 859.04,
+      "endSeconds": 862.959,
+      "text": "what is lexical environment and what is"
+    },
+    {
+      "startSeconds": 861.12,
+      "endSeconds": 864.639,
+      "text": "scope chain. So let's just quickly"
+    },
+    {
+      "startSeconds": 862.959,
+      "endSeconds": 866.72,
+      "text": "revise. Okay, it will fit inside our"
+    },
+    {
+      "startSeconds": 864.639,
+      "endSeconds": 868.8,
+      "text": "head. Please quickly revise. Okay, so"
+    },
+    {
+      "startSeconds": 866.72,
+      "endSeconds": 871.199,
+      "text": "what is lexical environment? Lexical"
+    },
+    {
+      "startSeconds": 868.8,
+      "endSeconds": 873.279,
+      "text": "environment is created whenever an"
+    },
+    {
+      "startSeconds": 871.199,
+      "endSeconds": 875.76,
+      "text": "execution context is created. Okay. And"
+    },
+    {
+      "startSeconds": 873.279,
+      "endSeconds": 879.04,
+      "text": "lexical environment is the local memory"
+    },
+    {
+      "startSeconds": 875.76,
+      "endSeconds": 882.16,
+      "text": "plus reference to the lexical"
+    },
+    {
+      "startSeconds": 879.04,
+      "endSeconds": 884.8,
+      "text": "environment. Okay. Lexical environment"
+    },
+    {
+      "startSeconds": 882.16,
+      "endSeconds": 887.199,
+      "text": "of parent. Okay. And when I say parent,"
+    },
+    {
+      "startSeconds": 884.8,
+      "endSeconds": 890.8,
+      "text": "it is the lexical parent. Lexical parent"
+    },
+    {
+      "startSeconds": 887.199,
+      "endSeconds": 893.12,
+      "text": "means where actually that function sits"
+    },
+    {
+      "startSeconds": 890.8,
+      "endSeconds": 895.36,
+      "text": "inside the code. So C is lexically"
+    },
+    {
+      "startSeconds": 893.12,
+      "endSeconds": 897.44,
+      "text": "inside A. That means C's lexical parent"
+    },
+    {
+      "startSeconds": 895.36,
+      "endSeconds": 899.519,
+      "text": "is A. A's lexical parent is global."
+    },
+    {
+      "startSeconds": 897.44,
+      "endSeconds": 901.92,
+      "text": "Okay. So lexical environment is what?"
+    },
+    {
+      "startSeconds": 899.519,
+      "endSeconds": 904.72,
+      "text": "local memory plus lexical environment of"
+    },
+    {
+      "startSeconds": 901.92,
+      "endSeconds": 906.639,
+      "text": "parent. So what is lexical environment"
+    },
+    {
+      "startSeconds": 904.72,
+      "endSeconds": 909.04,
+      "text": "here? Local memory and lexical"
+    },
+    {
+      "startSeconds": 906.639,
+      "endSeconds": 911.68,
+      "text": "environment of parent. So this is what"
+    },
+    {
+      "startSeconds": 909.04,
+      "endSeconds": 914.16,
+      "text": "is lexical environment and this whole"
+    },
+    {
+      "startSeconds": 911.68,
+      "endSeconds": 917.12,
+      "text": "chain of lexical environments is known"
+    },
+    {
+      "startSeconds": 914.16,
+      "endSeconds": 919.199,
+      "text": "as the scope chain and it defines"
+    },
+    {
+      "startSeconds": 917.12,
+      "endSeconds": 921.519,
+      "text": "whether a variable or function is"
+    },
+    {
+      "startSeconds": 919.199,
+      "endSeconds": 923.68,
+      "text": "present inside the scope or not. If the"
+    },
+    {
+      "startSeconds": 921.519,
+      "endSeconds": 925.76,
+      "text": "scope chain is exhausted and variable is"
+    },
+    {
+      "startSeconds": 923.68,
+      "endSeconds": 928.88,
+      "text": "not found that means it is not inside"
+    },
+    {
+      "startSeconds": 925.76,
+      "endSeconds": 930.959,
+      "text": "the scope chain. So now let us just see"
+    },
+    {
+      "startSeconds": 928.88,
+      "endSeconds": 933.279,
+      "text": "all these visual representations inside"
+    },
+    {
+      "startSeconds": 930.959,
+      "endSeconds": 935.279,
+      "text": "the browser and you will be amazed to"
+    },
+    {
+      "startSeconds": 933.279,
+      "endSeconds": 938.079,
+      "text": "see how beautifully it works inside the"
+    },
+    {
+      "startSeconds": 935.279,
+      "endSeconds": 940,
+      "text": "browser. Okay, let's just see. Okay, so"
+    },
+    {
+      "startSeconds": 938.079,
+      "endSeconds": 942,
+      "text": "let me just put a debugger over here in"
+    },
+    {
+      "startSeconds": 940,
+      "endSeconds": 943.68,
+      "text": "the source in our program. If I put a"
+    },
+    {
+      "startSeconds": 942,
+      "endSeconds": 945.92,
+      "text": "debugger inside this console log"
+    },
+    {
+      "startSeconds": 943.68,
+      "endSeconds": 948.399,
+      "text": "statement, right, so now let us just run"
+    },
+    {
+      "startSeconds": 945.92,
+      "endSeconds": 951.199,
+      "text": "this code and we'll see see this call"
+    },
+    {
+      "startSeconds": 948.399,
+      "endSeconds": 953.279,
+      "text": "stack. This call stack is beautiful,"
+    },
+    {
+      "startSeconds": 951.199,
+      "endSeconds": 955.519,
+      "text": "right? Just like I showed you in the"
+    },
+    {
+      "startSeconds": 953.279,
+      "endSeconds": 958.399,
+      "text": "visual representation. This call stack"
+    },
+    {
+      "startSeconds": 955.519,
+      "endSeconds": 960.079,
+      "text": "has all these three execution context."
+    },
+    {
+      "startSeconds": 958.399,
+      "endSeconds": 962.399,
+      "text": "This is the anonymous is the global"
+    },
+    {
+      "startSeconds": 960.079,
+      "endSeconds": 965.36,
+      "text": "execution context. Right? And on top of"
+    },
+    {
+      "startSeconds": 962.399,
+      "endSeconds": 967.6,
+      "text": "it, it has the A's execution context and"
+    },
+    {
+      "startSeconds": 965.36,
+      "endSeconds": 969.839,
+      "text": "on top of it we have C's execution"
+    },
+    {
+      "startSeconds": 967.6,
+      "endSeconds": 972.399,
+      "text": "context. Right? So let us go to the"
+    },
+    {
+      "startSeconds": 969.839,
+      "endSeconds": 975.04,
+      "text": "global execution context. Here you see"
+    },
+    {
+      "startSeconds": 972.399,
+      "endSeconds": 977.44,
+      "text": "the lexical environment. Here you see"
+    },
+    {
+      "startSeconds": 975.04,
+      "endSeconds": 979.759,
+      "text": "the scope. What you can access inside"
+    },
+    {
+      "startSeconds": 977.44,
+      "endSeconds": 982,
+      "text": "this global execution context. Okay."
+    },
+    {
+      "startSeconds": 979.759,
+      "endSeconds": 984.959,
+      "text": "This is the local memory of global"
+    },
+    {
+      "startSeconds": 982,
+      "endSeconds": 987.759,
+      "text": "execution context. Okay. So here you"
+    },
+    {
+      "startSeconds": 984.959,
+      "endSeconds": 989.44,
+      "text": "will find A also. Okay. So this is it."
+    },
+    {
+      "startSeconds": 987.759,
+      "endSeconds": 992.079,
+      "text": "Right. Now we'll see an interesting"
+    },
+    {
+      "startSeconds": 989.44,
+      "endSeconds": 994.56,
+      "text": "thing. What is the lexical environment"
+    },
+    {
+      "startSeconds": 992.079,
+      "endSeconds": 996.959,
+      "text": "of A. So what was the lexical"
+    },
+    {
+      "startSeconds": 994.56,
+      "endSeconds": 1001.6,
+      "text": "environment of A? So lexical environment"
+    },
+    {
+      "startSeconds": 996.959,
+      "endSeconds": 1003.759,
+      "text": "of A is local memory of A along with the"
+    },
+    {
+      "startSeconds": 1001.6,
+      "endSeconds": 1007.36,
+      "text": "lexical environment of its parent."
+    },
+    {
+      "startSeconds": 1003.759,
+      "endSeconds": 1009.839,
+      "text": "Parent was global. So local memory plus"
+    },
+    {
+      "startSeconds": 1007.36,
+      "endSeconds": 1013.12,
+      "text": "lexical environment of parent. C it is"
+    },
+    {
+      "startSeconds": 1009.839,
+      "endSeconds": 1015.44,
+      "text": "same right so let's now see C's lexical"
+    },
+    {
+      "startSeconds": 1013.12,
+      "endSeconds": 1019.279,
+      "text": "environment okay lexical environment of"
+    },
+    {
+      "startSeconds": 1015.44,
+      "endSeconds": 1022.24,
+      "text": "C is the local memory of C along with"
+    },
+    {
+      "startSeconds": 1019.279,
+      "endSeconds": 1026.64,
+      "text": "that its parents lexical environment"
+    },
+    {
+      "startSeconds": 1022.24,
+      "endSeconds": 1029.6,
+      "text": "what is the lexical environment of A and"
+    },
+    {
+      "startSeconds": 1026.64,
+      "endSeconds": 1035.12,
+      "text": "lexical environment of its parent right"
+    },
+    {
+      "startSeconds": 1029.6,
+      "endSeconds": 1037.12,
+      "text": "so here it is C so C has access to all"
+    },
+    {
+      "startSeconds": 1035.12,
+      "endSeconds": 1039.679,
+      "text": "these variables and functions you know"
+    },
+    {
+      "startSeconds": 1037.12,
+      "endSeconds": 1041.439,
+      "text": "you might find that okay Here we have"
+    },
+    {
+      "startSeconds": 1039.679,
+      "endSeconds": 1043.839,
+      "text": "here something is written as closure"
+    },
+    {
+      "startSeconds": 1041.439,
+      "endSeconds": 1046.559,
+      "text": "right. So we will study in deep inside"
+    },
+    {
+      "startSeconds": 1043.839,
+      "endSeconds": 1049.2,
+      "text": "the closure video but you can see that"
+    },
+    {
+      "startSeconds": 1046.559,
+      "endSeconds": 1051.84,
+      "text": "this is a little closure. Okay this is a"
+    },
+    {
+      "startSeconds": 1049.2,
+      "endSeconds": 1056.4,
+      "text": "closure. This is already a closure if I"
+    },
+    {
+      "startSeconds": 1051.84,
+      "endSeconds": 1059.679,
+      "text": "tell you right now. So C has already"
+    },
+    {
+      "startSeconds": 1056.4,
+      "endSeconds": 1062.16,
+      "text": "enclosed inside A right enclosed inside"
+    },
+    {
+      "startSeconds": 1059.679,
+      "endSeconds": 1064.24,
+      "text": "A. And this is what closure is but we"
+    },
+    {
+      "startSeconds": 1062.16,
+      "endSeconds": 1066.4,
+      "text": "will talk a little more deep inside the"
+    },
+    {
+      "startSeconds": 1064.24,
+      "endSeconds": 1068.559,
+      "text": "closure video al together. But for now"
+    },
+    {
+      "startSeconds": 1066.4,
+      "endSeconds": 1073.039,
+      "text": "you can assume that this is the lexical"
+    },
+    {
+      "startSeconds": 1068.559,
+      "endSeconds": 1075.76,
+      "text": "environment of A which C can access to."
+    },
+    {
+      "startSeconds": 1073.039,
+      "endSeconds": 1078.08,
+      "text": "Okay. C has access to the lexical"
+    },
+    {
+      "startSeconds": 1075.76,
+      "endSeconds": 1080.72,
+      "text": "environment of its parent. And this is"
+    },
+    {
+      "startSeconds": 1078.08,
+      "endSeconds": 1083.2,
+      "text": "only is known as closure to be uh seen"
+    },
+    {
+      "startSeconds": 1080.72,
+      "endSeconds": 1086.559,
+      "text": "in the coming videos. But for now just"
+    },
+    {
+      "startSeconds": 1083.2,
+      "endSeconds": 1089.84,
+      "text": "understand that C has access to the"
+    },
+    {
+      "startSeconds": 1086.559,
+      "endSeconds": 1092.559,
+      "text": "scope of A also. Okay. And this whole"
+    },
+    {
+      "startSeconds": 1089.84,
+      "endSeconds": 1095.52,
+      "text": "chain right this whole chain this is the"
+    },
+    {
+      "startSeconds": 1092.559,
+      "endSeconds": 1098.16,
+      "text": "local and the lexical environment of its"
+    },
+    {
+      "startSeconds": 1095.52,
+      "endSeconds": 1100.64,
+      "text": "parent and its parent. This whole chain"
+    },
+    {
+      "startSeconds": 1098.16,
+      "endSeconds": 1102.72,
+      "text": "is known as the scope chain. This is"
+    },
+    {
+      "startSeconds": 1100.64,
+      "endSeconds": 1104.88,
+      "text": "what it is. This is how it looks like in"
+    },
+    {
+      "startSeconds": 1102.72,
+      "endSeconds": 1106.72,
+      "text": "the browser. This was all the basics of"
+    },
+    {
+      "startSeconds": 1104.88,
+      "endSeconds": 1109.84,
+      "text": "JavaScript. In the next video we will"
+    },
+    {
+      "startSeconds": 1106.72,
+      "endSeconds": 1113.36,
+      "text": "see how let and const behave differently"
+    },
+    {
+      "startSeconds": 1109.84,
+      "endSeconds": 1116,
+      "text": "in hosting as well as in scope. Right?"
+    },
+    {
+      "startSeconds": 1113.36,
+      "endSeconds": 1119.12,
+      "text": "So let in const which was introduced in"
+    },
+    {
+      "startSeconds": 1116,
+      "endSeconds": 1121.6,
+      "text": "ES6 behaves very differently in terms of"
+    },
+    {
+      "startSeconds": 1119.12,
+      "endSeconds": 1123.679,
+      "text": "scope as well as hosting. Okay, in the"
+    },
+    {
+      "startSeconds": 1121.6,
+      "endSeconds": 1126.16,
+      "text": "next videos I will be covering more"
+    },
+    {
+      "startSeconds": 1123.679,
+      "endSeconds": 1127.76,
+      "text": "about let and const. Okay, everybody was"
+    },
+    {
+      "startSeconds": 1126.16,
+      "endSeconds": 1130,
+      "text": "telling in the comments that where is"
+    },
+    {
+      "startSeconds": 1127.76,
+      "endSeconds": 1132.48,
+      "text": "let and const. See these are the basics"
+    },
+    {
+      "startSeconds": 1130,
+      "endSeconds": 1134.4,
+      "text": "of JavaScript when JavaScript was built."
+    },
+    {
+      "startSeconds": 1132.48,
+      "endSeconds": 1136.88,
+      "text": "These were the core fundamentals. Let"
+    },
+    {
+      "startSeconds": 1134.4,
+      "endSeconds": 1139.44,
+      "text": "and const have come up recently, right?"
+    },
+    {
+      "startSeconds": 1136.88,
+      "endSeconds": 1141.84,
+      "text": "So let us cover that also in depth. I"
+    },
+    {
+      "startSeconds": 1139.44,
+      "endSeconds": 1143.84,
+      "text": "will be talking about what happens in"
+    },
+    {
+      "startSeconds": 1141.84,
+      "endSeconds": 1146.64,
+      "text": "case of let. What happens in case of"
+    },
+    {
+      "startSeconds": 1143.84,
+      "endSeconds": 1148.88,
+      "text": "const and how these behave differently"
+    },
+    {
+      "startSeconds": 1146.64,
+      "endSeconds": 1151.28,
+      "text": "than where and how hosting works for"
+    },
+    {
+      "startSeconds": 1148.88,
+      "endSeconds": 1153.2,
+      "text": "them, how scope works for them, what is"
+    },
+    {
+      "startSeconds": 1151.28,
+      "endSeconds": 1155.44,
+      "text": "a block scope. Everything will be"
+    },
+    {
+      "startSeconds": 1153.2,
+      "endSeconds": 1157.2,
+      "text": "covered in the next video. Before moving"
+    },
+    {
+      "startSeconds": 1155.44,
+      "endSeconds": 1158.72,
+      "text": "on to that video, like this video, it"
+    },
+    {
+      "startSeconds": 1157.2,
+      "endSeconds": 1160.72,
+      "text": "gives me a huge motivation. Tell me"
+    },
+    {
+      "startSeconds": 1158.72,
+      "endSeconds": 1162.72,
+      "text": "whether you understood scope or not and"
+    },
+    {
+      "startSeconds": 1160.72,
+      "endSeconds": 1164.32,
+      "text": "are you feeling excited or not. Till"
+    },
+    {
+      "startSeconds": 1162.72,
+      "endSeconds": 1167.223,
+      "text": "then, thank you for watching Namaste"
+    },
+    {
+      "startSeconds": 1164.32,
+      "endSeconds": 1169.243,
+      "text": "JavaScript."
+    },
+    {
+      "startSeconds": 1167.223,
+      "endSeconds": 1169.243,
+      "text": "[music]"
+    },
+    {
+      "startSeconds": 1173.118,
+      "endSeconds": 1175.138,
+      "text": "[music]"
+    },
+    {
+      "startSeconds": 1179.013,
+      "endSeconds": 1181.033,
+      "text": "[music]"
+    },
+    {
+      "startSeconds": 1186.218,
+      "endSeconds": 1188.238,
+      "text": "[music]"
+    }
+  ]
+}

@@ -1,0 +1,2187 @@
+{
+  "videoId": "Fnlnw8uY6jo",
+  "videoTitle": "Hoisting in JavaScript 🔥(variables & functions) | Namaste JavaScript Ep. 3",
+  "languageCode": "en",
+  "segments": [
+    {
+      "startSeconds": 0.24,
+      "endSeconds": 6.96,
+      "text": "Let me show you some magic. Okay. So, we"
+    },
+    {
+      "startSeconds": 3.2,
+      "endSeconds": 10.48,
+      "text": "have a variable x which is equal to 7."
+    },
+    {
+      "startSeconds": 6.96,
+      "endSeconds": 12.559,
+      "text": "Okay. And we also have a function which"
+    },
+    {
+      "startSeconds": 10.48,
+      "endSeconds": 14.799,
+      "text": "is get name."
+    },
+    {
+      "startSeconds": 12.559,
+      "endSeconds": 18.16,
+      "text": "Got it? So, this get name does nothing"
+    },
+    {
+      "startSeconds": 14.799,
+      "endSeconds": 21.279,
+      "text": "but just console logs the name of the"
+    },
+    {
+      "startSeconds": 18.16,
+      "endSeconds": 22.96,
+      "text": "course. Namaste"
+    },
+    {
+      "startSeconds": 21.279,
+      "endSeconds": 26.4,
+      "text": "JavaScript."
+    },
+    {
+      "startSeconds": 22.96,
+      "endSeconds": 28.72,
+      "text": "Got it? So, this is it. Now what we'll"
+    },
+    {
+      "startSeconds": 26.4,
+      "endSeconds": 32,
+      "text": "do is we'll just try to invoke this"
+    },
+    {
+      "startSeconds": 28.72,
+      "endSeconds": 35.68,
+      "text": "function. We invoke this function and we"
+    },
+    {
+      "startSeconds": 32,
+      "endSeconds": 37.84,
+      "text": "did a console log of x. What do you"
+    },
+    {
+      "startSeconds": 35.68,
+      "endSeconds": 39.84,
+      "text": "expect to see here? Now quickly tell me."
+    },
+    {
+      "startSeconds": 37.84,
+      "endSeconds": 41.84,
+      "text": "So you would definitely expect to see"
+    },
+    {
+      "startSeconds": 39.84,
+      "endSeconds": 44.32,
+      "text": "that okay get name will call this method"
+    },
+    {
+      "startSeconds": 41.84,
+      "endSeconds": 46.719,
+      "text": "and we'll print this on console and this"
+    },
+    {
+      "startSeconds": 44.32,
+      "endSeconds": 48.96,
+      "text": "will print seven. Okay console log will"
+    },
+    {
+      "startSeconds": 46.719,
+      "endSeconds": 52.32,
+      "text": "print seven on the console, right? So"
+    },
+    {
+      "startSeconds": 48.96,
+      "endSeconds": 54.559,
+      "text": "let us run this code. Yep. So as"
+    },
+    {
+      "startSeconds": 52.32,
+      "endSeconds": 56.719,
+      "text": "expected. So it was namaste JavaScript"
+    },
+    {
+      "startSeconds": 54.559,
+      "endSeconds": 58.32,
+      "text": "N7. But now I'll show you something"
+    },
+    {
+      "startSeconds": 56.719,
+      "endSeconds": 61.199,
+      "text": "interesting and it's a magic in"
+    },
+    {
+      "startSeconds": 58.32,
+      "endSeconds": 63.199,
+      "text": "JavaScript. Okay. So for that let us"
+    },
+    {
+      "startSeconds": 61.199,
+      "endSeconds": 66.32,
+      "text": "just copy these two like the function"
+    },
+    {
+      "startSeconds": 63.199,
+      "endSeconds": 69.28,
+      "text": "invocation. Let's just cut and paste"
+    },
+    {
+      "startSeconds": 66.32,
+      "endSeconds": 72.4,
+      "text": "those two lines really on the top of our"
+    },
+    {
+      "startSeconds": 69.28,
+      "endSeconds": 74.479,
+      "text": "program. Okay. So we have pasted these"
+    },
+    {
+      "startSeconds": 72.4,
+      "endSeconds": 77.2,
+      "text": "two on the top of the program. Now"
+    },
+    {
+      "startSeconds": 74.479,
+      "endSeconds": 79.439,
+      "text": "before I run this code, let let me ask"
+    },
+    {
+      "startSeconds": 77.2,
+      "endSeconds": 81.68,
+      "text": "you something. What do you expect to see"
+    },
+    {
+      "startSeconds": 79.439,
+      "endSeconds": 84.4,
+      "text": "here? Okay. What will be the output"
+    },
+    {
+      "startSeconds": 81.68,
+      "endSeconds": 87.36,
+      "text": "here? So"
+    },
+    {
+      "startSeconds": 84.4,
+      "endSeconds": 89.68,
+      "text": "right now what what what changed is we"
+    },
+    {
+      "startSeconds": 87.36,
+      "endSeconds": 91.84,
+      "text": "are trying to access get name even"
+    },
+    {
+      "startSeconds": 89.68,
+      "endSeconds": 94.96,
+      "text": "before we have initialized it. We are"
+    },
+    {
+      "startSeconds": 91.84,
+      "endSeconds": 97.52,
+      "text": "trying to access X even before we have"
+    },
+    {
+      "startSeconds": 94.96,
+      "endSeconds": 99.68,
+      "text": "put some value in it. Right? So what do"
+    },
+    {
+      "startSeconds": 97.52,
+      "endSeconds": 102.159,
+      "text": "you expect to see here in most of the"
+    },
+    {
+      "startSeconds": 99.68,
+      "endSeconds": 104.4,
+      "text": "programming languages? Okay, this will"
+    },
+    {
+      "startSeconds": 102.159,
+      "endSeconds": 106.799,
+      "text": "result out to be error. Okay, this will"
+    },
+    {
+      "startSeconds": 104.4,
+      "endSeconds": 109.439,
+      "text": "be a complete error and you cannot"
+    },
+    {
+      "startSeconds": 106.799,
+      "endSeconds": 111.439,
+      "text": "access variables even uh like before you"
+    },
+    {
+      "startSeconds": 109.439,
+      "endSeconds": 113.2,
+      "text": "have initialized it. Right? But"
+    },
+    {
+      "startSeconds": 111.439,
+      "endSeconds": 115.2,
+      "text": "JavaScript is very different in this"
+    },
+    {
+      "startSeconds": 113.2,
+      "endSeconds": 118.32,
+      "text": "case. And here I I'll show you some"
+    },
+    {
+      "startSeconds": 115.2,
+      "endSeconds": 120.88,
+      "text": "magic. Okay. So if I try to run this"
+    },
+    {
+      "startSeconds": 118.32,
+      "endSeconds": 123.759,
+      "text": "code now, you see something interesting,"
+    },
+    {
+      "startSeconds": 120.88,
+      "endSeconds": 126.399,
+      "text": "isn't it? So you see namaste JavaScript"
+    },
+    {
+      "startSeconds": 123.759,
+      "endSeconds": 129.36,
+      "text": "is printed. Okay. That means get name"
+    },
+    {
+      "startSeconds": 126.399,
+      "endSeconds": 132.879,
+      "text": "was somehow able to access this get name"
+    },
+    {
+      "startSeconds": 129.36,
+      "endSeconds": 135.92,
+      "text": "and invoke the function directly. Right?"
+    },
+    {
+      "startSeconds": 132.879,
+      "endSeconds": 138.16,
+      "text": "And in case of console log X, we got"
+    },
+    {
+      "startSeconds": 135.92,
+      "endSeconds": 141.28,
+      "text": "some special value undefined. What is"
+    },
+    {
+      "startSeconds": 138.16,
+      "endSeconds": 144,
+      "text": "this undefined? It's weird, right? Let"
+    },
+    {
+      "startSeconds": 141.28,
+      "endSeconds": 145.84,
+      "text": "us try to play with it more. Uh suppose"
+    },
+    {
+      "startSeconds": 144,
+      "endSeconds": 148.08,
+      "text": "I remove this line completely. Okay,"
+    },
+    {
+      "startSeconds": 145.84,
+      "endSeconds": 150.64,
+      "text": "suppose I remove this where x is equals"
+    },
+    {
+      "startSeconds": 148.08,
+      "endSeconds": 154,
+      "text": "to 7. Right? Now, what do you expect to"
+    },
+    {
+      "startSeconds": 150.64,
+      "endSeconds": 157.92,
+      "text": "see? So, let us just run the code. Now,"
+    },
+    {
+      "startSeconds": 154,
+      "endSeconds": 161.12,
+      "text": "we see an error. It says x is not"
+    },
+    {
+      "startSeconds": 157.92,
+      "endSeconds": 164.239,
+      "text": "defined. Before it was undefined. Now,"
+    },
+    {
+      "startSeconds": 161.12,
+      "endSeconds": 166.64,
+      "text": "it says not defined. What the heck is"
+    },
+    {
+      "startSeconds": 164.239,
+      "endSeconds": 169.36,
+      "text": "going on? Isn't undefined and not"
+    },
+    {
+      "startSeconds": 166.64,
+      "endSeconds": 172.879,
+      "text": "defined same thing? No, it's not. Let's"
+    },
+    {
+      "startSeconds": 169.36,
+      "endSeconds": 175.92,
+      "text": "cover everything. But let me just get"
+    },
+    {
+      "startSeconds": 172.879,
+      "endSeconds": 177.44,
+      "text": "back that statement again. Okay. So,"
+    },
+    {
+      "startSeconds": 175.92,
+      "endSeconds": 180.8,
+      "text": "this whole magic and this whole"
+    },
+    {
+      "startSeconds": 177.44,
+      "endSeconds": 183.76,
+      "text": "interesting thing is known as hosting in"
+    },
+    {
+      "startSeconds": 180.8,
+      "endSeconds": 186.159,
+      "text": "JavaScript. Okay. So, hosting is a"
+    },
+    {
+      "startSeconds": 183.76,
+      "endSeconds": 188.64,
+      "text": "phenomena in JavaScript by which you can"
+    },
+    {
+      "startSeconds": 186.159,
+      "endSeconds": 191.04,
+      "text": "access these variables and functions"
+    },
+    {
+      "startSeconds": 188.64,
+      "endSeconds": 193.44,
+      "text": "even before you have initialized it or"
+    },
+    {
+      "startSeconds": 191.04,
+      "endSeconds": 197.12,
+      "text": "you have put some value in it. You can"
+    },
+    {
+      "startSeconds": 193.44,
+      "endSeconds": 200.48,
+      "text": "access it without any error. Okay. So"
+    },
+    {
+      "startSeconds": 197.12,
+      "endSeconds": 203.28,
+      "text": "wherever this where x is there in the"
+    },
+    {
+      "startSeconds": 200.48,
+      "endSeconds": 205.92,
+      "text": "program it does not matter and you can"
+    },
+    {
+      "startSeconds": 203.28,
+      "endSeconds": 207.599,
+      "text": "just access it anywhere in the program."
+    },
+    {
+      "startSeconds": 205.92,
+      "endSeconds": 209.68,
+      "text": "So let me show you one more interesting"
+    },
+    {
+      "startSeconds": 207.599,
+      "endSeconds": 212.159,
+      "text": "thing. Okay. So for that let us just"
+    },
+    {
+      "startSeconds": 209.68,
+      "endSeconds": 216.08,
+      "text": "comment these out and let us try to"
+    },
+    {
+      "startSeconds": 212.159,
+      "endSeconds": 219.04,
+      "text": "console log our get name function. What"
+    },
+    {
+      "startSeconds": 216.08,
+      "endSeconds": 220.72,
+      "text": "happens if I just I remember see we are"
+    },
+    {
+      "startSeconds": 219.04,
+      "endSeconds": 222.64,
+      "text": "not invoking this function. We are just"
+    },
+    {
+      "startSeconds": 220.72,
+      "endSeconds": 225.12,
+      "text": "trying to log this get name method. So"
+    },
+    {
+      "startSeconds": 222.64,
+      "endSeconds": 227.84,
+      "text": "what do we expect to see in console? So"
+    },
+    {
+      "startSeconds": 225.12,
+      "endSeconds": 231.12,
+      "text": "it actually prints the function itself,"
+    },
+    {
+      "startSeconds": 227.84,
+      "endSeconds": 234.64,
+      "text": "isn't it? So it prints the function"
+    },
+    {
+      "startSeconds": 231.12,
+      "endSeconds": 237.2,
+      "text": "itself. But what if we try to access"
+    },
+    {
+      "startSeconds": 234.64,
+      "endSeconds": 239.599,
+      "text": "this even before initializing this"
+    },
+    {
+      "startSeconds": 237.2,
+      "endSeconds": 242.64,
+      "text": "function just like we did for X."
+    },
+    {
+      "startSeconds": 239.599,
+      "endSeconds": 245.04,
+      "text": "Remember for X we got undefined. What"
+    },
+    {
+      "startSeconds": 242.64,
+      "endSeconds": 248.72,
+      "text": "will we get for get name? What should we"
+    },
+    {
+      "startSeconds": 245.04,
+      "endSeconds": 251.439,
+      "text": "get? Undefined. Let us run and see. So"
+    },
+    {
+      "startSeconds": 248.72,
+      "endSeconds": 254.48,
+      "text": "see if I run it once again, it again"
+    },
+    {
+      "startSeconds": 251.439,
+      "endSeconds": 257.84,
+      "text": "gives us the function. So in case of X"
+    },
+    {
+      "startSeconds": 254.48,
+      "endSeconds": 261.6,
+      "text": "it was giving us undefined but in case"
+    },
+    {
+      "startSeconds": 257.84,
+      "endSeconds": 264.24,
+      "text": "of let us just run this. In case of X it"
+    },
+    {
+      "startSeconds": 261.6,
+      "endSeconds": 266.8,
+      "text": "is giving us undefined when we didn't"
+    },
+    {
+      "startSeconds": 264.24,
+      "endSeconds": 269.04,
+      "text": "initialize but in case of get name it is"
+    },
+    {
+      "startSeconds": 266.8,
+      "endSeconds": 271.759,
+      "text": "printing that function. This is very"
+    },
+    {
+      "startSeconds": 269.04,
+      "endSeconds": 273.84,
+      "text": "weird thing in JavaScript and it is only"
+    },
+    {
+      "startSeconds": 271.759,
+      "endSeconds": 276.4,
+      "text": "weird because we don't know how things"
+    },
+    {
+      "startSeconds": 273.84,
+      "endSeconds": 279.04,
+      "text": "work behind the scenes. Let us go deep"
+    },
+    {
+      "startSeconds": 276.4,
+      "endSeconds": 281.12,
+      "text": "and see how everything happened and why"
+    },
+    {
+      "startSeconds": 279.04,
+      "endSeconds": 284.16,
+      "text": "the program is behaving the way it is"
+    },
+    {
+      "startSeconds": 281.12,
+      "endSeconds": 286.32,
+      "text": "behaving. Okay, remember in the last"
+    },
+    {
+      "startSeconds": 284.16,
+      "endSeconds": 288.479,
+      "text": "video we studied that whenever we run a"
+    },
+    {
+      "startSeconds": 286.32,
+      "endSeconds": 290.8,
+      "text": "JavaScript program an execution context"
+    },
+    {
+      "startSeconds": 288.479,
+      "endSeconds": 293.199,
+      "text": "is created and it is created in two"
+    },
+    {
+      "startSeconds": 290.8,
+      "endSeconds": 296,
+      "text": "phases. The first phase is the memory"
+    },
+    {
+      "startSeconds": 293.199,
+      "endSeconds": 298.4,
+      "text": "creation phase. So yes, so the answer"
+    },
+    {
+      "startSeconds": 296,
+      "endSeconds": 300.639,
+      "text": "lies there only. This whole concept lies"
+    },
+    {
+      "startSeconds": 298.4,
+      "endSeconds": 302.08,
+      "text": "there only. Okay, if you have seen my"
+    },
+    {
+      "startSeconds": 300.639,
+      "endSeconds": 303.759,
+      "text": "previous video, you might have got an"
+    },
+    {
+      "startSeconds": 302.08,
+      "endSeconds": 306.4,
+      "text": "idea also that why these things are"
+    },
+    {
+      "startSeconds": 303.759,
+      "endSeconds": 308.4,
+      "text": "happening. But let me tell you again by"
+    },
+    {
+      "startSeconds": 306.4,
+      "endSeconds": 311.44,
+      "text": "running each and every line of this code"
+    },
+    {
+      "startSeconds": 308.4,
+      "endSeconds": 313.28,
+      "text": "now. Okay, for that let us just quickly"
+    },
+    {
+      "startSeconds": 311.44,
+      "endSeconds": 315.919,
+      "text": "go back to the previous state of the"
+    },
+    {
+      "startSeconds": 313.28,
+      "endSeconds": 318.08,
+      "text": "code like how it was and then I'll show"
+    },
+    {
+      "startSeconds": 315.919,
+      "endSeconds": 321.039,
+      "text": "you something really very interesting."
+    },
+    {
+      "startSeconds": 318.08,
+      "endSeconds": 323.759,
+      "text": "Okay, so remember I told you that even"
+    },
+    {
+      "startSeconds": 321.039,
+      "endSeconds": 327.039,
+      "text": "when this code this whole code in"
+    },
+    {
+      "startSeconds": 323.759,
+      "endSeconds": 329.759,
+      "text": "JavaScript starts executing the memory"
+    },
+    {
+      "startSeconds": 327.039,
+      "endSeconds": 333.36,
+      "text": "is allocated to each and every variable"
+    },
+    {
+      "startSeconds": 329.759,
+      "endSeconds": 336.16,
+      "text": "and function. I repeat once again even"
+    },
+    {
+      "startSeconds": 333.36,
+      "endSeconds": 339.44,
+      "text": "before the code starts executing memory"
+    },
+    {
+      "startSeconds": 336.16,
+      "endSeconds": 341.52,
+      "text": "is allocated to this all variables and"
+    },
+    {
+      "startSeconds": 339.44,
+      "endSeconds": 343.52,
+      "text": "functions. Remember in the last video I"
+    },
+    {
+      "startSeconds": 341.52,
+      "endSeconds": 345.44,
+      "text": "told you see if you have not seen that"
+    },
+    {
+      "startSeconds": 343.52,
+      "endSeconds": 347.52,
+      "text": "video. I would recommend highly"
+    },
+    {
+      "startSeconds": 345.44,
+      "endSeconds": 349.6,
+      "text": "recommend see that video that is really"
+    },
+    {
+      "startSeconds": 347.52,
+      "endSeconds": 351.199,
+      "text": "very important video. You know it is in"
+    },
+    {
+      "startSeconds": 349.6,
+      "endSeconds": 353.44,
+      "text": "fact the most important video in this"
+    },
+    {
+      "startSeconds": 351.199,
+      "endSeconds": 356.16,
+      "text": "whole series. But for now let us see"
+    },
+    {
+      "startSeconds": 353.44,
+      "endSeconds": 358.72,
+      "text": "that how this memory is allocated. So"
+    },
+    {
+      "startSeconds": 356.16,
+      "endSeconds": 361.84,
+      "text": "for that let us go deep inside the"
+    },
+    {
+      "startSeconds": 358.72,
+      "endSeconds": 364.4,
+      "text": "browser. Okay. So when we go to this"
+    },
+    {
+      "startSeconds": 361.84,
+      "endSeconds": 367.68,
+      "text": "source okay we can see this whole"
+    },
+    {
+      "startSeconds": 364.4,
+      "endSeconds": 370.8,
+      "text": "program right so even before I I am"
+    },
+    {
+      "startSeconds": 367.68,
+      "endSeconds": 373.68,
+      "text": "putting a debugger okay even before"
+    },
+    {
+      "startSeconds": 370.8,
+      "endSeconds": 376.56,
+      "text": "first line is executed okay I am putting"
+    },
+    {
+      "startSeconds": 373.68,
+      "endSeconds": 378.56,
+      "text": "a debugger right here right here okay"
+    },
+    {
+      "startSeconds": 376.56,
+      "endSeconds": 383.199,
+      "text": "let us see how this whole program"
+    },
+    {
+      "startSeconds": 378.56,
+      "endSeconds": 386.4,
+      "text": "behaves so now see it got stopped in"
+    },
+    {
+      "startSeconds": 383.199,
+      "endSeconds": 388.72,
+      "text": "this line itself so now no code has been"
+    },
+    {
+      "startSeconds": 386.4,
+      "endSeconds": 391.44,
+      "text": "executed till now we are just at the"
+    },
+    {
+      "startSeconds": 388.72,
+      "endSeconds": 393.28,
+      "text": "starting point of the first line. Okay,"
+    },
+    {
+      "startSeconds": 391.44,
+      "endSeconds": 396.4,
+      "text": "starting point of the first line of our"
+    },
+    {
+      "startSeconds": 393.28,
+      "endSeconds": 398.8,
+      "text": "code. And now let's see something really"
+    },
+    {
+      "startSeconds": 396.4,
+      "endSeconds": 401.039,
+      "text": "very interesting. This is our memory."
+    },
+    {
+      "startSeconds": 398.8,
+      "endSeconds": 403.12,
+      "text": "Okay, this is the global scope and here"
+    },
+    {
+      "startSeconds": 401.039,
+      "endSeconds": 405.039,
+      "text": "is the memory. We will see something"
+    },
+    {
+      "startSeconds": 403.12,
+      "endSeconds": 408.479,
+      "text": "really very interesting if we dig down"
+    },
+    {
+      "startSeconds": 405.039,
+      "endSeconds": 412.88,
+      "text": "deep. Okay, if we go over here and try"
+    },
+    {
+      "startSeconds": 408.479,
+      "endSeconds": 415.919,
+      "text": "to find X, we will find that X has"
+    },
+    {
+      "startSeconds": 412.88,
+      "endSeconds": 418.319,
+      "text": "already been allocated memory space even"
+    },
+    {
+      "startSeconds": 415.919,
+      "endSeconds": 420.8,
+      "text": "before we have started executing. Okay."
+    },
+    {
+      "startSeconds": 418.319,
+      "endSeconds": 423.759,
+      "text": "So if in the last video I told that in"
+    },
+    {
+      "startSeconds": 420.8,
+      "endSeconds": 425.52,
+      "text": "the phase one of the memory creation"
+    },
+    {
+      "startSeconds": 423.759,
+      "endSeconds": 427.84,
+      "text": "JavaScript just comes through the"
+    },
+    {
+      "startSeconds": 425.52,
+      "endSeconds": 430.16,
+      "text": "program and it will allocate memory to"
+    },
+    {
+      "startSeconds": 427.84,
+      "endSeconds": 432.88,
+      "text": "each and every variable and function."
+    },
+    {
+      "startSeconds": 430.16,
+      "endSeconds": 435.36,
+      "text": "Isn't it? And it stores a special"
+    },
+    {
+      "startSeconds": 432.88,
+      "endSeconds": 437.84,
+      "text": "keyword undefined for these variables."
+    },
+    {
+      "startSeconds": 435.36,
+      "endSeconds": 440.4,
+      "text": "Okay. So even before this code has"
+    },
+    {
+      "startSeconds": 437.84,
+      "endSeconds": 443.039,
+      "text": "executed, JavaScript has reserved this"
+    },
+    {
+      "startSeconds": 440.4,
+      "endSeconds": 445.68,
+      "text": "memory for X and placed a special"
+    },
+    {
+      "startSeconds": 443.039,
+      "endSeconds": 447.44,
+      "text": "placeholder undefined to it. Right? We"
+    },
+    {
+      "startSeconds": 445.68,
+      "endSeconds": 450.24,
+      "text": "can see that undefined is present over"
+    },
+    {
+      "startSeconds": 447.44,
+      "endSeconds": 452.16,
+      "text": "here. Right? And similarly, what happens"
+    },
+    {
+      "startSeconds": 450.24,
+      "endSeconds": 454.56,
+      "text": "in case of functions, right? You are"
+    },
+    {
+      "startSeconds": 452.16,
+      "endSeconds": 456.8,
+      "text": "right. That whole code is put in. So,"
+    },
+    {
+      "startSeconds": 454.56,
+      "endSeconds": 459.599,
+      "text": "let us also see whether the code is put"
+    },
+    {
+      "startSeconds": 456.8,
+      "endSeconds": 462.479,
+      "text": "in or not. So, if we try to find out get"
+    },
+    {
+      "startSeconds": 459.599,
+      "endSeconds": 466,
+      "text": "name over here."
+    },
+    {
+      "startSeconds": 462.479,
+      "endSeconds": 468.72,
+      "text": "Um, yes. So, see in get name we did not"
+    },
+    {
+      "startSeconds": 466,
+      "endSeconds": 471.52,
+      "text": "get undefined but we get a actual copy"
+    },
+    {
+      "startSeconds": 468.72,
+      "endSeconds": 474,
+      "text": "of a function here. Okay. actual copy of"
+    },
+    {
+      "startSeconds": 471.52,
+      "endSeconds": 477.12,
+      "text": "a function even before we are trying to"
+    },
+    {
+      "startSeconds": 474,
+      "endSeconds": 479.759,
+      "text": "run this code. So now what happens if we"
+    },
+    {
+      "startSeconds": 477.12,
+      "endSeconds": 481.759,
+      "text": "just run this program then all these"
+    },
+    {
+      "startSeconds": 479.759,
+      "endSeconds": 483.84,
+      "text": "things are printed on the console. But"
+    },
+    {
+      "startSeconds": 481.759,
+      "endSeconds": 486.24,
+      "text": "let us see that phenomena if we put on"
+    },
+    {
+      "startSeconds": 483.84,
+      "endSeconds": 488.16,
+      "text": "the top right. So let us just put these"
+    },
+    {
+      "startSeconds": 486.24,
+      "endSeconds": 492.8,
+      "text": "three things on the top and I'll show"
+    },
+    {
+      "startSeconds": 488.16,
+      "endSeconds": 494.8,
+      "text": "you how this works. Right? So"
+    },
+    {
+      "startSeconds": 492.8,
+      "endSeconds": 497.44,
+      "text": "again let us put a debugger on the first"
+    },
+    {
+      "startSeconds": 494.8,
+      "endSeconds": 499.44,
+      "text": "line itself. And remember even before"
+    },
+    {
+      "startSeconds": 497.44,
+      "endSeconds": 502.479,
+      "text": "this first line that is the invocation"
+    },
+    {
+      "startSeconds": 499.44,
+      "endSeconds": 505.12,
+      "text": "of get name is executed we will already"
+    },
+    {
+      "startSeconds": 502.479,
+      "endSeconds": 506.879,
+      "text": "have okay let me run it again we will"
+    },
+    {
+      "startSeconds": 505.12,
+      "endSeconds": 510.319,
+      "text": "already have these variables and"
+    },
+    {
+      "startSeconds": 506.879,
+      "endSeconds": 513.36,
+      "text": "functions in the memory space right this"
+    },
+    {
+      "startSeconds": 510.319,
+      "endSeconds": 516.24,
+      "text": "x what will the value of x be this x"
+    },
+    {
+      "startSeconds": 513.36,
+      "endSeconds": 520.64,
+      "text": "will be undefined and this get name will"
+    },
+    {
+      "startSeconds": 516.24,
+      "endSeconds": 523.12,
+      "text": "be the function see so you see that that"
+    },
+    {
+      "startSeconds": 520.64,
+      "endSeconds": 525.519,
+      "text": "is why that is the main reason when you"
+    },
+    {
+      "startSeconds": 523.12,
+      "endSeconds": 528,
+      "text": "try to execute it line by line see if If"
+    },
+    {
+      "startSeconds": 525.519,
+      "endSeconds": 530.72,
+      "text": "I go to the next line, if I move to the"
+    },
+    {
+      "startSeconds": 528,
+      "endSeconds": 532.959,
+      "text": "next line now, if you see the console,"
+    },
+    {
+      "startSeconds": 530.72,
+      "endSeconds": 536.48,
+      "text": "you already have these things printed."
+    },
+    {
+      "startSeconds": 532.959,
+      "endSeconds": 538,
+      "text": "So over here in the first line, it"
+    },
+    {
+      "startSeconds": 536.48,
+      "endSeconds": 541.68,
+      "text": "printed"
+    },
+    {
+      "startSeconds": 538,
+      "endSeconds": 544.48,
+      "text": "namaste JavaScript and in the"
+    },
+    {
+      "startSeconds": 541.68,
+      "endSeconds": 547.04,
+      "text": "second line over here console log x it"
+    },
+    {
+      "startSeconds": 544.48,
+      "endSeconds": 549.44,
+      "text": "printed undefined and in the third line"
+    },
+    {
+      "startSeconds": 547.04,
+      "endSeconds": 552.24,
+      "text": "it printed the whole function code"
+    },
+    {
+      "startSeconds": 549.44,
+      "endSeconds": 554,
+      "text": "itself. Right? So now just let me tell"
+    },
+    {
+      "startSeconds": 552.24,
+      "endSeconds": 556.88,
+      "text": "you difference between not defined and"
+    },
+    {
+      "startSeconds": 554,
+      "endSeconds": 558.959,
+      "text": "undefined. Okay. So if I remove this"
+    },
+    {
+      "startSeconds": 556.88,
+      "endSeconds": 562.56,
+      "text": "whole line. Okay. So now what will"
+    },
+    {
+      "startSeconds": 558.959,
+      "endSeconds": 565.519,
+      "text": "happen? Try to see how JavaScript works."
+    },
+    {
+      "startSeconds": 562.56,
+      "endSeconds": 567.76,
+      "text": "So as soon as it goes to the first line."
+    },
+    {
+      "startSeconds": 565.519,
+      "endSeconds": 571.2,
+      "text": "Okay. So let me put put a debugger"
+    },
+    {
+      "startSeconds": 567.76,
+      "endSeconds": 574.56,
+      "text": "again. Okay. So as soon as it goes to"
+    },
+    {
+      "startSeconds": 571.2,
+      "endSeconds": 577.36,
+      "text": "the first line now we have not reserved"
+    },
+    {
+      "startSeconds": 574.56,
+      "endSeconds": 580.48,
+      "text": "the memory for X. We just have reserved"
+    },
+    {
+      "startSeconds": 577.36,
+      "endSeconds": 584.08,
+      "text": "memory for get name. Right? So in this"
+    },
+    {
+      "startSeconds": 580.48,
+      "endSeconds": 587.519,
+      "text": "case when the code goes over here so it"
+    },
+    {
+      "startSeconds": 584.08,
+      "endSeconds": 589.44,
+      "text": "tries to access X and it's this X is not"
+    },
+    {
+      "startSeconds": 587.519,
+      "endSeconds": 592,
+      "text": "present because we have removed that"
+    },
+    {
+      "startSeconds": 589.44,
+      "endSeconds": 595.279,
+      "text": "right so now X is not present and there"
+    },
+    {
+      "startSeconds": 592,
+      "endSeconds": 598.399,
+      "text": "is no value for X so that means now"
+    },
+    {
+      "startSeconds": 595.279,
+      "endSeconds": 602,
+      "text": "JavaScript will throw an error and it"
+    },
+    {
+      "startSeconds": 598.399,
+      "endSeconds": 604.08,
+      "text": "will say that reference X is not defined"
+    },
+    {
+      "startSeconds": 602,
+      "endSeconds": 606.32,
+      "text": "that means X was not present in the"
+    },
+    {
+      "startSeconds": 604.08,
+      "endSeconds": 608,
+      "text": "memory so that means X is nowhere"
+    },
+    {
+      "startSeconds": 606.32,
+      "endSeconds": 610.64,
+      "text": "initialized in the program and you are"
+    },
+    {
+      "startSeconds": 608,
+      "endSeconds": 613.36,
+      "text": "trying to access the value of x. Okay."
+    },
+    {
+      "startSeconds": 610.64,
+      "endSeconds": 616.48,
+      "text": "So that is how JavaScript works and that"
+    },
+    {
+      "startSeconds": 613.36,
+      "endSeconds": 618.399,
+      "text": "is why it behaves the way it behaves. It"
+    },
+    {
+      "startSeconds": 616.48,
+      "endSeconds": 620.8,
+      "text": "was interesting, isn't it? So let us"
+    },
+    {
+      "startSeconds": 618.399,
+      "endSeconds": 622.88,
+      "text": "just see one more important thing. Okay."
+    },
+    {
+      "startSeconds": 620.8,
+      "endSeconds": 627.6,
+      "text": "Let us see one more interesting thing."
+    },
+    {
+      "startSeconds": 622.88,
+      "endSeconds": 629.68,
+      "text": "Suppose instead of this we have get name"
+    },
+    {
+      "startSeconds": 627.6,
+      "endSeconds": 632.88,
+      "text": "as the"
+    },
+    {
+      "startSeconds": 629.68,
+      "endSeconds": 636.56,
+      "text": "arrow function. Okay. Suppose we had get"
+    },
+    {
+      "startSeconds": 632.88,
+      "endSeconds": 639.279,
+      "text": "name as the arrow function."
+    },
+    {
+      "startSeconds": 636.56,
+      "endSeconds": 641.76,
+      "text": "Okay. So this is how we write the arrow"
+    },
+    {
+      "startSeconds": 639.279,
+      "endSeconds": 643.44,
+      "text": "function,"
+    },
+    {
+      "startSeconds": 641.76,
+      "endSeconds": 645.36,
+      "text": "right?"
+    },
+    {
+      "startSeconds": 643.44,
+      "endSeconds": 648,
+      "text": "So now what do you expect to see in the"
+    },
+    {
+      "startSeconds": 645.36,
+      "endSeconds": 651.36,
+      "text": "browser console? Give a guess. Let me"
+    },
+    {
+      "startSeconds": 648,
+      "endSeconds": 653.839,
+      "text": "just run it and show it to you."
+    },
+    {
+      "startSeconds": 651.36,
+      "endSeconds": 656.399,
+      "text": "It says that get name is not a function."
+    },
+    {
+      "startSeconds": 653.839,
+      "endSeconds": 659.519,
+      "text": "Right? So let us try to see why it says"
+    },
+    {
+      "startSeconds": 656.399,
+      "endSeconds": 662.079,
+      "text": "that. So when you are executing this"
+    },
+    {
+      "startSeconds": 659.519,
+      "endSeconds": 665.12,
+      "text": "piece of code when the get name is an"
+    },
+    {
+      "startSeconds": 662.079,
+      "endSeconds": 668.079,
+      "text": "arrow function, so it behaves just like"
+    },
+    {
+      "startSeconds": 665.12,
+      "endSeconds": 670.32,
+      "text": "another variable. Okay. Now this get"
+    },
+    {
+      "startSeconds": 668.079,
+      "endSeconds": 673.12,
+      "text": "name does not behave like a function but"
+    },
+    {
+      "startSeconds": 670.32,
+      "endSeconds": 675.92,
+      "text": "it behaves like a variable. So what it"
+    },
+    {
+      "startSeconds": 673.12,
+      "endSeconds": 679.36,
+      "text": "will do is even before we execute this"
+    },
+    {
+      "startSeconds": 675.92,
+      "endSeconds": 681.519,
+      "text": "whole code. So now when in the memory"
+    },
+    {
+      "startSeconds": 679.36,
+      "endSeconds": 684.16,
+      "text": "allocation phase of the execution"
+    },
+    {
+      "startSeconds": 681.519,
+      "endSeconds": 687.36,
+      "text": "context it will alloc just like it"
+    },
+    {
+      "startSeconds": 684.16,
+      "endSeconds": 689.92,
+      "text": "allocates undefined to x it also"
+    },
+    {
+      "startSeconds": 687.36,
+      "endSeconds": 692.64,
+      "text": "allocates undefined to the get name."
+    },
+    {
+      "startSeconds": 689.92,
+      "endSeconds": 696.24,
+      "text": "Okay. So let us see in the global uh"
+    },
+    {
+      "startSeconds": 692.64,
+      "endSeconds": 700,
+      "text": "space now global memory space here if we"
+    },
+    {
+      "startSeconds": 696.24,
+      "endSeconds": 702.959,
+      "text": "see and try to find out get name see we"
+    },
+    {
+      "startSeconds": 700,
+      "endSeconds": 706.24,
+      "text": "got undefined. So before if when we"
+    },
+    {
+      "startSeconds": 702.959,
+      "endSeconds": 708.8,
+      "text": "wrote over here function like this like"
+    },
+    {
+      "startSeconds": 706.24,
+      "endSeconds": 714,
+      "text": "function get name let me show you here"
+    },
+    {
+      "startSeconds": 708.8,
+      "endSeconds": 717.92,
+      "text": "once uh function get name two okay so if"
+    },
+    {
+      "startSeconds": 714,
+      "endSeconds": 721.839,
+      "text": "we use something like this okay so it"
+    },
+    {
+      "startSeconds": 717.92,
+      "endSeconds": 726.8,
+      "text": "reserves let me save and run for you so"
+    },
+    {
+      "startSeconds": 721.839,
+      "endSeconds": 729.2,
+      "text": "it will put get name to see the get name"
+    },
+    {
+      "startSeconds": 726.8,
+      "endSeconds": 731.04,
+      "text": "to will be the function itself if you"
+    },
+    {
+      "startSeconds": 729.2,
+      "endSeconds": 733.12,
+      "text": "write it in this syntax"
+    },
+    {
+      "startSeconds": 731.04,
+      "endSeconds": 736.8,
+      "text": "And if you write it as an arrow"
+    },
+    {
+      "startSeconds": 733.12,
+      "endSeconds": 739.519,
+      "text": "function, it will be undefined."
+    },
+    {
+      "startSeconds": 736.8,
+      "endSeconds": 742.24,
+      "text": "Make sense? Now this time get name"
+    },
+    {
+      "startSeconds": 739.519,
+      "endSeconds": 744.24,
+      "text": "behaves just like another variable."
+    },
+    {
+      "startSeconds": 742.24,
+      "endSeconds": 745.839,
+      "text": "Okay. And there is one more interesting"
+    },
+    {
+      "startSeconds": 744.24,
+      "endSeconds": 749.12,
+      "text": "part. So there is one more way to"
+    },
+    {
+      "startSeconds": 745.839,
+      "endSeconds": 751.519,
+      "text": "declare a function. Wait, I'll show you."
+    },
+    {
+      "startSeconds": 749.12,
+      "endSeconds": 754.32,
+      "text": "So you can also"
+    },
+    {
+      "startSeconds": 751.519,
+      "endSeconds": 757.76,
+      "text": "create a function like this where get"
+    },
+    {
+      "startSeconds": 754.32,
+      "endSeconds": 760.24,
+      "text": "name is equals to using this syntax."
+    },
+    {
+      "startSeconds": 757.76,
+      "endSeconds": 762.32,
+      "text": "Okay. So what happens in this case? So"
+    },
+    {
+      "startSeconds": 760.24,
+      "endSeconds": 766.16,
+      "text": "in this case also if you save and run"
+    },
+    {
+      "startSeconds": 762.32,
+      "endSeconds": 768.639,
+      "text": "and see it behaves just like a variable."
+    },
+    {
+      "startSeconds": 766.16,
+      "endSeconds": 773.44,
+      "text": "Okay. So it behaves just like a"
+    },
+    {
+      "startSeconds": 768.639,
+      "endSeconds": 777.2,
+      "text": "variable. So if you see the space now"
+    },
+    {
+      "startSeconds": 773.44,
+      "endSeconds": 780.32,
+      "text": "so see get name 2 is undefined again and"
+    },
+    {
+      "startSeconds": 777.2,
+      "endSeconds": 783.92,
+      "text": "get name is also undefined. So in this"
+    },
+    {
+      "startSeconds": 780.32,
+      "endSeconds": 786.079,
+      "text": "case and in this case it just behaves"
+    },
+    {
+      "startSeconds": 783.92,
+      "endSeconds": 788.56,
+      "text": "like another variable and it will"
+    },
+    {
+      "startSeconds": 786.079,
+      "endSeconds": 792.399,
+      "text": "allocate the memory with a placeholder"
+    },
+    {
+      "startSeconds": 788.56,
+      "endSeconds": 797.92,
+      "text": "undefined. Okay. And only in case of"
+    },
+    {
+      "startSeconds": 792.399,
+      "endSeconds": 800.24,
+      "text": "proper function declarations like this"
+    },
+    {
+      "startSeconds": 797.92,
+      "endSeconds": 803.44,
+      "text": "get name"
+    },
+    {
+      "startSeconds": 800.24,
+      "endSeconds": 805.92,
+      "text": "it will copy the whole code. Okay. So in"
+    },
+    {
+      "startSeconds": 803.44,
+      "endSeconds": 808.639,
+      "text": "this case if you run again and see if"
+    },
+    {
+      "startSeconds": 805.92,
+      "endSeconds": 812.079,
+      "text": "you run again and just refresh the page"
+    },
+    {
+      "startSeconds": 808.639,
+      "endSeconds": 815.839,
+      "text": "and try to see. So while reserving the"
+    },
+    {
+      "startSeconds": 812.079,
+      "endSeconds": 818.24,
+      "text": "memory for get name see it gets you the"
+    },
+    {
+      "startSeconds": 815.839,
+      "endSeconds": 821.279,
+      "text": "whole function. So this is how it works"
+    },
+    {
+      "startSeconds": 818.24,
+      "endSeconds": 824,
+      "text": "and you can even access these variables"
+    },
+    {
+      "startSeconds": 821.279,
+      "endSeconds": 826.72,
+      "text": "and method even before it is actually"
+    },
+    {
+      "startSeconds": 824,
+      "endSeconds": 829.36,
+      "text": "initialized in your code. So that is all"
+    },
+    {
+      "startSeconds": 826.72,
+      "endSeconds": 831.36,
+      "text": "about hosting. Okay. So next time in the"
+    },
+    {
+      "startSeconds": 829.36,
+      "endSeconds": 833.92,
+      "text": "interview if somebody the interviewer"
+    },
+    {
+      "startSeconds": 831.36,
+      "endSeconds": 836.079,
+      "text": "asks you that what is hosting? So don't"
+    },
+    {
+      "startSeconds": 833.92,
+      "endSeconds": 838.48,
+      "text": "just say that JavaScript kind of moves"
+    },
+    {
+      "startSeconds": 836.079,
+      "endSeconds": 840.72,
+      "text": "that code to the top of the file and"
+    },
+    {
+      "startSeconds": 838.48,
+      "endSeconds": 842.88,
+      "text": "whatnot. So that is not the case. The"
+    },
+    {
+      "startSeconds": 840.72,
+      "endSeconds": 844.88,
+      "text": "proper answer lies here. Okay. You have"
+    },
+    {
+      "startSeconds": 842.88,
+      "endSeconds": 847.6,
+      "text": "to explain this thing. This shows that"
+    },
+    {
+      "startSeconds": 844.88,
+      "endSeconds": 849.839,
+      "text": "you are a you know JavaScript in depth."
+    },
+    {
+      "startSeconds": 847.6,
+      "endSeconds": 851.92,
+      "text": "Okay, the execution context creation"
+    },
+    {
+      "startSeconds": 849.839,
+      "endSeconds": 854.639,
+      "text": "phase properly that there lies the"
+    },
+    {
+      "startSeconds": 851.92,
+      "endSeconds": 856.32,
+      "text": "answer. Okay, but now when we are"
+    },
+    {
+      "startSeconds": 854.639,
+      "endSeconds": 857.92,
+      "text": "already there in code, let me show you"
+    },
+    {
+      "startSeconds": 856.32,
+      "endSeconds": 859.76,
+      "text": "something really very important. Just"
+    },
+    {
+      "startSeconds": 857.92,
+      "endSeconds": 861.6,
+      "text": "give me two more minutes. Okay, I'll"
+    },
+    {
+      "startSeconds": 859.76,
+      "endSeconds": 863.76,
+      "text": "just finish it very quickly. It is very"
+    },
+    {
+      "startSeconds": 861.6,
+      "endSeconds": 865.839,
+      "text": "nice concept. So remember I covered the"
+    },
+    {
+      "startSeconds": 863.76,
+      "endSeconds": 867.76,
+      "text": "theory of call stack in the last video."
+    },
+    {
+      "startSeconds": 865.839,
+      "endSeconds": 869.6,
+      "text": "Now I'll show you the demo. We actually"
+    },
+    {
+      "startSeconds": 867.76,
+      "endSeconds": 873.12,
+      "text": "are in code so it will be easy for me."
+    },
+    {
+      "startSeconds": 869.6,
+      "endSeconds": 875.519,
+      "text": "Okay, just wait for 2 minutes. Okay. So,"
+    },
+    {
+      "startSeconds": 873.12,
+      "endSeconds": 878.72,
+      "text": "um let me just tweak the code a little."
+    },
+    {
+      "startSeconds": 875.519,
+      "endSeconds": 881.44,
+      "text": "Let just get back to where we were."
+    },
+    {
+      "startSeconds": 878.72,
+      "endSeconds": 883.519,
+      "text": "Okay. So, over here. So, let me show you"
+    },
+    {
+      "startSeconds": 881.44,
+      "endSeconds": 885.12,
+      "text": "that how that execution context and call"
+    },
+    {
+      "startSeconds": 883.519,
+      "endSeconds": 887.36,
+      "text": "stack works. Right? I'll show you the"
+    },
+    {
+      "startSeconds": 885.12,
+      "endSeconds": 889.12,
+      "text": "demo before. In the next previous video,"
+    },
+    {
+      "startSeconds": 887.36,
+      "endSeconds": 891.279,
+      "text": "I showed you the theory portion. Right?"
+    },
+    {
+      "startSeconds": 889.12,
+      "endSeconds": 894.32,
+      "text": "This is interesting part. So, let me"
+    },
+    {
+      "startSeconds": 891.279,
+      "endSeconds": 896.72,
+      "text": "just do it quickly."
+    },
+    {
+      "startSeconds": 894.32,
+      "endSeconds": 898.56,
+      "text": "Oh my god."
+    },
+    {
+      "startSeconds": 896.72,
+      "endSeconds": 900.88,
+      "text": "Namaste"
+    },
+    {
+      "startSeconds": 898.56,
+      "endSeconds": 903.92,
+      "text": "JavaScript. So I'll properly show you"
+    },
+    {
+      "startSeconds": 900.88,
+      "endSeconds": 905.76,
+      "text": "that how code is executing. Okay. So let"
+    },
+    {
+      "startSeconds": 903.92,
+      "endSeconds": 908.24,
+      "text": "me just put a debugger on the first line"
+    },
+    {
+      "startSeconds": 905.76,
+      "endSeconds": 910.399,
+      "text": "again. So remember in the last video I"
+    },
+    {
+      "startSeconds": 908.24,
+      "endSeconds": 913.04,
+      "text": "told you that whenever JavaScript code"
+    },
+    {
+      "startSeconds": 910.399,
+      "endSeconds": 915.519,
+      "text": "is run, what happens? A global execution"
+    },
+    {
+      "startSeconds": 913.04,
+      "endSeconds": 917.44,
+      "text": "context is created, right? So let us see"
+    },
+    {
+      "startSeconds": 915.519,
+      "endSeconds": 920,
+      "text": "where how does that global execution"
+    },
+    {
+      "startSeconds": 917.44,
+      "endSeconds": 921.68,
+      "text": "context look like? So let us run the"
+    },
+    {
+      "startSeconds": 920,
+      "endSeconds": 923.68,
+      "text": "code. So I have put a debugger over"
+    },
+    {
+      "startSeconds": 921.68,
+      "endSeconds": 925.44,
+      "text": "here. So the global execution context"
+    },
+    {
+      "startSeconds": 923.68,
+      "endSeconds": 927.6,
+      "text": "must have created somewhere, right? So"
+    },
+    {
+      "startSeconds": 925.44,
+      "endSeconds": 930.16,
+      "text": "yes the global execution context was"
+    },
+    {
+      "startSeconds": 927.6,
+      "endSeconds": 932.8,
+      "text": "created and it has put in this call"
+    },
+    {
+      "startSeconds": 930.16,
+      "endSeconds": 934.56,
+      "text": "stack. So see this see this anonymous"
+    },
+    {
+      "startSeconds": 932.8,
+      "endSeconds": 938.24,
+      "text": "written right this is the global"
+    },
+    {
+      "startSeconds": 934.56,
+      "endSeconds": 941.36,
+      "text": "execution context and the control is on"
+    },
+    {
+      "startSeconds": 938.24,
+      "endSeconds": 945.12,
+      "text": "the line number three of index.js JS"
+    },
+    {
+      "startSeconds": 941.36,
+      "endSeconds": 947.36,
+      "text": "right now here there it is now I'll tell"
+    },
+    {
+      "startSeconds": 945.12,
+      "endSeconds": 949.12,
+      "text": "you something more important remember as"
+    },
+    {
+      "startSeconds": 947.36,
+      "endSeconds": 951.839,
+      "text": "we move ahead in the code I have put a"
+    },
+    {
+      "startSeconds": 949.12,
+      "endSeconds": 953.759,
+      "text": "debugger over here so as soon as we run"
+    },
+    {
+      "startSeconds": 951.839,
+      "endSeconds": 955.68,
+      "text": "this function as soon as we invoke this"
+    },
+    {
+      "startSeconds": 953.759,
+      "endSeconds": 957.519,
+      "text": "get name function what happens remember"
+    },
+    {
+      "startSeconds": 955.68,
+      "endSeconds": 959.759,
+      "text": "from the last video a brand new"
+    },
+    {
+      "startSeconds": 957.519,
+      "endSeconds": 962.639,
+      "text": "execution context is created and what"
+    },
+    {
+      "startSeconds": 959.759,
+      "endSeconds": 964.72,
+      "text": "happens that execution context is pushed"
+    },
+    {
+      "startSeconds": 962.639,
+      "endSeconds": 967.6,
+      "text": "inside the call stack remember I told"
+    },
+    {
+      "startSeconds": 964.72,
+      "endSeconds": 970.8,
+      "text": "you so let us put a debugger and check"
+    },
+    {
+      "startSeconds": 967.6,
+      "endSeconds": 972.32,
+      "text": "that also now it will go to this"
+    },
+    {
+      "startSeconds": 970.8,
+      "endSeconds": 974.48,
+      "text": "function and go inside the function"
+    },
+    {
+      "startSeconds": 972.32,
+      "endSeconds": 978.32,
+      "text": "right I have put a debugger over here so"
+    },
+    {
+      "startSeconds": 974.48,
+      "endSeconds": 982.8,
+      "text": "let's just run it so see now the exe the"
+    },
+    {
+      "startSeconds": 978.32,
+      "endSeconds": 985.759,
+      "text": "control went to line number five okay so"
+    },
+    {
+      "startSeconds": 982.8,
+      "endSeconds": 988.32,
+      "text": "now get see something really very"
+    },
+    {
+      "startSeconds": 985.759,
+      "endSeconds": 991.12,
+      "text": "interesting happened right so execution"
+    },
+    {
+      "startSeconds": 988.32,
+      "endSeconds": 992.959,
+      "text": "context of get name was created and it"
+    },
+    {
+      "startSeconds": 991.12,
+      "endSeconds": 995.68,
+      "text": "was pushed onto the call stack so this"
+    },
+    {
+      "startSeconds": 992.959,
+      "endSeconds": 998.399,
+      "text": "is the call stack remember this is the"
+    },
+    {
+      "startSeconds": 995.68,
+      "endSeconds": 1000.639,
+      "text": "global execution context which is lying"
+    },
+    {
+      "startSeconds": 998.399,
+      "endSeconds": 1003.199,
+      "text": "in the bottom of the call stack"
+    },
+    {
+      "startSeconds": 1000.639,
+      "endSeconds": 1004.959,
+      "text": "Okay. And on top of it, right now we are"
+    },
+    {
+      "startSeconds": 1003.199,
+      "endSeconds": 1007.6,
+      "text": "at line number five. I have put a"
+    },
+    {
+      "startSeconds": 1004.959,
+      "endSeconds": 1010.399,
+      "text": "debugger over here. So here lies the"
+    },
+    {
+      "startSeconds": 1007.6,
+      "endSeconds": 1013.839,
+      "text": "control of the program in the get name"
+    },
+    {
+      "startSeconds": 1010.399,
+      "endSeconds": 1016,
+      "text": "in line number five. Okay, this is the"
+    },
+    {
+      "startSeconds": 1013.839,
+      "endSeconds": 1018.16,
+      "text": "interesting part. So now what happens"
+    },
+    {
+      "startSeconds": 1016,
+      "endSeconds": 1020.079,
+      "text": "once you finish executing this function?"
+    },
+    {
+      "startSeconds": 1018.16,
+      "endSeconds": 1022.72,
+      "text": "Remember what I told you now that"
+    },
+    {
+      "startSeconds": 1020.079,
+      "endSeconds": 1027.28,
+      "text": "execution context will be deleted and it"
+    },
+    {
+      "startSeconds": 1022.72,
+      "endSeconds": 1029.439,
+      "text": "will be popped off the stack. Right? So"
+    },
+    {
+      "startSeconds": 1027.28,
+      "endSeconds": 1031.039,
+      "text": "if I put a debugger over here and the"
+    },
+    {
+      "startSeconds": 1029.439,
+      "endSeconds": 1033.199,
+      "text": "control will move to line number nine."
+    },
+    {
+      "startSeconds": 1031.039,
+      "endSeconds": 1037.199,
+      "text": "So now if I'll run so what will happen"
+    },
+    {
+      "startSeconds": 1033.199,
+      "endSeconds": 1040.24,
+      "text": "is whoosh the execution context will be"
+    },
+    {
+      "startSeconds": 1037.199,
+      "endSeconds": 1043.039,
+      "text": "deleted and it will be removed from the"
+    },
+    {
+      "startSeconds": 1040.24,
+      "endSeconds": 1045.52,
+      "text": "call stack. So let us run and see see"
+    },
+    {
+      "startSeconds": 1043.039,
+      "endSeconds": 1048.16,
+      "text": "now it vanished right. So now the"
+    },
+    {
+      "startSeconds": 1045.52,
+      "endSeconds": 1051.36,
+      "text": "control again went on to line number"
+    },
+    {
+      "startSeconds": 1048.16,
+      "endSeconds": 1054.16,
+      "text": "nine okay of this anonymous which is the"
+    },
+    {
+      "startSeconds": 1051.36,
+      "endSeconds": 1056.48,
+      "text": "global execution context. So that is how"
+    },
+    {
+      "startSeconds": 1054.16,
+      "endSeconds": 1058.24,
+      "text": "the whole small small this call stack"
+    },
+    {
+      "startSeconds": 1056.48,
+      "endSeconds": 1060.08,
+      "text": "works. I wanted to show you the demo"
+    },
+    {
+      "startSeconds": 1058.24,
+      "endSeconds": 1062.88,
+      "text": "because I covered the theory in the last"
+    },
+    {
+      "startSeconds": 1060.08,
+      "endSeconds": 1065.6,
+      "text": "video but I like demo was not covered"
+    },
+    {
+      "startSeconds": 1062.88,
+      "endSeconds": 1067.919,
+      "text": "right. So uh and once we finish"
+    },
+    {
+      "startSeconds": 1065.6,
+      "endSeconds": 1071.12,
+      "text": "executing everything in the program see"
+    },
+    {
+      "startSeconds": 1067.919,
+      "endSeconds": 1073.28,
+      "text": "the call stack is empty now. So this is"
+    },
+    {
+      "startSeconds": 1071.12,
+      "endSeconds": 1075.2,
+      "text": "what I was trying to explain a lot in"
+    },
+    {
+      "startSeconds": 1073.28,
+      "endSeconds": 1076.88,
+      "text": "the theory in the last video that was"
+    },
+    {
+      "startSeconds": 1075.2,
+      "endSeconds": 1078.4,
+      "text": "really very important video. If you have"
+    },
+    {
+      "startSeconds": 1076.88,
+      "endSeconds": 1082.16,
+      "text": "not seen that definitely I would suggest"
+    },
+    {
+      "startSeconds": 1078.4,
+      "endSeconds": 1083.679,
+      "text": "you to see that and this was the demo of"
+    },
+    {
+      "startSeconds": 1082.16,
+      "endSeconds": 1085.52,
+      "text": "that whole thing. So this is how"
+    },
+    {
+      "startSeconds": 1083.679,
+      "endSeconds": 1087.919,
+      "text": "everything is working behind the scenes"
+    },
+    {
+      "startSeconds": 1085.52,
+      "endSeconds": 1089.76,
+      "text": "inside the JavaScript engine and"
+    },
+    {
+      "startSeconds": 1087.919,
+      "endSeconds": 1091.76,
+      "text": "JavaScript manages all that using the"
+    },
+    {
+      "startSeconds": 1089.76,
+      "endSeconds": 1094.32,
+      "text": "call stack execution context and all"
+    },
+    {
+      "startSeconds": 1091.76,
+      "endSeconds": 1095.919,
+      "text": "this fun stuff and it is created in"
+    },
+    {
+      "startSeconds": 1094.32,
+      "endSeconds": 1097.919,
+      "text": "creation phase and then the code"
+    },
+    {
+      "startSeconds": 1095.919,
+      "endSeconds": 1100,
+      "text": "execution phase thread of execution all"
+    },
+    {
+      "startSeconds": 1097.919,
+      "endSeconds": 1102.24,
+      "text": "these fancy things are happening inside"
+    },
+    {
+      "startSeconds": 1100,
+      "endSeconds": 1104.96,
+      "text": "this browser itself. Interesting isn't"
+    },
+    {
+      "startSeconds": 1102.24,
+      "endSeconds": 1106.48,
+      "text": "it? So that's all in this video. So in"
+    },
+    {
+      "startSeconds": 1104.96,
+      "endSeconds": 1108.88,
+      "text": "the next video we'll be covering the"
+    },
+    {
+      "startSeconds": 1106.48,
+      "endSeconds": 1110.88,
+      "text": "heart of JavaScript which is the"
+    },
+    {
+      "startSeconds": 1108.88,
+      "endSeconds": 1113.039,
+      "text": "functions. I'll be talking a lot more"
+    },
+    {
+      "startSeconds": 1110.88,
+      "endSeconds": 1115.039,
+      "text": "about the functions because functions"
+    },
+    {
+      "startSeconds": 1113.039,
+      "endSeconds": 1116.799,
+      "text": "are very important piece in JavaScript"
+    },
+    {
+      "startSeconds": 1115.039,
+      "endSeconds": 1118.72,
+      "text": "itself. They are very different than"
+    },
+    {
+      "startSeconds": 1116.799,
+      "endSeconds": 1120.32,
+      "text": "other programming languages. But before"
+    },
+    {
+      "startSeconds": 1118.72,
+      "endSeconds": 1122.559,
+      "text": "moving on to that video, you have to do"
+    },
+    {
+      "startSeconds": 1120.32,
+      "endSeconds": 1124.4,
+      "text": "two things. First is to like this video."
+    },
+    {
+      "startSeconds": 1122.559,
+      "endSeconds": 1126.64,
+      "text": "It gives me a huge motivation. And"
+    },
+    {
+      "startSeconds": 1124.4,
+      "endSeconds": 1128.64,
+      "text": "second is to comment down whether you"
+    },
+    {
+      "startSeconds": 1126.64,
+      "endSeconds": 1130.4,
+      "text": "are feeling excited or not. How was the"
+    },
+    {
+      "startSeconds": 1128.64,
+      "endSeconds": 1132.32,
+      "text": "video? Comment it down. I would love to"
+    },
+    {
+      "startSeconds": 1130.4,
+      "endSeconds": 1133.6,
+      "text": "read your answers. See you in the next"
+    },
+    {
+      "startSeconds": 1132.32,
+      "endSeconds": 1137,
+      "text": "video. And thank you for watching"
+    },
+    {
+      "startSeconds": 1133.6,
+      "endSeconds": 1137,
+      "text": "Namaste JavaScript."
+    },
+    {
+      "startSeconds": 1138.77,
+      "endSeconds": 1151.86,
+      "text": "[Music]"
+    }
+  ]
+}

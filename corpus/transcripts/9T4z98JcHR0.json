@@ -1,0 +1,5932 @@
+{
+  "videoId": "9T4z98JcHR0",
+  "videoTitle": "this keyword in JavaScript  🔥 |  Ep.06 - Namaste JavaScript Season 2 🙏",
+  "languageCode": "en",
+  "segments": [
+    {
+      "startSeconds": 0.12,
+      "endSeconds": 4.359,
+      "text": "one of the most confusing topic inside"
+    },
+    {
+      "startSeconds": 2.28,
+      "endSeconds": 6.839,
+      "text": "JavaScript is this"
+    },
+    {
+      "startSeconds": 4.359,
+      "endSeconds": 9.12,
+      "text": "keyword many people when they try to"
+    },
+    {
+      "startSeconds": 6.839,
+      "endSeconds": 12.04,
+      "text": "learn this keyword they pull their hairs"
+    },
+    {
+      "startSeconds": 9.12,
+      "endSeconds": 14.12,
+      "text": "it is so confusing and you know what if"
+    },
+    {
+      "startSeconds": 12.04,
+      "endSeconds": 16.52,
+      "text": "you will go and try to study it from the"
+    },
+    {
+      "startSeconds": 14.12,
+      "endSeconds": 18.88,
+      "text": "mdn documentation here is this Oman"
+    },
+    {
+      "startSeconds": 16.52,
+      "endSeconds": 20.64,
+      "text": "documentation if you will try to study"
+    },
+    {
+      "startSeconds": 18.88,
+      "endSeconds": 22.439,
+      "text": "try to read this paragraph right pause"
+    },
+    {
+      "startSeconds": 20.64,
+      "endSeconds": 25.4,
+      "text": "the video and try to read this you will"
+    },
+    {
+      "startSeconds": 22.439,
+      "endSeconds": 29.039,
+      "text": "pull your hairs it is very confusing so"
+    },
+    {
+      "startSeconds": 25.4,
+      "endSeconds": 31.56,
+      "text": "many jargons so many keywords right so"
+    },
+    {
+      "startSeconds": 29.039,
+      "endSeconds": 34.6,
+      "text": "when you have toy try to learn this you"
+    },
+    {
+      "startSeconds": 31.56,
+      "endSeconds": 36.399,
+      "text": "will have to know how actually this"
+    },
+    {
+      "startSeconds": 34.6,
+      "endSeconds": 38.92,
+      "text": "works in different"
+    },
+    {
+      "startSeconds": 36.399,
+      "endSeconds": 42.28,
+      "text": "scenarios the problem with this keyword"
+    },
+    {
+      "startSeconds": 38.92,
+      "endSeconds": 44.36,
+      "text": "is that it behaves very differently when"
+    },
+    {
+      "startSeconds": 42.28,
+      "endSeconds": 47.079,
+      "text": "it is in different"
+    },
+    {
+      "startSeconds": 44.36,
+      "endSeconds": 49.039,
+      "text": "circumstances suppose if you write this"
+    },
+    {
+      "startSeconds": 47.079,
+      "endSeconds": 51.44,
+      "text": "keyword inside a function it will behave"
+    },
+    {
+      "startSeconds": 49.039,
+      "endSeconds": 53.96,
+      "text": "differently if it is inside a global"
+    },
+    {
+      "startSeconds": 51.44,
+      "endSeconds": 55.68,
+      "text": "space it will work differently if it is"
+    },
+    {
+      "startSeconds": 53.96,
+      "endSeconds": 58.079,
+      "text": "inside an arrow function it will work"
+    },
+    {
+      "startSeconds": 55.68,
+      "endSeconds": 60.079,
+      "text": "differently if it is inside a nested"
+    },
+    {
+      "startSeconds": 58.079,
+      "endSeconds": 63.48,
+      "text": "function it will work differently so so"
+    },
+    {
+      "startSeconds": 60.079,
+      "endSeconds": 66.159,
+      "text": "there are so many cases that every"
+    },
+    {
+      "startSeconds": 63.48,
+      "endSeconds": 69.119,
+      "text": "developer is confused whenever they are"
+    },
+    {
+      "startSeconds": 66.159,
+      "endSeconds": 72.4,
+      "text": "trying to use this keyword in their"
+    },
+    {
+      "startSeconds": 69.119,
+      "endSeconds": 74.64,
+      "text": "projects or even in interviews a lot of"
+    },
+    {
+      "startSeconds": 72.4,
+      "endSeconds": 77,
+      "text": "interviewers ask you these confusing"
+    },
+    {
+      "startSeconds": 74.64,
+      "endSeconds": 79.88,
+      "text": "questions and will right uh and then you"
+    },
+    {
+      "startSeconds": 77,
+      "endSeconds": 82.68,
+      "text": "will be confused how to answer them but"
+    },
+    {
+      "startSeconds": 79.88,
+      "endSeconds": 85.88,
+      "text": "in this video I will build you build"
+    },
+    {
+      "startSeconds": 82.68,
+      "endSeconds": 88.079,
+      "text": "your basic foundations right of the this"
+    },
+    {
+      "startSeconds": 85.88,
+      "endSeconds": 89.439,
+      "text": "keyword I will explain everything that"
+    },
+    {
+      "startSeconds": 88.079,
+      "endSeconds": 90.36,
+      "text": "you should know before you go to an"
+    },
+    {
+      "startSeconds": 89.439,
+      "endSeconds": 91.799,
+      "text": "interview"
+    },
+    {
+      "startSeconds": 90.36,
+      "endSeconds": 94.28,
+      "text": "and it will also help you in your"
+    },
+    {
+      "startSeconds": 91.799,
+      "endSeconds": 96.159,
+      "text": "day-to-day coding okay so let us just"
+    },
+    {
+      "startSeconds": 94.28,
+      "endSeconds": 98.56,
+      "text": "start and you know by the end of this"
+    },
+    {
+      "startSeconds": 96.159,
+      "endSeconds": 100.92,
+      "text": "video you will also understand what is"
+    },
+    {
+      "startSeconds": 98.56,
+      "endSeconds": 102.56,
+      "text": "written over here right now trust me you"
+    },
+    {
+      "startSeconds": 100.92,
+      "endSeconds": 104.36,
+      "text": "will not understand everything what is"
+    },
+    {
+      "startSeconds": 102.56,
+      "endSeconds": 106.04,
+      "text": "written over here but by the end of the"
+    },
+    {
+      "startSeconds": 104.36,
+      "endSeconds": 108.479,
+      "text": "video you will understand each and every"
+    },
+    {
+      "startSeconds": 106.04,
+      "endSeconds": 112.24,
+      "text": "line of this two paragraphs which"
+    },
+    {
+      "startSeconds": 108.479,
+      "endSeconds": 114.479,
+      "text": "explains this over here okay so now let"
+    },
+    {
+      "startSeconds": 112.24,
+      "endSeconds": 116.28,
+      "text": "us just start so first of all Let Me"
+    },
+    {
+      "startSeconds": 114.479,
+      "endSeconds": 119.24,
+      "text": "Explain you what all things I will cover"
+    },
+    {
+      "startSeconds": 116.28,
+      "endSeconds": 122.96,
+      "text": "in this video in this video I will cover"
+    },
+    {
+      "startSeconds": 119.24,
+      "endSeconds": 124.759,
+      "text": "all these Concepts basically how this"
+    },
+    {
+      "startSeconds": 122.96,
+      "endSeconds": 127.039,
+      "text": "behaves differently in different"
+    },
+    {
+      "startSeconds": 124.759,
+      "endSeconds": 129.599,
+      "text": "circumstances so these are different"
+    },
+    {
+      "startSeconds": 127.039,
+      "endSeconds": 132.8,
+      "text": "circumstances and I will cover each of"
+    },
+    {
+      "startSeconds": 129.599,
+      "endSeconds": 136.04,
+      "text": "them one by one I will take a lot of"
+    },
+    {
+      "startSeconds": 132.8,
+      "endSeconds": 138.48,
+      "text": "coding examples but I request you that"
+    },
+    {
+      "startSeconds": 136.04,
+      "endSeconds": 140.48,
+      "text": "please don't take this video lightly it"
+    },
+    {
+      "startSeconds": 138.48,
+      "endSeconds": 142.84,
+      "text": "is a very important video If you will"
+    },
+    {
+      "startSeconds": 140.48,
+      "endSeconds": 145.959,
+      "text": "watch this video you will not have to go"
+    },
+    {
+      "startSeconds": 142.84,
+      "endSeconds": 148.599,
+      "text": "to any other video to learn about this"
+    },
+    {
+      "startSeconds": 145.959,
+      "endSeconds": 151.04,
+      "text": "everything I will cover in this video"
+    },
+    {
+      "startSeconds": 148.599,
+      "endSeconds": 154.8,
+      "text": "and this video will can be a very"
+    },
+    {
+      "startSeconds": 151.04,
+      "endSeconds": 158.56,
+      "text": "crucial um video for your understanding"
+    },
+    {
+      "startSeconds": 154.8,
+      "endSeconds": 160.56,
+      "text": "of JavaScript so please stay with me and"
+    },
+    {
+      "startSeconds": 158.56,
+      "endSeconds": 162.64,
+      "text": "check out all the code examples I would"
+    },
+    {
+      "startSeconds": 160.56,
+      "endSeconds": 164.48,
+      "text": "request you to maybe get a notebook and"
+    },
+    {
+      "startSeconds": 162.64,
+      "endSeconds": 166.72,
+      "text": "a pen with you take down notes along"
+    },
+    {
+      "startSeconds": 164.48,
+      "endSeconds": 168.959,
+      "text": "with me because this is very very very"
+    },
+    {
+      "startSeconds": 166.72,
+      "endSeconds": 171.4,
+      "text": "important let us start with the first"
+    },
+    {
+      "startSeconds": 168.959,
+      "endSeconds": 174.319,
+      "text": "thing we will see how this keyword now"
+    },
+    {
+      "startSeconds": 171.4,
+      "endSeconds": 176.48,
+      "text": "behaves in a global space a lot of you"
+    },
+    {
+      "startSeconds": 174.319,
+      "endSeconds": 178.44,
+      "text": "might not know what is a global space so"
+    },
+    {
+      "startSeconds": 176.48,
+      "endSeconds": 180.68,
+      "text": "let me tell you if you will write"
+    },
+    {
+      "startSeconds": 178.44,
+      "endSeconds": 182.36,
+      "text": "something over here generally right if"
+    },
+    {
+      "startSeconds": 180.68,
+      "endSeconds": 184.599,
+      "text": "you'll write this this is the global"
+    },
+    {
+      "startSeconds": 182.36,
+      "endSeconds": 188.64,
+      "text": "space whatever you write over here"
+    },
+    {
+      "startSeconds": 184.599,
+      "endSeconds": 192.2,
+      "text": "suppose suppose if I write where a so"
+    },
+    {
+      "startSeconds": 188.64,
+      "endSeconds": 194.28,
+      "text": "this a is inside a global space uh and"
+    },
+    {
+      "startSeconds": 192.2,
+      "endSeconds": 197,
+      "text": "suppose if you write something inside a"
+    },
+    {
+      "startSeconds": 194.28,
+      "endSeconds": 199.12,
+      "text": "function okay so suppose if I write"
+    },
+    {
+      "startSeconds": 197,
+      "endSeconds": 202.48,
+      "text": "something inside a function let me call"
+    },
+    {
+      "startSeconds": 199.12,
+      "endSeconds": 205.36,
+      "text": "this as X okay whatever I will write"
+    },
+    {
+      "startSeconds": 202.48,
+      "endSeconds": 208.56,
+      "text": "over here this is inside a functional"
+    },
+    {
+      "startSeconds": 205.36,
+      "endSeconds": 211.599,
+      "text": "scope right functional space function"
+    },
+    {
+      "startSeconds": 208.56,
+      "endSeconds": 214.159,
+      "text": "space and whatever is there outside on"
+    },
+    {
+      "startSeconds": 211.599,
+      "endSeconds": 215.799,
+      "text": "the top level that is a global space so"
+    },
+    {
+      "startSeconds": 214.159,
+      "endSeconds": 218.239,
+      "text": "let us just see first of all how this"
+    },
+    {
+      "startSeconds": 215.799,
+      "endSeconds": 221.879,
+      "text": "behaves inside Global space then we will"
+    },
+    {
+      "startSeconds": 218.239,
+      "endSeconds": 225.2,
+      "text": "see how this behave inside this function"
+    },
+    {
+      "startSeconds": 221.879,
+      "endSeconds": 227.48,
+      "text": "cool so now if you talk about global"
+    },
+    {
+      "startSeconds": 225.2,
+      "endSeconds": 229.68,
+      "text": "space What is the value of this at this"
+    },
+    {
+      "startSeconds": 227.48,
+      "endSeconds": 232.879,
+      "text": "point of time let me just log and show"
+    },
+    {
+      "startSeconds": 229.68,
+      "endSeconds": 235.84,
+      "text": "it to you okay if I do a console log"
+    },
+    {
+      "startSeconds": 232.879,
+      "endSeconds": 237.879,
+      "text": "this what do you think will be printed I"
+    },
+    {
+      "startSeconds": 235.84,
+      "endSeconds": 240.56,
+      "text": "don't know if you know or not but let me"
+    },
+    {
+      "startSeconds": 237.879,
+      "endSeconds": 243.959,
+      "text": "just save and refresh this page so this"
+    },
+    {
+      "startSeconds": 240.56,
+      "endSeconds": 246.68,
+      "text": "be this is window object now what is"
+    },
+    {
+      "startSeconds": 243.959,
+      "endSeconds": 249.56,
+      "text": "this window object this window object"
+    },
+    {
+      "startSeconds": 246.68,
+      "endSeconds": 253.36,
+      "text": "and why the value of this is window"
+    },
+    {
+      "startSeconds": 249.56,
+      "endSeconds": 257.359,
+      "text": "object let me tell you that this keyword"
+    },
+    {
+      "startSeconds": 253.36,
+      "endSeconds": 259.56,
+      "text": "in global space will always have the"
+    },
+    {
+      "startSeconds": 257.359,
+      "endSeconds": 261.72,
+      "text": "value of global"
+    },
+    {
+      "startSeconds": 259.56,
+      "endSeconds": 265.08,
+      "text": "object understand listen to me very"
+    },
+    {
+      "startSeconds": 261.72,
+      "endSeconds": 268.28,
+      "text": "carefully right global object so this"
+    },
+    {
+      "startSeconds": 265.08,
+      "endSeconds": 270.4,
+      "text": "this keyword in global space represent"
+    },
+    {
+      "startSeconds": 268.28,
+      "endSeconds": 274.919,
+      "text": "the global object now what is this"
+    },
+    {
+      "startSeconds": 270.4,
+      "endSeconds": 277.479,
+      "text": "global object so see JavaScript not just"
+    },
+    {
+      "startSeconds": 274.919,
+      "endSeconds": 279.919,
+      "text": "runs on the browser JavaScript can run"
+    },
+    {
+      "startSeconds": 277.479,
+      "endSeconds": 282.56,
+      "text": "on your Smartwatch JavaScript can run"
+    },
+    {
+      "startSeconds": 279.919,
+      "endSeconds": 284.12,
+      "text": "inside a uh wherever JavaScript can run"
+    },
+    {
+      "startSeconds": 282.56,
+      "endSeconds": 285.72,
+      "text": "right JavaScript can run inside your"
+    },
+    {
+      "startSeconds": 284.12,
+      "endSeconds": 287.4,
+      "text": "mobile phone JavaScript can run inside"
+    },
+    {
+      "startSeconds": 285.72,
+      "endSeconds": 291.24,
+      "text": "your browser JavaScript runs inside"
+    },
+    {
+      "startSeconds": 287.4,
+      "endSeconds": 294.28,
+      "text": "nodejs JavaScript run inside smart bulbs"
+    },
+    {
+      "startSeconds": 291.24,
+      "endSeconds": 296.56,
+      "text": "so many places and everywhere wherever"
+    },
+    {
+      "startSeconds": 294.28,
+      "endSeconds": 298,
+      "text": "JavaScript runs there is a JavaScript"
+    },
+    {
+      "startSeconds": 296.56,
+      "endSeconds": 300.52,
+      "text": "runtime"
+    },
+    {
+      "startSeconds": 298,
+      "endSeconds": 304.72,
+      "text": "environment okay that that can be"
+    },
+    {
+      "startSeconds": 300.52,
+      "endSeconds": 305.88,
+      "text": "different inside inside this browser"
+    },
+    {
+      "startSeconds": 304.72,
+      "endSeconds": 309.56,
+      "text": "inside this"
+    },
+    {
+      "startSeconds": 305.88,
+      "endSeconds": 312.88,
+      "text": "browser this global object is different"
+    },
+    {
+      "startSeconds": 309.56,
+      "endSeconds": 314.919,
+      "text": "inside nodejs global object is different"
+    },
+    {
+      "startSeconds": 312.88,
+      "endSeconds": 316.6,
+      "text": "inside some other place wherever"
+    },
+    {
+      "startSeconds": 314.919,
+      "endSeconds": 317.28,
+      "text": "JavaScript is running global object can"
+    },
+    {
+      "startSeconds": 316.6,
+      "endSeconds": 319.72,
+      "text": "be"
+    },
+    {
+      "startSeconds": 317.28,
+      "endSeconds": 322,
+      "text": "different got it first of all you should"
+    },
+    {
+      "startSeconds": 319.72,
+      "endSeconds": 324.84,
+      "text": "understand this and whatever that global"
+    },
+    {
+      "startSeconds": 322,
+      "endSeconds": 328,
+      "text": "object is this will represent that the"
+    },
+    {
+      "startSeconds": 324.84,
+      "endSeconds": 332.039,
+      "text": "value of this keyword will be global"
+    },
+    {
+      "startSeconds": 328,
+      "endSeconds": 334.28,
+      "text": "object now in case of browsers you know"
+    },
+    {
+      "startSeconds": 332.039,
+      "endSeconds": 336.199,
+      "text": "a lot of students lot of developers"
+    },
+    {
+      "startSeconds": 334.28,
+      "endSeconds": 339.039,
+      "text": "don't understand this but let me tell"
+    },
+    {
+      "startSeconds": 336.199,
+      "endSeconds": 343.199,
+      "text": "you in case of browsers this global"
+    },
+    {
+      "startSeconds": 339.039,
+      "endSeconds": 345.12,
+      "text": "object is window that is why you see"
+    },
+    {
+      "startSeconds": 343.199,
+      "endSeconds": 348.639,
+      "text": "window written over here this window"
+    },
+    {
+      "startSeconds": 345.12,
+      "endSeconds": 351.199,
+      "text": "object okay this is inside browser but"
+    },
+    {
+      "startSeconds": 348.639,
+      "endSeconds": 354.72,
+      "text": "if you will go inside nodejs so the"
+    },
+    {
+      "startSeconds": 351.199,
+      "endSeconds": 359.52,
+      "text": "value of this global object will be"
+    },
+    {
+      "startSeconds": 354.72,
+      "endSeconds": 363.08,
+      "text": "Global okay the value will be Global so"
+    },
+    {
+      "startSeconds": 359.52,
+      "endSeconds": 366.08,
+      "text": "so and wherever see every JavaScript"
+    },
+    {
+      "startSeconds": 363.08,
+      "endSeconds": 369.68,
+      "text": "runtime can have different value of this"
+    },
+    {
+      "startSeconds": 366.08,
+      "endSeconds": 371.68,
+      "text": "so similarly uh the global space right"
+    },
+    {
+      "startSeconds": 369.68,
+      "endSeconds": 373.759,
+      "text": "when I say Global space if you will"
+    },
+    {
+      "startSeconds": 371.68,
+      "endSeconds": 376.84,
+      "text": "write something like this console. Lo"
+    },
+    {
+      "startSeconds": 373.759,
+      "endSeconds": 379.24,
+      "text": "this it will return you window or"
+    },
+    {
+      "startSeconds": 376.84,
+      "endSeconds": 381.84,
+      "text": "whatever the global object is so if your"
+    },
+    {
+      "startSeconds": 379.24,
+      "endSeconds": 383.8,
+      "text": "interviewer ask you what is the value of"
+    },
+    {
+      "startSeconds": 381.84,
+      "endSeconds": 386.199,
+      "text": "this inside Global space so you should"
+    },
+    {
+      "startSeconds": 383.8,
+      "endSeconds": 387.8,
+      "text": "answer it is global object that can be"
+    },
+    {
+      "startSeconds": 386.199,
+      "endSeconds": 389.919,
+      "text": "different it can be window it can be"
+    },
+    {
+      "startSeconds": 387.8,
+      "endSeconds": 391.68,
+      "text": "Global it can be something else depends"
+    },
+    {
+      "startSeconds": 389.919,
+      "endSeconds": 393.56,
+      "text": "upon where you are running that piece of"
+    },
+    {
+      "startSeconds": 391.68,
+      "endSeconds": 397.4,
+      "text": "code where you are running this"
+    },
+    {
+      "startSeconds": 393.56,
+      "endSeconds": 399.88,
+      "text": "JavaScript got it so uh this is how it"
+    },
+    {
+      "startSeconds": 397.4,
+      "endSeconds": 402.12,
+      "text": "is now let us just see what happens if"
+    },
+    {
+      "startSeconds": 399.88,
+      "endSeconds": 405.56,
+      "text": "you write this this keyword inside a"
+    },
+    {
+      "startSeconds": 402.12,
+      "endSeconds": 408.52,
+      "text": "function okay so if we have a console"
+    },
+    {
+      "startSeconds": 405.56,
+      "endSeconds": 411.72,
+      "text": "log of this inside this function what"
+    },
+    {
+      "startSeconds": 408.52,
+      "endSeconds": 413.52,
+      "text": "will be the value of this let me save it"
+    },
+    {
+      "startSeconds": 411.72,
+      "endSeconds": 415.24,
+      "text": "and let me call this function also okay"
+    },
+    {
+      "startSeconds": 413.52,
+      "endSeconds": 418.759,
+      "text": "unless we call this function how will we"
+    },
+    {
+      "startSeconds": 415.24,
+      "endSeconds": 422.72,
+      "text": "get to know if I save this see this"
+    },
+    {
+      "startSeconds": 418.759,
+      "endSeconds": 425.8,
+      "text": "another window window so again the value"
+    },
+    {
+      "startSeconds": 422.72,
+      "endSeconds": 428.919,
+      "text": "of this over here is also window is it"
+    },
+    {
+      "startSeconds": 425.8,
+      "endSeconds": 432.8,
+      "text": "correct what is the difference is it"
+    },
+    {
+      "startSeconds": 428.919,
+      "endSeconds": 435.72,
+      "text": "same outside Global space it was window"
+    },
+    {
+      "startSeconds": 432.8,
+      "endSeconds": 439.039,
+      "text": "inside a function it is again window is"
+    },
+    {
+      "startSeconds": 435.72,
+      "endSeconds": 442.36,
+      "text": "it same no my dear friends it is not"
+    },
+    {
+      "startSeconds": 439.039,
+      "endSeconds": 445.479,
+      "text": "same it is different so inside a"
+    },
+    {
+      "startSeconds": 442.36,
+      "endSeconds": 448.24,
+      "text": "function you know now one more tricky"
+    },
+    {
+      "startSeconds": 445.479,
+      "endSeconds": 450.72,
+      "text": "part is take down as a note in your"
+    },
+    {
+      "startSeconds": 448.24,
+      "endSeconds": 453.199,
+      "text": "notebook that this keyword Works be"
+    },
+    {
+      "startSeconds": 450.72,
+      "endSeconds": 456.479,
+      "text": "differently in strict mode and"
+    },
+    {
+      "startSeconds": 453.199,
+      "endSeconds": 458.84,
+      "text": "non-strict mode whenever you will run"
+    },
+    {
+      "startSeconds": 456.479,
+      "endSeconds": 462.36,
+      "text": "JavaScript like this this is a"
+    },
+    {
+      "startSeconds": 458.84,
+      "endSeconds": 466.599,
+      "text": "non-strict mode so let us try to run"
+    },
+    {
+      "startSeconds": 462.36,
+      "endSeconds": 469.039,
+      "text": "inside a strict mode okay so how do you"
+    },
+    {
+      "startSeconds": 466.599,
+      "endSeconds": 471.44,
+      "text": "convert it into a strict mode see if you"
+    },
+    {
+      "startSeconds": 469.039,
+      "endSeconds": 473.479,
+      "text": "will try to know what is now you might"
+    },
+    {
+      "startSeconds": 471.44,
+      "endSeconds": 476.12,
+      "text": "be having doubts like what is strict"
+    },
+    {
+      "startSeconds": 473.479,
+      "endSeconds": 479.319,
+      "text": "mode and what is nonstrict mode in"
+    },
+    {
+      "startSeconds": 476.12,
+      "endSeconds": 481.52,
+      "text": "JavaScript it deserves a different or"
+    },
+    {
+      "startSeconds": 479.319,
+      "endSeconds": 484.4,
+      "text": "all together a different separate video"
+    },
+    {
+      "startSeconds": 481.52,
+      "endSeconds": 487.72,
+      "text": "because that's a big Concept in itself"
+    },
+    {
+      "startSeconds": 484.4,
+      "endSeconds": 491.84,
+      "text": "but understand that strict mode has some"
+    },
+    {
+      "startSeconds": 487.72,
+      "endSeconds": 494.8,
+      "text": "stricter rules for JavaScript okay so by"
+    },
+    {
+      "startSeconds": 491.84,
+      "endSeconds": 497.199,
+      "text": "using something like this use strict on"
+    },
+    {
+      "startSeconds": 494.8,
+      "endSeconds": 500.12,
+      "text": "the top of your file you can go inside a"
+    },
+    {
+      "startSeconds": 497.199,
+      "endSeconds": 502.639,
+      "text": "strict mode now if you will use the"
+    },
+    {
+      "startSeconds": 500.12,
+      "endSeconds": 505.28,
+      "text": "strict mode and let me save it so you"
+    },
+    {
+      "startSeconds": 502.639,
+      "endSeconds": 507.52,
+      "text": "will see that this keyword behaves"
+    },
+    {
+      "startSeconds": 505.28,
+      "endSeconds": 510.84,
+      "text": "differently see the value of this is"
+    },
+    {
+      "startSeconds": 507.52,
+      "endSeconds": 514.12,
+      "text": "undefined now and if it is not a strict"
+    },
+    {
+      "startSeconds": 510.84,
+      "endSeconds": 515.719,
+      "text": "mode if it is not a strict mode then the"
+    },
+    {
+      "startSeconds": 514.12,
+      "endSeconds": 518.959,
+      "text": "value of this is"
+    },
+    {
+      "startSeconds": 515.719,
+      "endSeconds": 523.36,
+      "text": "window do you see the difference"
+    },
+    {
+      "startSeconds": 518.959,
+      "endSeconds": 526.36,
+      "text": "so take down as a note if you are inside"
+    },
+    {
+      "startSeconds": 523.36,
+      "endSeconds": 530.16,
+      "text": "a function right this keyword inside a"
+    },
+    {
+      "startSeconds": 526.36,
+      "endSeconds": 533.72,
+      "text": "function it depends on the value right"
+    },
+    {
+      "startSeconds": 530.16,
+      "endSeconds": 538.2,
+      "text": "what is this this keyword the value"
+    },
+    {
+      "startSeconds": 533.72,
+      "endSeconds": 541.6,
+      "text": "depends on strict non-strict"
+    },
+    {
+      "startSeconds": 538.2,
+      "endSeconds": 546.04,
+      "text": "mode okay the value depends on strict"
+    },
+    {
+      "startSeconds": 541.6,
+      "endSeconds": 549.04,
+      "text": "and non-strict mode so the value will be"
+    },
+    {
+      "startSeconds": 546.04,
+      "endSeconds": 551.6,
+      "text": "window the value will be window if it is"
+    },
+    {
+      "startSeconds": 549.04,
+      "endSeconds": 553.56,
+      "text": "non-strict mode if it is strict mode"
+    },
+    {
+      "startSeconds": 551.6,
+      "endSeconds": 556.56,
+      "text": "then the value will be"
+    },
+    {
+      "startSeconds": 553.56,
+      "endSeconds": 559.12,
+      "text": "undefined now why does this happen now"
+    },
+    {
+      "startSeconds": 556.56,
+      "endSeconds": 561,
+      "text": "you must be thinking a what is this what"
+    },
+    {
+      "startSeconds": 559.12,
+      "endSeconds": 563.399,
+      "text": "what random thing is this right"
+    },
+    {
+      "startSeconds": 561,
+      "endSeconds": 566.8,
+      "text": "JavaScript you know this is the this is"
+    },
+    {
+      "startSeconds": 563.399,
+      "endSeconds": 569.279,
+      "text": "the um you know this is the reason why"
+    },
+    {
+      "startSeconds": 566.8,
+      "endSeconds": 571.88,
+      "text": "most of the developers hate JavaScript"
+    },
+    {
+      "startSeconds": 569.279,
+      "endSeconds": 573.88,
+      "text": "because it behaves very differently very"
+    },
+    {
+      "startSeconds": 571.88,
+      "endSeconds": 575.92,
+      "text": "differently but let me tell you my dear"
+    },
+    {
+      "startSeconds": 573.88,
+      "endSeconds": 578.32,
+      "text": "friends before you hear that just trying"
+    },
+    {
+      "startSeconds": 575.92,
+      "endSeconds": 579.92,
+      "text": "to understand what what is happening why"
+    },
+    {
+      "startSeconds": 578.32,
+      "endSeconds": 584.24,
+      "text": "it is happening and all those stuff"
+    },
+    {
+      "startSeconds": 579.92,
+      "endSeconds": 588.6,
+      "text": "right so why this behaves differently in"
+    },
+    {
+      "startSeconds": 584.24,
+      "endSeconds": 591.76,
+      "text": "this case is something known as this"
+    },
+    {
+      "startSeconds": 588.6,
+      "endSeconds": 593.88,
+      "text": "substitution there is a phenomena note"
+    },
+    {
+      "startSeconds": 591.76,
+      "endSeconds": 596.24,
+      "text": "it down in your notebook again there is"
+    },
+    {
+      "startSeconds": 593.88,
+      "endSeconds": 598.399,
+      "text": "something known as this substitution"
+    },
+    {
+      "startSeconds": 596.24,
+      "endSeconds": 602,
+      "text": "okay this this substitution note this"
+    },
+    {
+      "startSeconds": 598.399,
+      "endSeconds": 606.36,
+      "text": "down this sub substitution so suppose"
+    },
+    {
+      "startSeconds": 602,
+      "endSeconds": 610.64,
+      "text": "according to this substitution if the"
+    },
+    {
+      "startSeconds": 606.36,
+      "endSeconds": 615.079,
+      "text": "value of this is"
+    },
+    {
+      "startSeconds": 610.64,
+      "endSeconds": 618.959,
+      "text": "undefined or null okay so suppose the"
+    },
+    {
+      "startSeconds": 615.079,
+      "endSeconds": 622.44,
+      "text": "value of this anytime is undefined or"
+    },
+    {
+      "startSeconds": 618.959,
+      "endSeconds": 624.959,
+      "text": "null so what will happen right if the"
+    },
+    {
+      "startSeconds": 622.44,
+      "endSeconds": 627.12,
+      "text": "value of this keyword let me write down"
+    },
+    {
+      "startSeconds": 624.959,
+      "endSeconds": 629.8,
+      "text": "keyword also if the value of this this"
+    },
+    {
+      "startSeconds": 627.12,
+      "endSeconds": 630.72,
+      "text": "keyword is undefined or null so what"
+    },
+    {
+      "startSeconds": 629.8,
+      "endSeconds": 635.2,
+      "text": "will"
+    },
+    {
+      "startSeconds": 630.72,
+      "endSeconds": 637.8,
+      "text": "happen this will"
+    },
+    {
+      "startSeconds": 635.2,
+      "endSeconds": 639.8,
+      "text": "be"
+    },
+    {
+      "startSeconds": 637.8,
+      "endSeconds": 645.48,
+      "text": "replaced"
+    },
+    {
+      "startSeconds": 639.8,
+      "endSeconds": 646.56,
+      "text": "with global object got it so if the"
+    },
+    {
+      "startSeconds": 645.48,
+      "endSeconds": 650.2,
+      "text": "value"
+    },
+    {
+      "startSeconds": 646.56,
+      "endSeconds": 652.639,
+      "text": "anytime anytime right in wherever the"
+    },
+    {
+      "startSeconds": 650.2,
+      "endSeconds": 656.04,
+      "text": "code you are writing anytime the value"
+    },
+    {
+      "startSeconds": 652.639,
+      "endSeconds": 659.32,
+      "text": "of this keyword is undefined or null"
+    },
+    {
+      "startSeconds": 656.04,
+      "endSeconds": 661.92,
+      "text": "then what what it will do is Javascript"
+    },
+    {
+      "startSeconds": 659.32,
+      "endSeconds": 665.12,
+      "text": "will JavaScript will"
+    },
+    {
+      "startSeconds": 661.92,
+      "endSeconds": 667.92,
+      "text": "replace this this keyword JavaScript"
+    },
+    {
+      "startSeconds": 665.12,
+      "endSeconds": 670.279,
+      "text": "will replace this this"
+    },
+    {
+      "startSeconds": 667.92,
+      "endSeconds": 675.519,
+      "text": "keyword will be replaced with global"
+    },
+    {
+      "startSeconds": 670.279,
+      "endSeconds": 677.959,
+      "text": "object now only in nonstrict mode okay"
+    },
+    {
+      "startSeconds": 675.519,
+      "endSeconds": 680.56,
+      "text": "only in non-strict mode so keep it make"
+    },
+    {
+      "startSeconds": 677.959,
+      "endSeconds": 682.68,
+      "text": "it as a note right write this down in"
+    },
+    {
+      "startSeconds": 680.56,
+      "endSeconds": 684.32,
+      "text": "your notebook so let me repeat"
+    },
+    {
+      "startSeconds": 682.68,
+      "endSeconds": 687.639,
+      "text": "everything once again because this is"
+    },
+    {
+      "startSeconds": 684.32,
+      "endSeconds": 690.36,
+      "text": "confusing so you understood that inside"
+    },
+    {
+      "startSeconds": 687.639,
+      "endSeconds": 694.36,
+      "text": "a function the value depends on strict"
+    },
+    {
+      "startSeconds": 690.36,
+      "endSeconds": 697.04,
+      "text": "or non-strict mode but inside the"
+    },
+    {
+      "startSeconds": 694.36,
+      "endSeconds": 701.32,
+      "text": "nonstrict mode right if you will have"
+    },
+    {
+      "startSeconds": 697.04,
+      "endSeconds": 703.519,
+      "text": "this see um now uh you know I I know"
+    },
+    {
+      "startSeconds": 701.32,
+      "endSeconds": 704.519,
+      "text": "this can be confusing let me repeat it"
+    },
+    {
+      "startSeconds": 703.519,
+      "endSeconds": 707.76,
+      "text": "once"
+    },
+    {
+      "startSeconds": 704.519,
+      "endSeconds": 709.399,
+      "text": "again if the interviewer asks you what"
+    },
+    {
+      "startSeconds": 707.76,
+      "endSeconds": 712.04,
+      "text": "is the value of this keyword inside a"
+    },
+    {
+      "startSeconds": 709.399,
+      "endSeconds": 714.32,
+      "text": "function what you will say you should"
+    },
+    {
+      "startSeconds": 712.04,
+      "endSeconds": 716.959,
+      "text": "say that the value of this keyword"
+    },
+    {
+      "startSeconds": 714.32,
+      "endSeconds": 721.12,
+      "text": "inside a function is"
+    },
+    {
+      "startSeconds": 716.959,
+      "endSeconds": 724.639,
+      "text": "undefined undefined but because"
+    },
+    {
+      "startSeconds": 721.12,
+      "endSeconds": 727.519,
+      "text": "JavaScript has something known as this"
+    },
+    {
+      "startSeconds": 724.639,
+      "endSeconds": 730.72,
+      "text": "substitution right this substitution so"
+    },
+    {
+      "startSeconds": 727.519,
+      "endSeconds": 733.519,
+      "text": "the value becomes equal to global object"
+    },
+    {
+      "startSeconds": 730.72,
+      "endSeconds": 735.56,
+      "text": "if you will not use strict mode right if"
+    },
+    {
+      "startSeconds": 733.519,
+      "endSeconds": 738.12,
+      "text": "I will not use strict mode the value"
+    },
+    {
+      "startSeconds": 735.56,
+      "endSeconds": 740.199,
+      "text": "becomes window object I know this will"
+    },
+    {
+      "startSeconds": 738.12,
+      "endSeconds": 744.399,
+      "text": "be confusing but take it down as a note"
+    },
+    {
+      "startSeconds": 740.199,
+      "endSeconds": 747.32,
+      "text": "this is small Nuance H but you should"
+    },
+    {
+      "startSeconds": 744.399,
+      "endSeconds": 751.44,
+      "text": "understand what is happening okay uh"
+    },
+    {
+      "startSeconds": 747.32,
+      "endSeconds": 754,
+      "text": "this inside non-st mode nonstrict mode"
+    },
+    {
+      "startSeconds": 751.44,
+      "endSeconds": 756.6,
+      "text": "got it so inside non-strict mode if you"
+    },
+    {
+      "startSeconds": 754,
+      "endSeconds": 759.12,
+      "text": "are inside non-strict mode then what"
+    },
+    {
+      "startSeconds": 756.6,
+      "endSeconds": 761.72,
+      "text": "happens is this"
+    },
+    {
+      "startSeconds": 759.12,
+      "endSeconds": 764.639,
+      "text": "substitution hope you hope you would"
+    },
+    {
+      "startSeconds": 761.72,
+      "endSeconds": 766.72,
+      "text": "have uh understood this portion right if"
+    },
+    {
+      "startSeconds": 764.639,
+      "endSeconds": 768.56,
+      "text": "you did not please watch the video once"
+    },
+    {
+      "startSeconds": 766.72,
+      "endSeconds": 775.36,
+      "text": "again I have explained it"
+    },
+    {
+      "startSeconds": 768.56,
+      "endSeconds": 777.92,
+      "text": "properly uh okay now again right so this"
+    },
+    {
+      "startSeconds": 775.36,
+      "endSeconds": 779.399,
+      "text": "the value of this keyword right the"
+    },
+    {
+      "startSeconds": 777.92,
+      "endSeconds": 783.44,
+      "text": "value of this key"
+    },
+    {
+      "startSeconds": 779.399,
+      "endSeconds": 786.88,
+      "text": "keyword depends on how it is called how"
+    },
+    {
+      "startSeconds": 783.44,
+      "endSeconds": 790.199,
+      "text": "the function is called got it now the"
+    },
+    {
+      "startSeconds": 786.88,
+      "endSeconds": 793.639,
+      "text": "value of this this keyword also depends"
+    },
+    {
+      "startSeconds": 790.199,
+      "endSeconds": 796.36,
+      "text": "on how this function is called okay"
+    },
+    {
+      "startSeconds": 793.639,
+      "endSeconds": 799.16,
+      "text": "suppose right I am calling the function"
+    },
+    {
+      "startSeconds": 796.36,
+      "endSeconds": 803.24,
+      "text": "as X right I am calling it like this"
+    },
+    {
+      "startSeconds": 799.16,
+      "endSeconds": 806.519,
+      "text": "isn't it I am calling this function as"
+    },
+    {
+      "startSeconds": 803.24,
+      "endSeconds": 809.56,
+      "text": "normal right X and this parenthesis the"
+    },
+    {
+      "startSeconds": 806.519,
+      "endSeconds": 813.079,
+      "text": "value is the value is window object in"
+    },
+    {
+      "startSeconds": 809.56,
+      "endSeconds": 816.279,
+      "text": "case of uh in case of non-strict mode"
+    },
+    {
+      "startSeconds": 813.079,
+      "endSeconds": 818.959,
+      "text": "let us go to strict mode okay let us now"
+    },
+    {
+      "startSeconds": 816.279,
+      "endSeconds": 820.92,
+      "text": "now all the examples that what whatever"
+    },
+    {
+      "startSeconds": 818.959,
+      "endSeconds": 824.56,
+      "text": "we will see we will see everything"
+    },
+    {
+      "startSeconds": 820.92,
+      "endSeconds": 827.68,
+      "text": "inside strict mode got it so if you will"
+    },
+    {
+      "startSeconds": 824.56,
+      "endSeconds": 830.8,
+      "text": "see X like this if you will execute this"
+    },
+    {
+      "startSeconds": 827.68,
+      "endSeconds": 834.72,
+      "text": "x x function like this so the value is"
+    },
+    {
+      "startSeconds": 830.8,
+      "endSeconds": 837.36,
+      "text": "undefined but what if I execute is"
+    },
+    {
+      "startSeconds": 834.72,
+      "endSeconds": 840.839,
+      "text": "something like this window"
+    },
+    {
+      "startSeconds": 837.36,
+      "endSeconds": 842.68,
+      "text": "dox window window dox so if we will"
+    },
+    {
+      "startSeconds": 840.839,
+      "endSeconds": 843.8,
+      "text": "execute it like this then the value"
+    },
+    {
+      "startSeconds": 842.68,
+      "endSeconds": 847.92,
+      "text": "becomes"
+    },
+    {
+      "startSeconds": 843.8,
+      "endSeconds": 850.44,
+      "text": "window right so now I I know this is"
+    },
+    {
+      "startSeconds": 847.92,
+      "endSeconds": 853,
+      "text": "very confusing but keep taking down"
+    },
+    {
+      "startSeconds": 850.44,
+      "endSeconds": 855.199,
+      "text": "notes now you know things will become"
+    },
+    {
+      "startSeconds": 853,
+      "endSeconds": 856.839,
+      "text": "easy I will tell you why this is working"
+    },
+    {
+      "startSeconds": 855.199,
+      "endSeconds": 860.16,
+      "text": "the way it is"
+    },
+    {
+      "startSeconds": 856.839,
+      "endSeconds": 862.839,
+      "text": "working lot of see remember this point"
+    },
+    {
+      "startSeconds": 860.16,
+      "endSeconds": 866.48,
+      "text": "this keyword value depends on how this"
+    },
+    {
+      "startSeconds": 862.839,
+      "endSeconds": 869.199,
+      "text": "is called how the function is called how"
+    },
+    {
+      "startSeconds": 866.48,
+      "endSeconds": 871.48,
+      "text": "the function is called how the function"
+    },
+    {
+      "startSeconds": 869.199,
+      "endSeconds": 873.16,
+      "text": "is called if the function is called"
+    },
+    {
+      "startSeconds": 871.48,
+      "endSeconds": 876.32,
+      "text": "without any"
+    },
+    {
+      "startSeconds": 873.16,
+      "endSeconds": 878.199,
+      "text": "reference then the value is"
+    },
+    {
+      "startSeconds": 876.32,
+      "endSeconds": 882.079,
+      "text": "undefined got"
+    },
+    {
+      "startSeconds": 878.199,
+      "endSeconds": 885.279,
+      "text": "it when you call it without any"
+    },
+    {
+      "startSeconds": 882.079,
+      "endSeconds": 887.56,
+      "text": "reference of an object then it becomes"
+    },
+    {
+      "startSeconds": 885.279,
+      "endSeconds": 891.72,
+      "text": "undefined but if you will call it like"
+    },
+    {
+      "startSeconds": 887.56,
+      "endSeconds": 894,
+      "text": "this window dox then it is the calling"
+    },
+    {
+      "startSeconds": 891.72,
+      "endSeconds": 897.8,
+      "text": "object this window object it is the same"
+    },
+    {
+      "startSeconds": 894,
+      "endSeconds": 901.079,
+      "text": "window object hope you understood this"
+    },
+    {
+      "startSeconds": 897.8,
+      "endSeconds": 904.32,
+      "text": "okay so I have explained you four points"
+    },
+    {
+      "startSeconds": 901.079,
+      "endSeconds": 908.399,
+      "text": "right now let me repeat everything all"
+    },
+    {
+      "startSeconds": 904.32,
+      "endSeconds": 911.079,
+      "text": "these four points first of all in global"
+    },
+    {
+      "startSeconds": 908.399,
+      "endSeconds": 913.56,
+      "text": "space global object the value is global"
+    },
+    {
+      "startSeconds": 911.079,
+      "endSeconds": 915.079,
+      "text": "object it can be different in browsers"
+    },
+    {
+      "startSeconds": 913.56,
+      "endSeconds": 918.399,
+      "text": "it can be different in"
+    },
+    {
+      "startSeconds": 915.079,
+      "endSeconds": 920.6,
+      "text": "nodejs second point if you are writing"
+    },
+    {
+      "startSeconds": 918.399,
+      "endSeconds": 922.32,
+      "text": "it inside a function it will behave"
+    },
+    {
+      "startSeconds": 920.6,
+      "endSeconds": 925.8,
+      "text": "differently in strict and non-strict"
+    },
+    {
+      "startSeconds": 922.32,
+      "endSeconds": 929.04,
+      "text": "mode okay now what will"
+    },
+    {
+      "startSeconds": 925.8,
+      "endSeconds": 931,
+      "text": "happen in inside the function the value"
+    },
+    {
+      "startSeconds": 929.04,
+      "endSeconds": 933.48,
+      "text": "of this keyword is undefined the"
+    },
+    {
+      "startSeconds": 931,
+      "endSeconds": 936.399,
+      "text": "original value is undefined but if you"
+    },
+    {
+      "startSeconds": 933.48,
+      "endSeconds": 938.8,
+      "text": "will use it without a non-strict mode"
+    },
+    {
+      "startSeconds": 936.399,
+      "endSeconds": 940.88,
+      "text": "then the value will become window or the"
+    },
+    {
+      "startSeconds": 938.8,
+      "endSeconds": 943.12,
+      "text": "global object so this is a very"
+    },
+    {
+      "startSeconds": 940.88,
+      "endSeconds": 945.759,
+      "text": "important point you know a lot of times"
+    },
+    {
+      "startSeconds": 943.12,
+      "endSeconds": 947.44,
+      "text": "interviews will confuse you by asking"
+    },
+    {
+      "startSeconds": 945.759,
+      "endSeconds": 950.24,
+      "text": "such questions that is why I'm telling"
+    },
+    {
+      "startSeconds": 947.44,
+      "endSeconds": 952.04,
+      "text": "you all this remember this okay strict"
+    },
+    {
+      "startSeconds": 950.24,
+      "endSeconds": 954.8,
+      "text": "and non-strict mode are different in"
+    },
+    {
+      "startSeconds": 952.04,
+      "endSeconds": 957.16,
+      "text": "JavaScript let's move to the strict mode"
+    },
+    {
+      "startSeconds": 954.8,
+      "endSeconds": 959.72,
+      "text": "now if you are in strict mode then the"
+    },
+    {
+      "startSeconds": 957.16,
+      "endSeconds": 963,
+      "text": "value of this inside this function is"
+    },
+    {
+      "startSeconds": 959.72,
+      "endSeconds": 965.8,
+      "text": "undefined okay now the value of this"
+    },
+    {
+      "startSeconds": 963,
+      "endSeconds": 968.639,
+      "text": "keyword also depends on how the function"
+    },
+    {
+      "startSeconds": 965.8,
+      "endSeconds": 971.199,
+      "text": "is called right so if you will read from"
+    },
+    {
+      "startSeconds": 968.639,
+      "endSeconds": 974.279,
+      "text": "the mdn documentation also let me bring"
+    },
+    {
+      "startSeconds": 971.199,
+      "endSeconds": 976.959,
+      "text": "this up right so in most of the cases"
+    },
+    {
+      "startSeconds": 974.279,
+      "endSeconds": 979.68,
+      "text": "the value of this is determined by how"
+    },
+    {
+      "startSeconds": 976.959,
+      "endSeconds": 980.92,
+      "text": "the function is called during runtime"
+    },
+    {
+      "startSeconds": 979.68,
+      "endSeconds": 984.56,
+      "text": "right runtime"
+    },
+    {
+      "startSeconds": 980.92,
+      "endSeconds": 986.639,
+      "text": "binding okay how this function is called"
+    },
+    {
+      "startSeconds": 984.56,
+      "endSeconds": 991.04,
+      "text": "so if you will call the function like"
+    },
+    {
+      "startSeconds": 986.639,
+      "endSeconds": 993.319,
+      "text": "this then the value will be be"
+    },
+    {
+      "startSeconds": 991.04,
+      "endSeconds": 996.16,
+      "text": "undefined okay but if we'll call like"
+    },
+    {
+      "startSeconds": 993.319,
+      "endSeconds": 998.079,
+      "text": "this it will be window right and I'm"
+    },
+    {
+      "startSeconds": 996.16,
+      "endSeconds": 1001.72,
+      "text": "talking about strict mode now in"
+    },
+    {
+      "startSeconds": 998.079,
+      "endSeconds": 1004.199,
+      "text": "non-strict mode this substitution will"
+    },
+    {
+      "startSeconds": 1001.72,
+      "endSeconds": 1006.68,
+      "text": "happen got it so this was the revision"
+    },
+    {
+      "startSeconds": 1004.199,
+      "endSeconds": 1009.8,
+      "text": "of four points now let us move on to the"
+    },
+    {
+      "startSeconds": 1006.68,
+      "endSeconds": 1012.759,
+      "text": "next point now you know this was the"
+    },
+    {
+      "startSeconds": 1009.8,
+      "endSeconds": 1016.36,
+      "text": "tricky part now comes the a little more"
+    },
+    {
+      "startSeconds": 1012.759,
+      "endSeconds": 1018.48,
+      "text": "easier part okay easier part calm down"
+    },
+    {
+      "startSeconds": 1016.36,
+      "endSeconds": 1021.12,
+      "text": "right if you understood this much then"
+    },
+    {
+      "startSeconds": 1018.48,
+      "endSeconds": 1023.8,
+      "text": "then you have covered 50% of the video"
+    },
+    {
+      "startSeconds": 1021.12,
+      "endSeconds": 1026.72,
+      "text": "trust me right so now let us move to"
+    },
+    {
+      "startSeconds": 1023.8,
+      "endSeconds": 1030.24,
+      "text": "other part now this keyword can be"
+    },
+    {
+      "startSeconds": 1026.72,
+      "endSeconds": 1032.16,
+      "text": "called inside objects method now it will"
+    },
+    {
+      "startSeconds": 1030.24,
+      "endSeconds": 1034.76,
+      "text": "behave a little differently if suppose"
+    },
+    {
+      "startSeconds": 1032.16,
+      "endSeconds": 1036.559,
+      "text": "we have an object let's call it as obj"
+    },
+    {
+      "startSeconds": 1034.76,
+      "endSeconds": 1039.439,
+      "text": "suppose it has some properties let me"
+    },
+    {
+      "startSeconds": 1036.559,
+      "endSeconds": 1041.16,
+      "text": "call that as a is equal to 10 or"
+    },
+    {
+      "startSeconds": 1039.439,
+      "endSeconds": 1043,
+      "text": "something I'm just writing random values"
+    },
+    {
+      "startSeconds": 1041.16,
+      "endSeconds": 1044.88,
+      "text": "over here and suppose if there is a"
+    },
+    {
+      "startSeconds": 1043,
+      "endSeconds": 1047.72,
+      "text": "method now what is the difference"
+    },
+    {
+      "startSeconds": 1044.88,
+      "endSeconds": 1050.6,
+      "text": "between a function and a method see if"
+    },
+    {
+      "startSeconds": 1047.72,
+      "endSeconds": 1053.28,
+      "text": "you will make a function as a part of an"
+    },
+    {
+      "startSeconds": 1050.6,
+      "endSeconds": 1054.84,
+      "text": "object then it is known as method lot of"
+    },
+    {
+      "startSeconds": 1053.28,
+      "endSeconds": 1056.84,
+      "text": "JavaScript developers don't know do you"
+    },
+    {
+      "startSeconds": 1054.84,
+      "endSeconds": 1057.96,
+      "text": "know it or not write down in comments"
+    },
+    {
+      "startSeconds": 1056.84,
+      "endSeconds": 1059.24,
+      "text": "what is the difference between a"
+    },
+    {
+      "startSeconds": 1057.96,
+      "endSeconds": 1061.72,
+      "text": "function and a"
+    },
+    {
+      "startSeconds": 1059.24,
+      "endSeconds": 1063.559,
+      "text": "method when you will write a function"
+    },
+    {
+      "startSeconds": 1061.72,
+      "endSeconds": 1066.44,
+      "text": "over here right let me if suppose I"
+    },
+    {
+      "startSeconds": 1063.559,
+      "endSeconds": 1070.24,
+      "text": "write X over here and if this is a"
+    },
+    {
+      "startSeconds": 1066.44,
+      "endSeconds": 1073.24,
+      "text": "function right if this x is a function"
+    },
+    {
+      "startSeconds": 1070.24,
+      "endSeconds": 1075.32,
+      "text": "over here right so this function X is"
+    },
+    {
+      "startSeconds": 1073.24,
+      "endSeconds": 1079.12,
+      "text": "known as method now right this is a"
+    },
+    {
+      "startSeconds": 1075.32,
+      "endSeconds": 1080.72,
+      "text": "method this is a x is a now in the lingo"
+    },
+    {
+      "startSeconds": 1079.12,
+      "endSeconds": 1084.12,
+      "text": "right why I'm telling you all this"
+    },
+    {
+      "startSeconds": 1080.72,
+      "endSeconds": 1085.72,
+      "text": "because you know sometimes it does not"
+    },
+    {
+      "startSeconds": 1084.12,
+      "endSeconds": 1088.08,
+      "text": "matter whether you call it as function"
+    },
+    {
+      "startSeconds": 1085.72,
+      "endSeconds": 1090.4,
+      "text": "or method it is a function at the end of"
+    },
+    {
+      "startSeconds": 1088.08,
+      "endSeconds": 1091.919,
+      "text": "the day but you know sometimes you will"
+    },
+    {
+      "startSeconds": 1090.4,
+      "endSeconds": 1094.159,
+      "text": "get confused when you hear the word"
+    },
+    {
+      "startSeconds": 1091.919,
+      "endSeconds": 1096.76,
+      "text": "method so this is what I'm trying to"
+    },
+    {
+      "startSeconds": 1094.159,
+      "endSeconds": 1098.6,
+      "text": "tell you when you are inside an object"
+    },
+    {
+      "startSeconds": 1096.76,
+      "endSeconds": 1100.44,
+      "text": "if you create a function inside an"
+    },
+    {
+      "startSeconds": 1098.6,
+      "endSeconds": 1103.6,
+      "text": "object this function X is known as"
+    },
+    {
+      "startSeconds": 1100.44,
+      "endSeconds": 1107.52,
+      "text": "method now so X is the method of an"
+    },
+    {
+      "startSeconds": 1103.6,
+      "endSeconds": 1109.24,
+      "text": "object obj got it X is the method of an"
+    },
+    {
+      "startSeconds": 1107.52,
+      "endSeconds": 1111.76,
+      "text": "object obj"
+    },
+    {
+      "startSeconds": 1109.24,
+      "endSeconds": 1113.96,
+      "text": "now what happens inside this x function"
+    },
+    {
+      "startSeconds": 1111.76,
+      "endSeconds": 1117.08,
+      "text": "suppose if I try to do a console log of"
+    },
+    {
+      "startSeconds": 1113.96,
+      "endSeconds": 1119.919,
+      "text": "this what will be the value of this"
+    },
+    {
+      "startSeconds": 1117.08,
+      "endSeconds": 1123.36,
+      "text": "inside this x method what will be the"
+    },
+    {
+      "startSeconds": 1119.919,
+      "endSeconds": 1126.12,
+      "text": "value of this now again as I said the"
+    },
+    {
+      "startSeconds": 1123.36,
+      "endSeconds": 1129.12,
+      "text": "value of this also depends on how this"
+    },
+    {
+      "startSeconds": 1126.12,
+      "endSeconds": 1132.159,
+      "text": "function is called always remember this"
+    },
+    {
+      "startSeconds": 1129.12,
+      "endSeconds": 1135.44,
+      "text": "is a very important statement how this"
+    },
+    {
+      "startSeconds": 1132.159,
+      "endSeconds": 1139.4,
+      "text": "function is called okay now if I call"
+    },
+    {
+      "startSeconds": 1135.44,
+      "endSeconds": 1142.679,
+      "text": "this function like this obj dox"
+    },
+    {
+      "startSeconds": 1139.4,
+      "endSeconds": 1146.4,
+      "text": "okay if I call this function as obj dox"
+    },
+    {
+      "startSeconds": 1142.679,
+      "endSeconds": 1149.84,
+      "text": "let me just run it see this the value"
+    },
+    {
+      "startSeconds": 1146.4,
+      "endSeconds": 1153.2,
+      "text": "becomes this object so whenever you are"
+    },
+    {
+      "startSeconds": 1149.84,
+      "endSeconds": 1154.6,
+      "text": "inside the method the value of this this"
+    },
+    {
+      "startSeconds": 1153.2,
+      "endSeconds": 1159.4,
+      "text": "keyword is the"
+    },
+    {
+      "startSeconds": 1154.6,
+      "endSeconds": 1162.12,
+      "text": "object where this method is present"
+    },
+    {
+      "startSeconds": 1159.4,
+      "endSeconds": 1165.08,
+      "text": "understood the value let me repeat it"
+    },
+    {
+      "startSeconds": 1162.12,
+      "endSeconds": 1166.919,
+      "text": "once again if this is an object what is"
+    },
+    {
+      "startSeconds": 1165.08,
+      "endSeconds": 1168.84,
+      "text": "the value of this keyword inside this"
+    },
+    {
+      "startSeconds": 1166.919,
+      "endSeconds": 1174.08,
+      "text": "method it is"
+    },
+    {
+      "startSeconds": 1168.84,
+      "endSeconds": 1177.2,
+      "text": "this object okay o obj dox is this"
+    },
+    {
+      "startSeconds": 1174.08,
+      "endSeconds": 1179.88,
+      "text": "object and inside the method right"
+    },
+    {
+      "startSeconds": 1177.2,
+      "endSeconds": 1183.919,
+      "text": "inside this method X suppose if I do"
+    },
+    {
+      "startSeconds": 1179.88,
+      "endSeconds": 1187.679,
+      "text": "this do a right this do a so this will"
+    },
+    {
+      "startSeconds": 1183.919,
+      "endSeconds": 1192.08,
+      "text": "reference to object and this do a will"
+    },
+    {
+      "startSeconds": 1187.679,
+      "endSeconds": 1195.28,
+      "text": "reference to this property a okay so if"
+    },
+    {
+      "startSeconds": 1192.08,
+      "endSeconds": 1197.919,
+      "text": "I will do this. a log if I save this so"
+    },
+    {
+      "startSeconds": 1195.28,
+      "endSeconds": 1200.76,
+      "text": "it will print 10 why did it print 10"
+    },
+    {
+      "startSeconds": 1197.919,
+      "endSeconds": 1205.88,
+      "text": "because this do a this this over here is"
+    },
+    {
+      "startSeconds": 1200.76,
+      "endSeconds": 1210.08,
+      "text": "this object so this. a means object."
+    },
+    {
+      "startSeconds": 1205.88,
+      "endSeconds": 1214.76,
+      "text": "a got it so this is how the value over"
+    },
+    {
+      "startSeconds": 1210.08,
+      "endSeconds": 1217.159,
+      "text": "here is present got it so the value of"
+    },
+    {
+      "startSeconds": 1214.76,
+      "endSeconds": 1219.799,
+      "text": "this is this"
+    },
+    {
+      "startSeconds": 1217.159,
+      "endSeconds": 1222.48,
+      "text": "object this"
+    },
+    {
+      "startSeconds": 1219.799,
+      "endSeconds": 1225.039,
+      "text": "obj hope you would have understood this"
+    },
+    {
+      "startSeconds": 1222.48,
+      "endSeconds": 1227.64,
+      "text": "now let's move on to another topic"
+    },
+    {
+      "startSeconds": 1225.039,
+      "endSeconds": 1229.039,
+      "text": "whenever you talk about this keyword"
+    },
+    {
+      "startSeconds": 1227.64,
+      "endSeconds": 1231.559,
+      "text": "there are three"
+    },
+    {
+      "startSeconds": 1229.039,
+      "endSeconds": 1233.36,
+      "text": "important uh topics which you should"
+    },
+    {
+      "startSeconds": 1231.559,
+      "endSeconds": 1237.28,
+      "text": "know three important functions that you"
+    },
+    {
+      "startSeconds": 1233.36,
+      "endSeconds": 1241.159,
+      "text": "should know one is call one is apply one"
+    },
+    {
+      "startSeconds": 1237.28,
+      "endSeconds": 1243.96,
+      "text": "is bind one is call one is apply one is"
+    },
+    {
+      "startSeconds": 1241.159,
+      "endSeconds": 1246.44,
+      "text": "bind very important"
+    },
+    {
+      "startSeconds": 1243.96,
+      "endSeconds": 1249.159,
+      "text": "topics very famous interview questions"
+    },
+    {
+      "startSeconds": 1246.44,
+      "endSeconds": 1250.64,
+      "text": "also uh interview questions interviewer"
+    },
+    {
+      "startSeconds": 1249.159,
+      "endSeconds": 1253.44,
+      "text": "can ask you what is the difference"
+    },
+    {
+      "startSeconds": 1250.64,
+      "endSeconds": 1256.2,
+      "text": "between call apply and bind I have made"
+    },
+    {
+      "startSeconds": 1253.44,
+      "endSeconds": 1258.44,
+      "text": "a separate video of call apply and B on"
+    },
+    {
+      "startSeconds": 1256.2,
+      "endSeconds": 1261.44,
+      "text": "my channel you can watch that for a"
+    },
+    {
+      "startSeconds": 1258.44,
+      "endSeconds": 1263.88,
+      "text": "deeper dive in for now I will explain a"
+    },
+    {
+      "startSeconds": 1261.44,
+      "endSeconds": 1267.919,
+      "text": "little bit of call apply bind in this"
+    },
+    {
+      "startSeconds": 1263.88,
+      "endSeconds": 1271.36,
+      "text": "video okay now this call apply and"
+    },
+    {
+      "startSeconds": 1267.919,
+      "endSeconds": 1274.32,
+      "text": "bind is used when you have to share"
+    },
+    {
+      "startSeconds": 1271.36,
+      "endSeconds": 1276.76,
+      "text": "methods right uh when I'll tell you what"
+    },
+    {
+      "startSeconds": 1274.32,
+      "endSeconds": 1280.279,
+      "text": "is the meaning of sharing method suppose"
+    },
+    {
+      "startSeconds": 1276.76,
+      "endSeconds": 1282.44,
+      "text": "if this object has this method X suppose"
+    },
+    {
+      "startSeconds": 1280.279,
+      "endSeconds": 1287.159,
+      "text": "if there is one more object let me call"
+    },
+    {
+      "startSeconds": 1282.44,
+      "endSeconds": 1289.559,
+      "text": "that as obj2 now if you want to share if"
+    },
+    {
+      "startSeconds": 1287.159,
+      "endSeconds": 1291.76,
+      "text": "you want to share this method right and"
+    },
+    {
+      "startSeconds": 1289.559,
+      "endSeconds": 1293.88,
+      "text": "let me call this as a is equals to it"
+    },
+    {
+      "startSeconds": 1291.76,
+      "endSeconds": 1294.88,
+      "text": "also has a property a and let me call"
+    },
+    {
+      "startSeconds": 1293.88,
+      "endSeconds": 1298.72,
+      "text": "this as"
+    },
+    {
+      "startSeconds": 1294.88,
+      "endSeconds": 1299.919,
+      "text": "20 okay now if you want to share this"
+    },
+    {
+      "startSeconds": 1298.72,
+      "endSeconds": 1303.24,
+      "text": "function"
+    },
+    {
+      "startSeconds": 1299.919,
+      "endSeconds": 1306.32,
+      "text": "x with this object then there's a way"
+    },
+    {
+      "startSeconds": 1303.24,
+      "endSeconds": 1310,
+      "text": "you can do it you can do it using call"
+    },
+    {
+      "startSeconds": 1306.32,
+      "endSeconds": 1312.919,
+      "text": "apply and bind right see this this"
+    },
+    {
+      "startSeconds": 1310,
+      "endSeconds": 1314.919,
+      "text": "function does not have this me so okay I"
+    },
+    {
+      "startSeconds": 1312.919,
+      "endSeconds": 1316.919,
+      "text": "will take a better example so that you"
+    },
+    {
+      "startSeconds": 1314.919,
+      "endSeconds": 1319.559,
+      "text": "understand it okay suppose this object"
+    },
+    {
+      "startSeconds": 1316.919,
+      "endSeconds": 1322.52,
+      "text": "is a student student object and the"
+    },
+    {
+      "startSeconds": 1319.559,
+      "endSeconds": 1327.039,
+      "text": "student has a name okay let me call this"
+    },
+    {
+      "startSeconds": 1322.52,
+      "endSeconds": 1330.039,
+      "text": "name as ache okay this name of the"
+    },
+    {
+      "startSeconds": 1327.039,
+      "endSeconds": 1333.44,
+      "text": "object is ache now if you will call"
+    },
+    {
+      "startSeconds": 1330.039,
+      "endSeconds": 1336.32,
+      "text": "object do x uh and let me call this"
+    },
+    {
+      "startSeconds": 1333.44,
+      "endSeconds": 1339.24,
+      "text": "function as print name I will give you"
+    },
+    {
+      "startSeconds": 1336.32,
+      "endSeconds": 1341.36,
+      "text": "real life example live over here if you"
+    },
+    {
+      "startSeconds": 1339.24,
+      "endSeconds": 1344.88,
+      "text": "have this function print name and you do"
+    },
+    {
+      "startSeconds": 1341.36,
+      "endSeconds": 1350.6,
+      "text": "student. print name okay student"
+    },
+    {
+      "startSeconds": 1344.88,
+      "endSeconds": 1353,
+      "text": "do print print name what will be printed"
+    },
+    {
+      "startSeconds": 1350.6,
+      "endSeconds": 1355.84,
+      "text": "what will be printed over here student."
+    },
+    {
+      "startSeconds": 1353,
+      "endSeconds": 1358.84,
+      "text": "print name what will be"
+    },
+    {
+      "startSeconds": 1355.84,
+      "endSeconds": 1363.12,
+      "text": "printed this object right this keyword"
+    },
+    {
+      "startSeconds": 1358.84,
+      "endSeconds": 1365.44,
+      "text": "is student and name over here right so"
+    },
+    {
+      "startSeconds": 1363.12,
+      "endSeconds": 1368.48,
+      "text": "this object got printed and if I try to"
+    },
+    {
+      "startSeconds": 1365.44,
+      "endSeconds": 1372.12,
+      "text": "print this dot name what will be printed"
+    },
+    {
+      "startSeconds": 1368.48,
+      "endSeconds": 1374.2,
+      "text": "AE will be printed got it but suppose if"
+    },
+    {
+      "startSeconds": 1372.12,
+      "endSeconds": 1377.08,
+      "text": "there is one more student let's call"
+    },
+    {
+      "startSeconds": 1374.2,
+      "endSeconds": 1380,
+      "text": "that as student two right and the"
+    },
+    {
+      "startSeconds": 1377.08,
+      "endSeconds": 1383.679,
+      "text": "student two has has name of the student"
+    },
+    {
+      "startSeconds": 1380,
+      "endSeconds": 1386.72,
+      "text": "two has name of Deepika okay suppose if"
+    },
+    {
+      "startSeconds": 1383.679,
+      "endSeconds": 1389.039,
+      "text": "the name of this student 2 is Deepika"
+    },
+    {
+      "startSeconds": 1386.72,
+      "endSeconds": 1391.6,
+      "text": "now what will happen is and suppose I"
+    },
+    {
+      "startSeconds": 1389.039,
+      "endSeconds": 1395.08,
+      "text": "want to print I want to share this"
+    },
+    {
+      "startSeconds": 1391.6,
+      "endSeconds": 1397.12,
+      "text": "method print name with this right I want"
+    },
+    {
+      "startSeconds": 1395.08,
+      "endSeconds": 1400.36,
+      "text": "to share this method print name with"
+    },
+    {
+      "startSeconds": 1397.12,
+      "endSeconds": 1406.039,
+      "text": "this object now how can I do this can I"
+    },
+    {
+      "startSeconds": 1400.36,
+      "endSeconds": 1408.72,
+      "text": "do student can I do student dot uh sorry"
+    },
+    {
+      "startSeconds": 1406.039,
+      "endSeconds": 1412.4,
+      "text": "student 2. printing"
+    },
+    {
+      "startSeconds": 1408.72,
+      "endSeconds": 1415.279,
+      "text": "can I do this can I reference student 2."
+    },
+    {
+      "startSeconds": 1412.4,
+      "endSeconds": 1417.12,
+      "text": "print name no I cannot it will throw an"
+    },
+    {
+      "startSeconds": 1415.279,
+      "endSeconds": 1419.799,
+      "text": "error because this print name is not"
+    },
+    {
+      "startSeconds": 1417.12,
+      "endSeconds": 1422.4,
+      "text": "here right St print name is not a part"
+    },
+    {
+      "startSeconds": 1419.799,
+      "endSeconds": 1425.76,
+      "text": "of student 2 how can I share that same"
+    },
+    {
+      "startSeconds": 1422.4,
+      "endSeconds": 1429.72,
+      "text": "method how can I reuse this method so"
+    },
+    {
+      "startSeconds": 1425.76,
+      "endSeconds": 1435.24,
+      "text": "there is one way I can do that that is"
+    },
+    {
+      "startSeconds": 1429.72,
+      "endSeconds": 1438.52,
+      "text": "that is by sharing by by overriding the"
+    },
+    {
+      "startSeconds": 1435.24,
+      "endSeconds": 1440.919,
+      "text": "value of this keyword"
+    },
+    {
+      "startSeconds": 1438.52,
+      "endSeconds": 1442.48,
+      "text": "okay I know this can be little confusing"
+    },
+    {
+      "startSeconds": 1440.919,
+      "endSeconds": 1445.08,
+      "text": "listen to me very carefully let me"
+    },
+    {
+      "startSeconds": 1442.48,
+      "endSeconds": 1448.039,
+      "text": "repeat it once again I have this object"
+    },
+    {
+      "startSeconds": 1445.08,
+      "endSeconds": 1452.24,
+      "text": "student I have another object student to"
+    },
+    {
+      "startSeconds": 1448.039,
+      "endSeconds": 1455.159,
+      "text": "student has a function a method right"
+    },
+    {
+      "startSeconds": 1452.24,
+      "endSeconds": 1457.919,
+      "text": "and I want to reuse this method for the"
+    },
+    {
+      "startSeconds": 1455.159,
+      "endSeconds": 1461,
+      "text": "student to how will I do that let me"
+    },
+    {
+      "startSeconds": 1457.919,
+      "endSeconds": 1464.76,
+      "text": "tell you what I will do now is I will"
+    },
+    {
+      "startSeconds": 1461,
+      "endSeconds": 1468.08,
+      "text": "call student. Print name because that"
+    },
+    {
+      "startSeconds": 1464.76,
+      "endSeconds": 1472.44,
+      "text": "method exist right this method third"
+    },
+    {
+      "startSeconds": 1468.08,
+      "endSeconds": 1475.559,
+      "text": "print name is on student right and now"
+    },
+    {
+      "startSeconds": 1472.44,
+      "endSeconds": 1478,
+      "text": "what I will do is I will try to not call"
+    },
+    {
+      "startSeconds": 1475.559,
+      "endSeconds": 1479.44,
+      "text": "it like this but what I will do I will"
+    },
+    {
+      "startSeconds": 1478,
+      "endSeconds": 1482.84,
+      "text": "do a DOT"
+    },
+    {
+      "startSeconds": 1479.44,
+      "endSeconds": 1486.88,
+      "text": "call okay I will do a DOT call so"
+    },
+    {
+      "startSeconds": 1482.84,
+      "endSeconds": 1491.52,
+      "text": "basically dot call and now this dot call"
+    },
+    {
+      "startSeconds": 1486.88,
+      "endSeconds": 1495.399,
+      "text": "will take the value of this keyword"
+    },
+    {
+      "startSeconds": 1491.52,
+      "endSeconds": 1499.039,
+      "text": "inside it right what should be this"
+    },
+    {
+      "startSeconds": 1495.399,
+      "endSeconds": 1502.679,
+      "text": "point two so suppose if I if I send"
+    },
+    {
+      "startSeconds": 1499.039,
+      "endSeconds": 1506.12,
+      "text": "student two over here suppose if I write"
+    },
+    {
+      "startSeconds": 1502.679,
+      "endSeconds": 1509.36,
+      "text": "student two over here what will happen"
+    },
+    {
+      "startSeconds": 1506.12,
+      "endSeconds": 1511.84,
+      "text": "inside this print name method the value"
+    },
+    {
+      "startSeconds": 1509.36,
+      "endSeconds": 1512.919,
+      "text": "of this will become this whatever you"
+    },
+    {
+      "startSeconds": 1511.84,
+      "endSeconds": 1516.84,
+      "text": "pass in"
+    },
+    {
+      "startSeconds": 1512.919,
+      "endSeconds": 1520.24,
+      "text": "here so basically inside this function"
+    },
+    {
+      "startSeconds": 1516.84,
+      "endSeconds": 1523.84,
+      "text": "I'm trying to override the value of this"
+    },
+    {
+      "startSeconds": 1520.24,
+      "endSeconds": 1526.32,
+      "text": "right over here the value of this was"
+    },
+    {
+      "startSeconds": 1523.84,
+      "endSeconds": 1529.2,
+      "text": "this student object right this do name"
+    },
+    {
+      "startSeconds": 1526.32,
+      "endSeconds": 1531.96,
+      "text": "was printed over here AE was printed but"
+    },
+    {
+      "startSeconds": 1529.2,
+      "endSeconds": 1534.72,
+      "text": "suppose if I want to reuse this method"
+    },
+    {
+      "startSeconds": 1531.96,
+      "endSeconds": 1536.96,
+      "text": "for student 2 so I can just call the"
+    },
+    {
+      "startSeconds": 1534.72,
+      "endSeconds": 1538.52,
+      "text": "same method but with a different the"
+    },
+    {
+      "startSeconds": 1536.96,
+      "endSeconds": 1544.12,
+      "text": "value of this"
+    },
+    {
+      "startSeconds": 1538.52,
+      "endSeconds": 1546.12,
+      "text": "now value of this is student two okay"
+    },
+    {
+      "startSeconds": 1544.12,
+      "endSeconds": 1548.84,
+      "text": "the value of this becomes student two"
+    },
+    {
+      "startSeconds": 1546.12,
+      "endSeconds": 1552.48,
+      "text": "like this and if you will save it see"
+    },
+    {
+      "startSeconds": 1548.84,
+      "endSeconds": 1556.679,
+      "text": "Deepika got printed ake was printed here"
+    },
+    {
+      "startSeconds": 1552.48,
+      "endSeconds": 1561.24,
+      "text": "DEA got printed here right so the value"
+    },
+    {
+      "startSeconds": 1556.679,
+      "endSeconds": 1565,
+      "text": "of this can be modified using call apply"
+    },
+    {
+      "startSeconds": 1561.24,
+      "endSeconds": 1567.48,
+      "text": "and bind method all these three methods"
+    },
+    {
+      "startSeconds": 1565,
+      "endSeconds": 1571.12,
+      "text": "are used to"
+    },
+    {
+      "startSeconds": 1567.48,
+      "endSeconds": 1572.76,
+      "text": "uh set the value of this inside it right"
+    },
+    {
+      "startSeconds": 1571.12,
+      "endSeconds": 1575.52,
+      "text": "this was a small"
+    },
+    {
+      "startSeconds": 1572.76,
+      "endSeconds": 1577.96,
+      "text": "example please I will mention inside"
+    },
+    {
+      "startSeconds": 1575.52,
+      "endSeconds": 1580.88,
+      "text": "description the link of video of call"
+    },
+    {
+      "startSeconds": 1577.96,
+      "endSeconds": 1583.279,
+      "text": "apply and bind find out the difference"
+    },
+    {
+      "startSeconds": 1580.88,
+      "endSeconds": 1585,
+      "text": "between all of all three of them right"
+    },
+    {
+      "startSeconds": 1583.279,
+      "endSeconds": 1588.159,
+      "text": "it is very very important for your"
+    },
+    {
+      "startSeconds": 1585,
+      "endSeconds": 1590.72,
+      "text": "interviews learn about call apply bind"
+    },
+    {
+      "startSeconds": 1588.159,
+      "endSeconds": 1593.12,
+      "text": "and how you can overwrite the value of"
+    },
+    {
+      "startSeconds": 1590.72,
+      "endSeconds": 1595.72,
+      "text": "this okay so I'm just covering call"
+    },
+    {
+      "startSeconds": 1593.12,
+      "endSeconds": 1599.52,
+      "text": "inside this call method inside this"
+    },
+    {
+      "startSeconds": 1595.72,
+      "endSeconds": 1601.44,
+      "text": "video but please watch that because"
+    },
+    {
+      "startSeconds": 1599.52,
+      "endSeconds": 1603.52,
+      "text": "understanding of this is not complete if"
+    },
+    {
+      "startSeconds": 1601.44,
+      "endSeconds": 1607.72,
+      "text": "you don't understand call apply and bind"
+    },
+    {
+      "startSeconds": 1603.52,
+      "endSeconds": 1611.72,
+      "text": "method okay I am just I am just telling"
+    },
+    {
+      "startSeconds": 1607.72,
+      "endSeconds": 1617.919,
+      "text": "you call learn apply and bind is your"
+    },
+    {
+      "startSeconds": 1611.72,
+      "endSeconds": 1620.36,
+      "text": "homework okay now go to the video up"
+    },
+    {
+      "startSeconds": 1617.919,
+      "endSeconds": 1622.919,
+      "text": "learn about call apply and bind and go"
+    },
+    {
+      "startSeconds": 1620.36,
+      "endSeconds": 1624.559,
+      "text": "in the comment and tell me AE I went to"
+    },
+    {
+      "startSeconds": 1622.919,
+      "endSeconds": 1626.559,
+      "text": "your video call apply and bind and I"
+    },
+    {
+      "startSeconds": 1624.559,
+      "endSeconds": 1628.52,
+      "text": "have understood please comment down you"
+    },
+    {
+      "startSeconds": 1626.559,
+      "endSeconds": 1630.44,
+      "text": "know I know that whenever I say in the"
+    },
+    {
+      "startSeconds": 1628.52,
+      "endSeconds": 1633.72,
+      "text": "video go watch that video you will not"
+    },
+    {
+      "startSeconds": 1630.44,
+      "endSeconds": 1635.32,
+      "text": "do it but I am requesting you I folding"
+    },
+    {
+      "startSeconds": 1633.72,
+      "endSeconds": 1637.679,
+      "text": "my hands I'm joining my hands and"
+    },
+    {
+      "startSeconds": 1635.32,
+      "endSeconds": 1639.919,
+      "text": "requesting you please please please dear"
+    },
+    {
+      "startSeconds": 1637.679,
+      "endSeconds": 1642.12,
+      "text": "friends go watch that video it is very"
+    },
+    {
+      "startSeconds": 1639.919,
+      "endSeconds": 1643.919,
+      "text": "very important for your understanding"
+    },
+    {
+      "startSeconds": 1642.12,
+      "endSeconds": 1646.039,
+      "text": "and after you watch that video come over"
+    },
+    {
+      "startSeconds": 1643.919,
+      "endSeconds": 1647.6,
+      "text": "here and also tell me in the comments a"
+    },
+    {
+      "startSeconds": 1646.039,
+      "endSeconds": 1650.12,
+      "text": "I have watched that video I will give"
+    },
+    {
+      "startSeconds": 1647.6,
+      "endSeconds": 1652.159,
+      "text": "give you a like right if if I have read"
+    },
+    {
+      "startSeconds": 1650.12,
+      "endSeconds": 1654.279,
+      "text": "that comment I read the comments right"
+    },
+    {
+      "startSeconds": 1652.159,
+      "endSeconds": 1656.64,
+      "text": "please please go and watch that video"
+    },
+    {
+      "startSeconds": 1654.279,
+      "endSeconds": 1658.679,
+      "text": "please right because that is when you"
+    },
+    {
+      "startSeconds": 1656.64,
+      "endSeconds": 1660.88,
+      "text": "will understand the this keyword"
+    },
+    {
+      "startSeconds": 1658.679,
+      "endSeconds": 1664.72,
+      "text": "properly and how call apply method bind"
+    },
+    {
+      "startSeconds": 1660.88,
+      "endSeconds": 1667.799,
+      "text": "method works very important topics okay"
+    },
+    {
+      "startSeconds": 1664.72,
+      "endSeconds": 1669.919,
+      "text": "so this is what a short uh this is what"
+    },
+    {
+      "startSeconds": 1667.799,
+      "endSeconds": 1672.399,
+      "text": "is a short explanation of this keyword"
+    },
+    {
+      "startSeconds": 1669.919,
+      "endSeconds": 1675.039,
+      "text": "over here now let us move to another"
+    },
+    {
+      "startSeconds": 1672.399,
+      "endSeconds": 1678.12,
+      "text": "case how does this keyword behaves"
+    },
+    {
+      "startSeconds": 1675.039,
+      "endSeconds": 1680.72,
+      "text": "inside Arrow functions right so we have"
+    },
+    {
+      "startSeconds": 1678.12,
+      "endSeconds": 1683.279,
+      "text": "Arrow functions how does this keyword"
+    },
+    {
+      "startSeconds": 1680.72,
+      "endSeconds": 1686.039,
+      "text": "behaves inside Arrow functions so you"
+    },
+    {
+      "startSeconds": 1683.279,
+      "endSeconds": 1688.84,
+      "text": "know what Arrow function does not have"
+    },
+    {
+      "startSeconds": 1686.039,
+      "endSeconds": 1693.24,
+      "text": "their own this right arrow functions do"
+    },
+    {
+      "startSeconds": 1688.84,
+      "endSeconds": 1697.24,
+      "text": "not have their own this they take the"
+    },
+    {
+      "startSeconds": 1693.24,
+      "endSeconds": 1699.799,
+      "text": "they take the value of their lexical"
+    },
+    {
+      "startSeconds": 1697.24,
+      "endSeconds": 1702.12,
+      "text": "right lexical environment where they are"
+    },
+    {
+      "startSeconds": 1699.799,
+      "endSeconds": 1704.519,
+      "text": "enclosed okay let me repeat it once"
+    },
+    {
+      "startSeconds": 1702.12,
+      "endSeconds": 1706.32,
+      "text": "again it can be confusing you know why I"
+    },
+    {
+      "startSeconds": 1704.519,
+      "endSeconds": 1707.72,
+      "text": "am telling you all these confusing"
+    },
+    {
+      "startSeconds": 1706.32,
+      "endSeconds": 1710.76,
+      "text": "documentation because this is is what"
+    },
+    {
+      "startSeconds": 1707.72,
+      "endSeconds": 1713.88,
+      "text": "you will find in your uh documentation"
+    },
+    {
+      "startSeconds": 1710.76,
+      "endSeconds": 1716.36,
+      "text": "okay see uh Arrow function don't provide"
+    },
+    {
+      "startSeconds": 1713.88,
+      "endSeconds": 1718.6,
+      "text": "their own this binding AR functions"
+    },
+    {
+      "startSeconds": 1716.36,
+      "endSeconds": 1721.24,
+      "text": "don't have a concept of this basically"
+    },
+    {
+      "startSeconds": 1718.6,
+      "endSeconds": 1725.559,
+      "text": "right uh it's like they don't have a"
+    },
+    {
+      "startSeconds": 1721.24,
+      "endSeconds": 1728.76,
+      "text": "this binding Associated to it but the"
+    },
+    {
+      "startSeconds": 1725.559,
+      "endSeconds": 1731.2,
+      "text": "value of this keyword is the value of"
+    },
+    {
+      "startSeconds": 1728.76,
+      "endSeconds": 1734.039,
+      "text": "enclosing lexical content what does this"
+    },
+    {
+      "startSeconds": 1731.2,
+      "endSeconds": 1737.84,
+      "text": "mean right the value of enclosing"
+    },
+    {
+      "startSeconds": 1734.039,
+      "endSeconds": 1741.12,
+      "text": "lexical content context right this is a"
+    },
+    {
+      "startSeconds": 1737.84,
+      "endSeconds": 1744.919,
+      "text": "very trickle trick uh tricky three words"
+    },
+    {
+      "startSeconds": 1741.12,
+      "endSeconds": 1748.039,
+      "text": "right enclosing lexical content right so"
+    },
+    {
+      "startSeconds": 1744.919,
+      "endSeconds": 1750.039,
+      "text": "I will tell you what it is suppose okay"
+    },
+    {
+      "startSeconds": 1748.039,
+      "endSeconds": 1753.36,
+      "text": "let's let's take another example let's"
+    },
+    {
+      "startSeconds": 1750.039,
+      "endSeconds": 1755.279,
+      "text": "Suppose there is an object okay I will"
+    },
+    {
+      "startSeconds": 1753.36,
+      "endSeconds": 1757.48,
+      "text": "try to give you basic example so that"
+    },
+    {
+      "startSeconds": 1755.279,
+      "endSeconds": 1759.279,
+      "text": "you understand it properly and you can"
+    },
+    {
+      "startSeconds": 1757.48,
+      "endSeconds": 1761.72,
+      "text": "explain the same way to your interviewer"
+    },
+    {
+      "startSeconds": 1759.279,
+      "endSeconds": 1765.32,
+      "text": "also perfectly fine okay suppose if"
+    },
+    {
+      "startSeconds": 1761.72,
+      "endSeconds": 1768.84,
+      "text": "there is a method now this method is you"
+    },
+    {
+      "startSeconds": 1765.32,
+      "endSeconds": 1770.72,
+      "text": "know this method is uh when it was a"
+    },
+    {
+      "startSeconds": 1768.84,
+      "endSeconds": 1772.44,
+      "text": "function right it was a function you"
+    },
+    {
+      "startSeconds": 1770.72,
+      "endSeconds": 1774.6,
+      "text": "know what the value of this will be"
+    },
+    {
+      "startSeconds": 1772.44,
+      "endSeconds": 1777.96,
+      "text": "right now you already know right if I"
+    },
+    {
+      "startSeconds": 1774.6,
+      "endSeconds": 1780.159,
+      "text": "will do this over here what will happen"
+    },
+    {
+      "startSeconds": 1777.96,
+      "endSeconds": 1781.559,
+      "text": "right if I do obj dox you already know"
+    },
+    {
+      "startSeconds": 1780.159,
+      "endSeconds": 1784.32,
+      "text": "what the output will"
+    },
+    {
+      "startSeconds": 1781.559,
+      "endSeconds": 1787.799,
+      "text": "be okay so you know that the output"
+    },
+    {
+      "startSeconds": 1784.32,
+      "endSeconds": 1789.559,
+      "text": "would be obj object right uh a A1 and X"
+    },
+    {
+      "startSeconds": 1787.799,
+      "endSeconds": 1791.76,
+      "text": "is function so basically this objects"
+    },
+    {
+      "startSeconds": 1789.559,
+      "endSeconds": 1795.159,
+      "text": "get printed right the value of this is"
+    },
+    {
+      "startSeconds": 1791.76,
+      "endSeconds": 1798.159,
+      "text": "obj right the value of this is obj but"
+    },
+    {
+      "startSeconds": 1795.159,
+      "endSeconds": 1801.2,
+      "text": "if instead of a function suppose instead"
+    },
+    {
+      "startSeconds": 1798.159,
+      "endSeconds": 1803.519,
+      "text": "of a function suppose this was an arrow"
+    },
+    {
+      "startSeconds": 1801.2,
+      "endSeconds": 1805,
+      "text": "function right this is a arrow function"
+    },
+    {
+      "startSeconds": 1803.519,
+      "endSeconds": 1808.12,
+      "text": "right suppose if this is an arrow"
+    },
+    {
+      "startSeconds": 1805,
+      "endSeconds": 1812.08,
+      "text": "function what will be the value of this"
+    },
+    {
+      "startSeconds": 1808.12,
+      "endSeconds": 1813.519,
+      "text": "now the value of this over here will not"
+    },
+    {
+      "startSeconds": 1812.08,
+      "endSeconds": 1817.84,
+      "text": "be this"
+    },
+    {
+      "startSeconds": 1813.519,
+      "endSeconds": 1821.559,
+      "text": "object but it will be it will be its"
+    },
+    {
+      "startSeconds": 1817.84,
+      "endSeconds": 1824.24,
+      "text": "enclosing lexical context right let me"
+    },
+    {
+      "startSeconds": 1821.559,
+      "endSeconds": 1827,
+      "text": "just let me just bring my mdn once again"
+    },
+    {
+      "startSeconds": 1824.24,
+      "endSeconds": 1829.64,
+      "text": "it will be enclosing lexical context"
+    },
+    {
+      "startSeconds": 1827,
+      "endSeconds": 1831.36,
+      "text": "what do you mean by lexical context"
+    },
+    {
+      "startSeconds": 1829.64,
+      "endSeconds": 1834.24,
+      "text": "lexical context"
+    },
+    {
+      "startSeconds": 1831.36,
+      "endSeconds": 1836.72,
+      "text": "means uh you know what is lexical"
+    },
+    {
+      "startSeconds": 1834.24,
+      "endSeconds": 1840.2,
+      "text": "lexical means how it is written in the"
+    },
+    {
+      "startSeconds": 1836.72,
+      "endSeconds": 1842.399,
+      "text": "code right what is where this object is"
+    },
+    {
+      "startSeconds": 1840.2,
+      "endSeconds": 1844.679,
+      "text": "lexically present inside your code"
+    },
+    {
+      "startSeconds": 1842.399,
+      "endSeconds": 1847.2,
+      "text": "lexically present means how it is"
+    },
+    {
+      "startSeconds": 1844.679,
+      "endSeconds": 1849.6,
+      "text": "written inside the code so where it is"
+    },
+    {
+      "startSeconds": 1847.2,
+      "endSeconds": 1852.24,
+      "text": "present it is present in global space"
+    },
+    {
+      "startSeconds": 1849.6,
+      "endSeconds": 1854.76,
+      "text": "isn't it is is it present in global"
+    },
+    {
+      "startSeconds": 1852.24,
+      "endSeconds": 1857.76,
+      "text": "space or not yes so this this keyword"
+    },
+    {
+      "startSeconds": 1854.76,
+      "endSeconds": 1860.96,
+      "text": "will not behave like it is inside a"
+    },
+    {
+      "startSeconds": 1857.76,
+      "endSeconds": 1864.6,
+      "text": "function but it will behave like this is"
+    },
+    {
+      "startSeconds": 1860.96,
+      "endSeconds": 1867.36,
+      "text": "present in the global space got it so if"
+    },
+    {
+      "startSeconds": 1864.6,
+      "endSeconds": 1869.96,
+      "text": "you will save this and refresh the value"
+    },
+    {
+      "startSeconds": 1867.36,
+      "endSeconds": 1873.919,
+      "text": "will be window object once again right"
+    },
+    {
+      "startSeconds": 1869.96,
+      "endSeconds": 1877.399,
+      "text": "the value will be window object once"
+    },
+    {
+      "startSeconds": 1873.919,
+      "endSeconds": 1880.32,
+      "text": "again got it it will take the value"
+    },
+    {
+      "startSeconds": 1877.399,
+      "endSeconds": 1885.799,
+      "text": "of global object because this is now"
+    },
+    {
+      "startSeconds": 1880.32,
+      "endSeconds": 1887.88,
+      "text": "inside a global space got it uh so uh B"
+    },
+    {
+      "startSeconds": 1885.799,
+      "endSeconds": 1891.44,
+      "text": "not inside a global space it is not"
+    },
+    {
+      "startSeconds": 1887.88,
+      "endSeconds": 1893.6,
+      "text": "inside a global space but it is enclosed"
+    },
+    {
+      "startSeconds": 1891.44,
+      "endSeconds": 1896.279,
+      "text": "in that lexical context the lexical"
+    },
+    {
+      "startSeconds": 1893.6,
+      "endSeconds": 1899.159,
+      "text": "context is that Global so that is why"
+    },
+    {
+      "startSeconds": 1896.279,
+      "endSeconds": 1902.559,
+      "text": "the value of this becomes window object"
+    },
+    {
+      "startSeconds": 1899.159,
+      "endSeconds": 1905.48,
+      "text": "right uh it is exactly like it will"
+    },
+    {
+      "startSeconds": 1902.559,
+      "endSeconds": 1907.279,
+      "text": "behave see it will behave if you would"
+    },
+    {
+      "startSeconds": 1905.48,
+      "endSeconds": 1910.399,
+      "text": "have written console log without this"
+    },
+    {
+      "startSeconds": 1907.279,
+      "endSeconds": 1912.48,
+      "text": "object right not inside a method outside"
+    },
+    {
+      "startSeconds": 1910.399,
+      "endSeconds": 1917.279,
+      "text": "right it behaves like this it does not"
+    },
+    {
+      "startSeconds": 1912.48,
+      "endSeconds": 1920.36,
+      "text": "happen it just behaves like this okay so"
+    },
+    {
+      "startSeconds": 1917.279,
+      "endSeconds": 1923.24,
+      "text": "if I have to recap it inside Arrow"
+    },
+    {
+      "startSeconds": 1920.36,
+      "endSeconds": 1925.279,
+      "text": "functions right note down these keywords"
+    },
+    {
+      "startSeconds": 1923.24,
+      "endSeconds": 1928,
+      "text": "right you should understand this keyword"
+    },
+    {
+      "startSeconds": 1925.279,
+      "endSeconds": 1930.279,
+      "text": "it behaves like enclosing lexical"
+    },
+    {
+      "startSeconds": 1928,
+      "endSeconds": 1933.24,
+      "text": "context understand these three keywords"
+    },
+    {
+      "startSeconds": 1930.279,
+      "endSeconds": 1936.919,
+      "text": "right very very important it nobody will"
+    },
+    {
+      "startSeconds": 1933.24,
+      "endSeconds": 1938.96,
+      "text": "you know a lot of teachers don't teach"
+    },
+    {
+      "startSeconds": 1936.919,
+      "endSeconds": 1942.279,
+      "text": "you all this because it is very"
+    },
+    {
+      "startSeconds": 1938.96,
+      "endSeconds": 1943.88,
+      "text": "confusing to teach right and most of the"
+    },
+    {
+      "startSeconds": 1942.279,
+      "endSeconds": 1946.32,
+      "text": "teachers don't know themselves right"
+    },
+    {
+      "startSeconds": 1943.88,
+      "endSeconds": 1949,
+      "text": "they just tell you the basic examples of"
+    },
+    {
+      "startSeconds": 1946.32,
+      "endSeconds": 1952,
+      "text": "this keyword right how it you know"
+    },
+    {
+      "startSeconds": 1949,
+      "endSeconds": 1953.88,
+      "text": "nobody will go into this uh detail to"
+    },
+    {
+      "startSeconds": 1952,
+      "endSeconds": 1956.039,
+      "text": "tell you what is lexical context and all"
+    },
+    {
+      "startSeconds": 1953.88,
+      "endSeconds": 1958.919,
+      "text": "that is why my videos get a little"
+    },
+    {
+      "startSeconds": 1956.039,
+      "endSeconds": 1960.919,
+      "text": "longer I don't know you like it or not"
+    },
+    {
+      "startSeconds": 1958.919,
+      "endSeconds": 1962.72,
+      "text": "um I will see the analytics of this"
+    },
+    {
+      "startSeconds": 1960.919,
+      "endSeconds": 1965,
+      "text": "video whether you are watching till the"
+    },
+    {
+      "startSeconds": 1962.72,
+      "endSeconds": 1968.159,
+      "text": "end or not right because you know"
+    },
+    {
+      "startSeconds": 1965,
+      "endSeconds": 1970.12,
+      "text": "whenever I try to explain tough topics"
+    },
+    {
+      "startSeconds": 1968.159,
+      "endSeconds": 1972.36,
+      "text": "people tend to leave the videos that"
+    },
+    {
+      "startSeconds": 1970.12,
+      "endSeconds": 1975,
+      "text": "video does not get views that video does"
+    },
+    {
+      "startSeconds": 1972.36,
+      "endSeconds": 1977.039,
+      "text": "not get likes I don't know sometimes I"
+    },
+    {
+      "startSeconds": 1975,
+      "endSeconds": 1979.72,
+      "text": "feel I should also teach in a very small"
+    },
+    {
+      "startSeconds": 1977.039,
+      "endSeconds": 1982.6,
+      "text": "small 5 Minutes video of this keyword"
+    },
+    {
+      "startSeconds": 1979.72,
+      "endSeconds": 1984.679,
+      "text": "explaining the basics but then I feel"
+    },
+    {
+      "startSeconds": 1982.6,
+      "endSeconds": 1987.32,
+      "text": "that okay I should dive deep and teach"
+    },
+    {
+      "startSeconds": 1984.679,
+      "endSeconds": 1989,
+      "text": "you right and and explain you each and"
+    },
+    {
+      "startSeconds": 1987.32,
+      "endSeconds": 1991.48,
+      "text": "every complex word"
+    },
+    {
+      "startSeconds": 1989,
+      "endSeconds": 1993.279,
+      "text": "also but I I don't know just comment"
+    },
+    {
+      "startSeconds": 1991.48,
+      "endSeconds": 1995.72,
+      "text": "down and also tell me whether you like"
+    },
+    {
+      "startSeconds": 1993.279,
+      "endSeconds": 1999.039,
+      "text": "such videos or should I cover it in"
+    },
+    {
+      "startSeconds": 1995.72,
+      "endSeconds": 2000.799,
+      "text": "small brief or should I dive deep also"
+    },
+    {
+      "startSeconds": 1999.039,
+      "endSeconds": 2004.639,
+      "text": "tell me in comments please right it will"
+    },
+    {
+      "startSeconds": 2000.799,
+      "endSeconds": 2007.32,
+      "text": "help me in making future videos so this"
+    },
+    {
+      "startSeconds": 2004.639,
+      "endSeconds": 2009.44,
+      "text": "is the input I need from you okay so"
+    },
+    {
+      "startSeconds": 2007.32,
+      "endSeconds": 2011.639,
+      "text": "this is what it is now I just wanted to"
+    },
+    {
+      "startSeconds": 2009.44,
+      "endSeconds": 2013.799,
+      "text": "tell you what is lexical context that is"
+    },
+    {
+      "startSeconds": 2011.639,
+      "endSeconds": 2016.84,
+      "text": "why I told you that it depends on where"
+    },
+    {
+      "startSeconds": 2013.799,
+      "endSeconds": 2018.6,
+      "text": "it is now let me give you a tricky"
+    },
+    {
+      "startSeconds": 2016.84,
+      "endSeconds": 2022.2,
+      "text": "example okay and then I will ask you the"
+    },
+    {
+      "startSeconds": 2018.6,
+      "endSeconds": 2024.96,
+      "text": "same question suppose right suppose let"
+    },
+    {
+      "startSeconds": 2022.2,
+      "endSeconds": 2028.6,
+      "text": "me this is one example now let me just"
+    },
+    {
+      "startSeconds": 2024.96,
+      "endSeconds": 2031.32,
+      "text": "copy this object and let me use right"
+    },
+    {
+      "startSeconds": 2028.6,
+      "endSeconds": 2034.919,
+      "text": "let me make another example so suppose"
+    },
+    {
+      "startSeconds": 2031.32,
+      "endSeconds": 2037.799,
+      "text": "this is obj2 and now suppose this Arrow"
+    },
+    {
+      "startSeconds": 2034.919,
+      "endSeconds": 2040.2,
+      "text": "function is not here but suppose if this"
+    },
+    {
+      "startSeconds": 2037.799,
+      "endSeconds": 2042.799,
+      "text": "is a function right if you will"
+    },
+    {
+      "startSeconds": 2040.2,
+      "endSeconds": 2046.039,
+      "text": "understand this right then you will"
+    },
+    {
+      "startSeconds": 2042.799,
+      "endSeconds": 2048,
+      "text": "understand everything okay so uh if"
+    },
+    {
+      "startSeconds": 2046.039,
+      "endSeconds": 2051.48,
+      "text": "there is an arrow function over here"
+    },
+    {
+      "startSeconds": 2048,
+      "endSeconds": 2054.04,
+      "text": "let's call this function as FN okay or"
+    },
+    {
+      "startSeconds": 2051.48,
+      "endSeconds": 2057.879,
+      "text": "maybe y let's call this as y because"
+    },
+    {
+      "startSeconds": 2054.04,
+      "endSeconds": 2060,
+      "text": "this is X so let us call this as y so"
+    },
+    {
+      "startSeconds": 2057.879,
+      "endSeconds": 2061.04,
+      "text": "now and let me call this function over"
+    },
+    {
+      "startSeconds": 2060,
+      "endSeconds": 2065.159,
+      "text": "here"
+    },
+    {
+      "startSeconds": 2061.04,
+      "endSeconds": 2067.76,
+      "text": "y so now what I have done is now this"
+    },
+    {
+      "startSeconds": 2065.159,
+      "endSeconds": 2069.72,
+      "text": "Arrow function is not a method of this"
+    },
+    {
+      "startSeconds": 2067.76,
+      "endSeconds": 2072.44,
+      "text": "object right this Arrow function is not"
+    },
+    {
+      "startSeconds": 2069.72,
+      "endSeconds": 2076.72,
+      "text": "a method of this object but this Arrow"
+    },
+    {
+      "startSeconds": 2072.44,
+      "endSeconds": 2079.28,
+      "text": "function is enclosed is inside another"
+    },
+    {
+      "startSeconds": 2076.72,
+      "endSeconds": 2083.639,
+      "text": "function which is a method of this"
+    },
+    {
+      "startSeconds": 2079.28,
+      "endSeconds": 2087.56,
+      "text": "object okay now this Arrow function is"
+    },
+    {
+      "startSeconds": 2083.639,
+      "endSeconds": 2090.599,
+      "text": "this right and now I will do obj"
+    },
+    {
+      "startSeconds": 2087.56,
+      "endSeconds": 2093.599,
+      "text": "2.x what will be printed tell me what"
+    },
+    {
+      "startSeconds": 2090.599,
+      "endSeconds": 2096.32,
+      "text": "will be the value of this this what will"
+    },
+    {
+      "startSeconds": 2093.599,
+      "endSeconds": 2100.839,
+      "text": "be the value of this if I save it this"
+    },
+    {
+      "startSeconds": 2096.32,
+      "endSeconds": 2103.64,
+      "text": "the value will be this object this obj2"
+    },
+    {
+      "startSeconds": 2100.839,
+      "endSeconds": 2106.359,
+      "text": "right if you will see a is equals to 20"
+    },
+    {
+      "startSeconds": 2103.64,
+      "endSeconds": 2109.04,
+      "text": "so it will print this object see this"
+    },
+    {
+      "startSeconds": 2106.359,
+      "endSeconds": 2112.92,
+      "text": "this object what is this object this"
+    },
+    {
+      "startSeconds": 2109.04,
+      "endSeconds": 2115.32,
+      "text": "object is obj2 how why the value is this"
+    },
+    {
+      "startSeconds": 2112.92,
+      "endSeconds": 2117.96,
+      "text": "pause the video over here and try to"
+    },
+    {
+      "startSeconds": 2115.32,
+      "endSeconds": 2120.119,
+      "text": "think what we have done over here right"
+    },
+    {
+      "startSeconds": 2117.96,
+      "endSeconds": 2123.04,
+      "text": "and then try to read this definition"
+    },
+    {
+      "startSeconds": 2120.119,
+      "endSeconds": 2125.8,
+      "text": "also right what is the lexical context"
+    },
+    {
+      "startSeconds": 2123.04,
+      "endSeconds": 2128.04,
+      "text": "see whenever you see an arrow function"
+    },
+    {
+      "startSeconds": 2125.8,
+      "endSeconds": 2131,
+      "text": "whenever you see an AR Arrow function"
+    },
+    {
+      "startSeconds": 2128.04,
+      "endSeconds": 2134,
+      "text": "the value of this this keyword will"
+    },
+    {
+      "startSeconds": 2131,
+      "endSeconds": 2137.92,
+      "text": "be where this Arrow function is"
+    },
+    {
+      "startSeconds": 2134,
+      "endSeconds": 2142.079,
+      "text": "lexically enclosed remember this keyword"
+    },
+    {
+      "startSeconds": 2137.92,
+      "endSeconds": 2145.2,
+      "text": "enclosed right what is the enclosing"
+    },
+    {
+      "startSeconds": 2142.079,
+      "endSeconds": 2148.24,
+      "text": "lexical context what is the enclosing"
+    },
+    {
+      "startSeconds": 2145.2,
+      "endSeconds": 2150.76,
+      "text": "lexical context over here the enclosing"
+    },
+    {
+      "startSeconds": 2148.24,
+      "endSeconds": 2153.359,
+      "text": "lexical context is this"
+    },
+    {
+      "startSeconds": 2150.76,
+      "endSeconds": 2156.28,
+      "text": "function right the enclosing lexical"
+    },
+    {
+      "startSeconds": 2153.359,
+      "endSeconds": 2157.359,
+      "text": "context is then this function so how"
+    },
+    {
+      "startSeconds": 2156.28,
+      "endSeconds": 2159.24,
+      "text": "will"
+    },
+    {
+      "startSeconds": 2157.359,
+      "endSeconds": 2161.079,
+      "text": "just think like this right suppose you"
+    },
+    {
+      "startSeconds": 2159.24,
+      "endSeconds": 2163.52,
+      "text": "know I have seen a lot of interviewers"
+    },
+    {
+      "startSeconds": 2161.079,
+      "endSeconds": 2165.359,
+      "text": "ask you output questions right output"
+    },
+    {
+      "startSeconds": 2163.52,
+      "endSeconds": 2167.079,
+      "text": "questions you would have seen right this"
+    },
+    {
+      "startSeconds": 2165.359,
+      "endSeconds": 2168.92,
+      "text": "can be one output question and you will"
+    },
+    {
+      "startSeconds": 2167.079,
+      "endSeconds": 2171.2,
+      "text": "pull your hairs because you won't"
+    },
+    {
+      "startSeconds": 2168.92,
+      "endSeconds": 2173.96,
+      "text": "understand right so how will the this"
+    },
+    {
+      "startSeconds": 2171.2,
+      "endSeconds": 2175.319,
+      "text": "keyword behave this this keyword will"
+    },
+    {
+      "startSeconds": 2173.96,
+      "endSeconds": 2178.88,
+      "text": "exactly"
+    },
+    {
+      "startSeconds": 2175.319,
+      "endSeconds": 2181.599,
+      "text": "behave as if they were ins inside the"
+    },
+    {
+      "startSeconds": 2178.88,
+      "endSeconds": 2184.52,
+      "text": "enclosed lexical context something like"
+    },
+    {
+      "startSeconds": 2181.599,
+      "endSeconds": 2186.52,
+      "text": "this right this Arrow function will"
+    },
+    {
+      "startSeconds": 2184.52,
+      "endSeconds": 2187.76,
+      "text": "behave as if the arrow function was not"
+    },
+    {
+      "startSeconds": 2186.52,
+      "endSeconds": 2189.8,
+      "text": "there"
+    },
+    {
+      "startSeconds": 2187.76,
+      "endSeconds": 2192.88,
+      "text": "right suppose if this Arrow function was"
+    },
+    {
+      "startSeconds": 2189.8,
+      "endSeconds": 2196.8,
+      "text": "not there and the console log will was"
+    },
+    {
+      "startSeconds": 2192.88,
+      "endSeconds": 2199.359,
+      "text": "here it will behave like this okay so"
+    },
+    {
+      "startSeconds": 2196.8,
+      "endSeconds": 2201.72,
+      "text": "this this keyword will behave exactly"
+    },
+    {
+      "startSeconds": 2199.359,
+      "endSeconds": 2205.44,
+      "text": "like how it it would behave inside the"
+    },
+    {
+      "startSeconds": 2201.72,
+      "endSeconds": 2207.839,
+      "text": "enclosing lexical context you know my"
+    },
+    {
+      "startSeconds": 2205.44,
+      "endSeconds": 2210.88,
+      "text": "throat is aching uh and uh you know it"
+    },
+    {
+      "startSeconds": 2207.839,
+      "endSeconds": 2212.88,
+      "text": "is tough for me also to explain all this"
+    },
+    {
+      "startSeconds": 2210.88,
+      "endSeconds": 2216.04,
+      "text": "but you know once you will understand"
+    },
+    {
+      "startSeconds": 2212.88,
+      "endSeconds": 2219.079,
+      "text": "this you will not forget it and it will"
+    },
+    {
+      "startSeconds": 2216.04,
+      "endSeconds": 2221.72,
+      "text": "be veryy easy for you all your output"
+    },
+    {
+      "startSeconds": 2219.079,
+      "endSeconds": 2224.16,
+      "text": "questions comes from here and then"
+    },
+    {
+      "startSeconds": 2221.72,
+      "endSeconds": 2226.24,
+      "text": "people say JavaScript is they hate"
+    },
+    {
+      "startSeconds": 2224.16,
+      "endSeconds": 2227.88,
+      "text": "JavaScript because it's very complex yes"
+    },
+    {
+      "startSeconds": 2226.24,
+      "endSeconds": 2229.8,
+      "text": "I know that this keyword is a little"
+    },
+    {
+      "startSeconds": 2227.88,
+      "endSeconds": 2231.68,
+      "text": "tricky but then if you understand it"
+    },
+    {
+      "startSeconds": 2229.8,
+      "endSeconds": 2232.88,
+      "text": "properly you will never fail in output"
+    },
+    {
+      "startSeconds": 2231.68,
+      "endSeconds": 2237.64,
+      "text": "questions"
+    },
+    {
+      "startSeconds": 2232.88,
+      "endSeconds": 2239.64,
+      "text": "right uh so this console.log will work"
+    },
+    {
+      "startSeconds": 2237.64,
+      "endSeconds": 2242.64,
+      "text": "behav as if the function Arrow function"
+    },
+    {
+      "startSeconds": 2239.64,
+      "endSeconds": 2244.48,
+      "text": "was not here right so it will work Beav"
+    },
+    {
+      "startSeconds": 2242.64,
+      "endSeconds": 2247.92,
+      "text": "so over here the value of this will not"
+    },
+    {
+      "startSeconds": 2244.48,
+      "endSeconds": 2252.28,
+      "text": "be anything it will be this"
+    },
+    {
+      "startSeconds": 2247.92,
+      "endSeconds": 2254.8,
+      "text": "obj2 okay because there is no this"
+    },
+    {
+      "startSeconds": 2252.28,
+      "endSeconds": 2257.359,
+      "text": "keyword for this Arrow function right"
+    },
+    {
+      "startSeconds": 2254.8,
+      "endSeconds": 2260.88,
+      "text": "arrow function does not have their this"
+    },
+    {
+      "startSeconds": 2257.359,
+      "endSeconds": 2263.76,
+      "text": "binding got it so you will have to"
+    },
+    {
+      "startSeconds": 2260.88,
+      "endSeconds": 2266.96,
+      "text": "remember this statement right arrow"
+    },
+    {
+      "startSeconds": 2263.76,
+      "endSeconds": 2269.4,
+      "text": "functions don't provide their own this"
+    },
+    {
+      "startSeconds": 2266.96,
+      "endSeconds": 2271.8,
+      "text": "binding right arrow functions don't"
+    },
+    {
+      "startSeconds": 2269.4,
+      "endSeconds": 2274.92,
+      "text": "provide their own this binding it"
+    },
+    {
+      "startSeconds": 2271.8,
+      "endSeconds": 2277.2,
+      "text": "retains the value of this right it"
+    },
+    {
+      "startSeconds": 2274.92,
+      "endSeconds": 2280.76,
+      "text": "retains the this value of n en closing"
+    },
+    {
+      "startSeconds": 2277.2,
+      "endSeconds": 2283.4,
+      "text": "lexical context right and you know a"
+    },
+    {
+      "startSeconds": 2280.76,
+      "endSeconds": 2286.44,
+      "text": "tricky concept and the mdn document just"
+    },
+    {
+      "startSeconds": 2283.4,
+      "endSeconds": 2289.52,
+      "text": "write one line and done right one line"
+    },
+    {
+      "startSeconds": 2286.44,
+      "endSeconds": 2292.24,
+      "text": "explains this whole tricky concept right"
+    },
+    {
+      "startSeconds": 2289.52,
+      "endSeconds": 2294.56,
+      "text": "so I love mdn documentation though I"
+    },
+    {
+      "startSeconds": 2292.24,
+      "endSeconds": 2296.52,
+      "text": "love to read everything and try to dive"
+    },
+    {
+      "startSeconds": 2294.56,
+      "endSeconds": 2299.52,
+      "text": "deep into JavaScript you know when you"
+    },
+    {
+      "startSeconds": 2296.52,
+      "endSeconds": 2302.119,
+      "text": "will read each of it and try to find out"
+    },
+    {
+      "startSeconds": 2299.52,
+      "endSeconds": 2306.079,
+      "text": "meaning of each word over here you will"
+    },
+    {
+      "startSeconds": 2302.119,
+      "endSeconds": 2308.76,
+      "text": "learn a lot so deep knowledge JavaScript"
+    },
+    {
+      "startSeconds": 2306.079,
+      "endSeconds": 2311.48,
+      "text": "is amazing I just love JavaScript right"
+    },
+    {
+      "startSeconds": 2308.76,
+      "endSeconds": 2313.16,
+      "text": "it has so many things you just have to"
+    },
+    {
+      "startSeconds": 2311.48,
+      "endSeconds": 2315.119,
+      "text": "understand how it is working behind the"
+    },
+    {
+      "startSeconds": 2313.16,
+      "endSeconds": 2316.72,
+      "text": "scenes and you will never mess up with"
+    },
+    {
+      "startSeconds": 2315.119,
+      "endSeconds": 2318.92,
+      "text": "JavaScript JavaScript is the most"
+    },
+    {
+      "startSeconds": 2316.72,
+      "endSeconds": 2321.16,
+      "text": "beautiful language you will fall in love"
+    },
+    {
+      "startSeconds": 2318.92,
+      "endSeconds": 2324.48,
+      "text": "with JavaScript right this is how"
+    },
+    {
+      "startSeconds": 2321.16,
+      "endSeconds": 2327.44,
+      "text": "beautiful language it is I have to be"
+    },
+    {
+      "startSeconds": 2324.48,
+      "endSeconds": 2331.119,
+      "text": "very honest friends I have explored so"
+    },
+    {
+      "startSeconds": 2327.44,
+      "endSeconds": 2335.48,
+      "text": "many languages I know Ruby on Rails I"
+    },
+    {
+      "startSeconds": 2331.119,
+      "endSeconds": 2337.16,
+      "text": "know Pearl I have worked on so many Java"
+    },
+    {
+      "startSeconds": 2335.48,
+      "endSeconds": 2340.4,
+      "text": "I have worked on"
+    },
+    {
+      "startSeconds": 2337.16,
+      "endSeconds": 2343.16,
+      "text": "um what python I have worked on cc++ we"
+    },
+    {
+      "startSeconds": 2340.4,
+      "endSeconds": 2345.68,
+      "text": "did in college I have worked on so many"
+    },
+    {
+      "startSeconds": 2343.16,
+      "endSeconds": 2348.16,
+      "text": "goang right I have worked on goang so"
+    },
+    {
+      "startSeconds": 2345.68,
+      "endSeconds": 2351.76,
+      "text": "many languages and then today if you ask"
+    },
+    {
+      "startSeconds": 2348.16,
+      "endSeconds": 2354.079,
+      "text": "me I the most language the best language"
+    },
+    {
+      "startSeconds": 2351.76,
+      "endSeconds": 2355.48,
+      "text": "I would say is Javascript I just love it"
+    },
+    {
+      "startSeconds": 2354.079,
+      "endSeconds": 2359.88,
+      "text": "right it's very"
+    },
+    {
+      "startSeconds": 2355.48,
+      "endSeconds": 2362.119,
+      "text": "beautiful uh JavaScript runs in so many"
+    },
+    {
+      "startSeconds": 2359.88,
+      "endSeconds": 2363.839,
+      "text": "places because it's such a beautiful"
+    },
+    {
+      "startSeconds": 2362.119,
+      "endSeconds": 2366.64,
+      "text": "language I I can't even explain right"
+    },
+    {
+      "startSeconds": 2363.839,
+      "endSeconds": 2369.24,
+      "text": "it's so beautiful that is why I bought"
+    },
+    {
+      "startSeconds": 2366.64,
+      "endSeconds": 2371.56,
+      "text": "Namaste JavaScript and I wanted to"
+    },
+    {
+      "startSeconds": 2369.24,
+      "endSeconds": 2374.48,
+      "text": "spread all this deep knowledge with you"
+    },
+    {
+      "startSeconds": 2371.56,
+      "endSeconds": 2377.24,
+      "text": "all right if you're liking my videos in"
+    },
+    {
+      "startSeconds": 2374.48,
+      "endSeconds": 2380,
+      "text": "Namaste JavaScript series then please"
+    },
+    {
+      "startSeconds": 2377.24,
+      "endSeconds": 2382.24,
+      "text": "keep liking the videos please comment"
+    },
+    {
+      "startSeconds": 2380,
+      "endSeconds": 2384.8,
+      "text": "down how you are liking it you know when"
+    },
+    {
+      "startSeconds": 2382.24,
+      "endSeconds": 2386.48,
+      "text": "you give me feedback this is the way you"
+    },
+    {
+      "startSeconds": 2384.8,
+      "endSeconds": 2388.92,
+      "text": "give feedback right if you give me a"
+    },
+    {
+      "startSeconds": 2386.48,
+      "endSeconds": 2390.119,
+      "text": "like if you give me comments then I"
+    },
+    {
+      "startSeconds": 2388.92,
+      "endSeconds": 2392.8,
+      "text": "understand that okay you are liking"
+    },
+    {
+      "startSeconds": 2390.119,
+      "endSeconds": 2395.2,
+      "text": "those videos if I get less likes then I"
+    },
+    {
+      "startSeconds": 2392.8,
+      "endSeconds": 2396.64,
+      "text": "feel that that video is not good right"
+    },
+    {
+      "startSeconds": 2395.2,
+      "endSeconds": 2398.96,
+      "text": "please please please if you like like"
+    },
+    {
+      "startSeconds": 2396.64,
+      "endSeconds": 2401.64,
+      "text": "this in-depth concept please please give"
+    },
+    {
+      "startSeconds": 2398.96,
+      "endSeconds": 2403.8,
+      "text": "me a like just a request for you please"
+    },
+    {
+      "startSeconds": 2401.64,
+      "endSeconds": 2406.16,
+      "text": "share it right I see a lot of people"
+    },
+    {
+      "startSeconds": 2403.8,
+      "endSeconds": 2409.119,
+      "text": "nobody shares my video right please"
+    },
+    {
+      "startSeconds": 2406.16,
+      "endSeconds": 2411.599,
+      "text": "share it on social media you know I can"
+    },
+    {
+      "startSeconds": 2409.119,
+      "endSeconds": 2414.56,
+      "text": "it takes a lot of time to make all these"
+    },
+    {
+      "startSeconds": 2411.599,
+      "endSeconds": 2416.56,
+      "text": "videos right you know I understand how"
+    },
+    {
+      "startSeconds": 2414.56,
+      "endSeconds": 2419.079,
+      "text": "this works but if you if I have to"
+    },
+    {
+      "startSeconds": 2416.56,
+      "endSeconds": 2421,
+      "text": "explain you how this works it it is a"
+    },
+    {
+      "startSeconds": 2419.079,
+      "endSeconds": 2424.839,
+      "text": "tough job as a teacher to explain these"
+    },
+    {
+      "startSeconds": 2421,
+      "endSeconds": 2426.4,
+      "text": "tricky Concepts so for my efforts please"
+    },
+    {
+      "startSeconds": 2424.839,
+      "endSeconds": 2428.359,
+      "text": "like this video please share it with you"
+    },
+    {
+      "startSeconds": 2426.4,
+      "endSeconds": 2430.64,
+      "text": "your friends on social media you can"
+    },
+    {
+      "startSeconds": 2428.359,
+      "endSeconds": 2433.319,
+      "text": "share it it just gives me a little"
+    },
+    {
+      "startSeconds": 2430.64,
+      "endSeconds": 2435.72,
+      "text": "happiness that okay I'm making something"
+    },
+    {
+      "startSeconds": 2433.319,
+      "endSeconds": 2437.48,
+      "text": "it is spreading in the world and then"
+    },
+    {
+      "startSeconds": 2435.72,
+      "endSeconds": 2440.48,
+      "text": "some people are liking it right that is"
+    },
+    {
+      "startSeconds": 2437.48,
+      "endSeconds": 2442.44,
+      "text": "all I need please right uh this is what"
+    },
+    {
+      "startSeconds": 2440.48,
+      "endSeconds": 2445.72,
+      "text": "is a request from my side okay let's"
+    },
+    {
+      "startSeconds": 2442.44,
+      "endSeconds": 2447.68,
+      "text": "let's not let me not uh uh push you more"
+    },
+    {
+      "startSeconds": 2445.72,
+      "endSeconds": 2449.92,
+      "text": "but let's move on to another concept"
+    },
+    {
+      "startSeconds": 2447.68,
+      "endSeconds": 2453.56,
+      "text": "right so understand this if I have to"
+    },
+    {
+      "startSeconds": 2449.92,
+      "endSeconds": 2456.4,
+      "text": "recap Once Again Arrow"
+    },
+    {
+      "startSeconds": 2453.56,
+      "endSeconds": 2457.96,
+      "text": "function you will have to understand two"
+    },
+    {
+      "startSeconds": 2456.4,
+      "endSeconds": 2459.88,
+      "text": "words"
+    },
+    {
+      "startSeconds": 2457.96,
+      "endSeconds": 2462.28,
+      "text": "enclosing"
+    },
+    {
+      "startSeconds": 2459.88,
+      "endSeconds": 2463.96,
+      "text": "lexical context you will have to find"
+    },
+    {
+      "startSeconds": 2462.28,
+      "endSeconds": 2466.56,
+      "text": "out what is the enclosing lexical"
+    },
+    {
+      "startSeconds": 2463.96,
+      "endSeconds": 2468.68,
+      "text": "context here what is the enclosing"
+    },
+    {
+      "startSeconds": 2466.56,
+      "endSeconds": 2473.24,
+      "text": "lexical context of this Arrow function"
+    },
+    {
+      "startSeconds": 2468.68,
+      "endSeconds": 2475.28,
+      "text": "it is this function so find out how this"
+    },
+    {
+      "startSeconds": 2473.24,
+      "endSeconds": 2477.72,
+      "text": "keyword will behave inside this"
+    },
+    {
+      "startSeconds": 2475.28,
+      "endSeconds": 2480,
+      "text": "enclosing lexical context how this"
+    },
+    {
+      "startSeconds": 2477.72,
+      "endSeconds": 2482.16,
+      "text": "keyword will behave inside this function"
+    },
+    {
+      "startSeconds": 2480,
+      "endSeconds": 2486.76,
+      "text": "it will the this keyword will represent"
+    },
+    {
+      "startSeconds": 2482.16,
+      "endSeconds": 2488.92,
+      "text": "to this object very easy isn't it so"
+    },
+    {
+      "startSeconds": 2486.76,
+      "endSeconds": 2490.96,
+      "text": "this is how you will have to uh"
+    },
+    {
+      "startSeconds": 2488.92,
+      "endSeconds": 2493.52,
+      "text": "understand right enclosing lexical"
+    },
+    {
+      "startSeconds": 2490.96,
+      "endSeconds": 2494.96,
+      "text": "context and trust me you know if you if"
+    },
+    {
+      "startSeconds": 2493.52,
+      "endSeconds": 2497.24,
+      "text": "the interviewer ask you about this"
+    },
+    {
+      "startSeconds": 2494.96,
+      "endSeconds": 2500.2,
+      "text": "keyword and you put all these keywords"
+    },
+    {
+      "startSeconds": 2497.24,
+      "endSeconds": 2502.44,
+      "text": "in front of the interviewer I dare that"
+    },
+    {
+      "startSeconds": 2500.2,
+      "endSeconds": 2505.52,
+      "text": "the interviewer will not be able to"
+    },
+    {
+      "startSeconds": 2502.44,
+      "endSeconds": 2507.28,
+      "text": "reject you dude right uh I have seen so"
+    },
+    {
+      "startSeconds": 2505.52,
+      "endSeconds": 2509.319,
+      "text": "many JavaScript developers they don't"
+    },
+    {
+      "startSeconds": 2507.28,
+      "endSeconds": 2511.119,
+      "text": "understand this right ever I have asked"
+    },
+    {
+      "startSeconds": 2509.319,
+      "endSeconds": 2513.48,
+      "text": "this this keyword question to anyone"
+    },
+    {
+      "startSeconds": 2511.119,
+      "endSeconds": 2515.28,
+      "text": "nobody was able to answer I have not"
+    },
+    {
+      "startSeconds": 2513.48,
+      "endSeconds": 2517.56,
+      "text": "seen any developer being able to answer"
+    },
+    {
+      "startSeconds": 2515.28,
+      "endSeconds": 2519.72,
+      "text": "in depth they just have superficial"
+    },
+    {
+      "startSeconds": 2517.56,
+      "endSeconds": 2522.2,
+      "text": "knowledge about this keyword but this is"
+    },
+    {
+      "startSeconds": 2519.72,
+      "endSeconds": 2523.599,
+      "text": "the this is the in-depth knowledge you"
+    },
+    {
+      "startSeconds": 2522.2,
+      "endSeconds": 2526.28,
+      "text": "should"
+    },
+    {
+      "startSeconds": 2523.599,
+      "endSeconds": 2528.319,
+      "text": "have okay so now let us just see how"
+    },
+    {
+      "startSeconds": 2526.28,
+      "endSeconds": 2530.28,
+      "text": "this keyword behaves inside Dom right"
+    },
+    {
+      "startSeconds": 2528.319,
+      "endSeconds": 2531.839,
+      "text": "this keyword you cannot just write this"
+    },
+    {
+      "startSeconds": 2530.28,
+      "endSeconds": 2533.64,
+      "text": "keyword over here you can write this"
+    },
+    {
+      "startSeconds": 2531.839,
+      "endSeconds": 2536.24,
+      "text": "keyword in your Dom also right in your"
+    },
+    {
+      "startSeconds": 2533.64,
+      "endSeconds": 2538.52,
+      "text": "HTML right can we write it let us just"
+    },
+    {
+      "startSeconds": 2536.24,
+      "endSeconds": 2540.24,
+      "text": "go and write try to write it suppose if"
+    },
+    {
+      "startSeconds": 2538.52,
+      "endSeconds": 2542.88,
+      "text": "this is Namaste JavaScript written over"
+    },
+    {
+      "startSeconds": 2540.24,
+      "endSeconds": 2545.44,
+      "text": "here H1 tag can I write it yes let me"
+    },
+    {
+      "startSeconds": 2542.88,
+      "endSeconds": 2547.76,
+      "text": "write it on a button click isn't it let"
+    },
+    {
+      "startSeconds": 2545.44,
+      "endSeconds": 2549.28,
+      "text": "us try to write it on a button click how"
+    },
+    {
+      "startSeconds": 2547.76,
+      "endSeconds": 2551.04,
+      "text": "do you put a click Handler inside a"
+    },
+    {
+      "startSeconds": 2549.28,
+      "endSeconds": 2553.52,
+      "text": "button first of all let me a make it a"
+    },
+    {
+      "startSeconds": 2551.04,
+      "endSeconds": 2556.44,
+      "text": "button click me okay let's call this as"
+    },
+    {
+      "startSeconds": 2553.52,
+      "endSeconds": 2558.28,
+      "text": "click me now over here in this button"
+    },
+    {
+      "startSeconds": 2556.44,
+      "endSeconds": 2560.92,
+      "text": "let me write a on click Handler this is"
+    },
+    {
+      "startSeconds": 2558.28,
+      "endSeconds": 2563.64,
+      "text": "how you give it now what do you do if if"
+    },
+    {
+      "startSeconds": 2560.92,
+      "endSeconds": 2566.76,
+      "text": "if you if on click what do I do right"
+    },
+    {
+      "startSeconds": 2563.64,
+      "endSeconds": 2569.92,
+      "text": "just do a alert okay let's do a alert"
+    },
+    {
+      "startSeconds": 2566.76,
+      "endSeconds": 2573.4,
+      "text": "and in this alert uh let us just print"
+    },
+    {
+      "startSeconds": 2569.92,
+      "endSeconds": 2576.359,
+      "text": "the value of this got it let us just"
+    },
+    {
+      "startSeconds": 2573.4,
+      "endSeconds": 2577.8,
+      "text": "print the value of this what do you"
+    },
+    {
+      "startSeconds": 2576.359,
+      "endSeconds": 2580.839,
+      "text": "think will be the value of this over"
+    },
+    {
+      "startSeconds": 2577.8,
+      "endSeconds": 2583.2,
+      "text": "here right if I save the if I save this"
+    },
+    {
+      "startSeconds": 2580.839,
+      "endSeconds": 2584.64,
+      "text": "so I have got my button what happens if"
+    },
+    {
+      "startSeconds": 2583.2,
+      "endSeconds": 2586.839,
+      "text": "I will click on this button what will"
+    },
+    {
+      "startSeconds": 2584.64,
+      "endSeconds": 2589.4,
+      "text": "happen if I click on this button it will"
+    },
+    {
+      "startSeconds": 2586.839,
+      "endSeconds": 2591.72,
+      "text": "give me a alert and it will print the"
+    },
+    {
+      "startSeconds": 2589.4,
+      "endSeconds": 2594.839,
+      "text": "value of this what will the value of"
+    },
+    {
+      "startSeconds": 2591.72,
+      "endSeconds": 2599.079,
+      "text": "this right so let me just check if I"
+    },
+    {
+      "startSeconds": 2594.839,
+      "endSeconds": 2604.24,
+      "text": "click on this it says object HTML button"
+    },
+    {
+      "startSeconds": 2599.079,
+      "endSeconds": 2607.4,
+      "text": "element so basically this button element"
+    },
+    {
+      "startSeconds": 2604.24,
+      "endSeconds": 2610.16,
+      "text": "itself right the this button element"
+    },
+    {
+      "startSeconds": 2607.4,
+      "endSeconds": 2613.559,
+      "text": "right in itself is the value of that"
+    },
+    {
+      "startSeconds": 2610.16,
+      "endSeconds": 2616.16,
+      "text": "this right so what I'm trying to say if"
+    },
+    {
+      "startSeconds": 2613.559,
+      "endSeconds": 2618.079,
+      "text": "you try to find out what is this the"
+    },
+    {
+      "startSeconds": 2616.16,
+      "endSeconds": 2621.52,
+      "text": "value of this keyword when you write"
+    },
+    {
+      "startSeconds": 2618.079,
+      "endSeconds": 2624.76,
+      "text": "like this it will be this HTML button"
+    },
+    {
+      "startSeconds": 2621.52,
+      "endSeconds": 2626.599,
+      "text": "element got it HTML button elephant you"
+    },
+    {
+      "startSeconds": 2624.76,
+      "endSeconds": 2629.48,
+      "text": "can reference that this will be the"
+    },
+    {
+      "startSeconds": 2626.599,
+      "endSeconds": 2631.68,
+      "text": "reference to this HTML button element so"
+    },
+    {
+      "startSeconds": 2629.48,
+      "endSeconds": 2634.4,
+      "text": "if the interviewer might ask you what is"
+    },
+    {
+      "startSeconds": 2631.68,
+      "endSeconds": 2639.2,
+      "text": "this inside Dom elements right Dom"
+    },
+    {
+      "startSeconds": 2634.4,
+      "endSeconds": 2640.76,
+      "text": "elements you can say the value is"
+    },
+    {
+      "startSeconds": 2639.2,
+      "endSeconds": 2645.559,
+      "text": "reference"
+    },
+    {
+      "startSeconds": 2640.76,
+      "endSeconds": 2649.76,
+      "text": "reference to HTML element"
+    },
+    {
+      "startSeconds": 2645.559,
+      "endSeconds": 2652.4,
+      "text": "okay reference to the HTML element now"
+    },
+    {
+      "startSeconds": 2649.76,
+      "endSeconds": 2656.72,
+      "text": "you can you know this is this is very"
+    },
+    {
+      "startSeconds": 2652.4,
+      "endSeconds": 2658.68,
+      "text": "important a lot of times we do this and"
+    },
+    {
+      "startSeconds": 2656.72,
+      "endSeconds": 2660.079,
+      "text": "you can also see I I'll tell you right"
+    },
+    {
+      "startSeconds": 2658.68,
+      "endSeconds": 2663.119,
+      "text": "you can you can"
+    },
+    {
+      "startSeconds": 2660.079,
+      "endSeconds": 2666.319,
+      "text": "also uh you can also do something like"
+    },
+    {
+      "startSeconds": 2663.119,
+      "endSeconds": 2669,
+      "text": "tag name right you can you can have more"
+    },
+    {
+      "startSeconds": 2666.319,
+      "endSeconds": 2670.88,
+      "text": "functions onto this right I think this"
+    },
+    {
+      "startSeconds": 2669,
+      "endSeconds": 2673.079,
+      "text": "should work I don't know if this works"
+    },
+    {
+      "startSeconds": 2670.88,
+      "endSeconds": 2675.599,
+      "text": "or not but let me check if I do a this."
+    },
+    {
+      "startSeconds": 2673.079,
+      "endSeconds": 2678,
+      "text": "tag name and save it let me just refresh"
+    },
+    {
+      "startSeconds": 2675.599,
+      "endSeconds": 2681.4,
+      "text": "my page and click again see this it gave"
+    },
+    {
+      "startSeconds": 2678,
+      "endSeconds": 2683.96,
+      "text": "you button right so you can you can do a"
+    },
+    {
+      "startSeconds": 2681.4,
+      "endSeconds": 2685.96,
+      "text": "lot of things with the this keyword"
+    },
+    {
+      "startSeconds": 2683.96,
+      "endSeconds": 2688.76,
+      "text": "because the this over here represent to"
+    },
+    {
+      "startSeconds": 2685.96,
+      "endSeconds": 2692.44,
+      "text": "this button you can do a lot of crazy"
+    },
+    {
+      "startSeconds": 2688.76,
+      "endSeconds": 2695.119,
+      "text": "things lot of crazy things by using this"
+    },
+    {
+      "startSeconds": 2692.44,
+      "endSeconds": 2696.64,
+      "text": "keyword it gives you the reference to"
+    },
+    {
+      "startSeconds": 2695.119,
+      "endSeconds": 2699.599,
+      "text": "this button"
+    },
+    {
+      "startSeconds": 2696.64,
+      "endSeconds": 2703.44,
+      "text": "got it so so many tricky"
+    },
+    {
+      "startSeconds": 2699.599,
+      "endSeconds": 2706.079,
+      "text": "cases about how this keyword Works uh"
+    },
+    {
+      "startSeconds": 2703.44,
+      "endSeconds": 2709.04,
+      "text": "and you have to understand all of this"
+    },
+    {
+      "startSeconds": 2706.079,
+      "endSeconds": 2711.64,
+      "text": "hope you are taking notes now you know"
+    },
+    {
+      "startSeconds": 2709.04,
+      "endSeconds": 2715.559,
+      "text": "this keyword behaves differently inside"
+    },
+    {
+      "startSeconds": 2711.64,
+      "endSeconds": 2718.4,
+      "text": "class also right inside JavaScript"
+    },
+    {
+      "startSeconds": 2715.559,
+      "endSeconds": 2721.24,
+      "text": "classes"
+    },
+    {
+      "startSeconds": 2718.4,
+      "endSeconds": 2723.839,
+      "text": "Constructors but but but my dear friends"
+    },
+    {
+      "startSeconds": 2721.24,
+      "endSeconds": 2725.559,
+      "text": "in Namaste JavaScript I have not covered"
+    },
+    {
+      "startSeconds": 2723.839,
+      "endSeconds": 2727.359,
+      "text": "objector oriented programming I have not"
+    },
+    {
+      "startSeconds": 2725.559,
+      "endSeconds": 2731.079,
+      "text": "covered classes I have not covered"
+    },
+    {
+      "startSeconds": 2727.359,
+      "endSeconds": 2734.92,
+      "text": "Constructors so you know I don't want to"
+    },
+    {
+      "startSeconds": 2731.079,
+      "endSeconds": 2736.68,
+      "text": "cover that in this video right uh I have"
+    },
+    {
+      "startSeconds": 2734.92,
+      "endSeconds": 2738.52,
+      "text": "right now only covered functional"
+    },
+    {
+      "startSeconds": 2736.68,
+      "endSeconds": 2740.839,
+      "text": "programming how functions work and"
+    },
+    {
+      "startSeconds": 2738.52,
+      "endSeconds": 2742.96,
+      "text": "everything about functions so you will"
+    },
+    {
+      "startSeconds": 2740.839,
+      "endSeconds": 2744.52,
+      "text": "it will be tough for me to explain you"
+    },
+    {
+      "startSeconds": 2742.96,
+      "endSeconds": 2746.48,
+      "text": "right without teaching you class and"
+    },
+    {
+      "startSeconds": 2744.52,
+      "endSeconds": 2749.119,
+      "text": "Constructor and how they behave and all"
+    },
+    {
+      "startSeconds": 2746.48,
+      "endSeconds": 2751.92,
+      "text": "that stuff so I'm skipping this right I"
+    },
+    {
+      "startSeconds": 2749.119,
+      "endSeconds": 2754.76,
+      "text": "am not covering this right now but if"
+    },
+    {
+      "startSeconds": 2751.92,
+      "endSeconds": 2759,
+      "text": "you will ask me whatever I have taught"
+    },
+    {
+      "startSeconds": 2754.76,
+      "endSeconds": 2761.4,
+      "text": "you in this video is more than enough"
+    },
+    {
+      "startSeconds": 2759,
+      "endSeconds": 2764.8,
+      "text": "you know even if you remember 50% of"
+    },
+    {
+      "startSeconds": 2761.4,
+      "endSeconds": 2766.72,
+      "text": "this even 40% of this you will be able"
+    },
+    {
+      "startSeconds": 2764.8,
+      "endSeconds": 2769.96,
+      "text": "to clear your interviews you will be"
+    },
+    {
+      "startSeconds": 2766.72,
+      "endSeconds": 2772,
+      "text": "very good at it but try to cover 100% of"
+    },
+    {
+      "startSeconds": 2769.96,
+      "endSeconds": 2773.76,
+      "text": "this video and this is enough for your"
+    },
+    {
+      "startSeconds": 2772,
+      "endSeconds": 2775.2,
+      "text": "interviews right if you are going for"
+    },
+    {
+      "startSeconds": 2773.76,
+      "endSeconds": 2777.92,
+      "text": "interviews if you are doing your daily"
+    },
+    {
+      "startSeconds": 2775.2,
+      "endSeconds": 2779.52,
+      "text": "coding it is enough if you are doing"
+    },
+    {
+      "startSeconds": 2777.92,
+      "endSeconds": 2781.8,
+      "text": "because generally we don't write classes"
+    },
+    {
+      "startSeconds": 2779.52,
+      "endSeconds": 2783.44,
+      "text": "in JavaScript so you can skip that"
+    },
+    {
+      "startSeconds": 2781.8,
+      "endSeconds": 2786,
+      "text": "portion right how this behaves inside"
+    },
+    {
+      "startSeconds": 2783.44,
+      "endSeconds": 2788.559,
+      "text": "classes in Constructor but I want to"
+    },
+    {
+      "startSeconds": 2786,
+      "endSeconds": 2790.359,
+      "text": "tell you explicitly that this keyword"
+    },
+    {
+      "startSeconds": 2788.559,
+      "endSeconds": 2793.839,
+      "text": "has a different meaning inside classes"
+    },
+    {
+      "startSeconds": 2790.359,
+      "endSeconds": 2796.599,
+      "text": "and Constructors also right see I am a"
+    },
+    {
+      "startSeconds": 2793.839,
+      "endSeconds": 2799.559,
+      "text": "teacher I want to give you everything I"
+    },
+    {
+      "startSeconds": 2796.599,
+      "endSeconds": 2801.599,
+      "text": "know this is what I knew right uh and"
+    },
+    {
+      "startSeconds": 2799.559,
+      "endSeconds": 2804.52,
+      "text": "I'm telling you all this I have also"
+    },
+    {
+      "startSeconds": 2801.599,
+      "endSeconds": 2806.72,
+      "text": "told you a lot more things in depth hope"
+    },
+    {
+      "startSeconds": 2804.52,
+      "endSeconds": 2809.2,
+      "text": "you would have liked it let me just"
+    },
+    {
+      "startSeconds": 2806.72,
+      "endSeconds": 2811.28,
+      "text": "quickly recap the video recap everything"
+    },
+    {
+      "startSeconds": 2809.2,
+      "endSeconds": 2812.04,
+      "text": "what we learned in this video once again"
+    },
+    {
+      "startSeconds": 2811.28,
+      "endSeconds": 2814.599,
+      "text": "very"
+    },
+    {
+      "startSeconds": 2812.04,
+      "endSeconds": 2816.359,
+      "text": "quickly are you with me and then we will"
+    },
+    {
+      "startSeconds": 2814.599,
+      "endSeconds": 2818.88,
+      "text": "end the video because I I think this has"
+    },
+    {
+      "startSeconds": 2816.359,
+      "endSeconds": 2820.839,
+      "text": "been a knowledge heavy session okay let"
+    },
+    {
+      "startSeconds": 2818.88,
+      "endSeconds": 2823.2,
+      "text": "us just quickly recap"
+    },
+    {
+      "startSeconds": 2820.839,
+      "endSeconds": 2827.16,
+      "text": "everything first thing is how this"
+    },
+    {
+      "startSeconds": 2823.2,
+      "endSeconds": 2829.359,
+      "text": "behaves in global space okay keep"
+    },
+    {
+      "startSeconds": 2827.16,
+      "endSeconds": 2831.48,
+      "text": "answering let me repeat it once again"
+    },
+    {
+      "startSeconds": 2829.359,
+      "endSeconds": 2833.96,
+      "text": "listen to me very carefully with 100%"
+    },
+    {
+      "startSeconds": 2831.48,
+      "endSeconds": 2836.28,
+      "text": "attention because I will go very fast"
+    },
+    {
+      "startSeconds": 2833.96,
+      "endSeconds": 2838.8,
+      "text": "how this behaves in global space that"
+    },
+    {
+      "startSeconds": 2836.28,
+      "endSeconds": 2841.64,
+      "text": "this keyword uh that this keyword in"
+    },
+    {
+      "startSeconds": 2838.8,
+      "endSeconds": 2843.599,
+      "text": "global space reference referred to"
+    },
+    {
+      "startSeconds": 2841.64,
+      "endSeconds": 2846.28,
+      "text": "global object that global object in"
+    },
+    {
+      "startSeconds": 2843.599,
+      "endSeconds": 2848.079,
+      "text": "browser is Windows and in the global"
+    },
+    {
+      "startSeconds": 2846.28,
+      "endSeconds": 2849.72,
+      "text": "object in nodejs can be different and it"
+    },
+    {
+      "startSeconds": 2848.079,
+      "endSeconds": 2853.079,
+      "text": "can be different in different the"
+    },
+    {
+      "startSeconds": 2849.72,
+      "endSeconds": 2855.319,
+      "text": "JavaScript runtime got it now how this"
+    },
+    {
+      "startSeconds": 2853.079,
+      "endSeconds": 2858.64,
+      "text": "behaves inside a function the value of"
+    },
+    {
+      "startSeconds": 2855.319,
+      "endSeconds": 2860.96,
+      "text": "the this inside a function depends on"
+    },
+    {
+      "startSeconds": 2858.64,
+      "endSeconds": 2863.119,
+      "text": "strict and non-strict mode inside a"
+    },
+    {
+      "startSeconds": 2860.96,
+      "endSeconds": 2865.76,
+      "text": "strict mode the value of this is"
+    },
+    {
+      "startSeconds": 2863.119,
+      "endSeconds": 2868.24,
+      "text": "undefined got it the value of this is"
+    },
+    {
+      "startSeconds": 2865.76,
+      "endSeconds": 2871.119,
+      "text": "undefined so over here the value of this"
+    },
+    {
+      "startSeconds": 2868.24,
+      "endSeconds": 2872.88,
+      "text": "is undefined but what if you have a"
+    },
+    {
+      "startSeconds": 2871.119,
+      "endSeconds": 2875,
+      "text": "non-strict mode if you go into a"
+    },
+    {
+      "startSeconds": 2872.88,
+      "endSeconds": 2878.64,
+      "text": "non-strict mode then the value of this"
+    },
+    {
+      "startSeconds": 2875,
+      "endSeconds": 2881,
+      "text": "is window right so why this happened why"
+    },
+    {
+      "startSeconds": 2878.64,
+      "endSeconds": 2883.359,
+      "text": "why the value became window because of"
+    },
+    {
+      "startSeconds": 2881,
+      "endSeconds": 2885.88,
+      "text": "this substitution because of this"
+    },
+    {
+      "startSeconds": 2883.359,
+      "endSeconds": 2887.96,
+      "text": "substitution what is this substitution"
+    },
+    {
+      "startSeconds": 2885.88,
+      "endSeconds": 2891,
+      "text": "when it happens this substitution"
+    },
+    {
+      "startSeconds": 2887.96,
+      "endSeconds": 2893,
+      "text": "happens in non-strict mode what is this"
+    },
+    {
+      "startSeconds": 2891,
+      "endSeconds": 2895.28,
+      "text": "substitution this substitution means"
+    },
+    {
+      "startSeconds": 2893,
+      "endSeconds": 2899,
+      "text": "that whenever the value of this keyword"
+    },
+    {
+      "startSeconds": 2895.28,
+      "endSeconds": 2901.2,
+      "text": "is undefined or null then it becomes the"
+    },
+    {
+      "startSeconds": 2899,
+      "endSeconds": 2904.16,
+      "text": "global object the global object here was"
+    },
+    {
+      "startSeconds": 2901.2,
+      "endSeconds": 2907.64,
+      "text": "window so it became window in nodejs or"
+    },
+    {
+      "startSeconds": 2904.16,
+      "endSeconds": 2907.64,
+      "text": "any other runtime it can be different"
+    },
+    {
+      "startSeconds": 2907.68,
+      "endSeconds": 2911.2,
+      "text": "now you have to understand one more"
+    },
+    {
+      "startSeconds": 2909.2,
+      "endSeconds": 2914.16,
+      "text": "important thing this keyword value"
+    },
+    {
+      "startSeconds": 2911.2,
+      "endSeconds": 2916,
+      "text": "depends on how the function is called"
+    },
+    {
+      "startSeconds": 2914.16,
+      "endSeconds": 2917.72,
+      "text": "right very important how the function is"
+    },
+    {
+      "startSeconds": 2916,
+      "endSeconds": 2920.48,
+      "text": "called if you will call the function"
+    },
+    {
+      "startSeconds": 2917.72,
+      "endSeconds": 2922.24,
+      "text": "like this then it will return undefined"
+    },
+    {
+      "startSeconds": 2920.48,
+      "endSeconds": 2926.04,
+      "text": "if you will call it using this object"
+    },
+    {
+      "startSeconds": 2922.24,
+      "endSeconds": 2929,
+      "text": "window dox then it will be window right"
+    },
+    {
+      "startSeconds": 2926.04,
+      "endSeconds": 2932.4,
+      "text": "then it will be window okay so this is"
+    },
+    {
+      "startSeconds": 2929,
+      "endSeconds": 2934.76,
+      "text": "what it is now what you can do how this"
+    },
+    {
+      "startSeconds": 2932.4,
+      "endSeconds": 2936.64,
+      "text": "behave inside objects method so suppose"
+    },
+    {
+      "startSeconds": 2934.76,
+      "endSeconds": 2939.04,
+      "text": "if we have a object student and we have"
+    },
+    {
+      "startSeconds": 2936.64,
+      "endSeconds": 2941.599,
+      "text": "a method print name so the value of this"
+    },
+    {
+      "startSeconds": 2939.04,
+      "endSeconds": 2945,
+      "text": "keyword will be this object the value of"
+    },
+    {
+      "startSeconds": 2941.599,
+      "endSeconds": 2949.559,
+      "text": "this keyword over here is value of this"
+    },
+    {
+      "startSeconds": 2945,
+      "endSeconds": 2951.44,
+      "text": "keyword is OB object right object this"
+    },
+    {
+      "startSeconds": 2949.559,
+      "endSeconds": 2953.559,
+      "text": "keyword over here represents the object"
+    },
+    {
+      "startSeconds": 2951.44,
+      "endSeconds": 2956.72,
+      "text": "if you do a student. print name it will"
+    },
+    {
+      "startSeconds": 2953.559,
+      "endSeconds": 2960.44,
+      "text": "print you a got it because this do name"
+    },
+    {
+      "startSeconds": 2956.72,
+      "endSeconds": 2962.2,
+      "text": "is ache now suppose now comes another"
+    },
+    {
+      "startSeconds": 2960.44,
+      "endSeconds": 2963.88,
+      "text": "thing there are three methods call apply"
+    },
+    {
+      "startSeconds": 2962.2,
+      "endSeconds": 2967.16,
+      "text": "bind you have to go watch the video and"
+    },
+    {
+      "startSeconds": 2963.88,
+      "endSeconds": 2969.24,
+      "text": "also comment down below right uh uh"
+    },
+    {
+      "startSeconds": 2967.16,
+      "endSeconds": 2970.96,
+      "text": "whether you like it or not whether you"
+    },
+    {
+      "startSeconds": 2969.24,
+      "endSeconds": 2973.599,
+      "text": "have watched the video or not I will"
+    },
+    {
+      "startSeconds": 2970.96,
+      "endSeconds": 2976.079,
+      "text": "check everyone please I will check how"
+    },
+    {
+      "startSeconds": 2973.599,
+      "endSeconds": 2978.2,
+      "text": "many comments I get uh people who have"
+    },
+    {
+      "startSeconds": 2976.079,
+      "endSeconds": 2980.92,
+      "text": "watched that call apply by video okay go"
+    },
+    {
+      "startSeconds": 2978.2,
+      "endSeconds": 2984.119,
+      "text": "watch that but if you want to share this"
+    },
+    {
+      "startSeconds": 2980.92,
+      "endSeconds": 2987.72,
+      "text": "functions you can share it using student"
+    },
+    {
+      "startSeconds": 2984.119,
+      "endSeconds": 2991.24,
+      "text": "print name call and over here you will"
+    },
+    {
+      "startSeconds": 2987.72,
+      "endSeconds": 2993.64,
+      "text": "pass the value what the this should be"
+    },
+    {
+      "startSeconds": 2991.24,
+      "endSeconds": 2995.52,
+      "text": "if you will write stud see first of all"
+    },
+    {
+      "startSeconds": 2993.64,
+      "endSeconds": 2998.24,
+      "text": "why did I write student. print name"
+    },
+    {
+      "startSeconds": 2995.52,
+      "endSeconds": 3001.28,
+      "text": "because this print name method was on"
+    },
+    {
+      "startSeconds": 2998.24,
+      "endSeconds": 3004.52,
+      "text": "student object so I will always write"
+    },
+    {
+      "startSeconds": 3001.28,
+      "endSeconds": 3007,
+      "text": "student. print name right student. print"
+    },
+    {
+      "startSeconds": 3004.52,
+      "endSeconds": 3010.04,
+      "text": "name student so this basically you know"
+    },
+    {
+      "startSeconds": 3007,
+      "endSeconds": 3013.319,
+      "text": "what this line means student. print name"
+    },
+    {
+      "startSeconds": 3010.04,
+      "endSeconds": 3016.4,
+      "text": "means I'm referring to student do print"
+    },
+    {
+      "startSeconds": 3013.319,
+      "endSeconds": 3018.839,
+      "text": "name this function and I'm calling this"
+    },
+    {
+      "startSeconds": 3016.4,
+      "endSeconds": 3021.24,
+      "text": "function with whatever you will pass"
+    },
+    {
+      "startSeconds": 3018.839,
+      "endSeconds": 3023.4,
+      "text": "over here will become the value of this"
+    },
+    {
+      "startSeconds": 3021.24,
+      "endSeconds": 3025.16,
+      "text": "keyword got it the whatever you will"
+    },
+    {
+      "startSeconds": 3023.4,
+      "endSeconds": 3026.4,
+      "text": "pass over here will become the value of"
+    },
+    {
+      "startSeconds": 3025.16,
+      "endSeconds": 3030.52,
+      "text": "this this"
+    },
+    {
+      "startSeconds": 3026.4,
+      "endSeconds": 3032.28,
+      "text": "keyword okay so call it like this now"
+    },
+    {
+      "startSeconds": 3030.52,
+      "endSeconds": 3033.839,
+      "text": "you will also have to study what is"
+    },
+    {
+      "startSeconds": 3032.28,
+      "endSeconds": 3035.72,
+      "text": "apply and bind and what is the"
+    },
+    {
+      "startSeconds": 3033.839,
+      "endSeconds": 3037.92,
+      "text": "difference between them very important"
+    },
+    {
+      "startSeconds": 3035.72,
+      "endSeconds": 3040.16,
+      "text": "interview questions now when this is"
+    },
+    {
+      "startSeconds": 3037.92,
+      "endSeconds": 3042.4,
+      "text": "covered last thing is inside Arrow"
+    },
+    {
+      "startSeconds": 3040.16,
+      "endSeconds": 3045.48,
+      "text": "functions inside Arrow function you have"
+    },
+    {
+      "startSeconds": 3042.4,
+      "endSeconds": 3047.76,
+      "text": "to remember this thing enclosing lexical"
+    },
+    {
+      "startSeconds": 3045.48,
+      "endSeconds": 3049.119,
+      "text": "context whenever you see an arrow"
+    },
+    {
+      "startSeconds": 3047.76,
+      "endSeconds": 3051.559,
+      "text": "function you have to find what is the"
+    },
+    {
+      "startSeconds": 3049.119,
+      "endSeconds": 3054.16,
+      "text": "enclosing lexical context so if you will"
+    },
+    {
+      "startSeconds": 3051.559,
+      "endSeconds": 3056.359,
+      "text": "see the the enclosing lexical context is"
+    },
+    {
+      "startSeconds": 3054.16,
+      "endSeconds": 3059.079,
+      "text": "the global space over here so the value"
+    },
+    {
+      "startSeconds": 3056.359,
+      "endSeconds": 3061.599,
+      "text": "of this will be global object whatever"
+    },
+    {
+      "startSeconds": 3059.079,
+      "endSeconds": 3063.72,
+      "text": "the global object is in browser in case"
+    },
+    {
+      "startSeconds": 3061.599,
+      "endSeconds": 3065.24,
+      "text": "of browser we have window the value will"
+    },
+    {
+      "startSeconds": 3063.72,
+      "endSeconds": 3068.52,
+      "text": "be window over"
+    },
+    {
+      "startSeconds": 3065.24,
+      "endSeconds": 3071.2,
+      "text": "here now suppose this was a tricky"
+    },
+    {
+      "startSeconds": 3068.52,
+      "endSeconds": 3074.2,
+      "text": "example lot of output questions come"
+    },
+    {
+      "startSeconds": 3071.2,
+      "endSeconds": 3077.28,
+      "text": "like this okay lot of output questions"
+    },
+    {
+      "startSeconds": 3074.2,
+      "endSeconds": 3080.319,
+      "text": "so uh over here I have made a nested"
+    },
+    {
+      "startSeconds": 3077.28,
+      "endSeconds": 3082.52,
+      "text": "method right it is nested so basically"
+    },
+    {
+      "startSeconds": 3080.319,
+      "endSeconds": 3084.92,
+      "text": "it is an arrow function inside another"
+    },
+    {
+      "startSeconds": 3082.52,
+      "endSeconds": 3087.839,
+      "text": "function so the value of this keyword"
+    },
+    {
+      "startSeconds": 3084.92,
+      "endSeconds": 3090.16,
+      "text": "inside the this Arrow function will be"
+    },
+    {
+      "startSeconds": 3087.839,
+      "endSeconds": 3091.96,
+      "text": "depend on enclosing lexical context"
+    },
+    {
+      "startSeconds": 3090.16,
+      "endSeconds": 3094.2,
+      "text": "enclosing lexical context is this"
+    },
+    {
+      "startSeconds": 3091.96,
+      "endSeconds": 3097.52,
+      "text": "function so the value of this keyword"
+    },
+    {
+      "startSeconds": 3094.2,
+      "endSeconds": 3099.359,
+      "text": "will be obj2 so this was it then the"
+    },
+    {
+      "startSeconds": 3097.52,
+      "endSeconds": 3101.48,
+      "text": "last thing that we studied was how they"
+    },
+    {
+      "startSeconds": 3099.359,
+      "endSeconds": 3103.28,
+      "text": "behave in Dom elements so in Dom"
+    },
+    {
+      "startSeconds": 3101.48,
+      "endSeconds": 3106.28,
+      "text": "elements it will refer to that"
+    },
+    {
+      "startSeconds": 3103.28,
+      "endSeconds": 3108.68,
+      "text": "particular HTML Dom element that this"
+    },
+    {
+      "startSeconds": 3106.28,
+      "endSeconds": 3111.28,
+      "text": "keyword will refer to this particular"
+    },
+    {
+      "startSeconds": 3108.68,
+      "endSeconds": 3114.64,
+      "text": "Dom element and if you will do a alert"
+    },
+    {
+      "startSeconds": 3111.28,
+      "endSeconds": 3116.52,
+      "text": "we have seen that it becomes this button"
+    },
+    {
+      "startSeconds": 3114.64,
+      "endSeconds": 3119.48,
+      "text": "cool so this this was it my dear friends"
+    },
+    {
+      "startSeconds": 3116.52,
+      "endSeconds": 3121.079,
+      "text": "in this keyword so now please watch this"
+    },
+    {
+      "startSeconds": 3119.48,
+      "endSeconds": 3123.319,
+      "text": "video once again if you did not"
+    },
+    {
+      "startSeconds": 3121.079,
+      "endSeconds": 3125.44,
+      "text": "understand it learn it because it is"
+    },
+    {
+      "startSeconds": 3123.319,
+      "endSeconds": 3127.799,
+      "text": "very tricky very important and this is"
+    },
+    {
+      "startSeconds": 3125.44,
+      "endSeconds": 3129.92,
+      "text": "good enough for preparing for interviews"
+    },
+    {
+      "startSeconds": 3127.799,
+      "endSeconds": 3131.72,
+      "text": "please please please like this video"
+    },
+    {
+      "startSeconds": 3129.92,
+      "endSeconds": 3133.96,
+      "text": "right now please like this video if you"
+    },
+    {
+      "startSeconds": 3131.72,
+      "endSeconds": 3135.839,
+      "text": "have really liked the concept whatever I"
+    },
+    {
+      "startSeconds": 3133.96,
+      "endSeconds": 3138.24,
+      "text": "have taught if you would have enjoyed"
+    },
+    {
+      "startSeconds": 3135.839,
+      "endSeconds": 3140.119,
+      "text": "the video please share it please please"
+    },
+    {
+      "startSeconds": 3138.24,
+      "endSeconds": 3142.359,
+      "text": "please share it on social media on"
+    },
+    {
+      "startSeconds": 3140.119,
+      "endSeconds": 3144.64,
+      "text": "LinkedIn on Twitter or Instagram stories"
+    },
+    {
+      "startSeconds": 3142.359,
+      "endSeconds": 3147.359,
+      "text": "on wherever you wish to please share"
+    },
+    {
+      "startSeconds": 3144.64,
+      "endSeconds": 3150.079,
+      "text": "this video it will help me motivate to"
+    },
+    {
+      "startSeconds": 3147.359,
+      "endSeconds": 3152.319,
+      "text": "make more video it motivates me a lot it"
+    },
+    {
+      "startSeconds": 3150.079,
+      "endSeconds": 3154.599,
+      "text": "encourages me a lot to make these videos"
+    },
+    {
+      "startSeconds": 3152.319,
+      "endSeconds": 3156.359,
+      "text": "and thank you so much for watching I"
+    },
+    {
+      "startSeconds": 3154.599,
+      "endSeconds": 3158.04,
+      "text": "would be looking at to your comments"
+    },
+    {
+      "startSeconds": 3156.359,
+      "endSeconds": 3160.52,
+      "text": "please comment down if you would have"
+    },
+    {
+      "startSeconds": 3158.04,
+      "endSeconds": 3163.4,
+      "text": "understood it properly try to write in"
+    },
+    {
+      "startSeconds": 3160.52,
+      "endSeconds": 3165.359,
+      "text": "your own words the definition of this"
+    },
+    {
+      "startSeconds": 3163.4,
+      "endSeconds": 3167.76,
+      "text": "and how would you explain you to the"
+    },
+    {
+      "startSeconds": 3165.359,
+      "endSeconds": 3169.72,
+      "text": "interviewer right now in the comments"
+    },
+    {
+      "startSeconds": 3167.76,
+      "endSeconds": 3171.76,
+      "text": "please please do that this exercise is"
+    },
+    {
+      "startSeconds": 3169.72,
+      "endSeconds": 3173.319,
+      "text": "very important you have to write down in"
+    },
+    {
+      "startSeconds": 3171.76,
+      "endSeconds": 3176.119,
+      "text": "the comments how will you explain what"
+    },
+    {
+      "startSeconds": 3173.319,
+      "endSeconds": 3178.88,
+      "text": "is the value of this please take down"
+    },
+    {
+      "startSeconds": 3176.119,
+      "endSeconds": 3181.48,
+      "text": "notes in the comments and please do it"
+    },
+    {
+      "startSeconds": 3178.88,
+      "endSeconds": 3183.559,
+      "text": "for yourself and I will like the best"
+    },
+    {
+      "startSeconds": 3181.48,
+      "endSeconds": 3185.48,
+      "text": "comments I will give it a small heart"
+    },
+    {
+      "startSeconds": 3183.559,
+      "endSeconds": 3187.09,
+      "text": "and that's all for this video see you in"
+    },
+    {
+      "startSeconds": 3185.48,
+      "endSeconds": 3204.16,
+      "text": "the next one thanks for"
+    },
+    {
+      "startSeconds": 3187.09,
+      "endSeconds": 3206.25,
+      "text": "[Music]"
+    },
+    {
+      "startSeconds": 3204.16,
+      "endSeconds": 3210.559,
+      "text": "watching"
+    },
+    {
+      "startSeconds": 3206.25,
+      "endSeconds": 3210.559,
+      "text": "[Music]"
+    }
+  ]
+}

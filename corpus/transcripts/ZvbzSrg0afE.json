@@ -1,0 +1,372 @@
+{
+  "videoId": "ZvbzSrg0afE",
+  "videoTitle": "How JavaScript Works 🔥& Execution Context | Namaste JavaScript Ep.1",
+  "languageCode": "en-IN",
+  "segments": [
+    {
+      "startSeconds": 0,
+      "endSeconds": 3.421,
+      "text": "Do you know how JavaScript works and how the code is executed?"
+    },
+    {
+      "startSeconds": 3.621,
+      "endSeconds": 6.597,
+      "text": "Is JavaScript synchronous or asynchronous?"
+    },
+    {
+      "startSeconds": 6.797,
+      "endSeconds": 10.212,
+      "text": "Is JavaScript single threaded or is it multi threaded?"
+    },
+    {
+      "startSeconds": 10.412,
+      "endSeconds": 14.915,
+      "text": "Don't worry we'll cover everything, just keep watching Namaste JavaScript."
+    },
+    {
+      "startSeconds": 15.115,
+      "endSeconds": 20.025,
+      "text": "Before I start explaining, listen to this first core fundamental."
+    },
+    {
+      "startSeconds": 20.225,
+      "endSeconds": 25.339,
+      "text": "It is: \"Everything in JavaScript happens inside the Execution Context\""
+    },
+    {
+      "startSeconds": 25.539,
+      "endSeconds": 30.771,
+      "text": "I repeat, Everything in JavaScript happens inside the Execution Context"
+    },
+    {
+      "startSeconds": 30.871,
+      "endSeconds": 35.057,
+      "text": "You can assume this execution context to be a big box or a container"
+    },
+    {
+      "startSeconds": 35.098,
+      "endSeconds": 36.956,
+      "text": "in which whole JavaScript code is executed."
+    },
+    {
+      "startSeconds": 37.156,
+      "endSeconds": 40.831,
+      "text": "So let us now see how this execution context actually looks like."
+    },
+    {
+      "startSeconds": 41.031,
+      "endSeconds": 42.331,
+      "text": "So follow along with me"
+    },
+    {
+      "startSeconds": 42.531,
+      "endSeconds": 44.26,
+      "text": "So now watch this carefully"
+    },
+    {
+      "startSeconds": 44.457,
+      "endSeconds": 50.053,
+      "text": "So execution context is like a big box"
+    },
+    {
+      "startSeconds": 50.253,
+      "endSeconds": 53.061,
+      "text": "and it has two components in it."
+    },
+    {
+      "startSeconds": 53.261,
+      "endSeconds": 57.28,
+      "text": "The first component is also known as the memory component"
+    },
+    {
+      "startSeconds": 57.48,
+      "endSeconds": 62.155,
+      "text": "So this is the place where all the variables and functions are stored as key-value pairs"
+    },
+    {
+      "startSeconds": 62.355,
+      "endSeconds": 64.065,
+      "text": "Something like this."
+    },
+    {
+      "startSeconds": 64.265,
+      "endSeconds": 69.011,
+      "text": "Key value, if suppose we have a variable 'a' which is equivalent to 10, it will be stored over here"
+    },
+    {
+      "startSeconds": 69.211,
+      "endSeconds": 73.178,
+      "text": "and similarly functions are stored over here in this memory component"
+    },
+    {
+      "startSeconds": 73.378,
+      "endSeconds": 76.603,
+      "text": "there is also a heavy word for this memory component"
+    },
+    {
+      "startSeconds": 76.623,
+      "endSeconds": 81.207,
+      "text": "and this memory component is also known as Variable environment"
+    },
+    {
+      "startSeconds": 81.414,
+      "endSeconds": 89.05,
+      "text": "Okay? so listen to this carefully. Variable environment."
+    },
+    {
+      "startSeconds": 89.25,
+      "endSeconds": 94.859,
+      "text": "So this is the sort of an environment in which all these variables and functions are stored as key-value pairs."
+    },
+    {
+      "startSeconds": 95.059,
+      "endSeconds": 96.27,
+      "text": "Something like that."
+    },
+    {
+      "startSeconds": 96.47,
+      "endSeconds": 102.128,
+      "text": "The second component of this execution context is the code component. Here it is."
+    },
+    {
+      "startSeconds": 102.328,
+      "endSeconds": 106.852,
+      "text": "This is the place where code is executed one line at a time."
+    },
+    {
+      "startSeconds": 107.052,
+      "endSeconds": 108.022,
+      "text": "So this is the place"
+    },
+    {
+      "startSeconds": 108.222,
+      "endSeconds": 111.706,
+      "text": "So just like this memory component is also known as the variable environment,"
+    },
+    {
+      "startSeconds": 111.906,
+      "endSeconds": 114.999,
+      "text": "there is also a heavy word for this code component"
+    },
+    {
+      "startSeconds": 115.199,
+      "endSeconds": 120.479,
+      "text": "it is also known as Thread of execution, I repeat, Thread of execution."
+    },
+    {
+      "startSeconds": 120.679,
+      "endSeconds": 124.127,
+      "text": "So this is also known as the Thread of Execution."
+    },
+    {
+      "startSeconds": 124.327,
+      "endSeconds": 127.729,
+      "text": "So this Thread of execution is like a thread in which"
+    },
+    {
+      "startSeconds": 127.757,
+      "endSeconds": 130.39,
+      "text": "the whole code is executed one line at a time"
+    },
+    {
+      "startSeconds": 130.586,
+      "endSeconds": 135.186,
+      "text": "so here's the time for another core fundamental. Listen to this really very carefully."
+    },
+    {
+      "startSeconds": 135.386,
+      "endSeconds": 138.464,
+      "text": "So JavaScript is a synchronous single-threaded language."
+    },
+    {
+      "startSeconds": 138.664,
+      "endSeconds": 140.526,
+      "text": "So this is really very important,"
+    },
+    {
+      "startSeconds": 140.726,
+      "endSeconds": 144.373,
+      "text": "So JavaScript is a synchronous single-threaded language."
+    },
+    {
+      "startSeconds": 144.573,
+      "endSeconds": 146.714,
+      "text": "So let us see what this means."
+    },
+    {
+      "startSeconds": 146.914,
+      "endSeconds": 148.548,
+      "text": "So when I say single threaded,"
+    },
+    {
+      "startSeconds": 148.748,
+      "endSeconds": 152.515,
+      "text": "that means JavaScript can only execute one command at a time"
+    },
+    {
+      "startSeconds": 152.715,
+      "endSeconds": 155.404,
+      "text": "and when I say synchronous single threaded,"
+    },
+    {
+      "startSeconds": 155.604,
+      "endSeconds": 160.039,
+      "text": "that means that JavaScript can only execute one command at a time,"
+    },
+    {
+      "startSeconds": 160.239,
+      "endSeconds": 162.448,
+      "text": "and in a specific order. Okay?"
+    },
+    {
+      "startSeconds": 162.648,
+      "endSeconds": 168.697,
+      "text": "So that means that it can only go to the next line once the current line has been finished executing"
+    },
+    {
+      "startSeconds": 168.897,
+      "endSeconds": 171.739,
+      "text": "So that means, synchronous single threaded language."
+    },
+    {
+      "startSeconds": 171.939,
+      "endSeconds": 173.636,
+      "text": "So let's revise once again."
+    },
+    {
+      "startSeconds": 173.836,
+      "endSeconds": 177.984,
+      "text": "So JavaScript is a synchronous single-threaded language."
+    },
+    {
+      "startSeconds": 178.184,
+      "endSeconds": 183.059,
+      "text": "I know that you must be thinking then, we have heard of something known as AJAX, right?"
+    },
+    {
+      "startSeconds": 183.259,
+      "endSeconds": 186.378,
+      "text": "A stand for Asynchronous, so what does that mean?"
+    },
+    {
+      "startSeconds": 186.578,
+      "endSeconds": 188.514,
+      "text": "Don't worry we'll cover everything"
+    },
+    {
+      "startSeconds": 188.543,
+      "endSeconds": 192.571,
+      "text": "We'll be going slowly and we'll be understanding each of these concepts properly"
+    },
+    {
+      "startSeconds": 192.586,
+      "endSeconds": 193.316,
+      "text": "as we go ahead."
+    },
+    {
+      "startSeconds": 193.516,
+      "endSeconds": 195.27,
+      "text": "So for now, just remember that"
+    },
+    {
+      "startSeconds": 195.47,
+      "endSeconds": 200.056,
+      "text": "JavaScript is not possible without this beautiful execution context."
+    },
+    {
+      "startSeconds": 200.256,
+      "endSeconds": 202.204,
+      "text": "Let's just quickly recap what we studied."
+    },
+    {
+      "startSeconds": 202.404,
+      "endSeconds": 205.211,
+      "text": "This whole thing which you can see is the execution context."
+    },
+    {
+      "startSeconds": 205.411,
+      "endSeconds": 207.744,
+      "text": "The first component is known as the memory component"
+    },
+    {
+      "startSeconds": 207.944,
+      "endSeconds": 209.965,
+      "text": "The second component is known as the code component"
+    },
+    {
+      "startSeconds": 210.165,
+      "endSeconds": 214.376,
+      "text": "Memory component contains variables and functions as the key-value pairs."
+    },
+    {
+      "startSeconds": 214.576,
+      "endSeconds": 218.878,
+      "text": "and code component is the place where the whole JS code is executed."
+    },
+    {
+      "startSeconds": 219.078,
+      "endSeconds": 221.751,
+      "text": "Memory component is also known as the variable environment"
+    },
+    {
+      "startSeconds": 221.951,
+      "endSeconds": 225.769,
+      "text": "Code component is also known as the thread of execution."
+    },
+    {
+      "startSeconds": 225.969,
+      "endSeconds": 229.004,
+      "text": "I know these are a lot of jargons"
+    },
+    {
+      "startSeconds": 229.204,
+      "endSeconds": 233.001,
+      "text": "and trust me these things are really very important and nobody teaches them."
+    },
+    {
+      "startSeconds": 233.201,
+      "endSeconds": 234.351,
+      "text": "But, I am here on a mission"
+    },
+    {
+      "startSeconds": 234.551,
+      "endSeconds": 236.573,
+      "text": "to make you fall in love with JavaScript"
+    },
+    {
+      "startSeconds": 236.773,
+      "endSeconds": 238.331,
+      "text": "and don't worry continue along with me"
+    },
+    {
+      "startSeconds": 238.531,
+      "endSeconds": 241.516,
+      "text": "and we'll be covering everything in detail."
+    },
+    {
+      "startSeconds": 241.716,
+      "endSeconds": 244.582,
+      "text": "So in the next video I'll walk you through a real JS program"
+    },
+    {
+      "startSeconds": 244.782,
+      "endSeconds": 248.318,
+      "text": "We will see how this whole beautiful execution context is created,"
+    },
+    {
+      "startSeconds": 248.518,
+      "endSeconds": 250.362,
+      "text": "how this memory section is created"
+    },
+    {
+      "startSeconds": 250.562,
+      "endSeconds": 253.346,
+      "text": "how this code is executed inside this code component"
+    },
+    {
+      "startSeconds": 253.546,
+      "endSeconds": 255.341,
+      "text": "everything we'll cover in the next video."
+    }
+  ]
+}

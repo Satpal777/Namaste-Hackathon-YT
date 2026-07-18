@@ -1,0 +1,6662 @@
+{
+  "videoId": "DlTVt1rZjIo",
+  "videoTitle": "Promise APIs + Interview Questions 🔥 | S.02 Ep.05 - Namaste JavaScript  | all, allSettled, race, any",
+  "languageCode": "en",
+  "segments": [
+    {
+      "startSeconds": 0.199,
+      "endSeconds": 4.799,
+      "text": "welcome back to Namaste JavaScript and"
+    },
+    {
+      "startSeconds": 2.24,
+      "endSeconds": 6.799,
+      "text": "today we are going to cover promise apis"
+    },
+    {
+      "startSeconds": 4.799,
+      "endSeconds": 9,
+      "text": "so promise apis there are four promise"
+    },
+    {
+      "startSeconds": 6.799,
+      "endSeconds": 11.28,
+      "text": "apis which are majorly important and I"
+    },
+    {
+      "startSeconds": 9,
+      "endSeconds": 13.28,
+      "text": "will cover all of them in this video"
+    },
+    {
+      "startSeconds": 11.28,
+      "endSeconds": 15.4,
+      "text": "These promise apis will be very helpful"
+    },
+    {
+      "startSeconds": 13.28,
+      "endSeconds": 17.48,
+      "text": "when you are giving your interviews"
+    },
+    {
+      "startSeconds": 15.4,
+      "endSeconds": 19.56,
+      "text": "right and not just interviews it will be"
+    },
+    {
+      "startSeconds": 17.48,
+      "endSeconds": 21.72,
+      "text": "very helpful when you are building your"
+    },
+    {
+      "startSeconds": 19.56,
+      "endSeconds": 23.72,
+      "text": "day-to-day applications you know I was"
+    },
+    {
+      "startSeconds": 21.72,
+      "endSeconds": 26.48,
+      "text": "building a major project in my Namaste"
+    },
+    {
+      "startSeconds": 23.72,
+      "endSeconds": 28.119,
+      "text": "react course and you know we came to a"
+    },
+    {
+      "startSeconds": 26.48,
+      "endSeconds": 30.279,
+      "text": "place where we have to made make"
+    },
+    {
+      "startSeconds": 28.119,
+      "endSeconds": 32.96,
+      "text": "parallel API calls and that that is"
+    },
+    {
+      "startSeconds": 30.279,
+      "endSeconds": 35.36,
+      "text": "where we used promise apis these promise"
+    },
+    {
+      "startSeconds": 32.96,
+      "endSeconds": 37.68,
+      "text": "apis okay so it is very important even"
+    },
+    {
+      "startSeconds": 35.36,
+      "endSeconds": 39.719,
+      "text": "if you are building react applications"
+    },
+    {
+      "startSeconds": 37.68,
+      "endSeconds": 42.48,
+      "text": "wherever JavaScript promises comes into"
+    },
+    {
+      "startSeconds": 39.719,
+      "endSeconds": 44.239,
+      "text": "picture these apis will be very helpful"
+    },
+    {
+      "startSeconds": 42.48,
+      "endSeconds": 46.48,
+      "text": "so much important interview questions"
+    },
+    {
+      "startSeconds": 44.239,
+      "endSeconds": 49.48,
+      "text": "also comes with this I will try to cover"
+    },
+    {
+      "startSeconds": 46.48,
+      "endSeconds": 52.16,
+      "text": "everything in this video so let us just"
+    },
+    {
+      "startSeconds": 49.48,
+      "endSeconds": 54.039,
+      "text": "start before moving on to the code I"
+    },
+    {
+      "startSeconds": 52.16,
+      "endSeconds": 55.6,
+      "text": "will first tell you the theory portion"
+    },
+    {
+      "startSeconds": 54.039,
+      "endSeconds": 57.879,
+      "text": "of it so that you can understand it"
+    },
+    {
+      "startSeconds": 55.6,
+      "endSeconds": 60.76,
+      "text": "properly then we will write code for it"
+    },
+    {
+      "startSeconds": 57.879,
+      "endSeconds": 63.96,
+      "text": "okay so let's get started so get your"
+    },
+    {
+      "startSeconds": 60.76,
+      "endSeconds": 67.2,
+      "text": "notebook and pen and let's just begin"
+    },
+    {
+      "startSeconds": 63.96,
+      "endSeconds": 70.36,
+      "text": "okay so I have my uh notebook and pen"
+    },
+    {
+      "startSeconds": 67.2,
+      "endSeconds": 73.04,
+      "text": "with me so let me just tell you so first"
+    },
+    {
+      "startSeconds": 70.36,
+      "endSeconds": 74.439,
+      "text": "promise API that we are going to cover"
+    },
+    {
+      "startSeconds": 73.04,
+      "endSeconds": 77.88,
+      "text": "is known as"
+    },
+    {
+      "startSeconds": 74.439,
+      "endSeconds": 80.6,
+      "text": "promise.all okay"
+    },
+    {
+      "startSeconds": 77.88,
+      "endSeconds": 82.52,
+      "text": "promise.all so why this promise.all is"
+    },
+    {
+      "startSeconds": 80.6,
+      "endSeconds": 85.079,
+      "text": "used and what is the contract for it let"
+    },
+    {
+      "startSeconds": 82.52,
+      "endSeconds": 87.52,
+      "text": "me tell you that so suppose if you have"
+    },
+    {
+      "startSeconds": 85.079,
+      "endSeconds": 89.72,
+      "text": "to make parallel API calls and get the"
+    },
+    {
+      "startSeconds": 87.52,
+      "endSeconds": 92.24,
+      "text": "results it's a very important use case"
+    },
+    {
+      "startSeconds": 89.72,
+      "endSeconds": 95.079,
+      "text": "right very what you'll say uh very"
+    },
+    {
+      "startSeconds": 92.24,
+      "endSeconds": 99.079,
+      "text": "popular use case right so what happens"
+    },
+    {
+      "startSeconds": 95.079,
+      "endSeconds": 101.119,
+      "text": "is suppose if you have uh 10 IDs and"
+    },
+    {
+      "startSeconds": 99.079,
+      "endSeconds": 104.32,
+      "text": "suppose like let me take an hypothetical"
+    },
+    {
+      "startSeconds": 101.119,
+      "endSeconds": 106.759,
+      "text": "example uh there are 10 IDs uh let's"
+    },
+    {
+      "startSeconds": 104.32,
+      "endSeconds": 108.759,
+      "text": "call it as user IDs and you want and you"
+    },
+    {
+      "startSeconds": 106.759,
+      "endSeconds": 111.399,
+      "text": "have an API call for user info and you"
+    },
+    {
+      "startSeconds": 108.759,
+      "endSeconds": 114.28,
+      "text": "want to make 10 parallel API calls and"
+    },
+    {
+      "startSeconds": 111.399,
+      "endSeconds": 116.2,
+      "text": "get the results for 10 different users"
+    },
+    {
+      "startSeconds": 114.28,
+      "endSeconds": 117.84,
+      "text": "how will you do that right this kind of"
+    },
+    {
+      "startSeconds": 116.2,
+      "endSeconds": 120.039,
+      "text": "stuff this is very common when you are"
+    },
+    {
+      "startSeconds": 117.84,
+      "endSeconds": 122.92,
+      "text": "building a project so there that is when"
+    },
+    {
+      "startSeconds": 120.039,
+      "endSeconds": 127.2,
+      "text": "you will use promise.all kind of API"
+    },
+    {
+      "startSeconds": 122.92,
+      "endSeconds": 129.319,
+      "text": "right now it is used to handle multiple"
+    },
+    {
+      "startSeconds": 127.2,
+      "endSeconds": 131.68,
+      "text": "promises together okay if there are"
+    },
+    {
+      "startSeconds": 129.319,
+      "endSeconds": 135.319,
+      "text": "multiple API calls multiple promises it"
+    },
+    {
+      "startSeconds": 131.68,
+      "endSeconds": 137.599,
+      "text": "will handle that how so promise.all the"
+    },
+    {
+      "startSeconds": 135.319,
+      "endSeconds": 141.28,
+      "text": "contract of promise.all is it takes a"
+    },
+    {
+      "startSeconds": 137.599,
+      "endSeconds": 144.12,
+      "text": "array of promises as an input so now I'm"
+    },
+    {
+      "startSeconds": 141.28,
+      "endSeconds": 146.08,
+      "text": "calling this as I array but when you"
+    },
+    {
+      "startSeconds": 144.12,
+      "endSeconds": 148.519,
+      "text": "will read the documentation it is"
+    },
+    {
+      "startSeconds": 146.08,
+      "endSeconds": 151.44,
+      "text": "iterable okay so what you will pass"
+    },
+    {
+      "startSeconds": 148.519,
+      "endSeconds": 153.12,
+      "text": "inside is is an iterable and array is an"
+    },
+    {
+      "startSeconds": 151.44,
+      "endSeconds": 155.12,
+      "text": "iterable and most of the times you will"
+    },
+    {
+      "startSeconds": 153.12,
+      "endSeconds": 157.04,
+      "text": "just use array only so let's stick to"
+    },
+    {
+      "startSeconds": 155.12,
+      "endSeconds": 159.599,
+      "text": "array for now right uh there are"
+    },
+    {
+      "startSeconds": 157.04,
+      "endSeconds": 161.519,
+      "text": "multiple iterables in JavaScript uh we"
+    },
+    {
+      "startSeconds": 159.599,
+      "endSeconds": 165.04,
+      "text": "are just concerned about array because"
+    },
+    {
+      "startSeconds": 161.519,
+      "endSeconds": 167.36,
+      "text": "that is what you will use right uh so uh"
+    },
+    {
+      "startSeconds": 165.04,
+      "endSeconds": 170.04,
+      "text": "so it will take an array of promises"
+    },
+    {
+      "startSeconds": 167.36,
+      "endSeconds": 172.48,
+      "text": "suppose let's let's assume that we have"
+    },
+    {
+      "startSeconds": 170.04,
+      "endSeconds": 174.319,
+      "text": "three promises okay three API calls or"
+    },
+    {
+      "startSeconds": 172.48,
+      "endSeconds": 176.92,
+      "text": "three promises you can have multiple as"
+    },
+    {
+      "startSeconds": 174.319,
+      "endSeconds": 178.48,
+      "text": "much number as you want to right uh but"
+    },
+    {
+      "startSeconds": 176.92,
+      "endSeconds": 181.28,
+      "text": "right now I am just concerned about"
+    },
+    {
+      "startSeconds": 178.48,
+      "endSeconds": 183.72,
+      "text": "three Okay so so there suppose there are"
+    },
+    {
+      "startSeconds": 181.28,
+      "endSeconds": 186.879,
+      "text": "three promises P1 P2 and"
+    },
+    {
+      "startSeconds": 183.72,
+      "endSeconds": 189,
+      "text": "P3 okay so what happens is when you will"
+    },
+    {
+      "startSeconds": 186.879,
+      "endSeconds": 192.64,
+      "text": "write promise. all and you will give it"
+    },
+    {
+      "startSeconds": 189,
+      "endSeconds": 195.159,
+      "text": "P1 P2 P3 it will make three parallel API"
+    },
+    {
+      "startSeconds": 192.64,
+      "endSeconds": 196.959,
+      "text": "calls and get the result right it will"
+    },
+    {
+      "startSeconds": 195.159,
+      "endSeconds": 199.68,
+      "text": "make three parall API calls and get the"
+    },
+    {
+      "startSeconds": 196.959,
+      "endSeconds": 201.68,
+      "text": "result now suppose listen to me"
+    },
+    {
+      "startSeconds": 199.68,
+      "endSeconds": 204.08,
+      "text": "carefully here is when the trick comes"
+    },
+    {
+      "startSeconds": 201.68,
+      "endSeconds": 205.68,
+      "text": "into picture what will happen Okay let's"
+    },
+    {
+      "startSeconds": 204.08,
+      "endSeconds": 207.28,
+      "text": "take different scenarios and see what"
+    },
+    {
+      "startSeconds": 205.68,
+      "endSeconds": 210.28,
+      "text": "will happen What will be the output of"
+    },
+    {
+      "startSeconds": 207.28,
+      "endSeconds": 213.48,
+      "text": "it right so suppose"
+    },
+    {
+      "startSeconds": 210.28,
+      "endSeconds": 216.28,
+      "text": "this P1 takes P1 is an API call it takes"
+    },
+    {
+      "startSeconds": 213.48,
+      "endSeconds": 219.92,
+      "text": "maybe let's call it as uh maybe it takes"
+    },
+    {
+      "startSeconds": 216.28,
+      "endSeconds": 224.56,
+      "text": "three 3 seconds to come right 3 seconds"
+    },
+    {
+      "startSeconds": 219.92,
+      "endSeconds": 227.76,
+      "text": "to uh get the results right suppose P2"
+    },
+    {
+      "startSeconds": 224.56,
+      "endSeconds": 231,
+      "text": "takes uh maybe let's call it as 1 second"
+    },
+    {
+      "startSeconds": 227.76,
+      "endSeconds": 235.079,
+      "text": "okay maybe after 1 second P2 gets"
+    },
+    {
+      "startSeconds": 231,
+      "endSeconds": 238.04,
+      "text": "resolved and P3 let's let's take it as 2"
+    },
+    {
+      "startSeconds": 235.079,
+      "endSeconds": 241.28,
+      "text": "seconds okay so P1 takes 3 seconds to"
+    },
+    {
+      "startSeconds": 238.04,
+      "endSeconds": 244.079,
+      "text": "get fulfilled P2 takes one and P3 takes"
+    },
+    {
+      "startSeconds": 241.28,
+      "endSeconds": 245.76,
+      "text": "2 seconds and suppose all of them are"
+    },
+    {
+      "startSeconds": 244.079,
+      "endSeconds": 248.4,
+      "text": "success okay first of all let us talk"
+    },
+    {
+      "startSeconds": 245.76,
+      "endSeconds": 252.519,
+      "text": "about the success case okay all of them"
+    },
+    {
+      "startSeconds": 248.4,
+      "endSeconds": 256.239,
+      "text": "are success okay all of them but all the"
+    },
+    {
+      "startSeconds": 252.519,
+      "endSeconds": 259.359,
+      "text": "FBI calls were success they did not fail"
+    },
+    {
+      "startSeconds": 256.239,
+      "endSeconds": 261.84,
+      "text": "okay so in that case what will happen"
+    },
+    {
+      "startSeconds": 259.359,
+      "endSeconds": 266.28,
+      "text": "okay in that case what will happen so"
+    },
+    {
+      "startSeconds": 261.84,
+      "endSeconds": 269.639,
+      "text": "the output of Promise do all will be an"
+    },
+    {
+      "startSeconds": 266.28,
+      "endSeconds": 271.32,
+      "text": "array with the result of all these three"
+    },
+    {
+      "startSeconds": 269.639,
+      "endSeconds": 273.759,
+      "text": "promise right what it will do it will"
+    },
+    {
+      "startSeconds": 271.32,
+      "endSeconds": 276.479,
+      "text": "make an API call it will collect all"
+    },
+    {
+      "startSeconds": 273.759,
+      "endSeconds": 278.96,
+      "text": "these result and it will give it inside"
+    },
+    {
+      "startSeconds": 276.479,
+      "endSeconds": 281.039,
+      "text": "an array and it will give it back right"
+    },
+    {
+      "startSeconds": 278.96,
+      "endSeconds": 283.68,
+      "text": "just like we have array. map right you"
+    },
+    {
+      "startSeconds": 281.039,
+      "endSeconds": 286.96,
+      "text": "given a given a array and it returns an"
+    },
+    {
+      "startSeconds": 283.68,
+      "endSeconds": 290.08,
+      "text": "array similarly promise do all all will"
+    },
+    {
+      "startSeconds": 286.96,
+      "endSeconds": 292.479,
+      "text": "return an array with value of all these"
+    },
+    {
+      "startSeconds": 290.08,
+      "endSeconds": 295.56,
+      "text": "results okay so it will have a Val one"
+    },
+    {
+      "startSeconds": 292.479,
+      "endSeconds": 299.56,
+      "text": "let me call this as Val one Val 2 and"
+    },
+    {
+      "startSeconds": 295.56,
+      "endSeconds": 302.96,
+      "text": "Val 3 right so this Val one comes from"
+    },
+    {
+      "startSeconds": 299.56,
+      "endSeconds": 305.639,
+      "text": "from P1 right uh this Val one comes from"
+    },
+    {
+      "startSeconds": 302.96,
+      "endSeconds": 308.639,
+      "text": "P1 the result of P1 the Val 2 is result"
+    },
+    {
+      "startSeconds": 305.639,
+      "endSeconds": 311.28,
+      "text": "of P2 and the Val 3 is result of P3 very"
+    },
+    {
+      "startSeconds": 308.639,
+      "endSeconds": 314.24,
+      "text": "simple right this is what it will do how"
+    },
+    {
+      "startSeconds": 311.28,
+      "endSeconds": 316.56,
+      "text": "much time will it take so basically now"
+    },
+    {
+      "startSeconds": 314.24,
+      "endSeconds": 319.72,
+      "text": "let me tell you okay so what happened"
+    },
+    {
+      "startSeconds": 316.56,
+      "endSeconds": 321.84,
+      "text": "right now is uh the first API took 3"
+    },
+    {
+      "startSeconds": 319.72,
+      "endSeconds": 326.16,
+      "text": "seconds the second took 1 second and the"
+    },
+    {
+      "startSeconds": 321.84,
+      "endSeconds": 329.24,
+      "text": "third took 2 seconds right but the final"
+    },
+    {
+      "startSeconds": 326.16,
+      "endSeconds": 333.4,
+      "text": "promise. all API will take 3 seconds"
+    },
+    {
+      "startSeconds": 329.24,
+      "endSeconds": 335.319,
+      "text": "basic basically after 3 seconds right so"
+    },
+    {
+      "startSeconds": 333.4,
+      "endSeconds": 337.919,
+      "text": "after 3 seconds it will give me this"
+    },
+    {
+      "startSeconds": 335.319,
+      "endSeconds": 340.72,
+      "text": "result basically this is my"
+    },
+    {
+      "startSeconds": 337.919,
+      "endSeconds": 343.4,
+      "text": "output okay after 3 seconds why 3"
+    },
+    {
+      "startSeconds": 340.72,
+      "endSeconds": 345.759,
+      "text": "seconds because promise.all will make"
+    },
+    {
+      "startSeconds": 343.4,
+      "endSeconds": 348.16,
+      "text": "all these three API calls in parallel"
+    },
+    {
+      "startSeconds": 345.759,
+      "endSeconds": 351.199,
+      "text": "but it will wait for all of them to"
+    },
+    {
+      "startSeconds": 348.16,
+      "endSeconds": 352.72,
+      "text": "finish okay this is an important thing"
+    },
+    {
+      "startSeconds": 351.199,
+      "endSeconds": 358.039,
+      "text": "it will wait"
+    },
+    {
+      "startSeconds": 352.72,
+      "endSeconds": 360.84,
+      "text": "for all of them to finish note it down"
+    },
+    {
+      "startSeconds": 358.039,
+      "endSeconds": 363.8,
+      "text": "in your notebook okay it will wait for"
+    },
+    {
+      "startSeconds": 360.84,
+      "endSeconds": 366.599,
+      "text": "all of them to finish it will collect"
+    },
+    {
+      "startSeconds": 363.8,
+      "endSeconds": 369.759,
+      "text": "the results and it will give you this"
+    },
+    {
+      "startSeconds": 366.599,
+      "endSeconds": 372.039,
+      "text": "result and this will be the output over"
+    },
+    {
+      "startSeconds": 369.759,
+      "endSeconds": 374.44,
+      "text": "here right it will give you an array of"
+    },
+    {
+      "startSeconds": 372.039,
+      "endSeconds": 376.919,
+      "text": "output so we discussed the success case"
+    },
+    {
+      "startSeconds": 374.44,
+      "endSeconds": 379,
+      "text": "over here now let us just see what if"
+    },
+    {
+      "startSeconds": 376.919,
+      "endSeconds": 382.199,
+      "text": "any of these promises fails or get"
+    },
+    {
+      "startSeconds": 379,
+      "endSeconds": 383.72,
+      "text": "rejected right so uh right now all these"
+    },
+    {
+      "startSeconds": 382.199,
+      "endSeconds": 385.68,
+      "text": "promises were getting fulfilled they"
+    },
+    {
+      "startSeconds": 383.72,
+      "endSeconds": 387.96,
+      "text": "were getting uh success they were"
+    },
+    {
+      "startSeconds": 385.68,
+      "endSeconds": 390.759,
+      "text": "getting resolved what if any of these"
+    },
+    {
+      "startSeconds": 387.96,
+      "endSeconds": 393.16,
+      "text": "promises get rejected then promise. all"
+    },
+    {
+      "startSeconds": 390.759,
+      "endSeconds": 396.28,
+      "text": "works differently okay so let us see"
+    },
+    {
+      "startSeconds": 393.16,
+      "endSeconds": 398.4,
+      "text": "that so again let us take an example"
+    },
+    {
+      "startSeconds": 396.28,
+      "endSeconds": 401.84,
+      "text": "similar kind of example where we have"
+    },
+    {
+      "startSeconds": 398.4,
+      "endSeconds": 406.56,
+      "text": "promised. all but this time what happens"
+    },
+    {
+      "startSeconds": 401.84,
+      "endSeconds": 410,
+      "text": "is it again has these three promises P1"
+    },
+    {
+      "startSeconds": 406.56,
+      "endSeconds": 413.479,
+      "text": "P2 and P3 but this time one of the"
+    },
+    {
+      "startSeconds": 410,
+      "endSeconds": 416.28,
+      "text": "promises will get rejected okay one of"
+    },
+    {
+      "startSeconds": 413.479,
+      "endSeconds": 418.52,
+      "text": "these promises will get rejected so uh"
+    },
+    {
+      "startSeconds": 416.28,
+      "endSeconds": 421.919,
+      "text": "let us take the similar kind of example"
+    },
+    {
+      "startSeconds": 418.52,
+      "endSeconds": 426.599,
+      "text": "right so P1 takes 3 seconds P2 will take"
+    },
+    {
+      "startSeconds": 421.919,
+      "endSeconds": 430.36,
+      "text": "1 second and P3 will take 2 seconds okay"
+    },
+    {
+      "startSeconds": 426.599,
+      "endSeconds": 433.52,
+      "text": "but what happens is after 1 seconds P2"
+    },
+    {
+      "startSeconds": 430.36,
+      "endSeconds": 436.319,
+      "text": "gets rejected after 1 seconds P2 get"
+    },
+    {
+      "startSeconds": 433.52,
+      "endSeconds": 438.56,
+      "text": "rejected now what will happen so listen"
+    },
+    {
+      "startSeconds": 436.319,
+      "endSeconds": 442.56,
+      "text": "to me very carefully take down note in"
+    },
+    {
+      "startSeconds": 438.56,
+      "endSeconds": 445.879,
+      "text": "your notebook as soon as any of these"
+    },
+    {
+      "startSeconds": 442.56,
+      "endSeconds": 448.759,
+      "text": "promises will get rejected promise doall"
+    },
+    {
+      "startSeconds": 445.879,
+      "endSeconds": 451.759,
+      "text": "will throw an error promise doall will"
+    },
+    {
+      "startSeconds": 448.759,
+      "endSeconds": 454.52,
+      "text": "also be a failure and whatever error"
+    },
+    {
+      "startSeconds": 451.759,
+      "endSeconds": 456.599,
+      "text": "will will it get from that promise from"
+    },
+    {
+      "startSeconds": 454.52,
+      "endSeconds": 460.08,
+      "text": "that rejected promise it will throw the"
+    },
+    {
+      "startSeconds": 456.599,
+      "endSeconds": 463.68,
+      "text": "same error as its result okay so the"
+    },
+    {
+      "startSeconds": 460.08,
+      "endSeconds": 466.72,
+      "text": "output will be error okay the output"
+    },
+    {
+      "startSeconds": 463.68,
+      "endSeconds": 470.12,
+      "text": "will be e r r o r and this will be the"
+    },
+    {
+      "startSeconds": 466.72,
+      "endSeconds": 472.96,
+      "text": "same error which is returned by P2 okay"
+    },
+    {
+      "startSeconds": 470.12,
+      "endSeconds": 474.56,
+      "text": "the output will be error and what will"
+    },
+    {
+      "startSeconds": 472.96,
+      "endSeconds": 477.56,
+      "text": "happen"
+    },
+    {
+      "startSeconds": 474.56,
+      "endSeconds": 480.159,
+      "text": "immediately right"
+    },
+    {
+      "startSeconds": 477.56,
+      "endSeconds": 486.159,
+      "text": "immediately immediately"
+    },
+    {
+      "startSeconds": 480.159,
+      "endSeconds": 489.28,
+      "text": "as soon as as soon as error"
+    },
+    {
+      "startSeconds": 486.159,
+      "endSeconds": 492.96,
+      "text": "happened right as soon as error happened"
+    },
+    {
+      "startSeconds": 489.28,
+      "endSeconds": 496.759,
+      "text": "it will return the error in this case in"
+    },
+    {
+      "startSeconds": 492.96,
+      "endSeconds": 499.56,
+      "text": "this case P2 takes one second and after"
+    },
+    {
+      "startSeconds": 496.759,
+      "endSeconds": 503.479,
+      "text": "1 second it got error so that means"
+    },
+    {
+      "startSeconds": 499.56,
+      "endSeconds": 506.4,
+      "text": "after 1 second right after 1 second you"
+    },
+    {
+      "startSeconds": 503.479,
+      "endSeconds": 508.96,
+      "text": "will see an error it will not even what"
+    },
+    {
+      "startSeconds": 506.4,
+      "endSeconds": 512.12,
+      "text": "I'm trying to say it will not even wait"
+    },
+    {
+      "startSeconds": 508.96,
+      "endSeconds": 515.56,
+      "text": "for other promises to get successful or"
+    },
+    {
+      "startSeconds": 512.12,
+      "endSeconds": 517.519,
+      "text": "rejected or whatever see right now it is"
+    },
+    {
+      "startSeconds": 515.56,
+      "endSeconds": 520.68,
+      "text": "just one second and it throwed an error"
+    },
+    {
+      "startSeconds": 517.519,
+      "endSeconds": 524.68,
+      "text": "already right it did not even wait for"
+    },
+    {
+      "startSeconds": 520.68,
+      "endSeconds": 526.56,
+      "text": "P1 or P3 right uh P1 and P3 might get"
+    },
+    {
+      "startSeconds": 524.68,
+      "endSeconds": 528.64,
+      "text": "rejected or might get resolved it did"
+    },
+    {
+      "startSeconds": 526.56,
+      "endSeconds": 531.519,
+      "text": "not wait for all of them it just throw"
+    },
+    {
+      "startSeconds": 528.64,
+      "endSeconds": 534.92,
+      "text": "an error right away right so this is how"
+    },
+    {
+      "startSeconds": 531.519,
+      "endSeconds": 538.04,
+      "text": "promise.all works now what will happen"
+    },
+    {
+      "startSeconds": 534.92,
+      "endSeconds": 541.079,
+      "text": "to P1 and P3 now right those API calls"
+    },
+    {
+      "startSeconds": 538.04,
+      "endSeconds": 543.6,
+      "text": "were already made will it get cancelled"
+    },
+    {
+      "startSeconds": 541.079,
+      "endSeconds": 546.32,
+      "text": "no whenever you make an API call"
+    },
+    {
+      "startSeconds": 543.6,
+      "endSeconds": 549.16,
+      "text": "whenever the promis is uh like the"
+    },
+    {
+      "startSeconds": 546.32,
+      "endSeconds": 550.76,
+      "text": "promise is uh created right whenever the"
+    },
+    {
+      "startSeconds": 549.16,
+      "endSeconds": 552.88,
+      "text": "promise is created or promise is"
+    },
+    {
+      "startSeconds": 550.76,
+      "endSeconds": 555.24,
+      "text": "executed so what will happen you can't"
+    },
+    {
+      "startSeconds": 552.88,
+      "endSeconds": 556.959,
+      "text": "cancel the promise in between right you"
+    },
+    {
+      "startSeconds": 555.24,
+      "endSeconds": 558.88,
+      "text": "can't cancel the promises between it is"
+    },
+    {
+      "startSeconds": 556.959,
+      "endSeconds": 561.32,
+      "text": "not possible in JavaScript at this point"
+    },
+    {
+      "startSeconds": 558.88,
+      "endSeconds": 564.32,
+      "text": "of time okay there are theories where"
+    },
+    {
+      "startSeconds": 561.32,
+      "endSeconds": 567.04,
+      "text": "people are trying to get back cancelable"
+    },
+    {
+      "startSeconds": 564.32,
+      "endSeconds": 569.72,
+      "text": "promises uh I feel that it's a stupid"
+    },
+    {
+      "startSeconds": 567.04,
+      "endSeconds": 572.519,
+      "text": "idea right to be honest uh but again"
+    },
+    {
+      "startSeconds": 569.72,
+      "endSeconds": 574.279,
+      "text": "right that's a topic for some other day"
+    },
+    {
+      "startSeconds": 572.519,
+      "endSeconds": 577.079,
+      "text": "but what I'm trying to say right now you"
+    },
+    {
+      "startSeconds": 574.279,
+      "endSeconds": 580.32,
+      "text": "can't cancel a promise okay so what will"
+    },
+    {
+      "startSeconds": 577.079,
+      "endSeconds": 583.2,
+      "text": "happen these promises will eventually"
+    },
+    {
+      "startSeconds": 580.32,
+      "endSeconds": 586.2,
+      "text": "accept or reject it it's depend on their"
+    },
+    {
+      "startSeconds": 583.2,
+      "endSeconds": 588.88,
+      "text": "fate but promise. all will get rejected"
+    },
+    {
+      "startSeconds": 586.2,
+      "endSeconds": 591.04,
+      "text": "as soon as any any of these promises"
+    },
+    {
+      "startSeconds": 588.88,
+      "endSeconds": 593.64,
+      "text": "gets rejected this is what I want to say"
+    },
+    {
+      "startSeconds": 591.04,
+      "endSeconds": 596.959,
+      "text": "it will not wait for all the promises"
+    },
+    {
+      "startSeconds": 593.64,
+      "endSeconds": 600,
+      "text": "right when it was successful right in"
+    },
+    {
+      "startSeconds": 596.959,
+      "endSeconds": 603.279,
+      "text": "the above example it was waiting for all"
+    },
+    {
+      "startSeconds": 600,
+      "endSeconds": 606.36,
+      "text": "the promises to be success and after 3"
+    },
+    {
+      "startSeconds": 603.279,
+      "endSeconds": 608.64,
+      "text": "seconds it gave you the result over here"
+    },
+    {
+      "startSeconds": 606.36,
+      "endSeconds": 610.399,
+      "text": "over here as soon as a promise is"
+    },
+    {
+      "startSeconds": 608.64,
+      "endSeconds": 613.279,
+      "text": "rejected it will just throw an error"
+    },
+    {
+      "startSeconds": 610.399,
+      "endSeconds": 615.88,
+      "text": "right so basically uh it's kind of all"
+    },
+    {
+      "startSeconds": 613.279,
+      "endSeconds": 617.519,
+      "text": "or none right so if all the promises"
+    },
+    {
+      "startSeconds": 615.88,
+      "endSeconds": 620,
+      "text": "success so it will give you the"
+    },
+    {
+      "startSeconds": 617.519,
+      "endSeconds": 622.56,
+      "text": "collective result if any one of them"
+    },
+    {
+      "startSeconds": 620,
+      "endSeconds": 624.399,
+      "text": "fails that means the whole uh whole"
+    },
+    {
+      "startSeconds": 622.56,
+      "endSeconds": 626.88,
+      "text": "promise chain fails right the whole"
+    },
+    {
+      "startSeconds": 624.399,
+      "endSeconds": 629.32,
+      "text": "collection of promises fails okay so"
+    },
+    {
+      "startSeconds": 626.88,
+      "endSeconds": 632.079,
+      "text": "this is what the thing is it will not"
+    },
+    {
+      "startSeconds": 629.32,
+      "endSeconds": 634,
+      "text": "wait eventually these promises will be"
+    },
+    {
+      "startSeconds": 632.079,
+      "endSeconds": 638.04,
+      "text": "success or will be failure it does not"
+    },
+    {
+      "startSeconds": 634,
+      "endSeconds": 641.32,
+      "text": "matter but after 1 seconds after 1"
+    },
+    {
+      "startSeconds": 638.04,
+      "endSeconds": 645.399,
+      "text": "seconds right this after 1 second error"
+    },
+    {
+      "startSeconds": 641.32,
+      "endSeconds": 651.6,
+      "text": "will be thrown okay uh it"
+    },
+    {
+      "startSeconds": 645.399,
+      "endSeconds": 654.6,
+      "text": "will not wait okay it will not wait for"
+    },
+    {
+      "startSeconds": 651.6,
+      "endSeconds": 654.6,
+      "text": "other"
+    },
+    {
+      "startSeconds": 655.12,
+      "endSeconds": 660.2,
+      "text": "promises it will not wait for other"
+    },
+    {
+      "startSeconds": 657.24,
+      "endSeconds": 662.079,
+      "text": "promises note it down in your door book"
+    },
+    {
+      "startSeconds": 660.2,
+      "endSeconds": 664.68,
+      "text": "cool so this was promised. all in"
+    },
+    {
+      "startSeconds": 662.079,
+      "endSeconds": 667.519,
+      "text": "success or in Failure right uh let me"
+    },
+    {
+      "startSeconds": 664.68,
+      "endSeconds": 670.88,
+      "text": "tell you one more thing what if what if"
+    },
+    {
+      "startSeconds": 667.519,
+      "endSeconds": 673.2,
+      "text": "this two seconds promises see 1 second"
+    },
+    {
+      "startSeconds": 670.88,
+      "endSeconds": 676.399,
+      "text": "promises got success what will happen if"
+    },
+    {
+      "startSeconds": 673.2,
+      "endSeconds": 679.04,
+      "text": "two second promises get rejected so"
+    },
+    {
+      "startSeconds": 676.399,
+      "endSeconds": 682.04,
+      "text": "after 2 seconds it will be rejected"
+    },
+    {
+      "startSeconds": 679.04,
+      "endSeconds": 684.639,
+      "text": "understood right so as soon as the first"
+    },
+    {
+      "startSeconds": 682.04,
+      "endSeconds": 687.76,
+      "text": "promise get rejected first time it will"
+    },
+    {
+      "startSeconds": 684.639,
+      "endSeconds": 690.6,
+      "text": "just quickly intermediately return the"
+    },
+    {
+      "startSeconds": 687.76,
+      "endSeconds": 693.079,
+      "text": "result error okay so this is what is"
+    },
+    {
+      "startSeconds": 690.6,
+      "endSeconds": 695.839,
+      "text": "promise.all now it doesn't look like a"
+    },
+    {
+      "startSeconds": 693.079,
+      "endSeconds": 699,
+      "text": "good thing right I mean what if I just"
+    },
+    {
+      "startSeconds": 695.839,
+      "endSeconds": 700.839,
+      "text": "want results from uh successful promises"
+    },
+    {
+      "startSeconds": 699,
+      "endSeconds": 702.959,
+      "text": "I don't care if one of my promises"
+    },
+    {
+      "startSeconds": 700.839,
+      "endSeconds": 705.68,
+      "text": "failed it's okay but still I want"
+    },
+    {
+      "startSeconds": 702.959,
+      "endSeconds": 707.839,
+      "text": "results from other API calls also right"
+    },
+    {
+      "startSeconds": 705.68,
+      "endSeconds": 710.2,
+      "text": "right maybe if there are 10 API calls I"
+    },
+    {
+      "startSeconds": 707.839,
+      "endSeconds": 713,
+      "text": "want results from nine of them it's okay"
+    },
+    {
+      "startSeconds": 710.2,
+      "endSeconds": 716.279,
+      "text": "if one of them fails right so in that"
+    },
+    {
+      "startSeconds": 713,
+      "endSeconds": 718.399,
+      "text": "case we have one more promise API to"
+    },
+    {
+      "startSeconds": 716.279,
+      "endSeconds": 722.68,
+      "text": "handle that case let me tell you about"
+    },
+    {
+      "startSeconds": 718.399,
+      "endSeconds": 726.24,
+      "text": "that it is known as promise doall"
+    },
+    {
+      "startSeconds": 722.68,
+      "endSeconds": 732.279,
+      "text": "settled right promise doall"
+    },
+    {
+      "startSeconds": 726.24,
+      "endSeconds": 736.079,
+      "text": "settled promise dot all settled s TT e l"
+    },
+    {
+      "startSeconds": 732.279,
+      "endSeconds": 739.36,
+      "text": "e d right promise do all s settled right"
+    },
+    {
+      "startSeconds": 736.079,
+      "endSeconds": 744.72,
+      "text": "suppose if we pass in an array of P1 P2"
+    },
+    {
+      "startSeconds": 739.36,
+      "endSeconds": 747.839,
+      "text": "P3 over here right P1 P2 P3 over here if"
+    },
+    {
+      "startSeconds": 744.72,
+      "endSeconds": 751.399,
+      "text": "all of them get successful right if all"
+    },
+    {
+      "startSeconds": 747.839,
+      "endSeconds": 753.68,
+      "text": "of them get success F right and this"
+    },
+    {
+      "startSeconds": 751.399,
+      "endSeconds": 755.92,
+      "text": "takes 3 seconds this take 1 second this"
+    },
+    {
+      "startSeconds": 753.68,
+      "endSeconds": 759.16,
+      "text": "take 2 seconds so what will"
+    },
+    {
+      "startSeconds": 755.92,
+      "endSeconds": 763.92,
+      "text": "happen after 3 seconds you will get the"
+    },
+    {
+      "startSeconds": 759.16,
+      "endSeconds": 765.92,
+      "text": "same results right Val 1 Val two Val"
+    },
+    {
+      "startSeconds": 763.92,
+      "endSeconds": 769.56,
+      "text": "three right the same results just like"
+    },
+    {
+      "startSeconds": 765.92,
+      "endSeconds": 771.88,
+      "text": "promise. all but this will H but this"
+    },
+    {
+      "startSeconds": 769.56,
+      "endSeconds": 773.639,
+      "text": "will be different but this will be"
+    },
+    {
+      "startSeconds": 771.88,
+      "endSeconds": 776.639,
+      "text": "different in case of failure this will"
+    },
+    {
+      "startSeconds": 773.639,
+      "endSeconds": 778.44,
+      "text": "be the output for a success case but"
+    },
+    {
+      "startSeconds": 776.639,
+      "endSeconds": 779.56,
+      "text": "what if one of these promises gets"
+    },
+    {
+      "startSeconds": 778.44,
+      "endSeconds": 782.399,
+      "text": "rejected"
+    },
+    {
+      "startSeconds": 779.56,
+      "endSeconds": 785.24,
+      "text": "right suppose let's take an same example"
+    },
+    {
+      "startSeconds": 782.399,
+      "endSeconds": 787.279,
+      "text": "if P2 gets rejected I am just uh uh"
+    },
+    {
+      "startSeconds": 785.24,
+      "endSeconds": 789.92,
+      "text": "erasing it and doing it right away over"
+    },
+    {
+      "startSeconds": 787.279,
+      "endSeconds": 794.079,
+      "text": "here only right so what"
+    },
+    {
+      "startSeconds": 789.92,
+      "endSeconds": 797.24,
+      "text": "if what if my P2 gets rejected this gets"
+    },
+    {
+      "startSeconds": 794.079,
+      "endSeconds": 801.639,
+      "text": "rejected in 1 second so what will happen"
+    },
+    {
+      "startSeconds": 797.24,
+      "endSeconds": 808.399,
+      "text": "is this will still wait for it will wait"
+    },
+    {
+      "startSeconds": 801.639,
+      "endSeconds": 810,
+      "text": "for all promise all promises to fulfill"
+    },
+    {
+      "startSeconds": 808.399,
+      "endSeconds": 813.6,
+      "text": "to"
+    },
+    {
+      "startSeconds": 810,
+      "endSeconds": 815.639,
+      "text": "fulfill or maybe to get settled okay"
+    },
+    {
+      "startSeconds": 813.6,
+      "endSeconds": 818.079,
+      "text": "let's not use the word fulfilled"
+    },
+    {
+      "startSeconds": 815.639,
+      "endSeconds": 821.279,
+      "text": "fulfilled basically in promise World"
+    },
+    {
+      "startSeconds": 818.079,
+      "endSeconds": 824.959,
+      "text": "fulfilled is used for Success right so"
+    },
+    {
+      "startSeconds": 821.279,
+      "endSeconds": 828.199,
+      "text": "uh let's call it as settled right"
+    },
+    {
+      "startSeconds": 824.959,
+      "endSeconds": 830.68,
+      "text": "settled okay so wait for all the"
+    },
+    {
+      "startSeconds": 828.199,
+      "endSeconds": 833,
+      "text": "promises to settle whether they are"
+    },
+    {
+      "startSeconds": 830.68,
+      "endSeconds": 837.079,
+      "text": "success or failure it does not matter it"
+    },
+    {
+      "startSeconds": 833,
+      "endSeconds": 840.88,
+      "text": "will wait wait till 3 seconds and after"
+    },
+    {
+      "startSeconds": 837.079,
+      "endSeconds": 845.959,
+      "text": "3 seconds after after 3 seconds it will"
+    },
+    {
+      "startSeconds": 840.88,
+      "endSeconds": 848.92,
+      "text": "just no after one uh okay sorry after 3"
+    },
+    {
+      "startSeconds": 845.959,
+      "endSeconds": 850.56,
+      "text": "seconds right uh hope you are"
+    },
+    {
+      "startSeconds": 848.92,
+      "endSeconds": 853.48,
+      "text": "understanding it after 3 seconds it will"
+    },
+    {
+      "startSeconds": 850.56,
+      "endSeconds": 856,
+      "text": "wait for all the promises to complete so"
+    },
+    {
+      "startSeconds": 853.48,
+      "endSeconds": 857.8,
+      "text": "after 1 second this will fail right"
+    },
+    {
+      "startSeconds": 856,
+      "endSeconds": 860.199,
+      "text": "after 1 second This Promise will fail"
+    },
+    {
+      "startSeconds": 857.8,
+      "endSeconds": 863.279,
+      "text": "after 2 seconds this will we will get"
+    },
+    {
+      "startSeconds": 860.199,
+      "endSeconds": 865.199,
+      "text": "result of this and after 3 seconds uh we"
+    },
+    {
+      "startSeconds": 863.279,
+      "endSeconds": 868.16,
+      "text": "will get result of this and all of these"
+    },
+    {
+      "startSeconds": 865.199,
+      "endSeconds": 870.639,
+      "text": "things are happening in parallel so it"
+    },
+    {
+      "startSeconds": 868.16,
+      "endSeconds": 873.68,
+      "text": "will take 3 seconds for all these three"
+    },
+    {
+      "startSeconds": 870.639,
+      "endSeconds": 876.04,
+      "text": "to get settled right irrespective of"
+    },
+    {
+      "startSeconds": 873.68,
+      "endSeconds": 877.959,
+      "text": "success of failure irrespective of"
+    },
+    {
+      "startSeconds": 876.04,
+      "endSeconds": 879.519,
+      "text": "success of failure it will give you all"
+    },
+    {
+      "startSeconds": 877.959,
+      "endSeconds": 883,
+      "text": "the results basically it will give you"
+    },
+    {
+      "startSeconds": 879.519,
+      "endSeconds": 884.759,
+      "text": "Val one it will give you error two and"
+    },
+    {
+      "startSeconds": 883,
+      "endSeconds": 888.04,
+      "text": "it will give you Val"
+    },
+    {
+      "startSeconds": 884.759,
+      "endSeconds": 891.399,
+      "text": "three did you understand that the error"
+    },
+    {
+      "startSeconds": 888.04,
+      "endSeconds": 895.399,
+      "text": "the output will always be the output"
+    },
+    {
+      "startSeconds": 891.399,
+      "endSeconds": 897.399,
+      "text": "over here will always be an array right"
+    },
+    {
+      "startSeconds": 895.399,
+      "endSeconds": 898.959,
+      "text": "of the same number of promises that you"
+    },
+    {
+      "startSeconds": 897.399,
+      "endSeconds": 900.72,
+      "text": "passed in right so there there were"
+    },
+    {
+      "startSeconds": 898.959,
+      "endSeconds": 903.56,
+      "text": "three promises so this array will"
+    },
+    {
+      "startSeconds": 900.72,
+      "endSeconds": 905.279,
+      "text": "contain three values if it was success"
+    },
+    {
+      "startSeconds": 903.56,
+      "endSeconds": 907.6,
+      "text": "then you will get a value if it will"
+    },
+    {
+      "startSeconds": 905.279,
+      "endSeconds": 910.36,
+      "text": "error you will get a uh you will get a"
+    },
+    {
+      "startSeconds": 907.6,
+      "endSeconds": 912.44,
+      "text": "error message over here and if it is it"
+    },
+    {
+      "startSeconds": 910.36,
+      "endSeconds": 915.56,
+      "text": "is Success again so it will you will get"
+    },
+    {
+      "startSeconds": 912.44,
+      "endSeconds": 917.6,
+      "text": "a value over here so this is promise.all"
+    },
+    {
+      "startSeconds": 915.56,
+      "endSeconds": 919.959,
+      "text": "and this is promise.all settled and"
+    },
+    {
+      "startSeconds": 917.6,
+      "endSeconds": 922.32,
+      "text": "earlier we talked about promise.all so"
+    },
+    {
+      "startSeconds": 919.959,
+      "endSeconds": 925.48,
+      "text": "basically they both are same just the"
+    },
+    {
+      "startSeconds": 922.32,
+      "endSeconds": 928.959,
+      "text": "error handling is different if I have to"
+    },
+    {
+      "startSeconds": 925.48,
+      "endSeconds": 932.12,
+      "text": "rephrase it promise. all is kind kind of"
+    },
+    {
+      "startSeconds": 928.959,
+      "endSeconds": 935.72,
+      "text": "like a fail first right uh sorry fail"
+    },
+    {
+      "startSeconds": 932.12,
+      "endSeconds": 939.199,
+      "text": "fast right so promise. all is kind of"
+    },
+    {
+      "startSeconds": 935.72,
+      "endSeconds": 943.759,
+      "text": "like a fail fast right can I call it as"
+    },
+    {
+      "startSeconds": 939.199,
+      "endSeconds": 945.279,
+      "text": "fail fast right so even if one fails it"
+    },
+    {
+      "startSeconds": 943.759,
+      "endSeconds": 949.24,
+      "text": "just quickly gives you the result that"
+    },
+    {
+      "startSeconds": 945.279,
+      "endSeconds": 952.48,
+      "text": "one failed right and fail fast technique"
+    },
+    {
+      "startSeconds": 949.24,
+      "endSeconds": 955,
+      "text": "and in promise. all settled it waits for"
+    },
+    {
+      "startSeconds": 952.48,
+      "endSeconds": 958.68,
+      "text": "all the result and then we'll perform"
+    },
+    {
+      "startSeconds": 955,
+      "endSeconds": 962.36,
+      "text": "action accordingly right so this is how"
+    },
+    {
+      "startSeconds": 958.68,
+      "endSeconds": 964.92,
+      "text": "it works and uh promis and it depends on"
+    },
+    {
+      "startSeconds": 962.36,
+      "endSeconds": 967.72,
+      "text": "use case also suppose if you made five"
+    },
+    {
+      "startSeconds": 964.92,
+      "endSeconds": 970.24,
+      "text": "API calls and if you really needed the"
+    },
+    {
+      "startSeconds": 967.72,
+      "endSeconds": 972.68,
+      "text": "result of all these five API calls to"
+    },
+    {
+      "startSeconds": 970.24,
+      "endSeconds": 976.68,
+      "text": "show a web page right then you will use"
+    },
+    {
+      "startSeconds": 972.68,
+      "endSeconds": 979.279,
+      "text": "promise.all if one gets uh but suppose"
+    },
+    {
+      "startSeconds": 976.68,
+      "endSeconds": 981.319,
+      "text": "if you are swing five cards right five"
+    },
+    {
+      "startSeconds": 979.279,
+      "endSeconds": 983.639,
+      "text": "cards on your page and these five cards"
+    },
+    {
+      "startSeconds": 981.319,
+      "endSeconds": 986.44,
+      "text": "are populated by five API calls one of"
+    },
+    {
+      "startSeconds": 983.639,
+      "endSeconds": 987.88,
+      "text": "them fails just show four cards right in"
+    },
+    {
+      "startSeconds": 986.44,
+      "endSeconds": 989.48,
+      "text": "that case you can use promise.all"
+    },
+    {
+      "startSeconds": 987.88,
+      "endSeconds": 992.12,
+      "text": "settled so there are different use cases"
+    },
+    {
+      "startSeconds": 989.48,
+      "endSeconds": 994.36,
+      "text": "for promise. any uh promise.all and"
+    },
+    {
+      "startSeconds": 992.12,
+      "endSeconds": 997.24,
+      "text": "promise.all settle use it according to"
+    },
+    {
+      "startSeconds": 994.36,
+      "endSeconds": 999.24,
+      "text": "your need okay so when we will use the"
+    },
+    {
+      "startSeconds": 997.24,
+      "endSeconds": 1002.079,
+      "text": "example in code you will understand it"
+    },
+    {
+      "startSeconds": 999.24,
+      "endSeconds": 1005.92,
+      "text": "even more okay so now let's move on to"
+    },
+    {
+      "startSeconds": 1002.079,
+      "endSeconds": 1009.759,
+      "text": "the third API right the third API oh my"
+    },
+    {
+      "startSeconds": 1005.92,
+      "endSeconds": 1013.44,
+      "text": "God uh okay cool so let's go to the"
+    },
+    {
+      "startSeconds": 1009.759,
+      "endSeconds": 1017.16,
+      "text": "third API the third API is known as"
+    },
+    {
+      "startSeconds": 1013.44,
+      "endSeconds": 1020.399,
+      "text": "promise. R come on take notes along with"
+    },
+    {
+      "startSeconds": 1017.16,
+      "endSeconds": 1024.439,
+      "text": "me okay so promise do race so promise."
+    },
+    {
+      "startSeconds": 1020.399,
+      "endSeconds": 1025.919,
+      "text": "rat again takes three promises now as"
+    },
+    {
+      "startSeconds": 1024.439,
+      "endSeconds": 1030.839,
+      "text": "the name"
+    },
+    {
+      "startSeconds": 1025.919,
+      "endSeconds": 1034.079,
+      "text": "suggest it's a race right and the person"
+    },
+    {
+      "startSeconds": 1030.839,
+      "endSeconds": 1036.76,
+      "text": "who will finish first will be the winner"
+    },
+    {
+      "startSeconds": 1034.079,
+      "endSeconds": 1039.24,
+      "text": "right so the person who finishes first"
+    },
+    {
+      "startSeconds": 1036.76,
+      "endSeconds": 1042,
+      "text": "will be the winner over here so suppose"
+    },
+    {
+      "startSeconds": 1039.24,
+      "endSeconds": 1045.24,
+      "text": "if there are three promises again and"
+    },
+    {
+      "startSeconds": 1042,
+      "endSeconds": 1048.079,
+      "text": "suppose P2 takes 1 second right let's"
+    },
+    {
+      "startSeconds": 1045.24,
+      "endSeconds": 1051.4,
+      "text": "take the same example P1 takes 3 seconds"
+    },
+    {
+      "startSeconds": 1048.079,
+      "endSeconds": 1054.08,
+      "text": "P1 P2 takes 1 second P3 takes 2 seconds"
+    },
+    {
+      "startSeconds": 1051.4,
+      "endSeconds": 1057.24,
+      "text": "so as soon as we get the winner as soon"
+    },
+    {
+      "startSeconds": 1054.08,
+      "endSeconds": 1059.72,
+      "text": "as first promise is resolved right first"
+    },
+    {
+      "startSeconds": 1057.24,
+      "endSeconds": 1063.08,
+      "text": "promise is resolved that is after 1"
+    },
+    {
+      "startSeconds": 1059.72,
+      "endSeconds": 1066.88,
+      "text": "seconds so what we'll do after 1 seconds"
+    },
+    {
+      "startSeconds": 1063.08,
+      "endSeconds": 1068.919,
+      "text": "it will give me the result of Val to"
+    },
+    {
+      "startSeconds": 1066.88,
+      "endSeconds": 1071.28,
+      "text": "right it will give me the result of Val"
+    },
+    {
+      "startSeconds": 1068.919,
+      "endSeconds": 1073.44,
+      "text": "to let me tell you this is not an array"
+    },
+    {
+      "startSeconds": 1071.28,
+      "endSeconds": 1076.799,
+      "text": "this is a value I representing with uh"
+    },
+    {
+      "startSeconds": 1073.44,
+      "endSeconds": 1079.679,
+      "text": "this uh round brackets okay it will give"
+    },
+    {
+      "startSeconds": 1076.799,
+      "endSeconds": 1082.32,
+      "text": "you the value of the second promise"
+    },
+    {
+      "startSeconds": 1079.679,
+      "endSeconds": 1085.559,
+      "text": "right basically it will give you the"
+    },
+    {
+      "startSeconds": 1082.32,
+      "endSeconds": 1088.12,
+      "text": "value of the"
+    },
+    {
+      "startSeconds": 1085.559,
+      "endSeconds": 1091.48,
+      "text": "first"
+    },
+    {
+      "startSeconds": 1088.12,
+      "endSeconds": 1095,
+      "text": "settled promise right it will give you"
+    },
+    {
+      "startSeconds": 1091.48,
+      "endSeconds": 1098.2,
+      "text": "the value of the first settled promise"
+    },
+    {
+      "startSeconds": 1095,
+      "endSeconds": 1100.919,
+      "text": "after 1 seconds right after 1 seconds"
+    },
+    {
+      "startSeconds": 1098.2,
+      "endSeconds": 1102.08,
+      "text": "whatever the result P2 will have it will"
+    },
+    {
+      "startSeconds": 1100.919,
+      "endSeconds": 1104.72,
+      "text": "give you that"
+    },
+    {
+      "startSeconds": 1102.08,
+      "endSeconds": 1106.28,
+      "text": "value whatever the results P2 will give"
+    },
+    {
+      "startSeconds": 1104.72,
+      "endSeconds": 1110.559,
+      "text": "after 1 second it will give you the"
+    },
+    {
+      "startSeconds": 1106.28,
+      "endSeconds": 1112.84,
+      "text": "value suppose if P3 was suppose if if"
+    },
+    {
+      "startSeconds": 1110.559,
+      "endSeconds": 1116.36,
+      "text": "suppose right let me change change this"
+    },
+    {
+      "startSeconds": 1112.84,
+      "endSeconds": 1119.36,
+      "text": "example suppose if P3 took 1 second or"
+    },
+    {
+      "startSeconds": 1116.36,
+      "endSeconds": 1121.6,
+      "text": "P3 took sorry right let me let me remove"
+    },
+    {
+      "startSeconds": 1119.36,
+      "endSeconds": 1126.52,
+      "text": "this times right let me remove this"
+    },
+    {
+      "startSeconds": 1121.6,
+      "endSeconds": 1130.32,
+      "text": "timeline suppose if P1 right suppose if"
+    },
+    {
+      "startSeconds": 1126.52,
+      "endSeconds": 1133,
+      "text": "P1 takes 3 second P2 takes 5 Seconds P3"
+    },
+    {
+      "startSeconds": 1130.32,
+      "endSeconds": 1136.44,
+      "text": "takes 2 seconds so what that will happen"
+    },
+    {
+      "startSeconds": 1133,
+      "endSeconds": 1138.88,
+      "text": "is P2 will be success after 2 seconds"
+    },
+    {
+      "startSeconds": 1136.44,
+      "endSeconds": 1142.159,
+      "text": "now the value will be P3 sorry"
+    },
+    {
+      "startSeconds": 1138.88,
+      "endSeconds": 1145.919,
+      "text": "P3 is P3 will get settled in 2 seconds"
+    },
+    {
+      "startSeconds": 1142.159,
+      "endSeconds": 1148.28,
+      "text": "so the value over here will be P3 right"
+    },
+    {
+      "startSeconds": 1145.919,
+      "endSeconds": 1150.76,
+      "text": "value returned from the third promise so"
+    },
+    {
+      "startSeconds": 1148.28,
+      "endSeconds": 1155.32,
+      "text": "basically what I'm trying to say it's a"
+    },
+    {
+      "startSeconds": 1150.76,
+      "endSeconds": 1158.559,
+      "text": "race whatever promise settles first let"
+    },
+    {
+      "startSeconds": 1155.32,
+      "endSeconds": 1162.28,
+      "text": "me tell you the word is settled settles"
+    },
+    {
+      "startSeconds": 1158.559,
+      "endSeconds": 1164.36,
+      "text": "first you will get that result now an"
+    },
+    {
+      "startSeconds": 1162.28,
+      "endSeconds": 1166.72,
+      "text": "important question is this is when the"
+    },
+    {
+      "startSeconds": 1164.36,
+      "endSeconds": 1169.08,
+      "text": "first promise was successful what if the"
+    },
+    {
+      "startSeconds": 1166.72,
+      "endSeconds": 1171.96,
+      "text": "first promise was error"
+    },
+    {
+      "startSeconds": 1169.08,
+      "endSeconds": 1173.919,
+      "text": "What If This Promise was rejected let me"
+    },
+    {
+      "startSeconds": 1171.96,
+      "endSeconds": 1176.4,
+      "text": "just show you that case also let me"
+    },
+    {
+      "startSeconds": 1173.919,
+      "endSeconds": 1178.08,
+      "text": "remove this right let me remove this so"
+    },
+    {
+      "startSeconds": 1176.4,
+      "endSeconds": 1180.24,
+      "text": "this was the success case you understood"
+    },
+    {
+      "startSeconds": 1178.08,
+      "endSeconds": 1181.919,
+      "text": "it right keep taking down notes okay"
+    },
+    {
+      "startSeconds": 1180.24,
+      "endSeconds": 1185.2,
+      "text": "keep taking down"
+    },
+    {
+      "startSeconds": 1181.919,
+      "endSeconds": 1188.2,
+      "text": "notes right because I am rubbing it"
+    },
+    {
+      "startSeconds": 1185.2,
+      "endSeconds": 1190.2,
+      "text": "right so uh I am just changing whatever"
+    },
+    {
+      "startSeconds": 1188.2,
+      "endSeconds": 1192.799,
+      "text": "I am writing so please keep taking down"
+    },
+    {
+      "startSeconds": 1190.2,
+      "endSeconds": 1195.08,
+      "text": "notes pause the video if if I'm going"
+    },
+    {
+      "startSeconds": 1192.799,
+      "endSeconds": 1198.24,
+      "text": "fast but take down notes it is very"
+    },
+    {
+      "startSeconds": 1195.08,
+      "endSeconds": 1200.48,
+      "text": "important okay what if after 2 seconds"
+    },
+    {
+      "startSeconds": 1198.24,
+      "endSeconds": 1203.52,
+      "text": "seconds P3"
+    },
+    {
+      "startSeconds": 1200.48,
+      "endSeconds": 1205.96,
+      "text": "fails what if P3 fails after 2 seconds"
+    },
+    {
+      "startSeconds": 1203.52,
+      "endSeconds": 1208.799,
+      "text": "it is the first promise to get settled"
+    },
+    {
+      "startSeconds": 1205.96,
+      "endSeconds": 1211.2,
+      "text": "what if the P3 fails what will happen is"
+    },
+    {
+      "startSeconds": 1208.799,
+      "endSeconds": 1214.039,
+      "text": "error will be"
+    },
+    {
+      "startSeconds": 1211.2,
+      "endSeconds": 1216.28,
+      "text": "thrown error will be thrown right it"
+    },
+    {
+      "startSeconds": 1214.039,
+      "endSeconds": 1220.96,
+      "text": "will not it will return the error which"
+    },
+    {
+      "startSeconds": 1216.28,
+      "endSeconds": 1223.799,
+      "text": "will come from this error from"
+    },
+    {
+      "startSeconds": 1220.96,
+      "endSeconds": 1226.72,
+      "text": "P3 right whatever the error will come"
+    },
+    {
+      "startSeconds": 1223.799,
+      "endSeconds": 1229.52,
+      "text": "from P3 error will come right after 2"
+    },
+    {
+      "startSeconds": 1226.72,
+      "endSeconds": 1234.679,
+      "text": "seconds got it after 2 seconds so what"
+    },
+    {
+      "startSeconds": 1229.52,
+      "endSeconds": 1236.72,
+      "text": "will happen is it will uh it will"
+    },
+    {
+      "startSeconds": 1234.679,
+      "endSeconds": 1243.36,
+      "text": "return"
+    },
+    {
+      "startSeconds": 1236.72,
+      "endSeconds": 1247.919,
+      "text": "result of first settled promise settled"
+    },
+    {
+      "startSeconds": 1243.36,
+      "endSeconds": 1251.4,
+      "text": "promise okay so whether okay it's kind"
+    },
+    {
+      "startSeconds": 1247.919,
+      "endSeconds": 1252.88,
+      "text": "of like a race first promise whatever is"
+    },
+    {
+      "startSeconds": 1251.4,
+      "endSeconds": 1255.36,
+      "text": "resolved in that"
+    },
+    {
+      "startSeconds": 1252.88,
+      "endSeconds": 1257.76,
+      "text": "array whether it is Success whether it"
+    },
+    {
+      "startSeconds": 1255.36,
+      "endSeconds": 1261.44,
+      "text": "is failure it will throw it will return"
+    },
+    {
+      "startSeconds": 1257.76,
+      "endSeconds": 1264.4,
+      "text": "the result right it will not wait for"
+    },
+    {
+      "startSeconds": 1261.44,
+      "endSeconds": 1267,
+      "text": "other promises to finish it will not"
+    },
+    {
+      "startSeconds": 1264.4,
+      "endSeconds": 1269.88,
+      "text": "wait for other promises to get settled"
+    },
+    {
+      "startSeconds": 1267,
+      "endSeconds": 1272.32,
+      "text": "eventually eventually after 3 seconds 5"
+    },
+    {
+      "startSeconds": 1269.88,
+      "endSeconds": 1274.919,
+      "text": "Seconds they will also get settled right"
+    },
+    {
+      "startSeconds": 1272.32,
+      "endSeconds": 1276.919,
+      "text": "success or failure that's different part"
+    },
+    {
+      "startSeconds": 1274.919,
+      "endSeconds": 1280.08,
+      "text": "but eventually they will get success but"
+    },
+    {
+      "startSeconds": 1276.919,
+      "endSeconds": 1282.24,
+      "text": "it will not wait right it will also not"
+    },
+    {
+      "startSeconds": 1280.08,
+      "endSeconds": 1284.36,
+      "text": "wait because it's a race right so it"
+    },
+    {
+      "startSeconds": 1282.24,
+      "endSeconds": 1286.32,
+      "text": "will not get it will just quickly return"
+    },
+    {
+      "startSeconds": 1284.36,
+      "endSeconds": 1288.4,
+      "text": "the result success failure does not"
+    },
+    {
+      "startSeconds": 1286.32,
+      "endSeconds": 1291.32,
+      "text": "matter it will just return the result"
+    },
+    {
+      "startSeconds": 1288.4,
+      "endSeconds": 1293.52,
+      "text": "now this was promise. R now let's get"
+    },
+    {
+      "startSeconds": 1291.32,
+      "endSeconds": 1297.08,
+      "text": "back to our final and the fourth promise"
+    },
+    {
+      "startSeconds": 1293.52,
+      "endSeconds": 1298.799,
+      "text": "API and that is interesting right and"
+    },
+    {
+      "startSeconds": 1297.08,
+      "endSeconds": 1301.159,
+      "text": "once you if you have understood this"
+    },
+    {
+      "startSeconds": 1298.799,
+      "endSeconds": 1303.72,
+      "text": "much then the Last Promise API it will"
+    },
+    {
+      "startSeconds": 1301.159,
+      "endSeconds": 1307,
+      "text": "be very easy for you to understand okay"
+    },
+    {
+      "startSeconds": 1303.72,
+      "endSeconds": 1309.76,
+      "text": "so let's go to the next promise API it"
+    },
+    {
+      "startSeconds": 1307,
+      "endSeconds": 1312,
+      "text": "is known as"
+    },
+    {
+      "startSeconds": 1309.76,
+      "endSeconds": 1316.44,
+      "text": "promise do"
+    },
+    {
+      "startSeconds": 1312,
+      "endSeconds": 1319.4,
+      "text": "any okay promise. any it again takes a"
+    },
+    {
+      "startSeconds": 1316.44,
+      "endSeconds": 1324.24,
+      "text": "list of promises an arror of promises"
+    },
+    {
+      "startSeconds": 1319.4,
+      "endSeconds": 1327.6,
+      "text": "okay P1 P2 P3 now we have this array of"
+    },
+    {
+      "startSeconds": 1324.24,
+      "endSeconds": 1330.279,
+      "text": "promises okay now it is very much"
+    },
+    {
+      "startSeconds": 1327.6,
+      "endSeconds": 1333.76,
+      "text": "similar to race right it is very much"
+    },
+    {
+      "startSeconds": 1330.279,
+      "endSeconds": 1337.6,
+      "text": "similar to race right whenever the first"
+    },
+    {
+      "startSeconds": 1333.76,
+      "endSeconds": 1340.799,
+      "text": "promise got resolved the only difference"
+    },
+    {
+      "startSeconds": 1337.6,
+      "endSeconds": 1341.919,
+      "text": "is it will wait for the first promise to"
+    },
+    {
+      "startSeconds": 1340.799,
+      "endSeconds": 1344.36,
+      "text": "get"
+    },
+    {
+      "startSeconds": 1341.919,
+      "endSeconds": 1346.799,
+      "text": "successful okay it will wait for first"
+    },
+    {
+      "startSeconds": 1344.36,
+      "endSeconds": 1348.96,
+      "text": "promise to get successful right in"
+    },
+    {
+      "startSeconds": 1346.799,
+      "endSeconds": 1351.4,
+      "text": "promise. r"
+    },
+    {
+      "startSeconds": 1348.96,
+      "endSeconds": 1353.799,
+      "text": "irrespective of whether you get success"
+    },
+    {
+      "startSeconds": 1351.4,
+      "endSeconds": 1356.679,
+      "text": "or failure you are returning the result"
+    },
+    {
+      "startSeconds": 1353.799,
+      "endSeconds": 1359.64,
+      "text": "of the first one right over here you"
+    },
+    {
+      "startSeconds": 1356.679,
+      "endSeconds": 1362.08,
+      "text": "will wait for the first success okay"
+    },
+    {
+      "startSeconds": 1359.64,
+      "endSeconds": 1365.6,
+      "text": "what will happen you will"
+    },
+    {
+      "startSeconds": 1362.08,
+      "endSeconds": 1367.159,
+      "text": "wait for"
+    },
+    {
+      "startSeconds": 1365.6,
+      "endSeconds": 1370.64,
+      "text": "first"
+    },
+    {
+      "startSeconds": 1367.159,
+      "endSeconds": 1373.679,
+      "text": "success okay first fulfilled first"
+    },
+    {
+      "startSeconds": 1370.64,
+      "endSeconds": 1376.4,
+      "text": "resoled okay so this is what is promise."
+    },
+    {
+      "startSeconds": 1373.679,
+      "endSeconds": 1379.48,
+      "text": "NE right again taking the example"
+    },
+    {
+      "startSeconds": 1376.4,
+      "endSeconds": 1383.36,
+      "text": "suppose it takes 3 seconds P2 takes 1"
+    },
+    {
+      "startSeconds": 1379.48,
+      "endSeconds": 1387.559,
+      "text": "second P3 takes 2 seconds what will"
+    },
+    {
+      "startSeconds": 1383.36,
+      "endSeconds": 1388.36,
+      "text": "happen is P2 becomes successful it will"
+    },
+    {
+      "startSeconds": 1387.559,
+      "endSeconds": 1394,
+      "text": "return"
+    },
+    {
+      "startSeconds": 1388.36,
+      "endSeconds": 1396.44,
+      "text": "you the value of P2 Val P2 right Val 2"
+    },
+    {
+      "startSeconds": 1394,
+      "endSeconds": 1400.679,
+      "text": "it will return the Val"
+    },
+    {
+      "startSeconds": 1396.44,
+      "endSeconds": 1404.88,
+      "text": "to okay this is a normal case what if P1"
+    },
+    {
+      "startSeconds": 1400.679,
+      "endSeconds": 1408.32,
+      "text": "gets rejected what if P1 gets rejected"
+    },
+    {
+      "startSeconds": 1404.88,
+      "endSeconds": 1411.2,
+      "text": "right P1 after 1 seconds get rejected"
+    },
+    {
+      "startSeconds": 1408.32,
+      "endSeconds": 1415.12,
+      "text": "now nothing will happen after 1 seconds"
+    },
+    {
+      "startSeconds": 1411.2,
+      "endSeconds": 1418.36,
+      "text": "promise. any will wait for a success"
+    },
+    {
+      "startSeconds": 1415.12,
+      "endSeconds": 1420.96,
+      "text": "right it is a success uh seeking right"
+    },
+    {
+      "startSeconds": 1418.36,
+      "endSeconds": 1423.679,
+      "text": "it's a success seeking race right so"
+    },
+    {
+      "startSeconds": 1420.96,
+      "endSeconds": 1425.6,
+      "text": "it's kind of like a race but whenever it"
+    },
+    {
+      "startSeconds": 1423.679,
+      "endSeconds": 1428.799,
+      "text": "is successful then only it will return"
+    },
+    {
+      "startSeconds": 1425.6,
+      "endSeconds": 1432.12,
+      "text": "the result okay now what will happen"
+    },
+    {
+      "startSeconds": 1428.799,
+      "endSeconds": 1435.4,
+      "text": "after 2 seconds after 2 seconds suppose"
+    },
+    {
+      "startSeconds": 1432.12,
+      "endSeconds": 1439.72,
+      "text": "my P3 got success okay so what it will"
+    },
+    {
+      "startSeconds": 1435.4,
+      "endSeconds": 1442.12,
+      "text": "do in this case p P2 this P2 was"
+    },
+    {
+      "startSeconds": 1439.72,
+      "endSeconds": 1445.12,
+      "text": "rejected right this was rejected so it"
+    },
+    {
+      "startSeconds": 1442.12,
+      "endSeconds": 1448.039,
+      "text": "will it will ignore this now it will go"
+    },
+    {
+      "startSeconds": 1445.12,
+      "endSeconds": 1450.84,
+      "text": "to P3 and it is successful so it will"
+    },
+    {
+      "startSeconds": 1448.039,
+      "endSeconds": 1454.279,
+      "text": "return the result from P3 right so let's"
+    },
+    {
+      "startSeconds": 1450.84,
+      "endSeconds": 1458.2,
+      "text": "call this as Val 3 right from P3 it will"
+    },
+    {
+      "startSeconds": 1454.279,
+      "endSeconds": 1462.24,
+      "text": "return this result what if now what if"
+    },
+    {
+      "startSeconds": 1458.2,
+      "endSeconds": 1465.559,
+      "text": "this P3 also was s was unsuccessful"
+    },
+    {
+      "startSeconds": 1462.24,
+      "endSeconds": 1469.039,
+      "text": "right what if P3 also gets rejected"
+    },
+    {
+      "startSeconds": 1465.559,
+      "endSeconds": 1471.76,
+      "text": "right then it will again wait for p 2 P1"
+    },
+    {
+      "startSeconds": 1469.039,
+      "endSeconds": 1474.96,
+      "text": "and suppose if P1 was success right what"
+    },
+    {
+      "startSeconds": 1471.76,
+      "endSeconds": 1478.12,
+      "text": "will happen then the value will be Val"
+    },
+    {
+      "startSeconds": 1474.96,
+      "endSeconds": 1480.72,
+      "text": "one right then the value will be this"
+    },
+    {
+      "startSeconds": 1478.12,
+      "endSeconds": 1484.84,
+      "text": "value which will be returned from here"
+    },
+    {
+      "startSeconds": 1480.72,
+      "endSeconds": 1486.88,
+      "text": "got it so basically it will wait it will"
+    },
+    {
+      "startSeconds": 1484.84,
+      "endSeconds": 1489.279,
+      "text": "wait for the first"
+    },
+    {
+      "startSeconds": 1486.88,
+      "endSeconds": 1490.84,
+      "text": "success now you must be thinking a"
+    },
+    {
+      "startSeconds": 1489.279,
+      "endSeconds": 1492.399,
+      "text": "curiosity will come into your head I"
+    },
+    {
+      "startSeconds": 1490.84,
+      "endSeconds": 1495.399,
+      "text": "know what you are thinking that what if"
+    },
+    {
+      "startSeconds": 1492.399,
+      "endSeconds": 1498.84,
+      "text": "everything fails what if everything"
+    },
+    {
+      "startSeconds": 1495.399,
+      "endSeconds": 1501.6,
+      "text": "fails right what if everything fails"
+    },
+    {
+      "startSeconds": 1498.84,
+      "endSeconds": 1503.52,
+      "text": "right what if suppose let me just remove"
+    },
+    {
+      "startSeconds": 1501.6,
+      "endSeconds": 1505.159,
+      "text": "let me just clear all of this and let me"
+    },
+    {
+      "startSeconds": 1503.52,
+      "endSeconds": 1505.919,
+      "text": "just show you what if everything fails"
+    },
+    {
+      "startSeconds": 1505.159,
+      "endSeconds": 1509.799,
+      "text": "over"
+    },
+    {
+      "startSeconds": 1505.919,
+      "endSeconds": 1512.52,
+      "text": "here what if everything fails over here"
+    },
+    {
+      "startSeconds": 1509.799,
+      "endSeconds": 1517.399,
+      "text": "all of them got failed all the app calls"
+    },
+    {
+      "startSeconds": 1512.52,
+      "endSeconds": 1519.52,
+      "text": "failed so the return result will be an"
+    },
+    {
+      "startSeconds": 1517.399,
+      "endSeconds": 1523.559,
+      "text": "aggregated"
+    },
+    {
+      "startSeconds": 1519.52,
+      "endSeconds": 1525.88,
+      "text": "error aggregated error now when all the"
+    },
+    {
+      "startSeconds": 1523.559,
+      "endSeconds": 1527.919,
+      "text": "all of them will be failed then the"
+    },
+    {
+      "startSeconds": 1525.88,
+      "endSeconds": 1531,
+      "text": "return will be error obviously but but"
+    },
+    {
+      "startSeconds": 1527.919,
+      "endSeconds": 1534.919,
+      "text": "this time it will be an aggregate error"
+    },
+    {
+      "startSeconds": 1531,
+      "endSeconds": 1538.84,
+      "text": "right aggregate error and this aggregate"
+    },
+    {
+      "startSeconds": 1534.919,
+      "endSeconds": 1543.48,
+      "text": "error will be an array of all the three"
+    },
+    {
+      "startSeconds": 1538.84,
+      "endSeconds": 1548.96,
+      "text": "errors okay it will be an error of error"
+    },
+    {
+      "startSeconds": 1543.48,
+      "endSeconds": 1551.919,
+      "text": "one error 2 error three so basically a"
+    },
+    {
+      "startSeconds": 1548.96,
+      "endSeconds": 1554.88,
+      "text": "good part about promise. any is it will"
+    },
+    {
+      "startSeconds": 1551.919,
+      "endSeconds": 1558.36,
+      "text": "wait for Success right wait for the"
+    },
+    {
+      "startSeconds": 1554.88,
+      "endSeconds": 1561.679,
+      "text": "first success but if all fails"
+    },
+    {
+      "startSeconds": 1558.36,
+      "endSeconds": 1563.559,
+      "text": "in case of all fails then it will you"
+    },
+    {
+      "startSeconds": 1561.679,
+      "endSeconds": 1566.08,
+      "text": "know it will wait for success and it"
+    },
+    {
+      "startSeconds": 1563.559,
+      "endSeconds": 1568.76,
+      "text": "will ignore the failures but if all of"
+    },
+    {
+      "startSeconds": 1566.08,
+      "endSeconds": 1571.2,
+      "text": "them fails now it will collect all the"
+    },
+    {
+      "startSeconds": 1568.76,
+      "endSeconds": 1573.84,
+      "text": "errors and it will give you back this"
+    },
+    {
+      "startSeconds": 1571.2,
+      "endSeconds": 1577.039,
+      "text": "aggregate error it will give you back"
+    },
+    {
+      "startSeconds": 1573.84,
+      "endSeconds": 1579.72,
+      "text": "this aggregate error and now all these"
+    },
+    {
+      "startSeconds": 1577.039,
+      "endSeconds": 1583.72,
+      "text": "errors will be if all fails it will give"
+    },
+    {
+      "startSeconds": 1579.72,
+      "endSeconds": 1587.32,
+      "text": "you the list of all"
+    },
+    {
+      "startSeconds": 1583.72,
+      "endSeconds": 1590.399,
+      "text": "errors okay and it will so basically"
+    },
+    {
+      "startSeconds": 1587.32,
+      "endSeconds": 1593.2,
+      "text": "what will happen is see this the first"
+    },
+    {
+      "startSeconds": 1590.399,
+      "endSeconds": 1595.72,
+      "text": "uh the first first result you get after"
+    },
+    {
+      "startSeconds": 1593.2,
+      "endSeconds": 1597.679,
+      "text": "1 second P2 the second result you get"
+    },
+    {
+      "startSeconds": 1595.72,
+      "endSeconds": 1600.2,
+      "text": "after 2 seconds the third result you get"
+    },
+    {
+      "startSeconds": 1597.679,
+      "endSeconds": 1605.24,
+      "text": "after 3 seconds right so all of them"
+    },
+    {
+      "startSeconds": 1600.2,
+      "endSeconds": 1608.48,
+      "text": "failed so after 3 seconds right after 3"
+    },
+    {
+      "startSeconds": 1605.24,
+      "endSeconds": 1611,
+      "text": "seconds you will get this type of array"
+    },
+    {
+      "startSeconds": 1608.48,
+      "endSeconds": 1614.44,
+      "text": "and this array will have all the"
+    },
+    {
+      "startSeconds": 1611,
+      "endSeconds": 1617.919,
+      "text": "errors got it so a difference between a"
+    },
+    {
+      "startSeconds": 1614.44,
+      "endSeconds": 1620.2,
+      "text": "r and any is that R will give you the"
+    },
+    {
+      "startSeconds": 1617.919,
+      "endSeconds": 1623.24,
+      "text": "first result irrespective of success or"
+    },
+    {
+      "startSeconds": 1620.2,
+      "endSeconds": 1625.52,
+      "text": "failure promise. any will wait for a"
+    },
+    {
+      "startSeconds": 1623.24,
+      "endSeconds": 1628.32,
+      "text": "success right and it will give you"
+    },
+    {
+      "startSeconds": 1625.52,
+      "endSeconds": 1630.08,
+      "text": "success whatever the first success is if"
+    },
+    {
+      "startSeconds": 1628.32,
+      "endSeconds": 1632.24,
+      "text": "all of them fails then it will give you"
+    },
+    {
+      "startSeconds": 1630.08,
+      "endSeconds": 1633.799,
+      "text": "an array of all of the failures hope you"
+    },
+    {
+      "startSeconds": 1632.24,
+      "endSeconds": 1635.6,
+      "text": "would have understood it I have I have"
+    },
+    {
+      "startSeconds": 1633.799,
+      "endSeconds": 1638.36,
+      "text": "tried to explain you beautifully using"
+    },
+    {
+      "startSeconds": 1635.6,
+      "endSeconds": 1641.96,
+      "text": "diagrams right these diagrams are very"
+    },
+    {
+      "startSeconds": 1638.36,
+      "endSeconds": 1644.44,
+      "text": "helpful to make a memory map in your"
+    },
+    {
+      "startSeconds": 1641.96,
+      "endSeconds": 1646.559,
+      "text": "head now when you will write code you"
+    },
+    {
+      "startSeconds": 1644.44,
+      "endSeconds": 1648.84,
+      "text": "will just love it I'm telling you if you"
+    },
+    {
+      "startSeconds": 1646.559,
+      "endSeconds": 1651.039,
+      "text": "understood this much writing code will"
+    },
+    {
+      "startSeconds": 1648.84,
+      "endSeconds": 1653.12,
+      "text": "be a piece of C for you and you will"
+    },
+    {
+      "startSeconds": 1651.039,
+      "endSeconds": 1654.559,
+      "text": "never forget in this life right I'm"
+    },
+    {
+      "startSeconds": 1653.12,
+      "endSeconds": 1657.36,
+      "text": "telling you you will never forget in"
+    },
+    {
+      "startSeconds": 1654.559,
+      "endSeconds": 1660,
+      "text": "your life it is very easy in Namaste"
+    },
+    {
+      "startSeconds": 1657.36,
+      "endSeconds": 1662.919,
+      "text": "JavaScript my main aim is to just teach"
+    },
+    {
+      "startSeconds": 1660,
+      "endSeconds": 1665.24,
+      "text": "you the best right and I'm telling you"
+    },
+    {
+      "startSeconds": 1662.919,
+      "endSeconds": 1668.64,
+      "text": "my dear friends I have used this promise"
+    },
+    {
+      "startSeconds": 1665.24,
+      "endSeconds": 1670.64,
+      "text": "apis I have used these promise apis into"
+    },
+    {
+      "startSeconds": 1668.64,
+      "endSeconds": 1672.76,
+      "text": "my Namaste react you know I have a"
+    },
+    {
+      "startSeconds": 1670.64,
+      "endSeconds": 1674.96,
+      "text": "course Namaste react course right where"
+    },
+    {
+      "startSeconds": 1672.76,
+      "endSeconds": 1677.96,
+      "text": "I teach react I was building a final"
+    },
+    {
+      "startSeconds": 1674.96,
+      "endSeconds": 1680.44,
+      "text": "project and there I had to make parallel"
+    },
+    {
+      "startSeconds": 1677.96,
+      "endSeconds": 1683.6,
+      "text": "API calls and I made parallel API calls"
+    },
+    {
+      "startSeconds": 1680.44,
+      "endSeconds": 1686.12,
+      "text": "and I had to use these apis very"
+    },
+    {
+      "startSeconds": 1683.6,
+      "endSeconds": 1688.08,
+      "text": "important and in your interviews right"
+    },
+    {
+      "startSeconds": 1686.12,
+      "endSeconds": 1690.32,
+      "text": "the interviewer can confuse you between"
+    },
+    {
+      "startSeconds": 1688.08,
+      "endSeconds": 1692.48,
+      "text": "race and any the failure case the"
+    },
+    {
+      "startSeconds": 1690.32,
+      "endSeconds": 1695.36,
+      "text": "success case this that right so you"
+    },
+    {
+      "startSeconds": 1692.48,
+      "endSeconds": 1697.88,
+      "text": "should know all of these cases right we"
+    },
+    {
+      "startSeconds": 1695.36,
+      "endSeconds": 1699.88,
+      "text": "will we will recap this quickly and then"
+    },
+    {
+      "startSeconds": 1697.88,
+      "endSeconds": 1702.48,
+      "text": "we will move to code okay so please let"
+    },
+    {
+      "startSeconds": 1699.88,
+      "endSeconds": 1704.84,
+      "text": "us just quickly recap it and then we"
+    },
+    {
+      "startSeconds": 1702.48,
+      "endSeconds": 1706.44,
+      "text": "will just go back and write code very"
+    },
+    {
+      "startSeconds": 1704.84,
+      "endSeconds": 1708.6,
+      "text": "quickly I will show you how to write"
+    },
+    {
+      "startSeconds": 1706.44,
+      "endSeconds": 1711.2,
+      "text": "code I will show you how actually these"
+    },
+    {
+      "startSeconds": 1708.6,
+      "endSeconds": 1713.84,
+      "text": "promises work right uh how you will get"
+    },
+    {
+      "startSeconds": 1711.2,
+      "endSeconds": 1717.08,
+      "text": "the details how you will use it is in"
+    },
+    {
+      "startSeconds": 1713.84,
+      "endSeconds": 1720.48,
+      "text": "your uh in your day to-day life okay so"
+    },
+    {
+      "startSeconds": 1717.08,
+      "endSeconds": 1722.08,
+      "text": "let's go back to our uh revision right"
+    },
+    {
+      "startSeconds": 1720.48,
+      "endSeconds": 1724.96,
+      "text": "let me just quickly revise"
+    },
+    {
+      "startSeconds": 1722.08,
+      "endSeconds": 1728.08,
+      "text": "it I am going very fast so listen to me"
+    },
+    {
+      "startSeconds": 1724.96,
+      "endSeconds": 1730.24,
+      "text": "very carefully promise.all takes an"
+    },
+    {
+      "startSeconds": 1728.08,
+      "endSeconds": 1733.08,
+      "text": "array of promises right this is the"
+    },
+    {
+      "startSeconds": 1730.24,
+      "endSeconds": 1735.84,
+      "text": "first thing suppose if all of them get"
+    },
+    {
+      "startSeconds": 1733.08,
+      "endSeconds": 1738.12,
+      "text": "successful so it will return you and"
+    },
+    {
+      "startSeconds": 1735.84,
+      "endSeconds": 1740.679,
+      "text": "okay I think we have a success case also"
+    },
+    {
+      "startSeconds": 1738.12,
+      "endSeconds": 1743.36,
+      "text": "yes if all of them get successful it"
+    },
+    {
+      "startSeconds": 1740.679,
+      "endSeconds": 1746.36,
+      "text": "will return you an array of all the"
+    },
+    {
+      "startSeconds": 1743.36,
+      "endSeconds": 1748.96,
+      "text": "three values from these promises okay it"
+    },
+    {
+      "startSeconds": 1746.36,
+      "endSeconds": 1751,
+      "text": "will return you all the success values"
+    },
+    {
+      "startSeconds": 1748.96,
+      "endSeconds": 1753.559,
+      "text": "and you will get the result after 3"
+    },
+    {
+      "startSeconds": 1751,
+      "endSeconds": 1755.88,
+      "text": "seconds right you understood right why 3"
+    },
+    {
+      "startSeconds": 1753.559,
+      "endSeconds": 1758.399,
+      "text": "seconds because three parallel API calls"
+    },
+    {
+      "startSeconds": 1755.88,
+      "endSeconds": 1760.72,
+      "text": "were made and after 3 seconds we get the"
+    },
+    {
+      "startSeconds": 1758.399,
+      "endSeconds": 1763.12,
+      "text": "last result so it will wait for wait for"
+    },
+    {
+      "startSeconds": 1760.72,
+      "endSeconds": 1765.08,
+      "text": "all of the API calls to finish it will"
+    },
+    {
+      "startSeconds": 1763.12,
+      "endSeconds": 1768,
+      "text": "wait listen to me very carefully it will"
+    },
+    {
+      "startSeconds": 1765.08,
+      "endSeconds": 1770,
+      "text": "wait for all the API calls to finish"
+    },
+    {
+      "startSeconds": 1768,
+      "endSeconds": 1772,
+      "text": "right and it will collect all these"
+    },
+    {
+      "startSeconds": 1770,
+      "endSeconds": 1775.84,
+      "text": "result it will give you an array of all"
+    },
+    {
+      "startSeconds": 1772,
+      "endSeconds": 1779.559,
+      "text": "these result but if it fails but what if"
+    },
+    {
+      "startSeconds": 1775.84,
+      "endSeconds": 1783.36,
+      "text": "it is fails if it will fail then what"
+    },
+    {
+      "startSeconds": 1779.559,
+      "endSeconds": 1788.039,
+      "text": "will happen if any one of them fails it"
+    },
+    {
+      "startSeconds": 1783.36,
+      "endSeconds": 1790.08,
+      "text": "will not move ahead it will just quickly"
+    },
+    {
+      "startSeconds": 1788.039,
+      "endSeconds": 1792.32,
+      "text": "return the result right it will just"
+    },
+    {
+      "startSeconds": 1790.08,
+      "endSeconds": 1795.48,
+      "text": "quickly return the result it is also"
+    },
+    {
+      "startSeconds": 1792.32,
+      "endSeconds": 1798,
+      "text": "known as fail fast it will quickly so"
+    },
+    {
+      "startSeconds": 1795.48,
+      "endSeconds": 1800.84,
+      "text": "basically fail fast is if any has to"
+    },
+    {
+      "startSeconds": 1798,
+      "endSeconds": 1803,
+      "text": "fail then quickly fail right fail right"
+    },
+    {
+      "startSeconds": 1800.84,
+      "endSeconds": 1805.48,
+      "text": "don't wait for 3 seconds right why to"
+    },
+    {
+      "startSeconds": 1803,
+      "endSeconds": 1809.36,
+      "text": "wait for 3 seconds if one of them fails"
+    },
+    {
+      "startSeconds": 1805.48,
+      "endSeconds": 1812.32,
+      "text": "fails there will be some use cases when"
+    },
+    {
+      "startSeconds": 1809.36,
+      "endSeconds": 1814.399,
+      "text": "you might want to use all right when you"
+    },
+    {
+      "startSeconds": 1812.32,
+      "endSeconds": 1816.88,
+      "text": "want this behavior that I want the"
+    },
+    {
+      "startSeconds": 1814.399,
+      "endSeconds": 1818.88,
+      "text": "result of either all these promises or I"
+    },
+    {
+      "startSeconds": 1816.88,
+      "endSeconds": 1821.12,
+      "text": "don't want result of any of them I want"
+    },
+    {
+      "startSeconds": 1818.88,
+      "endSeconds": 1823.679,
+      "text": "quick error right so that is where you"
+    },
+    {
+      "startSeconds": 1821.12,
+      "endSeconds": 1826.039,
+      "text": "will use this in promise. all settled"
+    },
+    {
+      "startSeconds": 1823.679,
+      "endSeconds": 1829.2,
+      "text": "this is exactly similar to all in"
+    },
+    {
+      "startSeconds": 1826.039,
+      "endSeconds": 1832.32,
+      "text": "success cases but in Failure case even"
+    },
+    {
+      "startSeconds": 1829.2,
+      "endSeconds": 1835.64,
+      "text": "if one API call fails it will still wait"
+    },
+    {
+      "startSeconds": 1832.32,
+      "endSeconds": 1838.399,
+      "text": "for all the API calls to finish right"
+    },
+    {
+      "startSeconds": 1835.64,
+      "endSeconds": 1841.159,
+      "text": "and then you will get this array after 3"
+    },
+    {
+      "startSeconds": 1838.399,
+      "endSeconds": 1844.44,
+      "text": "seconds after 3 seconds and you will get"
+    },
+    {
+      "startSeconds": 1841.159,
+      "endSeconds": 1847.519,
+      "text": "the value or error according to what the"
+    },
+    {
+      "startSeconds": 1844.44,
+      "endSeconds": 1849.88,
+      "text": "promises you sent in the same order okay"
+    },
+    {
+      "startSeconds": 1847.519,
+      "endSeconds": 1851.919,
+      "text": "so if P1 was fulfilled then the value"
+    },
+    {
+      "startSeconds": 1849.88,
+      "endSeconds": 1853.919,
+      "text": "success value will come over here P2"
+    },
+    {
+      "startSeconds": 1851.919,
+      "endSeconds": 1856.559,
+      "text": "gets rejected the error will come over"
+    },
+    {
+      "startSeconds": 1853.919,
+      "endSeconds": 1858.76,
+      "text": "here P3 gets success the success value"
+    },
+    {
+      "startSeconds": 1856.559,
+      "endSeconds": 1861.279,
+      "text": "will come over here right let's go back"
+    },
+    {
+      "startSeconds": 1858.76,
+      "endSeconds": 1863.36,
+      "text": "quickly to promise. race hope you are"
+    },
+    {
+      "startSeconds": 1861.279,
+      "endSeconds": 1865.48,
+      "text": "understanding this let me tell you very"
+    },
+    {
+      "startSeconds": 1863.36,
+      "endSeconds": 1867.32,
+      "text": "important I have taught you in a"
+    },
+    {
+      "startSeconds": 1865.48,
+      "endSeconds": 1869.84,
+      "text": "diagrammatic fashion right when you"
+    },
+    {
+      "startSeconds": 1867.32,
+      "endSeconds": 1872.799,
+      "text": "learn with images it sticks in your head"
+    },
+    {
+      "startSeconds": 1869.84,
+      "endSeconds": 1875.48,
+      "text": "hope this is sticking to your head okay"
+    },
+    {
+      "startSeconds": 1872.799,
+      "endSeconds": 1878.36,
+      "text": "so hope you are getting something out of"
+    },
+    {
+      "startSeconds": 1875.48,
+      "endSeconds": 1880.88,
+      "text": "this the third one is promise. race in"
+    },
+    {
+      "startSeconds": 1878.36,
+      "endSeconds": 1886.84,
+      "text": "this it's kind of like a race right P1"
+    },
+    {
+      "startSeconds": 1880.88,
+      "endSeconds": 1888.48,
+      "text": "P2 P3 are racing the first settled see"
+    },
+    {
+      "startSeconds": 1886.84,
+      "endSeconds": 1891.48,
+      "text": "uh the there is a difference between a"
+    },
+    {
+      "startSeconds": 1888.48,
+      "endSeconds": 1893.32,
+      "text": "lingo right when you say settle it can"
+    },
+    {
+      "startSeconds": 1891.48,
+      "endSeconds": 1896.48,
+      "text": "settle with a success or a failure it"
+    },
+    {
+      "startSeconds": 1893.32,
+      "endSeconds": 1899.519,
+      "text": "can settle with a resulted or a promise"
+    },
+    {
+      "startSeconds": 1896.48,
+      "endSeconds": 1901.399,
+      "text": "can get resolved or rejected but it's in"
+    },
+    {
+      "startSeconds": 1899.519,
+      "endSeconds": 1903.679,
+      "text": "a settled state right it has settled"
+    },
+    {
+      "startSeconds": 1901.399,
+      "endSeconds": 1905.44,
+      "text": "settled means you have gotten uh"
+    },
+    {
+      "startSeconds": 1903.679,
+      "endSeconds": 1907.24,
+      "text": "response whether it is success or"
+    },
+    {
+      "startSeconds": 1905.44,
+      "endSeconds": 1910.84,
+      "text": "failure that's a different case settles"
+    },
+    {
+      "startSeconds": 1907.24,
+      "endSeconds": 1913.639,
+      "text": "right so first settle Pro and let me"
+    },
+    {
+      "startSeconds": 1910.84,
+      "endSeconds": 1915.72,
+      "text": "tell you you know interviewers will"
+    },
+    {
+      "startSeconds": 1913.639,
+      "endSeconds": 1918.76,
+      "text": "confuse you they will say fulfilled"
+    },
+    {
+      "startSeconds": 1915.72,
+      "endSeconds": 1921.6,
+      "text": "sucess settle resolve reject you will"
+    },
+    {
+      "startSeconds": 1918.76,
+      "endSeconds": 1924.039,
+      "text": "get messed up success failure listen to"
+    },
+    {
+      "startSeconds": 1921.6,
+      "endSeconds": 1927.6,
+      "text": "me very carefully get that lingo in your"
+    },
+    {
+      "startSeconds": 1924.039,
+      "endSeconds": 1930.08,
+      "text": "habit because you know uh I hate those"
+    },
+    {
+      "startSeconds": 1927.6,
+      "endSeconds": 1933.36,
+      "text": "type of interviewers which focus more on"
+    },
+    {
+      "startSeconds": 1930.08,
+      "endSeconds": 1935.44,
+      "text": "the lingo but I understand that okay"
+    },
+    {
+      "startSeconds": 1933.36,
+      "endSeconds": 1937.36,
+      "text": "like now interviewers are asking you you"
+    },
+    {
+      "startSeconds": 1935.44,
+      "endSeconds": 1939.6,
+      "text": "should you should also know so please"
+    },
+    {
+      "startSeconds": 1937.36,
+      "endSeconds": 1943.36,
+      "text": "know that you will always use the word"
+    },
+    {
+      "startSeconds": 1939.6,
+      "endSeconds": 1945.6,
+      "text": "settle right it will it will return the"
+    },
+    {
+      "startSeconds": 1943.36,
+      "endSeconds": 1947.279,
+      "text": "results as soon as the first settle"
+    },
+    {
+      "startSeconds": 1945.6,
+      "endSeconds": 1949.2,
+      "text": "promise it will return the result of the"
+    },
+    {
+      "startSeconds": 1947.279,
+      "endSeconds": 1951.399,
+      "text": "first settled promise now the settled"
+    },
+    {
+      "startSeconds": 1949.2,
+      "endSeconds": 1953.36,
+      "text": "promise can be success or failure if it"
+    },
+    {
+      "startSeconds": 1951.399,
+      "endSeconds": 1955.799,
+      "text": "is Success it will return the success if"
+    },
+    {
+      "startSeconds": 1953.36,
+      "endSeconds": 1960.24,
+      "text": "it is error it will return the error the"
+    },
+    {
+      "startSeconds": 1955.799,
+      "endSeconds": 1963.84,
+      "text": "first settled promise right this is race"
+    },
+    {
+      "startSeconds": 1960.24,
+      "endSeconds": 1968,
+      "text": "now right now promise. any it will"
+    },
+    {
+      "startSeconds": 1963.84,
+      "endSeconds": 1971.679,
+      "text": "return the result of first settled resol"
+    },
+    {
+      "startSeconds": 1968,
+      "endSeconds": 1975.08,
+      "text": "or first settled success right first"
+    },
+    {
+      "startSeconds": 1971.679,
+      "endSeconds": 1978.72,
+      "text": "settled success okay so remember if it"
+    },
+    {
+      "startSeconds": 1975.08,
+      "endSeconds": 1981.2,
+      "text": "fails if the first settled promise fails"
+    },
+    {
+      "startSeconds": 1978.72,
+      "endSeconds": 1982.799,
+      "text": "it will wait for the second if the"
+    },
+    {
+      "startSeconds": 1981.2,
+      "endSeconds": 1984.44,
+      "text": "second also fails it will wait for the"
+    },
+    {
+      "startSeconds": 1982.799,
+      "endSeconds": 1986.559,
+      "text": "third and it will keep on waiting till"
+    },
+    {
+      "startSeconds": 1984.44,
+      "endSeconds": 1989.88,
+      "text": "it gets a success right it's a success"
+    },
+    {
+      "startSeconds": 1986.559,
+      "endSeconds": 1992.399,
+      "text": "seeking API success seeking API right"
+    },
+    {
+      "startSeconds": 1989.88,
+      "endSeconds": 1994.88,
+      "text": "it's seeking for a success it's"
+    },
+    {
+      "startSeconds": 1992.399,
+      "endSeconds": 1998.279,
+      "text": "basically seeking for first success"
+    },
+    {
+      "startSeconds": 1994.88,
+      "endSeconds": 2002.24,
+      "text": "right let's write it down right"
+    },
+    {
+      "startSeconds": 1998.279,
+      "endSeconds": 2004.12,
+      "text": "seeking for"
+    },
+    {
+      "startSeconds": 2002.24,
+      "endSeconds": 2007.08,
+      "text": "first"
+    },
+    {
+      "startSeconds": 2004.12,
+      "endSeconds": 2008.639,
+      "text": "success right pardon my bad handwriting"
+    },
+    {
+      "startSeconds": 2007.08,
+      "endSeconds": 2010.72,
+      "text": "I'm writing very fast that's why it is"
+    },
+    {
+      "startSeconds": 2008.639,
+      "endSeconds": 2012.679,
+      "text": "happening it is seeking the first"
+    },
+    {
+      "startSeconds": 2010.72,
+      "endSeconds": 2014.6,
+      "text": "success once it gets the first success"
+    },
+    {
+      "startSeconds": 2012.679,
+      "endSeconds": 2017.919,
+      "text": "it will quickly return the result right"
+    },
+    {
+      "startSeconds": 2014.6,
+      "endSeconds": 2019.96,
+      "text": "so that is what if all of them fails if"
+    },
+    {
+      "startSeconds": 2017.919,
+      "endSeconds": 2022.919,
+      "text": "all of them fails then it will give you"
+    },
+    {
+      "startSeconds": 2019.96,
+      "endSeconds": 2026.039,
+      "text": "an aggregate error right error an array"
+    },
+    {
+      "startSeconds": 2022.919,
+      "endSeconds": 2030.279,
+      "text": "of errors all the error messages so this"
+    },
+    {
+      "startSeconds": 2026.039,
+      "endSeconds": 2031.72,
+      "text": "is what it will give you now this is all"
+    },
+    {
+      "startSeconds": 2030.279,
+      "endSeconds": 2033.559,
+      "text": "the theory part and if you have"
+    },
+    {
+      "startSeconds": 2031.72,
+      "endSeconds": 2036.12,
+      "text": "understood the theory let me tell you"
+    },
+    {
+      "startSeconds": 2033.559,
+      "endSeconds": 2038.039,
+      "text": "you have understood 80% of the things"
+    },
+    {
+      "startSeconds": 2036.12,
+      "endSeconds": 2040.919,
+      "text": "okay you have understood 80% of the"
+    },
+    {
+      "startSeconds": 2038.039,
+      "endSeconds": 2043.679,
+      "text": "things now let's move on to our VSS code"
+    },
+    {
+      "startSeconds": 2040.919,
+      "endSeconds": 2045.88,
+      "text": "editor and try to see all of this in"
+    },
+    {
+      "startSeconds": 2043.679,
+      "endSeconds": 2047.72,
+      "text": "action you will just love it you should"
+    },
+    {
+      "startSeconds": 2045.88,
+      "endSeconds": 2050.399,
+      "text": "also know how to write code for all of"
+    },
+    {
+      "startSeconds": 2047.72,
+      "endSeconds": 2052.44,
+      "text": "them isn't it okay so let us just"
+    },
+    {
+      "startSeconds": 2050.399,
+      "endSeconds": 2056.28,
+      "text": "quickly write the code for all of them"
+    },
+    {
+      "startSeconds": 2052.44,
+      "endSeconds": 2058.72,
+      "text": "okay so uh first of all right we will"
+    },
+    {
+      "startSeconds": 2056.28,
+      "endSeconds": 2062.119,
+      "text": "have we will see what is promise okay oh"
+    },
+    {
+      "startSeconds": 2058.72,
+      "endSeconds": 2064.28,
+      "text": "my God my caps lock is on"
+    },
+    {
+      "startSeconds": 2062.119,
+      "endSeconds": 2067.399,
+      "text": "promise.all okay so we will first of all"
+    },
+    {
+      "startSeconds": 2064.28,
+      "endSeconds": 2071.76,
+      "text": "see promise.all it will take an ADD of"
+    },
+    {
+      "startSeconds": 2067.399,
+      "endSeconds": 2075.679,
+      "text": "promises right P1 P2 and P3 okay P1 P2"
+    },
+    {
+      "startSeconds": 2071.76,
+      "endSeconds": 2078.76,
+      "text": "P3 these P1 P2 P3 can be API calls also"
+    },
+    {
+      "startSeconds": 2075.679,
+      "endSeconds": 2081.52,
+      "text": "okay suppose if P1 is a API call you can"
+    },
+    {
+      "startSeconds": 2078.76,
+      "endSeconds": 2083.56,
+      "text": "write Fetch and you can fetch a result"
+    },
+    {
+      "startSeconds": 2081.52,
+      "endSeconds": 2085.599,
+      "text": "Right This Promise can be this P1"
+    },
+    {
+      "startSeconds": 2083.56,
+      "endSeconds": 2088.24,
+      "text": "promise can be an API call also right"
+    },
+    {
+      "startSeconds": 2085.599,
+      "endSeconds": 2090.56,
+      "text": "suppose you are fetching some data but"
+    },
+    {
+      "startSeconds": 2088.24,
+      "endSeconds": 2092.839,
+      "text": "for this example I'm not making actual"
+    },
+    {
+      "startSeconds": 2090.56,
+      "endSeconds": 2095.8,
+      "text": "API calls okay for this demo I'm not"
+    },
+    {
+      "startSeconds": 2092.839,
+      "endSeconds": 2097.92,
+      "text": "making API calls I am writing a normal"
+    },
+    {
+      "startSeconds": 2095.8,
+      "endSeconds": 2100.599,
+      "text": "promise okay uh uh because we have more"
+    },
+    {
+      "startSeconds": 2097.92,
+      "endSeconds": 2102.56,
+      "text": "control over the timer right on it so"
+    },
+    {
+      "startSeconds": 2100.599,
+      "endSeconds": 2106.32,
+      "text": "that I can demonstrate all the cases to"
+    },
+    {
+      "startSeconds": 2102.56,
+      "endSeconds": 2108.16,
+      "text": "you okay so I am creating a promise uh"
+    },
+    {
+      "startSeconds": 2106.32,
+      "endSeconds": 2109.88,
+      "text": "you can also use fetch over here if you"
+    },
+    {
+      "startSeconds": 2108.16,
+      "endSeconds": 2111.4,
+      "text": "want to see live examples and that is"
+    },
+    {
+      "startSeconds": 2109.88,
+      "endSeconds": 2114.76,
+      "text": "what you will do generally in your real"
+    },
+    {
+      "startSeconds": 2111.4,
+      "endSeconds": 2117.599,
+      "text": "world example but I am just using this"
+    },
+    {
+      "startSeconds": 2114.76,
+      "endSeconds": 2120.52,
+      "text": "to show you the actual demo how it works"
+    },
+    {
+      "startSeconds": 2117.599,
+      "endSeconds": 2123.2,
+      "text": "right so I am doing a set timeout after"
+    },
+    {
+      "startSeconds": 2120.52,
+      "endSeconds": 2127.119,
+      "text": "set timeout okay let me resolve the"
+    },
+    {
+      "startSeconds": 2123.2,
+      "endSeconds": 2131.92,
+      "text": "first promise resolve it with a uh"
+    },
+    {
+      "startSeconds": 2127.119,
+      "endSeconds": 2134.44,
+      "text": "success okay so P1 success okay P1"
+    },
+    {
+      "startSeconds": 2131.92,
+      "endSeconds": 2137.599,
+      "text": "success uh let me call this as P1"
+    },
+    {
+      "startSeconds": 2134.44,
+      "endSeconds": 2139.56,
+      "text": "success over here and let me let's take"
+    },
+    {
+      "startSeconds": 2137.599,
+      "endSeconds": 2142.68,
+      "text": "the same example after 3 seconds it will"
+    },
+    {
+      "startSeconds": 2139.56,
+      "endSeconds": 2146,
+      "text": "give you the success okay 3 seconds it"
+    },
+    {
+      "startSeconds": 2142.68,
+      "endSeconds": 2149.319,
+      "text": "will give you the success right and what"
+    },
+    {
+      "startSeconds": 2146,
+      "endSeconds": 2153.88,
+      "text": "if let me just"
+    },
+    {
+      "startSeconds": 2149.319,
+      "endSeconds": 2157.68,
+      "text": "also let me make P2 P3 also right so P2"
+    },
+    {
+      "startSeconds": 2153.88,
+      "endSeconds": 2160.88,
+      "text": "is P2 success okay"
+    },
+    {
+      "startSeconds": 2157.68,
+      "endSeconds": 2163.16,
+      "text": "P2 success but it will take 1 second"
+    },
+    {
+      "startSeconds": 2160.88,
+      "endSeconds": 2166.24,
+      "text": "right this is what the example was and"
+    },
+    {
+      "startSeconds": 2163.16,
+      "endSeconds": 2168.96,
+      "text": "what if it is p uh P3 will take 2"
+    },
+    {
+      "startSeconds": 2166.24,
+      "endSeconds": 2173.319,
+      "text": "seconds and the P3 will be resolved with"
+    },
+    {
+      "startSeconds": 2168.96,
+      "endSeconds": 2176.96,
+      "text": "a P3 success okay P3 success now let me"
+    },
+    {
+      "startSeconds": 2173.319,
+      "endSeconds": 2180.76,
+      "text": "tell you let's call this as P1 P2 P3"
+    },
+    {
+      "startSeconds": 2176.96,
+      "endSeconds": 2183.119,
+      "text": "right P1 P2 P3 and now what is the"
+    },
+    {
+      "startSeconds": 2180.76,
+      "endSeconds": 2187.68,
+      "text": "return result for this right what I will"
+    },
+    {
+      "startSeconds": 2183.119,
+      "endSeconds": 2190.92,
+      "text": "do is I will just do a so basically it"
+    },
+    {
+      "startSeconds": 2187.68,
+      "endSeconds": 2194.76,
+      "text": "returns a promise only right so let me"
+    },
+    {
+      "startSeconds": 2190.92,
+      "endSeconds": 2196.8,
+      "text": "get the result of this right result"
+    },
+    {
+      "startSeconds": 2194.76,
+      "endSeconds": 2200.68,
+      "text": "right let me get the result and let me"
+    },
+    {
+      "startSeconds": 2196.8,
+      "endSeconds": 2202.52,
+      "text": "just log the result over here log the"
+    },
+    {
+      "startSeconds": 2200.68,
+      "endSeconds": 2205.28,
+      "text": "result whatever the result will be there"
+    },
+    {
+      "startSeconds": 2202.52,
+      "endSeconds": 2208.079,
+      "text": "I will just logging it to show you right"
+    },
+    {
+      "startSeconds": 2205.28,
+      "endSeconds": 2211.56,
+      "text": "and let us also see the time also right"
+    },
+    {
+      "startSeconds": 2208.079,
+      "endSeconds": 2215.68,
+      "text": "so basically time right so basically P1"
+    },
+    {
+      "startSeconds": 2211.56,
+      "endSeconds": 2217.48,
+      "text": "takes 3 seconds to resolve P2 takes 1"
+    },
+    {
+      "startSeconds": 2215.68,
+      "endSeconds": 2219.76,
+      "text": "second to resolve I am I'm just making a"
+    },
+    {
+      "startSeconds": 2217.48,
+      "endSeconds": 2221.04,
+      "text": "dummy so basically these are if if you"
+    },
+    {
+      "startSeconds": 2219.76,
+      "endSeconds": 2222.76,
+      "text": "are not understanding what I have"
+    },
+    {
+      "startSeconds": 2221.04,
+      "endSeconds": 2225.119,
+      "text": "written all of this this is dummy"
+    },
+    {
+      "startSeconds": 2222.76,
+      "endSeconds": 2227.24,
+      "text": "promises I have created dummy promises"
+    },
+    {
+      "startSeconds": 2225.119,
+      "endSeconds": 2229.52,
+      "text": "actually you will make an API calls or"
+    },
+    {
+      "startSeconds": 2227.24,
+      "endSeconds": 2231.68,
+      "text": "you will use actual promises and they"
+    },
+    {
+      "startSeconds": 2229.52,
+      "endSeconds": 2233.76,
+      "text": "will take their own times I have created"
+    },
+    {
+      "startSeconds": 2231.68,
+      "endSeconds": 2236.64,
+      "text": "dummy top dummy promises so that I can"
+    },
+    {
+      "startSeconds": 2233.76,
+      "endSeconds": 2238.48,
+      "text": "control at what time it gets resolved"
+    },
+    {
+      "startSeconds": 2236.64,
+      "endSeconds": 2242.24,
+      "text": "okay to show you the"
+    },
+    {
+      "startSeconds": 2238.48,
+      "endSeconds": 2243.8,
+      "text": "demo cool so this is promise. all hope"
+    },
+    {
+      "startSeconds": 2242.24,
+      "endSeconds": 2245.96,
+      "text": "all of this is visible also let me"
+    },
+    {
+      "startSeconds": 2243.8,
+      "endSeconds": 2249.52,
+      "text": "increase the font Okay cool so this is"
+    },
+    {
+      "startSeconds": 2245.96,
+      "endSeconds": 2252.88,
+      "text": "the font now promise. all now let me"
+    },
+    {
+      "startSeconds": 2249.52,
+      "endSeconds": 2255.24,
+      "text": "just save it and refresh my page save it"
+    },
+    {
+      "startSeconds": 2252.88,
+      "endSeconds": 2257.16,
+      "text": "and refresh my page and let me see what"
+    },
+    {
+      "startSeconds": 2255.24,
+      "endSeconds": 2259.359,
+      "text": "will be the result I saving it and I've"
+    },
+    {
+      "startSeconds": 2257.16,
+      "endSeconds": 2262.48,
+      "text": "have refreshed the page so after 3"
+    },
+    {
+      "startSeconds": 2259.359,
+      "endSeconds": 2266.48,
+      "text": "seconds 1 2 3 you will get an array see"
+    },
+    {
+      "startSeconds": 2262.48,
+      "endSeconds": 2269.8,
+      "text": "this array of response P P1 success P2"
+    },
+    {
+      "startSeconds": 2266.48,
+      "endSeconds": 2273.119,
+      "text": "success P3 success and it took 3 seconds"
+    },
+    {
+      "startSeconds": 2269.8,
+      "endSeconds": 2276.76,
+      "text": "right it took 3 seconds isn't it if I"
+    },
+    {
+      "startSeconds": 2273.119,
+      "endSeconds": 2279.319,
+      "text": "refresh my page it will take 3 seconds"
+    },
+    {
+      "startSeconds": 2276.76,
+      "endSeconds": 2281.72,
+      "text": "and it will get the result right after 3"
+    },
+    {
+      "startSeconds": 2279.319,
+      "endSeconds": 2284.079,
+      "text": "seconds remember this right now let us"
+    },
+    {
+      "startSeconds": 2281.72,
+      "endSeconds": 2287.28,
+      "text": "fail one of them right suppose let us"
+    },
+    {
+      "startSeconds": 2284.079,
+      "endSeconds": 2290.44,
+      "text": "fail the uh first promise okay let us"
+    },
+    {
+      "startSeconds": 2287.28,
+      "endSeconds": 2292.96,
+      "text": "fail this first promise okay so CV okay"
+    },
+    {
+      "startSeconds": 2290.44,
+      "endSeconds": 2298,
+      "text": "I am commenting down the success uh let"
+    },
+    {
+      "startSeconds": 2292.96,
+      "endSeconds": 2300.839,
+      "text": "me just make it P2 fail okay P2 fail P2"
+    },
+    {
+      "startSeconds": 2298,
+      "endSeconds": 2305.119,
+      "text": "fail and let me just reject This Promise"
+    },
+    {
+      "startSeconds": 2300.839,
+      "endSeconds": 2308.04,
+      "text": "r e j e c okay so what should happen is"
+    },
+    {
+      "startSeconds": 2305.119,
+      "endSeconds": 2311.24,
+      "text": "so now what will happen after 1"
+    },
+    {
+      "startSeconds": 2308.04,
+      "endSeconds": 2313.119,
+      "text": "seconds it will throw an error right"
+    },
+    {
+      "startSeconds": 2311.24,
+      "endSeconds": 2314.72,
+      "text": "this is what we learned in theory right"
+    },
+    {
+      "startSeconds": 2313.119,
+      "endSeconds": 2319.04,
+      "text": "after 1 second it will throw an error"
+    },
+    {
+      "startSeconds": 2314.72,
+      "endSeconds": 2321.48,
+      "text": "let us see it will not wait for p this"
+    },
+    {
+      "startSeconds": 2319.04,
+      "endSeconds": 2323.2,
+      "text": "this two seconds or 3 seconds exactly"
+    },
+    {
+      "startSeconds": 2321.48,
+      "endSeconds": 2325.28,
+      "text": "after 1 second it will throw an error"
+    },
+    {
+      "startSeconds": 2323.2,
+      "endSeconds": 2327.2,
+      "text": "okay I'll show it to you let us save"
+    },
+    {
+      "startSeconds": 2325.28,
+      "endSeconds": 2330.2,
+      "text": "this right if I save this refresh the"
+    },
+    {
+      "startSeconds": 2327.2,
+      "endSeconds": 2333.119,
+      "text": "page see refresh the page see after 1"
+    },
+    {
+      "startSeconds": 2330.2,
+      "endSeconds": 2336.2,
+      "text": "second itself it just failed now this is"
+    },
+    {
+      "startSeconds": 2333.119,
+      "endSeconds": 2338.359,
+      "text": "an uncut uncut error because I have not"
+    },
+    {
+      "startSeconds": 2336.2,
+      "endSeconds": 2340.92,
+      "text": "written a catch over here so let us just"
+    },
+    {
+      "startSeconds": 2338.359,
+      "endSeconds": 2342.96,
+      "text": "catch it right because catch is a good"
+    },
+    {
+      "startSeconds": 2340.92,
+      "endSeconds": 2345.839,
+      "text": "thing right we should catch the errors"
+    },
+    {
+      "startSeconds": 2342.96,
+      "endSeconds": 2349.079,
+      "text": "right and let me do a console. log of"
+    },
+    {
+      "startSeconds": 2345.839,
+      "endSeconds": 2352.04,
+      "text": "this error okay so let me just catch"
+    },
+    {
+      "startSeconds": 2349.079,
+      "endSeconds": 2354.119,
+      "text": "this let me write catch in another line"
+    },
+    {
+      "startSeconds": 2352.04,
+      "endSeconds": 2356.2,
+      "text": "so that it is much"
+    },
+    {
+      "startSeconds": 2354.119,
+      "endSeconds": 2359.319,
+      "text": "readable okay so we are catching the"
+    },
+    {
+      "startSeconds": 2356.2,
+      "endSeconds": 2362.72,
+      "text": "error so if I save it if I refresh the"
+    },
+    {
+      "startSeconds": 2359.319,
+      "endSeconds": 2365.119,
+      "text": "page see this after 1 second P2 fail we"
+    },
+    {
+      "startSeconds": 2362.72,
+      "endSeconds": 2367.16,
+      "text": "have oh it is not even looking like an"
+    },
+    {
+      "startSeconds": 2365.119,
+      "endSeconds": 2371.359,
+      "text": "error so let me make it look like an"
+    },
+    {
+      "startSeconds": 2367.16,
+      "endSeconds": 2374.119,
+      "text": "error basically console. err error right"
+    },
+    {
+      "startSeconds": 2371.359,
+      "endSeconds": 2376.52,
+      "text": "console. error so if I do console. error"
+    },
+    {
+      "startSeconds": 2374.119,
+      "endSeconds": 2378.52,
+      "text": "yes so it is a now this is not a uncut"
+    },
+    {
+      "startSeconds": 2376.52,
+      "endSeconds": 2381.24,
+      "text": "error this is a error which I have"
+    },
+    {
+      "startSeconds": 2378.52,
+      "endSeconds": 2383.96,
+      "text": "explicitly logged it right so it's not"
+    },
+    {
+      "startSeconds": 2381.24,
+      "endSeconds": 2385.52,
+      "text": "an uncut error it is always good you"
+    },
+    {
+      "startSeconds": 2383.96,
+      "endSeconds": 2387.52,
+      "text": "know while I am teaching this Namaste"
+    },
+    {
+      "startSeconds": 2385.52,
+      "endSeconds": 2391.359,
+      "text": "JavaScript I also want to teach you good"
+    },
+    {
+      "startSeconds": 2387.52,
+      "endSeconds": 2393.28,
+      "text": "practices never ever rely on uncut error"
+    },
+    {
+      "startSeconds": 2391.359,
+      "endSeconds": 2395.24,
+      "text": "you should never have this uncut error"
+    },
+    {
+      "startSeconds": 2393.28,
+      "endSeconds": 2396.92,
+      "text": "in your code okay let me just show it to"
+    },
+    {
+      "startSeconds": 2395.24,
+      "endSeconds": 2400,
+      "text": "you see this"
+    },
+    {
+      "startSeconds": 2396.92,
+      "endSeconds": 2401.96,
+      "text": "uncaught right uncaught means you are"
+    },
+    {
+      "startSeconds": 2400,
+      "endSeconds": 2404.76,
+      "text": "not even aware of you have not handled"
+    },
+    {
+      "startSeconds": 2401.96,
+      "endSeconds": 2406.64,
+      "text": "the error right this is uncaught error"
+    },
+    {
+      "startSeconds": 2404.76,
+      "endSeconds": 2409.28,
+      "text": "right so don't get into uncut error"
+    },
+    {
+      "startSeconds": 2406.64,
+      "endSeconds": 2413.119,
+      "text": "always write your catch statement always"
+    },
+    {
+      "startSeconds": 2409.28,
+      "endSeconds": 2414.76,
+      "text": "catch your errors before the before the"
+    },
+    {
+      "startSeconds": 2413.119,
+      "endSeconds": 2417.359,
+      "text": "browser catches your error you should"
+    },
+    {
+      "startSeconds": 2414.76,
+      "endSeconds": 2419.319,
+      "text": "catch your error okay so you write a"
+    },
+    {
+      "startSeconds": 2417.359,
+      "endSeconds": 2422.24,
+      "text": "catch statement so see this this is a"
+    },
+    {
+      "startSeconds": 2419.319,
+      "endSeconds": 2424.24,
+      "text": "CAU error right and if I do a console"
+    },
+    {
+      "startSeconds": 2422.24,
+      "endSeconds": 2428.4,
+      "text": "log it will not look not even look like"
+    },
+    {
+      "startSeconds": 2424.24,
+      "endSeconds": 2431.28,
+      "text": "an error see this it will be P2 fail"
+    },
+    {
+      "startSeconds": 2428.4,
+      "endSeconds": 2433.4,
+      "text": "okay so this is P2 fail right let me"
+    },
+    {
+      "startSeconds": 2431.28,
+      "endSeconds": 2435.68,
+      "text": "make it console. error only so that"
+    },
+    {
+      "startSeconds": 2433.4,
+      "endSeconds": 2437.24,
+      "text": "error is visible properly but after 1"
+    },
+    {
+      "startSeconds": 2435.68,
+      "endSeconds": 2438.119,
+      "text": "second it fails this is what I wanted to"
+    },
+    {
+      "startSeconds": 2437.24,
+      "endSeconds": 2442.28,
+      "text": "show"
+    },
+    {
+      "startSeconds": 2438.119,
+      "endSeconds": 2445.16,
+      "text": "you what if this was successful and what"
+    },
+    {
+      "startSeconds": 2442.28,
+      "endSeconds": 2448.92,
+      "text": "if this was successful right but then"
+    },
+    {
+      "startSeconds": 2445.16,
+      "endSeconds": 2451.839,
+      "text": "this P3 failed right P3 failed after 2"
+    },
+    {
+      "startSeconds": 2448.92,
+      "endSeconds": 2454.56,
+      "text": "seconds okay let me just fail P3 what"
+    },
+    {
+      "startSeconds": 2451.839,
+      "endSeconds": 2457.04,
+      "text": "will be the error so are you able to"
+    },
+    {
+      "startSeconds": 2454.56,
+      "endSeconds": 2459.72,
+      "text": "guess what will be the output over here"
+    },
+    {
+      "startSeconds": 2457.04,
+      "endSeconds": 2463.04,
+      "text": "are you able to guess my dear friends I"
+    },
+    {
+      "startSeconds": 2459.72,
+      "endSeconds": 2467.16,
+      "text": "am rejecting it and let me write P3 fail"
+    },
+    {
+      "startSeconds": 2463.04,
+      "endSeconds": 2470.8,
+      "text": "right P3 fail so you know that okay P3"
+    },
+    {
+      "startSeconds": 2467.16,
+      "endSeconds": 2473.48,
+      "text": "will fail right but after 2 seconds it"
+    },
+    {
+      "startSeconds": 2470.8,
+      "endSeconds": 2476.24,
+      "text": "will fail see this Let me refresh the"
+    },
+    {
+      "startSeconds": 2473.48,
+      "endSeconds": 2479.64,
+      "text": "page it will wait for 2 seconds after 2"
+    },
+    {
+      "startSeconds": 2476.24,
+      "endSeconds": 2483.52,
+      "text": "seconds it failed got it so this is"
+    },
+    {
+      "startSeconds": 2479.64,
+      "endSeconds": 2486.44,
+      "text": "promise. all this is"
+    },
+    {
+      "startSeconds": 2483.52,
+      "endSeconds": 2487.76,
+      "text": "promise.all got it now let us talk about"
+    },
+    {
+      "startSeconds": 2486.44,
+      "endSeconds": 2489.8,
+      "text": "promise. settled hope you would have"
+    },
+    {
+      "startSeconds": 2487.76,
+      "endSeconds": 2492.24,
+      "text": "understood it play play more with it"
+    },
+    {
+      "startSeconds": 2489.8,
+      "endSeconds": 2495.839,
+      "text": "right try to fail reject fail all of"
+    },
+    {
+      "startSeconds": 2492.24,
+      "endSeconds": 2498.48,
+      "text": "them check all what happens right uh do"
+    },
+    {
+      "startSeconds": 2495.839,
+      "endSeconds": 2500.76,
+      "text": "do your own uh like fulfill your own"
+    },
+    {
+      "startSeconds": 2498.48,
+      "endSeconds": 2503.04,
+      "text": "curiosity by testing out all the results"
+    },
+    {
+      "startSeconds": 2500.76,
+      "endSeconds": 2505.52,
+      "text": "make multiple promise calls make 10"
+    },
+    {
+      "startSeconds": 2503.04,
+      "endSeconds": 2508.359,
+      "text": "promise calls do play with the code"
+    },
+    {
+      "startSeconds": 2505.52,
+      "endSeconds": 2510.44,
+      "text": "right uh but I want to get you started"
+    },
+    {
+      "startSeconds": 2508.359,
+      "endSeconds": 2512.4,
+      "text": "right so this is enough for now let's go"
+    },
+    {
+      "startSeconds": 2510.44,
+      "endSeconds": 2514.56,
+      "text": "to settled now right if we have"
+    },
+    {
+      "startSeconds": 2512.4,
+      "endSeconds": 2516.72,
+      "text": "promised. all settled now you know what"
+    },
+    {
+      "startSeconds": 2514.56,
+      "endSeconds": 2519.48,
+      "text": "will happen what will happen it will"
+    },
+    {
+      "startSeconds": 2516.72,
+      "endSeconds": 2521,
+      "text": "wait for all the promises to fulfill"
+    },
+    {
+      "startSeconds": 2519.48,
+      "endSeconds": 2523.16,
+      "text": "whether it is Success whether it is"
+    },
+    {
+      "startSeconds": 2521,
+      "endSeconds": 2525.24,
+      "text": "failure it will wait for all of them and"
+    },
+    {
+      "startSeconds": 2523.16,
+      "endSeconds": 2527.64,
+      "text": "it will collect all the results and it"
+    },
+    {
+      "startSeconds": 2525.24,
+      "endSeconds": 2529.599,
+      "text": "will give you back right this is what we"
+    },
+    {
+      "startSeconds": 2527.64,
+      "endSeconds": 2532.64,
+      "text": "studied over here let's go back to"
+    },
+    {
+      "startSeconds": 2529.599,
+      "endSeconds": 2535.359,
+      "text": "promise. all settled it will wait for"
+    },
+    {
+      "startSeconds": 2532.64,
+      "endSeconds": 2537.28,
+      "text": "all the promises to get settled and then"
+    },
+    {
+      "startSeconds": 2535.359,
+      "endSeconds": 2540.2,
+      "text": "it will collect all the results and then"
+    },
+    {
+      "startSeconds": 2537.28,
+      "endSeconds": 2542.76,
+      "text": "it will give you back right uh so if I"
+    },
+    {
+      "startSeconds": 2540.2,
+      "endSeconds": 2545.16,
+      "text": "save right you will see the output after"
+    },
+    {
+      "startSeconds": 2542.76,
+      "endSeconds": 2547,
+      "text": "3 seconds we got see this we got an"
+    },
+    {
+      "startSeconds": 2545.16,
+      "endSeconds": 2549.28,
+      "text": "error with three things"
+    },
+    {
+      "startSeconds": 2547,
+      "endSeconds": 2551.359,
+      "text": "see this if you will see this it will"
+    },
+    {
+      "startSeconds": 2549.28,
+      "endSeconds": 2553.8,
+      "text": "give you three result the first one was"
+    },
+    {
+      "startSeconds": 2551.359,
+      "endSeconds": 2557.4,
+      "text": "fulfilled the second one was fulfilled"
+    },
+    {
+      "startSeconds": 2553.8,
+      "endSeconds": 2559.48,
+      "text": "the third one was rejected P1 success P2"
+    },
+    {
+      "startSeconds": 2557.4,
+      "endSeconds": 2562.8,
+      "text": "success P3 failure so basically it"
+    },
+    {
+      "startSeconds": 2559.48,
+      "endSeconds": 2564.839,
+      "text": "waited for all the results to come in it"
+    },
+    {
+      "startSeconds": 2562.8,
+      "endSeconds": 2567.079,
+      "text": "waited for all the results to come in"
+    },
+    {
+      "startSeconds": 2564.839,
+      "endSeconds": 2569.079,
+      "text": "and after that it gave you an array with"
+    },
+    {
+      "startSeconds": 2567.079,
+      "endSeconds": 2570.96,
+      "text": "all the results irrespective of whether"
+    },
+    {
+      "startSeconds": 2569.079,
+      "endSeconds": 2573.72,
+      "text": "it failed irrespective of whether it"
+    },
+    {
+      "startSeconds": 2570.96,
+      "endSeconds": 2577.559,
+      "text": "passed it gave you all the results okay"
+    },
+    {
+      "startSeconds": 2573.72,
+      "endSeconds": 2579.52,
+      "text": "so this is promise. all set settled okay"
+    },
+    {
+      "startSeconds": 2577.559,
+      "endSeconds": 2584.76,
+      "text": "and let me tell you this is the safest"
+    },
+    {
+      "startSeconds": 2579.52,
+      "endSeconds": 2587.839,
+      "text": "option among all promise. any race all"
+    },
+    {
+      "startSeconds": 2584.76,
+      "endSeconds": 2591.119,
+      "text": "promise. all settled is safest option it"
+    },
+    {
+      "startSeconds": 2587.839,
+      "endSeconds": 2593.559,
+      "text": "waits for all the promises to settle"
+    },
+    {
+      "startSeconds": 2591.119,
+      "endSeconds": 2597.04,
+      "text": "right that is why it is all settled it"
+    },
+    {
+      "startSeconds": 2593.559,
+      "endSeconds": 2599.64,
+      "text": "will only return the results once all"
+    },
+    {
+      "startSeconds": 2597.04,
+      "endSeconds": 2601.8,
+      "text": "the promises are settled right that is"
+    },
+    {
+      "startSeconds": 2599.64,
+      "endSeconds": 2604.8,
+      "text": "why it is all settled I really like"
+    },
+    {
+      "startSeconds": 2601.8,
+      "endSeconds": 2607.64,
+      "text": "their names right all all settled got it"
+    },
+    {
+      "startSeconds": 2604.8,
+      "endSeconds": 2609.52,
+      "text": "so uh this is what it is in the success"
+    },
+    {
+      "startSeconds": 2607.64,
+      "endSeconds": 2611.52,
+      "text": "case it I'm not showing you the success"
+    },
+    {
+      "startSeconds": 2609.52,
+      "endSeconds": 2613.76,
+      "text": "case over here because in the success"
+    },
+    {
+      "startSeconds": 2611.52,
+      "endSeconds": 2616.68,
+      "text": "case it will give all the fulfilled and"
+    },
+    {
+      "startSeconds": 2613.76,
+      "endSeconds": 2619.4,
+      "text": "also see this right it will give you an"
+    },
+    {
+      "startSeconds": 2616.68,
+      "endSeconds": 2621.28,
+      "text": "object right now it will give you an see"
+    },
+    {
+      "startSeconds": 2619.4,
+      "endSeconds": 2623.359,
+      "text": "it will give you an array of objects and"
+    },
+    {
+      "startSeconds": 2621.28,
+      "endSeconds": 2626.079,
+      "text": "each of this object will have a status"
+    },
+    {
+      "startSeconds": 2623.359,
+      "endSeconds": 2627.839,
+      "text": "and would have a value right so if it is"
+    },
+    {
+      "startSeconds": 2626.079,
+      "endSeconds": 2629.64,
+      "text": "Success it will give you a status which"
+    },
+    {
+      "startSeconds": 2627.839,
+      "endSeconds": 2631.76,
+      "text": "is fulfilled and it will give you a"
+    },
+    {
+      "startSeconds": 2629.64,
+      "endSeconds": 2634.119,
+      "text": "value which is the value of the success"
+    },
+    {
+      "startSeconds": 2631.76,
+      "endSeconds": 2636.359,
+      "text": "message but if it gets rejected it will"
+    },
+    {
+      "startSeconds": 2634.119,
+      "endSeconds": 2638.559,
+      "text": "give you a status rejected and it will"
+    },
+    {
+      "startSeconds": 2636.359,
+      "endSeconds": 2641.68,
+      "text": "give you a reason for"
+    },
+    {
+      "startSeconds": 2638.559,
+      "endSeconds": 2644.28,
+      "text": "rejection got it so this is what is to"
+    },
+    {
+      "startSeconds": 2641.68,
+      "endSeconds": 2646.68,
+      "text": "be noted over here the format so it will"
+    },
+    {
+      "startSeconds": 2644.28,
+      "endSeconds": 2649.16,
+      "text": "give you an object okay this is what you"
+    },
+    {
+      "startSeconds": 2646.68,
+      "endSeconds": 2651.24,
+      "text": "have to know not take it down as a note"
+    },
+    {
+      "startSeconds": 2649.16,
+      "endSeconds": 2654,
+      "text": "it will give you an object most people"
+    },
+    {
+      "startSeconds": 2651.24,
+      "endSeconds": 2656.68,
+      "text": "forget this right uh uh good that we are"
+    },
+    {
+      "startSeconds": 2654,
+      "endSeconds": 2659.28,
+      "text": "doing a demo and we got into this right"
+    },
+    {
+      "startSeconds": 2656.68,
+      "endSeconds": 2661.48,
+      "text": "so now let us go to race okay let's see"
+    },
+    {
+      "startSeconds": 2659.28,
+      "endSeconds": 2664.04,
+      "text": "how race works now you know right how"
+    },
+    {
+      "startSeconds": 2661.48,
+      "endSeconds": 2666.52,
+      "text": "race works whatever will be the first"
+    },
+    {
+      "startSeconds": 2664.04,
+      "endSeconds": 2668.28,
+      "text": "one it will just return you the result"
+    },
+    {
+      "startSeconds": 2666.52,
+      "endSeconds": 2670.359,
+      "text": "right whether it is success or failure"
+    },
+    {
+      "startSeconds": 2668.28,
+      "endSeconds": 2673.64,
+      "text": "it will first return the result let me"
+    },
+    {
+      "startSeconds": 2670.359,
+      "endSeconds": 2676.44,
+      "text": "save it and refresh the page right see"
+    },
+    {
+      "startSeconds": 2673.64,
+      "endSeconds": 2678.88,
+      "text": "this it gives you P2 success why P2"
+    },
+    {
+      "startSeconds": 2676.44,
+      "endSeconds": 2682.04,
+      "text": "because P2 was 1 second and it gave you"
+    },
+    {
+      "startSeconds": 2678.88,
+      "endSeconds": 2684.88,
+      "text": "the P2 success okay what if P2 was not"
+    },
+    {
+      "startSeconds": 2682.04,
+      "endSeconds": 2688.24,
+      "text": "the first one suppose P2 takes 5 Seconds"
+    },
+    {
+      "startSeconds": 2684.88,
+      "endSeconds": 2691.8,
+      "text": "right but P3 takes 2 seconds and it gets"
+    },
+    {
+      "startSeconds": 2688.24,
+      "endSeconds": 2695.599,
+      "text": "failed what will happen save the"
+    },
+    {
+      "startSeconds": 2691.8,
+      "endSeconds": 2699.92,
+      "text": "file after 2 seconds P3 failed see this"
+    },
+    {
+      "startSeconds": 2695.599,
+      "endSeconds": 2703.119,
+      "text": "if I refresh the page after 2 seconds P3"
+    },
+    {
+      "startSeconds": 2699.92,
+      "endSeconds": 2706.16,
+      "text": "fail right so whatever it is kind of"
+    },
+    {
+      "startSeconds": 2703.119,
+      "endSeconds": 2708.079,
+      "text": "like a race whatever will take the least"
+    },
+    {
+      "startSeconds": 2706.16,
+      "endSeconds": 2711.52,
+      "text": "time right in among all these three"
+    },
+    {
+      "startSeconds": 2708.079,
+      "endSeconds": 2713.079,
+      "text": "promises the P3 was taking 2 seconds"
+    },
+    {
+      "startSeconds": 2711.52,
+      "endSeconds": 2716.44,
+      "text": "whether it is Success whether it is"
+    },
+    {
+      "startSeconds": 2713.079,
+      "endSeconds": 2719.72,
+      "text": "failure it will just finish it and it"
+    },
+    {
+      "startSeconds": 2716.44,
+      "endSeconds": 2722.04,
+      "text": "will just quickly throw an error right"
+    },
+    {
+      "startSeconds": 2719.72,
+      "endSeconds": 2724.44,
+      "text": "so basically if you have to summarize"
+    },
+    {
+      "startSeconds": 2722.04,
+      "endSeconds": 2727.24,
+      "text": "you know why I summarize it because this"
+    },
+    {
+      "startSeconds": 2724.44,
+      "endSeconds": 2729.2,
+      "text": "is how you have to explain an interview"
+    },
+    {
+      "startSeconds": 2727.24,
+      "endSeconds": 2730.88,
+      "text": "right you will not get words let me tell"
+    },
+    {
+      "startSeconds": 2729.2,
+      "endSeconds": 2732.92,
+      "text": "you you will know what will happening"
+    },
+    {
+      "startSeconds": 2730.88,
+      "endSeconds": 2735.96,
+      "text": "but you will not get words that is why I"
+    },
+    {
+      "startSeconds": 2732.92,
+      "endSeconds": 2737.48,
+      "text": "am you know while you know the concept"
+    },
+    {
+      "startSeconds": 2735.96,
+      "endSeconds": 2739.319,
+      "text": "you should also know how to explain in"
+    },
+    {
+      "startSeconds": 2737.48,
+      "endSeconds": 2741.48,
+      "text": "interviews most people fail in"
+    },
+    {
+      "startSeconds": 2739.319,
+      "endSeconds": 2742.92,
+      "text": "interviews because they can't explain it"
+    },
+    {
+      "startSeconds": 2741.48,
+      "endSeconds": 2745.04,
+      "text": "they know it in their head but they"
+    },
+    {
+      "startSeconds": 2742.92,
+      "endSeconds": 2748.359,
+      "text": "can't express it out in words that is"
+    },
+    {
+      "startSeconds": 2745.04,
+      "endSeconds": 2751.28,
+      "text": "why I speak a lot I continuously speak a"
+    },
+    {
+      "startSeconds": 2748.359,
+      "endSeconds": 2752.68,
+      "text": "lot so that it gets into your head that"
+    },
+    {
+      "startSeconds": 2751.28,
+      "endSeconds": 2754.599,
+      "text": "is why people who watch Namaste"
+    },
+    {
+      "startSeconds": 2752.68,
+      "endSeconds": 2756.92,
+      "text": "JavaScript gets do better in interviews"
+    },
+    {
+      "startSeconds": 2754.599,
+      "endSeconds": 2759.24,
+      "text": "because I feed it in your in your head"
+    },
+    {
+      "startSeconds": 2756.92,
+      "endSeconds": 2762.16,
+      "text": "feed it in your head you have to use the"
+    },
+    {
+      "startSeconds": 2759.24,
+      "endSeconds": 2765.24,
+      "text": "word settled what happens when you do a"
+    },
+    {
+      "startSeconds": 2762.16,
+      "endSeconds": 2769.599,
+      "text": "race listen to me very carefully in case"
+    },
+    {
+      "startSeconds": 2765.24,
+      "endSeconds": 2771.92,
+      "text": "of promise. race the first settled"
+    },
+    {
+      "startSeconds": 2769.599,
+      "endSeconds": 2773.72,
+      "text": "promise whether it is success or result"
+    },
+    {
+      "startSeconds": 2771.92,
+      "endSeconds": 2777.079,
+      "text": "success or failure it will return the"
+    },
+    {
+      "startSeconds": 2773.72,
+      "endSeconds": 2779.96,
+      "text": "result the result will be the the value"
+    },
+    {
+      "startSeconds": 2777.079,
+      "endSeconds": 2783.52,
+      "text": "the error or the value of the first"
+    },
+    {
+      "startSeconds": 2779.96,
+      "endSeconds": 2785.839,
+      "text": "settled promise first settled promise"
+    },
+    {
+      "startSeconds": 2783.52,
+      "endSeconds": 2788.2,
+      "text": "okay settle is a keyword over here"
+    },
+    {
+      "startSeconds": 2785.839,
+      "endSeconds": 2790.64,
+      "text": "settle is a keyword irrespective of fail"
+    },
+    {
+      "startSeconds": 2788.2,
+      "endSeconds": 2793.359,
+      "text": "or success irrespective of resolve or"
+    },
+    {
+      "startSeconds": 2790.64,
+      "endSeconds": 2797.16,
+      "text": "reject irrespective of fulfilled or"
+    },
+    {
+      "startSeconds": 2793.359,
+      "endSeconds": 2800.48,
+      "text": "rejected right so fulfilled rejected"
+    },
+    {
+      "startSeconds": 2797.16,
+      "endSeconds": 2804.119,
+      "text": "resolv you know uh let me also tell you"
+    },
+    {
+      "startSeconds": 2800.48,
+      "endSeconds": 2806.48,
+      "text": "one thing right so a lot of mess happens"
+    },
+    {
+      "startSeconds": 2804.119,
+      "endSeconds": 2809.119,
+      "text": "when you don't know the lingo right I"
+    },
+    {
+      "startSeconds": 2806.48,
+      "endSeconds": 2811.44,
+      "text": "also want to tell you the lingo right uh"
+    },
+    {
+      "startSeconds": 2809.119,
+      "endSeconds": 2813.44,
+      "text": "lingo used in promised World once you"
+    },
+    {
+      "startSeconds": 2811.44,
+      "endSeconds": 2815.839,
+      "text": "know the lingo you will it will be easy"
+    },
+    {
+      "startSeconds": 2813.44,
+      "endSeconds": 2818.92,
+      "text": "for you to read the documentation also"
+    },
+    {
+      "startSeconds": 2815.839,
+      "endSeconds": 2822.4,
+      "text": "so okay so when you"
+    },
+    {
+      "startSeconds": 2818.92,
+      "endSeconds": 2825.119,
+      "text": "say when you say a promise right uh let"
+    },
+    {
+      "startSeconds": 2822.4,
+      "endSeconds": 2827.28,
+      "text": "me go back to my notbook right when you"
+    },
+    {
+      "startSeconds": 2825.119,
+      "endSeconds": 2830,
+      "text": "saw a promises"
+    },
+    {
+      "startSeconds": 2827.28,
+      "endSeconds": 2832.24,
+      "text": "settled right when you say a promises"
+    },
+    {
+      "startSeconds": 2830,
+      "endSeconds": 2835.24,
+      "text": "settled that means you have got the"
+    },
+    {
+      "startSeconds": 2832.24,
+      "endSeconds": 2839.04,
+      "text": "result got the"
+    },
+    {
+      "startSeconds": 2835.24,
+      "endSeconds": 2842,
+      "text": "result right basically right now once"
+    },
+    {
+      "startSeconds": 2839.04,
+      "endSeconds": 2844.48,
+      "text": "the promis is settled it can go in two"
+    },
+    {
+      "startSeconds": 2842,
+      "endSeconds": 2847.079,
+      "text": "State and there are different lingos for"
+    },
+    {
+      "startSeconds": 2844.48,
+      "endSeconds": 2849.88,
+      "text": "it right once the settled once the"
+    },
+    {
+      "startSeconds": 2847.079,
+      "endSeconds": 2851.4,
+      "text": "promise is settled it can go it can"
+    },
+    {
+      "startSeconds": 2849.88,
+      "endSeconds": 2854.52,
+      "text": "either"
+    },
+    {
+      "startSeconds": 2851.4,
+      "endSeconds": 2856.839,
+      "text": "resolve or it can"
+    },
+    {
+      "startSeconds": 2854.52,
+      "endSeconds": 2859.04,
+      "text": "reject okay it can either resolve or"
+    },
+    {
+      "startSeconds": 2856.839,
+      "endSeconds": 2861.839,
+      "text": "reject note it down in your notebook"
+    },
+    {
+      "startSeconds": 2859.04,
+      "endSeconds": 2864.52,
+      "text": "right it can either be"
+    },
+    {
+      "startSeconds": 2861.839,
+      "endSeconds": 2868.28,
+      "text": "success or"
+    },
+    {
+      "startSeconds": 2864.52,
+      "endSeconds": 2868.28,
+      "text": "failure it can either be"
+    },
+    {
+      "startSeconds": 2868.599,
+      "endSeconds": 2872.92,
+      "text": "fulfilled or it can"
+    },
+    {
+      "startSeconds": 2871.319,
+      "endSeconds": 2875.559,
+      "text": "be"
+    },
+    {
+      "startSeconds": 2872.92,
+      "endSeconds": 2878.28,
+      "text": "rejected okay so these are the lingos"
+    },
+    {
+      "startSeconds": 2875.559,
+      "endSeconds": 2879.96,
+      "text": "which which are common in your in your"
+    },
+    {
+      "startSeconds": 2878.28,
+      "endSeconds": 2883.76,
+      "text": "promised world you should know all of"
+    },
+    {
+      "startSeconds": 2879.96,
+      "endSeconds": 2885.839,
+      "text": "them right don't confuse settled"
+    },
+    {
+      "startSeconds": 2883.76,
+      "endSeconds": 2888.52,
+      "text": "sometimes people see think that settle"
+    },
+    {
+      "startSeconds": 2885.839,
+      "endSeconds": 2891.079,
+      "text": "means it's always a success no settle"
+    },
+    {
+      "startSeconds": 2888.52,
+      "endSeconds": 2893.559,
+      "text": "can be a failure as well as a success"
+    },
+    {
+      "startSeconds": 2891.079,
+      "endSeconds": 2895.76,
+      "text": "right and A promise is generally"
+    },
+    {
+      "startSeconds": 2893.559,
+      "endSeconds": 2897.559,
+      "text": "fulfilled or rejected right this is what"
+    },
+    {
+      "startSeconds": 2895.76,
+      "endSeconds": 2901.04,
+      "text": "the status you will get when you will"
+    },
+    {
+      "startSeconds": 2897.559,
+      "endSeconds": 2903.319,
+      "text": "use promise do all settled over here"
+    },
+    {
+      "startSeconds": 2901.04,
+      "endSeconds": 2906.64,
+      "text": "okay if you'll use all settled you will"
+    },
+    {
+      "startSeconds": 2903.319,
+      "endSeconds": 2908.96,
+      "text": "get either fulfilled or rejected okay so"
+    },
+    {
+      "startSeconds": 2906.64,
+      "endSeconds": 2911.319,
+      "text": "you should know all of this note it down"
+    },
+    {
+      "startSeconds": 2908.96,
+      "endSeconds": 2913.04,
+      "text": "it is very important my dear friends"
+    },
+    {
+      "startSeconds": 2911.319,
+      "endSeconds": 2914.4,
+      "text": "very important I want to teach you in"
+    },
+    {
+      "startSeconds": 2913.04,
+      "endSeconds": 2915.96,
+      "text": "depth I want to teach you all these"
+    },
+    {
+      "startSeconds": 2914.4,
+      "endSeconds": 2918.16,
+      "text": "things nobody will teach you all this"
+    },
+    {
+      "startSeconds": 2915.96,
+      "endSeconds": 2920.16,
+      "text": "I'm telling you go to any YouTube video"
+    },
+    {
+      "startSeconds": 2918.16,
+      "endSeconds": 2923.2,
+      "text": "tell me if somebody is explaining this"
+    },
+    {
+      "startSeconds": 2920.16,
+      "endSeconds": 2925.4,
+      "text": "because I have I have struggled myself I"
+    },
+    {
+      "startSeconds": 2923.2,
+      "endSeconds": 2927.4,
+      "text": "am talking from my experience that a lot"
+    },
+    {
+      "startSeconds": 2925.4,
+      "endSeconds": 2928.8,
+      "text": "of people get confused tell me down in"
+    },
+    {
+      "startSeconds": 2927.4,
+      "endSeconds": 2931.799,
+      "text": "the comments whether you get confused or"
+    },
+    {
+      "startSeconds": 2928.8,
+      "endSeconds": 2933.52,
+      "text": "not with this you get confused right"
+    },
+    {
+      "startSeconds": 2931.799,
+      "endSeconds": 2935.64,
+      "text": "right and let me tell you that when you"
+    },
+    {
+      "startSeconds": 2933.52,
+      "endSeconds": 2938.4,
+      "text": "will go in in an interview it will be"
+    },
+    {
+      "startSeconds": 2935.64,
+      "endSeconds": 2940.96,
+      "text": "very tough for you to explain also in"
+    },
+    {
+      "startSeconds": 2938.4,
+      "endSeconds": 2942.44,
+      "text": "English it it will be there in your head"
+    },
+    {
+      "startSeconds": 2940.96,
+      "endSeconds": 2944.319,
+      "text": "but it will be very tough for you to"
+    },
+    {
+      "startSeconds": 2942.44,
+      "endSeconds": 2946.92,
+      "text": "explain it in English that what is"
+    },
+    {
+      "startSeconds": 2944.319,
+      "endSeconds": 2949,
+      "text": "promise. race when you will explain"
+    },
+    {
+      "startSeconds": 2946.92,
+      "endSeconds": 2952.16,
+      "text": "promise. race what will happen you will"
+    },
+    {
+      "startSeconds": 2949,
+      "endSeconds": 2954.079,
+      "text": "say oh three promises and uh promise"
+    },
+    {
+      "startSeconds": 2952.16,
+      "endSeconds": 2956.52,
+      "text": "resolve reject or you will be get"
+    },
+    {
+      "startSeconds": 2954.079,
+      "endSeconds": 2959.559,
+      "text": "confused right you should know the lingo"
+    },
+    {
+      "startSeconds": 2956.52,
+      "endSeconds": 2962.48,
+      "text": "practice this lingo fulfill resolve"
+    },
+    {
+      "startSeconds": 2959.559,
+      "endSeconds": 2965.119,
+      "text": "success failure reject"
+    },
+    {
+      "startSeconds": 2962.48,
+      "endSeconds": 2967.88,
+      "text": "rejected know all this lingo what is"
+    },
+    {
+      "startSeconds": 2965.119,
+      "endSeconds": 2969.24,
+      "text": "settled what is not settled right"
+    },
+    {
+      "startSeconds": 2967.88,
+      "endSeconds": 2971.319,
+      "text": "because it's very important in"
+    },
+    {
+      "startSeconds": 2969.24,
+      "endSeconds": 2973.28,
+      "text": "interviews are interviewers today are"
+    },
+    {
+      "startSeconds": 2971.319,
+      "endSeconds": 2975.799,
+      "text": "expecting all this I know this is"
+    },
+    {
+      "startSeconds": 2973.28,
+      "endSeconds": 2978.119,
+      "text": "nonsense but what to do interviewers are"
+    },
+    {
+      "startSeconds": 2975.799,
+      "endSeconds": 2979.24,
+      "text": "like that we have to improve ourselves"
+    },
+    {
+      "startSeconds": 2978.119,
+      "endSeconds": 2981.96,
+      "text": "right we can't just blame our"
+    },
+    {
+      "startSeconds": 2979.24,
+      "endSeconds": 2985.079,
+      "text": "interviewer right so that's what I'm"
+    },
+    {
+      "startSeconds": 2981.96,
+      "endSeconds": 2987.119,
+      "text": "saying that please know the lingo it is"
+    },
+    {
+      "startSeconds": 2985.079,
+      "endSeconds": 2990.72,
+      "text": "very very very"
+    },
+    {
+      "startSeconds": 2987.119,
+      "endSeconds": 2993.92,
+      "text": "important cool so let's move on to the"
+    },
+    {
+      "startSeconds": 2990.72,
+      "endSeconds": 2996.599,
+      "text": "let's move on to our uh last one which"
+    },
+    {
+      "startSeconds": 2993.92,
+      "endSeconds": 2998.2,
+      "text": "is promise. any right what will happen"
+    },
+    {
+      "startSeconds": 2996.599,
+      "endSeconds": 3000.2,
+      "text": "promise. any how will you explain it to"
+    },
+    {
+      "startSeconds": 2998.2,
+      "endSeconds": 3005.76,
+      "text": "your interviewer let me recall it once"
+    },
+    {
+      "startSeconds": 3000.2,
+      "endSeconds": 3010.04,
+      "text": "again promise. will wait for the first"
+    },
+    {
+      "startSeconds": 3005.76,
+      "endSeconds": 3013.839,
+      "text": "settled success first resolved settled"
+    },
+    {
+      "startSeconds": 3010.04,
+      "endSeconds": 3015.88,
+      "text": "promise okay first settled success okay"
+    },
+    {
+      "startSeconds": 3013.839,
+      "endSeconds": 3019.359,
+      "text": "it will wait for first settled success"
+    },
+    {
+      "startSeconds": 3015.88,
+      "endSeconds": 3024.48,
+      "text": "in this case see the first will"
+    },
+    {
+      "startSeconds": 3019.359,
+      "endSeconds": 3027.92,
+      "text": "be P3 and after 2 seconds P3 but this P3"
+    },
+    {
+      "startSeconds": 3024.48,
+      "endSeconds": 3030.319,
+      "text": "will fail so it will still not throw P3"
+    },
+    {
+      "startSeconds": 3027.92,
+      "endSeconds": 3032.76,
+      "text": "fail error it will wait for the other"
+    },
+    {
+      "startSeconds": 3030.319,
+      "endSeconds": 3036.319,
+      "text": "promise to get success right so let me"
+    },
+    {
+      "startSeconds": 3032.76,
+      "endSeconds": 3039.079,
+      "text": "show it to you let me save this promise."
+    },
+    {
+      "startSeconds": 3036.319,
+      "endSeconds": 3040.839,
+      "text": "any if I save and refresh so after 2"
+    },
+    {
+      "startSeconds": 3039.079,
+      "endSeconds": 3043.96,
+      "text": "seconds it did not give any output but"
+    },
+    {
+      "startSeconds": 3040.839,
+      "endSeconds": 3046.88,
+      "text": "after 3 second it gave the output P1"
+    },
+    {
+      "startSeconds": 3043.96,
+      "endSeconds": 3048.839,
+      "text": "success did you understand this were you"
+    },
+    {
+      "startSeconds": 3046.88,
+      "endSeconds": 3049.72,
+      "text": "expecting all this if you were expecting"
+    },
+    {
+      "startSeconds": 3048.839,
+      "endSeconds": 3052.839,
+      "text": "the same"
+    },
+    {
+      "startSeconds": 3049.72,
+      "endSeconds": 3054.68,
+      "text": "result right you you have learned this"
+    },
+    {
+      "startSeconds": 3052.839,
+      "endSeconds": 3056.68,
+      "text": "right you have learned this and you will"
+    },
+    {
+      "startSeconds": 3054.68,
+      "endSeconds": 3060.319,
+      "text": "learn for your life life right you will"
+    },
+    {
+      "startSeconds": 3056.68,
+      "endSeconds": 3062.52,
+      "text": "never forget this right uh okay so see"
+    },
+    {
+      "startSeconds": 3060.319,
+      "endSeconds": 3064.28,
+      "text": "this P1 success came in right why P1"
+    },
+    {
+      "startSeconds": 3062.52,
+      "endSeconds": 3065.88,
+      "text": "success you understood right okay let me"
+    },
+    {
+      "startSeconds": 3064.28,
+      "endSeconds": 3068.88,
+      "text": "ask you one more question okay let me"
+    },
+    {
+      "startSeconds": 3065.88,
+      "endSeconds": 3071.079,
+      "text": "let me just modify this a little okay so"
+    },
+    {
+      "startSeconds": 3068.88,
+      "endSeconds": 3073.24,
+      "text": "let me modify this a little and then I"
+    },
+    {
+      "startSeconds": 3071.079,
+      "endSeconds": 3075.16,
+      "text": "will ask you okay then I will ask you"
+    },
+    {
+      "startSeconds": 3073.24,
+      "endSeconds": 3078.799,
+      "text": "what will happen now right what will be"
+    },
+    {
+      "startSeconds": 3075.16,
+      "endSeconds": 3081.88,
+      "text": "the output so suppose P1 also fails okay"
+    },
+    {
+      "startSeconds": 3078.799,
+      "endSeconds": 3085.599,
+      "text": "P1 also fails so what will be the output"
+    },
+    {
+      "startSeconds": 3081.88,
+      "endSeconds": 3088.96,
+      "text": "now right so and let me make it three"
+    },
+    {
+      "startSeconds": 3085.599,
+      "endSeconds": 3091.92,
+      "text": "seconds okay so now P3 fails in 2"
+    },
+    {
+      "startSeconds": 3088.96,
+      "endSeconds": 3093.799,
+      "text": "seconds P1 fails in 2 3 seconds P2 is"
+    },
+    {
+      "startSeconds": 3091.92,
+      "endSeconds": 3096.48,
+      "text": "success in 5 seconds what will happen"
+    },
+    {
+      "startSeconds": 3093.799,
+      "endSeconds": 3099.599,
+      "text": "after how much time this is the question"
+    },
+    {
+      "startSeconds": 3096.48,
+      "endSeconds": 3102.64,
+      "text": "for you tell me what will be the"
+    },
+    {
+      "startSeconds": 3099.599,
+      "endSeconds": 3107.88,
+      "text": "answer let me tell you the answer after"
+    },
+    {
+      "startSeconds": 3102.64,
+      "endSeconds": 3110.2,
+      "text": "5 Seconds we will see P2 success and and"
+    },
+    {
+      "startSeconds": 3107.88,
+      "endSeconds": 3111.64,
+      "text": "promise. any will ignore both of them if"
+    },
+    {
+      "startSeconds": 3110.2,
+      "endSeconds": 3113.359,
+      "text": "you gave this answer right that means"
+    },
+    {
+      "startSeconds": 3111.64,
+      "endSeconds": 3115.119,
+      "text": "you learning something today right you"
+    },
+    {
+      "startSeconds": 3113.359,
+      "endSeconds": 3118.2,
+      "text": "learned something in this video let me"
+    },
+    {
+      "startSeconds": 3115.119,
+      "endSeconds": 3119.799,
+      "text": "say save it up let me go back over here"
+    },
+    {
+      "startSeconds": 3118.2,
+      "endSeconds": 3122.2,
+      "text": "right let me go back over here see this"
+    },
+    {
+      "startSeconds": 3119.799,
+      "endSeconds": 3126.359,
+      "text": "it is waiting right after 5 Seconds it"
+    },
+    {
+      "startSeconds": 3122.2,
+      "endSeconds": 3129.88,
+      "text": "gave me P2 success exactly how we were"
+    },
+    {
+      "startSeconds": 3126.359,
+      "endSeconds": 3132.68,
+      "text": "expecting it ignored this after 2 second"
+    },
+    {
+      "startSeconds": 3129.88,
+      "endSeconds": 3136.359,
+      "text": "it ignored this P3 after 3 second it"
+    },
+    {
+      "startSeconds": 3132.68,
+      "endSeconds": 3139.64,
+      "text": "ignored this P1 it will wait for Success"
+    },
+    {
+      "startSeconds": 3136.359,
+      "endSeconds": 3141.559,
+      "text": "it will wait for Success okay now"
+    },
+    {
+      "startSeconds": 3139.64,
+      "endSeconds": 3143.4,
+      "text": "suppose all of them fails okay let us"
+    },
+    {
+      "startSeconds": 3141.559,
+      "endSeconds": 3145.52,
+      "text": "fail all of them you know right what it"
+    },
+    {
+      "startSeconds": 3143.4,
+      "endSeconds": 3147.799,
+      "text": "will give what will it give do you"
+    },
+    {
+      "startSeconds": 3145.52,
+      "endSeconds": 3151.68,
+      "text": "remember that term it will give you an"
+    },
+    {
+      "startSeconds": 3147.799,
+      "endSeconds": 3155.64,
+      "text": "aggregate error note down that term"
+    },
+    {
+      "startSeconds": 3151.68,
+      "endSeconds": 3158.52,
+      "text": "aggregate error aggregate error note it"
+    },
+    {
+      "startSeconds": 3155.64,
+      "endSeconds": 3160.64,
+      "text": "down it is exactly aggregate error let"
+    },
+    {
+      "startSeconds": 3158.52,
+      "endSeconds": 3163.2,
+      "text": "me show it to you as an example Let me"
+    },
+    {
+      "startSeconds": 3160.64,
+      "endSeconds": 3165.96,
+      "text": "refresh the page if I refresh my page"
+    },
+    {
+      "startSeconds": 3163.2,
+      "endSeconds": 3167.48,
+      "text": "see it will wait for all of them after 5"
+    },
+    {
+      "startSeconds": 3165.96,
+      "endSeconds": 3168.72,
+      "text": "Seconds it will give you the result when"
+    },
+    {
+      "startSeconds": 3167.48,
+      "endSeconds": 3171.88,
+      "text": "all of them are"
+    },
+    {
+      "startSeconds": 3168.72,
+      "endSeconds": 3174.68,
+      "text": "successful okay so it will wait oh it"
+    },
+    {
+      "startSeconds": 3171.88,
+      "endSeconds": 3177.319,
+      "text": "gave us P2 success why okay I did not"
+    },
+    {
+      "startSeconds": 3174.68,
+      "endSeconds": 3179.44,
+      "text": "save the file sorry myad my bad okay I"
+    },
+    {
+      "startSeconds": 3177.319,
+      "endSeconds": 3181.839,
+      "text": "did not save the file I rejected all of"
+    },
+    {
+      "startSeconds": 3179.44,
+      "endSeconds": 3184,
+      "text": "this and let me re let me reject it"
+    },
+    {
+      "startSeconds": 3181.839,
+      "endSeconds": 3185.799,
+      "text": "after 5 Seconds okay let me save the"
+    },
+    {
+      "startSeconds": 3184,
+      "endSeconds": 3189.88,
+      "text": "file okay my bad I was not saving the"
+    },
+    {
+      "startSeconds": 3185.799,
+      "endSeconds": 3192.72,
+      "text": "file okay I Sav the file hit the"
+    },
+    {
+      "startSeconds": 3189.88,
+      "endSeconds": 3195.24,
+      "text": "refresh I I will now it will wait for 5"
+    },
+    {
+      "startSeconds": 3192.72,
+      "endSeconds": 3197.839,
+      "text": "seconds till all of these promises see"
+    },
+    {
+      "startSeconds": 3195.24,
+      "endSeconds": 3200.48,
+      "text": "this it gave you the aggregate error do"
+    },
+    {
+      "startSeconds": 3197.839,
+      "endSeconds": 3202.28,
+      "text": "you see this this is known as aggregate"
+    },
+    {
+      "startSeconds": 3200.48,
+      "endSeconds": 3204.52,
+      "text": "error this is a different type of error"
+    },
+    {
+      "startSeconds": 3202.28,
+      "endSeconds": 3207.559,
+      "text": "my dear friends all promises were"
+    },
+    {
+      "startSeconds": 3204.52,
+      "endSeconds": 3209.319,
+      "text": "rejected aggregate error right now the"
+    },
+    {
+      "startSeconds": 3207.559,
+      "endSeconds": 3211,
+      "text": "interviewer can you know some random"
+    },
+    {
+      "startSeconds": 3209.319,
+      "endSeconds": 3211.92,
+      "text": "interviewer will ask you what is"
+    },
+    {
+      "startSeconds": 3211,
+      "endSeconds": 3214.359,
+      "text": "aggregate"
+    },
+    {
+      "startSeconds": 3211.92,
+      "endSeconds": 3218.16,
+      "text": "error you will not know it my dear"
+    },
+    {
+      "startSeconds": 3214.359,
+      "endSeconds": 3220.04,
+      "text": "friends will you know it no if you know"
+    },
+    {
+      "startSeconds": 3218.16,
+      "endSeconds": 3222.559,
+      "text": "where it is coming then only you will"
+    },
+    {
+      "startSeconds": 3220.04,
+      "endSeconds": 3224.559,
+      "text": "know what is aggregate error right that"
+    },
+    {
+      "startSeconds": 3222.559,
+      "endSeconds": 3226.48,
+      "text": "is why I'm focusing emphasizing on it it"
+    },
+    {
+      "startSeconds": 3224.559,
+      "endSeconds": 3227.52,
+      "text": "will just aggregate all the results all"
+    },
+    {
+      "startSeconds": 3226.48,
+      "endSeconds": 3230.4,
+      "text": "the errors and it will give you"
+    },
+    {
+      "startSeconds": 3227.52,
+      "endSeconds": 3232.44,
+      "text": "aggregate error now you would ask me aay"
+    },
+    {
+      "startSeconds": 3230.4,
+      "endSeconds": 3234.88,
+      "text": "you also said that when we will get an"
+    },
+    {
+      "startSeconds": 3232.44,
+      "endSeconds": 3236.48,
+      "text": "aggregate error aay you also said that"
+    },
+    {
+      "startSeconds": 3234.88,
+      "endSeconds": 3239.359,
+      "text": "when we will get an aggregate error you"
+    },
+    {
+      "startSeconds": 3236.48,
+      "endSeconds": 3242.359,
+      "text": "will also give an array with these"
+    },
+    {
+      "startSeconds": 3239.359,
+      "endSeconds": 3245.24,
+      "text": "errors where are they right we will also"
+    },
+    {
+      "startSeconds": 3242.359,
+      "endSeconds": 3248.04,
+      "text": "get this errors erray right here I can't"
+    },
+    {
+      "startSeconds": 3245.24,
+      "endSeconds": 3250.559,
+      "text": "see an error you are absolutely right I"
+    },
+    {
+      "startSeconds": 3248.04,
+      "endSeconds": 3252.28,
+      "text": "told you that we will also get an error"
+    },
+    {
+      "startSeconds": 3250.559,
+      "endSeconds": 3254.28,
+      "text": "but you will not get that error right"
+    },
+    {
+      "startSeconds": 3252.28,
+      "endSeconds": 3257.92,
+      "text": "away you will get that"
+    },
+    {
+      "startSeconds": 3254.28,
+      "endSeconds": 3259.72,
+      "text": "error in a object right how do you"
+    },
+    {
+      "startSeconds": 3257.92,
+      "endSeconds": 3263.079,
+      "text": "handle this aggregate error let me just"
+    },
+    {
+      "startSeconds": 3259.72,
+      "endSeconds": 3266.44,
+      "text": "show it to you in your cat statement you"
+    },
+    {
+      "startSeconds": 3263.079,
+      "endSeconds": 3271.16,
+      "text": "will have to write a console do log and"
+    },
+    {
+      "startSeconds": 3266.44,
+      "endSeconds": 3274.52,
+      "text": "do a err do errors right it will create"
+    },
+    {
+      "startSeconds": 3271.16,
+      "endSeconds": 3276.28,
+      "text": "an array errors and in this errors array"
+    },
+    {
+      "startSeconds": 3274.52,
+      "endSeconds": 3278.64,
+      "text": "you will get all the aggregated error"
+    },
+    {
+      "startSeconds": 3276.28,
+      "endSeconds": 3280.2,
+      "text": "right so let me save it refresh the page"
+    },
+    {
+      "startSeconds": 3278.64,
+      "endSeconds": 3282.16,
+      "text": "right after 5 Seconds you will see"
+    },
+    {
+      "startSeconds": 3280.2,
+      "endSeconds": 3286.4,
+      "text": "something on the console let's"
+    },
+    {
+      "startSeconds": 3282.16,
+      "endSeconds": 3288.28,
+      "text": "see see this did you get this right did"
+    },
+    {
+      "startSeconds": 3286.4,
+      "endSeconds": 3290.72,
+      "text": "you get the error messages here we"
+    },
+    {
+      "startSeconds": 3288.28,
+      "endSeconds": 3292.48,
+      "text": "rejected with P2 fail error message this"
+    },
+    {
+      "startSeconds": 3290.72,
+      "endSeconds": 3294.16,
+      "text": "is the error message this is the error"
+    },
+    {
+      "startSeconds": 3292.48,
+      "endSeconds": 3296.04,
+      "text": "message this is the error message see"
+    },
+    {
+      "startSeconds": 3294.16,
+      "endSeconds": 3298.76,
+      "text": "you get all these error message isn't it"
+    },
+    {
+      "startSeconds": 3296.04,
+      "endSeconds": 3300.88,
+      "text": "so basically this error object that you"
+    },
+    {
+      "startSeconds": 3298.76,
+      "endSeconds": 3303.839,
+      "text": "will get over here in cat statement it"
+    },
+    {
+      "startSeconds": 3300.88,
+      "endSeconds": 3305.28,
+      "text": "will have an object this errors right it"
+    },
+    {
+      "startSeconds": 3303.839,
+      "endSeconds": 3308.52,
+      "text": "will give you the"
+    },
+    {
+      "startSeconds": 3305.28,
+      "endSeconds": 3310.96,
+      "text": "errors in a form of a list right if you"
+    },
+    {
+      "startSeconds": 3308.52,
+      "endSeconds": 3312.96,
+      "text": "will do errors of zero it will give you"
+    },
+    {
+      "startSeconds": 3310.96,
+      "endSeconds": 3315.48,
+      "text": "the first error it will if you do errors"
+    },
+    {
+      "startSeconds": 3312.96,
+      "endSeconds": 3318.68,
+      "text": "of one it will give you the second error"
+    },
+    {
+      "startSeconds": 3315.48,
+      "endSeconds": 3322.28,
+      "text": "and similarly so this is how things will"
+    },
+    {
+      "startSeconds": 3318.68,
+      "endSeconds": 3324.039,
+      "text": "work in promise. any hope you would have"
+    },
+    {
+      "startSeconds": 3322.28,
+      "endSeconds": 3326.559,
+      "text": "understood my dear friends this was the"
+    },
+    {
+      "startSeconds": 3324.039,
+      "endSeconds": 3329,
+      "text": "code part of these promise API this is"
+    },
+    {
+      "startSeconds": 3326.559,
+      "endSeconds": 3330.72,
+      "text": "very very very important did you like it"
+    },
+    {
+      "startSeconds": 3329,
+      "endSeconds": 3332.96,
+      "text": "did you like it please comment down and"
+    },
+    {
+      "startSeconds": 3330.72,
+      "endSeconds": 3335.4,
+      "text": "tell me please right I am teaching you"
+    },
+    {
+      "startSeconds": 3332.96,
+      "endSeconds": 3337.44,
+      "text": "I'm giving all this for you for free all"
+    },
+    {
+      "startSeconds": 3335.4,
+      "endSeconds": 3339.559,
+      "text": "these amazing episodes for free it takes"
+    },
+    {
+      "startSeconds": 3337.44,
+      "endSeconds": 3341.96,
+      "text": "a lot of time my dear friends it takes a"
+    },
+    {
+      "startSeconds": 3339.559,
+      "endSeconds": 3344.96,
+      "text": "lot of time it does not even makes me"
+    },
+    {
+      "startSeconds": 3341.96,
+      "endSeconds": 3348.48,
+      "text": "any money right if I give it on YouTube"
+    },
+    {
+      "startSeconds": 3344.96,
+      "endSeconds": 3351.039,
+      "text": "right so it takes a lot of time please"
+    },
+    {
+      "startSeconds": 3348.48,
+      "endSeconds": 3353.76,
+      "text": "appreciate the effort please you know"
+    },
+    {
+      "startSeconds": 3351.039,
+      "endSeconds": 3357.88,
+      "text": "what happens if I will make a video of"
+    },
+    {
+      "startSeconds": 3353.76,
+      "endSeconds": 3360.799,
+      "text": "earn one right how to get a job in Fang"
+    },
+    {
+      "startSeconds": 3357.88,
+      "endSeconds": 3363.28,
+      "text": "earn one car in 2 months you will you"
+    },
+    {
+      "startSeconds": 3360.799,
+      "endSeconds": 3364.839,
+      "text": "will click you will uh click those"
+    },
+    {
+      "startSeconds": 3363.28,
+      "endSeconds": 3366.68,
+      "text": "that's a clickbait video if I make"
+    },
+    {
+      "startSeconds": 3364.839,
+      "endSeconds": 3369.24,
+      "text": "clickbait video then I get a lot of"
+    },
+    {
+      "startSeconds": 3366.68,
+      "endSeconds": 3371.359,
+      "text": "reach I don't want to do that if I make"
+    },
+    {
+      "startSeconds": 3369.24,
+      "endSeconds": 3374.599,
+      "text": "a technical video it does not get any"
+    },
+    {
+      "startSeconds": 3371.359,
+      "endSeconds": 3377.24,
+      "text": "reach right so what I want is please"
+    },
+    {
+      "startSeconds": 3374.599,
+      "endSeconds": 3379.799,
+      "text": "please please help me reach more people"
+    },
+    {
+      "startSeconds": 3377.24,
+      "endSeconds": 3381.92,
+      "text": "I have put a lot of efforts please share"
+    },
+    {
+      "startSeconds": 3379.799,
+      "endSeconds": 3383.48,
+      "text": "it on LinkedIn if you have even if you"
+    },
+    {
+      "startSeconds": 3381.92,
+      "endSeconds": 3385.319,
+      "text": "have learned it right even if you have"
+    },
+    {
+      "startSeconds": 3383.48,
+      "endSeconds": 3386.88,
+      "text": "learned one thing from this video video"
+    },
+    {
+      "startSeconds": 3385.319,
+      "endSeconds": 3388.359,
+      "text": "please share it on LinkedIn please share"
+    },
+    {
+      "startSeconds": 3386.88,
+      "endSeconds": 3391.359,
+      "text": "it on Twitter please share it with your"
+    },
+    {
+      "startSeconds": 3388.359,
+      "endSeconds": 3393.4,
+      "text": "friends please share it on WhatsApp yeah"
+    },
+    {
+      "startSeconds": 3391.359,
+      "endSeconds": 3396.88,
+      "text": "please subscribe to my Channel please"
+    },
+    {
+      "startSeconds": 3393.4,
+      "endSeconds": 3399.4,
+      "text": "like the video see right I I am giving"
+    },
+    {
+      "startSeconds": 3396.88,
+      "endSeconds": 3403.599,
+      "text": "you my knowledge please like it that is"
+    },
+    {
+      "startSeconds": 3399.4,
+      "endSeconds": 3405.839,
+      "text": "all I need right you know every artist"
+    },
+    {
+      "startSeconds": 3403.599,
+      "endSeconds": 3410.92,
+      "text": "need an appreciation"
+    },
+    {
+      "startSeconds": 3405.839,
+      "endSeconds": 3410.92,
+      "text": "right in Hindi we call it as"
+    },
+    {
+      "startSeconds": 3411.2,
+      "endSeconds": 3416.799,
+      "text": "artist right"
+    },
+    {
+      "startSeconds": 3413.559,
+      "endSeconds": 3418.72,
+      "text": "basically artist artist is hungry for"
+    },
+    {
+      "startSeconds": 3416.799,
+      "endSeconds": 3420.48,
+      "text": "collaps right basically collaps means"
+    },
+    {
+      "startSeconds": 3418.72,
+      "endSeconds": 3423.599,
+      "text": "appreciation right an artist is just"
+    },
+    {
+      "startSeconds": 3420.48,
+      "endSeconds": 3426.2,
+      "text": "hungry for appreciation please please if"
+    },
+    {
+      "startSeconds": 3423.599,
+      "endSeconds": 3428.44,
+      "text": "you like it if I get more likes it gives"
+    },
+    {
+      "startSeconds": 3426.2,
+      "endSeconds": 3430.96,
+      "text": "me a lot of satisfaction that okay"
+    },
+    {
+      "startSeconds": 3428.44,
+      "endSeconds": 3432.64,
+      "text": "people are learning something from it"
+    },
+    {
+      "startSeconds": 3430.96,
+      "endSeconds": 3435.039,
+      "text": "you know this is what I want from you"
+    },
+    {
+      "startSeconds": 3432.64,
+      "endSeconds": 3437.52,
+      "text": "nothing more right please please please"
+    },
+    {
+      "startSeconds": 3435.039,
+      "endSeconds": 3440.64,
+      "text": "share it with your friends help me reach"
+    },
+    {
+      "startSeconds": 3437.52,
+      "endSeconds": 3442.319,
+      "text": "more people help me uh do and if you"
+    },
+    {
+      "startSeconds": 3440.64,
+      "endSeconds": 3445,
+      "text": "want to support right if you want to"
+    },
+    {
+      "startSeconds": 3442.319,
+      "endSeconds": 3448.079,
+      "text": "support then I don't even want to just"
+    },
+    {
+      "startSeconds": 3445,
+      "endSeconds": 3451.039,
+      "text": "donate me money don't donate me money I"
+    },
+    {
+      "startSeconds": 3448.079,
+      "endSeconds": 3453.24,
+      "text": "have brought a react course with me I am"
+    },
+    {
+      "startSeconds": 3451.039,
+      "endSeconds": 3455.48,
+      "text": "teaching react and everything in react"
+    },
+    {
+      "startSeconds": 3453.24,
+      "endSeconds": 3457.16,
+      "text": "is also in depth if you love Java"
+    },
+    {
+      "startSeconds": 3455.48,
+      "endSeconds": 3459.559,
+      "text": "Namaste JavaScript you will love Namaste"
+    },
+    {
+      "startSeconds": 3457.16,
+      "endSeconds": 3462.2,
+      "text": "react also learn react react is the"
+    },
+    {
+      "startSeconds": 3459.559,
+      "endSeconds": 3464.359,
+      "text": "hottest thing right now I have picked up"
+    },
+    {
+      "startSeconds": 3462.2,
+      "endSeconds": 3466.4,
+      "text": "I have left my job now I am into"
+    },
+    {
+      "startSeconds": 3464.359,
+      "endSeconds": 3468.16,
+      "text": "full-time teaching I have built a react"
+    },
+    {
+      "startSeconds": 3466.4,
+      "endSeconds": 3470.039,
+      "text": "course also I will give you the link in"
+    },
+    {
+      "startSeconds": 3468.16,
+      "endSeconds": 3472.28,
+      "text": "the description also go check out my"
+    },
+    {
+      "startSeconds": 3470.039,
+      "endSeconds": 3474.119,
+      "text": "react course also it's kind of like"
+    },
+    {
+      "startSeconds": 3472.28,
+      "endSeconds": 3475.799,
+      "text": "supporting the channel and trust me once"
+    },
+    {
+      "startSeconds": 3474.119,
+      "endSeconds": 3479.079,
+      "text": "you buy that rea react course I'm"
+    },
+    {
+      "startSeconds": 3475.799,
+      "endSeconds": 3481.799,
+      "text": "telling you on point today this is that"
+    },
+    {
+      "startSeconds": 3479.079,
+      "endSeconds": 3483.48,
+      "text": "is the best Namaste react is the best"
+    },
+    {
+      "startSeconds": 3481.799,
+      "endSeconds": 3486.24,
+      "text": "react course available in the market"
+    },
+    {
+      "startSeconds": 3483.48,
+      "endSeconds": 3488.359,
+      "text": "right now you will not find that depth"
+    },
+    {
+      "startSeconds": 3486.24,
+      "endSeconds": 3490.64,
+      "text": "anywhere you will not find that depth"
+    },
+    {
+      "startSeconds": 3488.359,
+      "endSeconds": 3492.68,
+      "text": "anywhere it has come from you know I've"
+    },
+    {
+      "startSeconds": 3490.64,
+      "endSeconds": 3494.96,
+      "text": "been coding in react since 7 eight years"
+    },
+    {
+      "startSeconds": 3492.68,
+      "endSeconds": 3497.4,
+      "text": "now right uh I don't know exactly seven"
+    },
+    {
+      "startSeconds": 3494.96,
+      "endSeconds": 3500.44,
+      "text": "or eight but around 78 years now in"
+    },
+    {
+      "startSeconds": 3497.4,
+      "endSeconds": 3502.319,
+      "text": "react and all of that what I have"
+    },
+    {
+      "startSeconds": 3500.44,
+      "endSeconds": 3504.24,
+      "text": "learned I have put into that course"
+    },
+    {
+      "startSeconds": 3502.319,
+      "endSeconds": 3506.4,
+      "text": "everything in depth I am diving deep"
+    },
+    {
+      "startSeconds": 3504.24,
+      "endSeconds": 3508.64,
+      "text": "into it you will just love it everything"
+    },
+    {
+      "startSeconds": 3506.4,
+      "endSeconds": 3511.039,
+      "text": "is Advanced concept I start from scratch"
+    },
+    {
+      "startSeconds": 3508.64,
+      "endSeconds": 3513.039,
+      "text": "I take you to Advanced concept and trust"
+    },
+    {
+      "startSeconds": 3511.039,
+      "endSeconds": 3514.52,
+      "text": "me that the best course of react"
+    },
+    {
+      "startSeconds": 3513.039,
+      "endSeconds": 3516.839,
+      "text": "available right now in the market I have"
+    },
+    {
+      "startSeconds": 3514.52,
+      "endSeconds": 3518.64,
+      "text": "put in everything over there right so if"
+    },
+    {
+      "startSeconds": 3516.839,
+      "endSeconds": 3520.319,
+      "text": "you want to check it out check out react"
+    },
+    {
+      "startSeconds": 3518.64,
+      "endSeconds": 3522.52,
+      "text": "right if you want to support my Channel"
+    },
+    {
+      "startSeconds": 3520.319,
+      "endSeconds": 3525.119,
+      "text": "please buy react course spread your"
+    },
+    {
+      "startSeconds": 3522.52,
+      "endSeconds": 3526.599,
+      "text": "knowledge you know some people also gift"
+    },
+    {
+      "startSeconds": 3525.119,
+      "endSeconds": 3528.48,
+      "text": "that course to their brothers and"
+    },
+    {
+      "startSeconds": 3526.599,
+      "endSeconds": 3531.079,
+      "text": "sisters and siblings and friends and"
+    },
+    {
+      "startSeconds": 3528.48,
+      "endSeconds": 3533.039,
+      "text": "families right on their birthdays gifts"
+    },
+    {
+      "startSeconds": 3531.079,
+      "endSeconds": 3534.72,
+      "text": "I was amazed to see that so if you want"
+    },
+    {
+      "startSeconds": 3533.039,
+      "endSeconds": 3536.28,
+      "text": "to gift it you can gift it if you want"
+    },
+    {
+      "startSeconds": 3534.72,
+      "endSeconds": 3538.28,
+      "text": "want to buy it for yourself buy it for"
+    },
+    {
+      "startSeconds": 3536.28,
+      "endSeconds": 3539.839,
+      "text": "yourself that is how you can support my"
+    },
+    {
+      "startSeconds": 3538.28,
+      "endSeconds": 3542.039,
+      "text": "channel and if you don't want to buy"
+    },
+    {
+      "startSeconds": 3539.839,
+      "endSeconds": 3543.599,
+      "text": "it's okay for that also I will still"
+    },
+    {
+      "startSeconds": 3542.039,
+      "endSeconds": 3545.799,
+      "text": "keep giving you knowledge for free on"
+    },
+    {
+      "startSeconds": 3543.599,
+      "endSeconds": 3548,
+      "text": "YouTube as well I will keep Namaste"
+    },
+    {
+      "startSeconds": 3545.799,
+      "endSeconds": 3550.079,
+      "text": "JavaScript free over here on YouTube"
+    },
+    {
+      "startSeconds": 3548,
+      "endSeconds": 3552.44,
+      "text": "please like and share at least that is"
+    },
+    {
+      "startSeconds": 3550.079,
+      "endSeconds": 3554.839,
+      "text": "what I can ask you for so thank you so"
+    },
+    {
+      "startSeconds": 3552.44,
+      "endSeconds": 3557,
+      "text": "much hope you enjoyed promise apis in"
+    },
+    {
+      "startSeconds": 3554.839,
+      "endSeconds": 3559.48,
+      "text": "the next episode I will bring a very"
+    },
+    {
+      "startSeconds": 3557,
+      "endSeconds": 3562.2,
+      "text": "good topic okay so wait for the next"
+    },
+    {
+      "startSeconds": 3559.48,
+      "endSeconds": 3565.48,
+      "text": "episode of Namaste JavaScript season 2"
+    },
+    {
+      "startSeconds": 3562.2,
+      "endSeconds": 3568,
+      "text": "and this is season 2 we are doing a lot"
+    },
+    {
+      "startSeconds": 3565.48,
+      "endSeconds": 3570.76,
+      "text": "of cool stuff we are building a lot of"
+    },
+    {
+      "startSeconds": 3568,
+      "endSeconds": 3572.88,
+      "text": "cool stuff we are learning a lot of new"
+    },
+    {
+      "startSeconds": 3570.76,
+      "endSeconds": 3574.68,
+      "text": "things and thanks for watching and"
+    },
+    {
+      "startSeconds": 3572.88,
+      "endSeconds": 3578.319,
+      "text": "thanks for supporting my channel thank"
+    },
+    {
+      "startSeconds": 3574.68,
+      "endSeconds": 3578.319,
+      "text": "you so much signing"
+    },
+    {
+      "startSeconds": 3580.09,
+      "endSeconds": 3583.159,
+      "text": "[Music]"
+    },
+    {
+      "startSeconds": 3583.599,
+      "endSeconds": 3586.599,
+      "text": "off"
+    },
+    {
+      "startSeconds": 3589.47,
+      "endSeconds": 3592.52,
+      "text": "[Music]"
+    },
+    {
+      "startSeconds": 3593.64,
+      "endSeconds": 3599.599,
+      "text": "on"
+    },
+    {
+      "startSeconds": 3596.599,
+      "endSeconds": 3599.599,
+      "text": "a"
+    }
+  ]
+}

@@ -1,0 +1,2527 @@
+{
+  "videoId": "gSDncyuGw0s",
+  "videoTitle": "How functions work in JS ❤️ & Variable Environment | Namaste JavaScript Ep. 4",
+  "languageCode": "en",
+  "segments": [
+    {
+      "startSeconds": 0.4,
+      "endSeconds": 5.04,
+      "text": "So let us now explore a little bit more"
+    },
+    {
+      "startSeconds": 2.56,
+      "endSeconds": 7.52,
+      "text": "about function invocation and variable"
+    },
+    {
+      "startSeconds": 5.04,
+      "endSeconds": 13.04,
+      "text": "environment. Okay. So for that let us"
+    },
+    {
+      "startSeconds": 7.52,
+      "endSeconds": 15.759,
+      "text": "take a function okay function a"
+    },
+    {
+      "startSeconds": 13.04,
+      "endSeconds": 18.96,
+      "text": "and in this function we have a variable"
+    },
+    {
+      "startSeconds": 15.759,
+      "endSeconds": 21.52,
+      "text": "x okay where x and let us assign 10 to"
+    },
+    {
+      "startSeconds": 18.96,
+      "endSeconds": 24.56,
+      "text": "it okay and what we'll do is we'll also"
+    },
+    {
+      "startSeconds": 21.52,
+      "endSeconds": 26.88,
+      "text": "do a console log of the same variable"
+    },
+    {
+      "startSeconds": 24.56,
+      "endSeconds": 29.84,
+      "text": "okay now what I am trying to showcase"
+    },
+    {
+      "startSeconds": 26.88,
+      "endSeconds": 33.52,
+      "text": "you over here is that if suppose we have"
+    },
+    {
+      "startSeconds": 29.84,
+      "endSeconds": 36.16,
+      "text": "one more function B and we use the same"
+    },
+    {
+      "startSeconds": 33.52,
+      "endSeconds": 38.32,
+      "text": "variable name. Okay, suppose if I use"
+    },
+    {
+      "startSeconds": 36.16,
+      "endSeconds": 39.92,
+      "text": "the same variable name over here where x"
+    },
+    {
+      "startSeconds": 38.32,
+      "endSeconds": 43.04,
+      "text": "is equals to this time give it a some"
+    },
+    {
+      "startSeconds": 39.92,
+      "endSeconds": 45.68,
+      "text": "other value. So let's say 100 and let us"
+    },
+    {
+      "startSeconds": 43.04,
+      "endSeconds": 48.719,
+      "text": "log this over here also. Okay, what I am"
+    },
+    {
+      "startSeconds": 45.68,
+      "endSeconds": 51.68,
+      "text": "trying to show how function invocation"
+    },
+    {
+      "startSeconds": 48.719,
+      "endSeconds": 55.199,
+      "text": "behaves behind the scenes. Okay, let us"
+    },
+    {
+      "startSeconds": 51.68,
+      "endSeconds": 58,
+      "text": "see that for that we'll take these two"
+    },
+    {
+      "startSeconds": 55.199,
+      "endSeconds": 59.92,
+      "text": "functions and let us in introduce"
+    },
+    {
+      "startSeconds": 58,
+      "endSeconds": 61.52,
+      "text": "something in the global space also."
+    },
+    {
+      "startSeconds": 59.92,
+      "endSeconds": 64.799,
+      "text": "Okay."
+    },
+    {
+      "startSeconds": 61.52,
+      "endSeconds": 68.96,
+      "text": "So let suppose we had the same variable"
+    },
+    {
+      "startSeconds": 64.799,
+      "endSeconds": 72.24,
+      "text": "name where where x is equals to uh let's"
+    },
+    {
+      "startSeconds": 68.96,
+      "endSeconds": 74.88,
+      "text": "give it one. Okay. One at the top of the"
+    },
+    {
+      "startSeconds": 72.24,
+      "endSeconds": 78.4,
+      "text": "program. Okay. And then after putting"
+    },
+    {
+      "startSeconds": 74.88,
+      "endSeconds": 80.32,
+      "text": "this one inside x we invoke these two"
+    },
+    {
+      "startSeconds": 78.4,
+      "endSeconds": 82.159,
+      "text": "functions. Okay. Suppose if I invoke"
+    },
+    {
+      "startSeconds": 80.32,
+      "endSeconds": 85.84,
+      "text": "these two functions and remember from"
+    },
+    {
+      "startSeconds": 82.159,
+      "endSeconds": 88.96,
+      "text": "the last video we we can do this like we"
+    },
+    {
+      "startSeconds": 85.84,
+      "endSeconds": 90.799,
+      "text": "can invoke these functions before even"
+    },
+    {
+      "startSeconds": 88.96,
+      "endSeconds": 93.04,
+      "text": "initializing them just because of"
+    },
+    {
+      "startSeconds": 90.799,
+      "endSeconds": 94.88,
+      "text": "hosting. Remember from the last video we"
+    },
+    {
+      "startSeconds": 93.04,
+      "endSeconds": 97.04,
+      "text": "told now what we are trying to do is"
+    },
+    {
+      "startSeconds": 94.88,
+      "endSeconds": 99.04,
+      "text": "this where x we are putting one over"
+    },
+    {
+      "startSeconds": 97.04,
+      "endSeconds": 101.28,
+      "text": "here and then we are invoking these"
+    },
+    {
+      "startSeconds": 99.04,
+      "endSeconds": 103.68,
+      "text": "functions. Okay that means this code"
+    },
+    {
+      "startSeconds": 101.28,
+      "endSeconds": 106.079,
+      "text": "will be executed and these lines also"
+    },
+    {
+      "startSeconds": 103.68,
+      "endSeconds": 108.399,
+      "text": "will run. Okay. So what I'm trying to"
+    },
+    {
+      "startSeconds": 106.079,
+      "endSeconds": 111.119,
+      "text": "say is that if we have same variable"
+    },
+    {
+      "startSeconds": 108.399,
+      "endSeconds": 113.28,
+      "text": "name all over there so how our program"
+    },
+    {
+      "startSeconds": 111.119,
+      "endSeconds": 115.439,
+      "text": "behaves how JavaScript handles this"
+    },
+    {
+      "startSeconds": 113.28,
+      "endSeconds": 118,
+      "text": "scenario. So we'll be talking and seeing"
+    },
+    {
+      "startSeconds": 115.439,
+      "endSeconds": 120.079,
+      "text": "this in detail what happens behind the"
+    },
+    {
+      "startSeconds": 118,
+      "endSeconds": 122.64,
+      "text": "scenes. Okay. And after invoking these"
+    },
+    {
+      "startSeconds": 120.079,
+      "endSeconds": 125.2,
+      "text": "two functions let us log this X once"
+    },
+    {
+      "startSeconds": 122.64,
+      "endSeconds": 128.16,
+      "text": "again and let's see what what output we"
+    },
+    {
+      "startSeconds": 125.2,
+      "endSeconds": 130.72,
+      "text": "get. Cool. So now we are here with the"
+    },
+    {
+      "startSeconds": 128.16,
+      "endSeconds": 132.72,
+      "text": "program. So now I let's see the output"
+    },
+    {
+      "startSeconds": 130.72,
+      "endSeconds": 134.879,
+      "text": "and then we will see how this whole"
+    },
+    {
+      "startSeconds": 132.72,
+      "endSeconds": 136.16,
+      "text": "program works behind the scenes line by"
+    },
+    {
+      "startSeconds": 134.879,
+      "endSeconds": 138.239,
+      "text": "line that would be really very"
+    },
+    {
+      "startSeconds": 136.16,
+      "endSeconds": 140.319,
+      "text": "interesting. So whatever we learn in"
+    },
+    {
+      "startSeconds": 138.239,
+      "endSeconds": 142,
+      "text": "this video will be helpful for learning"
+    },
+    {
+      "startSeconds": 140.319,
+      "endSeconds": 143.92,
+      "text": "scope for learning closures and"
+    },
+    {
+      "startSeconds": 142,
+      "endSeconds": 146.319,
+      "text": "everything. Okay. So we are go moving"
+    },
+    {
+      "startSeconds": 143.92,
+      "endSeconds": 148.16,
+      "text": "slowly towards that phase. Okay. So let"
+    },
+    {
+      "startSeconds": 146.319,
+      "endSeconds": 151.04,
+      "text": "us see first of all what the output will"
+    },
+    {
+      "startSeconds": 148.16,
+      "endSeconds": 154.08,
+      "text": "be. Okay. So here is our browser. So let"
+    },
+    {
+      "startSeconds": 151.04,
+      "endSeconds": 156.8,
+      "text": "me just save this program and see. We"
+    },
+    {
+      "startSeconds": 154.08,
+      "endSeconds": 159.44,
+      "text": "got the output 101."
+    },
+    {
+      "startSeconds": 156.8,
+      "endSeconds": 162,
+      "text": "So let us go dive deep into that and see"
+    },
+    {
+      "startSeconds": 159.44,
+      "endSeconds": 164.08,
+      "text": "that how that program was executed and"
+    },
+    {
+      "startSeconds": 162,
+      "endSeconds": 166.4,
+      "text": "this output came up. So behind the"
+    },
+    {
+      "startSeconds": 164.08,
+      "endSeconds": 168.8,
+      "text": "scenes when we run this program. So"
+    },
+    {
+      "startSeconds": 166.4,
+      "endSeconds": 170.879,
+      "text": "whenever JavaScript runs any program a"
+    },
+    {
+      "startSeconds": 168.8,
+      "endSeconds": 172.64,
+      "text": "global execution context is created"
+    },
+    {
+      "startSeconds": 170.879,
+      "endSeconds": 175.12,
+      "text": "right. So let us create this global"
+    },
+    {
+      "startSeconds": 172.64,
+      "endSeconds": 177.2,
+      "text": "execution context. So here is our global"
+    },
+    {
+      "startSeconds": 175.12,
+      "endSeconds": 179.76,
+      "text": "execution context. So as you might"
+    },
+    {
+      "startSeconds": 177.2,
+      "endSeconds": 184.36,
+      "text": "remember it will have two two components"
+    },
+    {
+      "startSeconds": 179.76,
+      "endSeconds": 184.36,
+      "text": "again right the memory component"
+    },
+    {
+      "startSeconds": 184.72,
+      "endSeconds": 189.76,
+      "text": "and the code component right so this"
+    },
+    {
+      "startSeconds": 187.68,
+      "endSeconds": 192.8,
+      "text": "memory space is also known as variable"
+    },
+    {
+      "startSeconds": 189.76,
+      "endSeconds": 196.4,
+      "text": "environment remember okay so this is the"
+    },
+    {
+      "startSeconds": 192.8,
+      "endSeconds": 198.879,
+      "text": "variable environment and now we now even"
+    },
+    {
+      "startSeconds": 196.4,
+      "endSeconds": 201.04,
+      "text": "before executing a single line of code"
+    },
+    {
+      "startSeconds": 198.879,
+      "endSeconds": 203.519,
+      "text": "okay memory will be allocated in the"
+    },
+    {
+      "startSeconds": 201.04,
+      "endSeconds": 205.599,
+      "text": "first phase right so in the first phase"
+    },
+    {
+      "startSeconds": 203.519,
+      "endSeconds": 207.599,
+      "text": "let us allocate memory and see how this"
+    },
+    {
+      "startSeconds": 205.599,
+      "endSeconds": 209.84,
+      "text": "works behind behind the scenes. So first"
+    },
+    {
+      "startSeconds": 207.599,
+      "endSeconds": 212.879,
+      "text": "of all we will be allocating memory to"
+    },
+    {
+      "startSeconds": 209.84,
+      "endSeconds": 214.959,
+      "text": "these X and this function A and this"
+    },
+    {
+      "startSeconds": 212.879,
+      "endSeconds": 217.04,
+      "text": "function B. Remember as we told in the"
+    },
+    {
+      "startSeconds": 214.959,
+      "endSeconds": 218.879,
+      "text": "previous videos. Okay. So let us"
+    },
+    {
+      "startSeconds": 217.04,
+      "endSeconds": 221.36,
+      "text": "allocate memory. So memory will be"
+    },
+    {
+      "startSeconds": 218.879,
+      "endSeconds": 223.84,
+      "text": "allocated to X. Memory will be allocated"
+    },
+    {
+      "startSeconds": 221.36,
+      "endSeconds": 226.4,
+      "text": "to A and memory will be allocated to B"
+    },
+    {
+      "startSeconds": 223.84,
+      "endSeconds": 228.959,
+      "text": "function. Okay. And what will be stored"
+    },
+    {
+      "startSeconds": 226.4,
+      "endSeconds": 232.159,
+      "text": "in this variables? Come on quickly tell"
+    },
+    {
+      "startSeconds": 228.959,
+      "endSeconds": 234.159,
+      "text": "me. Okay. So X will store yes you are"
+    },
+    {
+      "startSeconds": 232.159,
+      "endSeconds": 237.599,
+      "text": "right. Undefined."
+    },
+    {
+      "startSeconds": 234.159,
+      "endSeconds": 241.12,
+      "text": "Okay. in the first phase undefined"
+    },
+    {
+      "startSeconds": 237.599,
+      "endSeconds": 243.84,
+      "text": "and A and B will point to the function"
+    },
+    {
+      "startSeconds": 241.12,
+      "endSeconds": 245.84,
+      "text": "code. Okay, these A and B will be"
+    },
+    {
+      "startSeconds": 243.84,
+      "endSeconds": 247.599,
+      "text": "pointing to the exact function code."
+    },
+    {
+      "startSeconds": 245.84,
+      "endSeconds": 249.68,
+      "text": "This function code, right? They will be"
+    },
+    {
+      "startSeconds": 247.599,
+      "endSeconds": 251.439,
+      "text": "pointing to this exact full function"
+    },
+    {
+      "startSeconds": 249.68,
+      "endSeconds": 254,
+      "text": "code. They don't they won't be storing"
+    },
+    {
+      "startSeconds": 251.439,
+      "endSeconds": 256,
+      "text": "undefined. Okay, so that will happen and"
+    },
+    {
+      "startSeconds": 254,
+      "endSeconds": 257.759,
+      "text": "remember in the in the last video we"
+    },
+    {
+      "startSeconds": 256,
+      "endSeconds": 260.72,
+      "text": "also discussed a little more about call"
+    },
+    {
+      "startSeconds": 257.759,
+      "endSeconds": 262.8,
+      "text": "stack. Remember call stack? What was it?"
+    },
+    {
+      "startSeconds": 260.72,
+      "endSeconds": 265.04,
+      "text": "So let us create a call stack for"
+    },
+    {
+      "startSeconds": 262.8,
+      "endSeconds": 268.08,
+      "text": "ourselves now. So let's create this call"
+    },
+    {
+      "startSeconds": 265.04,
+      "endSeconds": 270.4,
+      "text": "stack. So this call stack is a stack"
+    },
+    {
+      "startSeconds": 268.08,
+      "endSeconds": 273.68,
+      "text": "where all these global execution"
+    },
+    {
+      "startSeconds": 270.4,
+      "endSeconds": 276.16,
+      "text": "contexts are kept right. So what will"
+    },
+    {
+      "startSeconds": 273.68,
+      "endSeconds": 277.919,
+      "text": "happen as in when we as in when we"
+    },
+    {
+      "startSeconds": 276.16,
+      "endSeconds": 280.479,
+      "text": "created this whole global execution"
+    },
+    {
+      "startSeconds": 277.919,
+      "endSeconds": 283.68,
+      "text": "context this will be pushed inside the"
+    },
+    {
+      "startSeconds": 280.479,
+      "endSeconds": 286.8,
+      "text": "stack. So let us just push it. So here"
+    },
+    {
+      "startSeconds": 283.68,
+      "endSeconds": 290.8,
+      "text": "is our global execution context right at"
+    },
+    {
+      "startSeconds": 286.8,
+      "endSeconds": 293.919,
+      "text": "the bottom of our stack. Make sense now?"
+    },
+    {
+      "startSeconds": 290.8,
+      "endSeconds": 296.24,
+      "text": "So now let us see what will happen. Now"
+    },
+    {
+      "startSeconds": 293.919,
+      "endSeconds": 298.72,
+      "text": "the actual time comes when the code will"
+    },
+    {
+      "startSeconds": 296.24,
+      "endSeconds": 301.919,
+      "text": "be executed. So when we run this first"
+    },
+    {
+      "startSeconds": 298.72,
+      "endSeconds": 305.759,
+      "text": "line where x is equals to 1. Okay. So"
+    },
+    {
+      "startSeconds": 301.919,
+      "endSeconds": 309.039,
+      "text": "when we run this first line where x is"
+    },
+    {
+      "startSeconds": 305.759,
+      "endSeconds": 312,
+      "text": "equals to 1. So what will happen is this"
+    },
+    {
+      "startSeconds": 309.039,
+      "endSeconds": 315.52,
+      "text": "one will replace undefined over here."
+    },
+    {
+      "startSeconds": 312,
+      "endSeconds": 318.8,
+      "text": "Okay. So now let us just remove this"
+    },
+    {
+      "startSeconds": 315.52,
+      "endSeconds": 322,
+      "text": "undefined and put in one over here in"
+    },
+    {
+      "startSeconds": 318.8,
+      "endSeconds": 324.24,
+      "text": "its place. So let us put one. So here is"
+    },
+    {
+      "startSeconds": 322,
+      "endSeconds": 327.12,
+      "text": "our one over here. Now the x becomes"
+    },
+    {
+      "startSeconds": 324.24,
+      "endSeconds": 329.52,
+      "text": "one. Now the code moves from this line"
+    },
+    {
+      "startSeconds": 327.12,
+      "endSeconds": 333.28,
+      "text": "to this line. So now comes the"
+    },
+    {
+      "startSeconds": 329.52,
+      "endSeconds": 335.52,
+      "text": "interesting part of the video. Okay. A"
+    },
+    {
+      "startSeconds": 333.28,
+      "endSeconds": 337.36,
+      "text": "function is invoked. A function is"
+    },
+    {
+      "startSeconds": 335.52,
+      "endSeconds": 339.6,
+      "text": "invoked. Let's see what happens. So"
+    },
+    {
+      "startSeconds": 337.36,
+      "endSeconds": 342.639,
+      "text": "whenever this function a is invoked,"
+    },
+    {
+      "startSeconds": 339.6,
+      "endSeconds": 344.96,
+      "text": "this function is invoked. Now a"
+    },
+    {
+      "startSeconds": 342.639,
+      "endSeconds": 347.759,
+      "text": "execution context is created. This"
+    },
+    {
+      "startSeconds": 344.96,
+      "endSeconds": 350,
+      "text": "execution context is very much limited"
+    },
+    {
+      "startSeconds": 347.759,
+      "endSeconds": 352.08,
+      "text": "to this function. Okay. This is what I'm"
+    },
+    {
+      "startSeconds": 350,
+      "endSeconds": 354.88,
+      "text": "trying to make you understand. Okay. So"
+    },
+    {
+      "startSeconds": 352.08,
+      "endSeconds": 357.36,
+      "text": "a execution context is created here. Let"
+    },
+    {
+      "startSeconds": 354.88,
+      "endSeconds": 360,
+      "text": "us create an execution context. So this"
+    },
+    {
+      "startSeconds": 357.36,
+      "endSeconds": 362.4,
+      "text": "execution context again have two things"
+    },
+    {
+      "startSeconds": 360,
+      "endSeconds": 366,
+      "text": "right. What are these two things? Memory"
+    },
+    {
+      "startSeconds": 362.4,
+      "endSeconds": 367.919,
+      "text": "and the code. Got it? Now it will again"
+    },
+    {
+      "startSeconds": 366,
+      "endSeconds": 369.6,
+      "text": "go through two phases. Remember two"
+    },
+    {
+      "startSeconds": 367.919,
+      "endSeconds": 373.199,
+      "text": "phases. First is the memory allocation"
+    },
+    {
+      "startSeconds": 369.6,
+      "endSeconds": 374.88,
+      "text": "phase. So so this fun this execution"
+    },
+    {
+      "startSeconds": 373.199,
+      "endSeconds": 377.44,
+      "text": "context is limited to this piece of"
+    },
+    {
+      "startSeconds": 374.88,
+      "endSeconds": 379.12,
+      "text": "code. Right? So memory will be allocated"
+    },
+    {
+      "startSeconds": 377.44,
+      "endSeconds": 381.759,
+      "text": "to all the variables and functions"
+    },
+    {
+      "startSeconds": 379.12,
+      "endSeconds": 384.16,
+      "text": "inside this piece of code. Okay, there"
+    },
+    {
+      "startSeconds": 381.759,
+      "endSeconds": 386,
+      "text": "are no parameters. So no issues. There"
+    },
+    {
+      "startSeconds": 384.16,
+      "endSeconds": 388.72,
+      "text": "are no functions, no issues. But there"
+    },
+    {
+      "startSeconds": 386,
+      "endSeconds": 392,
+      "text": "is a variable X, right? And it has the"
+    },
+    {
+      "startSeconds": 388.72,
+      "endSeconds": 395.52,
+      "text": "same name as this. Okay, but what I'm"
+    },
+    {
+      "startSeconds": 392,
+      "endSeconds": 398.16,
+      "text": "trying to tell you is that this X will"
+    },
+    {
+      "startSeconds": 395.52,
+      "endSeconds": 402.24,
+      "text": "have a separate new copy inside this"
+    },
+    {
+      "startSeconds": 398.16,
+      "endSeconds": 404,
+      "text": "variable environment. Okay, not a copy."
+    },
+    {
+      "startSeconds": 402.24,
+      "endSeconds": 406.16,
+      "text": "I would say it's a separate variable"
+    },
+    {
+      "startSeconds": 404,
+      "endSeconds": 408.4,
+      "text": "altogether. You know this execution"
+    },
+    {
+      "startSeconds": 406.16,
+      "endSeconds": 410.319,
+      "text": "context is like independent of"
+    },
+    {
+      "startSeconds": 408.4,
+      "endSeconds": 413.44,
+      "text": "everything else. It's like a mini"
+    },
+    {
+      "startSeconds": 410.319,
+      "endSeconds": 416.8,
+      "text": "environment sort of mini place"
+    },
+    {
+      "startSeconds": 413.44,
+      "endSeconds": 419.68,
+      "text": "environment where this small function"
+    },
+    {
+      "startSeconds": 416.8,
+      "endSeconds": 423.039,
+      "text": "code is executed. That's it. Okay. So"
+    },
+    {
+      "startSeconds": 419.68,
+      "endSeconds": 425.84,
+      "text": "let us try to allocate memory to X now."
+    },
+    {
+      "startSeconds": 423.039,
+      "endSeconds": 427.919,
+      "text": "So inside this small execution context"
+    },
+    {
+      "startSeconds": 425.84,
+      "endSeconds": 430.4,
+      "text": "of A,"
+    },
+    {
+      "startSeconds": 427.919,
+      "endSeconds": 432.639,
+      "text": "X will be allocated. Okay. X will be"
+    },
+    {
+      "startSeconds": 430.4,
+      "endSeconds": 435.36,
+      "text": "allocated memory and undefined will be"
+    },
+    {
+      "startSeconds": 432.639,
+      "endSeconds": 437.599,
+      "text": "stored over here. remember undefined"
+    },
+    {
+      "startSeconds": 435.36,
+      "endSeconds": 439.68,
+      "text": "will be stored. One more thing to"
+    },
+    {
+      "startSeconds": 437.599,
+      "endSeconds": 442.4,
+      "text": "notice. Okay, I I forgot to tell you. As"
+    },
+    {
+      "startSeconds": 439.68,
+      "endSeconds": 444.319,
+      "text": "soon as this function is invoked, so as"
+    },
+    {
+      "startSeconds": 442.4,
+      "endSeconds": 446.96,
+      "text": "soon as this execution context is"
+    },
+    {
+      "startSeconds": 444.319,
+      "endSeconds": 448.639,
+      "text": "created, it is pushed in the call stack."
+    },
+    {
+      "startSeconds": 446.96,
+      "endSeconds": 450,
+      "text": "Okay, this is the important thing."
+    },
+    {
+      "startSeconds": 448.639,
+      "endSeconds": 452.479,
+      "text": "Remember, I'll show you the whole"
+    },
+    {
+      "startSeconds": 450,
+      "endSeconds": 454.479,
+      "text": "complete picture now. So this execution"
+    },
+    {
+      "startSeconds": 452.479,
+      "endSeconds": 457.84,
+      "text": "context was pushed into the stack. Let"
+    },
+    {
+      "startSeconds": 454.479,
+      "endSeconds": 460.96,
+      "text": "us push it. Okay, let us push it. And"
+    },
+    {
+      "startSeconds": 457.84,
+      "endSeconds": 464.319,
+      "text": "now we have a inside this call stack"
+    },
+    {
+      "startSeconds": 460.96,
+      "endSeconds": 467.44,
+      "text": "again. Okay. And the control is over"
+    },
+    {
+      "startSeconds": 464.319,
+      "endSeconds": 470.4,
+      "text": "here. Okay. A. And the control is at"
+    },
+    {
+      "startSeconds": 467.44,
+      "endSeconds": 472.8,
+      "text": "line number seven right now."
+    },
+    {
+      "startSeconds": 470.4,
+      "endSeconds": 474.96,
+      "text": "Okay. And when this function was"
+    },
+    {
+      "startSeconds": 472.8,
+      "endSeconds": 478.16,
+      "text": "invoked, the control in the global"
+    },
+    {
+      "startSeconds": 474.96,
+      "endSeconds": 481.28,
+      "text": "execution stack was at line number two."
+    },
+    {
+      "startSeconds": 478.16,
+      "endSeconds": 483.68,
+      "text": "Remember? So the control was here like"
+    },
+    {
+      "startSeconds": 481.28,
+      "endSeconds": 486.4,
+      "text": "the the code was running this. So global"
+    },
+    {
+      "startSeconds": 483.68,
+      "endSeconds": 488.56,
+      "text": "execution context was at two and now we"
+    },
+    {
+      "startSeconds": 486.4,
+      "endSeconds": 491.52,
+      "text": "are at seven. Line number seven. This"
+    },
+    {
+      "startSeconds": 488.56,
+      "endSeconds": 495.52,
+      "text": "line. Okay. So once we execute this"
+    },
+    {
+      "startSeconds": 491.52,
+      "endSeconds": 498.319,
+      "text": "line, let us execute this line where x"
+    },
+    {
+      "startSeconds": 495.52,
+      "endSeconds": 500.96,
+      "text": "is equals to 10. So this where x is"
+    },
+    {
+      "startSeconds": 498.319,
+      "endSeconds": 503.44,
+      "text": "equals to 10 is now executed. So once we"
+    },
+    {
+      "startSeconds": 500.96,
+      "endSeconds": 508.12,
+      "text": "execute this 10 will replace undefined."
+    },
+    {
+      "startSeconds": 503.44,
+      "endSeconds": 508.12,
+      "text": "Okay. So let us now replace this."
+    },
+    {
+      "startSeconds": 509.44,
+      "endSeconds": 513.919,
+      "text": "So after this line we move to line"
+    },
+    {
+      "startSeconds": 511.52,
+      "endSeconds": 515.68,
+      "text": "number eight now. Okay. So line number"
+    },
+    {
+      "startSeconds": 513.919,
+      "endSeconds": 518.64,
+      "text": "eight"
+    },
+    {
+      "startSeconds": 515.68,
+      "endSeconds": 520.56,
+      "text": "is the console log of x. So what happens"
+    },
+    {
+      "startSeconds": 518.64,
+      "endSeconds": 523.279,
+      "text": "when you do a console log? Let us create"
+    },
+    {
+      "startSeconds": 520.56,
+      "endSeconds": 526.399,
+      "text": "a small console for us also. So this is"
+    },
+    {
+      "startSeconds": 523.279,
+      "endSeconds": 529.279,
+      "text": "our console. Let us see. Let us say this"
+    },
+    {
+      "startSeconds": 526.399,
+      "endSeconds": 533.76,
+      "text": "is our console. So when you do a console"
+    },
+    {
+      "startSeconds": 529.279,
+      "endSeconds": 536.64,
+      "text": "log of x over here, console log of x."
+    },
+    {
+      "startSeconds": 533.76,
+      "endSeconds": 539.68,
+      "text": "So now JavaScript will look for the"
+    },
+    {
+      "startSeconds": 536.64,
+      "endSeconds": 542,
+      "text": "value of x in the local memory space."
+    },
+    {
+      "startSeconds": 539.68,
+      "endSeconds": 543.839,
+      "text": "Okay. So when I say local memory space,"
+    },
+    {
+      "startSeconds": 542,
+      "endSeconds": 546.24,
+      "text": "that means it is very much limited to"
+    },
+    {
+      "startSeconds": 543.839,
+      "endSeconds": 549.04,
+      "text": "that particular execution context. So"
+    },
+    {
+      "startSeconds": 546.24,
+      "endSeconds": 552.48,
+      "text": "this is execution context local memory"
+    },
+    {
+      "startSeconds": 549.04,
+      "endSeconds": 554.56,
+      "text": "is this and this value of x JavaScript"
+    },
+    {
+      "startSeconds": 552.48,
+      "endSeconds": 557.68,
+      "text": "engine will search for X inside this"
+    },
+    {
+      "startSeconds": 554.56,
+      "endSeconds": 560.72,
+      "text": "local memory. It finds 10 and it prints"
+    },
+    {
+      "startSeconds": 557.68,
+      "endSeconds": 562.72,
+      "text": "it on the console. Got it my point? So"
+    },
+    {
+      "startSeconds": 560.72,
+      "endSeconds": 565.44,
+      "text": "it finds this X value in the local"
+    },
+    {
+      "startSeconds": 562.72,
+      "endSeconds": 567.6,
+      "text": "memory. Takes that and prints it to"
+    },
+    {
+      "startSeconds": 565.44,
+      "endSeconds": 570.56,
+      "text": "console. Okay, that's how this code is"
+    },
+    {
+      "startSeconds": 567.6,
+      "endSeconds": 574.399,
+      "text": "executed and the console will now have"
+    },
+    {
+      "startSeconds": 570.56,
+      "endSeconds": 577.12,
+      "text": "10 in it. Okay, now 10 will be printed"
+    },
+    {
+      "startSeconds": 574.399,
+      "endSeconds": 580.32,
+      "text": "in the console, logged in the console."
+    },
+    {
+      "startSeconds": 577.12,
+      "endSeconds": 582,
+      "text": "Okay, so what happens now? We are done"
+    },
+    {
+      "startSeconds": 580.32,
+      "endSeconds": 583.36,
+      "text": "with our code of this function."
+    },
+    {
+      "startSeconds": 582,
+      "endSeconds": 585.519,
+      "text": "Remember, now we have finished"
+    },
+    {
+      "startSeconds": 583.36,
+      "endSeconds": 588.48,
+      "text": "executing. So what happens if we have"
+    },
+    {
+      "startSeconds": 585.519,
+      "endSeconds": 590.48,
+      "text": "finished executing? Now important thing,"
+    },
+    {
+      "startSeconds": 588.48,
+      "endSeconds": 593.12,
+      "text": "right? Remember I told you in the"
+    },
+    {
+      "startSeconds": 590.48,
+      "endSeconds": 596.08,
+      "text": "previous videos, this whole execution"
+    },
+    {
+      "startSeconds": 593.12,
+      "endSeconds": 598.32,
+      "text": "context is deleted. It's vanished. The"
+    },
+    {
+      "startSeconds": 596.08,
+      "endSeconds": 600.88,
+      "text": "memory is gone. This whole execution"
+    },
+    {
+      "startSeconds": 598.32,
+      "endSeconds": 603.04,
+      "text": "context is gone. And the call stack is"
+    },
+    {
+      "startSeconds": 600.88,
+      "endSeconds": 604.959,
+      "text": "also gone. like this whole functions"
+    },
+    {
+      "startSeconds": 603.04,
+      "endSeconds": 608.48,
+      "text": "will be removed from the call stack"
+    },
+    {
+      "startSeconds": 604.959,
+      "endSeconds": 611.04,
+      "text": "also. Let's pop off now. So let us try"
+    },
+    {
+      "startSeconds": 608.48,
+      "endSeconds": 613.44,
+      "text": "to pop this out from the call stack."
+    },
+    {
+      "startSeconds": 611.04,
+      "endSeconds": 615.36,
+      "text": "Okay, let me remove it. So now this"
+    },
+    {
+      "startSeconds": 613.44,
+      "endSeconds": 619.6,
+      "text": "function is popped out of the call"
+    },
+    {
+      "startSeconds": 615.36,
+      "endSeconds": 622.16,
+      "text": "stack. Gone. Finished. Now the control"
+    },
+    {
+      "startSeconds": 619.6,
+      "endSeconds": 625.04,
+      "text": "goes back to global execution context"
+    },
+    {
+      "startSeconds": 622.16,
+      "endSeconds": 627.68,
+      "text": "line number two where we left. Okay, we"
+    },
+    {
+      "startSeconds": 625.04,
+      "endSeconds": 629.839,
+      "text": "left at that point, right? So now this a"
+    },
+    {
+      "startSeconds": 627.68,
+      "endSeconds": 632.16,
+      "text": "function has been executed. So now the"
+    },
+    {
+      "startSeconds": 629.839,
+      "endSeconds": 634.56,
+      "text": "control moves to line number three."
+    },
+    {
+      "startSeconds": 632.16,
+      "endSeconds": 637.36,
+      "text": "Okay. So let us move the control to line"
+    },
+    {
+      "startSeconds": 634.56,
+      "endSeconds": 639.6,
+      "text": "number three over here. So now again"
+    },
+    {
+      "startSeconds": 637.36,
+      "endSeconds": 641.44,
+      "text": "comes an important part. Again a"
+    },
+    {
+      "startSeconds": 639.6,
+      "endSeconds": 643.36,
+      "text": "function is executed. So let us just"
+    },
+    {
+      "startSeconds": 641.44,
+      "endSeconds": 645.92,
+      "text": "quickly do it. Bear with me patiently"
+    },
+    {
+      "startSeconds": 643.36,
+      "endSeconds": 648.32,
+      "text": "but you'll learn things. Okay. U so what"
+    },
+    {
+      "startSeconds": 645.92,
+      "endSeconds": 651.12,
+      "text": "will happen is now we move to line"
+    },
+    {
+      "startSeconds": 648.32,
+      "endSeconds": 653.279,
+      "text": "number 3B. Okay. Now we invoke a"
+    },
+    {
+      "startSeconds": 651.12,
+      "endSeconds": 655.839,
+      "text": "function. Again a brand new execution"
+    },
+    {
+      "startSeconds": 653.279,
+      "endSeconds": 658.079,
+      "text": "context is created. Right. Let us create"
+    },
+    {
+      "startSeconds": 655.839,
+      "endSeconds": 660.24,
+      "text": "an execution context. So we created this"
+    },
+    {
+      "startSeconds": 658.079,
+      "endSeconds": 662.32,
+      "text": "execution context and it will again have"
+    },
+    {
+      "startSeconds": 660.24,
+      "endSeconds": 664.64,
+      "text": "two components memory and code. It will"
+    },
+    {
+      "startSeconds": 662.32,
+      "endSeconds": 668.079,
+      "text": "again have two phases. First phase"
+    },
+    {
+      "startSeconds": 664.64,
+      "endSeconds": 670.72,
+      "text": "remember what was it? X will be X will"
+    },
+    {
+      "startSeconds": 668.079,
+      "endSeconds": 672.64,
+      "text": "be allotted undefined to it. Let us put"
+    },
+    {
+      "startSeconds": 670.72,
+      "endSeconds": 676,
+      "text": "in undefined."
+    },
+    {
+      "startSeconds": 672.64,
+      "endSeconds": 679.36,
+      "text": "Okay. And with this we will now execute"
+    },
+    {
+      "startSeconds": 676,
+      "endSeconds": 682,
+      "text": "the code. Okay. So when we execute this"
+    },
+    {
+      "startSeconds": 679.36,
+      "endSeconds": 684.48,
+      "text": "piece of code so X will X is equals to"
+    },
+    {
+      "startSeconds": 682,
+      "endSeconds": 688.079,
+      "text": "100. So 100 will replace over here."
+    },
+    {
+      "startSeconds": 684.48,
+      "endSeconds": 691.04,
+      "text": "Okay. Let us do that. So it will it will"
+    },
+    {
+      "startSeconds": 688.079,
+      "endSeconds": 693.12,
+      "text": "it will run where x is equals to 100. So"
+    },
+    {
+      "startSeconds": 691.04,
+      "endSeconds": 698.6,
+      "text": "this 100 will replace undefined over"
+    },
+    {
+      "startSeconds": 693.12,
+      "endSeconds": 698.6,
+      "text": "here. So let us just replace it quickly."
+    },
+    {
+      "startSeconds": 699.44,
+      "endSeconds": 703.92,
+      "text": "So once we replace this 100 with x now"
+    },
+    {
+      "startSeconds": 701.92,
+      "endSeconds": 707.36,
+      "text": "we will execute another line which is"
+    },
+    {
+      "startSeconds": 703.92,
+      "endSeconds": 709.76,
+      "text": "the console log of x. Console log of x."
+    },
+    {
+      "startSeconds": 707.36,
+      "endSeconds": 712,
+      "text": "Okay. So now JavaScript will try to find"
+    },
+    {
+      "startSeconds": 709.76,
+      "endSeconds": 714.959,
+      "text": "out this value of x inside the local"
+    },
+    {
+      "startSeconds": 712,
+      "endSeconds": 717.92,
+      "text": "memory. It will find x over here as 100."
+    },
+    {
+      "startSeconds": 714.959,
+      "endSeconds": 721.2,
+      "text": "So it will print it onto console. Okay."
+    },
+    {
+      "startSeconds": 717.92,
+      "endSeconds": 724.56,
+      "text": "So let us log this thing onto console."
+    },
+    {
+      "startSeconds": 721.2,
+      "endSeconds": 727.92,
+      "text": "So now 100 will be over here. Okay. So"
+    },
+    {
+      "startSeconds": 724.56,
+      "endSeconds": 729.6,
+      "text": "this 100 will go over here. Now what"
+    },
+    {
+      "startSeconds": 727.92,
+      "endSeconds": 732.16,
+      "text": "happens again? We have finished"
+    },
+    {
+      "startSeconds": 729.6,
+      "endSeconds": 734.32,
+      "text": "executing this whole code. Okay. So once"
+    },
+    {
+      "startSeconds": 732.16,
+      "endSeconds": 736.88,
+      "text": "we are finished executing and this whole"
+    },
+    {
+      "startSeconds": 734.32,
+      "endSeconds": 739.6,
+      "text": "execution context will be popped off the"
+    },
+    {
+      "startSeconds": 736.88,
+      "endSeconds": 741.519,
+      "text": "stack also. Oh we forgot to put it"
+    },
+    {
+      "startSeconds": 739.6,
+      "endSeconds": 743.839,
+      "text": "in the call stack in first place. Okay."
+    },
+    {
+      "startSeconds": 741.519,
+      "endSeconds": 746.16,
+      "text": "But as soon as that as soon as this"
+    },
+    {
+      "startSeconds": 743.839,
+      "endSeconds": 748,
+      "text": "execution context was created right it"
+    },
+    {
+      "startSeconds": 746.16,
+      "endSeconds": 751.839,
+      "text": "was pushed into the stack. Let us put it"
+    },
+    {
+      "startSeconds": 748,
+      "endSeconds": 754.16,
+      "text": "now. What's there? Right. So this this"
+    },
+    {
+      "startSeconds": 751.839,
+      "endSeconds": 756.24,
+      "text": "was here, right? This was present here."
+    },
+    {
+      "startSeconds": 754.16,
+      "endSeconds": 758.88,
+      "text": "Now what will happen once the code whole"
+    },
+    {
+      "startSeconds": 756.24,
+      "endSeconds": 760.639,
+      "text": "code is executed? So this will pop off"
+    },
+    {
+      "startSeconds": 758.88,
+      "endSeconds": 762.639,
+      "text": "the stack. Okay. It will come out of the"
+    },
+    {
+      "startSeconds": 760.639,
+      "endSeconds": 764.639,
+      "text": "stack and it's gone. It's completely"
+    },
+    {
+      "startSeconds": 762.639,
+      "endSeconds": 767.839,
+      "text": "deleted. Even this memory space"
+    },
+    {
+      "startSeconds": 764.639,
+      "endSeconds": 771.36,
+      "text": "everything is deleted. Okay. So let us"
+    },
+    {
+      "startSeconds": 767.839,
+      "endSeconds": 775.279,
+      "text": "just remove this out of the stack now."
+    },
+    {
+      "startSeconds": 771.36,
+      "endSeconds": 777.36,
+      "text": "So let us remove this. Gone. Okay. Now"
+    },
+    {
+      "startSeconds": 775.279,
+      "endSeconds": 779.36,
+      "text": "the control goes back to global"
+    },
+    {
+      "startSeconds": 777.36,
+      "endSeconds": 781.44,
+      "text": "execution context line number three."
+    },
+    {
+      "startSeconds": 779.36,
+      "endSeconds": 783.519,
+      "text": "Okay, this line has finished executing"
+    },
+    {
+      "startSeconds": 781.44,
+      "endSeconds": 785.279,
+      "text": "and it will move to line number four. So"
+    },
+    {
+      "startSeconds": 783.519,
+      "endSeconds": 788.16,
+      "text": "now it will execute line number four"
+    },
+    {
+      "startSeconds": 785.279,
+      "endSeconds": 789.68,
+      "text": "console log of X over here. Okay, so so"
+    },
+    {
+      "startSeconds": 788.16,
+      "endSeconds": 791.76,
+      "text": "let me first remove all these things,"
+    },
+    {
+      "startSeconds": 789.68,
+      "endSeconds": 793.839,
+      "text": "right? These execution context and"
+    },
+    {
+      "startSeconds": 791.76,
+      "endSeconds": 797.04,
+      "text": "everything is not here, right? So let me"
+    },
+    {
+      "startSeconds": 793.839,
+      "endSeconds": 799.92,
+      "text": "just remove and erase it quickly to make"
+    },
+    {
+      "startSeconds": 797.04,
+      "endSeconds": 802.8,
+      "text": "things clear. So now we will remove this"
+    },
+    {
+      "startSeconds": 799.92,
+      "endSeconds": 805.279,
+      "text": "all thing. And now what will happen is"
+    },
+    {
+      "startSeconds": 802.8,
+      "endSeconds": 809.2,
+      "text": "this line number four will be executed."
+    },
+    {
+      "startSeconds": 805.279,
+      "endSeconds": 812.639,
+      "text": "Okay. So now JavaScript engine will"
+    },
+    {
+      "startSeconds": 809.2,
+      "endSeconds": 815.44,
+      "text": "execute this line number X. Okay. So"
+    },
+    {
+      "startSeconds": 812.639,
+      "endSeconds": 818.639,
+      "text": "when it executes this line number four"
+    },
+    {
+      "startSeconds": 815.44,
+      "endSeconds": 822,
+      "text": "over here now it will look for X inside"
+    },
+    {
+      "startSeconds": 818.639,
+      "endSeconds": 824.959,
+      "text": "the local space. So the local memory of"
+    },
+    {
+      "startSeconds": 822,
+      "endSeconds": 829.68,
+      "text": "this particular execution context. Okay."
+    },
+    {
+      "startSeconds": 824.959,
+      "endSeconds": 834.24,
+      "text": "So over here the value of X is 1."
+    },
+    {
+      "startSeconds": 829.68,
+      "endSeconds": 836.56,
+      "text": "Okay. this one. So this x1 value will be"
+    },
+    {
+      "startSeconds": 834.24,
+      "endSeconds": 839.68,
+      "text": "printed in the console when we execute"
+    },
+    {
+      "startSeconds": 836.56,
+      "endSeconds": 841.76,
+      "text": "this line. So what will happen? The"
+    },
+    {
+      "startSeconds": 839.68,
+      "endSeconds": 844.24,
+      "text": "javascript will print one in the"
+    },
+    {
+      "startSeconds": 841.76,
+      "endSeconds": 847.76,
+      "text": "console. Okay. So one will be printed in"
+    },
+    {
+      "startSeconds": 844.24,
+      "endSeconds": 849.839,
+      "text": "the console now. And we are finished"
+    },
+    {
+      "startSeconds": 847.76,
+      "endSeconds": 852.24,
+      "text": "executing our line number four also in"
+    },
+    {
+      "startSeconds": 849.839,
+      "endSeconds": 853.839,
+      "text": "the global execution context. Now now"
+    },
+    {
+      "startSeconds": 852.24,
+      "endSeconds": 856.639,
+      "text": "JavaScript engine moves to the next"
+    },
+    {
+      "startSeconds": 853.839,
+      "endSeconds": 858.72,
+      "text": "line. It sees that there is nothing more"
+    },
+    {
+      "startSeconds": 856.639,
+      "endSeconds": 860.399,
+      "text": "to execute in any of the lines now."
+    },
+    {
+      "startSeconds": 858.72,
+      "endSeconds": 862.88,
+      "text": "Okay. So in the remaining program there"
+    },
+    {
+      "startSeconds": 860.399,
+      "endSeconds": 865.44,
+      "text": "is nothing more to execute isn't it? So"
+    },
+    {
+      "startSeconds": 862.88,
+      "endSeconds": 867.76,
+      "text": "now once whole code has been executed"
+    },
+    {
+      "startSeconds": 865.44,
+      "endSeconds": 869.519,
+      "text": "now this whole execution context will"
+    },
+    {
+      "startSeconds": 867.76,
+      "endSeconds": 871.839,
+      "text": "also be deleted. Everything will be"
+    },
+    {
+      "startSeconds": 869.519,
+      "endSeconds": 874.56,
+      "text": "deleted. Even the call star global"
+    },
+    {
+      "startSeconds": 871.839,
+      "endSeconds": 876.639,
+      "text": "execution context will be popped out and"
+    },
+    {
+      "startSeconds": 874.56,
+      "endSeconds": 879.36,
+      "text": "nothing will be left. So let us just"
+    },
+    {
+      "startSeconds": 876.639,
+      "endSeconds": 882.32,
+      "text": "remove everything. Right? So this whole"
+    },
+    {
+      "startSeconds": 879.36,
+      "endSeconds": 884.72,
+      "text": "thing is like removed. Okay. This whole"
+    },
+    {
+      "startSeconds": 882.32,
+      "endSeconds": 886.639,
+      "text": "thing is gone now. And even from the"
+    },
+    {
+      "startSeconds": 884.72,
+      "endSeconds": 888.8,
+      "text": "call stack"
+    },
+    {
+      "startSeconds": 886.639,
+      "endSeconds": 891.6,
+      "text": "and even from the call stack this global"
+    },
+    {
+      "startSeconds": 888.8,
+      "endSeconds": 894.48,
+      "text": "execution context is gone. So we are now"
+    },
+    {
+      "startSeconds": 891.6,
+      "endSeconds": 896.959,
+      "text": "left with nothing with us. So that is"
+    },
+    {
+      "startSeconds": 894.48,
+      "endSeconds": 898.8,
+      "text": "how this whole program is executed. So"
+    },
+    {
+      "startSeconds": 896.959,
+      "endSeconds": 900.88,
+      "text": "this was all the visual representation"
+    },
+    {
+      "startSeconds": 898.8,
+      "endSeconds": 902.959,
+      "text": "right with the help of diagrams. Now let"
+    },
+    {
+      "startSeconds": 900.88,
+      "endSeconds": 905.279,
+      "text": "us just see all these amazing things"
+    },
+    {
+      "startSeconds": 902.959,
+      "endSeconds": 907.12,
+      "text": "happening inside the browser also. I'm"
+    },
+    {
+      "startSeconds": 905.279,
+      "endSeconds": 909.36,
+      "text": "telling you this will be real fun. Keep"
+    },
+    {
+      "startSeconds": 907.12,
+      "endSeconds": 911.44,
+      "text": "on watching it. Okay. So here is our"
+    },
+    {
+      "startSeconds": 909.36,
+      "endSeconds": 913.68,
+      "text": "program and we got this output right in"
+    },
+    {
+      "startSeconds": 911.44,
+      "endSeconds": 915.6,
+      "text": "the browser. But let us now see that"
+    },
+    {
+      "startSeconds": 913.68,
+      "endSeconds": 918.639,
+      "text": "what happens behind the scenes inside"
+    },
+    {
+      "startSeconds": 915.6,
+      "endSeconds": 921.36,
+      "text": "the code right. So for that let us put"
+    },
+    {
+      "startSeconds": 918.639,
+      "endSeconds": 924.48,
+      "text": "the debugger again. So remember how this"
+    },
+    {
+      "startSeconds": 921.36,
+      "endSeconds": 926.399,
+      "text": "whole code executes. So let us put a"
+    },
+    {
+      "startSeconds": 924.48,
+      "endSeconds": 928.24,
+      "text": "debugger over here. Now what will happen"
+    },
+    {
+      "startSeconds": 926.399,
+      "endSeconds": 930.24,
+      "text": "once you run the code remember the first"
+    },
+    {
+      "startSeconds": 928.24,
+      "endSeconds": 932.16,
+      "text": "step global execution context will be"
+    },
+    {
+      "startSeconds": 930.24,
+      "endSeconds": 934,
+      "text": "created and pushed onto the stack. So"
+    },
+    {
+      "startSeconds": 932.16,
+      "endSeconds": 935.6,
+      "text": "this is the call stack here. Listen to"
+    },
+    {
+      "startSeconds": 934,
+      "endSeconds": 938,
+      "text": "this very carefully. This is the call"
+    },
+    {
+      "startSeconds": 935.6,
+      "endSeconds": 940.48,
+      "text": "stack here. when we run a program, when"
+    },
+    {
+      "startSeconds": 938,
+      "endSeconds": 942.399,
+      "text": "we run our program, uh a global"
+    },
+    {
+      "startSeconds": 940.48,
+      "endSeconds": 944.72,
+      "text": "execution context will be pushed onto"
+    },
+    {
+      "startSeconds": 942.399,
+      "endSeconds": 948.079,
+      "text": "the call stack. Okay. So, let us refresh"
+    },
+    {
+      "startSeconds": 944.72,
+      "endSeconds": 950.32,
+      "text": "the page and see. Yep. See this we got"
+    },
+    {
+      "startSeconds": 948.079,
+      "endSeconds": 952.639,
+      "text": "right global execution context is now"
+    },
+    {
+      "startSeconds": 950.32,
+      "endSeconds": 955.68,
+      "text": "created and it is over here. The the"
+    },
+    {
+      "startSeconds": 952.639,
+      "endSeconds": 958.079,
+      "text": "control is on line number one. Okay."
+    },
+    {
+      "startSeconds": 955.68,
+      "endSeconds": 960.32,
+      "text": "Now, what we'll again what we'll again"
+    },
+    {
+      "startSeconds": 958.079,
+      "endSeconds": 962.8,
+      "text": "see there must be some memory allocated,"
+    },
+    {
+      "startSeconds": 960.32,
+      "endSeconds": 966.639,
+      "text": "isn't it? What what what should happen"
+    },
+    {
+      "startSeconds": 962.8,
+      "endSeconds": 969.04,
+      "text": "in the first phase? X A B should be"
+    },
+    {
+      "startSeconds": 966.639,
+      "endSeconds": 972,
+      "text": "allocated memory isn't it? So there must"
+    },
+    {
+      "startSeconds": 969.04,
+      "endSeconds": 974.639,
+      "text": "be some memory. So here in the scope we"
+    },
+    {
+      "startSeconds": 972,
+      "endSeconds": 976.399,
+      "text": "have this memory right we got all these"
+    },
+    {
+      "startSeconds": 974.639,
+      "endSeconds": 979.279,
+      "text": "memory allocated. So we have this"
+    },
+    {
+      "startSeconds": 976.399,
+      "endSeconds": 982,
+      "text": "function A C we have this function B and"
+    },
+    {
+      "startSeconds": 979.279,
+      "endSeconds": 984,
+      "text": "what will be there in X remember what"
+    },
+    {
+      "startSeconds": 982,
+      "endSeconds": 985.839,
+      "text": "will be there that special keyword we"
+    },
+    {
+      "startSeconds": 984,
+      "endSeconds": 989.04,
+      "text": "used to see."
+    },
+    {
+      "startSeconds": 985.839,
+      "endSeconds": 992.16,
+      "text": "Yes. So X will have undefined in it. So"
+    },
+    {
+      "startSeconds": 989.04,
+      "endSeconds": 994.48,
+      "text": "here is undefined in it. So now the code"
+    },
+    {
+      "startSeconds": 992.16,
+      "endSeconds": 996.399,
+      "text": "will start executing. So once we execute"
+    },
+    {
+      "startSeconds": 994.48,
+      "endSeconds": 998,
+      "text": "this line number one and move to line"
+    },
+    {
+      "startSeconds": 996.399,
+      "endSeconds": 1000.48,
+      "text": "number two. Okay, let me remove this"
+    },
+    {
+      "startSeconds": 998,
+      "endSeconds": 1002.639,
+      "text": "break point line number two. So let us"
+    },
+    {
+      "startSeconds": 1000.48,
+      "endSeconds": 1005.6,
+      "text": "play this. Now the first line is"
+    },
+    {
+      "startSeconds": 1002.639,
+      "endSeconds": 1008.48,
+      "text": "executed. Now see the value of x must"
+    },
+    {
+      "startSeconds": 1005.6,
+      "endSeconds": 1010.88,
+      "text": "have been replaced with undefined would"
+    },
+    {
+      "startSeconds": 1008.48,
+      "endSeconds": 1014.24,
+      "text": "have been replaced by one. So let us go"
+    },
+    {
+      "startSeconds": 1010.88,
+      "endSeconds": 1016.88,
+      "text": "in and say so over here x would have"
+    },
+    {
+      "startSeconds": 1014.24,
+      "endSeconds": 1019.44,
+      "text": "been where is yes. So x now became one."
+    },
+    {
+      "startSeconds": 1016.88,
+      "endSeconds": 1022.48,
+      "text": "Okay as expected. Now what will happen"
+    },
+    {
+      "startSeconds": 1019.44,
+      "endSeconds": 1025.439,
+      "text": "as soon as we run this a a function? Now"
+    },
+    {
+      "startSeconds": 1022.48,
+      "endSeconds": 1027.36,
+      "text": "once the function is invoked a execution"
+    },
+    {
+      "startSeconds": 1025.439,
+      "endSeconds": 1030.16,
+      "text": "context is created and pushed onto the"
+    },
+    {
+      "startSeconds": 1027.36,
+      "endSeconds": 1032.24,
+      "text": "call stack remember. So now watch this"
+    },
+    {
+      "startSeconds": 1030.16,
+      "endSeconds": 1035.199,
+      "text": "space carefully. Okay when we create"
+    },
+    {
+      "startSeconds": 1032.24,
+      "endSeconds": 1037.679,
+      "text": "this this call stack will push a in it."
+    },
+    {
+      "startSeconds": 1035.199,
+      "endSeconds": 1039.839,
+      "text": "Okay let me put a debugger over here to"
+    },
+    {
+      "startSeconds": 1037.679,
+      "endSeconds": 1042.16,
+      "text": "visualize it properly."
+    },
+    {
+      "startSeconds": 1039.839,
+      "endSeconds": 1044.319,
+      "text": "So now I'm running the code. Okay just"
+    },
+    {
+      "startSeconds": 1042.16,
+      "endSeconds": 1046.079,
+      "text": "see a new execution context will be"
+    },
+    {
+      "startSeconds": 1044.319,
+      "endSeconds": 1049.039,
+      "text": "created and it will be here in the call"
+    },
+    {
+      "startSeconds": 1046.079,
+      "endSeconds": 1052.88,
+      "text": "stack. Okay. I am I am pressing the uh"
+    },
+    {
+      "startSeconds": 1049.039,
+      "endSeconds": 1055.679,
+      "text": "play button. Okay. Yep. See now we got"
+    },
+    {
+      "startSeconds": 1052.88,
+      "endSeconds": 1057.679,
+      "text": "this A here right interesting isn't it?"
+    },
+    {
+      "startSeconds": 1055.679,
+      "endSeconds": 1060.32,
+      "text": "So now we have this A here and the"
+    },
+    {
+      "startSeconds": 1057.679,
+      "endSeconds": 1062.559,
+      "text": "control moves to line number seven right"
+    },
+    {
+      "startSeconds": 1060.32,
+      "endSeconds": 1064.72,
+      "text": "over here. So this was the global"
+    },
+    {
+      "startSeconds": 1062.559,
+      "endSeconds": 1067.039,
+      "text": "execution context and this was A. And"
+    },
+    {
+      "startSeconds": 1064.72,
+      "endSeconds": 1069.919,
+      "text": "now see an interesting thing also. So it"
+    },
+    {
+      "startSeconds": 1067.039,
+      "endSeconds": 1072.4,
+      "text": "has its own memory space and this A has"
+    },
+    {
+      "startSeconds": 1069.919,
+      "endSeconds": 1075.52,
+      "text": "its own memory space as expected. And"
+    },
+    {
+      "startSeconds": 1072.4,
+      "endSeconds": 1078.559,
+      "text": "see here are two things right?"
+    },
+    {
+      "startSeconds": 1075.52,
+      "endSeconds": 1081.039,
+      "text": "We have this global memory also and we"
+    },
+    {
+      "startSeconds": 1078.559,
+      "endSeconds": 1082.96,
+      "text": "have this local memory also remember and"
+    },
+    {
+      "startSeconds": 1081.039,
+      "endSeconds": 1085.039,
+      "text": "as we said that in the local memory of"
+    },
+    {
+      "startSeconds": 1082.96,
+      "endSeconds": 1087.2,
+      "text": "that execution context we have this"
+    },
+    {
+      "startSeconds": 1085.039,
+      "endSeconds": 1089.76,
+      "text": "excess undefined also because the code"
+    },
+    {
+      "startSeconds": 1087.2,
+      "endSeconds": 1092.72,
+      "text": "hasn't started exe executing right we"
+    },
+    {
+      "startSeconds": 1089.76,
+      "endSeconds": 1094.799,
+      "text": "have put a debugger over here so this is"
+    },
+    {
+      "startSeconds": 1092.72,
+      "endSeconds": 1096.96,
+      "text": "interesting thing right and you must be"
+    },
+    {
+      "startSeconds": 1094.799,
+      "endSeconds": 1099.919,
+      "text": "wondering that what is this this what is"
+    },
+    {
+      "startSeconds": 1096.96,
+      "endSeconds": 1101.679,
+      "text": "this thing right don't worry we will be"
+    },
+    {
+      "startSeconds": 1099.919,
+      "endSeconds": 1103.84,
+      "text": "having a separate video altogether"
+    },
+    {
+      "startSeconds": 1101.679,
+      "endSeconds": 1105.919,
+      "text": "covering this this concept also but for"
+    },
+    {
+      "startSeconds": 1103.84,
+      "endSeconds": 1108.64,
+      "text": "now just understand that in the local"
+    },
+    {
+      "startSeconds": 1105.919,
+      "endSeconds": 1112.4,
+      "text": "memory. So we have just x is equals to"
+    },
+    {
+      "startSeconds": 1108.64,
+      "endSeconds": 1115.039,
+      "text": "undefined in the first phase. Okay. So"
+    },
+    {
+      "startSeconds": 1112.4,
+      "endSeconds": 1117.52,
+      "text": "let us go executing the next line again."
+    },
+    {
+      "startSeconds": 1115.039,
+      "endSeconds": 1120.799,
+      "text": "So what will happen now? Let us run. So"
+    },
+    {
+      "startSeconds": 1117.52,
+      "endSeconds": 1123.28,
+      "text": "x is now moved and this undefined is"
+    },
+    {
+      "startSeconds": 1120.799,
+      "endSeconds": 1125.76,
+      "text": "replaced by 10. Now interesting, isn't"
+    },
+    {
+      "startSeconds": 1123.28,
+      "endSeconds": 1128.4,
+      "text": "it? Now what will happen? Now let us"
+    },
+    {
+      "startSeconds": 1125.76,
+      "endSeconds": 1130.32,
+      "text": "execute this. So once this console log"
+    },
+    {
+      "startSeconds": 1128.4,
+      "endSeconds": 1132.32,
+      "text": "will be executed, the control will go"
+    },
+    {
+      "startSeconds": 1130.32,
+      "endSeconds": 1134.64,
+      "text": "back to line number three. Isn't it? So"
+    },
+    {
+      "startSeconds": 1132.32,
+      "endSeconds": 1138.4,
+      "text": "let us put a debugger and like run this"
+    },
+    {
+      "startSeconds": 1134.64,
+      "endSeconds": 1141.52,
+      "text": "piece of code also. So we ran this piece"
+    },
+    {
+      "startSeconds": 1138.4,
+      "endSeconds": 1145.12,
+      "text": "of code and see see this in the console"
+    },
+    {
+      "startSeconds": 1141.52,
+      "endSeconds": 1147.679,
+      "text": "we got 10 right. So the 10 was printed"
+    },
+    {
+      "startSeconds": 1145.12,
+      "endSeconds": 1149.84,
+      "text": "and interesting thing happened right the"
+    },
+    {
+      "startSeconds": 1147.679,
+      "endSeconds": 1152.72,
+      "text": "call stack is now moved to global"
+    },
+    {
+      "startSeconds": 1149.84,
+      "endSeconds": 1155.28,
+      "text": "execution context. Now that execution"
+    },
+    {
+      "startSeconds": 1152.72,
+      "endSeconds": 1159.039,
+      "text": "context of a was popped off this call"
+    },
+    {
+      "startSeconds": 1155.28,
+      "endSeconds": 1161.12,
+      "text": "stack. This also happened right now when"
+    },
+    {
+      "startSeconds": 1159.039,
+      "endSeconds": 1163.2,
+      "text": "we now we move to line number three."
+    },
+    {
+      "startSeconds": 1161.12,
+      "endSeconds": 1164.96,
+      "text": "Right? So we will invoke the B function"
+    },
+    {
+      "startSeconds": 1163.2,
+      "endSeconds": 1167.44,
+      "text": "again. Let's quickly do that again. Let"
+    },
+    {
+      "startSeconds": 1164.96,
+      "endSeconds": 1169.6,
+      "text": "me put a debugger over here also and"
+    },
+    {
+      "startSeconds": 1167.44,
+      "endSeconds": 1171.6,
+      "text": "we'll show you what will happen. A new"
+    },
+    {
+      "startSeconds": 1169.6,
+      "endSeconds": 1173.6,
+      "text": "execution context will be created and po"
+    },
+    {
+      "startSeconds": 1171.6,
+      "endSeconds": 1175.039,
+      "text": "pushed into the stack. See now the B is"
+    },
+    {
+      "startSeconds": 1173.6,
+      "endSeconds": 1177.12,
+      "text": "in the call stack. It will again have"
+    },
+    {
+      "startSeconds": 1175.039,
+      "endSeconds": 1179.679,
+      "text": "its local memory. X over here is"
+    },
+    {
+      "startSeconds": 1177.12,
+      "endSeconds": 1182.4,
+      "text": "undefined. Now when we run this uh one"
+    },
+    {
+      "startSeconds": 1179.679,
+      "endSeconds": 1185.039,
+      "text": "run this line. So 100 will replace"
+    },
+    {
+      "startSeconds": 1182.4,
+      "endSeconds": 1187.84,
+      "text": "undefined. See let me run that again."
+    },
+    {
+      "startSeconds": 1185.039,
+      "endSeconds": 1190.64,
+      "text": "See now 100 came over here in X. Right?"
+    },
+    {
+      "startSeconds": 1187.84,
+      "endSeconds": 1193.52,
+      "text": "and console log of x will print print it"
+    },
+    {
+      "startSeconds": 1190.64,
+      "endSeconds": 1195.36,
+      "text": "and move to line number four. So, so now"
+    },
+    {
+      "startSeconds": 1193.52,
+      "endSeconds": 1197.679,
+      "text": "carefully watch and think. Okay. So,"
+    },
+    {
+      "startSeconds": 1195.36,
+      "endSeconds": 1200.24,
+      "text": "once this console log of X is printed"
+    },
+    {
+      "startSeconds": 1197.679,
+      "endSeconds": 1202.559,
+      "text": "and we are done with the function, what"
+    },
+    {
+      "startSeconds": 1200.24,
+      "endSeconds": 1204.799,
+      "text": "will happen is this B will be popped off"
+    },
+    {
+      "startSeconds": 1202.559,
+      "endSeconds": 1208.08,
+      "text": "the stack. I'll play and you quickly see"
+    },
+    {
+      "startSeconds": 1204.799,
+      "endSeconds": 1210.4,
+      "text": "that. Okay. See the B was moved out of"
+    },
+    {
+      "startSeconds": 1208.08,
+      "endSeconds": 1213.76,
+      "text": "call stack. Right? And in the console C"
+    },
+    {
+      "startSeconds": 1210.4,
+      "endSeconds": 1216.559,
+      "text": "100 is printed. Isn't it?"
+    },
+    {
+      "startSeconds": 1213.76,
+      "endSeconds": 1219.679,
+      "text": "So now we will move to line number four."
+    },
+    {
+      "startSeconds": 1216.559,
+      "endSeconds": 1221.6,
+      "text": "And once we execute this line, what will"
+    },
+    {
+      "startSeconds": 1219.679,
+      "endSeconds": 1223.919,
+      "text": "happen? Our whole program will be"
+    },
+    {
+      "startSeconds": 1221.6,
+      "endSeconds": 1226.24,
+      "text": "finished. And even the global execution"
+    },
+    {
+      "startSeconds": 1223.919,
+      "endSeconds": 1229.12,
+      "text": "context moves out of the call stack."
+    },
+    {
+      "startSeconds": 1226.24,
+      "endSeconds": 1231.12,
+      "text": "Okay. So let us just play this. Yep. See"
+    },
+    {
+      "startSeconds": 1229.12,
+      "endSeconds": 1233.6,
+      "text": "now the call stack is empty and we are"
+    },
+    {
+      "startSeconds": 1231.12,
+      "endSeconds": 1237.039,
+      "text": "done executing everything and console"
+    },
+    {
+      "startSeconds": 1233.6,
+      "endSeconds": 1239.28,
+      "text": "log one is printed. Right? This console"
+    },
+    {
+      "startSeconds": 1237.039,
+      "endSeconds": 1242.48,
+      "text": "log one is printed. So that's how this"
+    },
+    {
+      "startSeconds": 1239.28,
+      "endSeconds": 1245.2,
+      "text": "whole code is run and that is how this"
+    },
+    {
+      "startSeconds": 1242.48,
+      "endSeconds": 1248.72,
+      "text": "whole every execution context maintains"
+    },
+    {
+      "startSeconds": 1245.2,
+      "endSeconds": 1250.64,
+      "text": "its own separate space. Okay. So even if"
+    },
+    {
+      "startSeconds": 1248.72,
+      "endSeconds": 1252.48,
+      "text": "that execution context is created by a"
+    },
+    {
+      "startSeconds": 1250.64,
+      "endSeconds": 1254.88,
+      "text": "function or it is the global execution"
+    },
+    {
+      "startSeconds": 1252.48,
+      "endSeconds": 1256.72,
+      "text": "context or any other execution context"
+    },
+    {
+      "startSeconds": 1254.88,
+      "endSeconds": 1259.039,
+      "text": "they will have their own memory space."
+    },
+    {
+      "startSeconds": 1256.72,
+      "endSeconds": 1260.72,
+      "text": "They will have their own virtual kind of"
+    },
+    {
+      "startSeconds": 1259.039,
+      "endSeconds": 1263.36,
+      "text": "an environment where they are running"
+    },
+    {
+      "startSeconds": 1260.72,
+      "endSeconds": 1265.12,
+      "text": "separately independent of each other."
+    },
+    {
+      "startSeconds": 1263.36,
+      "endSeconds": 1267.2,
+      "text": "That is what the motive of this whole"
+    },
+    {
+      "startSeconds": 1265.12,
+      "endSeconds": 1269.44,
+      "text": "video was to explain you this small"
+    },
+    {
+      "startSeconds": 1267.2,
+      "endSeconds": 1271.76,
+      "text": "thing. Okay. So in the next video we'll"
+    },
+    {
+      "startSeconds": 1269.44,
+      "endSeconds": 1273.36,
+      "text": "see the shortest JavaScript program. Do"
+    },
+    {
+      "startSeconds": 1271.76,
+      "endSeconds": 1275.6,
+      "text": "you know what is the shortest JavaScript"
+    },
+    {
+      "startSeconds": 1273.36,
+      "endSeconds": 1277.44,
+      "text": "program? We'll see in the next video. So"
+    },
+    {
+      "startSeconds": 1275.6,
+      "endSeconds": 1279.44,
+      "text": "watch that video. But before moving on"
+    },
+    {
+      "startSeconds": 1277.44,
+      "endSeconds": 1281.039,
+      "text": "to that video, give this video a thumbs"
+    },
+    {
+      "startSeconds": 1279.44,
+      "endSeconds": 1283.159,
+      "text": "up and keep watching. Namaste"
+    },
+    {
+      "startSeconds": 1281.039,
+      "endSeconds": 1285.179,
+      "text": "JavaScript."
+    },
+    {
+      "startSeconds": 1283.159,
+      "endSeconds": 1285.179,
+      "text": "[music]"
+    },
+    {
+      "startSeconds": 1292.329,
+      "endSeconds": 1294.349,
+      "text": "[music]"
+    },
+    {
+      "startSeconds": 1297.569,
+      "endSeconds": 1299.589,
+      "text": "[music]"
+    }
+  ]
+}

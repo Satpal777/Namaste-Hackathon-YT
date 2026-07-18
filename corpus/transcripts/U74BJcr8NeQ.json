@@ -1,0 +1,4582 @@
+{
+  "videoId": "U74BJcr8NeQ",
+  "videoTitle": "Creating a Promise, Chaining & Error Handling | Ep 03 Season 02 Namaste JavaScript",
+  "languageCode": "en",
+  "segments": [
+    {
+      "startSeconds": 0.12,
+      "endSeconds": 4.04,
+      "text": "promise is my favorite topic of"
+    },
+    {
+      "startSeconds": 1.76,
+      "endSeconds": 6.44,
+      "text": "JavaScript and it has made our lives so"
+    },
+    {
+      "startSeconds": 4.04,
+      "endSeconds": 8.16,
+      "text": "much easy and I'm super excited to teach"
+    },
+    {
+      "startSeconds": 6.44,
+      "endSeconds": 10.559,
+      "text": "you and give you all the knowledge I"
+    },
+    {
+      "startSeconds": 8.16,
+      "endSeconds": 12.559,
+      "text": "have in the last episode we talked about"
+    },
+    {
+      "startSeconds": 10.559,
+      "endSeconds": 14.2,
+      "text": "that how we can consume a promise"
+    },
+    {
+      "startSeconds": 12.559,
+      "endSeconds": 16.119,
+      "text": "suppose if there is an async cooperation"
+    },
+    {
+      "startSeconds": 14.2,
+      "endSeconds": 18.56,
+      "text": "which returns a promise how do we handle"
+    },
+    {
+      "startSeconds": 16.119,
+      "endSeconds": 20.56,
+      "text": "that we talked about that and in this"
+    },
+    {
+      "startSeconds": 18.56,
+      "endSeconds": 23.039,
+      "text": "episode we will be talking about how we"
+    },
+    {
+      "startSeconds": 20.56,
+      "endSeconds": 25.279,
+      "text": "can create our own promise right are you"
+    },
+    {
+      "startSeconds": 23.039,
+      "endSeconds": 27.56,
+      "text": "excited to learn that we will see a lot"
+    },
+    {
+      "startSeconds": 25.279,
+      "endSeconds": 29.72,
+      "text": "of examples where we will create our own"
+    },
+    {
+      "startSeconds": 27.56,
+      "endSeconds": 32.16,
+      "text": "promise we will see how we can handle"
+    },
+    {
+      "startSeconds": 29.72,
+      "endSeconds": 34.64,
+      "text": "the errors inside promises we will see"
+    },
+    {
+      "startSeconds": 32.16,
+      "endSeconds": 38.12,
+      "text": "the live examples of Promise chaining I"
+    },
+    {
+      "startSeconds": 34.64,
+      "endSeconds": 40.32,
+      "text": "will go dive deep into each examples and"
+    },
+    {
+      "startSeconds": 38.12,
+      "endSeconds": 41.84,
+      "text": "you know I'm not just teaching you for"
+    },
+    {
+      "startSeconds": 40.32,
+      "endSeconds": 44.559,
+      "text": "interviews right it will help you in"
+    },
+    {
+      "startSeconds": 41.84,
+      "endSeconds": 46.68,
+      "text": "interviews but I am teaching you for you"
+    },
+    {
+      "startSeconds": 44.559,
+      "endSeconds": 48.64,
+      "text": "to become a better JavaScript developer"
+    },
+    {
+      "startSeconds": 46.68,
+      "endSeconds": 50.76,
+      "text": "you will get confidence when you will"
+    },
+    {
+      "startSeconds": 48.64,
+      "endSeconds": 53.079,
+      "text": "write your own promise and I bet you"
+    },
+    {
+      "startSeconds": 50.76,
+      "endSeconds": 54.84,
+      "text": "that after this video you would be able"
+    },
+    {
+      "startSeconds": 53.079,
+      "endSeconds": 56.68,
+      "text": "to create your own promise and you"
+    },
+    {
+      "startSeconds": 54.84,
+      "endSeconds": 58.519,
+      "text": "should be able to consume our own own"
+    },
+    {
+      "startSeconds": 56.68,
+      "endSeconds": 60.519,
+      "text": "promise as well so are you feeling"
+    },
+    {
+      "startSeconds": 58.519,
+      "endSeconds": 63.16,
+      "text": "excited now so let's just be this new"
+    },
+    {
+      "startSeconds": 60.519,
+      "endSeconds": 65.519,
+      "text": "episode of all new Namaste JavaScript"
+    },
+    {
+      "startSeconds": 63.16,
+      "endSeconds": 65.519,
+      "text": "season"
+    },
+    {
+      "startSeconds": 65.76,
+      "endSeconds": 70.84,
+      "text": "2 so I will again take my super favorite"
+    },
+    {
+      "startSeconds": 68.88,
+      "endSeconds": 72.92,
+      "text": "example of an e-commerce website suppose"
+    },
+    {
+      "startSeconds": 70.84,
+      "endSeconds": 75.04,
+      "text": "we are creating an e-commerce website"
+    },
+    {
+      "startSeconds": 72.92,
+      "endSeconds": 77.159,
+      "text": "and it has a cart I have already written"
+    },
+    {
+      "startSeconds": 75.04,
+      "endSeconds": 79.6,
+      "text": "this cart and it has three items inside"
+    },
+    {
+      "startSeconds": 77.159,
+      "endSeconds": 81.92,
+      "text": "the cart shoes pants CA I have just"
+    },
+    {
+      "startSeconds": 79.6,
+      "endSeconds": 84.64,
+      "text": "added these dummy items just for the"
+    },
+    {
+      "startSeconds": 81.92,
+      "endSeconds": 87.04,
+      "text": "sake of example okay and now what we do"
+    },
+    {
+      "startSeconds": 84.64,
+      "endSeconds": 89.479,
+      "text": "is now with this cart items we will have"
+    },
+    {
+      "startSeconds": 87.04,
+      "endSeconds": 91.68,
+      "text": "to create an order right so how does an"
+    },
+    {
+      "startSeconds": 89.479,
+      "endSeconds": 93.72,
+      "text": "e-commerce work work is first of all we"
+    },
+    {
+      "startSeconds": 91.68,
+      "endSeconds": 96.28,
+      "text": "will create an order with this cart"
+    },
+    {
+      "startSeconds": 93.72,
+      "endSeconds": 98.799,
+      "text": "right and suppose we have an async API"
+    },
+    {
+      "startSeconds": 96.28,
+      "endSeconds": 102.759,
+      "text": "right this is an async operation create"
+    },
+    {
+      "startSeconds": 98.799,
+      "endSeconds": 105.96,
+      "text": "order API which takes cart right and it"
+    },
+    {
+      "startSeconds": 102.759,
+      "endSeconds": 108.64,
+      "text": "returns us order ID right it gives us an"
+    },
+    {
+      "startSeconds": 105.96,
+      "endSeconds": 111.24,
+      "text": "order ID and then what we do is after"
+    },
+    {
+      "startSeconds": 108.64,
+      "endSeconds": 113.96,
+      "text": "that we proceed to payment right with"
+    },
+    {
+      "startSeconds": 111.24,
+      "endSeconds": 117.439,
+      "text": "this order ID we will just proceed to"
+    },
+    {
+      "startSeconds": 113.96,
+      "endSeconds": 120.439,
+      "text": "payment right so what will happen is we"
+    },
+    {
+      "startSeconds": 117.439,
+      "endSeconds": 123.6,
+      "text": "will just pass in order ID here"
+    },
+    {
+      "startSeconds": 120.439,
+      "endSeconds": 126.96,
+      "text": "so now listen to me very carefully what"
+    },
+    {
+      "startSeconds": 123.6,
+      "endSeconds": 129.039,
+      "text": "happens in case of promises is right"
+    },
+    {
+      "startSeconds": 126.96,
+      "endSeconds": 131.72,
+      "text": "this is an async operation this create"
+    },
+    {
+      "startSeconds": 129.039,
+      "endSeconds": 134.68,
+      "text": "order API is an async operation so this"
+    },
+    {
+      "startSeconds": 131.72,
+      "endSeconds": 138.04,
+      "text": "will return us a promise right as we saw"
+    },
+    {
+      "startSeconds": 134.68,
+      "endSeconds": 140.68,
+      "text": "in the last episode the example right so"
+    },
+    {
+      "startSeconds": 138.04,
+      "endSeconds": 144.72,
+      "text": "suppose if it returns us a promise"
+    },
+    {
+      "startSeconds": 140.68,
+      "endSeconds": 147.08,
+      "text": "here so now this create order returns us"
+    },
+    {
+      "startSeconds": 144.72,
+      "endSeconds": 148.84,
+      "text": "a promise and after that what we'll do"
+    },
+    {
+      "startSeconds": 147.08,
+      "endSeconds": 150.879,
+      "text": "is we will attach a call back function"
+    },
+    {
+      "startSeconds": 148.84,
+      "endSeconds": 153.72,
+      "text": "to This Promise object and that function"
+    },
+    {
+      "startSeconds": 150.879,
+      "endSeconds": 156.879,
+      "text": "will call the proceed to payment so how"
+    },
+    {
+      "startSeconds": 153.72,
+      "endSeconds": 158.44,
+      "text": "it used to work right promise. then and"
+    },
+    {
+      "startSeconds": 156.879,
+      "endSeconds": 160,
+      "text": "then we used to attach a call back"
+    },
+    {
+      "startSeconds": 158.44,
+      "endSeconds": 162.159,
+      "text": "function remember from the previous"
+    },
+    {
+      "startSeconds": 160,
+      "endSeconds": 164.04,
+      "text": "video so let's just quickly attach a"
+    },
+    {
+      "startSeconds": 162.159,
+      "endSeconds": 166.159,
+      "text": "call back function and this call back"
+    },
+    {
+      "startSeconds": 164.04,
+      "endSeconds": 169.48,
+      "text": "function will call our proceed to"
+    },
+    {
+      "startSeconds": 166.159,
+      "endSeconds": 172.8,
+      "text": "payment now we will see that how does"
+    },
+    {
+      "startSeconds": 169.48,
+      "endSeconds": 174.84,
+      "text": "this create order return a promise who"
+    },
+    {
+      "startSeconds": 172.8,
+      "endSeconds": 177.519,
+      "text": "is writing this we as developer will"
+    },
+    {
+      "startSeconds": 174.84,
+      "endSeconds": 179.84,
+      "text": "write this create order right so now we"
+    },
+    {
+      "startSeconds": 177.519,
+      "endSeconds": 182.879,
+      "text": "will see that how we can create our new"
+    },
+    {
+      "startSeconds": 179.84,
+      "endSeconds": 185.04,
+      "text": "promise and send it to the consumer so"
+    },
+    {
+      "startSeconds": 182.879,
+      "endSeconds": 187.519,
+      "text": "this is the consumer part now we will"
+    },
+    {
+      "startSeconds": 185.04,
+      "endSeconds": 189.64,
+      "text": "write the producer part of this code"
+    },
+    {
+      "startSeconds": 187.519,
+      "endSeconds": 192,
+      "text": "right so are you excited let's just"
+    },
+    {
+      "startSeconds": 189.64,
+      "endSeconds": 194.519,
+      "text": "begin so now we will try to write our"
+    },
+    {
+      "startSeconds": 192,
+      "endSeconds": 196.92,
+      "text": "own create order function this is the"
+    },
+    {
+      "startSeconds": 194.519,
+      "endSeconds": 198.68,
+      "text": "important part of this video just listen"
+    },
+    {
+      "startSeconds": 196.92,
+      "endSeconds": 200.879,
+      "text": "to me very carefully as I go through"
+    },
+    {
+      "startSeconds": 198.68,
+      "endSeconds": 202.879,
+      "text": "with the code so now we will create a"
+    },
+    {
+      "startSeconds": 200.879,
+      "endSeconds": 205.92,
+      "text": "create order function by ourselves let's"
+    },
+    {
+      "startSeconds": 202.879,
+      "endSeconds": 209.4,
+      "text": "create a function create order right and"
+    },
+    {
+      "startSeconds": 205.92,
+      "endSeconds": 211.56,
+      "text": "it takes cart inside it isn't it and"
+    },
+    {
+      "startSeconds": 209.4,
+      "endSeconds": 214.12,
+      "text": "what we already know by design of this"
+    },
+    {
+      "startSeconds": 211.56,
+      "endSeconds": 216.64,
+      "text": "API that this create order will return a"
+    },
+    {
+      "startSeconds": 214.12,
+      "endSeconds": 219.599,
+      "text": "promise right so we know that so let us"
+    },
+    {
+      "startSeconds": 216.64,
+      "endSeconds": 221.4,
+      "text": "just quickly return a promise right so"
+    },
+    {
+      "startSeconds": 219.599,
+      "endSeconds": 224.04,
+      "text": "what for that we will have to create a"
+    },
+    {
+      "startSeconds": 221.4,
+      "endSeconds": 225.799,
+      "text": "promise right so let's just create PR"
+    },
+    {
+      "startSeconds": 224.04,
+      "endSeconds": 228.72,
+      "text": "and here we will create a promise and we"
+    },
+    {
+      "startSeconds": 225.799,
+      "endSeconds": 230.84,
+      "text": "will just return a promise from it so"
+    },
+    {
+      "startSeconds": 228.72,
+      "endSeconds": 234.239,
+      "text": "now I will tell you that how do we"
+    },
+    {
+      "startSeconds": 230.84,
+      "endSeconds": 237.12,
+      "text": "create a promise right so to create a"
+    },
+    {
+      "startSeconds": 234.239,
+      "endSeconds": 239.879,
+      "text": "promise we will use a new keyword and a"
+    },
+    {
+      "startSeconds": 237.12,
+      "endSeconds": 242.48,
+      "text": "promise promise Constructor so this is a"
+    },
+    {
+      "startSeconds": 239.879,
+      "endSeconds": 244.76,
+      "text": "promise Constructor now how do we call"
+    },
+    {
+      "startSeconds": 242.48,
+      "endSeconds": 246.72,
+      "text": "this promise Constructor listen to me"
+    },
+    {
+      "startSeconds": 244.76,
+      "endSeconds": 248.92,
+      "text": "very carefully this is the important"
+    },
+    {
+      "startSeconds": 246.72,
+      "endSeconds": 251.239,
+      "text": "part of the video This is how we create"
+    },
+    {
+      "startSeconds": 248.92,
+      "endSeconds": 253.92,
+      "text": "a promise So This Promise Constructor"
+    },
+    {
+      "startSeconds": 251.239,
+      "endSeconds": 256,
+      "text": "will take a function right and this"
+    },
+    {
+      "startSeconds": 253.92,
+      "endSeconds": 260,
+      "text": "function will have two parameters which"
+    },
+    {
+      "startSeconds": 256,
+      "endSeconds": 263.16,
+      "text": "is resolve and reject resolve and reject"
+    },
+    {
+      "startSeconds": 260,
+      "endSeconds": 264.759,
+      "text": "so this is this is how we create a"
+    },
+    {
+      "startSeconds": 263.16,
+      "endSeconds": 267.72,
+      "text": "promise over"
+    },
+    {
+      "startSeconds": 264.759,
+      "endSeconds": 269.56,
+      "text": "here right so now you would say that"
+    },
+    {
+      "startSeconds": 267.72,
+      "endSeconds": 271.24,
+      "text": "what is this resolve what is this reject"
+    },
+    {
+      "startSeconds": 269.56,
+      "endSeconds": 274.039,
+      "text": "what what is new promise and all those"
+    },
+    {
+      "startSeconds": 271.24,
+      "endSeconds": 276.08,
+      "text": "things so this is a way to create a"
+    },
+    {
+      "startSeconds": 274.039,
+      "endSeconds": 278.639,
+      "text": "promise right this is a promise"
+    },
+    {
+      "startSeconds": 276.08,
+      "endSeconds": 281.24,
+      "text": "Constructor and this Constructor takes a"
+    },
+    {
+      "startSeconds": 278.639,
+      "endSeconds": 283.28,
+      "text": "function which has resolve and reject"
+    },
+    {
+      "startSeconds": 281.24,
+      "endSeconds": 286.12,
+      "text": "and these resolve and rejects are the"
+    },
+    {
+      "startSeconds": 283.28,
+      "endSeconds": 288.88,
+      "text": "functions which are given by JavaScript"
+    },
+    {
+      "startSeconds": 286.12,
+      "endSeconds": 291.039,
+      "text": "to build promises right it is not"
+    },
+    {
+      "startSeconds": 288.88,
+      "endSeconds": 293.919,
+      "text": "something which we pass in this is given"
+    },
+    {
+      "startSeconds": 291.039,
+      "endSeconds": 297.479,
+      "text": "by JavaScript by design of Promise API"
+    },
+    {
+      "startSeconds": 293.919,
+      "endSeconds": 300.24,
+      "text": "right so what will happen is if we if we"
+    },
+    {
+      "startSeconds": 297.479,
+      "endSeconds": 302.28,
+      "text": "invoke this Constructor with using a new"
+    },
+    {
+      "startSeconds": 300.24,
+      "endSeconds": 305.08,
+      "text": "keyword and pass in this function over"
+    },
+    {
+      "startSeconds": 302.28,
+      "endSeconds": 308.199,
+      "text": "here with resolve and reject now we can"
+    },
+    {
+      "startSeconds": 305.08,
+      "endSeconds": 311.36,
+      "text": "just return This Promise right this is a"
+    },
+    {
+      "startSeconds": 308.199,
+      "endSeconds": 314.479,
+      "text": "perfectly valid promise as of now what"
+    },
+    {
+      "startSeconds": 311.36,
+      "endSeconds": 317.32,
+      "text": "we will do inside a promise is write our"
+    },
+    {
+      "startSeconds": 314.479,
+      "endSeconds": 320.199,
+      "text": "logic of handling whatever we need to do"
+    },
+    {
+      "startSeconds": 317.32,
+      "endSeconds": 322.56,
+      "text": "inside this create order function okay"
+    },
+    {
+      "startSeconds": 320.199,
+      "endSeconds": 324.44,
+      "text": "so let me show it to you by code so now"
+    },
+    {
+      "startSeconds": 322.56,
+      "endSeconds": 326.12,
+      "text": "tell me what does create order will do"
+    },
+    {
+      "startSeconds": 324.44,
+      "endSeconds": 328.639,
+      "text": "create order basically will take the"
+    },
+    {
+      "startSeconds": 326.12,
+      "endSeconds": 330.84,
+      "text": "cart items and what it will do it will"
+    },
+    {
+      "startSeconds": 328.639,
+      "endSeconds": 333.639,
+      "text": "just create an order right here we will"
+    },
+    {
+      "startSeconds": 330.84,
+      "endSeconds": 336.08,
+      "text": "write logic to create an order because"
+    },
+    {
+      "startSeconds": 333.639,
+      "endSeconds": 338.199,
+      "text": "we don't have any database or something"
+    },
+    {
+      "startSeconds": 336.08,
+      "endSeconds": 341.12,
+      "text": "so this is the place you will write"
+    },
+    {
+      "startSeconds": 338.199,
+      "endSeconds": 343.28,
+      "text": "calls to database or you will write uh"
+    },
+    {
+      "startSeconds": 341.12,
+      "endSeconds": 345.68,
+      "text": "validate cart right let's let's just"
+    },
+    {
+      "startSeconds": 343.28,
+      "endSeconds": 347.479,
+      "text": "validate cart first of all right we will"
+    },
+    {
+      "startSeconds": 345.68,
+      "endSeconds": 349.4,
+      "text": "be validating cart how does that code"
+    },
+    {
+      "startSeconds": 347.479,
+      "endSeconds": 351.08,
+      "text": "works right I'm not going into the"
+    },
+    {
+      "startSeconds": 349.4,
+      "endSeconds": 353.52,
+      "text": "actual logic of how do you create an"
+    },
+    {
+      "startSeconds": 351.08,
+      "endSeconds": 354.96,
+      "text": "order I'm just taking an example so what"
+    },
+    {
+      "startSeconds": 353.52,
+      "endSeconds": 357.16,
+      "text": "you generally will do is we will"
+    },
+    {
+      "startSeconds": 354.96,
+      "endSeconds": 359.4,
+      "text": "validate the cart then you will just"
+    },
+    {
+      "startSeconds": 357.16,
+      "endSeconds": 361.6,
+      "text": "make a API call to create an order and"
+    },
+    {
+      "startSeconds": 359.4,
+      "endSeconds": 364.72,
+      "text": "then you will get an order ID that you"
+    },
+    {
+      "startSeconds": 361.6,
+      "endSeconds": 366.919,
+      "text": "will return as a success right so our"
+    },
+    {
+      "startSeconds": 364.72,
+      "endSeconds": 369.28,
+      "text": "promise should return a success or a"
+    },
+    {
+      "startSeconds": 366.919,
+      "endSeconds": 371.84,
+      "text": "failure isn't it so the success would be"
+    },
+    {
+      "startSeconds": 369.28,
+      "endSeconds": 374.52,
+      "text": "to returning an order ID and the failure"
+    },
+    {
+      "startSeconds": 371.84,
+      "endSeconds": 377.72,
+      "text": "would be to throw an error whatever uh"
+    },
+    {
+      "startSeconds": 374.52,
+      "endSeconds": 381.36,
+      "text": "error it gets right so let us just take"
+    },
+    {
+      "startSeconds": 377.72,
+      "endSeconds": 383.36,
+      "text": "a dummy example over here so suppose if"
+    },
+    {
+      "startSeconds": 381.36,
+      "endSeconds": 385.639,
+      "text": "we are trying to validate our card"
+    },
+    {
+      "startSeconds": 383.36,
+      "endSeconds": 388.639,
+      "text": "suppose if we have a function let's call"
+    },
+    {
+      "startSeconds": 385.639,
+      "endSeconds": 390.16,
+      "text": "it as validate cart right and we pass in"
+    },
+    {
+      "startSeconds": 388.639,
+      "endSeconds": 392.479,
+      "text": "cart items to it"
+    },
+    {
+      "startSeconds": 390.16,
+      "endSeconds": 395.759,
+      "text": "if this function fails then what we will"
+    },
+    {
+      "startSeconds": 392.479,
+      "endSeconds": 398.28,
+      "text": "do we will reject this promise right so"
+    },
+    {
+      "startSeconds": 395.759,
+      "endSeconds": 400.28,
+      "text": "now understand this point very clearly I"
+    },
+    {
+      "startSeconds": 398.28,
+      "endSeconds": 402.08,
+      "text": "am telling you once again that we are"
+    },
+    {
+      "startSeconds": 400.28,
+      "endSeconds": 404.52,
+      "text": "creating a promise now and we I'm"
+    },
+    {
+      "startSeconds": 402.08,
+      "endSeconds": 406.72,
+      "text": "sending it right so basically we are"
+    },
+    {
+      "startSeconds": 404.52,
+      "endSeconds": 409.68,
+      "text": "writing the producer part of it over"
+    },
+    {
+      "startSeconds": 406.72,
+      "endSeconds": 411.52,
+      "text": "here this create order function will"
+    },
+    {
+      "startSeconds": 409.68,
+      "endSeconds": 414,
+      "text": "return us a promise over here this"
+    },
+    {
+      "startSeconds": 411.52,
+      "endSeconds": 416.08,
+      "text": "promise object right this this is how we"
+    },
+    {
+      "startSeconds": 414,
+      "endSeconds": 418.639,
+      "text": "will return a promise now what will"
+    },
+    {
+      "startSeconds": 416.08,
+      "endSeconds": 420.919,
+      "text": "happen is we can reject that promise or"
+    },
+    {
+      "startSeconds": 418.639,
+      "endSeconds": 422.84,
+      "text": "we can resolve it and there is a logic"
+    },
+    {
+      "startSeconds": 420.919,
+      "endSeconds": 425.039,
+      "text": "behind it right so this is what we will"
+    },
+    {
+      "startSeconds": 422.84,
+      "endSeconds": 426.16,
+      "text": "do from this side now this is the"
+    },
+    {
+      "startSeconds": 425.039,
+      "endSeconds": 428.72,
+      "text": "producer"
+    },
+    {
+      "startSeconds": 426.16,
+      "endSeconds": 430.72,
+      "text": "end just to make things clear right"
+    },
+    {
+      "startSeconds": 428.72,
+      "endSeconds": 433.56,
+      "text": "otherwise it would be confusing for you"
+    },
+    {
+      "startSeconds": 430.72,
+      "endSeconds": 436.56,
+      "text": "so if the cart is not validated if"
+    },
+    {
+      "startSeconds": 433.56,
+      "endSeconds": 440,
+      "text": "suppose not validate cart so what we"
+    },
+    {
+      "startSeconds": 436.56,
+      "endSeconds": 442.24,
+      "text": "will do is we will just throw an error"
+    },
+    {
+      "startSeconds": 440,
+      "endSeconds": 444.919,
+      "text": "right we will reject the promise and how"
+    },
+    {
+      "startSeconds": 442.24,
+      "endSeconds": 446.919,
+      "text": "do you reject the promise this is where"
+    },
+    {
+      "startSeconds": 444.919,
+      "endSeconds": 450.08,
+      "text": "this resolve and reject come into"
+    },
+    {
+      "startSeconds": 446.919,
+      "endSeconds": 453.479,
+      "text": "picture this resolve and reject are the"
+    },
+    {
+      "startSeconds": 450.08,
+      "endSeconds": 456.039,
+      "text": "functions which are passed by JavaScript"
+    },
+    {
+      "startSeconds": 453.479,
+      "endSeconds": 458.12,
+      "text": "to us this is the super powerful thing"
+    },
+    {
+      "startSeconds": 456.039,
+      "endSeconds": 460.52,
+      "text": "which JavaScript gives us right we don't"
+    },
+    {
+      "startSeconds": 458.12,
+      "endSeconds": 463.039,
+      "text": "have to pass anything inside it so what"
+    },
+    {
+      "startSeconds": 460.52,
+      "endSeconds": 466,
+      "text": "will happen is this we will just call"
+    },
+    {
+      "startSeconds": 463.039,
+      "endSeconds": 469.68,
+      "text": "this reject right the reject function"
+    },
+    {
+      "startSeconds": 466,
+      "endSeconds": 472.159,
+      "text": "with some error if we reject it so our"
+    },
+    {
+      "startSeconds": 469.68,
+      "endSeconds": 474.68,
+      "text": "promise over here will be rejected"
+    },
+    {
+      "startSeconds": 472.159,
+      "endSeconds": 477.919,
+      "text": "whosoever is consuming our API whosoever"
+    },
+    {
+      "startSeconds": 474.68,
+      "endSeconds": 479.919,
+      "text": "is calling this create order the if the"
+    },
+    {
+      "startSeconds": 477.919,
+      "endSeconds": 482.12,
+      "text": "cart is not valid they are sending us"
+    },
+    {
+      "startSeconds": 479.919,
+      "endSeconds": 484.159,
+      "text": "the card if this is not valid we will"
+    },
+    {
+      "startSeconds": 482.12,
+      "endSeconds": 486.919,
+      "text": "just reject it right we are on the"
+    },
+    {
+      "startSeconds": 484.159,
+      "endSeconds": 488.72,
+      "text": "producer end now so if this is not valid"
+    },
+    {
+      "startSeconds": 486.919,
+      "endSeconds": 491.639,
+      "text": "we will just rejected and we will throw"
+    },
+    {
+      "startSeconds": 488.72,
+      "endSeconds": 495,
+      "text": "a new error so let's create a error how"
+    },
+    {
+      "startSeconds": 491.639,
+      "endSeconds": 498.96,
+      "text": "do you create an error inside JavaScript"
+    },
+    {
+      "startSeconds": 495,
+      "endSeconds": 501.919,
+      "text": "yes new error and what let's call and"
+    },
+    {
+      "startSeconds": 498.96,
+      "endSeconds": 505.36,
+      "text": "let's pass a message what error uh cart"
+    },
+    {
+      "startSeconds": 501.919,
+      "endSeconds": 508.199,
+      "text": "is not valid cart is not valid okay and"
+    },
+    {
+      "startSeconds": 505.36,
+      "endSeconds": 510.599,
+      "text": "then we will reject this with this error"
+    },
+    {
+      "startSeconds": 508.199,
+      "endSeconds": 513.839,
+      "text": "okay this is how simple it is if the"
+    },
+    {
+      "startSeconds": 510.599,
+      "endSeconds": 515.68,
+      "text": "cart is not valid just rejected and if"
+    },
+    {
+      "startSeconds": 513.839,
+      "endSeconds": 518.8,
+      "text": "everything is successful right now we"
+    },
+    {
+      "startSeconds": 515.68,
+      "endSeconds": 521.2,
+      "text": "will write logic to create error Logic"
+    },
+    {
+      "startSeconds": 518.8,
+      "endSeconds": 522.599,
+      "text": "for creating order sorry Logic for"
+    },
+    {
+      "startSeconds": 521.2,
+      "endSeconds": 525.76,
+      "text": "create"
+    },
+    {
+      "startSeconds": 522.599,
+      "endSeconds": 527.48,
+      "text": "order uh okay so now if the logic of"
+    },
+    {
+      "startSeconds": 525.76,
+      "endSeconds": 530.399,
+      "text": "create order is successful then we will"
+    },
+    {
+      "startSeconds": 527.48,
+      "endSeconds": 533.279,
+      "text": "get some order ID let's assume that we"
+    },
+    {
+      "startSeconds": 530.399,
+      "endSeconds": 537.72,
+      "text": "get an order ID after making a DB DB"
+    },
+    {
+      "startSeconds": 533.279,
+      "endSeconds": 539.279,
+      "text": "call suppose DB call do uh get order ID"
+    },
+    {
+      "startSeconds": 537.72,
+      "endSeconds": 542.079,
+      "text": "or something whatever whatever we want"
+    },
+    {
+      "startSeconds": 539.279,
+      "endSeconds": 544.56,
+      "text": "to to do we just call that DB call and"
+    },
+    {
+      "startSeconds": 542.079,
+      "endSeconds": 546.88,
+      "text": "we get the order ID or howsoever I'm"
+    },
+    {
+      "startSeconds": 544.56,
+      "endSeconds": 548.56,
+      "text": "just assuming that we get the order ID"
+    },
+    {
+      "startSeconds": 546.88,
+      "endSeconds": 552.48,
+      "text": "let's just take a dummy order ID over"
+    },
+    {
+      "startSeconds": 548.56,
+      "endSeconds": 555.2,
+      "text": "here 1 2 3 4 5 and now if the order ID"
+    },
+    {
+      "startSeconds": 552.48,
+      "endSeconds": 559.56,
+      "text": "is valid right if our if we have this"
+    },
+    {
+      "startSeconds": 555.2,
+      "endSeconds": 562.04,
+      "text": "order ID okay then what we will do is we"
+    },
+    {
+      "startSeconds": 559.56,
+      "endSeconds": 565.04,
+      "text": "will just resolve our promise we will"
+    },
+    {
+      "startSeconds": 562.04,
+      "endSeconds": 567.839,
+      "text": "just make it a success right so promise"
+    },
+    {
+      "startSeconds": 565.04,
+      "endSeconds": 570.079,
+      "text": "can only have two things right this is"
+    },
+    {
+      "startSeconds": 567.839,
+      "endSeconds": 572.399,
+      "text": "the guarantee with JavaScript provid"
+    },
+    {
+      "startSeconds": 570.079,
+      "endSeconds": 574.839,
+      "text": "this is what we are talking about right"
+    },
+    {
+      "startSeconds": 572.399,
+      "endSeconds": 578.079,
+      "text": "that promise can either be fulfilled or"
+    },
+    {
+      "startSeconds": 574.839,
+      "endSeconds": 580.16,
+      "text": "resolved or it can be rejected right so"
+    },
+    {
+      "startSeconds": 578.079,
+      "endSeconds": 582.44,
+      "text": "we know that this is how we reject a"
+    },
+    {
+      "startSeconds": 580.16,
+      "endSeconds": 585.399,
+      "text": "promise and how do we resolve a promise"
+    },
+    {
+      "startSeconds": 582.44,
+      "endSeconds": 588.04,
+      "text": "we will just we will just resolve a"
+    },
+    {
+      "startSeconds": 585.399,
+      "endSeconds": 592.079,
+      "text": "promise by calling resolve and we will"
+    },
+    {
+      "startSeconds": 588.04,
+      "endSeconds": 595.64,
+      "text": "just pass in order ID over here so now"
+    },
+    {
+      "startSeconds": 592.079,
+      "endSeconds": 599.399,
+      "text": "this is how we create the whole promise"
+    },
+    {
+      "startSeconds": 595.64,
+      "endSeconds": 602.839,
+      "text": "that's what it is okay it was that easy"
+    },
+    {
+      "startSeconds": 599.399,
+      "endSeconds": 605.68,
+      "text": "it was that simple and this is the main"
+    },
+    {
+      "startSeconds": 602.839,
+      "endSeconds": 607.64,
+      "text": "core part of promises first is the"
+    },
+    {
+      "startSeconds": 605.68,
+      "endSeconds": 611.399,
+      "text": "consuming part the second is the"
+    },
+    {
+      "startSeconds": 607.64,
+      "endSeconds": 613.959,
+      "text": "creation part so U I know it could be a"
+    },
+    {
+      "startSeconds": 611.399,
+      "endSeconds": 616.04,
+      "text": "little confusing so if it is confusing"
+    },
+    {
+      "startSeconds": 613.959,
+      "endSeconds": 618.24,
+      "text": "let me just recap quickly once again so"
+    },
+    {
+      "startSeconds": 616.04,
+      "endSeconds": 621.079,
+      "text": "that you will never forget it so over"
+    },
+    {
+      "startSeconds": 618.24,
+      "endSeconds": 623.56,
+      "text": "here again so we are now creating this"
+    },
+    {
+      "startSeconds": 621.079,
+      "endSeconds": 625.6,
+      "text": "create order API what will happen is"
+    },
+    {
+      "startSeconds": 623.56,
+      "endSeconds": 627.2,
+      "text": "once you call this create order API it"
+    },
+    {
+      "startSeconds": 625.6,
+      "endSeconds": 629.2,
+      "text": "will just create a new promise and"
+    },
+    {
+      "startSeconds": 627.2,
+      "endSeconds": 631.48,
+      "text": "return This Promise this part you"
+    },
+    {
+      "startSeconds": 629.2,
+      "endSeconds": 634.56,
+      "text": "understand understood now we as a"
+    },
+    {
+      "startSeconds": 631.48,
+      "endSeconds": 637.48,
+      "text": "creator of this API have two things to"
+    },
+    {
+      "startSeconds": 634.56,
+      "endSeconds": 640.88,
+      "text": "do we get cart right we get these cart"
+    },
+    {
+      "startSeconds": 637.48,
+      "endSeconds": 643.48,
+      "text": "items now we can valid we can either"
+    },
+    {
+      "startSeconds": 640.88,
+      "endSeconds": 645.76,
+      "text": "reject the promise or we can just accept"
+    },
+    {
+      "startSeconds": 643.48,
+      "endSeconds": 648.24,
+      "text": "or approve or resolve the promise right"
+    },
+    {
+      "startSeconds": 645.76,
+      "endSeconds": 650.6,
+      "text": "so we will do our own checks if the cart"
+    },
+    {
+      "startSeconds": 648.24,
+      "endSeconds": 653.279,
+      "text": "is validated then we will move ahead and"
+    },
+    {
+      "startSeconds": 650.6,
+      "endSeconds": 655.2,
+      "text": "create the order and we will resolve the"
+    },
+    {
+      "startSeconds": 653.279,
+      "endSeconds": 657,
+      "text": "promise with the order ID that okay"
+    },
+    {
+      "startSeconds": 655.2,
+      "endSeconds": 658.639,
+      "text": "everything whatever the cart items you"
+    },
+    {
+      "startSeconds": 657,
+      "endSeconds": 661.399,
+      "text": "passed everything is successful we'll"
+    },
+    {
+      "startSeconds": 658.639,
+      "endSeconds": 663.24,
+      "text": "just we will just approve it right it's"
+    },
+    {
+      "startSeconds": 661.399,
+      "endSeconds": 665.76,
+      "text": "like giving a stamp to a promise that"
+    },
+    {
+      "startSeconds": 663.24,
+      "endSeconds": 668.44,
+      "text": "okay done and we can do other thing is"
+    },
+    {
+      "startSeconds": 665.76,
+      "endSeconds": 671.36,
+      "text": "to reject things right so we can just"
+    },
+    {
+      "startSeconds": 668.44,
+      "endSeconds": 674.399,
+      "text": "reject if anything is uh not correct in"
+    },
+    {
+      "startSeconds": 671.36,
+      "endSeconds": 676.839,
+      "text": "that order got it so we created this"
+    },
+    {
+      "startSeconds": 674.399,
+      "endSeconds": 679.48,
+      "text": "promise now we are consuming it over"
+    },
+    {
+      "startSeconds": 676.839,
+      "endSeconds": 684.8,
+      "text": "here so let us just run this code and"
+    },
+    {
+      "startSeconds": 679.48,
+      "endSeconds": 686.88,
+      "text": "see what happens um it we get an error"
+    },
+    {
+      "startSeconds": 684.8,
+      "endSeconds": 688.44,
+      "text": "validate cart is not oh we have not"
+    },
+    {
+      "startSeconds": 686.88,
+      "endSeconds": 691.2,
+      "text": "defined validate card so let's just"
+    },
+    {
+      "startSeconds": 688.44,
+      "endSeconds": 696.24,
+      "text": "quickly Define validate cart for now"
+    },
+    {
+      "startSeconds": 691.2,
+      "endSeconds": 700.56,
+      "text": "validate cart and it takes"
+    },
+    {
+      "startSeconds": 696.24,
+      "endSeconds": 702.639,
+      "text": "cart uh and let's just let's not go into"
+    },
+    {
+      "startSeconds": 700.56,
+      "endSeconds": 705.399,
+      "text": "the details of checking if the cart is"
+    },
+    {
+      "startSeconds": 702.639,
+      "endSeconds": 706.839,
+      "text": "empty or if cart has like there are"
+    },
+    {
+      "startSeconds": 705.399,
+      "endSeconds": 708.6,
+      "text": "things how you can validate the cart"
+    },
+    {
+      "startSeconds": 706.839,
+      "endSeconds": 710.519,
+      "text": "right I assume that you can write that"
+    },
+    {
+      "startSeconds": 708.6,
+      "endSeconds": 712.839,
+      "text": "logic for the sake of Simplicity I'm"
+    },
+    {
+      "startSeconds": 710.519,
+      "endSeconds": 714.6,
+      "text": "just returning true from here okay but"
+    },
+    {
+      "startSeconds": 712.839,
+      "endSeconds": 716.32,
+      "text": "we can do all sort of validation over"
+    },
+    {
+      "startSeconds": 714.6,
+      "endSeconds": 719.519,
+      "text": "the cart whether the cart is empty or"
+    },
+    {
+      "startSeconds": 716.32,
+      "endSeconds": 721.68,
+      "text": "whether the cart has like the items are"
+    },
+    {
+      "startSeconds": 719.519,
+      "endSeconds": 723.6,
+      "text": "proper or not or something like we can"
+    },
+    {
+      "startSeconds": 721.68,
+      "endSeconds": 725.279,
+      "text": "validate the cart over here for the sake"
+    },
+    {
+      "startSeconds": 723.6,
+      "endSeconds": 727.36,
+      "text": "of Simplicity I'm just returning true"
+    },
+    {
+      "startSeconds": 725.279,
+      "endSeconds": 729.56,
+      "text": "from here and let's run the program once"
+    },
+    {
+      "startSeconds": 727.36,
+      "endSeconds": 731.279,
+      "text": "again now it says proceed to payment is"
+    },
+    {
+      "startSeconds": 729.56,
+      "endSeconds": 733.8,
+      "text": "not defined so it reaches reach this"
+    },
+    {
+      "startSeconds": 731.279,
+      "endSeconds": 736.399,
+      "text": "line okay yep definitely we have not"
+    },
+    {
+      "startSeconds": 733.8,
+      "endSeconds": 739.079,
+      "text": "gone to this line yet so let me just"
+    },
+    {
+      "startSeconds": 736.399,
+      "endSeconds": 741.56,
+      "text": "remove the proceed to payment for now"
+    },
+    {
+      "startSeconds": 739.079,
+      "endSeconds": 745.92,
+      "text": "and just do order ID we'll just print"
+    },
+    {
+      "startSeconds": 741.56,
+      "endSeconds": 750.16,
+      "text": "order ID Okay order ID and then order ID"
+    },
+    {
+      "startSeconds": 745.92,
+      "endSeconds": 753,
+      "text": "here right yes so see now we got this"
+    },
+    {
+      "startSeconds": 750.16,
+      "endSeconds": 755.24,
+      "text": "order ID so now what happened in this"
+    },
+    {
+      "startSeconds": 753,
+      "endSeconds": 758.04,
+      "text": "code was this create order function"
+    },
+    {
+      "startSeconds": 755.24,
+      "endSeconds": 760,
+      "text": "created a promise object right and this"
+    },
+    {
+      "startSeconds": 758.04,
+      "endSeconds": 762.16,
+      "text": "promise object was attached with this"
+    },
+    {
+      "startSeconds": 760,
+      "endSeconds": 765.639,
+      "text": "function right so what happened is it"
+    },
+    {
+      "startSeconds": 762.16,
+      "endSeconds": 767.959,
+      "text": "just returned a promise and we and then"
+    },
+    {
+      "startSeconds": 765.639,
+      "endSeconds": 770.6,
+      "text": "JavaScript just called this function"
+    },
+    {
+      "startSeconds": 767.959,
+      "endSeconds": 772.76,
+      "text": "create order and returned a promise and"
+    },
+    {
+      "startSeconds": 770.6,
+      "endSeconds": 774.72,
+      "text": "because the cart items were validated"
+    },
+    {
+      "startSeconds": 772.76,
+      "endSeconds": 776.6,
+      "text": "and everything was success so it just"
+    },
+    {
+      "startSeconds": 774.72,
+      "endSeconds": 778.88,
+      "text": "resolved this promise and once you"
+    },
+    {
+      "startSeconds": 776.6,
+      "endSeconds": 780.36,
+      "text": "resolve anything this data over here"
+    },
+    {
+      "startSeconds": 778.88,
+      "endSeconds": 783.6,
+      "text": "what ever you pass in over here this"
+    },
+    {
+      "startSeconds": 780.36,
+      "endSeconds": 785.48,
+      "text": "order ID it just gets over here in the"
+    },
+    {
+      "startSeconds": 783.6,
+      "endSeconds": 788.079,
+      "text": "call back functions whatever we have"
+    },
+    {
+      "startSeconds": 785.48,
+      "endSeconds": 790.68,
+      "text": "attached to our promise okay and then we"
+    },
+    {
+      "startSeconds": 788.079,
+      "endSeconds": 793.959,
+      "text": "just loged this order ID so this log was"
+    },
+    {
+      "startSeconds": 790.68,
+      "endSeconds": 796.6,
+      "text": "printed over here right so it just came"
+    },
+    {
+      "startSeconds": 793.959,
+      "endSeconds": 798.92,
+      "text": "quickly but what we will do is let me"
+    },
+    {
+      "startSeconds": 796.6,
+      "endSeconds": 801.12,
+      "text": "show you properly that how actually it"
+    },
+    {
+      "startSeconds": 798.92,
+      "endSeconds": 803.72,
+      "text": "looks like when it is an API call"
+    },
+    {
+      "startSeconds": 801.12,
+      "endSeconds": 805.48,
+      "text": "suppose if we were creating a a async"
+    },
+    {
+      "startSeconds": 803.72,
+      "endSeconds": 807.32,
+      "text": "operation which takes 5 seconds or"
+    },
+    {
+      "startSeconds": 805.48,
+      "endSeconds": 810.56,
+      "text": "something let me show you to you that"
+    },
+    {
+      "startSeconds": 807.32,
+      "endSeconds": 813.72,
+      "text": "also okay so if if we have let's just"
+    },
+    {
+      "startSeconds": 810.56,
+      "endSeconds": 816.48,
+      "text": "make a fake delay uh let's just have a"
+    },
+    {
+      "startSeconds": 813.72,
+      "endSeconds": 819.12,
+      "text": "uh set time out with uh 5,000"
+    },
+    {
+      "startSeconds": 816.48,
+      "endSeconds": 820.88,
+      "text": "milliseconds right and we will resolve"
+    },
+    {
+      "startSeconds": 819.12,
+      "endSeconds": 824.8,
+      "text": "so basically what I'm trying to do now"
+    },
+    {
+      "startSeconds": 820.88,
+      "endSeconds": 827.8,
+      "text": "is I will resolve the promise after 5"
+    },
+    {
+      "startSeconds": 824.8,
+      "endSeconds": 829.92,
+      "text": "Seconds okay we will take 5 seconds and"
+    },
+    {
+      "startSeconds": 827.8,
+      "endSeconds": 833.199,
+      "text": "then we will say"
+    },
+    {
+      "startSeconds": 829.92,
+      "endSeconds": 837.839,
+      "text": "that your promise is"
+    },
+    {
+      "startSeconds": 833.199,
+      "endSeconds": 840.92,
+      "text": "resolved okay so now see now it did not"
+    },
+    {
+      "startSeconds": 837.839,
+      "endSeconds": 843.199,
+      "text": "log order ID quickly but it took 5"
+    },
+    {
+      "startSeconds": 840.92,
+      "endSeconds": 846.48,
+      "text": "seconds for it to resolve right let me"
+    },
+    {
+      "startSeconds": 843.199,
+      "endSeconds": 849.56,
+      "text": "show it to you once again I saved it 1 2"
+    },
+    {
+      "startSeconds": 846.48,
+      "endSeconds": 853.519,
+      "text": "3 4 and five it should be printed now"
+    },
+    {
+      "startSeconds": 849.56,
+      "endSeconds": 856.959,
+      "text": "yes see after 5 Seconds it got printed"
+    },
+    {
+      "startSeconds": 853.519,
+      "endSeconds": 859.519,
+      "text": "isn't it beautiful now let me just show"
+    },
+    {
+      "startSeconds": 856.959,
+      "endSeconds": 861.839,
+      "text": "it to you what happened okay if I do a"
+    },
+    {
+      "startSeconds": 859.519,
+      "endSeconds": 864,
+      "text": "console log over here and if I log the"
+    },
+    {
+      "startSeconds": 861.839,
+      "endSeconds": 868.36,
+      "text": "promise so what would you see over here"
+    },
+    {
+      "startSeconds": 864,
+      "endSeconds": 871.279,
+      "text": "see the Promise is pending right so what"
+    },
+    {
+      "startSeconds": 868.36,
+      "endSeconds": 872.88,
+      "text": "happened is is why did you see the"
+    },
+    {
+      "startSeconds": 871.279,
+      "endSeconds": 876.24,
+      "text": "Promise pending"
+    },
+    {
+      "startSeconds": 872.88,
+      "endSeconds": 878.56,
+      "text": "here you know right yes so when"
+    },
+    {
+      "startSeconds": 876.24,
+      "endSeconds": 881.279,
+      "text": "JavaScript tried to execute this code so"
+    },
+    {
+      "startSeconds": 878.56,
+      "endSeconds": 883.8,
+      "text": "the create order API will take 5 Seconds"
+    },
+    {
+      "startSeconds": 881.279,
+      "endSeconds": 887.519,
+      "text": "to complete isn't it 5 Seconds to"
+    },
+    {
+      "startSeconds": 883.8,
+      "endSeconds": 889.88,
+      "text": "resolve by that time our promise object"
+    },
+    {
+      "startSeconds": 887.519,
+      "endSeconds": 891.839,
+      "text": "will be in pending state so that's why"
+    },
+    {
+      "startSeconds": 889.88,
+      "endSeconds": 894.56,
+      "text": "it just printing pending and then it"
+    },
+    {
+      "startSeconds": 891.839,
+      "endSeconds": 896.88,
+      "text": "attached this call back function and"
+    },
+    {
+      "startSeconds": 894.56,
+      "endSeconds": 899.12,
+      "text": "after 5 Seconds we get data into this"
+    },
+    {
+      "startSeconds": 896.88,
+      "endSeconds": 901.6,
+      "text": "promise object it got filled with the"
+    },
+    {
+      "startSeconds": 899.12,
+      "endSeconds": 903.6,
+      "text": "data and then as soon as the data was"
+    },
+    {
+      "startSeconds": 901.6,
+      "endSeconds": 905.92,
+      "text": "there this call back function was called"
+    },
+    {
+      "startSeconds": 903.6,
+      "endSeconds": 908.04,
+      "text": "with that order ID and this got printed"
+    },
+    {
+      "startSeconds": 905.92,
+      "endSeconds": 910.6,
+      "text": "so that's why if I run it once again if"
+    },
+    {
+      "startSeconds": 908.04,
+      "endSeconds": 913.279,
+      "text": "I just clear this and refresh the page"
+    },
+    {
+      "startSeconds": 910.6,
+      "endSeconds": 915.839,
+      "text": "once again see it says pending and then"
+    },
+    {
+      "startSeconds": 913.279,
+      "endSeconds": 919.88,
+      "text": "after 5 Seconds we will get the order"
+    },
+    {
+      "startSeconds": 915.839,
+      "endSeconds": 923.32,
+      "text": "ID Yep this is how we create a new"
+    },
+    {
+      "startSeconds": 919.88,
+      "endSeconds": 926,
+      "text": "promise and this is how we consume"
+    },
+    {
+      "startSeconds": 923.32,
+      "endSeconds": 928.24,
+      "text": "it now let me show you that what happens"
+    },
+    {
+      "startSeconds": 926,
+      "endSeconds": 930.36,
+      "text": "if we reject a promise right let us also"
+    },
+    {
+      "startSeconds": 928.24,
+      "endSeconds": 933.24,
+      "text": "see that case you would be amazed by"
+    },
+    {
+      "startSeconds": 930.36,
+      "endSeconds": 935.88,
+      "text": "this right if we will now try to reject"
+    },
+    {
+      "startSeconds": 933.24,
+      "endSeconds": 937.8,
+      "text": "our promise how do we reject our promise"
+    },
+    {
+      "startSeconds": 935.88,
+      "endSeconds": 940.24,
+      "text": "how do we reject our promise I'll just"
+    },
+    {
+      "startSeconds": 937.8,
+      "endSeconds": 942.639,
+      "text": "mark this validate cart as false right"
+    },
+    {
+      "startSeconds": 940.24,
+      "endSeconds": 944.68,
+      "text": "over here if I mark this as false and"
+    },
+    {
+      "startSeconds": 942.639,
+      "endSeconds": 948.759,
+      "text": "now I will save just see what happens in"
+    },
+    {
+      "startSeconds": 944.68,
+      "endSeconds": 951.16,
+      "text": "the console now see we got an error"
+    },
+    {
+      "startSeconds": 948.759,
+      "endSeconds": 953.68,
+      "text": "right and this is a red color error in"
+    },
+    {
+      "startSeconds": 951.16,
+      "endSeconds": 956.519,
+      "text": "the browser so this red color error over"
+    },
+    {
+      "startSeconds": 953.68,
+      "endSeconds": 958.48,
+      "text": "here shows that we have not handled our"
+    },
+    {
+      "startSeconds": 956.519,
+      "endSeconds": 959.48,
+      "text": "exception right we have not handled this"
+    },
+    {
+      "startSeconds": 958.48,
+      "endSeconds": 961.92,
+      "text": "error"
+    },
+    {
+      "startSeconds": 959.48,
+      "endSeconds": 963.959,
+      "text": "this is failing inside the browser and"
+    },
+    {
+      "startSeconds": 961.92,
+      "endSeconds": 966.56,
+      "text": "we as a developer should never do this"
+    },
+    {
+      "startSeconds": 963.959,
+      "endSeconds": 968.68,
+      "text": "we should always write code to handle"
+    },
+    {
+      "startSeconds": 966.56,
+      "endSeconds": 971.24,
+      "text": "errors so this you know what will happen"
+    },
+    {
+      "startSeconds": 968.68,
+      "endSeconds": 974,
+      "text": "if we just push this code to production"
+    },
+    {
+      "startSeconds": 971.24,
+      "endSeconds": 976.519,
+      "text": "this will fail in users computer and"
+    },
+    {
+      "startSeconds": 974,
+      "endSeconds": 979.279,
+      "text": "they will silently get that error right"
+    },
+    {
+      "startSeconds": 976.519,
+      "endSeconds": 981.6,
+      "text": "in their browser console and like user"
+    },
+    {
+      "startSeconds": 979.279,
+      "endSeconds": 983.72,
+      "text": "will not see anything on the page right"
+    },
+    {
+      "startSeconds": 981.6,
+      "endSeconds": 985.92,
+      "text": "so we should always gracefully handle"
+    },
+    {
+      "startSeconds": 983.72,
+      "endSeconds": 987.36,
+      "text": "errors whenever we are writing code so"
+    },
+    {
+      "startSeconds": 985.92,
+      "endSeconds": 989.56,
+      "text": "let me tell you how do we handle"
+    },
+    {
+      "startSeconds": 987.36,
+      "endSeconds": 991.079,
+      "text": "gracefully this error right this is a"
+    },
+    {
+      "startSeconds": 989.56,
+      "endSeconds": 993.68,
+      "text": "error which is there in browser console"
+    },
+    {
+      "startSeconds": 991.079,
+      "endSeconds": 996.279,
+      "text": "we want to handle it gracefully so now"
+    },
+    {
+      "startSeconds": 993.68,
+      "endSeconds": 998.839,
+      "text": "we have as a consumer right we have just"
+    },
+    {
+      "startSeconds": 996.279,
+      "endSeconds": 1001.04,
+      "text": "written the success part right if the"
+    },
+    {
+      "startSeconds": 998.839,
+      "endSeconds": 1003.44,
+      "text": "order ID is there if the everything is"
+    },
+    {
+      "startSeconds": 1001.04,
+      "endSeconds": 1006.319,
+      "text": "perfect then we will do this log the"
+    },
+    {
+      "startSeconds": 1003.44,
+      "endSeconds": 1009.639,
+      "text": "order ID but what if it fails how do we"
+    },
+    {
+      "startSeconds": 1006.319,
+      "endSeconds": 1011.759,
+      "text": "write that code so now for that promise"
+    },
+    {
+      "startSeconds": 1009.639,
+      "endSeconds": 1014.6,
+      "text": "also comes with one more function that"
+    },
+    {
+      "startSeconds": 1011.759,
+      "endSeconds": 1017.839,
+      "text": "is known as catch right it is just like"
+    },
+    {
+      "startSeconds": 1014.6,
+      "endSeconds": 1020.88,
+      "text": "a function just like then right and we"
+    },
+    {
+      "startSeconds": 1017.839,
+      "endSeconds": 1024.36,
+      "text": "can attach a failure call back also to"
+    },
+    {
+      "startSeconds": 1020.88,
+      "endSeconds": 1027.199,
+      "text": "it right so the promise object can can"
+    },
+    {
+      "startSeconds": 1024.36,
+      "endSeconds": 1030.039,
+      "text": "be attached with a failure call back as"
+    },
+    {
+      "startSeconds": 1027.199,
+      "endSeconds": 1033.12,
+      "text": "well right failure call back means if"
+    },
+    {
+      "startSeconds": 1030.039,
+      "endSeconds": 1035.319,
+      "text": "the call back fails if our promise fails"
+    },
+    {
+      "startSeconds": 1033.12,
+      "endSeconds": 1037.76,
+      "text": "then what will happen we will this call"
+    },
+    {
+      "startSeconds": 1035.319,
+      "endSeconds": 1040.64,
+      "text": "back will be invoked I'll show you"
+    },
+    {
+      "startSeconds": 1037.76,
+      "endSeconds": 1043.319,
+      "text": "quickly okay so this was the success"
+    },
+    {
+      "startSeconds": 1040.64,
+      "endSeconds": 1045.72,
+      "text": "part right uh this is the Callback which"
+    },
+    {
+      "startSeconds": 1043.319,
+      "endSeconds": 1049.12,
+      "text": "will be called if everything is Success"
+    },
+    {
+      "startSeconds": 1045.72,
+      "endSeconds": 1051.88,
+      "text": "if we resolve the promise right and this"
+    },
+    {
+      "startSeconds": 1049.12,
+      "endSeconds": 1053.96,
+      "text": "will be called if we reject the promise"
+    },
+    {
+      "startSeconds": 1051.88,
+      "endSeconds": 1056.16,
+      "text": "right if the promise is rejected so I'll"
+    },
+    {
+      "startSeconds": 1053.96,
+      "endSeconds": 1060.919,
+      "text": "show you that okay uh and then let us"
+    },
+    {
+      "startSeconds": 1056.16,
+      "endSeconds": 1065.039,
+      "text": "just do a console.log of error error do"
+    },
+    {
+      "startSeconds": 1060.919,
+      "endSeconds": 1067.96,
+      "text": "message right now if I if I save this"
+    },
+    {
+      "startSeconds": 1065.039,
+      "endSeconds": 1070.6,
+      "text": "program see we got printed cart is not"
+    },
+    {
+      "startSeconds": 1067.96,
+      "endSeconds": 1073.96,
+      "text": "valid so this is how now we don't get a"
+    },
+    {
+      "startSeconds": 1070.6,
+      "endSeconds": 1076.48,
+      "text": "red in our console right so now this is"
+    },
+    {
+      "startSeconds": 1073.96,
+      "endSeconds": 1079.2,
+      "text": "like gracefully handling the rejection"
+    },
+    {
+      "startSeconds": 1076.48,
+      "endSeconds": 1081.44,
+      "text": "of a promise right we should always do"
+    },
+    {
+      "startSeconds": 1079.2,
+      "endSeconds": 1083.039,
+      "text": "that whenever you are creating a promise"
+    },
+    {
+      "startSeconds": 1081.44,
+      "endSeconds": 1085.28,
+      "text": "or whenever you are consuming any"
+    },
+    {
+      "startSeconds": 1083.039,
+      "endSeconds": 1087.64,
+      "text": "promise you should always write a catch"
+    },
+    {
+      "startSeconds": 1085.28,
+      "endSeconds": 1089.36,
+      "text": "statement right to handle the errors"
+    },
+    {
+      "startSeconds": 1087.64,
+      "endSeconds": 1091.2,
+      "text": "gracefully this is a graceful way of"
+    },
+    {
+      "startSeconds": 1089.36,
+      "endSeconds": 1093.12,
+      "text": "handling errors we could have just shown"
+    },
+    {
+      "startSeconds": 1091.2,
+      "endSeconds": 1095.52,
+      "text": "a pop up saying that okay your cart is"
+    },
+    {
+      "startSeconds": 1093.12,
+      "endSeconds": 1098.44,
+      "text": "not valid or something right so this is"
+    },
+    {
+      "startSeconds": 1095.52,
+      "endSeconds": 1101,
+      "text": "how we handle it so now this was all the"
+    },
+    {
+      "startSeconds": 1098.44,
+      "endSeconds": 1103.2,
+      "text": "core part and the easy part now let's"
+    },
+    {
+      "startSeconds": 1101,
+      "endSeconds": 1105.919,
+      "text": "make things a little more complicated"
+    },
+    {
+      "startSeconds": 1103.2,
+      "endSeconds": 1107.88,
+      "text": "now let us see promise chaining we will"
+    },
+    {
+      "startSeconds": 1105.919,
+      "endSeconds": 1109.679,
+      "text": "take we will dive deep into promise"
+    },
+    {
+      "startSeconds": 1107.88,
+      "endSeconds": 1112.159,
+      "text": "chaining and we will see real life"
+    },
+    {
+      "startSeconds": 1109.679,
+      "endSeconds": 1114.919,
+      "text": "examples okay you would just love it"
+    },
+    {
+      "startSeconds": 1112.159,
+      "endSeconds": 1116.76,
+      "text": "just pay some more attention just 5 10"
+    },
+    {
+      "startSeconds": 1114.919,
+      "endSeconds": 1118.88,
+      "text": "minutes more and I would love to cover"
+    },
+    {
+      "startSeconds": 1116.76,
+      "endSeconds": 1121.44,
+      "text": "this promise chaining you would just"
+    },
+    {
+      "startSeconds": 1118.88,
+      "endSeconds": 1123.84,
+      "text": "love it we will see okay now let us just"
+    },
+    {
+      "startSeconds": 1121.44,
+      "endSeconds": 1127.24,
+      "text": "get proceed to payment also into into"
+    },
+    {
+      "startSeconds": 1123.84,
+      "endSeconds": 1129.6,
+      "text": "picture Okay so uh right now we did not"
+    },
+    {
+      "startSeconds": 1127.24,
+      "endSeconds": 1132.08,
+      "text": "have proceed to payment right so what we"
+    },
+    {
+      "startSeconds": 1129.6,
+      "endSeconds": 1133.64,
+      "text": "will do is let us just take proceed to"
+    },
+    {
+      "startSeconds": 1132.08,
+      "endSeconds": 1136.32,
+      "text": "payment also in picture Suppose there"
+    },
+    {
+      "startSeconds": 1133.64,
+      "endSeconds": 1138.84,
+      "text": "was proceed to payment this API and this"
+    },
+    {
+      "startSeconds": 1136.32,
+      "endSeconds": 1142.6,
+      "text": "is again an async operation so how do we"
+    },
+    {
+      "startSeconds": 1138.84,
+      "endSeconds": 1145.76,
+      "text": "handle that so suppose now what we will"
+    },
+    {
+      "startSeconds": 1142.6,
+      "endSeconds": 1148.679,
+      "text": "do is uh we had a promise over here this"
+    },
+    {
+      "startSeconds": 1145.76,
+      "endSeconds": 1151,
+      "text": "create order API returned a promise"
+    },
+    {
+      "startSeconds": 1148.679,
+      "endSeconds": 1153.36,
+      "text": "right and then what do we do we just"
+    },
+    {
+      "startSeconds": 1151,
+      "endSeconds": 1156.28,
+      "text": "attached a call back function to this"
+    },
+    {
+      "startSeconds": 1153.36,
+      "endSeconds": 1159,
+      "text": "right remember and then we handled then"
+    },
+    {
+      "startSeconds": 1156.28,
+      "endSeconds": 1162.08,
+      "text": "we returned order ID from here now we"
+    },
+    {
+      "startSeconds": 1159,
+      "endSeconds": 1165,
+      "text": "want to do with this order ID we want to"
+    },
+    {
+      "startSeconds": 1162.08,
+      "endSeconds": 1167.08,
+      "text": "proceed to payment right so how do we"
+    },
+    {
+      "startSeconds": 1165,
+      "endSeconds": 1169.799,
+      "text": "handle that I will show you now so first"
+    },
+    {
+      "startSeconds": 1167.08,
+      "endSeconds": 1171.44,
+      "text": "of all this promise right we just take"
+    },
+    {
+      "startSeconds": 1169.799,
+      "endSeconds": 1173.4,
+      "text": "this promise and then attach it over"
+    },
+    {
+      "startSeconds": 1171.44,
+      "endSeconds": 1176.76,
+      "text": "here so let us just write it in more"
+    },
+    {
+      "startSeconds": 1173.4,
+      "endSeconds": 1178.679,
+      "text": "clearer cleaner fashion okay I'm just"
+    },
+    {
+      "startSeconds": 1176.76,
+      "endSeconds": 1180.52,
+      "text": "I'm not changing anything in code I am"
+    },
+    {
+      "startSeconds": 1178.679,
+      "endSeconds": 1182.76,
+      "text": "just writing it in a different fashion"
+    },
+    {
+      "startSeconds": 1180.52,
+      "endSeconds": 1185.36,
+      "text": "right let's get rid of this promise word"
+    },
+    {
+      "startSeconds": 1182.76,
+      "endSeconds": 1188.44,
+      "text": "right so let me just remove it we can"
+    },
+    {
+      "startSeconds": 1185.36,
+      "endSeconds": 1191.559,
+      "text": "just simply do a DOT then uh after this"
+    },
+    {
+      "startSeconds": 1188.44,
+      "endSeconds": 1194.24,
+      "text": "right so I'll show you so it is same as"
+    },
+    {
+      "startSeconds": 1191.559,
+      "endSeconds": 1196.2,
+      "text": "writing it like that right so create"
+    },
+    {
+      "startSeconds": 1194.24,
+      "endSeconds": 1199,
+      "text": "order this will return a promise and"
+    },
+    {
+      "startSeconds": 1196.2,
+      "endSeconds": 1201.12,
+      "text": "then we attached a then method then"
+    },
+    {
+      "startSeconds": 1199,
+      "endSeconds": 1203.039,
+      "text": "function to it and then we passed in a"
+    },
+    {
+      "startSeconds": 1201.12,
+      "endSeconds": 1204.48,
+      "text": "call back function we just attached this"
+    },
+    {
+      "startSeconds": 1203.039,
+      "endSeconds": 1206.84,
+      "text": "call back function to This Promise"
+    },
+    {
+      "startSeconds": 1204.48,
+      "endSeconds": 1209.08,
+      "text": "object whatever was returned from this"
+    },
+    {
+      "startSeconds": 1206.84,
+      "endSeconds": 1211.679,
+      "text": "right so now what we'll do we want it to"
+    },
+    {
+      "startSeconds": 1209.08,
+      "endSeconds": 1214.159,
+      "text": "proceed to payment as well suppose once"
+    },
+    {
+      "startSeconds": 1211.679,
+      "endSeconds": 1217.12,
+      "text": "we have the promise object then what we"
+    },
+    {
+      "startSeconds": 1214.159,
+      "endSeconds": 1219.48,
+      "text": "will do we will just pass in another"
+    },
+    {
+      "startSeconds": 1217.12,
+      "endSeconds": 1222.96,
+      "text": "call back function where we will proceed"
+    },
+    {
+      "startSeconds": 1219.48,
+      "endSeconds": 1225.159,
+      "text": "to payment right so this is how we chain"
+    },
+    {
+      "startSeconds": 1222.96,
+      "endSeconds": 1228.36,
+      "text": "things up so this is the promise"
+    },
+    {
+      "startSeconds": 1225.159,
+      "endSeconds": 1230.44,
+      "text": "chaining once we get the order ID from"
+    },
+    {
+      "startSeconds": 1228.36,
+      "endSeconds": 1233.2,
+      "text": "this promise what we will do is we will"
+    },
+    {
+      "startSeconds": 1230.44,
+      "endSeconds": 1235.52,
+      "text": "pass the data into the next level of the"
+    },
+    {
+      "startSeconds": 1233.2,
+      "endSeconds": 1238.559,
+      "text": "chain and this is how then we will do a"
+    },
+    {
+      "startSeconds": 1235.52,
+      "endSeconds": 1240.679,
+      "text": "proceed to payment and let us just"
+    },
+    {
+      "startSeconds": 1238.559,
+      "endSeconds": 1242.48,
+      "text": "quickly write proceed to payment also so"
+    },
+    {
+      "startSeconds": 1240.679,
+      "endSeconds": 1245.28,
+      "text": "proceed to payment is what proceed to"
+    },
+    {
+      "startSeconds": 1242.48,
+      "endSeconds": 1247.12,
+      "text": "payment will again return a promise"
+    },
+    {
+      "startSeconds": 1245.28,
+      "endSeconds": 1249.32,
+      "text": "right let's make things a little more"
+    },
+    {
+      "startSeconds": 1247.12,
+      "endSeconds": 1252.64,
+      "text": "complicated you would just love it so"
+    },
+    {
+      "startSeconds": 1249.32,
+      "endSeconds": 1254.36,
+      "text": "proceed to payment is a promise now okay"
+    },
+    {
+      "startSeconds": 1252.64,
+      "endSeconds": 1256.08,
+      "text": "this is what I wanted to teach you that"
+    },
+    {
+      "startSeconds": 1254.36,
+      "endSeconds": 1258.799,
+      "text": "how do we handle it because in real"
+    },
+    {
+      "startSeconds": 1256.08,
+      "endSeconds": 1260.32,
+      "text": "world we will get to see such kind of"
+    },
+    {
+      "startSeconds": 1258.799,
+      "endSeconds": 1262.039,
+      "text": "scenarios we will fall into the"
+    },
+    {
+      "startSeconds": 1260.32,
+      "endSeconds": 1264.799,
+      "text": "scenarios so we should know how do we"
+    },
+    {
+      "startSeconds": 1262.039,
+      "endSeconds": 1267.84,
+      "text": "handle that so proceed to payment will"
+    },
+    {
+      "startSeconds": 1264.799,
+      "endSeconds": 1271.559,
+      "text": "have order ID which is passed from here"
+    },
+    {
+      "startSeconds": 1267.84,
+      "endSeconds": 1274.96,
+      "text": "right so this order ID will be there in"
+    },
+    {
+      "startSeconds": 1271.559,
+      "endSeconds": 1277.72,
+      "text": "proceed to payment order ID and now what"
+    },
+    {
+      "startSeconds": 1274.96,
+      "endSeconds": 1280.279,
+      "text": "we will do is we will just have this"
+    },
+    {
+      "startSeconds": 1277.72,
+      "endSeconds": 1282.36,
+      "text": "order ID and what we will do with this"
+    },
+    {
+      "startSeconds": 1280.279,
+      "endSeconds": 1284.2,
+      "text": "order ID we will just proceed to payment"
+    },
+    {
+      "startSeconds": 1282.36,
+      "endSeconds": 1286.72,
+      "text": "so I'm not writing the logic for"
+    },
+    {
+      "startSeconds": 1284.2,
+      "endSeconds": 1289.48,
+      "text": "handling payment and all that assume"
+    },
+    {
+      "startSeconds": 1286.72,
+      "endSeconds": 1291.559,
+      "text": "that we have uh this proceed to payment"
+    },
+    {
+      "startSeconds": 1289.48,
+      "endSeconds": 1294.52,
+      "text": "now this proceed to payment will return"
+    },
+    {
+      "startSeconds": 1291.559,
+      "endSeconds": 1296.24,
+      "text": "a promise right so let's see how do we"
+    },
+    {
+      "startSeconds": 1294.52,
+      "endSeconds": 1298.159,
+      "text": "return a promise we will just write"
+    },
+    {
+      "startSeconds": 1296.24,
+      "endSeconds": 1299.72,
+      "text": "return new"
+    },
+    {
+      "startSeconds": 1298.159,
+      "endSeconds": 1302.96,
+      "text": "promise"
+    },
+    {
+      "startSeconds": 1299.72,
+      "endSeconds": 1305.4,
+      "text": "right so basically last time what I did"
+    },
+    {
+      "startSeconds": 1302.96,
+      "endSeconds": 1308.36,
+      "text": "was I just created a PR variable with"
+    },
+    {
+      "startSeconds": 1305.4,
+      "endSeconds": 1310.52,
+      "text": "new promise and then just returned PR"
+    },
+    {
+      "startSeconds": 1308.36,
+      "endSeconds": 1313.24,
+      "text": "right instead of that we can just"
+    },
+    {
+      "startSeconds": 1310.52,
+      "endSeconds": 1315.44,
+      "text": "directly write return new promise and"
+    },
+    {
+      "startSeconds": 1313.24,
+      "endSeconds": 1318.6,
+      "text": "what does This Promise Constructor take"
+    },
+    {
+      "startSeconds": 1315.44,
+      "endSeconds": 1319.84,
+      "text": "a function isn't it a function and what"
+    },
+    {
+      "startSeconds": 1318.6,
+      "endSeconds": 1321.72,
+      "text": "what will this function have two"
+    },
+    {
+      "startSeconds": 1319.84,
+      "endSeconds": 1326.08,
+      "text": "arguments"
+    },
+    {
+      "startSeconds": 1321.72,
+      "endSeconds": 1328.64,
+      "text": "resolve and reject right now what we"
+    },
+    {
+      "startSeconds": 1326.08,
+      "endSeconds": 1330.919,
+      "text": "will do is I'm not writing the logic for"
+    },
+    {
+      "startSeconds": 1328.64,
+      "endSeconds": 1333.64,
+      "text": "payment now I'm just simply just"
+    },
+    {
+      "startSeconds": 1330.919,
+      "endSeconds": 1336.52,
+      "text": "resolving it directly right uh just for"
+    },
+    {
+      "startSeconds": 1333.64,
+      "endSeconds": 1338.4,
+      "text": "the sake of example and I am just saying"
+    },
+    {
+      "startSeconds": 1336.52,
+      "endSeconds": 1340.76,
+      "text": "payment"
+    },
+    {
+      "startSeconds": 1338.4,
+      "endSeconds": 1344.76,
+      "text": "successful payment"
+    },
+    {
+      "startSeconds": 1340.76,
+      "endSeconds": 1347.52,
+      "text": "suce successful oh my God my"
+    },
+    {
+      "startSeconds": 1344.76,
+      "endSeconds": 1349.679,
+      "text": "typing okay so I just I'm just quickly"
+    },
+    {
+      "startSeconds": 1347.52,
+      "endSeconds": 1352.24,
+      "text": "resolving it because I wanted to just"
+    },
+    {
+      "startSeconds": 1349.679,
+      "endSeconds": 1356,
+      "text": "show that how do we handle this promise"
+    },
+    {
+      "startSeconds": 1352.24,
+      "endSeconds": 1358.279,
+      "text": "over here now okay now what happens is"
+    },
+    {
+      "startSeconds": 1356,
+      "endSeconds": 1361.32,
+      "text": "I'll tell you one important thing which"
+    },
+    {
+      "startSeconds": 1358.279,
+      "endSeconds": 1364.12,
+      "text": "a lot of people forget right while"
+    },
+    {
+      "startSeconds": 1361.32,
+      "endSeconds": 1366.64,
+      "text": "writing code so generally whenever you"
+    },
+    {
+      "startSeconds": 1364.12,
+      "endSeconds": 1368.84,
+      "text": "have a promise like this you would"
+    },
+    {
+      "startSeconds": 1366.64,
+      "endSeconds": 1371.559,
+      "text": "handle this in the next level of the"
+    },
+    {
+      "startSeconds": 1368.84,
+      "endSeconds": 1373.72,
+      "text": "chain right you can do"
+    },
+    {
+      "startSeconds": 1371.559,
+      "endSeconds": 1377,
+      "text": "it like"
+    },
+    {
+      "startSeconds": 1373.72,
+      "endSeconds": 1379.12,
+      "text": "this so over here whatever the response"
+    },
+    {
+      "startSeconds": 1377,
+      "endSeconds": 1381.32,
+      "text": "of this proceed to payment will will be"
+    },
+    {
+      "startSeconds": 1379.12,
+      "endSeconds": 1383.12,
+      "text": "will be passed to the next call back"
+    },
+    {
+      "startSeconds": 1381.32,
+      "endSeconds": 1384.64,
+      "text": "function of this"
+    },
+    {
+      "startSeconds": 1383.12,
+      "endSeconds": 1388.44,
+      "text": "chain"
+    },
+    {
+      "startSeconds": 1384.64,
+      "endSeconds": 1390.08,
+      "text": "okay and then we will get payment info"
+    },
+    {
+      "startSeconds": 1388.44,
+      "endSeconds": 1393.159,
+      "text": "it will tell us whether the payment was"
+    },
+    {
+      "startSeconds": 1390.08,
+      "endSeconds": 1397.799,
+      "text": "successful or uh not successful and then"
+    },
+    {
+      "startSeconds": 1393.159,
+      "endSeconds": 1400.6,
+      "text": "let us just log this payment info but so"
+    },
+    {
+      "startSeconds": 1397.799,
+      "endSeconds": 1403.12,
+      "text": "generally people write code like this"
+    },
+    {
+      "startSeconds": 1400.6,
+      "endSeconds": 1406.08,
+      "text": "right this is how we change things up"
+    },
+    {
+      "startSeconds": 1403.12,
+      "endSeconds": 1408.84,
+      "text": "but this is a very common error in this"
+    },
+    {
+      "startSeconds": 1406.08,
+      "endSeconds": 1410.559,
+      "text": "program right now a very common error"
+    },
+    {
+      "startSeconds": 1408.84,
+      "endSeconds": 1412.36,
+      "text": "and a lot of developers fall into that"
+    },
+    {
+      "startSeconds": 1410.559,
+      "endSeconds": 1415.2,
+      "text": "and I and you know you won't be able to"
+    },
+    {
+      "startSeconds": 1412.36,
+      "endSeconds": 1417.52,
+      "text": "even figure out what the error is"
+    },
+    {
+      "startSeconds": 1415.2,
+      "endSeconds": 1419.96,
+      "text": "remember I told you last time yes we"
+    },
+    {
+      "startSeconds": 1417.52,
+      "endSeconds": 1422.279,
+      "text": "need to whenever we are chaining things"
+    },
+    {
+      "startSeconds": 1419.96,
+      "endSeconds": 1425.08,
+      "text": "up in this promise chain we need to keep"
+    },
+    {
+      "startSeconds": 1422.279,
+      "endSeconds": 1427.88,
+      "text": "returning things from one chain down to"
+    },
+    {
+      "startSeconds": 1425.08,
+      "endSeconds": 1430.84,
+      "text": "other down to other down to other right"
+    },
+    {
+      "startSeconds": 1427.88,
+      "endSeconds": 1433.52,
+      "text": "that's how we do it so how do we do that"
+    },
+    {
+      "startSeconds": 1430.84,
+      "endSeconds": 1437.4,
+      "text": "so whatever we need to passing down the"
+    },
+    {
+      "startSeconds": 1433.52,
+      "endSeconds": 1441.24,
+      "text": "chain we need to return it from top of"
+    },
+    {
+      "startSeconds": 1437.4,
+      "endSeconds": 1443.24,
+      "text": "the chain okay very simple very easy"
+    },
+    {
+      "startSeconds": 1441.24,
+      "endSeconds": 1446.159,
+      "text": "very simple"
+    },
+    {
+      "startSeconds": 1443.24,
+      "endSeconds": 1448.48,
+      "text": "okay what we need to do whatever we will"
+    },
+    {
+      "startSeconds": 1446.159,
+      "endSeconds": 1451.24,
+      "text": "return from here will be passed down the"
+    },
+    {
+      "startSeconds": 1448.48,
+      "endSeconds": 1453.4,
+      "text": "chain what does that mean we need to"
+    },
+    {
+      "startSeconds": 1451.24,
+      "endSeconds": 1457.039,
+      "text": "pass an order ID right so what we will"
+    },
+    {
+      "startSeconds": 1453.4,
+      "endSeconds": 1459.64,
+      "text": "do we'll just return order ID from here"
+    },
+    {
+      "startSeconds": 1457.039,
+      "endSeconds": 1462.84,
+      "text": "right and what can we return from here"
+    },
+    {
+      "startSeconds": 1459.64,
+      "endSeconds": 1466.399,
+      "text": "we can return any data or we can return"
+    },
+    {
+      "startSeconds": 1462.84,
+      "endSeconds": 1468.44,
+      "text": "a promise that can be resolved okay so"
+    },
+    {
+      "startSeconds": 1466.399,
+      "endSeconds": 1471.6,
+      "text": "we will return order ID and this order"
+    },
+    {
+      "startSeconds": 1468.44,
+      "endSeconds": 1476.52,
+      "text": "ID will go over here right so this will"
+    },
+    {
+      "startSeconds": 1471.6,
+      "endSeconds": 1479,
+      "text": "now receive order ID and over here again"
+    },
+    {
+      "startSeconds": 1476.52,
+      "endSeconds": 1482.32,
+      "text": "what we can do is we will just return"
+    },
+    {
+      "startSeconds": 1479,
+      "endSeconds": 1485.88,
+      "text": "the promise itself and when you return a"
+    },
+    {
+      "startSeconds": 1482.32,
+      "endSeconds": 1490.24,
+      "text": "promise from here this Dawn method will"
+    },
+    {
+      "startSeconds": 1485.88,
+      "endSeconds": 1493.559,
+      "text": "get attached to this promise okay it is"
+    },
+    {
+      "startSeconds": 1490.24,
+      "endSeconds": 1495.84,
+      "text": "basically exactly as writing something"
+    },
+    {
+      "startSeconds": 1493.559,
+      "endSeconds": 1495.84,
+      "text": "like"
+    },
+    {
+      "startSeconds": 1496.12,
+      "endSeconds": 1501.72,
+      "text": "this but this code would be ugly right"
+    },
+    {
+      "startSeconds": 1499.12,
+      "endSeconds": 1503.919,
+      "text": "we will again fall into promise hell"
+    },
+    {
+      "startSeconds": 1501.72,
+      "endSeconds": 1505.399,
+      "text": "this will be a promise hell if we just"
+    },
+    {
+      "startSeconds": 1503.919,
+      "endSeconds": 1508.64,
+      "text": "keep writing like"
+    },
+    {
+      "startSeconds": 1505.399,
+      "endSeconds": 1511.24,
+      "text": "this this is exactly similar to this"
+    },
+    {
+      "startSeconds": 1508.64,
+      "endSeconds": 1514,
+      "text": "because what will this return proceed to"
+    },
+    {
+      "startSeconds": 1511.24,
+      "endSeconds": 1515.96,
+      "text": "payment a new promise right so This"
+    },
+    {
+      "startSeconds": 1514,
+      "endSeconds": 1519.36,
+      "text": "Promise could be handled by the then"
+    },
+    {
+      "startSeconds": 1515.96,
+      "endSeconds": 1521.399,
+      "text": "method right we can attach a method uh"
+    },
+    {
+      "startSeconds": 1519.36,
+      "endSeconds": 1525.159,
+      "text": "attach a function attach a call back"
+    },
+    {
+      "startSeconds": 1521.399,
+      "endSeconds": 1527.64,
+      "text": "function to this promise right but to"
+    },
+    {
+      "startSeconds": 1525.159,
+      "endSeconds": 1529.6,
+      "text": "and then we can fall into a promise hell"
+    },
+    {
+      "startSeconds": 1527.64,
+      "endSeconds": 1532.08,
+      "text": "just like call back hell there can be"
+    },
+    {
+      "startSeconds": 1529.6,
+      "endSeconds": 1535.6,
+      "text": "promise hell also"
+    },
+    {
+      "startSeconds": 1532.08,
+      "endSeconds": 1538.679,
+      "text": "but the promise API was designed in such"
+    },
+    {
+      "startSeconds": 1535.6,
+      "endSeconds": 1541.279,
+      "text": "a way that we don't fall into this call"
+    },
+    {
+      "startSeconds": 1538.679,
+      "endSeconds": 1543.799,
+      "text": "back hell or that Doom right Pyramid of"
+    },
+    {
+      "startSeconds": 1541.279,
+      "endSeconds": 1546.36,
+      "text": "Doom kind of structure our code does not"
+    },
+    {
+      "startSeconds": 1543.799,
+      "endSeconds": 1549.2,
+      "text": "grow horizontally so what we do is we"
+    },
+    {
+      "startSeconds": 1546.36,
+      "endSeconds": 1551.52,
+      "text": "generally return the promise from this"
+    },
+    {
+      "startSeconds": 1549.2,
+      "endSeconds": 1554.08,
+      "text": "and we handle it in the next level of"
+    },
+    {
+      "startSeconds": 1551.52,
+      "endSeconds": 1556.2,
+      "text": "the chain okay how do we handle it we"
+    },
+    {
+      "startSeconds": 1554.08,
+      "endSeconds": 1559.24,
+      "text": "will handle it in the next level of the"
+    },
+    {
+      "startSeconds": 1556.2,
+      "endSeconds": 1562.84,
+      "text": "chain so this is a good way of writing"
+    },
+    {
+      "startSeconds": 1559.24,
+      "endSeconds": 1565.96,
+      "text": "code passing things down the chain and"
+    },
+    {
+      "startSeconds": 1562.84,
+      "endSeconds": 1570.399,
+      "text": "that's how we log it so if I now save it"
+    },
+    {
+      "startSeconds": 1565.96,
+      "endSeconds": 1572.96,
+      "text": "it just should work not working somehow"
+    },
+    {
+      "startSeconds": 1570.399,
+      "endSeconds": 1576.279,
+      "text": "let's just let's just see why it's not"
+    },
+    {
+      "startSeconds": 1572.96,
+      "endSeconds": 1580.08,
+      "text": "working uh sorry for this bug I'll fix"
+    },
+    {
+      "startSeconds": 1576.279,
+      "endSeconds": 1583.52,
+      "text": "it right away so we returned order ID so"
+    },
+    {
+      "startSeconds": 1580.08,
+      "endSeconds": 1586.159,
+      "text": "cart okay the cart is not valid we got"
+    },
+    {
+      "startSeconds": 1583.52,
+      "endSeconds": 1589.44,
+      "text": "one more thing so you know what is there"
+    },
+    {
+      "startSeconds": 1586.159,
+      "endSeconds": 1591.88,
+      "text": "the cart is not valid so Whenever there"
+    },
+    {
+      "startSeconds": 1589.44,
+      "endSeconds": 1594.799,
+      "text": "is a chain right there is a big promis"
+    },
+    {
+      "startSeconds": 1591.88,
+      "endSeconds": 1597.08,
+      "text": "chain and there is an error in any of"
+    },
+    {
+      "startSeconds": 1594.799,
+      "endSeconds": 1598.679,
+      "text": "this chain any part of this chain there"
+    },
+    {
+      "startSeconds": 1597.08,
+      "endSeconds": 1601.279,
+      "text": "are three steps and then there is a"
+    },
+    {
+      "startSeconds": 1598.679,
+      "endSeconds": 1603.679,
+      "text": "catch so the catch at the end will"
+    },
+    {
+      "startSeconds": 1601.279,
+      "endSeconds": 1606.919,
+      "text": "handle any error that is down in the"
+    },
+    {
+      "startSeconds": 1603.679,
+      "endSeconds": 1609.6,
+      "text": "chain right this catch will handle"
+    },
+    {
+      "startSeconds": 1606.919,
+      "endSeconds": 1613.84,
+      "text": "anything inside that chain okay so that"
+    },
+    {
+      "startSeconds": 1609.6,
+      "endSeconds": 1615.48,
+      "text": "is why if we are failing at what step we"
+    },
+    {
+      "startSeconds": 1613.84,
+      "endSeconds": 1618.6,
+      "text": "are just failing at the first step"
+    },
+    {
+      "startSeconds": 1615.48,
+      "endSeconds": 1620.24,
+      "text": "itself right so it says that cart is not"
+    },
+    {
+      "startSeconds": 1618.6,
+      "endSeconds": 1622.679,
+      "text": "valid we are just failing it at line"
+    },
+    {
+      "startSeconds": 1620.24,
+      "endSeconds": 1625,
+      "text": "number three itself right so what will"
+    },
+    {
+      "startSeconds": 1622.679,
+      "endSeconds": 1627.08,
+      "text": "happen is now let us just try to pass in"
+    },
+    {
+      "startSeconds": 1625,
+      "endSeconds": 1629.799,
+      "text": "and see that if this works or not so"
+    },
+    {
+      "startSeconds": 1627.08,
+      "endSeconds": 1631.64,
+      "text": "let's just validate the cart and say uh"
+    },
+    {
+      "startSeconds": 1629.799,
+      "endSeconds": 1635.919,
+      "text": "we fortunately got to see the error"
+    },
+    {
+      "startSeconds": 1631.64,
+      "endSeconds": 1638.36,
+      "text": "meage error first right so if we do true"
+    },
+    {
+      "startSeconds": 1635.919,
+      "endSeconds": 1641.48,
+      "text": "now what will happen is after 5 Seconds"
+    },
+    {
+      "startSeconds": 1638.36,
+      "endSeconds": 1643.12,
+      "text": "this will be resolved yes see and then"
+    },
+    {
+      "startSeconds": 1641.48,
+      "endSeconds": 1644.84,
+      "text": "what will happen is it just resolved"
+    },
+    {
+      "startSeconds": 1643.12,
+      "endSeconds": 1647.08,
+      "text": "with the order ID it printed the order"
+    },
+    {
+      "startSeconds": 1644.84,
+      "endSeconds": 1649.24,
+      "text": "ID this order ID was passed down the"
+    },
+    {
+      "startSeconds": 1647.08,
+      "endSeconds": 1651.72,
+      "text": "chain over here and then this order ID"
+    },
+    {
+      "startSeconds": 1649.24,
+      "endSeconds": 1653.08,
+      "text": "was sent to proceed to payment now this"
+    },
+    {
+      "startSeconds": 1651.72,
+      "endSeconds": 1656.72,
+      "text": "proceed to"
+    },
+    {
+      "startSeconds": 1653.08,
+      "endSeconds": 1658.36,
+      "text": "payment just cons just sent the data"
+    },
+    {
+      "startSeconds": 1656.72,
+      "endSeconds": 1660.159,
+      "text": "this function this call back function"
+    },
+    {
+      "startSeconds": 1658.36,
+      "endSeconds": 1662.48,
+      "text": "was attached to this proceed to payment"
+    },
+    {
+      "startSeconds": 1660.159,
+      "endSeconds": 1663.88,
+      "text": "promise and then what happened was the"
+    },
+    {
+      "startSeconds": 1662.48,
+      "endSeconds": 1667.799,
+      "text": "payment info was"
+    },
+    {
+      "startSeconds": 1663.88,
+      "endSeconds": 1670.159,
+      "text": "printed right make sense so this is what"
+    },
+    {
+      "startSeconds": 1667.799,
+      "endSeconds": 1673.72,
+      "text": "is known as promise chain and this is"
+    },
+    {
+      "startSeconds": 1670.159,
+      "endSeconds": 1676.36,
+      "text": "how we can chain promises and we can"
+    },
+    {
+      "startSeconds": 1673.72,
+      "endSeconds": 1678.48,
+      "text": "pass the data from each chain level to"
+    },
+    {
+      "startSeconds": 1676.36,
+      "endSeconds": 1680.96,
+      "text": "other chain level hope you would have"
+    },
+    {
+      "startSeconds": 1678.48,
+      "endSeconds": 1683.559,
+      "text": "understood one more interesting thing"
+    },
+    {
+      "startSeconds": 1680.96,
+      "endSeconds": 1685.64,
+      "text": "what I wanted to show you and I just"
+    },
+    {
+      "startSeconds": 1683.559,
+      "endSeconds": 1689.6,
+      "text": "realized when we saw the last example"
+    },
+    {
+      "startSeconds": 1685.64,
+      "endSeconds": 1692.08,
+      "text": "right so if our cart was not"
+    },
+    {
+      "startSeconds": 1689.6,
+      "endSeconds": 1693.96,
+      "text": "validated we were not able to figure out"
+    },
+    {
+      "startSeconds": 1692.08,
+      "endSeconds": 1697,
+      "text": "right when this was not validating it"
+    },
+    {
+      "startSeconds": 1693.96,
+      "endSeconds": 1700.519,
+      "text": "was just showing cart is not valid right"
+    },
+    {
+      "startSeconds": 1697,
+      "endSeconds": 1703.279,
+      "text": "so what if what if what if this catch"
+    },
+    {
+      "startSeconds": 1700.519,
+      "endSeconds": 1706.279,
+      "text": "right we needed to go to"
+    },
+    {
+      "startSeconds": 1703.279,
+      "endSeconds": 1709.279,
+      "text": "payment before even if the cart is not"
+    },
+    {
+      "startSeconds": 1706.279,
+      "endSeconds": 1711.679,
+      "text": "valid for the sake of our argument you"
+    },
+    {
+      "startSeconds": 1709.279,
+      "endSeconds": 1713.679,
+      "text": "would say that a what are you smoking"
+    },
+    {
+      "startSeconds": 1711.679,
+      "endSeconds": 1715.399,
+      "text": "like I mean why do you want to go to"
+    },
+    {
+      "startSeconds": 1713.679,
+      "endSeconds": 1717.559,
+      "text": "proceed to payment if the cart is not"
+    },
+    {
+      "startSeconds": 1715.399,
+      "endSeconds": 1720.44,
+      "text": "validated but I'm just telling you a"
+    },
+    {
+      "startSeconds": 1717.559,
+      "endSeconds": 1722.6,
+      "text": "random scenario okay just to show you an"
+    },
+    {
+      "startSeconds": 1720.44,
+      "endSeconds": 1726.08,
+      "text": "example okay suppose if we wanted to"
+    },
+    {
+      "startSeconds": 1722.6,
+      "endSeconds": 1728.96,
+      "text": "proceed to payment right because see you"
+    },
+    {
+      "startSeconds": 1726.08,
+      "endSeconds": 1730.64,
+      "text": "know this chain could be a lot longer"
+    },
+    {
+      "startSeconds": 1728.96,
+      "endSeconds": 1732.399,
+      "text": "there are just three steps in the chain"
+    },
+    {
+      "startSeconds": 1730.64,
+      "endSeconds": 1734.919,
+      "text": "three then methods but what if there"
+    },
+    {
+      "startSeconds": 1732.399,
+      "endSeconds": 1738.2,
+      "text": "were 20 then methods and something"
+    },
+    {
+      "startSeconds": 1734.919,
+      "endSeconds": 1740.96,
+      "text": "failed on line number after line 15 or"
+    },
+    {
+      "startSeconds": 1738.2,
+      "endSeconds": 1743.159,
+      "text": "15th then method right how do we handle"
+    },
+    {
+      "startSeconds": 1740.96,
+      "endSeconds": 1745.32,
+      "text": "that what if we had to continue our"
+    },
+    {
+      "startSeconds": 1743.159,
+      "endSeconds": 1748.88,
+      "text": "chain running because what will happen"
+    },
+    {
+      "startSeconds": 1745.32,
+      "endSeconds": 1749.84,
+      "text": "is if any of these step fail everything"
+    },
+    {
+      "startSeconds": 1748.88,
+      "endSeconds": 1752.6,
+      "text": "will be"
+    },
+    {
+      "startSeconds": 1749.84,
+      "endSeconds": 1754.96,
+      "text": "failed but what if we needed to proceed"
+    },
+    {
+      "startSeconds": 1752.6,
+      "endSeconds": 1758.559,
+      "text": "to payment even if the cart is failed so"
+    },
+    {
+      "startSeconds": 1754.96,
+      "endSeconds": 1761.72,
+      "text": "what we will do is we will just put this"
+    },
+    {
+      "startSeconds": 1758.559,
+      "endSeconds": 1765.72,
+      "text": "catch right over"
+    },
+    {
+      "startSeconds": 1761.72,
+      "endSeconds": 1770.32,
+      "text": "here got it what will happen is"
+    },
+    {
+      "startSeconds": 1765.72,
+      "endSeconds": 1774.32,
+      "text": "now this catch has the responsibility to"
+    },
+    {
+      "startSeconds": 1770.32,
+      "endSeconds": 1777.279,
+      "text": "only check the top of it right so it"
+    },
+    {
+      "startSeconds": 1774.32,
+      "endSeconds": 1779.48,
+      "text": "will only be concerned for the errors"
+    },
+    {
+      "startSeconds": 1777.279,
+      "endSeconds": 1782.919,
+      "text": "which are occurring on the top of the"
+    },
+    {
+      "startSeconds": 1779.48,
+      "endSeconds": 1785.919,
+      "text": "chain make sense so now if I save it"
+    },
+    {
+      "startSeconds": 1782.919,
+      "endSeconds": 1788.12,
+      "text": "proceed to payment will still happen see"
+    },
+    {
+      "startSeconds": 1785.919,
+      "endSeconds": 1790.96,
+      "text": "so the cart is not valid we gracefully"
+    },
+    {
+      "startSeconds": 1788.12,
+      "endSeconds": 1793.24,
+      "text": "handled the error over here and what"
+    },
+    {
+      "startSeconds": 1790.96,
+      "endSeconds": 1796.32,
+      "text": "happened is the payment was still"
+    },
+    {
+      "startSeconds": 1793.24,
+      "endSeconds": 1798.679,
+      "text": "successful okay because this happens so"
+    },
+    {
+      "startSeconds": 1796.32,
+      "endSeconds": 1801.84,
+      "text": "what I'm trying to say is"
+    },
+    {
+      "startSeconds": 1798.679,
+      "endSeconds": 1805.08,
+      "text": "whenever you have a catch statement over"
+    },
+    {
+      "startSeconds": 1801.84,
+      "endSeconds": 1807.44,
+      "text": "here right and whatever happens after"
+    },
+    {
+      "startSeconds": 1805.08,
+      "endSeconds": 1810.32,
+      "text": "the catch right whatever then method is"
+    },
+    {
+      "startSeconds": 1807.44,
+      "endSeconds": 1813.679,
+      "text": "there after the catch let's"
+    },
+    {
+      "startSeconds": 1810.32,
+      "endSeconds": 1817.24,
+      "text": "create right a then method this will"
+    },
+    {
+      "startSeconds": 1813.679,
+      "endSeconds": 1822.96,
+      "text": "definitely be called okay no matter what"
+    },
+    {
+      "startSeconds": 1817.24,
+      "endSeconds": 1826.96,
+      "text": "happens right uh no matter what"
+    },
+    {
+      "startSeconds": 1822.96,
+      "endSeconds": 1831.48,
+      "text": "happens happens I will"
+    },
+    {
+      "startSeconds": 1826.96,
+      "endSeconds": 1834.36,
+      "text": "definitely be called so basically no"
+    },
+    {
+      "startSeconds": 1831.48,
+      "endSeconds": 1836.96,
+      "text": "matter what happens this then will"
+    },
+    {
+      "startSeconds": 1834.36,
+      "endSeconds": 1840.159,
+      "text": "definitely be called if it is after"
+    },
+    {
+      "startSeconds": 1836.96,
+      "endSeconds": 1842.36,
+      "text": "catch whatever the errors are there this"
+    },
+    {
+      "startSeconds": 1840.159,
+      "endSeconds": 1845.2,
+      "text": "catch will handle all those errors which"
+    },
+    {
+      "startSeconds": 1842.36,
+      "endSeconds": 1847.48,
+      "text": "are there in the top of this catch and"
+    },
+    {
+      "startSeconds": 1845.2,
+      "endSeconds": 1849.72,
+      "text": "whatever is there below this catch it"
+    },
+    {
+      "startSeconds": 1847.48,
+      "endSeconds": 1853,
+      "text": "does not have to do anything with it"
+    },
+    {
+      "startSeconds": 1849.72,
+      "endSeconds": 1855.799,
+      "text": "right so generally when suppose if there"
+    },
+    {
+      "startSeconds": 1853,
+      "endSeconds": 1858.6,
+      "text": "is a long chain so we can suppose if we"
+    },
+    {
+      "startSeconds": 1855.799,
+      "endSeconds": 1860.639,
+      "text": "have to handle just catch errors for"
+    },
+    {
+      "startSeconds": 1858.6,
+      "endSeconds": 1863.399,
+      "text": "payment so we will have a catch over"
+    },
+    {
+      "startSeconds": 1860.639,
+      "endSeconds": 1865.76,
+      "text": "here if if suppose we wanted to just"
+    },
+    {
+      "startSeconds": 1863.399,
+      "endSeconds": 1867.88,
+      "text": "catch errors for creating order so we"
+    },
+    {
+      "startSeconds": 1865.76,
+      "endSeconds": 1870.44,
+      "text": "would just place a catch method over"
+    },
+    {
+      "startSeconds": 1867.88,
+      "endSeconds": 1873.639,
+      "text": "here for handling the errors of create"
+    },
+    {
+      "startSeconds": 1870.44,
+      "endSeconds": 1876.36,
+      "text": "order like this and then at the end"
+    },
+    {
+      "startSeconds": 1873.639,
+      "endSeconds": 1879.48,
+      "text": "after all these catch we can just have a"
+    },
+    {
+      "startSeconds": 1876.36,
+      "endSeconds": 1881.76,
+      "text": "generic catch also you should not write"
+    },
+    {
+      "startSeconds": 1879.48,
+      "endSeconds": 1884.36,
+      "text": "like this you can it's you as a"
+    },
+    {
+      "startSeconds": 1881.76,
+      "endSeconds": 1886.2,
+      "text": "developers responsibility to see where"
+    },
+    {
+      "startSeconds": 1884.36,
+      "endSeconds": 1889.88,
+      "text": "this catch fits in I'm just telling you"
+    },
+    {
+      "startSeconds": 1886.2,
+      "endSeconds": 1892.919,
+      "text": "the scenarios but if but if there is a"
+    },
+    {
+      "startSeconds": 1889.88,
+      "endSeconds": 1895,
+      "text": "catch over here then no matter what if"
+    },
+    {
+      "startSeconds": 1892.919,
+      "endSeconds": 1897.08,
+      "text": "there is a then at the end no matter"
+    },
+    {
+      "startSeconds": 1895,
+      "endSeconds": 1900.399,
+      "text": "what happens this then will definitely"
+    },
+    {
+      "startSeconds": 1897.08,
+      "endSeconds": 1904.12,
+      "text": "be called if I save this and see see no"
+    },
+    {
+      "startSeconds": 1900.399,
+      "endSeconds": 1906.44,
+      "text": "matter what happens I will be called so"
+    },
+    {
+      "startSeconds": 1904.12,
+      "endSeconds": 1908.48,
+      "text": "this is how a promise chain looks like I"
+    },
+    {
+      "startSeconds": 1906.44,
+      "endSeconds": 1911,
+      "text": "have covered like complex scenarios in"
+    },
+    {
+      "startSeconds": 1908.48,
+      "endSeconds": 1912.919,
+      "text": "our code I have covered a lot of things"
+    },
+    {
+      "startSeconds": 1911,
+      "endSeconds": 1915.639,
+      "text": "in this video hope you would have liked"
+    },
+    {
+      "startSeconds": 1912.919,
+      "endSeconds": 1918.919,
+      "text": "it and hope you would have loved it this"
+    },
+    {
+      "startSeconds": 1915.639,
+      "endSeconds": 1921.36,
+      "text": "chaining right helps us get rid of call"
+    },
+    {
+      "startSeconds": 1918.919,
+      "endSeconds": 1923.84,
+      "text": "back hell and trust me my dear friends I"
+    },
+    {
+      "startSeconds": 1921.36,
+      "endSeconds": 1926.96,
+      "text": "have seen production code where there is"
+    },
+    {
+      "startSeconds": 1923.84,
+      "endSeconds": 1928.919,
+      "text": "a call back hell and like we used to"
+    },
+    {
+      "startSeconds": 1926.96,
+      "endSeconds": 1930.919,
+      "text": "pull our hairs when we used to like"
+    },
+    {
+      "startSeconds": 1928.919,
+      "endSeconds": 1932.799,
+      "text": "debug things because you don't know"
+    },
+    {
+      "startSeconds": 1930.919,
+      "endSeconds": 1935.399,
+      "text": "what's happening inside some call back"
+    },
+    {
+      "startSeconds": 1932.799,
+      "endSeconds": 1937.48,
+      "text": "or like random stuff this kind of"
+    },
+    {
+      "startSeconds": 1935.399,
+      "endSeconds": 1939.919,
+      "text": "structure makes our code much more"
+    },
+    {
+      "startSeconds": 1937.48,
+      "endSeconds": 1942.559,
+      "text": "readable maintainable and much more"
+    },
+    {
+      "startSeconds": 1939.919,
+      "endSeconds": 1944.96,
+      "text": "developer friendly okay that's why we"
+    },
+    {
+      "startSeconds": 1942.559,
+      "endSeconds": 1946.84,
+      "text": "use promises so because this video was"
+    },
+    {
+      "startSeconds": 1944.96,
+      "endSeconds": 1949.159,
+      "text": "very long let us just quickly recap"
+    },
+    {
+      "startSeconds": 1946.84,
+      "endSeconds": 1951.159,
+      "text": "everything whatever we study it so far"
+    },
+    {
+      "startSeconds": 1949.159,
+      "endSeconds": 1952.799,
+      "text": "okay whatever we studied in this video"
+    },
+    {
+      "startSeconds": 1951.159,
+      "endSeconds": 1955.36,
+      "text": "so first of all we saw that how we can"
+    },
+    {
+      "startSeconds": 1952.799,
+      "endSeconds": 1957.24,
+      "text": "create our old new promises so for that"
+    },
+    {
+      "startSeconds": 1955.36,
+      "endSeconds": 1960.2,
+      "text": "we wrote the code for creating a new"
+    },
+    {
+      "startSeconds": 1957.24,
+      "endSeconds": 1961.84,
+      "text": "promise so I showed you that how you can"
+    },
+    {
+      "startSeconds": 1960.2,
+      "endSeconds": 1964.159,
+      "text": "uh return a promise from this create"
+    },
+    {
+      "startSeconds": 1961.84,
+      "endSeconds": 1966.72,
+      "text": "order API we use the new keyword and a"
+    },
+    {
+      "startSeconds": 1964.159,
+      "endSeconds": 1968.36,
+      "text": "promise Constructor right to invoke it"
+    },
+    {
+      "startSeconds": 1966.72,
+      "endSeconds": 1970.399,
+      "text": "and there was a function which is passed"
+    },
+    {
+      "startSeconds": 1968.36,
+      "endSeconds": 1973.159,
+      "text": "inside This Promise Constructor and this"
+    },
+    {
+      "startSeconds": 1970.399,
+      "endSeconds": 1975.159,
+      "text": "function has two two arguments two"
+    },
+    {
+      "startSeconds": 1973.159,
+      "endSeconds": 1977,
+      "text": "parameters to it which is resolve and"
+    },
+    {
+      "startSeconds": 1975.159,
+      "endSeconds": 1978.799,
+      "text": "reject these two parameters and this"
+    },
+    {
+      "startSeconds": 1977,
+      "endSeconds": 1981.88,
+      "text": "resolve and reject are given by"
+    },
+    {
+      "startSeconds": 1978.799,
+      "endSeconds": 1983.519,
+      "text": "JavaScript right to us and with this we"
+    },
+    {
+      "startSeconds": 1981.88,
+      "endSeconds": 1985.2,
+      "text": "will have a control over our promise"
+    },
+    {
+      "startSeconds": 1983.519,
+      "endSeconds": 1987.159,
+      "text": "whether we want to resolve it or we want"
+    },
+    {
+      "startSeconds": 1985.2,
+      "endSeconds": 1990.399,
+      "text": "to reject it there is nothing else we"
+    },
+    {
+      "startSeconds": 1987.159,
+      "endSeconds": 1991.72,
+      "text": "can do and we cannot call resolve twice"
+    },
+    {
+      "startSeconds": 1990.399,
+      "endSeconds": 1994.559,
+      "text": "so this is what the guarantee of"
+    },
+    {
+      "startSeconds": 1991.72,
+      "endSeconds": 1997.08,
+      "text": "promises were remember so we can just"
+    },
+    {
+      "startSeconds": 1994.559,
+      "endSeconds": 2000,
+      "text": "resolve a promise once and we cannot do"
+    },
+    {
+      "startSeconds": 1997.08,
+      "endSeconds": 2003.32,
+      "text": "it twice and we can just do a resolve or"
+    },
+    {
+      "startSeconds": 2000,
+      "endSeconds": 2005.679,
+      "text": "a reject no other state super simple and"
+    },
+    {
+      "startSeconds": 2003.32,
+      "endSeconds": 2007.919,
+      "text": "super straightforward right for our"
+    },
+    {
+      "startSeconds": 2005.679,
+      "endSeconds": 2010,
+      "text": "consumers to consume they know exactly"
+    },
+    {
+      "startSeconds": 2007.919,
+      "endSeconds": 2012.08,
+      "text": "what can happen with our promise so what"
+    },
+    {
+      "startSeconds": 2010,
+      "endSeconds": 2013.72,
+      "text": "will happen is and then how do we throw"
+    },
+    {
+      "startSeconds": 2012.08,
+      "endSeconds": 2015.6,
+      "text": "an error we just throw an error like"
+    },
+    {
+      "startSeconds": 2013.72,
+      "endSeconds": 2018.08,
+      "text": "this we just call a reject function"
+    },
+    {
+      "startSeconds": 2015.6,
+      "endSeconds": 2020.159,
+      "text": "within error code or we just resolve it"
+    },
+    {
+      "startSeconds": 2018.08,
+      "endSeconds": 2022.039,
+      "text": "with an order ID or whatever success"
+    },
+    {
+      "startSeconds": 2020.159,
+      "endSeconds": 2023.679,
+      "text": "message we want to pass in this is how"
+    },
+    {
+      "startSeconds": 2022.039,
+      "endSeconds": 2025.919,
+      "text": "we create a promise this was the first"
+    },
+    {
+      "startSeconds": 2023.679,
+      "endSeconds": 2028.12,
+      "text": "thing I told you the second thing was"
+    },
+    {
+      "startSeconds": 2025.919,
+      "endSeconds": 2030.72,
+      "text": "how do you catch an error you write a"
+    },
+    {
+      "startSeconds": 2028.12,
+      "endSeconds": 2033.76,
+      "text": "catch you attach a call back failure"
+    },
+    {
+      "startSeconds": 2030.72,
+      "endSeconds": 2036.12,
+      "text": "method using a catch right this will"
+    },
+    {
+      "startSeconds": 2033.76,
+      "endSeconds": 2038.24,
+      "text": "catch all the errors which are thrown"
+    },
+    {
+      "startSeconds": 2036.12,
+      "endSeconds": 2040.519,
+      "text": "right so it was throwing in inside the"
+    },
+    {
+      "startSeconds": 2038.24,
+      "endSeconds": 2043.519,
+      "text": "browser console but we gracefully"
+    },
+    {
+      "startSeconds": 2040.519,
+      "endSeconds": 2045.919,
+      "text": "handled it using this uh failure call"
+    },
+    {
+      "startSeconds": 2043.519,
+      "endSeconds": 2048,
+      "text": "back which was attached using catch"
+    },
+    {
+      "startSeconds": 2045.919,
+      "endSeconds": 2050.359,
+      "text": "function so you know you pick up the"
+    },
+    {
+      "startSeconds": 2048,
+      "endSeconds": 2052.679,
+      "text": "vocabulary also whenever I say okay so"
+    },
+    {
+      "startSeconds": 2050.359,
+      "endSeconds": 2055.76,
+      "text": "what I'm doing is I'm just always saying"
+    },
+    {
+      "startSeconds": 2052.679,
+      "endSeconds": 2058,
+      "text": "attach attach attach because you attach"
+    },
+    {
+      "startSeconds": 2055.76,
+      "endSeconds": 2060.359,
+      "text": "a call back function to it you don't"
+    },
+    {
+      "startSeconds": 2058,
+      "endSeconds": 2062.32,
+      "text": "pass in right it's not a call back"
+    },
+    {
+      "startSeconds": 2060.359,
+      "endSeconds": 2063.919,
+      "text": "function in a traditional way you just"
+    },
+    {
+      "startSeconds": 2062.32,
+      "endSeconds": 2066,
+      "text": "attach this call back function to our"
+    },
+    {
+      "startSeconds": 2063.919,
+      "endSeconds": 2067.72,
+      "text": "promise object okay so I'm just"
+    },
+    {
+      "startSeconds": 2066,
+      "endSeconds": 2069.76,
+      "text": "repeating it once again so that you pick"
+    },
+    {
+      "startSeconds": 2067.72,
+      "endSeconds": 2071.119,
+      "text": "pick that lingo up okay this is very"
+    },
+    {
+      "startSeconds": 2069.76,
+      "endSeconds": 2073.079,
+      "text": "important when you are explaining in"
+    },
+    {
+      "startSeconds": 2071.119,
+      "endSeconds": 2076.359,
+      "text": "interviews so you are just attaching a"
+    },
+    {
+      "startSeconds": 2073.079,
+      "endSeconds": 2079.32,
+      "text": "failure call back function using a catch"
+    },
+    {
+      "startSeconds": 2076.359,
+      "endSeconds": 2082.2,
+      "text": "to our promise object okay so this will"
+    },
+    {
+      "startSeconds": 2079.32,
+      "endSeconds": 2084.72,
+      "text": "handle our errors very gracefully in our"
+    },
+    {
+      "startSeconds": 2082.2,
+      "endSeconds": 2086.76,
+      "text": "program and what will happen is we just"
+    },
+    {
+      "startSeconds": 2084.72,
+      "endSeconds": 2089.919,
+      "text": "saw how we can chain things up we"
+    },
+    {
+      "startSeconds": 2086.76,
+      "endSeconds": 2092.72,
+      "text": "introduce proceed to payment and we also"
+    },
+    {
+      "startSeconds": 2089.919,
+      "endSeconds": 2095.599,
+      "text": "saw that okay every everywhere down the"
+    },
+    {
+      "startSeconds": 2092.72,
+      "endSeconds": 2097.72,
+      "text": "chain right we need to return stuff up"
+    },
+    {
+      "startSeconds": 2095.599,
+      "endSeconds": 2099.599,
+      "text": "right we need to use a return keyword"
+    },
+    {
+      "startSeconds": 2097.72,
+      "endSeconds": 2102.52,
+      "text": "whatever you will return from this then"
+    },
+    {
+      "startSeconds": 2099.599,
+      "endSeconds": 2104.32,
+      "text": "we'll move to the next part of the chain"
+    },
+    {
+      "startSeconds": 2102.52,
+      "endSeconds": 2106.52,
+      "text": "and we also saw that if there is a long"
+    },
+    {
+      "startSeconds": 2104.32,
+      "endSeconds": 2109,
+      "text": "chain and then we wanted to catch errors"
+    },
+    {
+      "startSeconds": 2106.52,
+      "endSeconds": 2110.52,
+      "text": "just for a specific portion of the chain"
+    },
+    {
+      "startSeconds": 2109,
+      "endSeconds": 2112.92,
+      "text": "what we'll do is we'll just place a"
+    },
+    {
+      "startSeconds": 2110.52,
+      "endSeconds": 2115.44,
+      "text": "catch method just below that portion"
+    },
+    {
+      "startSeconds": 2112.92,
+      "endSeconds": 2118.24,
+      "text": "okay that catch will handle all the"
+    },
+    {
+      "startSeconds": 2115.44,
+      "endSeconds": 2120.599,
+      "text": "errors on the top of it right and if we"
+    },
+    {
+      "startSeconds": 2118.24,
+      "endSeconds": 2123,
+      "text": "place a catch just at the last of the"
+    },
+    {
+      "startSeconds": 2120.599,
+      "endSeconds": 2124.88,
+      "text": "chain it will handle errors for all the"
+    },
+    {
+      "startSeconds": 2123,
+      "endSeconds": 2127.24,
+      "text": "top of the chain that is what I wanted"
+    },
+    {
+      "startSeconds": 2124.88,
+      "endSeconds": 2129.4,
+      "text": "to tell you about promises this is all"
+    },
+    {
+      "startSeconds": 2127.24,
+      "endSeconds": 2132.28,
+      "text": "about promise chaining this is all about"
+    },
+    {
+      "startSeconds": 2129.4,
+      "endSeconds": 2134.48,
+      "text": "handling errors and that is why I just"
+    },
+    {
+      "startSeconds": 2132.28,
+      "endSeconds": 2136.76,
+      "text": "love promises this is the beauty of"
+    },
+    {
+      "startSeconds": 2134.48,
+      "endSeconds": 2139.119,
+      "text": "promises so this was all in this video"
+    },
+    {
+      "startSeconds": 2136.76,
+      "endSeconds": 2141.44,
+      "text": "but in the next video we will go more"
+    },
+    {
+      "startSeconds": 2139.119,
+      "endSeconds": 2143.48,
+      "text": "deeper inside promises we will see that"
+    },
+    {
+      "startSeconds": 2141.44,
+      "endSeconds": 2145.52,
+      "text": "how if Suppose there are multiple"
+    },
+    {
+      "startSeconds": 2143.48,
+      "endSeconds": 2147.48,
+      "text": "promises then how we can combine all of"
+    },
+    {
+      "startSeconds": 2145.52,
+      "endSeconds": 2149.64,
+      "text": "them together suppose if there are two"
+    },
+    {
+      "startSeconds": 2147.48,
+      "endSeconds": 2151.96,
+      "text": "promises and we want to simultaneously"
+    },
+    {
+      "startSeconds": 2149.64,
+      "endSeconds": 2153.72,
+      "text": "call them and get the result we want to"
+    },
+    {
+      "startSeconds": 2151.96,
+      "endSeconds": 2156.079,
+      "text": "combine the result of two promises and"
+    },
+    {
+      "startSeconds": 2153.72,
+      "endSeconds": 2159.119,
+      "text": "get in and there are so many more"
+    },
+    {
+      "startSeconds": 2156.079,
+      "endSeconds": 2161.56,
+      "text": "advantages of promises we will cover all"
+    },
+    {
+      "startSeconds": 2159.119,
+      "endSeconds": 2163.88,
+      "text": "of them in the next video and you would"
+    },
+    {
+      "startSeconds": 2161.56,
+      "endSeconds": 2166.079,
+      "text": "just love it you would not underestimate"
+    },
+    {
+      "startSeconds": 2163.88,
+      "endSeconds": 2168.96,
+      "text": "promises basically you would see that"
+    },
+    {
+      "startSeconds": 2166.079,
+      "endSeconds": 2172,
+      "text": "okay how much life of developers it has"
+    },
+    {
+      "startSeconds": 2168.96,
+      "endSeconds": 2174.2,
+      "text": "made easy okay so this was all in this"
+    },
+    {
+      "startSeconds": 2172,
+      "endSeconds": 2176.359,
+      "text": "episode and now comes the part of"
+    },
+    {
+      "startSeconds": 2174.2,
+      "endSeconds": 2177.96,
+      "text": "homework so now let's talk about your"
+    },
+    {
+      "startSeconds": 2176.359,
+      "endSeconds": 2179.68,
+      "text": "homework okay so what you will have to"
+    },
+    {
+      "startSeconds": 2177.96,
+      "endSeconds": 2181.48,
+      "text": "do is you will have to create a similar"
+    },
+    {
+      "startSeconds": 2179.68,
+      "endSeconds": 2184.2,
+      "text": "kind of a promise chain so what you"
+    },
+    {
+      "startSeconds": 2181.48,
+      "endSeconds": 2185.96,
+      "text": "would be doing is uh we will again take"
+    },
+    {
+      "startSeconds": 2184.2,
+      "endSeconds": 2187.839,
+      "text": "a similar kind of an example where you"
+    },
+    {
+      "startSeconds": 2185.96,
+      "endSeconds": 2190.68,
+      "text": "will have a e-commerce website there is"
+    },
+    {
+      "startSeconds": 2187.839,
+      "endSeconds": 2192.64,
+      "text": "a cart and there are four apis okay so"
+    },
+    {
+      "startSeconds": 2190.68,
+      "endSeconds": 2194.8,
+      "text": "what are those apis first is create"
+    },
+    {
+      "startSeconds": 2192.64,
+      "endSeconds": 2197.44,
+      "text": "order API the other one is proceed to"
+    },
+    {
+      "startSeconds": 2194.8,
+      "endSeconds": 2199.68,
+      "text": "payment API the other one is show order"
+    },
+    {
+      "startSeconds": 2197.44,
+      "endSeconds": 2201.88,
+      "text": "summary okay so what happens is show"
+    },
+    {
+      "startSeconds": 2199.68,
+      "endSeconds": 2204.92,
+      "text": "order summary and what will and the"
+    },
+    {
+      "startSeconds": 2201.88,
+      "endSeconds": 2207.359,
+      "text": "another API is update Wallet balance"
+    },
+    {
+      "startSeconds": 2204.92,
+      "endSeconds": 2210.68,
+      "text": "okay so what happens is these are four"
+    },
+    {
+      "startSeconds": 2207.359,
+      "endSeconds": 2214.2,
+      "text": "async methods okay assume that these are"
+    },
+    {
+      "startSeconds": 2210.68,
+      "endSeconds": 2216.76,
+      "text": "four async methods async functions you"
+    },
+    {
+      "startSeconds": 2214.2,
+      "endSeconds": 2219.2,
+      "text": "would have to create a promise chain so"
+    },
+    {
+      "startSeconds": 2216.76,
+      "endSeconds": 2221.119,
+      "text": "what happens is this these four things"
+    },
+    {
+      "startSeconds": 2219.2,
+      "endSeconds": 2223.04,
+      "text": "happen one by one so first of all you"
+    },
+    {
+      "startSeconds": 2221.119,
+      "endSeconds": 2225.599,
+      "text": "have to create an order this is a"
+    },
+    {
+      "startSeconds": 2223.04,
+      "endSeconds": 2228.28,
+      "text": "promise all of these will return a"
+    },
+    {
+      "startSeconds": 2225.599,
+      "endSeconds": 2230.88,
+      "text": "promise okay first thing to note is you"
+    },
+    {
+      "startSeconds": 2228.28,
+      "endSeconds": 2233.839,
+      "text": "have a cart you have to do this step by"
+    },
+    {
+      "startSeconds": 2230.88,
+      "endSeconds": 2235.48,
+      "text": "step in all of these promise chains okay"
+    },
+    {
+      "startSeconds": 2233.839,
+      "endSeconds": 2237.4,
+      "text": "you have to do promise chaining first of"
+    },
+    {
+      "startSeconds": 2235.48,
+      "endSeconds": 2239.079,
+      "text": "all you will create an order then with"
+    },
+    {
+      "startSeconds": 2237.4,
+      "endSeconds": 2241,
+      "text": "the order ID you would proceed to"
+    },
+    {
+      "startSeconds": 2239.079,
+      "endSeconds": 2243.119,
+      "text": "payment with the payment info you would"
+    },
+    {
+      "startSeconds": 2241,
+      "endSeconds": 2245.28,
+      "text": "show order summary and once the order"
+    },
+    {
+      "startSeconds": 2243.119,
+      "endSeconds": 2246.96,
+      "text": "summary is shown with the Wallet balance"
+    },
+    {
+      "startSeconds": 2245.28,
+      "endSeconds": 2249,
+      "text": "you will have to update the Wallet"
+    },
+    {
+      "startSeconds": 2246.96,
+      "endSeconds": 2250.96,
+      "text": "balance on the the screen okay so you"
+    },
+    {
+      "startSeconds": 2249,
+      "endSeconds": 2254.76,
+      "text": "have to kind of write a dummy code for"
+    },
+    {
+      "startSeconds": 2250.96,
+      "endSeconds": 2256.76,
+      "text": "this and along with consuming them in"
+    },
+    {
+      "startSeconds": 2254.76,
+      "endSeconds": 2259.079,
+      "text": "such fashion in This Promise chain"
+    },
+    {
+      "startSeconds": 2256.76,
+      "endSeconds": 2261.599,
+      "text": "fashion and you would have to also"
+    },
+    {
+      "startSeconds": 2259.079,
+      "endSeconds": 2264.4,
+      "text": "handle error okay so how would you write"
+    },
+    {
+      "startSeconds": 2261.599,
+      "endSeconds": 2266.64,
+      "text": "the code okay I want to see your code"
+    },
+    {
+      "startSeconds": 2264.4,
+      "endSeconds": 2269.56,
+      "text": "just write it down I know this is a"
+    },
+    {
+      "startSeconds": 2266.64,
+      "endSeconds": 2272.079,
+      "text": "lendy homework but this promised topic"
+    },
+    {
+      "startSeconds": 2269.56,
+      "endSeconds": 2274.68,
+      "text": "deserves it this is a very important"
+    },
+    {
+      "startSeconds": 2272.079,
+      "endSeconds": 2276.56,
+      "text": "topic and please go do your homework"
+    },
+    {
+      "startSeconds": 2274.68,
+      "endSeconds": 2278.4,
+      "text": "paste your code down there in the"
+    },
+    {
+      "startSeconds": 2276.56,
+      "endSeconds": 2280.16,
+      "text": "comments I would love to see it I would"
+    },
+    {
+      "startSeconds": 2278.4,
+      "endSeconds": 2282.52,
+      "text": "read your code I would give you a heart"
+    },
+    {
+      "startSeconds": 2280.16,
+      "endSeconds": 2284.56,
+      "text": "if I really like it also write down in"
+    },
+    {
+      "startSeconds": 2282.52,
+      "endSeconds": 2286.96,
+      "text": "comments are you liking this technical"
+    },
+    {
+      "startSeconds": 2284.56,
+      "endSeconds": 2289.44,
+      "text": "discussion I'm not sure if I'm diving"
+    },
+    {
+      "startSeconds": 2286.96,
+      "endSeconds": 2291.119,
+      "text": "too much deep inside things or I should"
+    },
+    {
+      "startSeconds": 2289.44,
+      "endSeconds": 2292.839,
+      "text": "just cover basic things because the"
+    },
+    {
+      "startSeconds": 2291.119,
+      "endSeconds": 2295.28,
+      "text": "videos are getting long tell me your"
+    },
+    {
+      "startSeconds": 2292.839,
+      "endSeconds": 2297.04,
+      "text": "feedback okay I need your feedback are"
+    },
+    {
+      "startSeconds": 2295.28,
+      "endSeconds": 2298.68,
+      "text": "you liking these examples should I make"
+    },
+    {
+      "startSeconds": 2297.04,
+      "endSeconds": 2301.24,
+      "text": "lengthy videos or should I make just"
+    },
+    {
+      "startSeconds": 2298.68,
+      "endSeconds": 2303.16,
+      "text": "short videos covering like small things"
+    },
+    {
+      "startSeconds": 2301.24,
+      "endSeconds": 2304.839,
+      "text": "okay I need your feedback please write"
+    },
+    {
+      "startSeconds": 2303.16,
+      "endSeconds": 2307.64,
+      "text": "it down in comments and also do your"
+    },
+    {
+      "startSeconds": 2304.839,
+      "endSeconds": 2309.44,
+      "text": "homework and see you in the next episode"
+    },
+    {
+      "startSeconds": 2307.64,
+      "endSeconds": 2311.96,
+      "text": "a lot more fun exciting things about"
+    },
+    {
+      "startSeconds": 2309.44,
+      "endSeconds": 2313.48,
+      "text": "promises are coming see you there and"
+    },
+    {
+      "startSeconds": 2311.96,
+      "endSeconds": 2318,
+      "text": "thank you for watching this episode of"
+    },
+    {
+      "startSeconds": 2313.48,
+      "endSeconds": 2318,
+      "text": "Namaste JavaScript season 2"
+    },
+    {
+      "startSeconds": 2322.2,
+      "endSeconds": 2335.969,
+      "text": "[Music]"
+    },
+    {
+      "startSeconds": 2338.4,
+      "endSeconds": 2341.4,
+      "text": "w"
+    }
+  ]
+}

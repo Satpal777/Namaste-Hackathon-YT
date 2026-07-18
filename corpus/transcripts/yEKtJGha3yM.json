@@ -1,0 +1,1812 @@
+{
+  "videoId": "yEKtJGha3yM",
+  "videoTitle": "Callback Hell | Ep  01 Season 02 - Namaste JavaScript",
+  "languageCode": "en",
+  "segments": [
+    {
+      "startSeconds": 0.56,
+      "endSeconds": 6.64,
+      "text": "Ho ho ho. I am back again to teach you"
+    },
+    {
+      "startSeconds": 3.679,
+      "endSeconds": 9.44,
+      "text": "here on my channel and I'm super excited"
+    },
+    {
+      "startSeconds": 6.64,
+      "endSeconds": 11.28,
+      "text": "right now. Let's just begin. This is the"
+    },
+    {
+      "startSeconds": 9.44,
+      "endSeconds": 14.799,
+      "text": "first episode of this series and we will"
+    },
+    {
+      "startSeconds": 11.28,
+      "endSeconds": 17.44,
+      "text": "keep it very simple and sweet. We will"
+    },
+    {
+      "startSeconds": 14.799,
+      "endSeconds": 20.24,
+      "text": "just cover two topics in this episode."
+    },
+    {
+      "startSeconds": 17.44,
+      "endSeconds": 22.48,
+      "text": "First one is the good part of callbacks"
+    },
+    {
+      "startSeconds": 20.24,
+      "endSeconds": 24.8,
+      "text": "and the second topic is the bad part of"
+    },
+    {
+      "startSeconds": 22.48,
+      "endSeconds": 27.119,
+      "text": "callbacks. In the good parts, we will"
+    },
+    {
+      "startSeconds": 24.8,
+      "endSeconds": 29.279,
+      "text": "see that how callbacks are super"
+    },
+    {
+      "startSeconds": 27.119,
+      "endSeconds": 31.359,
+      "text": "important while writing asynchronous"
+    },
+    {
+      "startSeconds": 29.279,
+      "endSeconds": 33.28,
+      "text": "code in JavaScript. And in the bad"
+    },
+    {
+      "startSeconds": 31.359,
+      "endSeconds": 35.92,
+      "text": "parts, we will see that using callbacks"
+    },
+    {
+      "startSeconds": 33.28,
+      "endSeconds": 37.84,
+      "text": "can let us face a lot of issues. There"
+    },
+    {
+      "startSeconds": 35.92,
+      "endSeconds": 40.239,
+      "text": "are two major issues. We will cover both"
+    },
+    {
+      "startSeconds": 37.84,
+      "endSeconds": 42.32,
+      "text": "of them. The first one is call back hell"
+    },
+    {
+      "startSeconds": 40.239,
+      "endSeconds": 45.44,
+      "text": "and the second one is inversion of"
+    },
+    {
+      "startSeconds": 42.32,
+      "endSeconds": 47.6,
+      "text": "control. Yes, these two issues are"
+    },
+    {
+      "startSeconds": 45.44,
+      "endSeconds": 49.2,
+      "text": "really very important. And you know if"
+    },
+    {
+      "startSeconds": 47.6,
+      "endSeconds": 51.76,
+      "text": "you understand these two issues very"
+    },
+    {
+      "startSeconds": 49.2,
+      "endSeconds": 53.76,
+      "text": "well then understanding promises in the"
+    },
+    {
+      "startSeconds": 51.76,
+      "endSeconds": 56.239,
+      "text": "upcoming episodes will become very"
+    },
+    {
+      "startSeconds": 53.76,
+      "endSeconds": 58.48,
+      "text": "simple for you. So please I request your"
+    },
+    {
+      "startSeconds": 56.239,
+      "endSeconds": 62.399,
+      "text": "attention and just keep watching this"
+    },
+    {
+      "startSeconds": 58.48,
+      "endSeconds": 64,
+      "text": "episode of Namaste JavaScript season 2."
+    },
+    {
+      "startSeconds": 62.399,
+      "endSeconds": 66.32,
+      "text": "JavaScript is a synchronous"
+    },
+    {
+      "startSeconds": 64,
+      "endSeconds": 69.119,
+      "text": "singlethreaded language and it can just"
+    },
+    {
+      "startSeconds": 66.32,
+      "endSeconds": 71.36,
+      "text": "do one thing at a time. Remember it has"
+    },
+    {
+      "startSeconds": 69.119,
+      "endSeconds": 74,
+      "text": "just one call stack and it can execute"
+    },
+    {
+      "startSeconds": 71.36,
+      "endSeconds": 76.4,
+      "text": "just one thing at a time and whatever"
+    },
+    {
+      "startSeconds": 74,
+      "endSeconds": 78.32,
+      "text": "code you give it to JavaScript will be"
+    },
+    {
+      "startSeconds": 76.4,
+      "endSeconds": 80.96,
+      "text": "quickly executed by the JavaScript"
+    },
+    {
+      "startSeconds": 78.32,
+      "endSeconds": 82.72,
+      "text": "engine. It does not wait for anything."
+    },
+    {
+      "startSeconds": 80.96,
+      "endSeconds": 85.2,
+      "text": "So suppose if we have this code over"
+    },
+    {
+      "startSeconds": 82.72,
+      "endSeconds": 87.52,
+      "text": "here. So this code will be quickly"
+    },
+    {
+      "startSeconds": 85.2,
+      "endSeconds": 89.68,
+      "text": "executed by JavaScript engine and it"
+    },
+    {
+      "startSeconds": 87.52,
+      "endSeconds": 92.799,
+      "text": "will just quickly print on the console"
+    },
+    {
+      "startSeconds": 89.68,
+      "endSeconds": 95.52,
+      "text": "these three statements. Let us see that"
+    },
+    {
+      "startSeconds": 92.799,
+      "endSeconds": 97.84,
+      "text": "if I save here. See namaste JavaScript"
+    },
+    {
+      "startSeconds": 95.52,
+      "endSeconds": 100.32,
+      "text": "and season 2. So it just quickly prints"
+    },
+    {
+      "startSeconds": 97.84,
+      "endSeconds": 103.68,
+      "text": "it. And remember time, tide and"
+    },
+    {
+      "startSeconds": 100.32,
+      "endSeconds": 105.759,
+      "text": "javascript waits for none. But what if"
+    },
+    {
+      "startSeconds": 103.68,
+      "endSeconds": 108.079,
+      "text": "we really need to wait for something?"
+    },
+    {
+      "startSeconds": 105.759,
+      "endSeconds": 110.399,
+      "text": "Suppose if in this line number five,"
+    },
+    {
+      "startSeconds": 108.079,
+      "endSeconds": 114.64,
+      "text": "suppose if we had to execute this"
+    },
+    {
+      "startSeconds": 110.399,
+      "endSeconds": 117.36,
+      "text": "console log javascript after 5 seconds."
+    },
+    {
+      "startSeconds": 114.64,
+      "endSeconds": 120.24,
+      "text": "How would we do that? So now here comes"
+    },
+    {
+      "startSeconds": 117.36,
+      "endSeconds": 123.439,
+      "text": "the hero of our episode which is the"
+    },
+    {
+      "startSeconds": 120.24,
+      "endSeconds": 125.52,
+      "text": "callbacks. So yes, what we will do is"
+    },
+    {
+      "startSeconds": 123.439,
+      "endSeconds": 129.039,
+      "text": "suppose if we have to execute this line"
+    },
+    {
+      "startSeconds": 125.52,
+      "endSeconds": 131.52,
+      "text": "number five after 5 seconds we will just"
+    },
+    {
+      "startSeconds": 129.039,
+      "endSeconds": 134.08,
+      "text": "wrap it inside a call back function."
+    },
+    {
+      "startSeconds": 131.52,
+      "endSeconds": 136.56,
+      "text": "Let's create a function and what we will"
+    },
+    {
+      "startSeconds": 134.08,
+      "endSeconds": 139.599,
+      "text": "do we will just wrap this code inside a"
+    },
+    {
+      "startSeconds": 136.56,
+      "endSeconds": 143.36,
+      "text": "call back function and we will pass it"
+    },
+    {
+      "startSeconds": 139.599,
+      "endSeconds": 147.08,
+      "text": "to the set time out isn't it? So let's"
+    },
+    {
+      "startSeconds": 143.36,
+      "endSeconds": 147.08,
+      "text": "just quickly do that."
+    },
+    {
+      "startSeconds": 149.2,
+      "endSeconds": 154.08,
+      "text": "So now we have this call back function"
+    },
+    {
+      "startSeconds": 151.52,
+      "endSeconds": 157.2,
+      "text": "inside the set timeout and we will also"
+    },
+    {
+      "startSeconds": 154.08,
+      "endSeconds": 159.36,
+      "text": "pass 5 5,000 milliseconds in it. Now"
+    },
+    {
+      "startSeconds": 157.2,
+      "endSeconds": 162.319,
+      "text": "listen to me very carefully. We gave"
+    },
+    {
+      "startSeconds": 159.36,
+      "endSeconds": 165.36,
+      "text": "this call back function to set time out."
+    },
+    {
+      "startSeconds": 162.319,
+      "endSeconds": 168.239,
+      "text": "Now it is the job of set timeout to"
+    },
+    {
+      "startSeconds": 165.36,
+      "endSeconds": 170.48,
+      "text": "execute this call back function after 5"
+    },
+    {
+      "startSeconds": 168.239,
+      "endSeconds": 172.48,
+      "text": "seconds. So using call back is a"
+    },
+    {
+      "startSeconds": 170.48,
+      "endSeconds": 175.68,
+      "text": "powerful way to do asynchronous thing in"
+    },
+    {
+      "startSeconds": 172.48,
+      "endSeconds": 178,
+      "text": "JavaScript. Right? So we can take a code"
+    },
+    {
+      "startSeconds": 175.68,
+      "endSeconds": 180.16,
+      "text": "piece of code inside a function and we"
+    },
+    {
+      "startSeconds": 178,
+      "endSeconds": 182.48,
+      "text": "can just pass it as a call back which"
+    },
+    {
+      "startSeconds": 180.16,
+      "endSeconds": 184.8,
+      "text": "can be executed later point of time"
+    },
+    {
+      "startSeconds": 182.48,
+      "endSeconds": 187.12,
+      "text": "right and our job is done. So that's how"
+    },
+    {
+      "startSeconds": 184.8,
+      "endSeconds": 189.599,
+      "text": "callback plays a very important role in"
+    },
+    {
+      "startSeconds": 187.12,
+      "endSeconds": 191.599,
+      "text": "writing asynchronous code in JavaScript."
+    },
+    {
+      "startSeconds": 189.599,
+      "endSeconds": 193.44,
+      "text": "So this was a very easy example. Let us"
+    },
+    {
+      "startSeconds": 191.599,
+      "endSeconds": 195.36,
+      "text": "take one more interesting example and"
+    },
+    {
+      "startSeconds": 193.44,
+      "endSeconds": 197.44,
+      "text": "you will love it. So suppose we are"
+    },
+    {
+      "startSeconds": 195.36,
+      "endSeconds": 199.36,
+      "text": "building a e-commerce website and you"
+    },
+    {
+      "startSeconds": 197.44,
+      "endSeconds": 201.44,
+      "text": "know e-commerce website can't exist"
+    },
+    {
+      "startSeconds": 199.36,
+      "endSeconds": 204,
+      "text": "without a cart, isn't it? So, let's"
+    },
+    {
+      "startSeconds": 201.44,
+      "endSeconds": 206.48,
+      "text": "create a cart. And this is an array."
+    },
+    {
+      "startSeconds": 204,
+      "endSeconds": 208.4,
+      "text": "Array of items that we add to cart. So,"
+    },
+    {
+      "startSeconds": 206.48,
+      "endSeconds": 211.76,
+      "text": "let's just quickly add some dummy items"
+    },
+    {
+      "startSeconds": 208.4,
+      "endSeconds": 214.08,
+      "text": "into the cart. Um, let's add shoes,"
+    },
+    {
+      "startSeconds": 211.76,
+      "endSeconds": 219.12,
+      "text": "right? And what else should we buy?"
+    },
+    {
+      "startSeconds": 214.08,
+      "endSeconds": 222.239,
+      "text": "Let's add uh pants and let's add uh ka"
+    },
+    {
+      "startSeconds": 219.12,
+      "endSeconds": 223.92,
+      "text": "as well. Okay, why not? So, these as"
+    },
+    {
+      "startSeconds": 222.239,
+      "endSeconds": 226.239,
+      "text": "card for the sake of simplicity, I've"
+    },
+    {
+      "startSeconds": 223.92,
+      "endSeconds": 227.92,
+      "text": "taken these as strings, but you know how"
+    },
+    {
+      "startSeconds": 226.239,
+      "endSeconds": 230.879,
+      "text": "it works in real world, right? Big"
+    },
+    {
+      "startSeconds": 227.92,
+      "endSeconds": 233.68,
+      "text": "objects. Yep. So what we will do now"
+    },
+    {
+      "startSeconds": 230.879,
+      "endSeconds": 236,
+      "text": "once we have this items into card now"
+    },
+    {
+      "startSeconds": 233.68,
+      "endSeconds": 238.56,
+      "text": "how how e-commerce website works. So"
+    },
+    {
+      "startSeconds": 236,
+      "endSeconds": 241.36,
+      "text": "first we need to create an order and"
+    },
+    {
+      "startSeconds": 238.56,
+      "endSeconds": 244.4,
+      "text": "then we proceed to payment isn't it? So"
+    },
+    {
+      "startSeconds": 241.36,
+      "endSeconds": 247.28,
+      "text": "how would we write that in code? So"
+    },
+    {
+      "startSeconds": 244.4,
+      "endSeconds": 250.4,
+      "text": "suppose if we have access to two backend"
+    },
+    {
+      "startSeconds": 247.28,
+      "endSeconds": 254.799,
+      "text": "APIs one is the create order API. So"
+    },
+    {
+      "startSeconds": 250.4,
+      "endSeconds": 256.959,
+      "text": "let's call it as API dot create order"
+    },
+    {
+      "startSeconds": 254.799,
+      "endSeconds": 260,
+      "text": "create order. So suppose if we have this"
+    },
+    {
+      "startSeconds": 256.959,
+      "endSeconds": 263.759,
+      "text": "API create order that creates an order"
+    },
+    {
+      "startSeconds": 260,
+      "endSeconds": 267.759,
+      "text": "right and another API which can be"
+    },
+    {
+      "startSeconds": 263.759,
+      "endSeconds": 270.08,
+      "text": "proceed to payment. Okay. So payment"
+    },
+    {
+      "startSeconds": 267.759,
+      "endSeconds": 272.4,
+      "text": "right so after we have created a order"
+    },
+    {
+      "startSeconds": 270.08,
+      "endSeconds": 274.96,
+      "text": "we will just proceed to payment. So with"
+    },
+    {
+      "startSeconds": 272.4,
+      "endSeconds": 277.44,
+      "text": "these two backend APIs so how it works"
+    },
+    {
+      "startSeconds": 274.96,
+      "endSeconds": 280.4,
+      "text": "is first of all we need to create an"
+    },
+    {
+      "startSeconds": 277.44,
+      "endSeconds": 283.04,
+      "text": "order by using create order API and once"
+    },
+    {
+      "startSeconds": 280.4,
+      "endSeconds": 284.72,
+      "text": "the order is created then only we can"
+    },
+    {
+      "startSeconds": 283.04,
+      "endSeconds": 286.56,
+      "text": "proceed to payment. there is a"
+    },
+    {
+      "startSeconds": 284.72,
+      "endSeconds": 288.8,
+      "text": "dependency between them. So how do we"
+    },
+    {
+      "startSeconds": 286.56,
+      "endSeconds": 290.96,
+      "text": "manage that dependency in our code?"
+    },
+    {
+      "startSeconds": 288.8,
+      "endSeconds": 294.32,
+      "text": "Because this is an async operation,"
+    },
+    {
+      "startSeconds": 290.96,
+      "endSeconds": 297.759,
+      "text": "isn't it? So here call back can come"
+    },
+    {
+      "startSeconds": 294.32,
+      "endSeconds": 300.56,
+      "text": "into picture and call back can help us"
+    },
+    {
+      "startSeconds": 297.759,
+      "endSeconds": 302.4,
+      "text": "write code for this kind of behavior. So"
+    },
+    {
+      "startSeconds": 300.56,
+      "endSeconds": 304.88,
+      "text": "let us just see a very common pattern"
+    },
+    {
+      "startSeconds": 302.4,
+      "endSeconds": 307.44,
+      "text": "which we follow in programming. Right?"
+    },
+    {
+      "startSeconds": 304.88,
+      "endSeconds": 310.88,
+      "text": "So what we will do is we again will wrap"
+    },
+    {
+      "startSeconds": 307.44,
+      "endSeconds": 313.039,
+      "text": "our proceed to payment API inside a call"
+    },
+    {
+      "startSeconds": 310.88,
+      "endSeconds": 315.84,
+      "text": "back function. Let's just quickly do"
+    },
+    {
+      "startSeconds": 313.039,
+      "endSeconds": 318.56,
+      "text": "that. We created a call back function. A"
+    },
+    {
+      "startSeconds": 315.84,
+      "endSeconds": 320.24,
+      "text": "function right and we add this proceed"
+    },
+    {
+      "startSeconds": 318.56,
+      "endSeconds": 322.72,
+      "text": "to payment inside this call back"
+    },
+    {
+      "startSeconds": 320.24,
+      "endSeconds": 325.84,
+      "text": "function. And where will this call back"
+    },
+    {
+      "startSeconds": 322.72,
+      "endSeconds": 327.759,
+      "text": "function go? Can you guess? Yes. So we"
+    },
+    {
+      "startSeconds": 325.84,
+      "endSeconds": 330.639,
+      "text": "will take this call back function and we"
+    },
+    {
+      "startSeconds": 327.759,
+      "endSeconds": 334.16,
+      "text": "we will pass along with the cart items"
+    },
+    {
+      "startSeconds": 330.639,
+      "endSeconds": 336.88,
+      "text": "to this create order API. Isn't it? Does"
+    },
+    {
+      "startSeconds": 334.16,
+      "endSeconds": 339.759,
+      "text": "this make sense? So now how this code"
+    },
+    {
+      "startSeconds": 336.88,
+      "endSeconds": 341.84,
+      "text": "will be executed, right? So when"
+    },
+    {
+      "startSeconds": 339.759,
+      "endSeconds": 344,
+      "text": "JavaScript engine executes this piece of"
+    },
+    {
+      "startSeconds": 341.84,
+      "endSeconds": 346,
+      "text": "code, it will just call the create order"
+    },
+    {
+      "startSeconds": 344,
+      "endSeconds": 348.88,
+      "text": "API. And now listen to me very"
+    },
+    {
+      "startSeconds": 346,
+      "endSeconds": 350.96,
+      "text": "carefully. We have passed this call back"
+    },
+    {
+      "startSeconds": 348.88,
+      "endSeconds": 353.919,
+      "text": "function. We have given this call back"
+    },
+    {
+      "startSeconds": 350.96,
+      "endSeconds": 356.8,
+      "text": "function to create order API. Now it is"
+    },
+    {
+      "startSeconds": 353.919,
+      "endSeconds": 359.759,
+      "text": "the responsibility of create order API"
+    },
+    {
+      "startSeconds": 356.8,
+      "endSeconds": 362.72,
+      "text": "to create an order and then call this"
+    },
+    {
+      "startSeconds": 359.759,
+      "endSeconds": 365.68,
+      "text": "function back. That way we can handle"
+    },
+    {
+      "startSeconds": 362.72,
+      "endSeconds": 368.08,
+      "text": "async operations in JavaScript. Isn't it"
+    },
+    {
+      "startSeconds": 365.68,
+      "endSeconds": 370.319,
+      "text": "powerful? So now let's make things a"
+    },
+    {
+      "startSeconds": 368.08,
+      "endSeconds": 373.199,
+      "text": "little more complicated. So we created"
+    },
+    {
+      "startSeconds": 370.319,
+      "endSeconds": 376.16,
+      "text": "an order. Now after order is created, we"
+    },
+    {
+      "startSeconds": 373.199,
+      "endSeconds": 378.319,
+      "text": "proceeded to payment. Now what if after"
+    },
+    {
+      "startSeconds": 376.16,
+      "endSeconds": 380.72,
+      "text": "we proceed to payment, after the payment"
+    },
+    {
+      "startSeconds": 378.319,
+      "endSeconds": 383.759,
+      "text": "is successful, we need to show a order"
+    },
+    {
+      "startSeconds": 380.72,
+      "endSeconds": 387.039,
+      "text": "summary page. Okay. And for that suppose"
+    },
+    {
+      "startSeconds": 383.759,
+      "endSeconds": 389.84,
+      "text": "we have another API show order summary."
+    },
+    {
+      "startSeconds": 387.039,
+      "endSeconds": 392.24,
+      "text": "Okay. So how do we do that? We have to"
+    },
+    {
+      "startSeconds": 389.84,
+      "endSeconds": 394.639,
+      "text": "call this API only after we have done"
+    },
+    {
+      "startSeconds": 392.24,
+      "endSeconds": 396.72,
+      "text": "with the payments. So again here a call"
+    },
+    {
+      "startSeconds": 394.639,
+      "endSeconds": 399.12,
+      "text": "back function comes into picture. We"
+    },
+    {
+      "startSeconds": 396.72,
+      "endSeconds": 402.56,
+      "text": "will just wrap it inside a call back"
+    },
+    {
+      "startSeconds": 399.12,
+      "endSeconds": 405.6,
+      "text": "function this API over here. And what we"
+    },
+    {
+      "startSeconds": 402.56,
+      "endSeconds": 408.96,
+      "text": "will do now we will pass this call back"
+    },
+    {
+      "startSeconds": 405.6,
+      "endSeconds": 412.88,
+      "text": "function into where? Where will we pass?"
+    },
+    {
+      "startSeconds": 408.96,
+      "endSeconds": 416.319,
+      "text": "Yes into proceed to payments. Okay. So"
+    },
+    {
+      "startSeconds": 412.88,
+      "endSeconds": 419.28,
+      "text": "now again listen to me very carefully."
+    },
+    {
+      "startSeconds": 416.319,
+      "endSeconds": 421.52,
+      "text": "We passed we gave this function this"
+    },
+    {
+      "startSeconds": 419.28,
+      "endSeconds": 423.919,
+      "text": "call back function to proceed to payment"
+    },
+    {
+      "startSeconds": 421.52,
+      "endSeconds": 426.56,
+      "text": "API. Now it is the responsibility of"
+    },
+    {
+      "startSeconds": 423.919,
+      "endSeconds": 429.199,
+      "text": "proceed to payment API to complete the"
+    },
+    {
+      "startSeconds": 426.56,
+      "endSeconds": 431.28,
+      "text": "payment and call this function back."
+    },
+    {
+      "startSeconds": 429.199,
+      "endSeconds": 433.52,
+      "text": "That's how we can manage this dependency"
+    },
+    {
+      "startSeconds": 431.28,
+      "endSeconds": 436.639,
+      "text": "between this whole flow which happens"
+    },
+    {
+      "startSeconds": 433.52,
+      "endSeconds": 438.72,
+      "text": "one after the other. But do you see a"
+    },
+    {
+      "startSeconds": 436.639,
+      "endSeconds": 441.52,
+      "text": "problem over here? Let me show you a"
+    },
+    {
+      "startSeconds": 438.72,
+      "endSeconds": 444.319,
+      "text": "very important problem that we can face"
+    },
+    {
+      "startSeconds": 441.52,
+      "endSeconds": 446.319,
+      "text": "right. Oh my god, a honeybee just passed"
+    },
+    {
+      "startSeconds": 444.319,
+      "endSeconds": 448.88,
+      "text": "from here."
+    },
+    {
+      "startSeconds": 446.319,
+      "endSeconds": 451.039,
+      "text": "But yes, let us continue with the code."
+    },
+    {
+      "startSeconds": 448.88,
+      "endSeconds": 453.039,
+      "text": "Hope it doesn't come back. So now we"
+    },
+    {
+      "startSeconds": 451.039,
+      "endSeconds": 454.56,
+      "text": "have created the order. We have done the"
+    },
+    {
+      "startSeconds": 453.039,
+      "endSeconds": 456.8,
+      "text": "payment. We have shown the order"
+    },
+    {
+      "startSeconds": 454.56,
+      "endSeconds": 459.199,
+      "text": "summary. After that suppose if we also"
+    },
+    {
+      "startSeconds": 456.8,
+      "endSeconds": 462.639,
+      "text": "want to update the wallet. How would we"
+    },
+    {
+      "startSeconds": 459.199,
+      "endSeconds": 464.88,
+      "text": "do that? So now we again have a API"
+    },
+    {
+      "startSeconds": 462.639,
+      "endSeconds": 468.639,
+      "text": "right? We have again have a API to"
+    },
+    {
+      "startSeconds": 464.88,
+      "endSeconds": 471.12,
+      "text": "update wallet. Right? So that happens"
+    },
+    {
+      "startSeconds": 468.639,
+      "endSeconds": 472.96,
+      "text": "the wallet will be updated only after we"
+    },
+    {
+      "startSeconds": 471.12,
+      "endSeconds": 475.68,
+      "text": "have shown the order summary. So how"
+    },
+    {
+      "startSeconds": 472.96,
+      "endSeconds": 478.56,
+      "text": "would we write that code? Again we will"
+    },
+    {
+      "startSeconds": 475.68,
+      "endSeconds": 480.319,
+      "text": "have a call back function over here and"
+    },
+    {
+      "startSeconds": 478.56,
+      "endSeconds": 482.8,
+      "text": "where where we will pass this call back"
+    },
+    {
+      "startSeconds": 480.319,
+      "endSeconds": 484.879,
+      "text": "function. You would have already got"
+    },
+    {
+      "startSeconds": 482.8,
+      "endSeconds": 487.039,
+      "text": "bored seeing me doing this again and"
+    },
+    {
+      "startSeconds": 484.879,
+      "endSeconds": 490.319,
+      "text": "again. We will pass this inside show"
+    },
+    {
+      "startSeconds": 487.039,
+      "endSeconds": 493.12,
+      "text": "order summary. Okay. So do you now see a"
+    },
+    {
+      "startSeconds": 490.319,
+      "endSeconds": 495.68,
+      "text": "problem with this code? Yes. So when we"
+    },
+    {
+      "startSeconds": 493.12,
+      "endSeconds": 498.4,
+      "text": "have a large code base and there are so"
+    },
+    {
+      "startSeconds": 495.68,
+      "endSeconds": 500.56,
+      "text": "many APIs here and there and APIs are"
+    },
+    {
+      "startSeconds": 498.4,
+      "endSeconds": 502.56,
+      "text": "dependent on one after the other. So"
+    },
+    {
+      "startSeconds": 500.56,
+      "endSeconds": 504.72,
+      "text": "what happens is we end up falling into"
+    },
+    {
+      "startSeconds": 502.56,
+      "endSeconds": 507.12,
+      "text": "this call back hell. What is a call back"
+    },
+    {
+      "startSeconds": 504.72,
+      "endSeconds": 509.84,
+      "text": "hell? So one call back inside another"
+    },
+    {
+      "startSeconds": 507.12,
+      "endSeconds": 512.399,
+      "text": "call back inside another API or some if"
+    },
+    {
+      "startSeconds": 509.84,
+      "endSeconds": 515.36,
+      "text": "statements and random things happening"
+    },
+    {
+      "startSeconds": 512.399,
+      "endSeconds": 517.279,
+      "text": "makes this call back hell and our code"
+    },
+    {
+      "startSeconds": 515.36,
+      "endSeconds": 520,
+      "text": "starts to grow horizontally instead of"
+    },
+    {
+      "startSeconds": 517.279,
+      "endSeconds": 523.68,
+      "text": "vertically. This is a call back hell"
+    },
+    {
+      "startSeconds": 520,
+      "endSeconds": 525.76,
+      "text": "right and you know this code this type"
+    },
+    {
+      "startSeconds": 523.68,
+      "endSeconds": 527.839,
+      "text": "of code structure is like very"
+    },
+    {
+      "startSeconds": 525.76,
+      "endSeconds": 530,
+      "text": "unmaintainable. You can't maintain it"
+    },
+    {
+      "startSeconds": 527.839,
+      "endSeconds": 532.08,
+      "text": "properly. It's very tough to manage all"
+    },
+    {
+      "startSeconds": 530,
+      "endSeconds": 534.8,
+      "text": "this. And trust me I have seen these"
+    },
+    {
+      "startSeconds": 532.08,
+      "endSeconds": 538.08,
+      "text": "type of call back hell a lot written on"
+    },
+    {
+      "startSeconds": 534.8,
+      "endSeconds": 542,
+      "text": "production code in very big companies."
+    },
+    {
+      "startSeconds": 538.08,
+      "endSeconds": 544.08,
+      "text": "Yeah super cool developers right?"
+    },
+    {
+      "startSeconds": 542,
+      "endSeconds": 546.48,
+      "text": "So this is the first problem with using"
+    },
+    {
+      "startSeconds": 544.08,
+      "endSeconds": 548.56,
+      "text": "callbacks that is call back hell and"
+    },
+    {
+      "startSeconds": 546.48,
+      "endSeconds": 551.2,
+      "text": "this structure is also known as pyramid"
+    },
+    {
+      "startSeconds": 548.56,
+      "endSeconds": 553.279,
+      "text": "of doom. Okay you can google it. So it"
+    },
+    {
+      "startSeconds": 551.2,
+      "endSeconds": 557.04,
+      "text": "is because of this structure it is known"
+    },
+    {
+      "startSeconds": 553.279,
+      "endSeconds": 559.44,
+      "text": "as pyramid of doom in programming."
+    },
+    {
+      "startSeconds": 557.04,
+      "endSeconds": 563.68,
+      "text": "So now we saw the first problem but now"
+    },
+    {
+      "startSeconds": 559.44,
+      "endSeconds": 565.68,
+      "text": "I need your utmost attention because now"
+    },
+    {
+      "startSeconds": 563.68,
+      "endSeconds": 567.92,
+      "text": "we are going to discuss the most"
+    },
+    {
+      "startSeconds": 565.68,
+      "endSeconds": 570.959,
+      "text": "important part of this episode that is"
+    },
+    {
+      "startSeconds": 567.92,
+      "endSeconds": 572.72,
+      "text": "the inversion of control and trust me"
+    },
+    {
+      "startSeconds": 570.959,
+      "endSeconds": 574.8,
+      "text": "this is really very important to"
+    },
+    {
+      "startSeconds": 572.72,
+      "endSeconds": 577.36,
+      "text": "understand promises as we go ahead."
+    },
+    {
+      "startSeconds": 574.8,
+      "endSeconds": 579.68,
+      "text": "Okay. So please please pay attention"
+    },
+    {
+      "startSeconds": 577.36,
+      "endSeconds": 582.399,
+      "text": "please give me just two more minutes and"
+    },
+    {
+      "startSeconds": 579.68,
+      "endSeconds": 585.2,
+      "text": "I would teach you this. Okay. So let's"
+    },
+    {
+      "startSeconds": 582.399,
+      "endSeconds": 587.279,
+      "text": "study inversion of control. Inversion of"
+    },
+    {
+      "startSeconds": 585.2,
+      "endSeconds": 589.6,
+      "text": "control is another problem we see while"
+    },
+    {
+      "startSeconds": 587.279,
+      "endSeconds": 591.76,
+      "text": "using callbacks and Kyle Simpson"
+    },
+    {
+      "startSeconds": 589.6,
+      "endSeconds": 594.48,
+      "text": "explains it very beautifully in you"
+    },
+    {
+      "startSeconds": 591.76,
+      "endSeconds": 596.72,
+      "text": "don't knowjs. So inversion of control is"
+    },
+    {
+      "startSeconds": 594.48,
+      "endSeconds": 599.68,
+      "text": "like that you lose the control of your"
+    },
+    {
+      "startSeconds": 596.72,
+      "endSeconds": 601.839,
+      "text": "code when we are using callbacks."
+    },
+    {
+      "startSeconds": 599.68,
+      "endSeconds": 603.839,
+      "text": "Now it might sound a little complicated"
+    },
+    {
+      "startSeconds": 601.839,
+      "endSeconds": 605.839,
+      "text": "that how do we lose control over our"
+    },
+    {
+      "startSeconds": 603.839,
+      "endSeconds": 607.839,
+      "text": "code but let me show you with a code"
+    },
+    {
+      "startSeconds": 605.839,
+      "endSeconds": 610.64,
+      "text": "example. We will use the same example"
+    },
+    {
+      "startSeconds": 607.839,
+      "endSeconds": 612.48,
+      "text": "which is here. Okay. So let me just get"
+    },
+    {
+      "startSeconds": 610.64,
+      "endSeconds": 614.959,
+      "text": "rid of this call back function first of"
+    },
+    {
+      "startSeconds": 612.48,
+      "endSeconds": 617.44,
+      "text": "all. So now what is happening in this"
+    },
+    {
+      "startSeconds": 614.959,
+      "endSeconds": 619.6,
+      "text": "code is we are creating a order and now"
+    },
+    {
+      "startSeconds": 617.44,
+      "endSeconds": 622.64,
+      "text": "listen to me very carefully. What we did"
+    },
+    {
+      "startSeconds": 619.6,
+      "endSeconds": 625.6,
+      "text": "here was we take this call back function"
+    },
+    {
+      "startSeconds": 622.64,
+      "endSeconds": 628.8,
+      "text": "and we give it to create order API and"
+    },
+    {
+      "startSeconds": 625.6,
+      "endSeconds": 631.2,
+      "text": "now we as a developer are sitting back"
+    },
+    {
+      "startSeconds": 628.8,
+      "endSeconds": 633.279,
+      "text": "relaxed and we are blindly trusting"
+    },
+    {
+      "startSeconds": 631.2,
+      "endSeconds": 636.16,
+      "text": "create order API. How we are blindly"
+    },
+    {
+      "startSeconds": 633.279,
+      "endSeconds": 639.36,
+      "text": "trusting? We gave this call back"
+    },
+    {
+      "startSeconds": 636.16,
+      "endSeconds": 641.76,
+      "text": "function to create order API. Now we are"
+    },
+    {
+      "startSeconds": 639.36,
+      "endSeconds": 643.839,
+      "text": "expecting that create order function at"
+    },
+    {
+      "startSeconds": 641.76,
+      "endSeconds": 646.56,
+      "text": "some point of time will create an order"
+    },
+    {
+      "startSeconds": 643.839,
+      "endSeconds": 650,
+      "text": "and we'll call our function back. Isn't"
+    },
+    {
+      "startSeconds": 646.56,
+      "endSeconds": 653.279,
+      "text": "it risky? This is very risky very very"
+    },
+    {
+      "startSeconds": 650,
+      "endSeconds": 655.6,
+      "text": "risky. How it is risky? Because this is"
+    },
+    {
+      "startSeconds": 653.279,
+      "endSeconds": 658.399,
+      "text": "an important piece of our code isn't it?"
+    },
+    {
+      "startSeconds": 655.6,
+      "endSeconds": 660.959,
+      "text": "Proceed to payment. What we did is we"
+    },
+    {
+      "startSeconds": 658.399,
+      "endSeconds": 664.48,
+      "text": "gave the control of our program to"
+    },
+    {
+      "startSeconds": 660.959,
+      "endSeconds": 667.519,
+      "text": "create order API. Now we now it is the"
+    },
+    {
+      "startSeconds": 664.48,
+      "endSeconds": 670.16,
+      "text": "responsibility of create order API to"
+    },
+    {
+      "startSeconds": 667.519,
+      "endSeconds": 673.04,
+      "text": "call our function back and we are"
+    },
+    {
+      "startSeconds": 670.16,
+      "endSeconds": 675.2,
+      "text": "blindly trusting create order API. Now"
+    },
+    {
+      "startSeconds": 673.04,
+      "endSeconds": 677.68,
+      "text": "we don't know create order API must have"
+    },
+    {
+      "startSeconds": 675.2,
+      "endSeconds": 679.68,
+      "text": "been in some other service or some other"
+    },
+    {
+      "startSeconds": 677.68,
+      "endSeconds": 681.839,
+      "text": "developer wrote it or an intern wrote"
+    },
+    {
+      "startSeconds": 679.68,
+      "endSeconds": 685.44,
+      "text": "it. Right? There could be a lot of bugs"
+    },
+    {
+      "startSeconds": 681.839,
+      "endSeconds": 687.76,
+      "text": "inside create order API isn't it? What"
+    },
+    {
+      "startSeconds": 685.44,
+      "endSeconds": 690.48,
+      "text": "if our call back function was never"
+    },
+    {
+      "startSeconds": 687.76,
+      "endSeconds": 692.079,
+      "text": "called? Can happen right? You don't know"
+    },
+    {
+      "startSeconds": 690.48,
+      "endSeconds": 694.24,
+      "text": "what is the code written in create order"
+    },
+    {
+      "startSeconds": 692.079,
+      "endSeconds": 696.88,
+      "text": "API. We are just blindly trusting it."
+    },
+    {
+      "startSeconds": 694.24,
+      "endSeconds": 700.959,
+      "text": "What if our call back function is called"
+    },
+    {
+      "startSeconds": 696.88,
+      "endSeconds": 702.72,
+      "text": "twice, proceed to payment happens twice"
+    },
+    {
+      "startSeconds": 700.959,
+      "endSeconds": 705.6,
+      "text": "because we don't know what is happening"
+    },
+    {
+      "startSeconds": 702.72,
+      "endSeconds": 708.32,
+      "text": "created in the create order API. So what"
+    },
+    {
+      "startSeconds": 705.6,
+      "endSeconds": 710.32,
+      "text": "I'm trying to explain is that whenever"
+    },
+    {
+      "startSeconds": 708.32,
+      "endSeconds": 712.64,
+      "text": "we have this call back function and we"
+    },
+    {
+      "startSeconds": 710.32,
+      "endSeconds": 715.04,
+      "text": "pass it to some other function, we are"
+    },
+    {
+      "startSeconds": 712.64,
+      "endSeconds": 717.519,
+      "text": "giving the control of our function right"
+    },
+    {
+      "startSeconds": 715.04,
+      "endSeconds": 720.8,
+      "text": "our piece of written code to some other"
+    },
+    {
+      "startSeconds": 717.519,
+      "endSeconds": 724.32,
+      "text": "code and we don't know what's happening"
+    },
+    {
+      "startSeconds": 720.8,
+      "endSeconds": 727.36,
+      "text": "behind the scenes now right so this is a"
+    },
+    {
+      "startSeconds": 724.32,
+      "endSeconds": 729.519,
+      "text": "very important problem that we face when"
+    },
+    {
+      "startSeconds": 727.36,
+      "endSeconds": 732.399,
+      "text": "we are using callbacks and we as a"
+    },
+    {
+      "startSeconds": 729.519,
+      "endSeconds": 734.639,
+      "text": "developer don't don't realize this right"
+    },
+    {
+      "startSeconds": 732.399,
+      "endSeconds": 737.36,
+      "text": "I have written so much code and I have"
+    },
+    {
+      "startSeconds": 734.639,
+      "endSeconds": 739.44,
+      "text": "seen seen so much code and have seen"
+    },
+    {
+      "startSeconds": 737.36,
+      "endSeconds": 742.32,
+      "text": "this happening so many times but this is"
+    },
+    {
+      "startSeconds": 739.44,
+      "endSeconds": 744.56,
+      "text": "a very important and a risky thing which"
+    },
+    {
+      "startSeconds": 742.32,
+      "endSeconds": 746.639,
+      "text": "we need to take care of. So as we move"
+    },
+    {
+      "startSeconds": 744.56,
+      "endSeconds": 749.44,
+      "text": "ahead in next episodes we will see that"
+    },
+    {
+      "startSeconds": 746.639,
+      "endSeconds": 752.72,
+      "text": "how this inversion of control can be"
+    },
+    {
+      "startSeconds": 749.44,
+      "endSeconds": 754.399,
+      "text": "handled in our code. Okay. So for now"
+    },
+    {
+      "startSeconds": 752.72,
+      "endSeconds": 756.48,
+      "text": "just keep these two problems in your"
+    },
+    {
+      "startSeconds": 754.399,
+      "endSeconds": 758.16,
+      "text": "mind and that's all in this episode."
+    },
+    {
+      "startSeconds": 756.48,
+      "endSeconds": 760.16,
+      "text": "Before we end this episode let us just"
+    },
+    {
+      "startSeconds": 758.16,
+      "endSeconds": 762.079,
+      "text": "quickly recap what all we studied. So"
+    },
+    {
+      "startSeconds": 760.16,
+      "endSeconds": 764.32,
+      "text": "first of all we studied that callbacks"
+    },
+    {
+      "startSeconds": 762.079,
+      "endSeconds": 766.88,
+      "text": "are like super powerful way of handling"
+    },
+    {
+      "startSeconds": 764.32,
+      "endSeconds": 768.88,
+      "text": "async operations in JavaScript. Isn't it"
+    },
+    {
+      "startSeconds": 766.88,
+      "endSeconds": 771.12,
+      "text": "the first thing we studied? In fact"
+    },
+    {
+      "startSeconds": 768.88,
+      "endSeconds": 773.92,
+      "text": "asynchronous programming in JavaScript"
+    },
+    {
+      "startSeconds": 771.12,
+      "endSeconds": 775.76,
+      "text": "exist because call back exists. Another"
+    },
+    {
+      "startSeconds": 773.92,
+      "endSeconds": 777.839,
+      "text": "thing to remember is that while we are"
+    },
+    {
+      "startSeconds": 775.76,
+      "endSeconds": 780.639,
+      "text": "writing callbacks we face a lot of"
+    },
+    {
+      "startSeconds": 777.839,
+      "endSeconds": 782.959,
+      "text": "issues. The two important issues that we"
+    },
+    {
+      "startSeconds": 780.639,
+      "endSeconds": 785.2,
+      "text": "face is the first one is the call back"
+    },
+    {
+      "startSeconds": 782.959,
+      "endSeconds": 787.12,
+      "text": "hell. Right? that call back inside call"
+    },
+    {
+      "startSeconds": 785.2,
+      "endSeconds": 789.12,
+      "text": "back inside call back a lot of nested"
+    },
+    {
+      "startSeconds": 787.12,
+      "endSeconds": 791.04,
+      "text": "call backs and the code becomes"
+    },
+    {
+      "startSeconds": 789.12,
+      "endSeconds": 793.12,
+      "text": "unmaintainable. And the second thing is"
+    },
+    {
+      "startSeconds": 791.04,
+      "endSeconds": 795.44,
+      "text": "inversion of control that we lose"
+    },
+    {
+      "startSeconds": 793.12,
+      "endSeconds": 797.12,
+      "text": "control of our program because we pass"
+    },
+    {
+      "startSeconds": 795.44,
+      "endSeconds": 799.04,
+      "text": "that call back function into another"
+    },
+    {
+      "startSeconds": 797.12,
+      "endSeconds": 801.36,
+      "text": "function and now we have given the"
+    },
+    {
+      "startSeconds": 799.04,
+      "endSeconds": 804.32,
+      "text": "control of this function to some other"
+    },
+    {
+      "startSeconds": 801.36,
+      "endSeconds": 806.32,
+      "text": "function right and now we don't know"
+    },
+    {
+      "startSeconds": 804.32,
+      "endSeconds": 808.639,
+      "text": "whether that function will ever execute"
+    },
+    {
+      "startSeconds": 806.32,
+      "endSeconds": 810.399,
+      "text": "our call back or not. So this invert of"
+    },
+    {
+      "startSeconds": 808.639,
+      "endSeconds": 812.56,
+      "text": "control is another big issue with"
+    },
+    {
+      "startSeconds": 810.399,
+      "endSeconds": 814.399,
+      "text": "callbacks. So in this episode you just"
+    },
+    {
+      "startSeconds": 812.56,
+      "endSeconds": 816.399,
+      "text": "have to remember these three things"
+    },
+    {
+      "startSeconds": 814.399,
+      "endSeconds": 818.56,
+      "text": "these important good parts and the bad"
+    },
+    {
+      "startSeconds": 816.399,
+      "endSeconds": 821.04,
+      "text": "parts of call backs and that's all in"
+    },
+    {
+      "startSeconds": 818.56,
+      "endSeconds": 823.2,
+      "text": "this episode and and and in the next"
+    },
+    {
+      "startSeconds": 821.04,
+      "endSeconds": 825.76,
+      "text": "episode we will be covering promises."
+    },
+    {
+      "startSeconds": 823.2,
+      "endSeconds": 828.48,
+      "text": "Yes promises and I'm super excited to"
+    },
+    {
+      "startSeconds": 825.76,
+      "endSeconds": 830.72,
+      "text": "teach that topic. It's one of the most"
+    },
+    {
+      "startSeconds": 828.48,
+      "endSeconds": 832.959,
+      "text": "important and most interesting part of"
+    },
+    {
+      "startSeconds": 830.72,
+      "endSeconds": 836.079,
+      "text": "JavaScript and I will explain you"
+    },
+    {
+      "startSeconds": 832.959,
+      "endSeconds": 838.399,
+      "text": "promises in a very different way. Not"
+    },
+    {
+      "startSeconds": 836.079,
+      "endSeconds": 841.519,
+      "text": "like explaining you just the gist of it."
+    },
+    {
+      "startSeconds": 838.399,
+      "endSeconds": 843.68,
+      "text": "I will explain it in detail in depth."
+    },
+    {
+      "startSeconds": 841.519,
+      "endSeconds": 845.519,
+      "text": "Best video of promises I'm coming up"
+    },
+    {
+      "startSeconds": 843.68,
+      "endSeconds": 847.279,
+      "text": "with. So what are you waiting for? Check"
+    },
+    {
+      "startSeconds": 845.519,
+      "endSeconds": 849.839,
+      "text": "that video right now. But before moving"
+    },
+    {
+      "startSeconds": 847.279,
+      "endSeconds": 852.32,
+      "text": "on to that video, just wait. Just wait."
+    },
+    {
+      "startSeconds": 849.839,
+      "endSeconds": 855.199,
+      "text": "I have to ask two things from you. First"
+    },
+    {
+      "startSeconds": 852.32,
+      "endSeconds": 857.199,
+      "text": "is to go like the video right now"
+    },
+    {
+      "startSeconds": 855.199,
+      "endSeconds": 859.92,
+      "text": "because it takes a lot of effort to make"
+    },
+    {
+      "startSeconds": 857.199,
+      "endSeconds": 862.079,
+      "text": "these videos. Please like it. Share it"
+    },
+    {
+      "startSeconds": 859.92,
+      "endSeconds": 864,
+      "text": "on social media because I don't have a"
+    },
+    {
+      "startSeconds": 862.079,
+      "endSeconds": 866,
+      "text": "marketing team. You are my marketing"
+    },
+    {
+      "startSeconds": 864,
+      "endSeconds": 868.88,
+      "text": "team. share it across on social media"
+    },
+    {
+      "startSeconds": 866,
+      "endSeconds": 870.959,
+      "text": "about Namaste JavaScript season 2. And"
+    },
+    {
+      "startSeconds": 868.88,
+      "endSeconds": 872.72,
+      "text": "the second thing is your homework. Okay."
+    },
+    {
+      "startSeconds": 870.959,
+      "endSeconds": 874.24,
+      "text": "Now with this episode, I will be giving"
+    },
+    {
+      "startSeconds": 872.72,
+      "endSeconds": 877.199,
+      "text": "you homework with each and every"
+    },
+    {
+      "startSeconds": 874.24,
+      "endSeconds": 879.279,
+      "text": "episode. So homework for this episode is"
+    },
+    {
+      "startSeconds": 877.199,
+      "endSeconds": 881.199,
+      "text": "that you have to go in the comments and"
+    },
+    {
+      "startSeconds": 879.279,
+      "endSeconds": 883.44,
+      "text": "explain in your own words what are the"
+    },
+    {
+      "startSeconds": 881.199,
+      "endSeconds": 885.12,
+      "text": "two problems that we face while using"
+    },
+    {
+      "startSeconds": 883.44,
+      "endSeconds": 887.68,
+      "text": "callbacks. Okay, you have to explain it"
+    },
+    {
+      "startSeconds": 885.12,
+      "endSeconds": 890.48,
+      "text": "in your words. Uh trust me that will"
+    },
+    {
+      "startSeconds": 887.68,
+      "endSeconds": 893.76,
+      "text": "help you memorize that concept very"
+    },
+    {
+      "startSeconds": 890.48,
+      "endSeconds": 896,
+      "text": "well. Okay, do that. Two things like the"
+    },
+    {
+      "startSeconds": 893.76,
+      "endSeconds": 897.839,
+      "text": "video, share it across social media and"
+    },
+    {
+      "startSeconds": 896,
+      "endSeconds": 899.92,
+      "text": "the second thing is to do your homework."
+    },
+    {
+      "startSeconds": 897.839,
+      "endSeconds": 901.839,
+      "text": "Finish your homework right now. Don't go"
+    },
+    {
+      "startSeconds": 899.92,
+      "endSeconds": 903.279,
+      "text": "before finishing your homework. Okay, so"
+    },
+    {
+      "startSeconds": 901.839,
+      "endSeconds": 907.959,
+      "text": "that's all in this episode and keep"
+    },
+    {
+      "startSeconds": 903.279,
+      "endSeconds": 907.959,
+      "text": "watching Namaste JavaScript season 2."
+    },
+    {
+      "startSeconds": 910.12,
+      "endSeconds": 929.36,
+      "text": "[Music]"
+    },
+    {
+      "startSeconds": 926.399,
+      "endSeconds": 929.36,
+      "text": "better than D"
+    }
+  ]
+}

@@ -1,0 +1,2022 @@
+{
+  "videoId": "iLWTnMzWtj4",
+  "videoTitle": "How JavaScript Code is executed? ❤️& Call Stack | Namaste JavaScript Ep. 2",
+  "languageCode": "en",
+  "segments": [
+    {
+      "startSeconds": 0,
+      "endSeconds": 2,
+      "text": "Do you know? When your run a JavaScript program"
+    },
+    {
+      "startSeconds": 2.2,
+      "endSeconds": 6.075,
+      "text": "there are a lot of things happening behind the scenes inside the JavaScript engine"
+    },
+    {
+      "startSeconds": 6.275,
+      "endSeconds": 10.668,
+      "text": "we'll be covering everything right now just keep watching Namaste🙏 JavaScript"
+    },
+    {
+      "startSeconds": 10.868,
+      "endSeconds": 12.71,
+      "text": "Remember in the last video we discussed that"
+    },
+    {
+      "startSeconds": 12.91,
+      "endSeconds": 16.871,
+      "text": "everything in JavaScript happens inside an Execution Context"
+    },
+    {
+      "startSeconds": 17.071,
+      "endSeconds": 17.946,
+      "text": "Remember?"
+    },
+    {
+      "startSeconds": 18.146,
+      "endSeconds": 22.799,
+      "text": "and JavaScript isn't possible without this beautiful Execution Context."
+    },
+    {
+      "startSeconds": 22.999,
+      "endSeconds": 24.278,
+      "text": "So here's one question for you."
+    },
+    {
+      "startSeconds": 24.478,
+      "endSeconds": 27.27,
+      "text": "So what happens when you run a JavaScript program?"
+    },
+    {
+      "startSeconds": 27.47,
+      "endSeconds": 28.81,
+      "text": "Yes, you are right"
+    },
+    {
+      "startSeconds": 29.01,
+      "endSeconds": 31.152,
+      "text": "An execution context is created."
+    },
+    {
+      "startSeconds": 31.352,
+      "endSeconds": 36.699,
+      "text": "So let us now see how this beautiful execution context is created with the help of a JavaScript program."
+    },
+    {
+      "startSeconds": 36.899,
+      "endSeconds": 40.323,
+      "text": "So we have this variable 'n' which is 2"
+    },
+    {
+      "startSeconds": 40.523,
+      "endSeconds": 43.869,
+      "text": "and there is a function square which returns the square of a number"
+    },
+    {
+      "startSeconds": 44.069,
+      "endSeconds": 46.77,
+      "text": "which is being passed inside this function"
+    },
+    {
+      "startSeconds": 46.97,
+      "endSeconds": 51.101,
+      "text": "and there are two other variables, square2 & square4"
+    },
+    {
+      "startSeconds": 51.301,
+      "endSeconds": 54.555,
+      "text": "which are just invoking this already created function."
+    },
+    {
+      "startSeconds": 54.755,
+      "endSeconds": 55.858,
+      "text": "Okay?"
+    },
+    {
+      "startSeconds": 56.058,
+      "endSeconds": 60.985,
+      "text": "So now let us see how this whole JavaScript code is run behind the scenes."
+    },
+    {
+      "startSeconds": 61.114,
+      "endSeconds": 62.877,
+      "text": "So when you run this whole code,"
+    },
+    {
+      "startSeconds": 63.077,
+      "endSeconds": 66.356,
+      "text": "A global execution context is created."
+    },
+    {
+      "startSeconds": 66.556,
+      "endSeconds": 68.321,
+      "text": "Let us create this execution context"
+    },
+    {
+      "startSeconds": 68.521,
+      "endSeconds": 73.565,
+      "text": "So remember we told that it's like a big box and it has two components."
+    },
+    {
+      "startSeconds": 73.765,
+      "endSeconds": 80.572,
+      "text": "These two components are the Memory Component & the Code component"
+    },
+    {
+      "startSeconds": 80.772,
+      "endSeconds": 82.392,
+      "text": "Now listen to this very carefully."
+    },
+    {
+      "startSeconds": 82.592,
+      "endSeconds": 85.748,
+      "text": "This execution context is created in two phases."
+    },
+    {
+      "startSeconds": 85.948,
+      "endSeconds": 89.876,
+      "text": "The first phase is also known as the creation phase."
+    },
+    {
+      "startSeconds": 90.076,
+      "endSeconds": 90.994,
+      "text": "Remember this."
+    },
+    {
+      "startSeconds": 91.194,
+      "endSeconds": 94.646,
+      "text": "This is also known as the memory creation phase. Okay?"
+    },
+    {
+      "startSeconds": 94.846,
+      "endSeconds": 97.188,
+      "text": "This is a very critical phase"
+    },
+    {
+      "startSeconds": 97.388,
+      "endSeconds": 98.932,
+      "text": "So, memory creation phase."
+    },
+    {
+      "startSeconds": 99.132,
+      "endSeconds": 101.105,
+      "text": "Let us see how this phase is done"
+    },
+    {
+      "startSeconds": 101.305,
+      "endSeconds": 106.115,
+      "text": "and afterwards, the second phase, that is the code execution phase. Okay?"
+    },
+    {
+      "startSeconds": 106.315,
+      "endSeconds": 108.463,
+      "text": "So let us first see the first phase."
+    },
+    {
+      "startSeconds": 108.663,
+      "endSeconds": 112.137,
+      "text": "So if you have this code, in first phase of memory creation"
+    },
+    {
+      "startSeconds": 112.337,
+      "endSeconds": 116.563,
+      "text": "JavaScript will allocate memory to all the variables and functions."
+    },
+    {
+      "startSeconds": 116.763,
+      "endSeconds": 121.34,
+      "text": "So as soon as JS encounters this line 1,"
+    },
+    {
+      "startSeconds": 121.54,
+      "endSeconds": 123.625,
+      "text": "It allocates memory to n"
+    },
+    {
+      "startSeconds": 123.825,
+      "endSeconds": 127.848,
+      "text": "So let us now allocate memory to n. How will it allocate?"
+    },
+    {
+      "startSeconds": 128.048,
+      "endSeconds": 130.847,
+      "text": "It will reserve a memory space here for n"
+    },
+    {
+      "startSeconds": 131.047,
+      "endSeconds": 135.213,
+      "text": "Similarly, now JavaScript goes to line 2"
+    },
+    {
+      "startSeconds": 135.413,
+      "endSeconds": 139.614,
+      "text": "It sees that there is a function, which is names square"
+    },
+    {
+      "startSeconds": 139.814,
+      "endSeconds": 141.809,
+      "text": "So it will allocate memory to square."
+    },
+    {
+      "startSeconds": 142.009,
+      "endSeconds": 147.994,
+      "text": "So now it allocates some memory to square."
+    },
+    {
+      "startSeconds": 148.194,
+      "endSeconds": 151.965,
+      "text": "So now, let me tell you what does it store."
+    },
+    {
+      "startSeconds": 152.165,
+      "endSeconds": 155.249,
+      "text": "When it allocates memory to n,"
+    },
+    {
+      "startSeconds": 155.449,
+      "endSeconds": 158.309,
+      "text": "it stores a special value"
+    },
+    {
+      "startSeconds": 158.509,
+      "endSeconds": 161.569,
+      "text": "which is known as undefined."
+    },
+    {
+      "startSeconds": 161.769,
+      "endSeconds": 164.924,
+      "text": "So in this, it stores a special value"
+    },
+    {
+      "startSeconds": 165.124,
+      "endSeconds": 168.091,
+      "text": "which is known as undefined."
+    },
+    {
+      "startSeconds": 168.291,
+      "endSeconds": 171.1,
+      "text": "In the first phase and in case of functions,"
+    },
+    {
+      "startSeconds": 172.2,
+      "endSeconds": 175.214,
+      "text": "it literally stores the whole code"
+    },
+    {
+      "startSeconds": 175.343,
+      "endSeconds": 177.59,
+      "text": "of the function inside this memory space"
+    },
+    {
+      "startSeconds": 177.79,
+      "endSeconds": 179.113,
+      "text": "so let me just show you"
+    },
+    {
+      "startSeconds": 179.313,
+      "endSeconds": 181.481,
+      "text": "I know it's a little tricky, but"
+    },
+    {
+      "startSeconds": 181.681,
+      "endSeconds": 183.645,
+      "text": "it stores the whole code"
+    },
+    {
+      "startSeconds": 183.845,
+      "endSeconds": 186.256,
+      "text": "literally, when I say it stores the whole code,"
+    },
+    {
+      "startSeconds": 186.456,
+      "endSeconds": 189.468,
+      "text": "that means that this whole code of this function"
+    },
+    {
+      "startSeconds": 189.668,
+      "endSeconds": 191.518,
+      "text": "is stored over here"
+    },
+    {
+      "startSeconds": 191.718,
+      "endSeconds": 193.569,
+      "text": "in this memory space of square"
+    },
+    {
+      "startSeconds": 193.769,
+      "endSeconds": 196.022,
+      "text": "and now it will also allocate memory"
+    },
+    {
+      "startSeconds": 196.222,
+      "endSeconds": 201.214,
+      "text": "to square2 and square4"
+    },
+    {
+      "startSeconds": 201.414,
+      "endSeconds": 203.543,
+      "text": "and as there are another variables,"
+    },
+    {
+      "startSeconds": 203.586,
+      "endSeconds": 208.89,
+      "text": "it will again store undefined for them"
+    },
+    {
+      "startSeconds": 209.09,
+      "endSeconds": 211.956,
+      "text": "(reiterates) undefined"
+    },
+    {
+      "startSeconds": 212.156,
+      "endSeconds": 214.031,
+      "text": "it's a bit tricky let me give you a quick recap"
+    },
+    {
+      "startSeconds": 214.231,
+      "endSeconds": 217.391,
+      "text": "so in the first phase, JS skims through the whole program"
+    },
+    {
+      "startSeconds": 217.591,
+      "endSeconds": 218.758,
+      "text": "line by line"
+    },
+    {
+      "startSeconds": 218.958,
+      "endSeconds": 221.368,
+      "text": "and it allocates memory to all the variables and functions"
+    },
+    {
+      "startSeconds": 221.568,
+      "endSeconds": 224.943,
+      "text": "as soon as it encounters 'n', it reserves memory for it"
+    },
+    {
+      "startSeconds": 225.057,
+      "endSeconds": 228.365,
+      "text": "and allocates a special value, undefined, to it"
+    },
+    {
+      "startSeconds": 228.565,
+      "endSeconds": 230.336,
+      "text": "Remember this value undefined,"
+    },
+    {
+      "startSeconds": 230.536,
+      "endSeconds": 232.338,
+      "text": "we'll be talking a lot about this"
+    },
+    {
+      "startSeconds": 232.538,
+      "endSeconds": 235.279,
+      "text": "I'll make a seperate video altogether for undefined"
+    },
+    {
+      "startSeconds": 235.479,
+      "endSeconds": 237.1,
+      "text": "but for now, just understand"
+    },
+    {
+      "startSeconds": 237.243,
+      "endSeconds": 239.443,
+      "text": "undefined is placed over here. Okay?"
+    },
+    {
+      "startSeconds": 239.643,
+      "endSeconds": 243.357,
+      "text": "It's like a placeholder, a special keyword in JS"
+    },
+    {
+      "startSeconds": 243.557,
+      "endSeconds": 246.48,
+      "text": "and, in case of functions, (functions are very beautiful)"
+    },
+    {
+      "startSeconds": 246.68,
+      "endSeconds": 248.988,
+      "text": "in case of functions,"
+    },
+    {
+      "startSeconds": 249.188,
+      "endSeconds": 250.6,
+      "text": "this function square"
+    },
+    {
+      "startSeconds": 250.8,
+      "endSeconds": 253.733,
+      "text": "this whole function code is literally"
+    },
+    {
+      "startSeconds": 253.933,
+      "endSeconds": 257.547,
+      "text": "(you can assume it to be) copied over here in the memory space"
+    },
+    {
+      "startSeconds": 257.747,
+      "endSeconds": 260.159,
+      "text": "Okay? So that's how it is"
+    },
+    {
+      "startSeconds": 260.359,
+      "endSeconds": 262.853,
+      "text": "and for the remaining two variables"
+    },
+    {
+      "startSeconds": 263.053,
+      "endSeconds": 266.289,
+      "text": "again allocates memory and stores this special keyword"
+    },
+    {
+      "startSeconds": 266.489,
+      "endSeconds": 269.118,
+      "text": "undefined, to them, in the first phase."
+    },
+    {
+      "startSeconds": 269.318,
+      "endSeconds": 272.039,
+      "text": "Let us see what happens in the phase two"
+    },
+    {
+      "startSeconds": 272.239,
+      "endSeconds": 274.752,
+      "text": "The second phase is the code execution phase"
+    },
+    {
+      "startSeconds": 274.952,
+      "endSeconds": 278.625,
+      "text": "(reiterates) It is the code execution phase"
+    },
+    {
+      "startSeconds": 278.825,
+      "endSeconds": 281.949,
+      "text": "So let's see how this code is executed"
+    },
+    {
+      "startSeconds": 282.149,
+      "endSeconds": 283.771,
+      "text": "after the memory allocation."
+    },
+    {
+      "startSeconds": 283.971,
+      "endSeconds": 286.72,
+      "text": "So JavaScript, once again runs through"
+    },
+    {
+      "startSeconds": 286.92,
+      "endSeconds": 289.41,
+      "text": "this whole JS program line by line"
+    },
+    {
+      "startSeconds": 289.61,
+      "endSeconds": 291.48,
+      "text": "and it executes the code now."
+    },
+    {
+      "startSeconds": 291.68,
+      "endSeconds": 295.118,
+      "text": "So this is the point when all these"
+    },
+    {
+      "startSeconds": 295.318,
+      "endSeconds": 298.584,
+      "text": "functions and every calculation in the program is done. Okay?"
+    },
+    {
+      "startSeconds": 298.784,
+      "endSeconds": 303.087,
+      "text": "So as soon as it encounters this first line, n=2,"
+    },
+    {
+      "startSeconds": 303.287,
+      "endSeconds": 306.557,
+      "text": "it actually places the '2' inside the 'n'"
+    },
+    {
+      "startSeconds": 306.686,
+      "endSeconds": 310.336,
+      "text": "So till now, the value of n was undefined"
+    },
+    {
+      "startSeconds": 310.536,
+      "endSeconds": 314.152,
+      "text": "Now in the second phase of creation of Execution Context,"
+    },
+    {
+      "startSeconds": 314.352,
+      "endSeconds": 316.225,
+      "text": "i.e. the Code execution phase,"
+    },
+    {
+      "startSeconds": 316.425,
+      "endSeconds": 319.65,
+      "text": "in this phase, this 2 value over here of n,"
+    },
+    {
+      "startSeconds": 319.85,
+      "endSeconds": 324,
+      "text": "is now being placed actually in this placeholder"
+    },
+    {
+      "startSeconds": 324.2,
+      "endSeconds": 327.26,
+      "text": "or the identifier, which is 'n'. Okay?"
+    },
+    {
+      "startSeconds": 327.46,
+      "endSeconds": 330.076,
+      "text": "So now this 2, in this second phase,"
+    },
+    {
+      "startSeconds": 330.276,
+      "endSeconds": 332.625,
+      "text": "is now allocated here."
+    },
+    {
+      "startSeconds": 332.825,
+      "endSeconds": 335.043,
+      "text": "So let me just remove this undefined for a while,"
+    },
+    {
+      "startSeconds": 335.243,
+      "endSeconds": 336.822,
+      "text": "Okay?"
+    },
+    {
+      "startSeconds": 337.022,
+      "endSeconds": 338.798,
+      "text": "and now replace this with"
+    },
+    {
+      "startSeconds": 338.998,
+      "endSeconds": 340.986,
+      "text": "the special value which we got, 2."
+    },
+    {
+      "startSeconds": 341.114,
+      "endSeconds": 345.129,
+      "text": "And, this is in the phase two. Remember this carefully."
+    },
+    {
+      "startSeconds": 345.186,
+      "endSeconds": 348.486,
+      "text": "After finishing line one, it goes to line two and sees that"
+    },
+    {
+      "startSeconds": 348.557,
+      "endSeconds": 351.049,
+      "text": "We have nothing to do here. Right?"
+    },
+    {
+      "startSeconds": 351.129,
+      "endSeconds": 352.203,
+      "text": "So line number two to five,"
+    },
+    {
+      "startSeconds": 352.403,
+      "endSeconds": 353.966,
+      "text": "there is nothing to execute literally."
+    },
+    {
+      "startSeconds": 354.166,
+      "endSeconds": 356.94,
+      "text": "So it moves to line number 6"
+    },
+    {
+      "startSeconds": 357.14,
+      "endSeconds": 359.71,
+      "text": "Line number 6 is the most amazing part."
+    },
+    {
+      "startSeconds": 359.91,
+      "endSeconds": 362.363,
+      "text": "Here, we invoke a function"
+    },
+    {
+      "startSeconds": 362.563,
+      "endSeconds": 364.397,
+      "text": "Here's a function invocation"
+    },
+    {
+      "startSeconds": 364.597,
+      "endSeconds": 366.119,
+      "text": "What do you mean by a function invocation?"
+    },
+    {
+      "startSeconds": 366.319,
+      "endSeconds": 369.984,
+      "text": "Whenever you see a function name, with these parantheses,"
+    },
+    {
+      "startSeconds": 370.184,
+      "endSeconds": 371.938,
+      "text": "with these round brackets,"
+    },
+    {
+      "startSeconds": 372.138,
+      "endSeconds": 374.704,
+      "text": "it means that the function is now being executed."
+    },
+    {
+      "startSeconds": 374.904,
+      "endSeconds": 377.178,
+      "text": "functions are the heart of JavaScript"
+    },
+    {
+      "startSeconds": 377.378,
+      "endSeconds": 379.429,
+      "text": "and, you know, they behave very differently"
+    },
+    {
+      "startSeconds": 379.629,
+      "endSeconds": 382.425,
+      "text": "in JavaScript than any other language. Okay?"
+    },
+    {
+      "startSeconds": 382.625,
+      "endSeconds": 385.457,
+      "text": "So functions over here are like a mini program,"
+    },
+    {
+      "startSeconds": 385.543,
+      "endSeconds": 387.584,
+      "text": "and whenever a new function is invoked,"
+    },
+    {
+      "startSeconds": 387.784,
+      "endSeconds": 389.903,
+      "text": "you know, a mini program is invoked,"
+    },
+    {
+      "startSeconds": 390.103,
+      "endSeconds": 394.522,
+      "text": "an altogether new execution context is created."
+    },
+    {
+      "startSeconds": 394.722,
+      "endSeconds": 396.786,
+      "text": "Remember? That whole thing that we were running,"
+    },
+    {
+      "startSeconds": 396.986,
+      "endSeconds": 398.165,
+      "text": "this whole program"
+    },
+    {
+      "startSeconds": 398.365,
+      "endSeconds": 400.539,
+      "text": "was inside the global execution context,"
+    },
+    {
+      "startSeconds": 400.739,
+      "endSeconds": 402.471,
+      "text": "now, when you run a function,"
+    },
+    {
+      "startSeconds": 402.671,
+      "endSeconds": 404.013,
+      "text": "or when you invoke a function,"
+    },
+    {
+      "startSeconds": 404.213,
+      "endSeconds": 407.795,
+      "text": "this function, a brand new execution context is created."
+    },
+    {
+      "startSeconds": 407.995,
+      "endSeconds": 409.462,
+      "text": "Okay? So let us see"
+    },
+    {
+      "startSeconds": 409.662,
+      "endSeconds": 412.953,
+      "text": "This is gonna be interesting. Just keep following."
+    },
+    {
+      "startSeconds": 413.153,
+      "endSeconds": 417.043,
+      "text": "So here, a brand new execution context"
+    },
+    {
+      "startSeconds": 417.243,
+      "endSeconds": 419.699,
+      "text": "inside this is created. Okay?"
+    },
+    {
+      "startSeconds": 419.899,
+      "endSeconds": 421.658,
+      "text": "Now let us see"
+    },
+    {
+      "startSeconds": 421.858,
+      "endSeconds": 423.892,
+      "text": "and this execution context again,"
+    },
+    {
+      "startSeconds": 424.092,
+      "endSeconds": 426.144,
+      "text": "has these two components, which is the"
+    },
+    {
+      "startSeconds": 426.344,
+      "endSeconds": 432.2,
+      "text": "memory component and a code component. Got it?"
+    },
+    {
+      "startSeconds": 432.329,
+      "endSeconds": 434.827,
+      "text": "So now, we will again go through"
+    },
+    {
+      "startSeconds": 435.027,
+      "endSeconds": 437.027,
+      "text": "the creation of this execution context"
+    },
+    {
+      "startSeconds": 437.227,
+      "endSeconds": 438.925,
+      "text": "and there will again be two phases involved."
+    },
+    {
+      "startSeconds": 439.125,
+      "endSeconds": 441.673,
+      "text": "Remember? What were these two phases?"
+    },
+    {
+      "startSeconds": 441.873,
+      "endSeconds": 443.788,
+      "text": "So let us see it. It will be interesting"
+    },
+    {
+      "startSeconds": 443.988,
+      "endSeconds": 448.406,
+      "text": "So, the first phase is the memory creation phase"
+    },
+    {
+      "startSeconds": 448.606,
+      "endSeconds": 453.379,
+      "text": "Remember? Memory creation phase."
+    },
+    {
+      "startSeconds": 453.579,
+      "endSeconds": 455.234,
+      "text": "In the memory creation phase,"
+    },
+    {
+      "startSeconds": 455.434,
+      "endSeconds": 457.58,
+      "text": "Now we will be talking about this function invocation. Okay?"
+    },
+    {
+      "startSeconds": 457.78,
+      "endSeconds": 460.557,
+      "text": "So we will be concerned about this piece of code only."
+    },
+    {
+      "startSeconds": 460.757,
+      "endSeconds": 464.114,
+      "text": "When we are executing this square(n),"
+    },
+    {
+      "startSeconds": 464.314,
+      "endSeconds": 467.69,
+      "text": "we are only concerned about this piece of code. Remember?"
+    },
+    {
+      "startSeconds": 467.89,
+      "endSeconds": 471.414,
+      "text": "So now, let us see how the memory is allocated here in the first phase"
+    },
+    {
+      "startSeconds": 471.5,
+      "endSeconds": 473.238,
+      "text": "The phase one. Okay?"
+    },
+    {
+      "startSeconds": 473.438,
+      "endSeconds": 477.851,
+      "text": "In the phase one, first of all,"
+    },
+    {
+      "startSeconds": 478.051,
+      "endSeconds": 480.863,
+      "text": "don't forget that the memory is allocated to"
+    },
+    {
+      "startSeconds": 481.063,
+      "endSeconds": 483.609,
+      "text": "variables and functions inside this function."
+    },
+    {
+      "startSeconds": 483.809,
+      "endSeconds": 486.942,
+      "text": "And when I say variables and functions,"
+    },
+    {
+      "startSeconds": 487.142,
+      "endSeconds": 490.126,
+      "text": "it involves the parameters, like the 'num',"
+    },
+    {
+      "startSeconds": 490.186,
+      "endSeconds": 491.371,
+      "text": "and the other variables"
+    },
+    {
+      "startSeconds": 491.429,
+      "endSeconds": 493.504,
+      "text": "and we don't have a function so no need."
+    },
+    {
+      "startSeconds": 493.704,
+      "endSeconds": 495.734,
+      "text": "so we will be allocating memory to num"
+    },
+    {
+      "startSeconds": 495.934,
+      "endSeconds": 498.44,
+      "text": "and ans over here, in this case."
+    },
+    {
+      "startSeconds": 498.64,
+      "endSeconds": 500.414,
+      "text": "So let us do that."
+    },
+    {
+      "startSeconds": 500.543,
+      "endSeconds": 503.718,
+      "text": "So we will be allocating memory to num, okay?"
+    },
+    {
+      "startSeconds": 503.8,
+      "endSeconds": 505.414,
+      "text": "So here is num,"
+    },
+    {
+      "startSeconds": 505.514,
+      "endSeconds": 508.314,
+      "text": "and, we will also allocate memory to ans, okay?"
+    },
+    {
+      "startSeconds": 508.343,
+      "endSeconds": 510.653,
+      "text": "ans. Okay?"
+    },
+    {
+      "startSeconds": 510.853,
+      "endSeconds": 513.191,
+      "text": "So now, what will happen is,"
+    },
+    {
+      "startSeconds": 513.391,
+      "endSeconds": 515.405,
+      "text": "Remember? What will be stored in this?"
+    },
+    {
+      "startSeconds": 515.605,
+      "endSeconds": 518.045,
+      "text": "The special placeholder which we had?"
+    },
+    {
+      "startSeconds": 518.245,
+      "endSeconds": 519.577,
+      "text": "Yes. You are right."
+    },
+    {
+      "startSeconds": 519.777,
+      "endSeconds": 523.243,
+      "text": "We will be storing undefined in the phase one."
+    },
+    {
+      "startSeconds": 523.271,
+      "endSeconds": 524.01,
+      "text": "You know?"
+    },
+    {
+      "startSeconds": 524.21,
+      "endSeconds": 525.516,
+      "text": "You will understand this concept of undefined"
+    },
+    {
+      "startSeconds": 525.716,
+      "endSeconds": 530.543,
+      "text": "very better, just following along in these upcoming videos, okay?"
+    },
+    {
+      "startSeconds": 530.614,
+      "endSeconds": 534.543,
+      "text": "For now, just keep in mind that this undefined is a very special keyword"
+    },
+    {
+      "startSeconds": 534.629,
+      "endSeconds": 537.929,
+      "text": "We will be covering this in detail later on in the videos. Okay?"
+    },
+    {
+      "startSeconds": 538.129,
+      "endSeconds": 542.002,
+      "text": "So we will be putting undefined over here."
+    },
+    {
+      "startSeconds": 542.202,
+      "endSeconds": 545.052,
+      "text": "and undefined is being allocated in phase one."
+    },
+    {
+      "startSeconds": 545.252,
+      "endSeconds": 548.34,
+      "text": "Now comes the part of phase two. Okay?"
+    },
+    {
+      "startSeconds": 548.54,
+      "endSeconds": 552.63,
+      "text": "So, the phase two is the code execution phase."
+    },
+    {
+      "startSeconds": 552.83,
+      "endSeconds": 554.38,
+      "text": "Remember? Code execution"
+    },
+    {
+      "startSeconds": 554.58,
+      "endSeconds": 559.342,
+      "text": "In this, we will be executing each line. Okay?"
+    },
+    {
+      "startSeconds": 559.542,
+      "endSeconds": 562.425,
+      "text": "We'll be executing each line here. Okay?"
+    },
+    {
+      "startSeconds": 562.625,
+      "endSeconds": 566.447,
+      "text": "So what happens when you execute the code? Okay?"
+    },
+    {
+      "startSeconds": 566.647,
+      "endSeconds": 568.114,
+      "text": "So when this function is invoked,"
+    },
+    {
+      "startSeconds": 568.186,
+      "endSeconds": 571.433,
+      "text": "first of all, this value of n, over here,"
+    },
+    {
+      "startSeconds": 571.633,
+      "endSeconds": 574.945,
+      "text": "which is 2, is passed to num. Okay?"
+    },
+    {
+      "startSeconds": 575.145,
+      "endSeconds": 577.971,
+      "text": "so this n is passed to num."
+    },
+    {
+      "startSeconds": 578.043,
+      "endSeconds": 582.93,
+      "text": "So that means, this value 2,is passed to num."
+    },
+    {
+      "startSeconds": 583.13,
+      "endSeconds": 583.942,
+      "text": "Got it?"
+    },
+    {
+      "startSeconds": 584.142,
+      "endSeconds": 586.173,
+      "text": "So let me tell you one more concept."
+    },
+    {
+      "startSeconds": 586.373,
+      "endSeconds": 589.889,
+      "text": "Num over here is known as parameter of the function,"
+    },
+    {
+      "startSeconds": 590.089,
+      "endSeconds": 593.618,
+      "text": "and, n over here is the argument. Okay?"
+    },
+    {
+      "startSeconds": 593.818,
+      "endSeconds": 596.379,
+      "text": "So this is the argument, and,"
+    },
+    {
+      "startSeconds": 596.579,
+      "endSeconds": 599.886,
+      "text": "the value of n is 2 right now."
+    },
+    {
+      "startSeconds": 599.986,
+      "endSeconds": 602.802,
+      "text": "So, remember, over here the value of n is 2"
+    },
+    {
+      "startSeconds": 603.002,
+      "endSeconds": 605.54,
+      "text": "which will come over here in place of undefined."
+    },
+    {
+      "startSeconds": 605.74,
+      "endSeconds": 612.028,
+      "text": "So let us put the value 2 in num,"
+    },
+    {
+      "startSeconds": 612.228,
+      "endSeconds": 616.33,
+      "text": "and the code will then move to the next line. Okay?"
+    },
+    {
+      "startSeconds": 616.53,
+      "endSeconds": 619.48,
+      "text": "So now, we have moved to this line, line number 3."
+    },
+    {
+      "startSeconds": 619.68,
+      "endSeconds": 622.727,
+      "text": "In line 3, it will do the calculation,"
+    },
+    {
+      "startSeconds": 622.927,
+      "endSeconds": 626.74,
+      "text": "and put the value of num*num inside ans."
+    },
+    {
+      "startSeconds": 626.94,
+      "endSeconds": 632.438,
+      "text": "It's like executing the code inside this code block, okay?"
+    },
+    {
+      "startSeconds": 632.638,
+      "endSeconds": 636.337,
+      "text": "num into (multiplied by) num"
+    },
+    {
+      "startSeconds": 636.537,
+      "endSeconds": 641.203,
+      "text": "and whatever the value will be there, will now go to this,"
+    },
+    {
+      "startSeconds": 641.403,
+      "endSeconds": 645.643,
+      "text": "and undefined will be replaced by num*num, and the value."
+    },
+    {
+      "startSeconds": 645.7,
+      "endSeconds": 650.043,
+      "text": "So num*num, which is 4,like 2*2, which is 4"
+    },
+    {
+      "startSeconds": 650.157,
+      "endSeconds": 652.628,
+      "text": "will now replace this undefined. Okay?"
+    },
+    {
+      "startSeconds": 652.828,
+      "endSeconds": 656.58,
+      "text": "And will take a place in this memory space. Okay?"
+    },
+    {
+      "startSeconds": 656.78,
+      "endSeconds": 662.951,
+      "text": "So the ans will now become 4."
+    },
+    {
+      "startSeconds": 663.014,
+      "endSeconds": 664.043,
+      "text": "Got it?"
+    },
+    {
+      "startSeconds": 664.078,
+      "endSeconds": 665.78,
+      "text": "So that is how the code will be executed."
+    },
+    {
+      "startSeconds": 665.98,
+      "endSeconds": 671.988,
+      "text": "And now let me just remove it"
+    },
+    {
+      "startSeconds": 672.188,
+      "endSeconds": 674.936,
+      "text": "So now, after finishing line number 3,"
+    },
+    {
+      "startSeconds": 675.136,
+      "endSeconds": 676.984,
+      "text": "the control goes to line number 4."
+    },
+    {
+      "startSeconds": 677.184,
+      "endSeconds": 681.372,
+      "text": "Here, we encounter the special keyword return, and ans."
+    },
+    {
+      "startSeconds": 681.572,
+      "endSeconds": 684.522,
+      "text": "So, whenever you see a return and ans,"
+    },
+    {
+      "startSeconds": 684.729,
+      "endSeconds": 687.443,
+      "text": "This return keyword tells this function,"
+    },
+    {
+      "startSeconds": 687.5,
+      "endSeconds": 689.757,
+      "text": "that you are done with your work now,"
+    },
+    {
+      "startSeconds": 689.771,
+      "endSeconds": 693.81,
+      "text": "just return the control back to the execution context,"
+    },
+    {
+      "startSeconds": 694.01,
+      "endSeconds": 695.563,
+      "text": "where the function was invoked."
+    },
+    {
+      "startSeconds": 695.763,
+      "endSeconds": 698.055,
+      "text": "So remember, this is very important. Okay?"
+    },
+    {
+      "startSeconds": 698.255,
+      "endSeconds": 701.009,
+      "text": "This return keyword states that,"
+    },
+    {
+      "startSeconds": 701.209,
+      "endSeconds": 706.611,
+      "text": "now return the control of the program, to the place where this function was invoked."
+    },
+    {
+      "startSeconds": 706.811,
+      "endSeconds": 707.901,
+      "text": "So where the function was invoked?"
+    },
+    {
+      "startSeconds": 708.101,
+      "endSeconds": 709.526,
+      "text": "Function was invoked here,"
+    },
+    {
+      "startSeconds": 709.726,
+      "endSeconds": 715.171,
+      "text": "So return the value of ans, to the place where it was"
+    },
+    {
+      "startSeconds": 715.243,
+      "endSeconds": 718.939,
+      "text": "the control, now the control goes here, to line 6 again."
+    },
+    {
+      "startSeconds": 719.139,
+      "endSeconds": 723.069,
+      "text": "How does that happen? Let me tell you."
+    },
+    {
+      "startSeconds": 723.269,
+      "endSeconds": 725.741,
+      "text": "As soon as we encounter this return statement,"
+    },
+    {
+      "startSeconds": 725.941,
+      "endSeconds": 728.197,
+      "text": "we have this return of ans,"
+    },
+    {
+      "startSeconds": 728.397,
+      "endSeconds": 732.746,
+      "text": "so it finds the value of ans inside this local memory."
+    },
+    {
+      "startSeconds": 732.946,
+      "endSeconds": 736.269,
+      "text": "This is known as the local memory, so local memory has 4,"
+    },
+    {
+      "startSeconds": 736.469,
+      "endSeconds": 740.272,
+      "text": "So this return ans now returns the control back over here"
+    },
+    {
+      "startSeconds": 740.472,
+      "endSeconds": 743.229,
+      "text": "and, okay in the line number 6,"
+    },
+    {
+      "startSeconds": 743.429,
+      "endSeconds": 751.132,
+      "text": "and this value of ans, which was here 4, will now replace undefined of square2."
+    },
+    {
+      "startSeconds": 751.332,
+      "endSeconds": 752.874,
+      "text": "Got it?"
+    },
+    {
+      "startSeconds": 753.074,
+      "endSeconds": 757.947,
+      "text": "This is how we are slowly executing the code."
+    },
+    {
+      "startSeconds": 758.147,
+      "endSeconds": 761.128,
+      "text": "The value will become 4 now. Okay?"
+    },
+    {
+      "startSeconds": 761.328,
+      "endSeconds": 764.72,
+      "text": "So 4 will be stored over here. Got it?"
+    },
+    {
+      "startSeconds": 764.92,
+      "endSeconds": 768.046,
+      "text": "One more thing that happens when the whole function is executed,"
+    },
+    {
+      "startSeconds": 768.246,
+      "endSeconds": 774.873,
+      "text": "is that, this whole execution context, for that instance of that function, will be deleted."
+    },
+    {
+      "startSeconds": 775.073,
+      "endSeconds": 781.147,
+      "text": "That means that this whole execution context will now be completely deleted."
+    },
+    {
+      "startSeconds": 781.347,
+      "endSeconds": 784.943,
+      "text": "So now there won't be the execution context as soon as we return the value"
+    },
+    {
+      "startSeconds": 785.143,
+      "endSeconds": 787.138,
+      "text": "So this whole thing wll be deleted. Okay?"
+    },
+    {
+      "startSeconds": 787.338,
+      "endSeconds": 789.117,
+      "text": "And the control moves to line number 6."
+    },
+    {
+      "startSeconds": 789.317,
+      "endSeconds": 793.7,
+      "text": "After this replacement, we will go to line number 7"
+    },
+    {
+      "startSeconds": 793.771,
+      "endSeconds": 797.566,
+      "text": "So in line number 7 we are again invoking a function, right,"
+    },
+    {
+      "startSeconds": 797.766,
+      "endSeconds": 803.515,
+      "text": "and just the difference is, we are now passing in 4 over here as an argument directly. That's it."
+    },
+    {
+      "startSeconds": 803.715,
+      "endSeconds": 805.44,
+      "text": "Nothing will change."
+    },
+    {
+      "startSeconds": 805.64,
+      "endSeconds": 807.58,
+      "text": "Similarly, what will happen now?"
+    },
+    {
+      "startSeconds": 807.78,
+      "endSeconds": 811.591,
+      "text": "As soon as this function invocation happens,"
+    },
+    {
+      "startSeconds": 811.791,
+      "endSeconds": 819.493,
+      "text": "Again, a brand new execution context will be created, so let us create one, quickly and see how things are working."
+    },
+    {
+      "startSeconds": 819.693,
+      "endSeconds": 825.162,
+      "text": "So the brand new execution context is created."
+    },
+    {
+      "startSeconds": 825.362,
+      "endSeconds": 828.725,
+      "text": "Apologies for this drawing, I'm not very good at drawing (standard teacher dialogue lol)"
+    },
+    {
+      "startSeconds": 828.925,
+      "endSeconds": 832.587,
+      "text": "This execution context is created,"
+    },
+    {
+      "startSeconds": 832.787,
+      "endSeconds": 834.39,
+      "text": "Again it will have this memory"
+    },
+    {
+      "startSeconds": 834.59,
+      "endSeconds": 837.933,
+      "text": "Again it will have a code component, remember?"
+    },
+    {
+      "startSeconds": 838.133,
+      "endSeconds": 841.136,
+      "text": "And now, it will again go through those two phases."
+    },
+    {
+      "startSeconds": 841.336,
+      "endSeconds": 843.092,
+      "text": "Let's quickly do that, it will be fun."
+    },
+    {
+      "startSeconds": 843.292,
+      "endSeconds": 847.237,
+      "text": "So now it again goes back to this function here, right?"
+    },
+    {
+      "startSeconds": 847.437,
+      "endSeconds": 849.801,
+      "text": "So this function. Now remember what happens?"
+    },
+    {
+      "startSeconds": 850.001,
+      "endSeconds": 853.87,
+      "text": "Firstly memory is allocated to num, okay?"
+    },
+    {
+      "startSeconds": 854.07,
+      "endSeconds": 857.667,
+      "text": "num will store the value undefined. Remember?"
+    },
+    {
+      "startSeconds": 857.867,
+      "endSeconds": 858.928,
+      "text": "So let me zoom in."
+    },
+    {
+      "startSeconds": 859.128,
+      "endSeconds": 861.671,
+      "text": "Undefined"
+    },
+    {
+      "startSeconds": 861.871,
+      "endSeconds": 871.46,
+      "text": "And, one more thing happens is, we allocate memory to ans, which is again, undefined."
+    },
+    {
+      "startSeconds": 871.66,
+      "endSeconds": 874.357,
+      "text": "Right?"
+    },
+    {
+      "startSeconds": 874.571,
+      "endSeconds": 877.114,
+      "text": "Our first phase is done."
+    },
+    {
+      "startSeconds": 877.271,
+      "endSeconds": 879.979,
+      "text": "Now in the second phase,"
+    },
+    {
+      "startSeconds": 880.179,
+      "endSeconds": 882.398,
+      "text": "In the code execution phase,"
+    },
+    {
+      "startSeconds": 882.598,
+      "endSeconds": 889.427,
+      "text": "What will happen is, num will get this argument, from the invocation in line number 7,"
+    },
+    {
+      "startSeconds": 889.627,
+      "endSeconds": 891.935,
+      "text": "num will get this value 4."
+    },
+    {
+      "startSeconds": 892.135,
+      "endSeconds": 894.812,
+      "text": "So num parameter will get the argument 4."
+    },
+    {
+      "startSeconds": 895.012,
+      "endSeconds": 896.435,
+      "text": "So here the argument is 4."
+    },
+    {
+      "startSeconds": 896.635,
+      "endSeconds": 897.757,
+      "text": "Okay?"
+    },
+    {
+      "startSeconds": 898.639,
+      "endSeconds": 907.4,
+      "text": "In the code execution,this undefined will be replaced by (in the code execution phase) 4."
+    },
+    {
+      "startSeconds": 907.743,
+      "endSeconds": 909.757,
+      "text": "Right?"
+    },
+    {
+      "startSeconds": 910.3,
+      "endSeconds": 912.685,
+      "text": "So it will be 4. Right?"
+    },
+    {
+      "startSeconds": 912.885,
+      "endSeconds": 917.986,
+      "text": "And, what will happen after that, it will go to line number 3. Right?"
+    },
+    {
+      "startSeconds": 918.186,
+      "endSeconds": 920.861,
+      "text": "So while invocation it will go to line number 3."
+    },
+    {
+      "startSeconds": 921.061,
+      "endSeconds": 925.418,
+      "text": "It will execute num*num, which is 4*4, 16"
+    },
+    {
+      "startSeconds": 925.618,
+      "endSeconds": 931.13,
+      "text": "and this 16 will now replace this undefined value inside the ans. Right?"
+    },
+    {
+      "startSeconds": 931.33,
+      "endSeconds": 936.749,
+      "text": "So we'll now replace this with 16. Got it?"
+    },
+    {
+      "startSeconds": 936.949,
+      "endSeconds": 938.959,
+      "text": "So now it'll store 16."
+    },
+    {
+      "startSeconds": 939.159,
+      "endSeconds": 944.007,
+      "text": "The control moves to line number 4. After 3 is done."
+    },
+    {
+      "startSeconds": 944.207,
+      "endSeconds": 950.961,
+      "text": "So now, this return statement takes back the control to line number 7, where, the function was actually invoked."
+    },
+    {
+      "startSeconds": 951.161,
+      "endSeconds": 956.994,
+      "text": "Now the value 16 will replace undefined in the square4 variable. Okay?"
+    },
+    {
+      "startSeconds": 957.194,
+      "endSeconds": 959.934,
+      "text": "So let us do that"
+    },
+    {
+      "startSeconds": 960.134,
+      "endSeconds": 969.1,
+      "text": "Let us quickly do that. It will now get value 16 over here. Okay?"
+    },
+    {
+      "startSeconds": 969.271,
+      "endSeconds": 974.229,
+      "text": "As soon as we are done with the function execution, this whole execution context is now deleted."
+    },
+    {
+      "startSeconds": 974.429,
+      "endSeconds": 975.933,
+      "text": "So this will be deleted."
+    },
+    {
+      "startSeconds": 976.133,
+      "endSeconds": 979.219,
+      "text": "So now line 7 is also executed, now there is nothing more."
+    },
+    {
+      "startSeconds": 979.419,
+      "endSeconds": 981.554,
+      "text": "So JS is done with all it's work."
+    },
+    {
+      "startSeconds": 981.754,
+      "endSeconds": 986.235,
+      "text": "So once JS is done with all it's work, now the program is finished,"
+    },
+    {
+      "startSeconds": 986.435,
+      "endSeconds": 992.743,
+      "text": "The whole global execution context also deletes; goes off. Okay?"
+    },
+    {
+      "startSeconds": 992.943,
+      "endSeconds": 995.677,
+      "text": "So that is how the whole code is executed."
+    },
+    {
+      "startSeconds": 995.877,
+      "endSeconds": 1002.064,
+      "text": "I know this was all a lot, and it will take some time to digest, but quickly revise everything once again"
+    },
+    {
+      "startSeconds": 1002.264,
+      "endSeconds": 1004.778,
+      "text": "it will be super fun. Okay?"
+    },
+    {
+      "startSeconds": 1004.978,
+      "endSeconds": 1008.813,
+      "text": "As soon as the whole JavaScript program is run,"
+    },
+    {
+      "startSeconds": 1009.013,
+      "endSeconds": 1012.179,
+      "text": "the execution context is created."
+    },
+    {
+      "startSeconds": 1012.379,
+      "endSeconds": 1014.185,
+      "text": "The global execution context is created."
+    },
+    {
+      "startSeconds": 1014.385,
+      "endSeconds": 1017.862,
+      "text": "It has two components, memory & code, as you know"
+    },
+    {
+      "startSeconds": 1018.062,
+      "endSeconds": 1020.605,
+      "text": "and it is created in two phases."
+    },
+    {
+      "startSeconds": 1020.805,
+      "endSeconds": 1025.684,
+      "text": "Phase 1, was the memory creation phase."
+    },
+    {
+      "startSeconds": 1025.884,
+      "endSeconds": 1033.879,
+      "text": "In the memory creation phase, we were allocating memory to all the variables and functions inside the global space."
+    },
+    {
+      "startSeconds": 1034.079,
+      "endSeconds": 1036.986,
+      "text": "So, inside this whole program."
+    },
+    {
+      "startSeconds": 1037.186,
+      "endSeconds": 1039.262,
+      "text": "We are allocating this memory."
+    },
+    {
+      "startSeconds": 1039.462,
+      "endSeconds": 1040.913,
+      "text": "And what we allocated these variables with?"
+    },
+    {
+      "startSeconds": 1041.113,
+      "endSeconds": 1045.403,
+      "text": "We allocated them with undefined,right?"
+    },
+    {
+      "startSeconds": 1045.603,
+      "endSeconds": 1048.66,
+      "text": "In case of functions, we just copied"
+    },
+    {
+      "startSeconds": 1048.86,
+      "endSeconds": 1052.269,
+      "text": "literally it just stores the whole function. Okay?"
+    },
+    {
+      "startSeconds": 1052.469,
+      "endSeconds": 1055.703,
+      "text": "The code of whole function inside the memory space."
+    },
+    {
+      "startSeconds": 1055.903,
+      "endSeconds": 1057.353,
+      "text": "So that is the first phase"
+    },
+    {
+      "startSeconds": 1057.553,
+      "endSeconds": 1061.37,
+      "text": "In the second phase,"
+    },
+    {
+      "startSeconds": 1061.57,
+      "endSeconds": 1065.29,
+      "text": "the code execution phase, now the JS program is executed line by line,"
+    },
+    {
+      "startSeconds": 1065.49,
+      "endSeconds": 1069.998,
+      "text": "it goes over here, it sees that 2 is here, so it replaces undefined with 2."
+    },
+    {
+      "startSeconds": 1070.198,
+      "endSeconds": 1076.485,
+      "text": "And it will now invoke the function, as control goes to line number 6, it'll invoke the function"
+    },
+    {
+      "startSeconds": 1076.685,
+      "endSeconds": 1080.234,
+      "text": "and it'll invoke the another function."
+    },
+    {
+      "startSeconds": 1080.434,
+      "endSeconds": 1084.044,
+      "text": "When you invoke this function,execution context is created,"
+    },
+    {
+      "startSeconds": 1084.244,
+      "endSeconds": 1091.557,
+      "text": "again there are two phases, the memory allocation phase, num and ans are allocated memory,"
+    },
+    {
+      "startSeconds": 1091.757,
+      "endSeconds": 1095.41,
+      "text": "and in the code execution phase, again this whole thing is run,"
+    },
+    {
+      "startSeconds": 1095.61,
+      "endSeconds": 1100.301,
+      "text": "the ans, num*num is executed, and num*num is now stored in ans."
+    },
+    {
+      "startSeconds": 1100.501,
+      "endSeconds": 1102.514,
+      "text": "and return statement is executed."
+    },
+    {
+      "startSeconds": 1102.557,
+      "endSeconds": 1105.336,
+      "text": "In the return statement, we take back the control over here,"
+    },
+    {
+      "startSeconds": 1105.536,
+      "endSeconds": 1112.793,
+      "text": "to square2, and now square2 is populated with a new value which is coming from this function invocation, which was the ans."
+    },
+    {
+      "startSeconds": 1112.993,
+      "endSeconds": 1115.257,
+      "text": "ans was 4, so square2 was 4."
+    },
+    {
+      "startSeconds": 1115.457,
+      "endSeconds": 1116.654,
+      "text": "*sighs*"
+    },
+    {
+      "startSeconds": 1116.857,
+      "endSeconds": 1122.581,
+      "text": "So it will happen again over here in this function execution,"
+    },
+    {
+      "startSeconds": 1122.781,
+      "endSeconds": 1125.813,
+      "text": "So a new execution context is created,"
+    },
+    {
+      "startSeconds": 1126.013,
+      "endSeconds": 1134.172,
+      "text": "and again the same cycle repeates, and that's how this function repeates 16 over here, and square4 is 16."
+    },
+    {
+      "startSeconds": 1134.372,
+      "endSeconds": 1136.76,
+      "text": "So that is how the whole thing works."
+    },
+    {
+      "startSeconds": 1136.96,
+      "endSeconds": 1140.454,
+      "text": "But don't you think that all this is too much to manage for the JS engine?"
+    },
+    {
+      "startSeconds": 1140.654,
+      "endSeconds": 1146.772,
+      "text": "Execution context is created one by one, inside one, and all these things are very tough to manage, right?"
+    },
+    {
+      "startSeconds": 1146.972,
+      "endSeconds": 1154.742,
+      "text": "And suppose if there was a function invocation inside the function, so what would have happened is"
+    },
+    {
+      "startSeconds": 1154.942,
+      "endSeconds": 1158.887,
+      "text": "you would have created an execution context INSIDE an execution context over here,"
+    },
+    {
+      "startSeconds": 1159.087,
+      "endSeconds": 1162.288,
+      "text": "and maybe again an invocation so it can go to any deep level right?"
+    },
+    {
+      "startSeconds": 1162.488,
+      "endSeconds": 1166.463,
+      "text": "function invocation inside that again function invocation, and all these things."
+    },
+    {
+      "startSeconds": 1166.663,
+      "endSeconds": 1171.424,
+      "text": "So it is very difficult for JS engine to manage, and it does it very beautifully."
+    },
+    {
+      "startSeconds": 1171.624,
+      "endSeconds": 1173.443,
+      "text": "So let me tell you how it does it."
+    },
+    {
+      "startSeconds": 1173.529,
+      "endSeconds": 1175.384,
+      "text": "This is the last part of this video,"
+    },
+    {
+      "startSeconds": 1175.584,
+      "endSeconds": 1183.165,
+      "text": "It handles everything to manage this execution context creation, deletion, and the control"
+    },
+    {
+      "startSeconds": 1183.365,
+      "endSeconds": 1184.856,
+      "text": "It manages a stack."
+    },
+    {
+      "startSeconds": 1185.056,
+      "endSeconds": 1188.442,
+      "text": "This is known as the call stack."
+    },
+    {
+      "startSeconds": 1188.642,
+      "endSeconds": 1191.099,
+      "text": "This is the beautiful thing in JavaScript."
+    },
+    {
+      "startSeconds": 1191.299,
+      "endSeconds": 1193.351,
+      "text": "It has it's own call stack."
+    },
+    {
+      "startSeconds": 1193.551,
+      "endSeconds": 1196.237,
+      "text": "Let me show you call stack."
+    },
+    {
+      "startSeconds": 1196.437,
+      "endSeconds": 1197.91,
+      "text": "What is a call stack?"
+    },
+    {
+      "startSeconds": 1198.11,
+      "endSeconds": 1199.395,
+      "text": "Let me show you"
+    },
+    {
+      "startSeconds": 1199.595,
+      "endSeconds": 1201.483,
+      "text": "The call stack is like a stack, okay?"
+    },
+    {
+      "startSeconds": 1201.683,
+      "endSeconds": 1203.804,
+      "text": "It is a stack"
+    },
+    {
+      "startSeconds": 1204.004,
+      "endSeconds": 1204.735,
+      "text": "Every time"
+    },
+    {
+      "startSeconds": 1204.935,
+      "endSeconds": 1209.413,
+      "text": "in the bottom of the stack we have our global execution context."
+    },
+    {
+      "startSeconds": 1209.613,
+      "endSeconds": 1217.73,
+      "text": "That means, whenever any JS program is run, this call stack is populated with this Global execution context."
+    },
+    {
+      "startSeconds": 1217.93,
+      "endSeconds": 1223.069,
+      "text": "This whole execution context is pushed inside this stack. Okay?"
+    },
+    {
+      "startSeconds": 1223.269,
+      "endSeconds": 1231.924,
+      "text": "Remember this. Whenever a function is invoked, or a new execution context is created,"
+    },
+    {
+      "startSeconds": 1232.124,
+      "endSeconds": 1233.581,
+      "text": "as in case here,"
+    },
+    {
+      "startSeconds": 1233.781,
+      "endSeconds": 1234.935,
+      "text": "in line number 6,"
+    },
+    {
+      "startSeconds": 1235.135,
+      "endSeconds": 1237.299,
+      "text": "we created this execution context,"
+    },
+    {
+      "startSeconds": 1237.499,
+      "endSeconds": 1240.636,
+      "text": "So this execution context is put inside the stack."
+    },
+    {
+      "startSeconds": 1240.836,
+      "endSeconds": 1244.167,
+      "text": "So let me just denote it by E1, which is the execution context 1."
+    },
+    {
+      "startSeconds": 1244.367,
+      "endSeconds": 1248.169,
+      "text": "This is how it happens."
+    },
+    {
+      "startSeconds": 1248.369,
+      "endSeconds": 1252.325,
+      "text": "Once we are done with executing this function, we return the ans,"
+    },
+    {
+      "startSeconds": 1252.525,
+      "endSeconds": 1255.206,
+      "text": "So what happened, now this E1 is moved out."
+    },
+    {
+      "startSeconds": 1255.406,
+      "endSeconds": 1262.047,
+      "text": "E1 is popped out of the stack, and the control goes back to the global execution context, where it left."
+    },
+    {
+      "startSeconds": 1262.247,
+      "endSeconds": 1266.272,
+      "text": "So the control goes back to line number 6. Okay? Got it?"
+    },
+    {
+      "startSeconds": 1266.472,
+      "endSeconds": 1267.726,
+      "text": "This is how it works."
+    },
+    {
+      "startSeconds": 1267.926,
+      "endSeconds": 1272.563,
+      "text": "This will again literally pop out of the stack"
+    },
+    {
+      "startSeconds": 1272.763,
+      "endSeconds": 1274.774,
+      "text": "Now E1 will be popped off the stack,"
+    },
+    {
+      "startSeconds": 1274.974,
+      "endSeconds": 1280.636,
+      "text": "and then we move on to line number 7, where the new function was invoked,"
+    },
+    {
+      "startSeconds": 1280.836,
+      "endSeconds": 1283.879,
+      "text": "and a new Execution context was created,"
+    },
+    {
+      "startSeconds": 1284.079,
+      "endSeconds": 1287.703,
+      "text": "and similarly this E2, will move up to the stack. Okay?"
+    },
+    {
+      "startSeconds": 1287.903,
+      "endSeconds": 1291.377,
+      "text": "This E2 was popped inside the stack."
+    },
+    {
+      "startSeconds": 1291.577,
+      "endSeconds": 1296.044,
+      "text": "Once the whole function was executed, then E2 will also move out of stack,"
+    },
+    {
+      "startSeconds": 1296.244,
+      "endSeconds": 1300.999,
+      "text": "and the control goes back to Global Execution Context (GEC)."
+    },
+    {
+      "startSeconds": 1301.199,
+      "endSeconds": 1307.455,
+      "text": "So this call stack is only for managing these Execution contexts."
+    },
+    {
+      "startSeconds": 1307.655,
+      "endSeconds": 1309.64,
+      "text": "Whenever an Execution context is created,"
+    },
+    {
+      "startSeconds": 1309.84,
+      "endSeconds": 1312.321,
+      "text": "it is pushed into the stack"
+    },
+    {
+      "startSeconds": 1312.521,
+      "endSeconds": 1316.297,
+      "text": "and whenever an Execution context is deleted, it will move out of the stack."
+    },
+    {
+      "startSeconds": 1316.497,
+      "endSeconds": 1318.768,
+      "text": "So that is how the whole control is being managed"
+    },
+    {
+      "startSeconds": 1318.968,
+      "endSeconds": 1322.405,
+      "text": "This whole Execution context creation deletion everything is managed by JavaScript"
+    },
+    {
+      "startSeconds": 1322.605,
+      "endSeconds": 1328.389,
+      "text": "After this whole thing is executed, the call stack gets empty."
+    },
+    {
+      "startSeconds": 1328.589,
+      "endSeconds": 1333.347,
+      "text": "The GEC is also gone from this call stack"
+    },
+    {
+      "startSeconds": 1333.547,
+      "endSeconds": 1335.587,
+      "text": "And we are done with our JavaScript program :)"
+    },
+    {
+      "startSeconds": 1335.787,
+      "endSeconds": 1341.169,
+      "text": "So that is how the whole code inside the JS Engine is executed."
+    },
+    {
+      "startSeconds": 1341.369,
+      "endSeconds": 1344.899,
+      "text": "With this let me take you to another core concept,"
+    },
+    {
+      "startSeconds": 1345.099,
+      "endSeconds": 1349.658,
+      "text": "which is, Call stack maintains the order of execution of Execution contexts."
+    },
+    {
+      "startSeconds": 1349.858,
+      "endSeconds": 1352.389,
+      "text": "Now I'll tell you one more interesting thing."
+    },
+    {
+      "startSeconds": 1352.589,
+      "endSeconds": 1359.193,
+      "text": "That call stack is also known by very fancy names. There are lot of fancy names which you will see on web"
+    },
+    {
+      "startSeconds": 1359.393,
+      "endSeconds": 1363.232,
+      "text": "That is why JS is the most confusing language."
+    },
+    {
+      "startSeconds": 1363.432,
+      "endSeconds": 1365.833,
+      "text": "It is most misunderstood language."
+    },
+    {
+      "startSeconds": 1366.033,
+      "endSeconds": 1374.757,
+      "text": "Call stack is also known as, Execution context stack, Program stack, Control stack, Runtime stack, Machine stack"
+    },
+    {
+      "startSeconds": 1374.943,
+      "endSeconds": 1376.878,
+      "text": "All various names are used for this call stack."
+    },
+    {
+      "startSeconds": 1377.078,
+      "endSeconds": 1379.244,
+      "text": "But it is all the same thing"
+    },
+    {
+      "startSeconds": 1379.444,
+      "endSeconds": 1386.331,
+      "text": "This beautiful call stack which will just maintain the order of execution of the Execution context."
+    },
+    {
+      "startSeconds": 1386.531,
+      "endSeconds": 1389.35,
+      "text": "I know this is too much to digest in a single video,"
+    },
+    {
+      "startSeconds": 1389.55,
+      "endSeconds": 1391.248,
+      "text": "but thank you for all your paitence."
+    }
+  ]
+}

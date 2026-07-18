@@ -1,0 +1,4617 @@
+{
+  "videoId": "ap-6PPAuK1Y",
+  "videoTitle": "Promises | Ep 02  Season 02 - Namaste JavaScript",
+  "languageCode": "en",
+  "segments": [
+    {
+      "startSeconds": 1.24,
+      "endSeconds": 5.759,
+      "text": "promises yes so promise is the most"
+    },
+    {
+      "startSeconds": 4.279,
+      "endSeconds": 7.64,
+      "text": "important topic you should know if you"
+    },
+    {
+      "startSeconds": 5.759,
+      "endSeconds": 9.559,
+      "text": "are a JavaScript developer if you're"
+    },
+    {
+      "startSeconds": 7.64,
+      "endSeconds": 12.4,
+      "text": "giving a frontend interview then"
+    },
+    {
+      "startSeconds": 9.559,
+      "endSeconds": 14.639,
+      "text": "definitely 100% there will be questions"
+    },
+    {
+      "startSeconds": 12.4,
+      "endSeconds": 16.72,
+      "text": "around promises knowing promises will"
+    },
+    {
+      "startSeconds": 14.639,
+      "endSeconds": 18.439,
+      "text": "not just help you in your interviews but"
+    },
+    {
+      "startSeconds": 16.72,
+      "endSeconds": 20.4,
+      "text": "will also help you become a better"
+    },
+    {
+      "startSeconds": 18.439,
+      "endSeconds": 22.439,
+      "text": "JavaScript developer while you are doing"
+    },
+    {
+      "startSeconds": 20.4,
+      "endSeconds": 24.24,
+      "text": "your day-to-day coding see I can tell"
+    },
+    {
+      "startSeconds": 22.439,
+      "endSeconds": 27.16,
+      "text": "you what promises are in just 5 to 10"
+    },
+    {
+      "startSeconds": 24.24,
+      "endSeconds": 29.24,
+      "text": "minutes but no I won't do that in this"
+    },
+    {
+      "startSeconds": 27.16,
+      "endSeconds": 31.759,
+      "text": "video we will be diving deep into"
+    },
+    {
+      "startSeconds": 29.24,
+      "endSeconds": 34.04,
+      "text": "promises just like how we do right and"
+    },
+    {
+      "startSeconds": 31.759,
+      "endSeconds": 37.16,
+      "text": "we will explore the beauty of promises"
+    },
+    {
+      "startSeconds": 34.04,
+      "endSeconds": 38.92,
+      "text": "we'll see how beautiful promises are so"
+    },
+    {
+      "startSeconds": 37.16,
+      "endSeconds": 41.64,
+      "text": "that's why this episode can go a little"
+    },
+    {
+      "startSeconds": 38.92,
+      "endSeconds": 43.64,
+      "text": "long but I promise that you will fall in"
+    },
+    {
+      "startSeconds": 41.64,
+      "endSeconds": 45.84,
+      "text": "love with promises after watching this"
+    },
+    {
+      "startSeconds": 43.64,
+      "endSeconds": 47.92,
+      "text": "video so I just please request your"
+    },
+    {
+      "startSeconds": 45.84,
+      "endSeconds": 51.239,
+      "text": "attention and just keep watching this"
+    },
+    {
+      "startSeconds": 47.92,
+      "endSeconds": 54.12,
+      "text": "episode of Namaste JavaScript season"
+    },
+    {
+      "startSeconds": 51.239,
+      "endSeconds": 55.92,
+      "text": "2 so now listen to me very carefully"
+    },
+    {
+      "startSeconds": 54.12,
+      "endSeconds": 58.359,
+      "text": "promises are used to handle async"
+    },
+    {
+      "startSeconds": 55.92,
+      "endSeconds": 60.6,
+      "text": "operations in JavaScript now I will take"
+    },
+    {
+      "startSeconds": 58.359,
+      "endSeconds": 62.64,
+      "text": "a code example and will show you how"
+    },
+    {
+      "startSeconds": 60.6,
+      "endSeconds": 65.72,
+      "text": "things used to work before promises and"
+    },
+    {
+      "startSeconds": 62.64,
+      "endSeconds": 67.6,
+      "text": "then how it used to work after promises"
+    },
+    {
+      "startSeconds": 65.72,
+      "endSeconds": 70.84,
+      "text": "let's just begin let's dive into the"
+    },
+    {
+      "startSeconds": 67.6,
+      "endSeconds": 72.84,
+      "text": "code now so I will take a take a example"
+    },
+    {
+      "startSeconds": 70.84,
+      "endSeconds": 76.08,
+      "text": "suppose we are creating an e-commerce"
+    },
+    {
+      "startSeconds": 72.84,
+      "endSeconds": 78.32,
+      "text": "website like Amazon right so we have"
+    },
+    {
+      "startSeconds": 76.08,
+      "endSeconds": 81.479,
+      "text": "cart in it suppose we have a cart in it"
+    },
+    {
+      "startSeconds": 78.32,
+      "endSeconds": 83.52,
+      "text": "let's call it as const cart right so"
+    },
+    {
+      "startSeconds": 81.479,
+      "endSeconds": 85.52,
+      "text": "this cart is nothing but an array for"
+    },
+    {
+      "startSeconds": 83.52,
+      "endSeconds": 87.96,
+      "text": "the sake of Simplicity I will just use"
+    },
+    {
+      "startSeconds": 85.52,
+      "endSeconds": 90.2,
+      "text": "strings over here okay and let's add"
+    },
+    {
+      "startSeconds": 87.96,
+      "endSeconds": 93.2,
+      "text": "some items to the card what items should"
+    },
+    {
+      "startSeconds": 90.2,
+      "endSeconds": 97,
+      "text": "be add let's add shoes and tell me some"
+    },
+    {
+      "startSeconds": 93.2,
+      "endSeconds": 101,
+      "text": "products okay let's add pants let's add"
+    },
+    {
+      "startSeconds": 97,
+      "endSeconds": 102.96,
+      "text": "Kura to it why not right so let's add CA"
+    },
+    {
+      "startSeconds": 101,
+      "endSeconds": 105.399,
+      "text": "right so this is our cart every"
+    },
+    {
+      "startSeconds": 102.96,
+      "endSeconds": 108.04,
+      "text": "e-commerce website has a cart along with"
+    },
+    {
+      "startSeconds": 105.399,
+      "endSeconds": 110.439,
+      "text": "the cart suppose we have two more apis"
+    },
+    {
+      "startSeconds": 108.04,
+      "endSeconds": 114.56,
+      "text": "let's call them as create order API"
+    },
+    {
+      "startSeconds": 110.439,
+      "endSeconds": 118.2,
+      "text": "right this API takes cart to it right"
+    },
+    {
+      "startSeconds": 114.56,
+      "endSeconds": 120.68,
+      "text": "takes the cart items and will return us"
+    },
+    {
+      "startSeconds": 118.2,
+      "endSeconds": 122.399,
+      "text": "the order details or an order order ID"
+    },
+    {
+      "startSeconds": 120.68,
+      "endSeconds": 124.56,
+      "text": "right what this will do is this will"
+    },
+    {
+      "startSeconds": 122.399,
+      "endSeconds": 126.96,
+      "text": "create an order in our database or"
+    },
+    {
+      "startSeconds": 124.56,
+      "endSeconds": 129.44,
+      "text": "whatever it will do and will give us an"
+    },
+    {
+      "startSeconds": 126.96,
+      "endSeconds": 131.239,
+      "text": "order ID it will create a order right"
+    },
+    {
+      "startSeconds": 129.44,
+      "endSeconds": 133.52,
+      "text": "and then there is one more API let us"
+    },
+    {
+      "startSeconds": 131.239,
+      "endSeconds": 137.8,
+      "text": "call that as proceed to payment right"
+    },
+    {
+      "startSeconds": 133.52,
+      "endSeconds": 140.28,
+      "text": "this API basically proceed to payment"
+    },
+    {
+      "startSeconds": 137.8,
+      "endSeconds": 143.56,
+      "text": "okay this API will then take this order"
+    },
+    {
+      "startSeconds": 140.28,
+      "endSeconds": 145.72,
+      "text": "ID and will take you to the payment page"
+    },
+    {
+      "startSeconds": 143.56,
+      "endSeconds": 148.519,
+      "text": "or this will proceed to payment right"
+    },
+    {
+      "startSeconds": 145.72,
+      "endSeconds": 151.68,
+      "text": "this so now what will happen is these"
+    },
+    {
+      "startSeconds": 148.519,
+      "endSeconds": 153.519,
+      "text": "two apis are are asynchronous create"
+    },
+    {
+      "startSeconds": 151.68,
+      "endSeconds": 155.239,
+      "text": "order is asynchronous proceed to payment"
+    },
+    {
+      "startSeconds": 153.519,
+      "endSeconds": 157.879,
+      "text": "is asynchronous we don't know how much"
+    },
+    {
+      "startSeconds": 155.239,
+      "endSeconds": 160.72,
+      "text": "time it will take right and they are"
+    },
+    {
+      "startSeconds": 157.879,
+      "endSeconds": 162.959,
+      "text": "dependent on each other right so we can"
+    },
+    {
+      "startSeconds": 160.72,
+      "endSeconds": 166.519,
+      "text": "only do proceed to payment once we have"
+    },
+    {
+      "startSeconds": 162.959,
+      "endSeconds": 169.08,
+      "text": "created the order make sense right so"
+    },
+    {
+      "startSeconds": 166.519,
+      "endSeconds": 171.56,
+      "text": "how so now let us see that how we used"
+    },
+    {
+      "startSeconds": 169.08,
+      "endSeconds": 174.28,
+      "text": "to write this code using callbacks right"
+    },
+    {
+      "startSeconds": 171.56,
+      "endSeconds": 176.68,
+      "text": "callbacks used to be very crucial part"
+    },
+    {
+      "startSeconds": 174.28,
+      "endSeconds": 178.64,
+      "text": "when writing asynchronous code in our"
+    },
+    {
+      "startSeconds": 176.68,
+      "endSeconds": 181.159,
+      "text": "programming so how we handle this type"
+    },
+    {
+      "startSeconds": 178.64,
+      "endSeconds": 183.84,
+      "text": "of situation in our code using callbacks"
+    },
+    {
+      "startSeconds": 181.159,
+      "endSeconds": 186.28,
+      "text": "is that we wrap this function inside a"
+    },
+    {
+      "startSeconds": 183.84,
+      "endSeconds": 188.36,
+      "text": "call back function right this proceed to"
+    },
+    {
+      "startSeconds": 186.28,
+      "endSeconds": 191.159,
+      "text": "payment we will wrap it inside a call"
+    },
+    {
+      "startSeconds": 188.36,
+      "endSeconds": 193.72,
+      "text": "back function and what we used to do is"
+    },
+    {
+      "startSeconds": 191.159,
+      "endSeconds": 196.4,
+      "text": "we design our apis in such a way that we"
+    },
+    {
+      "startSeconds": 193.72,
+      "endSeconds": 198.28,
+      "text": "pass this call back function let us just"
+    },
+    {
+      "startSeconds": 196.4,
+      "endSeconds": 202.159,
+      "text": "grab this and we'll pass this fallback"
+    },
+    {
+      "startSeconds": 198.28,
+      "endSeconds": 205.04,
+      "text": "function to create order API right this"
+    },
+    {
+      "startSeconds": 202.159,
+      "endSeconds": 207.76,
+      "text": "this used to be the case now it is the"
+    },
+    {
+      "startSeconds": 205.04,
+      "endSeconds": 209.799,
+      "text": "responsibility of create order API to"
+    },
+    {
+      "startSeconds": 207.76,
+      "endSeconds": 212.2,
+      "text": "create an order first of all and then"
+    },
+    {
+      "startSeconds": 209.799,
+      "endSeconds": 214.319,
+      "text": "will call our call back function back"
+    },
+    {
+      "startSeconds": 212.2,
+      "endSeconds": 216.319,
+      "text": "once the order is created with the order"
+    },
+    {
+      "startSeconds": 214.319,
+      "endSeconds": 218.68,
+      "text": "ID so this is how we used to handle"
+    },
+    {
+      "startSeconds": 216.319,
+      "endSeconds": 221.08,
+      "text": "async operations using callbacks but my"
+    },
+    {
+      "startSeconds": 218.68,
+      "endSeconds": 223.84,
+      "text": "dear friends there is a very important"
+    },
+    {
+      "startSeconds": 221.08,
+      "endSeconds": 225.319,
+      "text": "issue with this code what is that issue"
+    },
+    {
+      "startSeconds": 223.84,
+      "endSeconds": 227.84,
+      "text": "if you have seen my previous video you"
+    },
+    {
+      "startSeconds": 225.319,
+      "endSeconds": 230.879,
+      "text": "would have guessed it already yes that"
+    },
+    {
+      "startSeconds": 227.84,
+      "endSeconds": 233.36,
+      "text": "issue is inversion of control so what"
+    },
+    {
+      "startSeconds": 230.879,
+      "endSeconds": 235.159,
+      "text": "does that mean is that we have given"
+    },
+    {
+      "startSeconds": 233.36,
+      "endSeconds": 237.04,
+      "text": "this callback function we have passed"
+    },
+    {
+      "startSeconds": 235.159,
+      "endSeconds": 239.159,
+      "text": "this call back function to create order"
+    },
+    {
+      "startSeconds": 237.04,
+      "endSeconds": 241.68,
+      "text": "API and now we are just sitting back"
+    },
+    {
+      "startSeconds": 239.159,
+      "endSeconds": 244.519,
+      "text": "relaxed as a developer that at some"
+    },
+    {
+      "startSeconds": 241.68,
+      "endSeconds": 246.4,
+      "text": "point of time this create order function"
+    },
+    {
+      "startSeconds": 244.519,
+      "endSeconds": 249.56,
+      "text": "will just call our call back function"
+    },
+    {
+      "startSeconds": 246.4,
+      "endSeconds": 252.799,
+      "text": "back and everything will be peaceful but"
+    },
+    {
+      "startSeconds": 249.56,
+      "endSeconds": 255.239,
+      "text": "but but what if what if we are just"
+    },
+    {
+      "startSeconds": 252.799,
+      "endSeconds": 256.959,
+      "text": "blindly trusting this create order API"
+    },
+    {
+      "startSeconds": 255.239,
+      "endSeconds": 260.799,
+      "text": "and it never calls our call back"
+    },
+    {
+      "startSeconds": 256.959,
+      "endSeconds": 263.56,
+      "text": "function back or it might call it twice"
+    },
+    {
+      "startSeconds": 260.799,
+      "endSeconds": 266.08,
+      "text": "who knows because this create order API"
+    },
+    {
+      "startSeconds": 263.56,
+      "endSeconds": 268.639,
+      "text": "can be in some other service can be in"
+    },
+    {
+      "startSeconds": 266.08,
+      "endSeconds": 270.199,
+      "text": "some external world can be written by"
+    },
+    {
+      "startSeconds": 268.639,
+      "endSeconds": 272.8,
+      "text": "some other developer or or some other"
+    },
+    {
+      "startSeconds": 270.199,
+      "endSeconds": 276.52,
+      "text": "team or some intern and we can't just"
+    },
+    {
+      "startSeconds": 272.8,
+      "endSeconds": 279.4,
+      "text": "blindly trust these apis isn't it so"
+    },
+    {
+      "startSeconds": 276.52,
+      "endSeconds": 281.52,
+      "text": "what I mean to say is that we have given"
+    },
+    {
+      "startSeconds": 279.4,
+      "endSeconds": 284.12,
+      "text": "the responsibility of our code proceed"
+    },
+    {
+      "startSeconds": 281.52,
+      "endSeconds": 286.199,
+      "text": "to payment to some other API and it's"
+    },
+    {
+      "startSeconds": 284.12,
+      "endSeconds": 288.16,
+      "text": "not in our control anymore we have just"
+    },
+    {
+      "startSeconds": 286.199,
+      "endSeconds": 290.639,
+      "text": "passed in and we are just expecting it"
+    },
+    {
+      "startSeconds": 288.16,
+      "endSeconds": 293.68,
+      "text": "to be like randomly magically being"
+    },
+    {
+      "startSeconds": 290.639,
+      "endSeconds": 296.919,
+      "text": "called after the order is created isn't"
+    },
+    {
+      "startSeconds": 293.68,
+      "endSeconds": 299.68,
+      "text": "it risky so passing call back functions"
+    },
+    {
+      "startSeconds": 296.919,
+      "endSeconds": 301.639,
+      "text": "like this isn't reliable we are just giv"
+    },
+    {
+      "startSeconds": 299.68,
+      "endSeconds": 304.12,
+      "text": "giving the control of our program to"
+    },
+    {
+      "startSeconds": 301.639,
+      "endSeconds": 307.88,
+      "text": "some other part of our code which we are"
+    },
+    {
+      "startSeconds": 304.12,
+      "endSeconds": 310.479,
+      "text": "not aware of isn't it this is not a very"
+    },
+    {
+      "startSeconds": 307.88,
+      "endSeconds": 312.68,
+      "text": "confident way of writing code so how we"
+    },
+    {
+      "startSeconds": 310.479,
+      "endSeconds": 314.4,
+      "text": "can solve this so now let us just see"
+    },
+    {
+      "startSeconds": 312.68,
+      "endSeconds": 317.08,
+      "text": "that how we can handle this type of"
+    },
+    {
+      "startSeconds": 314.4,
+      "endSeconds": 318.72,
+      "text": "situation using promises okay so what"
+    },
+    {
+      "startSeconds": 317.08,
+      "endSeconds": 321.16,
+      "text": "will happen is if we were designing"
+    },
+    {
+      "startSeconds": 318.72,
+      "endSeconds": 324.16,
+      "text": "these apis so we would have designed our"
+    },
+    {
+      "startSeconds": 321.16,
+      "endSeconds": 326.68,
+      "text": "create order API in such a way that"
+    },
+    {
+      "startSeconds": 324.16,
+      "endSeconds": 328.56,
+      "text": "whenever we this API right create order"
+    },
+    {
+      "startSeconds": 326.68,
+      "endSeconds": 330.28,
+      "text": "API will no longer take a call back"
+    },
+    {
+      "startSeconds": 328.56,
+      "endSeconds": 332.36,
+      "text": "function it won't take a call back"
+    },
+    {
+      "startSeconds": 330.28,
+      "endSeconds": 335.12,
+      "text": "function but it will just take card"
+    },
+    {
+      "startSeconds": 332.36,
+      "endSeconds": 337.68,
+      "text": "details right and what it will do is it"
+    },
+    {
+      "startSeconds": 335.12,
+      "endSeconds": 339.88,
+      "text": "will return us a promise what is a"
+    },
+    {
+      "startSeconds": 337.68,
+      "endSeconds": 343.72,
+      "text": "promise I will tell you so we will"
+    },
+    {
+      "startSeconds": 339.88,
+      "endSeconds": 346.68,
+      "text": "capture that promise into a variable let"
+    },
+    {
+      "startSeconds": 343.72,
+      "endSeconds": 348.96,
+      "text": "us call it as promise right so whenever"
+    },
+    {
+      "startSeconds": 346.68,
+      "endSeconds": 351.639,
+      "text": "you call this line right whenever this"
+    },
+    {
+      "startSeconds": 348.96,
+      "endSeconds": 354.759,
+      "text": "line is executed by JavaScript this"
+    },
+    {
+      "startSeconds": 351.639,
+      "endSeconds": 357.96,
+      "text": "create order API will return us a"
+    },
+    {
+      "startSeconds": 354.759,
+      "endSeconds": 360.639,
+      "text": "promise and promise is nothing but you"
+    },
+    {
+      "startSeconds": 357.96,
+      "endSeconds": 363.479,
+      "text": "can assume it to be an empty object"
+    },
+    {
+      "startSeconds": 360.639,
+      "endSeconds": 366.639,
+      "text": "right empty object with some data value"
+    },
+    {
+      "startSeconds": 363.479,
+      "endSeconds": 370.319,
+      "text": "in it right and this data value will"
+    },
+    {
+      "startSeconds": 366.639,
+      "endSeconds": 373.88,
+      "text": "hold whatever this create order API will"
+    },
+    {
+      "startSeconds": 370.319,
+      "endSeconds": 376.199,
+      "text": "return to us right so now listen to me"
+    },
+    {
+      "startSeconds": 373.88,
+      "endSeconds": 378.84,
+      "text": "very carefully this create order API is"
+    },
+    {
+      "startSeconds": 376.199,
+      "endSeconds": 380.56,
+      "text": "an async operation it will take some"
+    },
+    {
+      "startSeconds": 378.84,
+      "endSeconds": 382.24,
+      "text": "time to execute but we don't know how"
+    },
+    {
+      "startSeconds": 380.56,
+      "endSeconds": 384.56,
+      "text": "much time it will take this create order"
+    },
+    {
+      "startSeconds": 382.24,
+      "endSeconds": 386.88,
+      "text": "API might take 5 Seconds 6 seconds or we"
+    },
+    {
+      "startSeconds": 384.56,
+      "endSeconds": 390.199,
+      "text": "don't know how much time it will take"
+    },
+    {
+      "startSeconds": 386.88,
+      "endSeconds": 393.16,
+      "text": "but as soon as this line is executed"
+    },
+    {
+      "startSeconds": 390.199,
+      "endSeconds": 396.479,
+      "text": "it will return us an object right it"
+    },
+    {
+      "startSeconds": 393.16,
+      "endSeconds": 400.56,
+      "text": "will return us an object with a data"
+    },
+    {
+      "startSeconds": 396.479,
+      "endSeconds": 403.639,
+      "text": "with some empty undefined property right"
+    },
+    {
+      "startSeconds": 400.56,
+      "endSeconds": 405.96,
+      "text": "undefined or an empty value right what"
+    },
+    {
+      "startSeconds": 403.639,
+      "endSeconds": 408.199,
+      "text": "does undefined means an empty value it"
+    },
+    {
+      "startSeconds": 405.96,
+      "endSeconds": 410.84,
+      "text": "will just assume that it is returning us"
+    },
+    {
+      "startSeconds": 408.199,
+      "endSeconds": 413.44,
+      "text": "an empty object with some property data"
+    },
+    {
+      "startSeconds": 410.84,
+      "endSeconds": 417.199,
+      "text": "and it is undefined not defined at that"
+    },
+    {
+      "startSeconds": 413.44,
+      "endSeconds": 419.28,
+      "text": "moment itself and suppose after 5 Second"
+    },
+    {
+      "startSeconds": 417.199,
+      "endSeconds": 422.84,
+      "text": "6 second 10 seconds whenever how much"
+    },
+    {
+      "startSeconds": 419.28,
+      "endSeconds": 426,
+      "text": "ever time it takes what it will do is it"
+    },
+    {
+      "startSeconds": 422.84,
+      "endSeconds": 429.08,
+      "text": "will create an order and will give us"
+    },
+    {
+      "startSeconds": 426,
+      "endSeconds": 432.84,
+      "text": "order details and will fill this object"
+    },
+    {
+      "startSeconds": 429.08,
+      "endSeconds": 434.72,
+      "text": "back at some later point of time got it"
+    },
+    {
+      "startSeconds": 432.84,
+      "endSeconds": 436.479,
+      "text": "I will repeat it once again listen to me"
+    },
+    {
+      "startSeconds": 434.72,
+      "endSeconds": 439.36,
+      "text": "very carefully because this is very"
+    },
+    {
+      "startSeconds": 436.479,
+      "endSeconds": 442.759,
+      "text": "important whenever JavaScript engine"
+    },
+    {
+      "startSeconds": 439.36,
+      "endSeconds": 445.16,
+      "text": "will execute this line right so this"
+    },
+    {
+      "startSeconds": 442.759,
+      "endSeconds": 448.039,
+      "text": "create order API will return us a"
+    },
+    {
+      "startSeconds": 445.16,
+      "endSeconds": 450.319,
+      "text": "promise promise is nothing but an empty"
+    },
+    {
+      "startSeconds": 448.039,
+      "endSeconds": 452.52,
+      "text": "object over here"
+    },
+    {
+      "startSeconds": 450.319,
+      "endSeconds": 454.84,
+      "text": "and what will happen is the program will"
+    },
+    {
+      "startSeconds": 452.52,
+      "endSeconds": 457.24,
+      "text": "just go on executing suppose if there"
+    },
+    {
+      "startSeconds": 454.84,
+      "endSeconds": 460.639,
+      "text": "are more lines of code over here they"
+    },
+    {
+      "startSeconds": 457.24,
+      "endSeconds": 463.599,
+      "text": "will start they will start executing and"
+    },
+    {
+      "startSeconds": 460.639,
+      "endSeconds": 466.479,
+      "text": "after 5 Seconds 6 second or how much"
+    },
+    {
+      "startSeconds": 463.599,
+      "endSeconds": 469.56,
+      "text": "time it takes what will happen is This"
+    },
+    {
+      "startSeconds": 466.479,
+      "endSeconds": 471.96,
+      "text": "Promise object this empty object will be"
+    },
+    {
+      "startSeconds": 469.56,
+      "endSeconds": 474.72,
+      "text": "filled with data"
+    },
+    {
+      "startSeconds": 471.96,
+      "endSeconds": 477.479,
+      "text": "automatically Right This Promise object"
+    },
+    {
+      "startSeconds": 474.72,
+      "endSeconds": 480.24,
+      "text": "will fill this data automatically and we"
+    },
+    {
+      "startSeconds": 477.479,
+      "endSeconds": 483.879,
+      "text": "will have order details in it after"
+    },
+    {
+      "startSeconds": 480.24,
+      "endSeconds": 486.44,
+      "text": "whatever async time it takes got it this"
+    },
+    {
+      "startSeconds": 483.879,
+      "endSeconds": 488.159,
+      "text": "is what promise is so now you can ask me"
+    },
+    {
+      "startSeconds": 486.44,
+      "endSeconds": 490.159,
+      "text": "a very important question that what will"
+    },
+    {
+      "startSeconds": 488.159,
+      "endSeconds": 492.599,
+      "text": "happen once we have these order details"
+    },
+    {
+      "startSeconds": 490.159,
+      "endSeconds": 494.56,
+      "text": "once we have this data with us how do we"
+    },
+    {
+      "startSeconds": 492.599,
+      "endSeconds": 496.56,
+      "text": "continue our program what will happen to"
+    },
+    {
+      "startSeconds": 494.56,
+      "endSeconds": 499.039,
+      "text": "proceed to payment yes I will tell you"
+    },
+    {
+      "startSeconds": 496.56,
+      "endSeconds": 501.72,
+      "text": "what happens so what we will do is now"
+    },
+    {
+      "startSeconds": 499.039,
+      "endSeconds": 504.24,
+      "text": "we will attach a call back function to"
+    },
+    {
+      "startSeconds": 501.72,
+      "endSeconds": 506.8,
+      "text": "This Promise object right and how do we"
+    },
+    {
+      "startSeconds": 504.24,
+      "endSeconds": 510,
+      "text": "do that I'll show you so we will use a"
+    },
+    {
+      "startSeconds": 506.8,
+      "endSeconds": 511.919,
+      "text": "function do then this is the"
+    },
+    {
+      "startSeconds": 510,
+      "endSeconds": 514.56,
+      "text": "this is a function which is available"
+    },
+    {
+      "startSeconds": 511.919,
+      "endSeconds": 517.279,
+      "text": "over promise object this is the promise"
+    },
+    {
+      "startSeconds": 514.56,
+      "endSeconds": 519.599,
+      "text": "object we can use promise object right"
+    },
+    {
+      "startSeconds": 517.279,
+      "endSeconds": 523.039,
+      "text": "whatever we call it as we will use"
+    },
+    {
+      "startSeconds": 519.599,
+      "endSeconds": 526.04,
+      "text": "promise. then and we will attach a call"
+    },
+    {
+      "startSeconds": 523.039,
+      "endSeconds": 528.24,
+      "text": "back function using this then function"
+    },
+    {
+      "startSeconds": 526.04,
+      "endSeconds": 530.959,
+      "text": "okay we will have this call back"
+    },
+    {
+      "startSeconds": 528.24,
+      "endSeconds": 533.88,
+      "text": "function that we used to pass in earlier"
+    },
+    {
+      "startSeconds": 530.959,
+      "endSeconds": 537.68,
+      "text": "and we will attach it to our promise"
+    },
+    {
+      "startSeconds": 533.88,
+      "endSeconds": 539.8,
+      "text": "object now what will happen is whenever"
+    },
+    {
+      "startSeconds": 537.68,
+      "endSeconds": 542.519,
+      "text": "right earlier this data used to be"
+    },
+    {
+      "startSeconds": 539.8,
+      "endSeconds": 544.92,
+      "text": "undefined right this was empty as soon"
+    },
+    {
+      "startSeconds": 542.519,
+      "endSeconds": 547.76,
+      "text": "as JavaScript engine executed this line"
+    },
+    {
+      "startSeconds": 544.92,
+      "endSeconds": 550.36,
+      "text": "this was undefined this was empty but"
+    },
+    {
+      "startSeconds": 547.76,
+      "endSeconds": 553.279,
+      "text": "after certain point of time this will be"
+    },
+    {
+      "startSeconds": 550.36,
+      "endSeconds": 556.44,
+      "text": "filled with exact data that will be"
+    },
+    {
+      "startSeconds": 553.279,
+      "endSeconds": 559.04,
+      "text": "returned by create order API right here"
+    },
+    {
+      "startSeconds": 556.44,
+      "endSeconds": 561.04,
+      "text": "we will have order details right and"
+    },
+    {
+      "startSeconds": 559.04,
+      "endSeconds": 564,
+      "text": "once we have data inside This Promise"
+    },
+    {
+      "startSeconds": 561.04,
+      "endSeconds": 565.76,
+      "text": "object what will happen is this call"
+    },
+    {
+      "startSeconds": 564,
+      "endSeconds": 568.079,
+      "text": "back function that we attach to This"
+    },
+    {
+      "startSeconds": 565.76,
+      "endSeconds": 572.079,
+      "text": "Promise object will be automatically"
+    },
+    {
+      "startSeconds": 568.079,
+      "endSeconds": 575.04,
+      "text": "called right so this is how we used we"
+    },
+    {
+      "startSeconds": 572.079,
+      "endSeconds": 577.959,
+      "text": "write code in world of promise and this"
+    },
+    {
+      "startSeconds": 575.04,
+      "endSeconds": 580.519,
+      "text": "is how we used to do earlier"
+    },
+    {
+      "startSeconds": 577.959,
+      "endSeconds": 582.399,
+      "text": "right so now I know that you might have"
+    },
+    {
+      "startSeconds": 580.519,
+      "endSeconds": 584.16,
+      "text": "a lot of doubts in your mind that ake"
+    },
+    {
+      "startSeconds": 582.399,
+      "endSeconds": 586.76,
+      "text": "what are you smoking this is looking"
+    },
+    {
+      "startSeconds": 584.16,
+      "endSeconds": 589.64,
+      "text": "more complicated than callbacks right"
+    },
+    {
+      "startSeconds": 586.76,
+      "endSeconds": 592.079,
+      "text": "the earlier solution how did how did you"
+    },
+    {
+      "startSeconds": 589.64,
+      "endSeconds": 595.72,
+      "text": "help us right we are still using"
+    },
+    {
+      "startSeconds": 592.079,
+      "endSeconds": 598.24,
+      "text": "callbacks over here right so what what"
+    },
+    {
+      "startSeconds": 595.72,
+      "endSeconds": 600,
+      "text": "Improvement did we make in our code I"
+    },
+    {
+      "startSeconds": 598.24,
+      "endSeconds": 603.68,
+      "text": "will tell you my dear friend friends"
+    },
+    {
+      "startSeconds": 600,
+      "endSeconds": 606.959,
+      "text": "this piece of code is a lot lot lot"
+    },
+    {
+      "startSeconds": 603.68,
+      "endSeconds": 609.36,
+      "text": "better than this piece of code how can"
+    },
+    {
+      "startSeconds": 606.959,
+      "endSeconds": 612.44,
+      "text": "you guess I will tell"
+    },
+    {
+      "startSeconds": 609.36,
+      "endSeconds": 614.8,
+      "text": "you listen to me very carefully what we"
+    },
+    {
+      "startSeconds": 612.44,
+      "endSeconds": 618.6,
+      "text": "did in the earlier solution was we"
+    },
+    {
+      "startSeconds": 614.8,
+      "endSeconds": 620.36,
+      "text": "passed this function to create order API"
+    },
+    {
+      "startSeconds": 618.6,
+      "endSeconds": 623.36,
+      "text": "and we were blindly trusting create"
+    },
+    {
+      "startSeconds": 620.36,
+      "endSeconds": 626.44,
+      "text": "order API we were relying on it and in"
+    },
+    {
+      "startSeconds": 623.36,
+      "endSeconds": 628.839,
+      "text": "this case we are attaching a call back"
+    },
+    {
+      "startSeconds": 626.44,
+      "endSeconds": 629.839,
+      "text": "function to a promise object there is a"
+    },
+    {
+      "startSeconds": 628.839,
+      "endSeconds": 632.839,
+      "text": "difference"
+    },
+    {
+      "startSeconds": 629.839,
+      "endSeconds": 636.6,
+      "text": "first one we were passing this call back"
+    },
+    {
+      "startSeconds": 632.839,
+      "endSeconds": 639.44,
+      "text": "function to another function right and"
+    },
+    {
+      "startSeconds": 636.6,
+      "endSeconds": 642.92,
+      "text": "here we are attaching a callback"
+    },
+    {
+      "startSeconds": 639.44,
+      "endSeconds": 644.92,
+      "text": "function to a promise object there is a"
+    },
+    {
+      "startSeconds": 642.92,
+      "endSeconds": 648.2,
+      "text": "difference between these words passing a"
+    },
+    {
+      "startSeconds": 644.92,
+      "endSeconds": 650.399,
+      "text": "function and attaching a function so"
+    },
+    {
+      "startSeconds": 648.2,
+      "endSeconds": 652.92,
+      "text": "what happens in this case is we just"
+    },
+    {
+      "startSeconds": 650.399,
+      "endSeconds": 655.04,
+      "text": "pass this function and now create order"
+    },
+    {
+      "startSeconds": 652.92,
+      "endSeconds": 658.76,
+      "text": "API would have called it whenever it"
+    },
+    {
+      "startSeconds": 655.04,
+      "endSeconds": 661,
+      "text": "wants to right and in this case we will"
+    },
+    {
+      "startSeconds": 658.76,
+      "endSeconds": 665.68,
+      "text": "have the the control of our program with"
+    },
+    {
+      "startSeconds": 661,
+      "endSeconds": 668.76,
+      "text": "us right how that create order API will"
+    },
+    {
+      "startSeconds": 665.68,
+      "endSeconds": 671.44,
+      "text": "only do its job it will create an order"
+    },
+    {
+      "startSeconds": 668.76,
+      "endSeconds": 674.24,
+      "text": "and it will it will fill the promise"
+    },
+    {
+      "startSeconds": 671.44,
+      "endSeconds": 676.88,
+      "text": "object with the data the order ID"
+    },
+    {
+      "startSeconds": 674.24,
+      "endSeconds": 679.48,
+      "text": "whenever it wants to and as soon as this"
+    },
+    {
+      "startSeconds": 676.88,
+      "endSeconds": 681.72,
+      "text": "promise objected filled with that data"
+    },
+    {
+      "startSeconds": 679.48,
+      "endSeconds": 684.12,
+      "text": "it will automatically call our call back"
+    },
+    {
+      "startSeconds": 681.72,
+      "endSeconds": 687.8,
+      "text": "function back and we will have the"
+    },
+    {
+      "startSeconds": 684.12,
+      "endSeconds": 690.6,
+      "text": "control of our program with us promises"
+    },
+    {
+      "startSeconds": 687.8,
+      "endSeconds": 692.68,
+      "text": "gives us this trust TR and Promises"
+    },
+    {
+      "startSeconds": 690.6,
+      "endSeconds": 695.12,
+      "text": "gives us this guarantee that it will"
+    },
+    {
+      "startSeconds": 692.68,
+      "endSeconds": 698.12,
+      "text": "call this call back function Whenever"
+    },
+    {
+      "startSeconds": 695.12,
+      "endSeconds": 700.279,
+      "text": "there is data inside the promise object"
+    },
+    {
+      "startSeconds": 698.12,
+      "endSeconds": 702.959,
+      "text": "and in the earlier piece of code we had"
+    },
+    {
+      "startSeconds": 700.279,
+      "endSeconds": 705.519,
+      "text": "a lot of doubts right that what if this"
+    },
+    {
+      "startSeconds": 702.959,
+      "endSeconds": 708.519,
+      "text": "create order API might call our function"
+    },
+    {
+      "startSeconds": 705.519,
+      "endSeconds": 711.92,
+      "text": "twice or Thrice or it might never call"
+    },
+    {
+      "startSeconds": 708.519,
+      "endSeconds": 714.399,
+      "text": "it promises handles it beautifully what"
+    },
+    {
+      "startSeconds": 711.92,
+      "endSeconds": 717.12,
+      "text": "will happen is as soon as we have data"
+    },
+    {
+      "startSeconds": 714.399,
+      "endSeconds": 720.12,
+      "text": "inside promise it will call this"
+    },
+    {
+      "startSeconds": 717.12,
+      "endSeconds": 722.16,
+      "text": "function definitely 100% of the time"
+    },
+    {
+      "startSeconds": 720.12,
+      "endSeconds": 725.839,
+      "text": "that is the guarantee given by"
+    },
+    {
+      "startSeconds": 722.16,
+      "endSeconds": 729.639,
+      "text": "JavaScript right and it will call it"
+    },
+    {
+      "startSeconds": 725.839,
+      "endSeconds": 732.12,
+      "text": "just once and only once and we will also"
+    },
+    {
+      "startSeconds": 729.639,
+      "endSeconds": 734.04,
+      "text": "have control of our program with us as"
+    },
+    {
+      "startSeconds": 732.12,
+      "endSeconds": 736.48,
+      "text": "we are not passing our code to some"
+    },
+    {
+      "startSeconds": 734.04,
+      "endSeconds": 738.44,
+      "text": "other external function isn't it"
+    },
+    {
+      "startSeconds": 736.48,
+      "endSeconds": 740.88,
+      "text": "beautiful to have this guarantee and"
+    },
+    {
+      "startSeconds": 738.44,
+      "endSeconds": 743.04,
+      "text": "sity as a developer it's beautiful my"
+    },
+    {
+      "startSeconds": 740.88,
+      "endSeconds": 745.16,
+      "text": "dear friends so I told you that okay"
+    },
+    {
+      "startSeconds": 743.04,
+      "endSeconds": 747.519,
+      "text": "promise object is an empty object with"
+    },
+    {
+      "startSeconds": 745.16,
+      "endSeconds": 749.56,
+      "text": "some data field or something no it is"
+    },
+    {
+      "startSeconds": 747.519,
+      "endSeconds": 752.24,
+      "text": "much more special and it is much more"
+    },
+    {
+      "startSeconds": 749.56,
+      "endSeconds": 754.519,
+      "text": "advanced than that okay now I will show"
+    },
+    {
+      "startSeconds": 752.24,
+      "endSeconds": 757.199,
+      "text": "you the real promise object we will we"
+    },
+    {
+      "startSeconds": 754.519,
+      "endSeconds": 758.959,
+      "text": "are diving deep now okay we will just"
+    },
+    {
+      "startSeconds": 757.199,
+      "endSeconds": 761.32,
+      "text": "exactly see how promise objects looks"
+    },
+    {
+      "startSeconds": 758.959,
+      "endSeconds": 764.76,
+      "text": "like just let me write some code to show"
+    },
+    {
+      "startSeconds": 761.32,
+      "endSeconds": 766.72,
+      "text": "you that okay so if you uh if you want"
+    },
+    {
+      "startSeconds": 764.76,
+      "endSeconds": 768.839,
+      "text": "to see that object we will use a"
+    },
+    {
+      "startSeconds": 766.72,
+      "endSeconds": 770.72,
+      "text": "function fetch if you are writing"
+    },
+    {
+      "startSeconds": 768.839,
+      "endSeconds": 772.88,
+      "text": "JavaScript code then you would have"
+    },
+    {
+      "startSeconds": 770.72,
+      "endSeconds": 776.12,
+      "text": "already been familiar with this fetch"
+    },
+    {
+      "startSeconds": 772.88,
+      "endSeconds": 779.44,
+      "text": "function it is a basically an API given"
+    },
+    {
+      "startSeconds": 776.12,
+      "endSeconds": 781.56,
+      "text": "by browsers to us to make external calls"
+    },
+    {
+      "startSeconds": 779.44,
+      "endSeconds": 784.199,
+      "text": "so now we will use this fetch function"
+    },
+    {
+      "startSeconds": 781.56,
+      "endSeconds": 786.76,
+      "text": "to make an API call to GitHub servers"
+    },
+    {
+      "startSeconds": 784.199,
+      "endSeconds": 789.72,
+      "text": "and we'll get a user info with us so"
+    },
+    {
+      "startSeconds": 786.76,
+      "endSeconds": 791.6,
+      "text": "this opensource API gives us the info of"
+    },
+    {
+      "startSeconds": 789.72,
+      "endSeconds": 793.6,
+      "text": "this username I have written down my"
+    },
+    {
+      "startSeconds": 791.6,
+      "endSeconds": 795.36,
+      "text": "GitHub username over here so I'm just"
+    },
+    {
+      "startSeconds": 793.6,
+      "endSeconds": 797.12,
+      "text": "taking this as an example so what we"
+    },
+    {
+      "startSeconds": 795.36,
+      "endSeconds": 800.399,
+      "text": "will do is we will try to fetch this"
+    },
+    {
+      "startSeconds": 797.12,
+      "endSeconds": 803.16,
+      "text": "user info from this API okay and by"
+    },
+    {
+      "startSeconds": 800.399,
+      "endSeconds": 806.399,
+      "text": "Design This fetch function right this"
+    },
+    {
+      "startSeconds": 803.16,
+      "endSeconds": 808.76,
+      "text": "fetch function returns us a promise just"
+    },
+    {
+      "startSeconds": 806.399,
+      "endSeconds": 810.68,
+      "text": "like I was telling in create order API"
+    },
+    {
+      "startSeconds": 808.76,
+      "endSeconds": 813.6,
+      "text": "right here here so this fetch function"
+    },
+    {
+      "startSeconds": 810.68,
+      "endSeconds": 816.44,
+      "text": "will return us a promise and let us just"
+    },
+    {
+      "startSeconds": 813.6,
+      "endSeconds": 820.32,
+      "text": "capture that promise into a object which"
+    },
+    {
+      "startSeconds": 816.44,
+      "endSeconds": 824.48,
+      "text": "is known as user okay and we will pass"
+    },
+    {
+      "startSeconds": 820.32,
+      "endSeconds": 827.44,
+      "text": "this GitHub API over here now my dear"
+    },
+    {
+      "startSeconds": 824.48,
+      "endSeconds": 830.12,
+      "text": "friends what will happen is as soon as"
+    },
+    {
+      "startSeconds": 827.44,
+      "endSeconds": 834.079,
+      "text": "this line of code is executed we will"
+    },
+    {
+      "startSeconds": 830.12,
+      "endSeconds": 838.48,
+      "text": "get a promise object inside this user"
+    },
+    {
+      "startSeconds": 834.079,
+      "endSeconds": 841.839,
+      "text": "okay so fetch returns us a promise okay"
+    },
+    {
+      "startSeconds": 838.48,
+      "endSeconds": 844.44,
+      "text": "and let us see dive deep into the"
+    },
+    {
+      "startSeconds": 841.839,
+      "endSeconds": 849.48,
+      "text": "console and what we will do is let us"
+    },
+    {
+      "startSeconds": 844.44,
+      "endSeconds": 852.199,
+      "text": "just go to sources let me just add a"
+    },
+    {
+      "startSeconds": 849.48,
+      "endSeconds": 854.32,
+      "text": "debugger over here so I have added a"
+    },
+    {
+      "startSeconds": 852.199,
+      "endSeconds": 856.68,
+      "text": "debugger before this line is executed"
+    },
+    {
+      "startSeconds": 854.32,
+      "endSeconds": 859.8,
+      "text": "now as you can see user is right now"
+    },
+    {
+      "startSeconds": 856.68,
+      "endSeconds": 862.04,
+      "text": "undefined but you will slowly see as"
+    },
+    {
+      "startSeconds": 859.8,
+      "endSeconds": 864.639,
+      "text": "soon as this line is executed you know"
+    },
+    {
+      "startSeconds": 862.04,
+      "endSeconds": 866.44,
+      "text": "this line number 15 what will happen is"
+    },
+    {
+      "startSeconds": 864.639,
+      "endSeconds": 869.56,
+      "text": "as soon as this fetch function will be"
+    },
+    {
+      "startSeconds": 866.44,
+      "endSeconds": 872.279,
+      "text": "called a promise object is going to be"
+    },
+    {
+      "startSeconds": 869.56,
+      "endSeconds": 874.16,
+      "text": "returned inside a user object and let us"
+    },
+    {
+      "startSeconds": 872.279,
+      "endSeconds": 877.399,
+      "text": "now see how does that promise object"
+    },
+    {
+      "startSeconds": 874.16,
+      "endSeconds": 880.639,
+      "text": "looks like let me just run it yes see"
+    },
+    {
+      "startSeconds": 877.399,
+      "endSeconds": 882.68,
+      "text": "now this is the promise object my dear"
+    },
+    {
+      "startSeconds": 880.639,
+      "endSeconds": 885.68,
+      "text": "friend are you able to see this let me"
+    },
+    {
+      "startSeconds": 882.68,
+      "endSeconds": 889.12,
+      "text": "just zoom a little bit here and just oh"
+    },
+    {
+      "startSeconds": 885.68,
+      "endSeconds": 892.6,
+      "text": "my God I not able to show you let me"
+    },
+    {
+      "startSeconds": 889.12,
+      "endSeconds": 895.68,
+      "text": "just yes so this is a promise object"
+    },
+    {
+      "startSeconds": 892.6,
+      "endSeconds": 897.8,
+      "text": "over here right this is an empty object"
+    },
+    {
+      "startSeconds": 895.68,
+      "endSeconds": 899.68,
+      "text": "that I was showing you over here and let"
+    },
+    {
+      "startSeconds": 897.8,
+      "endSeconds": 902.959,
+      "text": "us just see what is inside This Promise"
+    },
+    {
+      "startSeconds": 899.68,
+      "endSeconds": 905.399,
+      "text": "object so we have a prototype over here"
+    },
+    {
+      "startSeconds": 902.959,
+      "endSeconds": 908.16,
+      "text": "and we have promise State and we have"
+    },
+    {
+      "startSeconds": 905.399,
+      "endSeconds": 910.12,
+      "text": "promise result and whatever I was"
+    },
+    {
+      "startSeconds": 908.16,
+      "endSeconds": 913.16,
+      "text": "telling you that empty object and then"
+    },
+    {
+      "startSeconds": 910.12,
+      "endSeconds": 916.32,
+      "text": "data is equals to undefined it is this"
+    },
+    {
+      "startSeconds": 913.16,
+      "endSeconds": 919.56,
+      "text": "right so right now this promise is in a"
+    },
+    {
+      "startSeconds": 916.32,
+      "endSeconds": 921.759,
+      "text": "pending state so what are the state of a"
+    },
+    {
+      "startSeconds": 919.56,
+      "endSeconds": 924.199,
+      "text": "promise I will tell you there are two"
+    },
+    {
+      "startSeconds": 921.759,
+      "endSeconds": 927.68,
+      "text": "things one is the state of a promise and"
+    },
+    {
+      "startSeconds": 924.199,
+      "endSeconds": 930.92,
+      "text": "one is the result so result will store"
+    },
+    {
+      "startSeconds": 927.68,
+      "endSeconds": 933.319,
+      "text": "whatever data it returns right whatever"
+    },
+    {
+      "startSeconds": 930.92,
+      "endSeconds": 935.16,
+      "text": "the data that fetch method will return"
+    },
+    {
+      "startSeconds": 933.319,
+      "endSeconds": 938.72,
+      "text": "this will be stored inside promise"
+    },
+    {
+      "startSeconds": 935.16,
+      "endSeconds": 941.959,
+      "text": "result and promise State tells you that"
+    },
+    {
+      "startSeconds": 938.72,
+      "endSeconds": 944.36,
+      "text": "in what state that promise is initially"
+    },
+    {
+      "startSeconds": 941.959,
+      "endSeconds": 946.759,
+      "text": "the promise will be in pending State and"
+    },
+    {
+      "startSeconds": 944.36,
+      "endSeconds": 948.639,
+      "text": "once we have got the data back remember"
+    },
+    {
+      "startSeconds": 946.759,
+      "endSeconds": 950.72,
+      "text": "I was telling you that it might take 4"
+    },
+    {
+      "startSeconds": 948.639,
+      "endSeconds": 953.92,
+      "text": "seconds 5 seconds for that oinos"
+    },
+    {
+      "startSeconds": 950.72,
+      "endSeconds": 957.24,
+      "text": "operation to get completed so after that"
+    },
+    {
+      "startSeconds": 953.92,
+      "endSeconds": 959.44,
+      "text": "that promised State changes to fulfilled"
+    },
+    {
+      "startSeconds": 957.24,
+      "endSeconds": 961.24,
+      "text": "State now I'll show you something really"
+    },
+    {
+      "startSeconds": 959.44,
+      "endSeconds": 965.24,
+      "text": "interesting okay so let's move to the"
+    },
+    {
+      "startSeconds": 961.24,
+      "endSeconds": 967.88,
+      "text": "console and over here suppose if I am"
+    },
+    {
+      "startSeconds": 965.24,
+      "endSeconds": 971.8,
+      "text": "writing console.log of user let's just"
+    },
+    {
+      "startSeconds": 967.88,
+      "endSeconds": 974.04,
+      "text": "print user so before I run this code"
+    },
+    {
+      "startSeconds": 971.8,
+      "endSeconds": 976.319,
+      "text": "just can you guess what this console log"
+    },
+    {
+      "startSeconds": 974.04,
+      "endSeconds": 978.519,
+      "text": "user will do so what will happen when"
+    },
+    {
+      "startSeconds": 976.319,
+      "endSeconds": 980.68,
+      "text": "JavaScript runs this code is it will"
+    },
+    {
+      "startSeconds": 978.519,
+      "endSeconds": 983.079,
+      "text": "just have this will this is a normal"
+    },
+    {
+      "startSeconds": 980.68,
+      "endSeconds": 985.639,
+      "text": "code right and once this line 15 is"
+    },
+    {
+      "startSeconds": 983.079,
+      "endSeconds": 988.199,
+      "text": "executed fetch will return us a promise"
+    },
+    {
+      "startSeconds": 985.639,
+      "endSeconds": 990.48,
+      "text": "like user promise and this console log"
+    },
+    {
+      "startSeconds": 988.199,
+      "endSeconds": 992.56,
+      "text": "will log that promise so what do you"
+    },
+    {
+      "startSeconds": 990.48,
+      "endSeconds": 996.199,
+      "text": "think at this point of time on line"
+    },
+    {
+      "startSeconds": 992.56,
+      "endSeconds": 998.839,
+      "text": "number 17 the state and the result of"
+    },
+    {
+      "startSeconds": 996.199,
+      "endSeconds": 1001,
+      "text": "Promise will be remember this is an"
+    },
+    {
+      "startSeconds": 998.839,
+      "endSeconds": 1004.68,
+      "text": "async operation it takes some time to"
+    },
+    {
+      "startSeconds": 1001,
+      "endSeconds": 1008.319,
+      "text": "execute what will it log"
+    },
+    {
+      "startSeconds": 1004.68,
+      "endSeconds": 1008.319,
+      "text": "here pending or"
+    },
+    {
+      "startSeconds": 1008.68,
+      "endSeconds": 1014.04,
+      "text": "fulfilled interesting question right let"
+    },
+    {
+      "startSeconds": 1011.24,
+      "endSeconds": 1018.24,
+      "text": "us just see so my dear friends it is"
+    },
+    {
+      "startSeconds": 1014.04,
+      "endSeconds": 1020.24,
+      "text": "logging pending and if I expand it so it"
+    },
+    {
+      "startSeconds": 1018.24,
+      "endSeconds": 1023.959,
+      "text": "shows you"
+    },
+    {
+      "startSeconds": 1020.24,
+      "endSeconds": 1027.28,
+      "text": "fulfilled you know it took me like 5"
+    },
+    {
+      "startSeconds": 1023.959,
+      "endSeconds": 1030.079,
+      "text": "days and like six Red Bulls to find out"
+    },
+    {
+      "startSeconds": 1027.28,
+      "endSeconds": 1032.559,
+      "text": "that why is this pending and this is"
+    },
+    {
+      "startSeconds": 1030.079,
+      "endSeconds": 1034.88,
+      "text": "fulfilled you know this is this"
+    },
+    {
+      "startSeconds": 1032.559,
+      "endSeconds": 1036.959,
+      "text": "inconsistency is just in Chrome browser"
+    },
+    {
+      "startSeconds": 1034.88,
+      "endSeconds": 1039.959,
+      "text": "don't worry is is a part of Chrome"
+    },
+    {
+      "startSeconds": 1036.959,
+      "endSeconds": 1041.88,
+      "text": "browser but it generally I'll tell you"
+    },
+    {
+      "startSeconds": 1039.959,
+      "endSeconds": 1045.439,
+      "text": "I'll explain you why it is behaving in"
+    },
+    {
+      "startSeconds": 1041.88,
+      "endSeconds": 1048.28,
+      "text": "this way so actually what happens"
+    },
+    {
+      "startSeconds": 1045.439,
+      "endSeconds": 1052,
+      "text": "is when this console lock statement is"
+    },
+    {
+      "startSeconds": 1048.28,
+      "endSeconds": 1056.6,
+      "text": "executed at this point of time the user"
+    },
+    {
+      "startSeconds": 1052,
+      "endSeconds": 1059.559,
+      "text": "the promise object is in a pending State"
+    },
+    {
+      "startSeconds": 1056.6,
+      "endSeconds": 1061.88,
+      "text": "okay how because JavaScript engine"
+    },
+    {
+      "startSeconds": 1059.559,
+      "endSeconds": 1063.76,
+      "text": "executes JavaScript engine does not wait"
+    },
+    {
+      "startSeconds": 1061.88,
+      "endSeconds": 1065.679,
+      "text": "for anything it just quickly execute"
+    },
+    {
+      "startSeconds": 1063.76,
+      "endSeconds": 1068.799,
+      "text": "whatever is there right so it just"
+    },
+    {
+      "startSeconds": 1065.679,
+      "endSeconds": 1071.36,
+      "text": "executes line number 13 then 15 then 17"
+    },
+    {
+      "startSeconds": 1068.799,
+      "endSeconds": 1073.559,
+      "text": "in line number 15 fetch returns a"
+    },
+    {
+      "startSeconds": 1071.36,
+      "endSeconds": 1076.64,
+      "text": "promise and that promise at that"
+    },
+    {
+      "startSeconds": 1073.559,
+      "endSeconds": 1079.6,
+      "text": "particular time is in a pending state it"
+    },
+    {
+      "startSeconds": 1076.64,
+      "endSeconds": 1082.32,
+      "text": "takes some time to get the data and fill"
+    },
+    {
+      "startSeconds": 1079.6,
+      "endSeconds": 1084.28,
+      "text": "it back right to get fulfilled but"
+    },
+    {
+      "startSeconds": 1082.32,
+      "endSeconds": 1086.64,
+      "text": "JavaScript does not wait for that right"
+    },
+    {
+      "startSeconds": 1084.28,
+      "endSeconds": 1089.48,
+      "text": "it just goes on and prints console log"
+    },
+    {
+      "startSeconds": 1086.64,
+      "endSeconds": 1093,
+      "text": "into the console and that's why this"
+    },
+    {
+      "startSeconds": 1089.48,
+      "endSeconds": 1095.48,
+      "text": "promise is pending over here but what"
+    },
+    {
+      "startSeconds": 1093,
+      "endSeconds": 1098.2,
+      "text": "does Google Chrome does is after some"
+    },
+    {
+      "startSeconds": 1095.48,
+      "endSeconds": 1100.159,
+      "text": "point of time right after eventually"
+    },
+    {
+      "startSeconds": 1098.2,
+      "endSeconds": 1102.88,
+      "text": "this data will come into this promise"
+    },
+    {
+      "startSeconds": 1100.159,
+      "endSeconds": 1105.159,
+      "text": "object so if you expand it it shows you"
+    },
+    {
+      "startSeconds": 1102.88,
+      "endSeconds": 1108.24,
+      "text": "the current state of the promise so"
+    },
+    {
+      "startSeconds": 1105.159,
+      "endSeconds": 1110.52,
+      "text": "that's why this is fulfilled right now"
+    },
+    {
+      "startSeconds": 1108.24,
+      "endSeconds": 1112.76,
+      "text": "but when it was logged it was in pending"
+    },
+    {
+      "startSeconds": 1110.52,
+      "endSeconds": 1115.72,
+      "text": "state so that's why this inconsistency"
+    },
+    {
+      "startSeconds": 1112.76,
+      "endSeconds": 1117.84,
+      "text": "but assume okay but right now at this"
+    },
+    {
+      "startSeconds": 1115.72,
+      "endSeconds": 1120.64,
+      "text": "point of time the promise has been"
+    },
+    {
+      "startSeconds": 1117.84,
+      "endSeconds": 1122.48,
+      "text": "fulfilled and as I told you that this"
+    },
+    {
+      "startSeconds": 1120.64,
+      "endSeconds": 1124.4,
+      "text": "result right promise result which was"
+    },
+    {
+      "startSeconds": 1122.48,
+      "endSeconds": 1126.4,
+      "text": "undefined earlier I showed you over here"
+    },
+    {
+      "startSeconds": 1124.4,
+      "endSeconds": 1128.48,
+      "text": "right using a debugger so which was"
+    },
+    {
+      "startSeconds": 1126.4,
+      "endSeconds": 1130.96,
+      "text": "undefined is now filled with our"
+    },
+    {
+      "startSeconds": 1128.48,
+      "endSeconds": 1133,
+      "text": "response and if I open that we have body"
+    },
+    {
+      "startSeconds": 1130.96,
+      "endSeconds": 1135.64,
+      "text": "we have headers we have a lot more"
+    },
+    {
+      "startSeconds": 1133,
+      "endSeconds": 1138.08,
+      "text": "things over here so that data is inside"
+    },
+    {
+      "startSeconds": 1135.64,
+      "endSeconds": 1140.36,
+      "text": "this body this is a readable stream"
+    },
+    {
+      "startSeconds": 1138.08,
+      "endSeconds": 1143.159,
+      "text": "right so we can't just see a readable"
+    },
+    {
+      "startSeconds": 1140.36,
+      "endSeconds": 1144.76,
+      "text": "stream like this right but it is there"
+    },
+    {
+      "startSeconds": 1143.159,
+      "endSeconds": 1146.799,
+      "text": "there's a way to extract it we can"
+    },
+    {
+      "startSeconds": 1144.76,
+      "endSeconds": 1148.88,
+      "text": "convert this readable stream into a Json"
+    },
+    {
+      "startSeconds": 1146.799,
+      "endSeconds": 1151.32,
+      "text": "and extract it but what I want to tell"
+    },
+    {
+      "startSeconds": 1148.88,
+      "endSeconds": 1153.4,
+      "text": "you is that promise right now is in"
+    },
+    {
+      "startSeconds": 1151.32,
+      "endSeconds": 1156.2,
+      "text": "fulfilled State this is how a fulfilled"
+    },
+    {
+      "startSeconds": 1153.4,
+      "endSeconds": 1158.2,
+      "text": "promise looks like earlier it was in"
+    },
+    {
+      "startSeconds": 1156.2,
+      "endSeconds": 1161.32,
+      "text": "pending and after the is incorporation"
+    },
+    {
+      "startSeconds": 1158.2,
+      "endSeconds": 1164.799,
+      "text": "is done it just fulfills it now what if"
+    },
+    {
+      "startSeconds": 1161.32,
+      "endSeconds": 1167,
+      "text": "what if what if we had some call back"
+    },
+    {
+      "startSeconds": 1164.799,
+      "endSeconds": 1168.52,
+      "text": "attached to this promise object right"
+    },
+    {
+      "startSeconds": 1167,
+      "endSeconds": 1169.28,
+      "text": "how do we attach it I'll show it you"
+    },
+    {
+      "startSeconds": 1168.52,
+      "endSeconds": 1172.48,
+      "text": "right"
+    },
+    {
+      "startSeconds": 1169.28,
+      "endSeconds": 1173.84,
+      "text": "then and we had a function a call back"
+    },
+    {
+      "startSeconds": 1172.48,
+      "endSeconds": 1177.44,
+      "text": "function over"
+    },
+    {
+      "startSeconds": 1173.84,
+      "endSeconds": 1182.159,
+      "text": "here and what we can do is here right if"
+    },
+    {
+      "startSeconds": 1177.44,
+      "endSeconds": 1185.28,
+      "text": "we have this data so this data we can"
+    },
+    {
+      "startSeconds": 1182.159,
+      "endSeconds": 1188.44,
+      "text": "this data the result over here this data"
+    },
+    {
+      "startSeconds": 1185.28,
+      "endSeconds": 1190.84,
+      "text": "will come over here and we can just use"
+    },
+    {
+      "startSeconds": 1188.44,
+      "endSeconds": 1193.08,
+      "text": "this right we can just use this as we"
+    },
+    {
+      "startSeconds": 1190.84,
+      "endSeconds": 1195.96,
+      "text": "want to we can just do whatever we want"
+    },
+    {
+      "startSeconds": 1193.08,
+      "endSeconds": 1198.679,
+      "text": "to with this data and that's how we"
+    },
+    {
+      "startSeconds": 1195.96,
+      "endSeconds": 1200.76,
+      "text": "attach call backs to promise so what"
+    },
+    {
+      "startSeconds": 1198.679,
+      "endSeconds": 1203.159,
+      "text": "whatever needs to be done after we have"
+    },
+    {
+      "startSeconds": 1200.76,
+      "endSeconds": 1206.48,
+      "text": "data inside our user object that needs"
+    },
+    {
+      "startSeconds": 1203.159,
+      "endSeconds": 1209.12,
+      "text": "to go in like this so if I save this so"
+    },
+    {
+      "startSeconds": 1206.48,
+      "endSeconds": 1211.24,
+      "text": "we get this response over here this data"
+    },
+    {
+      "startSeconds": 1209.12,
+      "endSeconds": 1212.919,
+      "text": "right and we can use this in our program"
+    },
+    {
+      "startSeconds": 1211.24,
+      "endSeconds": 1215.08,
+      "text": "we can do whatever we want to with this"
+    },
+    {
+      "startSeconds": 1212.919,
+      "endSeconds": 1217.44,
+      "text": "data so that's how we generally handle"
+    },
+    {
+      "startSeconds": 1215.08,
+      "endSeconds": 1219.44,
+      "text": "promises so let us just get back so this"
+    },
+    {
+      "startSeconds": 1217.44,
+      "endSeconds": 1221.88,
+      "text": "is how my friends a promise objects"
+    },
+    {
+      "startSeconds": 1219.44,
+      "endSeconds": 1223.88,
+      "text": "looks like and this is a spal object in"
+    },
+    {
+      "startSeconds": 1221.88,
+      "endSeconds": 1226.08,
+      "text": "JavaScript so this special promise"
+    },
+    {
+      "startSeconds": 1223.88,
+      "endSeconds": 1228.2,
+      "text": "object brings a lot of trust in this"
+    },
+    {
+      "startSeconds": 1226.08,
+      "endSeconds": 1230.32,
+      "text": "transaction because JavaScript"
+    },
+    {
+      "startSeconds": 1228.2,
+      "endSeconds": 1232.36,
+      "text": "guaranteed is that this promise object"
+    },
+    {
+      "startSeconds": 1230.32,
+      "endSeconds": 1234.679,
+      "text": "can only be resolved once either it will"
+    },
+    {
+      "startSeconds": 1232.36,
+      "endSeconds": 1237.96,
+      "text": "be success or a failure over here it is"
+    },
+    {
+      "startSeconds": 1234.679,
+      "endSeconds": 1240.76,
+      "text": "fulfilled it can be rejected also okay"
+    },
+    {
+      "startSeconds": 1237.96,
+      "endSeconds": 1243.2,
+      "text": "and the state can be only three inside a"
+    },
+    {
+      "startSeconds": 1240.76,
+      "endSeconds": 1245.72,
+      "text": "promise there can be only three states"
+    },
+    {
+      "startSeconds": 1243.2,
+      "endSeconds": 1247.799,
+      "text": "one is pending one is fulfilled and one"
+    },
+    {
+      "startSeconds": 1245.72,
+      "endSeconds": 1250.159,
+      "text": "is rejected if we go to the mdn"
+    },
+    {
+      "startSeconds": 1247.799,
+      "endSeconds": 1252.4,
+      "text": "documentation let us just see see there"
+    },
+    {
+      "startSeconds": 1250.159,
+      "endSeconds": 1254.76,
+      "text": "can be only three states inside the"
+    },
+    {
+      "startSeconds": 1252.4,
+      "endSeconds": 1257.039,
+      "text": "promise one is pending fulfilled and"
+    },
+    {
+      "startSeconds": 1254.76,
+      "endSeconds": 1259.88,
+      "text": "rejected that's all three states it can"
+    },
+    {
+      "startSeconds": 1257.039,
+      "endSeconds": 1261.96,
+      "text": "have right so this brings us a lot of"
+    },
+    {
+      "startSeconds": 1259.88,
+      "endSeconds": 1264.48,
+      "text": "trust in the transaction and one more"
+    },
+    {
+      "startSeconds": 1261.96,
+      "endSeconds": 1268.12,
+      "text": "important thing is that promise objects"
+    },
+    {
+      "startSeconds": 1264.48,
+      "endSeconds": 1270.84,
+      "text": "are immutable what does that mean so"
+    },
+    {
+      "startSeconds": 1268.12,
+      "endSeconds": 1272.96,
+      "text": "whenever it is fulfilled and whenever we"
+    },
+    {
+      "startSeconds": 1270.84,
+      "endSeconds": 1274.679,
+      "text": "have data inside our promise object we"
+    },
+    {
+      "startSeconds": 1272.96,
+      "endSeconds": 1276.72,
+      "text": "can just pass it here and there in our"
+    },
+    {
+      "startSeconds": 1274.679,
+      "endSeconds": 1279.559,
+      "text": "code and we don't have to worry about"
+    },
+    {
+      "startSeconds": 1276.72,
+      "endSeconds": 1283.32,
+      "text": "that someone can mutate that data so if"
+    },
+    {
+      "startSeconds": 1279.559,
+      "endSeconds": 1285.2,
+      "text": "you would want to do a user do data do"
+    },
+    {
+      "startSeconds": 1283.32,
+      "endSeconds": 1289.12,
+      "text": "something equal to something you can't"
+    },
+    {
+      "startSeconds": 1285.2,
+      "endSeconds": 1292.32,
+      "text": "just edit this user now right this is so"
+    },
+    {
+      "startSeconds": 1289.12,
+      "endSeconds": 1295,
+      "text": "so so great as a developer right because"
+    },
+    {
+      "startSeconds": 1292.32,
+      "endSeconds": 1297.52,
+      "text": "you have control over this object right"
+    },
+    {
+      "startSeconds": 1295,
+      "endSeconds": 1300.36,
+      "text": "this promis data and there is a way to"
+    },
+    {
+      "startSeconds": 1297.52,
+      "endSeconds": 1302.6,
+      "text": "attach handlers to it using then right"
+    },
+    {
+      "startSeconds": 1300.36,
+      "endSeconds": 1306.44,
+      "text": "so that's how we do that and nobody can"
+    },
+    {
+      "startSeconds": 1302.6,
+      "endSeconds": 1308.76,
+      "text": "mutate it it's immutable immutable and"
+    },
+    {
+      "startSeconds": 1306.44,
+      "endSeconds": 1311,
+      "text": "resolve just once and you can pass in"
+    },
+    {
+      "startSeconds": 1308.76,
+      "endSeconds": 1313.679,
+      "text": "wherever you want to such a beautiful"
+    },
+    {
+      "startSeconds": 1311,
+      "endSeconds": 1316.279,
+      "text": "thing isn't it so now my dear friend let"
+    },
+    {
+      "startSeconds": 1313.679,
+      "endSeconds": 1318.279,
+      "text": "us talk about interviews right the most"
+    },
+    {
+      "startSeconds": 1316.279,
+      "endSeconds": 1320.679,
+      "text": "interesting part how do you answer"
+    },
+    {
+      "startSeconds": 1318.279,
+      "endSeconds": 1323.2,
+      "text": "question in your interviews for that let"
+    },
+    {
+      "startSeconds": 1320.679,
+      "endSeconds": 1325.2,
+      "text": "me just get rid of this right I will"
+    },
+    {
+      "startSeconds": 1323.2,
+      "endSeconds": 1329.2,
+      "text": "tell you so what if your interviewer"
+    },
+    {
+      "startSeconds": 1325.2,
+      "endSeconds": 1331.08,
+      "text": "tells you that what is promise what is a"
+    },
+    {
+      "startSeconds": 1329.2,
+      "endSeconds": 1333.96,
+      "text": "promise in JavaScript how do you answer"
+    },
+    {
+      "startSeconds": 1331.08,
+      "endSeconds": 1336.32,
+      "text": "that question what is This Promise how"
+    },
+    {
+      "startSeconds": 1333.96,
+      "endSeconds": 1338.559,
+      "text": "would you answer that I'll tell you just"
+    },
+    {
+      "startSeconds": 1336.32,
+      "endSeconds": 1340.52,
+      "text": "listen to me very carefully there are a"
+    },
+    {
+      "startSeconds": 1338.559,
+      "endSeconds": 1343.4,
+      "text": "lot of different definitions of promises"
+    },
+    {
+      "startSeconds": 1340.52,
+      "endSeconds": 1345.96,
+      "text": "running all across the internet okay so"
+    },
+    {
+      "startSeconds": 1343.4,
+      "endSeconds": 1349,
+      "text": "some people call This Promise object as"
+    },
+    {
+      "startSeconds": 1345.96,
+      "endSeconds": 1351.159,
+      "text": "a placeholder right placeholder which"
+    },
+    {
+      "startSeconds": 1349,
+      "endSeconds": 1354.039,
+      "text": "will be filled later with a value makes"
+    },
+    {
+      "startSeconds": 1351.159,
+      "endSeconds": 1356.88,
+      "text": "sense promise object is a"
+    },
+    {
+      "startSeconds": 1354.039,
+      "endSeconds": 1358.76,
+      "text": "placeholder for a certain period of time"
+    },
+    {
+      "startSeconds": 1356.88,
+      "endSeconds": 1361.44,
+      "text": "until we receive a value from a"
+    },
+    {
+      "startSeconds": 1358.76,
+      "endSeconds": 1363.6,
+      "text": "asynchronous operation isn't it so there"
+    },
+    {
+      "startSeconds": 1361.44,
+      "endSeconds": 1365.159,
+      "text": "is this is one definition the other"
+    },
+    {
+      "startSeconds": 1363.6,
+      "endSeconds": 1368,
+      "text": "definition some people would like to"
+    },
+    {
+      "startSeconds": 1365.159,
+      "endSeconds": 1370.12,
+      "text": "call it as a container for a future"
+    },
+    {
+      "startSeconds": 1368,
+      "endSeconds": 1373.799,
+      "text": "value some people use the word future"
+    },
+    {
+      "startSeconds": 1370.12,
+      "endSeconds": 1376.039,
+      "text": "value for this value which it will have"
+    },
+    {
+      "startSeconds": 1373.799,
+      "endSeconds": 1378.08,
+      "text": "after the promisees isoled right so it's"
+    },
+    {
+      "startSeconds": 1376.039,
+      "endSeconds": 1380.08,
+      "text": "a container for a future value some"
+    },
+    {
+      "startSeconds": 1378.08,
+      "endSeconds": 1381.96,
+      "text": "people like to call it like that and"
+    },
+    {
+      "startSeconds": 1380.08,
+      "endSeconds": 1383.84,
+      "text": "there is one more definition of promises"
+    },
+    {
+      "startSeconds": 1381.96,
+      "endSeconds": 1386.2,
+      "text": "over mdn documentation which I"
+    },
+    {
+      "startSeconds": 1383.84,
+      "endSeconds": 1388.799,
+      "text": "personally like now but first time when"
+    },
+    {
+      "startSeconds": 1386.2,
+      "endSeconds": 1390.919,
+      "text": "I read it right my I got a headache"
+    },
+    {
+      "startSeconds": 1388.799,
+      "endSeconds": 1393.559,
+      "text": "while I was trying to understand what"
+    },
+    {
+      "startSeconds": 1390.919,
+      "endSeconds": 1396.36,
+      "text": "does it trying to say by this line right"
+    },
+    {
+      "startSeconds": 1393.559,
+      "endSeconds": 1398.72,
+      "text": "but now I find that this is the most"
+    },
+    {
+      "startSeconds": 1396.36,
+      "endSeconds": 1401.24,
+      "text": "beautiful definition of promises let us"
+    },
+    {
+      "startSeconds": 1398.72,
+      "endSeconds": 1403.48,
+      "text": "just try to understand this and now when"
+    },
+    {
+      "startSeconds": 1401.24,
+      "endSeconds": 1406.08,
+      "text": "I have explained you a lot right so this"
+    },
+    {
+      "startSeconds": 1403.48,
+      "endSeconds": 1408.48,
+      "text": "will make sense to you now so promise is"
+    },
+    {
+      "startSeconds": 1406.08,
+      "endSeconds": 1411.52,
+      "text": "an object representing eventual"
+    },
+    {
+      "startSeconds": 1408.48,
+      "endSeconds": 1413.96,
+      "text": "completion of an asynchronous"
+    },
+    {
+      "startSeconds": 1411.52,
+      "endSeconds": 1416.32,
+      "text": "operation sounds complicated right but"
+    },
+    {
+      "startSeconds": 1413.96,
+      "endSeconds": 1419.039,
+      "text": "no it is not I'll tell you so This"
+    },
+    {
+      "startSeconds": 1416.32,
+      "endSeconds": 1421.4,
+      "text": "Promise over here is an object that"
+    },
+    {
+      "startSeconds": 1419.039,
+      "endSeconds": 1423.799,
+      "text": "represents an eventual completion of an"
+    },
+    {
+      "startSeconds": 1421.4,
+      "endSeconds": 1426.679,
+      "text": "asynchronous event okay sounds"
+    },
+    {
+      "startSeconds": 1423.799,
+      "endSeconds": 1428.919,
+      "text": "complicated let me break it down to you"
+    },
+    {
+      "startSeconds": 1426.679,
+      "endSeconds": 1431.919,
+      "text": "promise is an object that you can"
+    },
+    {
+      "startSeconds": 1428.919,
+      "endSeconds": 1434.36,
+      "text": "remember represents the eventual"
+    },
+    {
+      "startSeconds": 1431.919,
+      "endSeconds": 1436.48,
+      "text": "completion of an asynchronous operation"
+    },
+    {
+      "startSeconds": 1434.36,
+      "endSeconds": 1438.76,
+      "text": "because see this is an asynchronous"
+    },
+    {
+      "startSeconds": 1436.48,
+      "endSeconds": 1441,
+      "text": "operation create order and it will"
+    },
+    {
+      "startSeconds": 1438.76,
+      "endSeconds": 1443.679,
+      "text": "eventually be completed so promise is an"
+    },
+    {
+      "startSeconds": 1441,
+      "endSeconds": 1444.96,
+      "text": "object representing eventual completion"
+    },
+    {
+      "startSeconds": 1443.679,
+      "endSeconds": 1448.6,
+      "text": "of an async"
+    },
+    {
+      "startSeconds": 1444.96,
+      "endSeconds": 1451.08,
+      "text": "operation just try to remember it once"
+    },
+    {
+      "startSeconds": 1448.6,
+      "endSeconds": 1452.799,
+      "text": "again promise is an object representing"
+    },
+    {
+      "startSeconds": 1451.08,
+      "endSeconds": 1455.279,
+      "text": "eventual completion of an async"
+    },
+    {
+      "startSeconds": 1452.799,
+      "endSeconds": 1458.52,
+      "text": "operation eventual completion right"
+    },
+    {
+      "startSeconds": 1455.279,
+      "endSeconds": 1461.6,
+      "text": "eventually completed and asnc operation"
+    },
+    {
+      "startSeconds": 1458.52,
+      "endSeconds": 1463.72,
+      "text": "that's how mdn defines promises to be I"
+    },
+    {
+      "startSeconds": 1461.6,
+      "endSeconds": 1466.279,
+      "text": "find that definition more Technical and"
+    },
+    {
+      "startSeconds": 1463.72,
+      "endSeconds": 1468.399,
+      "text": "more precise and more beautiful for the"
+    },
+    {
+      "startSeconds": 1466.279,
+      "endSeconds": 1470.76,
+      "text": "interviews because sometimes if you just"
+    },
+    {
+      "startSeconds": 1468.399,
+      "endSeconds": 1472.24,
+      "text": "say that container over a future value"
+    },
+    {
+      "startSeconds": 1470.76,
+      "endSeconds": 1474.12,
+      "text": "then you would have to back your answer"
+    },
+    {
+      "startSeconds": 1472.24,
+      "endSeconds": 1475.96,
+      "text": "with a lot of explanation but if you'll"
+    },
+    {
+      "startSeconds": 1474.12,
+      "endSeconds": 1478.36,
+      "text": "say to your interviewer that promise is"
+    },
+    {
+      "startSeconds": 1475.96,
+      "endSeconds": 1480.919,
+      "text": "an object that represents an eventual"
+    },
+    {
+      "startSeconds": 1478.36,
+      "endSeconds": 1482.919,
+      "text": "completion of an async operation I dare"
+    },
+    {
+      "startSeconds": 1480.919,
+      "endSeconds": 1485.32,
+      "text": "you he won't ask you anything except"
+    },
+    {
+      "startSeconds": 1482.919,
+      "endSeconds": 1488.72,
+      "text": "this for promises he would know that you"
+    },
+    {
+      "startSeconds": 1485.32,
+      "endSeconds": 1491.159,
+      "text": "know promises already okay so that's how"
+    },
+    {
+      "startSeconds": 1488.72,
+      "endSeconds": 1493.88,
+      "text": "try to remember it it's very easy once"
+    },
+    {
+      "startSeconds": 1491.159,
+      "endSeconds": 1496.12,
+      "text": "again promise is an object which"
+    },
+    {
+      "startSeconds": 1493.88,
+      "endSeconds": 1498.44,
+      "text": "represents the eventual completion of an"
+    },
+    {
+      "startSeconds": 1496.12,
+      "endSeconds": 1501.559,
+      "text": "asnc operation eventual completion of"
+    },
+    {
+      "startSeconds": 1498.44,
+      "endSeconds": 1503.679,
+      "text": "async operation async Operation right"
+    },
+    {
+      "startSeconds": 1501.559,
+      "endSeconds": 1506.76,
+      "text": "eventual completion async operation as"
+    },
+    {
+      "startSeconds": 1503.679,
+      "endSeconds": 1509.2,
+      "text": "it is an object easy"
+    },
+    {
+      "startSeconds": 1506.76,
+      "endSeconds": 1511.44,
+      "text": "are I know that this video is getting a"
+    },
+    {
+      "startSeconds": 1509.2,
+      "endSeconds": 1513,
+      "text": "little longer but please give me 5 10"
+    },
+    {
+      "startSeconds": 1511.44,
+      "endSeconds": 1515,
+      "text": "more minutes I want to explain just one"
+    },
+    {
+      "startSeconds": 1513,
+      "endSeconds": 1517.36,
+      "text": "more Topic in this video and then in the"
+    },
+    {
+      "startSeconds": 1515,
+      "endSeconds": 1519.159,
+      "text": "next video rest of the things okay so"
+    },
+    {
+      "startSeconds": 1517.36,
+      "endSeconds": 1521.399,
+      "text": "let me just close my browser let's get"
+    },
+    {
+      "startSeconds": 1519.159,
+      "endSeconds": 1523.52,
+      "text": "back to code again now listen to me very"
+    },
+    {
+      "startSeconds": 1521.399,
+      "endSeconds": 1525.64,
+      "text": "carefully this is the last part of the"
+    },
+    {
+      "startSeconds": 1523.52,
+      "endSeconds": 1528.6,
+      "text": "whole explanation which I wanted to give"
+    },
+    {
+      "startSeconds": 1525.64,
+      "endSeconds": 1530.6,
+      "text": "okay so what will happen is we saw soled"
+    },
+    {
+      "startSeconds": 1528.6,
+      "endSeconds": 1532.559,
+      "text": "inversion of control which was a major"
+    },
+    {
+      "startSeconds": 1530.6,
+      "endSeconds": 1534.2,
+      "text": "issue while using callbacks right we"
+    },
+    {
+      "startSeconds": 1532.559,
+      "endSeconds": 1536.039,
+      "text": "were giving control of our code to"
+    },
+    {
+      "startSeconds": 1534.2,
+      "endSeconds": 1538.48,
+      "text": "something else but there is one more"
+    },
+    {
+      "startSeconds": 1536.039,
+      "endSeconds": 1540.32,
+      "text": "issue with call backs right if you have"
+    },
+    {
+      "startSeconds": 1538.48,
+      "endSeconds": 1542.279,
+      "text": "seen my previous video you would know"
+    },
+    {
+      "startSeconds": 1540.32,
+      "endSeconds": 1544.32,
+      "text": "that there was an issue of call back"
+    },
+    {
+      "startSeconds": 1542.279,
+      "endSeconds": 1545.64,
+      "text": "hell I'll just quickly explain you what"
+    },
+    {
+      "startSeconds": 1544.32,
+      "endSeconds": 1547.96,
+      "text": "it is right now if you haven't watched"
+    },
+    {
+      "startSeconds": 1545.64,
+      "endSeconds": 1549.64,
+      "text": "my video though watch that video also"
+    },
+    {
+      "startSeconds": 1547.96,
+      "endSeconds": 1552.32,
+      "text": "but I'll quickly explain it over here"
+    },
+    {
+      "startSeconds": 1549.64,
+      "endSeconds": 1554.32,
+      "text": "also so suppose in an e-commerce website"
+    },
+    {
+      "startSeconds": 1552.32,
+      "endSeconds": 1557.08,
+      "text": "what we do is we create an order then we"
+    },
+    {
+      "startSeconds": 1554.32,
+      "endSeconds": 1559.559,
+      "text": "have a proceed to payment then we have"
+    },
+    {
+      "startSeconds": 1557.08,
+      "endSeconds": 1561.88,
+      "text": "an API suppose we we have an API for"
+    },
+    {
+      "startSeconds": 1559.559,
+      "endSeconds": 1564.84,
+      "text": "show order summary right once the"
+    },
+    {
+      "startSeconds": 1561.88,
+      "endSeconds": 1567.799,
+      "text": "payment is done we show an order summary"
+    },
+    {
+      "startSeconds": 1564.84,
+      "endSeconds": 1571.24,
+      "text": "right which takes payment"
+    },
+    {
+      "startSeconds": 1567.799,
+      "endSeconds": 1574.88,
+      "text": "info and there is one more API suppose"
+    },
+    {
+      "startSeconds": 1571.24,
+      "endSeconds": 1579.279,
+      "text": "update wallet update Wallet balance"
+    },
+    {
+      "startSeconds": 1574.88,
+      "endSeconds": 1581.279,
+      "text": "wallet wallet uh balance right so once"
+    },
+    {
+      "startSeconds": 1579.279,
+      "endSeconds": 1584.039,
+      "text": "the order summary is shown so just"
+    },
+    {
+      "startSeconds": 1581.279,
+      "endSeconds": 1586.84,
+      "text": "update the Wallet balance okay so it"
+    },
+    {
+      "startSeconds": 1584.039,
+      "endSeconds": 1589.2,
+      "text": "just update the Wallet balance okay so"
+    },
+    {
+      "startSeconds": 1586.84,
+      "endSeconds": 1591.44,
+      "text": "now how do we and these are dependent on"
+    },
+    {
+      "startSeconds": 1589.2,
+      "endSeconds": 1593.12,
+      "text": "each other okay once we do create order"
+    },
+    {
+      "startSeconds": 1591.44,
+      "endSeconds": 1595.039,
+      "text": "then we do proceed to payment then we do"
+    },
+    {
+      "startSeconds": 1593.12,
+      "endSeconds": 1597.12,
+      "text": "show order summary then we do then we"
+    },
+    {
+      "startSeconds": 1595.039,
+      "endSeconds": 1599.32,
+      "text": "update the wallet right it happens in a"
+    },
+    {
+      "startSeconds": 1597.12,
+      "endSeconds": 1601.679,
+      "text": "sequence so what will happen is how do"
+    },
+    {
+      "startSeconds": 1599.32,
+      "endSeconds": 1604.88,
+      "text": "we used to write this type of code in"
+    },
+    {
+      "startSeconds": 1601.679,
+      "endSeconds": 1608.52,
+      "text": "our old fashion right the call back way"
+    },
+    {
+      "startSeconds": 1604.88,
+      "endSeconds": 1610.76,
+      "text": "so we used to have a call back which"
+    },
+    {
+      "startSeconds": 1608.52,
+      "endSeconds": 1613.96,
+      "text": "have this show order summary and we used"
+    },
+    {
+      "startSeconds": 1610.76,
+      "endSeconds": 1617.399,
+      "text": "to pass this callback right this call"
+    },
+    {
+      "startSeconds": 1613.96,
+      "endSeconds": 1621.36,
+      "text": "back method we used to pass this call"
+    },
+    {
+      "startSeconds": 1617.399,
+      "endSeconds": 1624.399,
+      "text": "back method method into our proceed to"
+    },
+    {
+      "startSeconds": 1621.36,
+      "endSeconds": 1627.64,
+      "text": "payment remember this is how we wrote"
+    },
+    {
+      "startSeconds": 1624.399,
+      "endSeconds": 1630.679,
+      "text": "code let me just make it a little more"
+    },
+    {
+      "startSeconds": 1627.64,
+      "endSeconds": 1633.679,
+      "text": "readable to you okay and what will"
+    },
+    {
+      "startSeconds": 1630.679,
+      "endSeconds": 1636.159,
+      "text": "happen is now if you see clearly we have"
+    },
+    {
+      "startSeconds": 1633.679,
+      "endSeconds": 1637.799,
+      "text": "our create order then proceed to payment"
+    },
+    {
+      "startSeconds": 1636.159,
+      "endSeconds": 1639.919,
+      "text": "then show order summary and once the"
+    },
+    {
+      "startSeconds": 1637.799,
+      "endSeconds": 1642.76,
+      "text": "order summary is shown then we will do"
+    },
+    {
+      "startSeconds": 1639.919,
+      "endSeconds": 1645.84,
+      "text": "update balance so we have another call"
+    },
+    {
+      "startSeconds": 1642.76,
+      "endSeconds": 1647.919,
+      "text": "back and when we write this type of code"
+    },
+    {
+      "startSeconds": 1645.84,
+      "endSeconds": 1652.08,
+      "text": "when we have a lot of apis which depend"
+    },
+    {
+      "startSeconds": 1647.919,
+      "endSeconds": 1654.72,
+      "text": "on each other so we tend to fall into a"
+    },
+    {
+      "startSeconds": 1652.08,
+      "endSeconds": 1657.36,
+      "text": "call back hell this is known as call"
+    },
+    {
+      "startSeconds": 1654.72,
+      "endSeconds": 1659.52,
+      "text": "back hell now our code starts to grow"
+    },
+    {
+      "startSeconds": 1657.36,
+      "endSeconds": 1662.039,
+      "text": "horizontally instead of vertically isn't"
+    },
+    {
+      "startSeconds": 1659.52,
+      "endSeconds": 1664.44,
+      "text": "it this is also known as Pyramid of Doom"
+    },
+    {
+      "startSeconds": 1662.039,
+      "endSeconds": 1667.48,
+      "text": "and it takes and if suppose we have more"
+    },
+    {
+      "startSeconds": 1664.44,
+      "endSeconds": 1669.519,
+      "text": "if and else cases more nested callbacks"
+    },
+    {
+      "startSeconds": 1667.48,
+      "endSeconds": 1672.32,
+      "text": "then this code becomes very ugly and"
+    },
+    {
+      "startSeconds": 1669.519,
+      "endSeconds": 1675.84,
+      "text": "hard to maintain you don't know how and"
+    },
+    {
+      "startSeconds": 1672.32,
+      "endSeconds": 1678.96,
+      "text": "where what API is being ending right so"
+    },
+    {
+      "startSeconds": 1675.84,
+      "endSeconds": 1681.519,
+      "text": "this we want to avoid promise helps us"
+    },
+    {
+      "startSeconds": 1678.96,
+      "endSeconds": 1684.12,
+      "text": "avoid this as well and this is handled"
+    },
+    {
+      "startSeconds": 1681.519,
+      "endSeconds": 1685.919,
+      "text": "using promise chaining so promise comes"
+    },
+    {
+      "startSeconds": 1684.12,
+      "endSeconds": 1689.2,
+      "text": "with an important feature of Promise"
+    },
+    {
+      "startSeconds": 1685.919,
+      "endSeconds": 1691.84,
+      "text": "chaining yes that term sounds very"
+    },
+    {
+      "startSeconds": 1689.2,
+      "endSeconds": 1694.88,
+      "text": "complicated but it is not I'll show you"
+    },
+    {
+      "startSeconds": 1691.84,
+      "endSeconds": 1697.76,
+      "text": "that how we can write this type of code"
+    },
+    {
+      "startSeconds": 1694.88,
+      "endSeconds": 1699.72,
+      "text": "using promises if suppose these apis"
+    },
+    {
+      "startSeconds": 1697.76,
+      "endSeconds": 1704.2,
+      "text": "were returning as promises how do we"
+    },
+    {
+      "startSeconds": 1699.72,
+      "endSeconds": 1706.48,
+      "text": "handle this type of situation okay so uh"
+    },
+    {
+      "startSeconds": 1704.2,
+      "endSeconds": 1708.44,
+      "text": "this is the way of writing promises so"
+    },
+    {
+      "startSeconds": 1706.48,
+      "endSeconds": 1711.279,
+      "text": "if you see it clearly then this create"
+    },
+    {
+      "startSeconds": 1708.44,
+      "endSeconds": 1713.12,
+      "text": "order API was returning us a promise and"
+    },
+    {
+      "startSeconds": 1711.279,
+      "endSeconds": 1716,
+      "text": "then we were attaching a call back"
+    },
+    {
+      "startSeconds": 1713.12,
+      "endSeconds": 1718.279,
+      "text": "function to this create order api's"
+    },
+    {
+      "startSeconds": 1716,
+      "endSeconds": 1721,
+      "text": "returned promise so this is a way to do"
+    },
+    {
+      "startSeconds": 1718.279,
+      "endSeconds": 1723.519,
+      "text": "that or we could have just instead of"
+    },
+    {
+      "startSeconds": 1721,
+      "endSeconds": 1727,
+      "text": "doing promise dot then we could have"
+    },
+    {
+      "startSeconds": 1723.519,
+      "endSeconds": 1730,
+      "text": "just did we can just do a DOT then after"
+    },
+    {
+      "startSeconds": 1727,
+      "endSeconds": 1734.44,
+      "text": "this create order API so this is same"
+    },
+    {
+      "startSeconds": 1730,
+      "endSeconds": 1738.44,
+      "text": "right so it is equivalent to writing"
+    },
+    {
+      "startSeconds": 1734.44,
+      "endSeconds": 1740.64,
+      "text": "this right so this create order API will"
+    },
+    {
+      "startSeconds": 1738.44,
+      "endSeconds": 1744.44,
+      "text": "return us a promise and then we will"
+    },
+    {
+      "startSeconds": 1740.64,
+      "endSeconds": 1747.64,
+      "text": "attach a call back function over here"
+    },
+    {
+      "startSeconds": 1744.44,
+      "endSeconds": 1749.919,
+      "text": "right so this is same as getting a"
+    },
+    {
+      "startSeconds": 1747.64,
+      "endSeconds": 1752.24,
+      "text": "variable and then attaching then to it"
+    },
+    {
+      "startSeconds": 1749.919,
+      "endSeconds": 1756.12,
+      "text": "or we can just simply write like this"
+    },
+    {
+      "startSeconds": 1752.24,
+      "endSeconds": 1758.679,
+      "text": "using promises right so suppose if after"
+    },
+    {
+      "startSeconds": 1756.12,
+      "endSeconds": 1761.799,
+      "text": "proceed to payment we also had to show"
+    },
+    {
+      "startSeconds": 1758.679,
+      "endSeconds": 1764.08,
+      "text": "order summary so what we we so what we"
+    },
+    {
+      "startSeconds": 1761.799,
+      "endSeconds": 1769.48,
+      "text": "could have done is we could have just"
+    },
+    {
+      "startSeconds": 1764.08,
+      "endSeconds": 1772.159,
+      "text": "added one more then statement after this"
+    },
+    {
+      "startSeconds": 1769.48,
+      "endSeconds": 1774.96,
+      "text": "right and we would have just attached"
+    },
+    {
+      "startSeconds": 1772.159,
+      "endSeconds": 1777.2,
+      "text": "another call back function to this"
+    },
+    {
+      "startSeconds": 1774.96,
+      "endSeconds": 1779.12,
+      "text": "promis chain right this is known as"
+    },
+    {
+      "startSeconds": 1777.2,
+      "endSeconds": 1782.12,
+      "text": "promise chaining and we would have just"
+    },
+    {
+      "startSeconds": 1779.12,
+      "endSeconds": 1785.12,
+      "text": "done show order summary over here and"
+    },
+    {
+      "startSeconds": 1782.12,
+      "endSeconds": 1788.399,
+      "text": "instead of payment info let's just add"
+    },
+    {
+      "startSeconds": 1785.12,
+      "endSeconds": 1790.24,
+      "text": "payment info over here so that's all"
+    },
+    {
+      "startSeconds": 1788.399,
+      "endSeconds": 1794.039,
+      "text": "that's how we would have handled it"
+    },
+    {
+      "startSeconds": 1790.24,
+      "endSeconds": 1796.159,
+      "text": "inside our promise world right and what"
+    },
+    {
+      "startSeconds": 1794.039,
+      "endSeconds": 1798.6,
+      "text": "if there was update update Wallet"
+    },
+    {
+      "startSeconds": 1796.159,
+      "endSeconds": 1802.519,
+      "text": "balance also so we would have as"
+    },
+    {
+      "startSeconds": 1798.6,
+      "endSeconds": 1804.679,
+      "text": "added one more call back we to this"
+    },
+    {
+      "startSeconds": 1802.519,
+      "endSeconds": 1807.96,
+      "text": "chain right and we would have done"
+    },
+    {
+      "startSeconds": 1804.679,
+      "endSeconds": 1810.399,
+      "text": "update wallet over here right let me"
+    },
+    {
+      "startSeconds": 1807.96,
+      "endSeconds": 1813.519,
+      "text": "just show it to you so our code would"
+    },
+    {
+      "startSeconds": 1810.399,
+      "endSeconds": 1815.08,
+      "text": "have become Lean by writing like this so"
+    },
+    {
+      "startSeconds": 1813.519,
+      "endSeconds": 1817.36,
+      "text": "one more important thing to note over"
+    },
+    {
+      "startSeconds": 1815.08,
+      "endSeconds": 1819.519,
+      "text": "here is that a lot of developers fall"
+    },
+    {
+      "startSeconds": 1817.36,
+      "endSeconds": 1822.159,
+      "text": "into that that issue right there is a"
+    },
+    {
+      "startSeconds": 1819.519,
+      "endSeconds": 1824.08,
+      "text": "bug in a lot of code right you would"
+    },
+    {
+      "startSeconds": 1822.159,
+      "endSeconds": 1826.919,
+      "text": "pull your hairs if you will fall in that"
+    },
+    {
+      "startSeconds": 1824.08,
+      "endSeconds": 1829.159,
+      "text": "bug is that whenever you are attaching a"
+    },
+    {
+      "startSeconds": 1826.919,
+      "endSeconds": 1831.72,
+      "text": "lot of then then function and lot of"
+    },
+    {
+      "startSeconds": 1829.159,
+      "endSeconds": 1835.679,
+      "text": "call backs in This Promise chain what"
+    },
+    {
+      "startSeconds": 1831.72,
+      "endSeconds": 1838.559,
+      "text": "happens is we used to pipe the data"
+    },
+    {
+      "startSeconds": 1835.679,
+      "endSeconds": 1841.039,
+      "text": "right we want this data to flow in the"
+    },
+    {
+      "startSeconds": 1838.559,
+      "endSeconds": 1842.84,
+      "text": "whole chain what will happen is whatever"
+    },
+    {
+      "startSeconds": 1841.039,
+      "endSeconds": 1846,
+      "text": "is the response of this create order"
+    },
+    {
+      "startSeconds": 1842.84,
+      "endSeconds": 1848.12,
+      "text": "should pass into this this chain and"
+    },
+    {
+      "startSeconds": 1846,
+      "endSeconds": 1850.279,
+      "text": "then whatever the whatever is the"
+    },
+    {
+      "startSeconds": 1848.12,
+      "endSeconds": 1852.88,
+      "text": "response of this pred to payment should"
+    },
+    {
+      "startSeconds": 1850.279,
+      "endSeconds": 1854.84,
+      "text": "pass down the chain and then whatever is"
+    },
+    {
+      "startSeconds": 1852.88,
+      "endSeconds": 1857.44,
+      "text": "there returned from show order summary"
+    },
+    {
+      "startSeconds": 1854.84,
+      "endSeconds": 1859.48,
+      "text": "should pass down the chain for that you"
+    },
+    {
+      "startSeconds": 1857.44,
+      "endSeconds": 1863.76,
+      "text": "have to take care in mind that you"
+    },
+    {
+      "startSeconds": 1859.48,
+      "endSeconds": 1866.24,
+      "text": "return from here okay so we always"
+    },
+    {
+      "startSeconds": 1863.76,
+      "endSeconds": 1868.48,
+      "text": "return a promise from an promise when we"
+    },
+    {
+      "startSeconds": 1866.24,
+      "endSeconds": 1871,
+      "text": "are chaining it right so that's when we"
+    },
+    {
+      "startSeconds": 1868.48,
+      "endSeconds": 1873.399,
+      "text": "will get data properly into our chain"
+    },
+    {
+      "startSeconds": 1871,
+      "endSeconds": 1876.039,
+      "text": "and a lot of times we as developer"
+    },
+    {
+      "startSeconds": 1873.399,
+      "endSeconds": 1877.639,
+      "text": "forget to write this right so just make"
+    },
+    {
+      "startSeconds": 1876.039,
+      "endSeconds": 1880.76,
+      "text": "sure that you are doing this when you"
+    },
+    {
+      "startSeconds": 1877.639,
+      "endSeconds": 1883.399,
+      "text": "are handling it so this is how we write"
+    },
+    {
+      "startSeconds": 1880.76,
+      "endSeconds": 1885.799,
+      "text": "code and our code does not grow"
+    },
+    {
+      "startSeconds": 1883.399,
+      "endSeconds": 1889.559,
+      "text": "horizontally but it is in a meaningful"
+    },
+    {
+      "startSeconds": 1885.799,
+      "endSeconds": 1893.519,
+      "text": "chained fashion okay so this is how we"
+    },
+    {
+      "startSeconds": 1889.559,
+      "endSeconds": 1896.159,
+      "text": "write this piece of code inside promises"
+    },
+    {
+      "startSeconds": 1893.519,
+      "endSeconds": 1898.36,
+      "text": "and one more thing some some developers"
+    },
+    {
+      "startSeconds": 1896.159,
+      "endSeconds": 1901.159,
+      "text": "also prefer to use Arrow functions over"
+    },
+    {
+      "startSeconds": 1898.36,
+      "endSeconds": 1904.919,
+      "text": "here right that makes it a little more"
+    },
+    {
+      "startSeconds": 1901.159,
+      "endSeconds": 1907.2,
+      "text": "lean uh I I don't want to question about"
+    },
+    {
+      "startSeconds": 1904.919,
+      "endSeconds": 1909.76,
+      "text": "readability but the code will look"
+    },
+    {
+      "startSeconds": 1907.2,
+      "endSeconds": 1911.44,
+      "text": "something like this if you will have"
+    },
+    {
+      "startSeconds": 1909.76,
+      "endSeconds": 1915.48,
+      "text": "Arrow functions over here we can just"
+    },
+    {
+      "startSeconds": 1911.44,
+      "endSeconds": 1917.72,
+      "text": "get a of return statement so some some"
+    },
+    {
+      "startSeconds": 1915.48,
+      "endSeconds": 1921.279,
+      "text": "developers find it much more readable"
+    },
+    {
+      "startSeconds": 1917.72,
+      "endSeconds": 1924.12,
+      "text": "like like this okay so they kind of just"
+    },
+    {
+      "startSeconds": 1921.279,
+      "endSeconds": 1926.399,
+      "text": "remove all these returns and all right"
+    },
+    {
+      "startSeconds": 1924.12,
+      "endSeconds": 1928.44,
+      "text": "because there is just one line over here"
+    },
+    {
+      "startSeconds": 1926.399,
+      "endSeconds": 1932.679,
+      "text": "in our Arrow function so they just"
+    },
+    {
+      "startSeconds": 1928.44,
+      "endSeconds": 1935.72,
+      "text": "prefer to just write the code like this"
+    },
+    {
+      "startSeconds": 1932.679,
+      "endSeconds": 1938.72,
+      "text": "so This basically looks a little more"
+    },
+    {
+      "startSeconds": 1935.72,
+      "endSeconds": 1941.279,
+      "text": "lean but I don't want to comment over"
+    },
+    {
+      "startSeconds": 1938.72,
+      "endSeconds": 1944.32,
+      "text": "the readability it is developer choice"
+    },
+    {
+      "startSeconds": 1941.279,
+      "endSeconds": 1947.32,
+      "text": "and how you follow but I personally like"
+    },
+    {
+      "startSeconds": 1944.32,
+      "endSeconds": 1949.96,
+      "text": "the older syntax with function keyword"
+    },
+    {
+      "startSeconds": 1947.32,
+      "endSeconds": 1952.679,
+      "text": "better right that is my way of coding"
+    },
+    {
+      "startSeconds": 1949.96,
+      "endSeconds": 1955.72,
+      "text": "but some developers like to write code"
+    },
+    {
+      "startSeconds": 1952.679,
+      "endSeconds": 1958.76,
+      "text": "like this also I just wanted to show you"
+    },
+    {
+      "startSeconds": 1955.72,
+      "endSeconds": 1961.799,
+      "text": "that this code growing horizontally is"
+    },
+    {
+      "startSeconds": 1958.76,
+      "endSeconds": 1963.919,
+      "text": "now converted to this fashionly evenly"
+    },
+    {
+      "startSeconds": 1961.799,
+      "endSeconds": 1966.399,
+      "text": "fashioned vertical written code and a"
+    },
+    {
+      "startSeconds": 1963.919,
+      "endSeconds": 1968.039,
+      "text": "promise chain make sense so this is"
+    },
+    {
+      "startSeconds": 1966.399,
+      "endSeconds": 1970.279,
+      "text": "known as promise chaining and it helps"
+    },
+    {
+      "startSeconds": 1968.039,
+      "endSeconds": 1972.08,
+      "text": "us get out of call back hell isn't it"
+    },
+    {
+      "startSeconds": 1970.279,
+      "endSeconds": 1974.679,
+      "text": "beautiful my dear friends it's so"
+    },
+    {
+      "startSeconds": 1972.08,
+      "endSeconds": 1977.159,
+      "text": "beautiful promises gives us so many"
+    },
+    {
+      "startSeconds": 1974.679,
+      "endSeconds": 1979.96,
+      "text": "amazing functionalities that what we had"
+    },
+    {
+      "startSeconds": 1977.159,
+      "endSeconds": 1982.679,
+      "text": "to do in our previous call back fashion"
+    },
+    {
+      "startSeconds": 1979.96,
+      "endSeconds": 1985.399,
+      "text": "would have messed up our code so much it"
+    },
+    {
+      "startSeconds": 1982.679,
+      "endSeconds": 1987.84,
+      "text": "just messes up I have seen repositories"
+    },
+    {
+      "startSeconds": 1985.399,
+      "endSeconds": 1991.519,
+      "text": "where a lot of code here and there"
+    },
+    {
+      "startSeconds": 1987.84,
+      "endSeconds": 1993.559,
+      "text": "written in random order and Promises"
+    },
+    {
+      "startSeconds": 1991.519,
+      "endSeconds": 1996.32,
+      "text": "just makes our code much more beautiful"
+    },
+    {
+      "startSeconds": 1993.559,
+      "endSeconds": 1998.24,
+      "text": "and cleaner and generates trust in that"
+    },
+    {
+      "startSeconds": 1996.32,
+      "endSeconds": 2000.399,
+      "text": "transaction so this was a very long"
+    },
+    {
+      "startSeconds": 1998.24,
+      "endSeconds": 2002.24,
+      "text": "video and now let us just quickly recap"
+    },
+    {
+      "startSeconds": 2000.399,
+      "endSeconds": 2004.84,
+      "text": "whatever we studied in this video very"
+    },
+    {
+      "startSeconds": 2002.24,
+      "endSeconds": 2007.48,
+      "text": "quickly okay so first of all we saw that"
+    },
+    {
+      "startSeconds": 2004.84,
+      "endSeconds": 2009.6,
+      "text": "okay how we can handle our asyn code in"
+    },
+    {
+      "startSeconds": 2007.48,
+      "endSeconds": 2011.44,
+      "text": "user callbacks and there is a major"
+    },
+    {
+      "startSeconds": 2009.6,
+      "endSeconds": 2013.159,
+      "text": "issue in this callbacks while using"
+    },
+    {
+      "startSeconds": 2011.44,
+      "endSeconds": 2015.24,
+      "text": "callbacks that is inversion of control"
+    },
+    {
+      "startSeconds": 2013.159,
+      "endSeconds": 2017.639,
+      "text": "we were passing a function inside"
+    },
+    {
+      "startSeconds": 2015.24,
+      "endSeconds": 2019.559,
+      "text": "another API and we were given control of"
+    },
+    {
+      "startSeconds": 2017.639,
+      "endSeconds": 2021.48,
+      "text": "our program to some other API which we"
+    },
+    {
+      "startSeconds": 2019.559,
+      "endSeconds": 2023.76,
+      "text": "wanted to avoid that was inversion of"
+    },
+    {
+      "startSeconds": 2021.48,
+      "endSeconds": 2026.039,
+      "text": "control and how did we solve it we"
+    },
+    {
+      "startSeconds": 2023.76,
+      "endSeconds": 2029.039,
+      "text": "basically had a promise object and that"
+    },
+    {
+      "startSeconds": 2026.039,
+      "endSeconds": 2031.88,
+      "text": "promise object will be eventually filled"
+    },
+    {
+      "startSeconds": 2029.039,
+      "endSeconds": 2035.039,
+      "text": "with the result of async operation right"
+    },
+    {
+      "startSeconds": 2031.88,
+      "endSeconds": 2037.24,
+      "text": "that promise object and we don't pass a"
+    },
+    {
+      "startSeconds": 2035.039,
+      "endSeconds": 2039.159,
+      "text": "function inside any other function but"
+    },
+    {
+      "startSeconds": 2037.24,
+      "endSeconds": 2041.279,
+      "text": "what we do is we attach a call back"
+    },
+    {
+      "startSeconds": 2039.159,
+      "endSeconds": 2043.2,
+      "text": "function to that promise object and"
+    },
+    {
+      "startSeconds": 2041.279,
+      "endSeconds": 2045.36,
+      "text": "whenever we have data inside or whenever"
+    },
+    {
+      "startSeconds": 2043.2,
+      "endSeconds": 2047.279,
+      "text": "the promise is resolved that"
+    },
+    {
+      "startSeconds": 2045.36,
+      "endSeconds": 2049.72,
+      "text": "automatically that call back function"
+    },
+    {
+      "startSeconds": 2047.279,
+      "endSeconds": 2052.159,
+      "text": "will automatically be called by promises"
+    },
+    {
+      "startSeconds": 2049.72,
+      "endSeconds": 2054.52,
+      "text": "right beautiful thing isn't it and what"
+    },
+    {
+      "startSeconds": 2052.159,
+      "endSeconds": 2057.76,
+      "text": "happens is promise gives us guarantee"
+    },
+    {
+      "startSeconds": 2054.52,
+      "endSeconds": 2060.359,
+      "text": "and Trust in our whole transaction how"
+    },
+    {
+      "startSeconds": 2057.76,
+      "endSeconds": 2063.56,
+      "text": "because you can resolve promise just"
+    },
+    {
+      "startSeconds": 2060.359,
+      "endSeconds": 2066.079,
+      "text": "once and you can only have three states"
+    },
+    {
+      "startSeconds": 2063.56,
+      "endSeconds": 2068.359,
+      "text": "for promises either pending or fulfilled"
+    },
+    {
+      "startSeconds": 2066.079,
+      "endSeconds": 2070.8,
+      "text": "or rejected there is no other State you"
+    },
+    {
+      "startSeconds": 2068.359,
+      "endSeconds": 2072.96,
+      "text": "can pass promise wherever you want to"
+    },
+    {
+      "startSeconds": 2070.8,
+      "endSeconds": 2076,
+      "text": "without caring about the mutability of"
+    },
+    {
+      "startSeconds": 2072.96,
+      "endSeconds": 2078.879,
+      "text": "it it is immutable you cannot alter a"
+    },
+    {
+      "startSeconds": 2076,
+      "endSeconds": 2081,
+      "text": "promise if it is resolved so promise"
+    },
+    {
+      "startSeconds": 2078.879,
+      "endSeconds": 2082.679,
+      "text": "comes with a lot of trust and then we"
+    },
+    {
+      "startSeconds": 2081,
+      "endSeconds": 2084.8,
+      "text": "also saw that beautiful looking promise"
+    },
+    {
+      "startSeconds": 2082.679,
+      "endSeconds": 2087.079,
+      "text": "object remember that okay it was a"
+    },
+    {
+      "startSeconds": 2084.8,
+      "endSeconds": 2089.159,
+      "text": "special object right which had two major"
+    },
+    {
+      "startSeconds": 2087.079,
+      "endSeconds": 2090.76,
+      "text": "properties one was the promised State"
+    },
+    {
+      "startSeconds": 2089.159,
+      "endSeconds": 2092.839,
+      "text": "and the other one was promised result"
+    },
+    {
+      "startSeconds": 2090.76,
+      "endSeconds": 2094.599,
+      "text": "which used to hold data remember which"
+    },
+    {
+      "startSeconds": 2092.839,
+      "endSeconds": 2096.76,
+      "text": "eventually get filled right which"
+    },
+    {
+      "startSeconds": 2094.599,
+      "endSeconds": 2098.56,
+      "text": "eventually gets filled right and then I"
+    },
+    {
+      "startSeconds": 2096.76,
+      "endSeconds": 2100.72,
+      "text": "also told you that how do you have to"
+    },
+    {
+      "startSeconds": 2098.56,
+      "endSeconds": 2102.8,
+      "text": "answer a question that what is a promise"
+    },
+    {
+      "startSeconds": 2100.72,
+      "endSeconds": 2105.04,
+      "text": "in the interviews how remember that"
+    },
+    {
+      "startSeconds": 2102.8,
+      "endSeconds": 2107.28,
+      "text": "definition I bet you would have forgot"
+    },
+    {
+      "startSeconds": 2105.04,
+      "endSeconds": 2109.52,
+      "text": "it righty now let me just recap it once"
+    },
+    {
+      "startSeconds": 2107.28,
+      "endSeconds": 2111.52,
+      "text": "again so the promise is an object that"
+    },
+    {
+      "startSeconds": 2109.52,
+      "endSeconds": 2113.52,
+      "text": "represents eventual completion of an"
+    },
+    {
+      "startSeconds": 2111.52,
+      "endSeconds": 2115.96,
+      "text": "async operation eventual completion of"
+    },
+    {
+      "startSeconds": 2113.52,
+      "endSeconds": 2118.48,
+      "text": "an async operation it's very easy just"
+    },
+    {
+      "startSeconds": 2115.96,
+      "endSeconds": 2120.96,
+      "text": "remember it once say it yourself promise"
+    },
+    {
+      "startSeconds": 2118.48,
+      "endSeconds": 2123.16,
+      "text": "is an object that represents eventual"
+    },
+    {
+      "startSeconds": 2120.96,
+      "endSeconds": 2124.76,
+      "text": "completion of an async operation that"
+    },
+    {
+      "startSeconds": 2123.16,
+      "endSeconds": 2126.24,
+      "text": "async operation will be eventually"
+    },
+    {
+      "startSeconds": 2124.76,
+      "endSeconds": 2129,
+      "text": "completed so it's an object that"
+    },
+    {
+      "startSeconds": 2126.24,
+      "endSeconds": 2130.599,
+      "text": "represents it right very easy just say"
+    },
+    {
+      "startSeconds": 2129,
+      "endSeconds": 2133.839,
+      "text": "it two three times you will just"
+    },
+    {
+      "startSeconds": 2130.599,
+      "endSeconds": 2135.96,
+      "text": "remember it for life it's so beautiful"
+    },
+    {
+      "startSeconds": 2133.839,
+      "endSeconds": 2137.92,
+      "text": "okay we saw that how do we answer that"
+    },
+    {
+      "startSeconds": 2135.96,
+      "endSeconds": 2139.32,
+      "text": "and the other and then later on we also"
+    },
+    {
+      "startSeconds": 2137.92,
+      "endSeconds": 2141.24,
+      "text": "discussed that okay there is one more"
+    },
+    {
+      "startSeconds": 2139.32,
+      "endSeconds": 2144.04,
+      "text": "issue using call backs that is call back"
+    },
+    {
+      "startSeconds": 2141.24,
+      "endSeconds": 2146.68,
+      "text": "hell right and then we can use promise"
+    },
+    {
+      "startSeconds": 2144.04,
+      "endSeconds": 2148.32,
+      "text": "chaining right to handle that type of"
+    },
+    {
+      "startSeconds": 2146.68,
+      "endSeconds": 2150.72,
+      "text": "issue and then we have a beautiful"
+    },
+    {
+      "startSeconds": 2148.32,
+      "endSeconds": 2152.88,
+      "text": "looking promise chain with us we can use"
+    },
+    {
+      "startSeconds": 2150.72,
+      "endSeconds": 2156.04,
+      "text": "then to attach a lot of call back"
+    },
+    {
+      "startSeconds": 2152.88,
+      "endSeconds": 2157.96,
+      "text": "handlers for our promise and we can just"
+    },
+    {
+      "startSeconds": 2156.04,
+      "endSeconds": 2159.24,
+      "text": "do that and then I also disc because one"
+    },
+    {
+      "startSeconds": 2157.96,
+      "endSeconds": 2161.44,
+      "text": "more thing which you need to be careful"
+    },
+    {
+      "startSeconds": 2159.24,
+      "endSeconds": 2163.92,
+      "text": "about that whenever there is a promise"
+    },
+    {
+      "startSeconds": 2161.44,
+      "endSeconds": 2165.76,
+      "text": "right inside that promise chain right so"
+    },
+    {
+      "startSeconds": 2163.92,
+      "endSeconds": 2167.599,
+      "text": "you might have to return that promise"
+    },
+    {
+      "startSeconds": 2165.76,
+      "endSeconds": 2170.4,
+      "text": "once again into the chain otherwise you"
+    },
+    {
+      "startSeconds": 2167.599,
+      "endSeconds": 2172.16,
+      "text": "might lose some data in inside the chain"
+    },
+    {
+      "startSeconds": 2170.4,
+      "endSeconds": 2174.56,
+      "text": "right so these were the things which I"
+    },
+    {
+      "startSeconds": 2172.16,
+      "endSeconds": 2177.04,
+      "text": "discussed in this video I hope you liked"
+    },
+    {
+      "startSeconds": 2174.56,
+      "endSeconds": 2178.68,
+      "text": "it and you would see promises the same"
+    },
+    {
+      "startSeconds": 2177.04,
+      "endSeconds": 2181.2,
+      "text": "way like you used to see earlier"
+    },
+    {
+      "startSeconds": 2178.68,
+      "endSeconds": 2183.16,
+      "text": "promises are much more beautiful much"
+    },
+    {
+      "startSeconds": 2181.2,
+      "endSeconds": 2184.76,
+      "text": "much much more beautiful so in the next"
+    },
+    {
+      "startSeconds": 2183.16,
+      "endSeconds": 2186.599,
+      "text": "video I will cover that how we can"
+    },
+    {
+      "startSeconds": 2184.76,
+      "endSeconds": 2188.44,
+      "text": "create our own promise isn't it"
+    },
+    {
+      "startSeconds": 2186.599,
+      "endSeconds": 2190.319,
+      "text": "beautiful right right now in this video"
+    },
+    {
+      "startSeconds": 2188.44,
+      "endSeconds": 2192.44,
+      "text": "we just saw that how we can consume a"
+    },
+    {
+      "startSeconds": 2190.319,
+      "endSeconds": 2194.8,
+      "text": "promise right fetch function created a"
+    },
+    {
+      "startSeconds": 2192.44,
+      "endSeconds": 2196.68,
+      "text": "promise and gave us to us right the"
+    },
+    {
+      "startSeconds": 2194.8,
+      "endSeconds": 2199.44,
+      "text": "create order we were assuming that this"
+    },
+    {
+      "startSeconds": 2196.68,
+      "endSeconds": 2201.8,
+      "text": "create order API will give us a promise"
+    },
+    {
+      "startSeconds": 2199.44,
+      "endSeconds": 2203.72,
+      "text": "but now we will in the next episode we"
+    },
+    {
+      "startSeconds": 2201.8,
+      "endSeconds": 2205.24,
+      "text": "will see that how we can create a"
+    },
+    {
+      "startSeconds": 2203.72,
+      "endSeconds": 2208.04,
+      "text": "promise and return from this create"
+    },
+    {
+      "startSeconds": 2205.24,
+      "endSeconds": 2209.839,
+      "text": "order API okay we will try to write our"
+    },
+    {
+      "startSeconds": 2208.04,
+      "endSeconds": 2212.4,
+      "text": "own implementation of this create order"
+    },
+    {
+      "startSeconds": 2209.839,
+      "endSeconds": 2214.48,
+      "text": "API how will I create a new promise and"
+    },
+    {
+      "startSeconds": 2212.4,
+      "endSeconds": 2216.599,
+      "text": "return it right because I am also a"
+    },
+    {
+      "startSeconds": 2214.48,
+      "endSeconds": 2218.72,
+      "text": "developer I want to create promises and"
+    },
+    {
+      "startSeconds": 2216.599,
+      "endSeconds": 2221.24,
+      "text": "send it around to people to generate"
+    },
+    {
+      "startSeconds": 2218.72,
+      "endSeconds": 2222.72,
+      "text": "trust in our transaction isn't it so we"
+    },
+    {
+      "startSeconds": 2221.24,
+      "endSeconds": 2224.319,
+      "text": "will see that how we can create a"
+    },
+    {
+      "startSeconds": 2222.72,
+      "endSeconds": 2227.16,
+      "text": "promise in the next episode this was"
+    },
+    {
+      "startSeconds": 2224.319,
+      "endSeconds": 2229.359,
+      "text": "about consuming promises that episode is"
+    },
+    {
+      "startSeconds": 2227.16,
+      "endSeconds": 2231.599,
+      "text": "going to be mindblowing just keep"
+    },
+    {
+      "startSeconds": 2229.359,
+      "endSeconds": 2233.24,
+      "text": "watching Namaste JavaScript season 2 and"
+    },
+    {
+      "startSeconds": 2231.599,
+      "endSeconds": 2235.599,
+      "text": "now it's time for homework of this"
+    },
+    {
+      "startSeconds": 2233.24,
+      "endSeconds": 2237.52,
+      "text": "episode so what you have to do is first"
+    },
+    {
+      "startSeconds": 2235.599,
+      "endSeconds": 2239.92,
+      "text": "of all you have to explain in the"
+    },
+    {
+      "startSeconds": 2237.52,
+      "endSeconds": 2242.04,
+      "text": "comments that what if the interviewer"
+    },
+    {
+      "startSeconds": 2239.92,
+      "endSeconds": 2244.68,
+      "text": "ask you what is a promise how would you"
+    },
+    {
+      "startSeconds": 2242.04,
+      "endSeconds": 2246.839,
+      "text": "answer that don't see other comments"
+    },
+    {
+      "startSeconds": 2244.68,
+      "endSeconds": 2249.359,
+      "text": "just write your own definition with the"
+    },
+    {
+      "startSeconds": 2246.839,
+      "endSeconds": 2252.44,
+      "text": "exact same line over there okay what"
+    },
+    {
+      "startSeconds": 2249.359,
+      "endSeconds": 2254.72,
+      "text": "will you answer first question is what"
+    },
+    {
+      "startSeconds": 2252.44,
+      "endSeconds": 2256.96,
+      "text": "is a promise according to you just write"
+    },
+    {
+      "startSeconds": 2254.72,
+      "endSeconds": 2258.839,
+      "text": "it down and then second thing why"
+    },
+    {
+      "startSeconds": 2256.96,
+      "endSeconds": 2260.599,
+      "text": "promises are important how would you"
+    },
+    {
+      "startSeconds": 2258.839,
+      "endSeconds": 2263.319,
+      "text": "explain it to the interviewer write it"
+    },
+    {
+      "startSeconds": 2260.599,
+      "endSeconds": 2266.839,
+      "text": "down that will help you please this this"
+    },
+    {
+      "startSeconds": 2263.319,
+      "endSeconds": 2269.04,
+      "text": "is a very important episode and I'm"
+    },
+    {
+      "startSeconds": 2266.839,
+      "endSeconds": 2272.4,
+      "text": "telling you this is the most most most"
+    },
+    {
+      "startSeconds": 2269.04,
+      "endSeconds": 2275.16,
+      "text": "important video episode of Namaste"
+    },
+    {
+      "startSeconds": 2272.4,
+      "endSeconds": 2277.64,
+      "text": "JavaScript so I want you to take away a"
+    },
+    {
+      "startSeconds": 2275.16,
+      "endSeconds": 2280.04,
+      "text": "lot of things from this episode if you"
+    },
+    {
+      "startSeconds": 2277.64,
+      "endSeconds": 2282.52,
+      "text": "have if you have doubts about anything"
+    },
+    {
+      "startSeconds": 2280.04,
+      "endSeconds": 2284.96,
+      "text": "just comment it down just see the video"
+    },
+    {
+      "startSeconds": 2282.52,
+      "endSeconds": 2287.079,
+      "text": "once again and just do this homework two"
+    },
+    {
+      "startSeconds": 2284.96,
+      "endSeconds": 2289.04,
+      "text": "questions first is how would you answer"
+    },
+    {
+      "startSeconds": 2287.079,
+      "endSeconds": 2291.319,
+      "text": "a question about what are promises in"
+    },
+    {
+      "startSeconds": 2289.04,
+      "endSeconds": 2293.48,
+      "text": "JavaScript and the second one is why do"
+    },
+    {
+      "startSeconds": 2291.319,
+      "endSeconds": 2295.88,
+      "text": "we use promises what is advantages of it"
+    },
+    {
+      "startSeconds": 2293.48,
+      "endSeconds": 2297.8,
+      "text": "explain it in your own terms in the"
+    },
+    {
+      "startSeconds": 2295.88,
+      "endSeconds": 2300.119,
+      "text": "comments I would love to read all the"
+    },
+    {
+      "startSeconds": 2297.8,
+      "endSeconds": 2302.24,
+      "text": "answers I would give you a heart if I"
+    },
+    {
+      "startSeconds": 2300.119,
+      "endSeconds": 2303.92,
+      "text": "like your answer please do that please"
+    },
+    {
+      "startSeconds": 2302.24,
+      "endSeconds": 2305.839,
+      "text": "do the homework this is really very"
+    },
+    {
+      "startSeconds": 2303.92,
+      "endSeconds": 2308.44,
+      "text": "important it just takes 5 minutes before"
+    },
+    {
+      "startSeconds": 2305.839,
+      "endSeconds": 2310.48,
+      "text": "you go away from this video please do"
+    },
+    {
+      "startSeconds": 2308.44,
+      "endSeconds": 2312.48,
+      "text": "that and in the next episode I will be"
+    },
+    {
+      "startSeconds": 2310.48,
+      "endSeconds": 2314.52,
+      "text": "coming up with creating our own promises"
+    },
+    {
+      "startSeconds": 2312.48,
+      "endSeconds": 2316,
+      "text": "so go check out the next video but"
+    },
+    {
+      "startSeconds": 2314.52,
+      "endSeconds": 2318.319,
+      "text": "finish your homework right now before"
+    },
+    {
+      "startSeconds": 2316,
+      "endSeconds": 2320.64,
+      "text": "you move from this video and thank you"
+    },
+    {
+      "startSeconds": 2318.319,
+      "endSeconds": 2322.34,
+      "text": "so much for watching Namaste JavaScript"
+    },
+    {
+      "startSeconds": 2320.64,
+      "endSeconds": 2324.64,
+      "text": "season"
+    },
+    {
+      "startSeconds": 2322.34,
+      "endSeconds": 2327.04,
+      "text": "[Music]"
+    },
+    {
+      "startSeconds": 2324.64,
+      "endSeconds": 2328.72,
+      "text": "2 promise object represents eventual"
+    },
+    {
+      "startSeconds": 2327.04,
+      "endSeconds": 2330.319,
+      "text": "completion of a Asing operation promise"
+    },
+    {
+      "startSeconds": 2328.72,
+      "endSeconds": 2331.88,
+      "text": "object represents eventual completion of"
+    },
+    {
+      "startSeconds": 2330.319,
+      "endSeconds": 2333.4,
+      "text": "a Asing operation promise object"
+    },
+    {
+      "startSeconds": 2331.88,
+      "endSeconds": 2335,
+      "text": "represent eventual completion of any"
+    },
+    {
+      "startSeconds": 2333.4,
+      "endSeconds": 2336.24,
+      "text": "sync operation promise object represent"
+    },
+    {
+      "startSeconds": 2335,
+      "endSeconds": 2337.68,
+      "text": "eventual completion of any sync"
+    },
+    {
+      "startSeconds": 2336.24,
+      "endSeconds": 2341.359,
+      "text": "operation promise object repres presents"
+    },
+    {
+      "startSeconds": 2337.68,
+      "endSeconds": 2341.359,
+      "text": "eventual completion of"
+    },
+    {
+      "startSeconds": 2341.73,
+      "endSeconds": 2347.46,
+      "text": "[Music]"
+    }
+  ]
+}
