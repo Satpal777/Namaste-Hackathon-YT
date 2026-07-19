@@ -140,10 +140,18 @@ export default function HowItWorks() {
       </main>
 
       {/* Footer */}
-      <footer className="border-t border-muted/50 bg-card/45 px-6 py-6 mt-auto text-center text-xs text-muted-foreground">
-        <p className="font-semibold">
-          Ask Namaste JavaScript &bull; Empowered by Semantic Vector Search.
-        </p>
+      <footer className="border-t border-muted/50 bg-card/45 px-6 py-8 mt-auto text-center text-[0.7rem] text-muted-foreground leading-relaxed">
+        <div className="mx-auto max-w-4xl flex flex-col gap-2 items-center justify-center">
+          <p className="font-bold text-foreground">
+            Ask Namaste JavaScript &bull; AI Citation Engine
+          </p>
+          <p className="max-w-2xl text-muted-foreground/80">
+            Disclaimer: This is an unofficial, non-commercial hackathon project created solely for educational demonstration purposes. All course materials, video streams, transcripts, and branding are the exclusive property of Akshay Saini. 
+          </p>
+          <p className="text-muted-foreground/60 text-[0.65rem]">
+            Privacy: We value your privacy. No personal user data or search query logs are stored or collected by this application.
+          </p>
+        </div>
       </footer>
     </div>
   );

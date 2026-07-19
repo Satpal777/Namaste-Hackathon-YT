@@ -202,20 +202,25 @@ export default function DashboardPage() {
       </main>
 
       {/* Footer */}
-      <footer className="border-t border-muted/50 bg-card/45 px-6 py-4">
-        <p className="mx-auto max-w-4xl text-center text-xs text-muted-foreground font-medium leading-relaxed">
-          Retrieval engine over the{' '}
-          <a
-            className="underline underline-offset-2 transition-colors hover:text-primary font-bold"
-            href="https://www.youtube.com/playlist?list=PLlasXeu85E9cQ32gLCvAvr9vNaUccPVNP"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Namaste JavaScript
-          </a>{' '}
-          series by Akshay Saini. Citations link directly back to source segments.
-        </p>
-      </footer>
+      {/* <footer className="border-t border-muted/50 bg-card/45 px-6 py-4 text-center text-[0.7rem] text-muted-foreground leading-relaxed">
+        <div className="mx-auto max-w-4xl flex flex-col gap-1.5 items-center justify-center">
+          <p className="font-semibold text-foreground">
+            Retrieval engine over the{' '}
+            <a
+              className="underline underline-offset-2 transition-colors hover:text-primary font-bold"
+              href="https://www.youtube.com/playlist?list=PLlasXeu85E9cQ32gLCvAvr9vNaUccPVNP"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Namaste JavaScript
+            </a>{' '}
+            series by Akshay Saini.
+          </p>
+          <p className="text-[0.65rem] text-muted-foreground/80 max-w-2xl">
+            Disclaimer: Unofficial, non-commercial hackathon project built for educational demonstration. All content owned by Akshay Saini. Privacy: No personal user logs or search queries are stored.
+          </p>
+        </div>
+      </footer> */}
     </div>
   );
 }

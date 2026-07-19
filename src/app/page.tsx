@@ -223,14 +223,16 @@ export default function LandingPage() {
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-muted/50 bg-card/45 px-6 py-8 mt-auto text-center text-xs text-muted-foreground">
-        <div className="mx-auto max-w-4xl flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="font-medium">
-            Namaste JavaScript AI Citation Engine. Developed for frontend developers.
+      <footer className="border-t border-muted/50 bg-card/45 px-6 py-8 mt-auto text-center text-[0.7rem] text-muted-foreground leading-relaxed">
+        <div className="mx-auto max-w-4xl flex flex-col gap-2 items-center justify-center">
+          <p className="font-bold text-foreground">
+            Ask Namaste JavaScript &bull; AI Citation Engine
           </p>
-          <p className="flex items-center gap-1 font-bold">
-            <Code className="size-3.5" />
-            <span>Built using Next.js & Qdrant</span>
+          <p className="max-w-2xl text-muted-foreground/80">
+            Disclaimer: This is an unofficial, non-commercial hackathon project created solely for educational demonstration purposes. All course materials, video streams, transcripts, and branding are the exclusive property of Akshay Saini. 
+          </p>
+          <p className="text-muted-foreground/60 text-[0.65rem]">
+            Privacy: We value your privacy. No personal user data collected by this application.
           </p>
         </div>
       </footer>
