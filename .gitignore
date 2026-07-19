@@ -9,3 +9,5 @@ dist/
 .scratch/
 
 .vercel
+
+/test-results

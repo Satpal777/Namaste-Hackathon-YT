@@ -1,6 +1,6 @@
 'use client';
 
-import { Play, SquarePlay, MessageSquare, Award, Loader2 } from 'lucide-react';
+import { Play, SquarePlay, MessageSquare, Award, Loader2, Star } from 'lucide-react';
 import { useState } from 'react';
 import { Chat } from '~/components/chat';
 import { MasteryDashboard } from '~/components/mastery-dashboard';
@@ -76,42 +76,44 @@ export default function HomePage() {
   };
 
   return (
-    <div className="flex h-dvh flex-col">
-      <header className="border-b bg-background/80 backdrop-blur">
-        <div className="mx-auto flex max-w-3xl items-center justify-between gap-3 px-4 py-3">
-          <div className="flex items-center gap-3">
-            <span className="flex size-9 shrink-0 items-center justify-center rounded-2xl bg-primary text-primary-foreground shadow-sm">
-              <Play className="ml-0.5 size-4 fill-current" />
+    <div className="flex h-dvh flex-col bg-background antialiased selection:bg-primary/20">
+      {/* Floating / Glassmorphic Header */}
+      <header className="sticky top-0 z-50 border-b border-muted/50 bg-background/85 backdrop-blur-md px-6 shadow-sm">
+        <div className="mx-auto flex max-w-4xl items-center justify-between gap-4 py-4">
+          <div className="flex items-center gap-4">
+            <span className="flex size-10 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-tr from-primary to-secondary text-primary-foreground shadow-md shadow-primary/10">
+              <Play className="ml-0.5 size-4.5 fill-current" />
             </span>
             <div>
               <div className="flex items-center gap-2">
-                <h1 className="text-base font-semibold tracking-tight">
+                <h1 className="text-lg font-black tracking-tight text-foreground">
                   Ask Namaste JavaScript
                 </h1>
-                <Badge variant="secondary" className="hidden sm:inline-flex">
-                  17 episodes indexed
+                <Badge variant="secondary" className="hidden sm:inline-flex text-[0.65rem] font-bold px-2 py-0">
+                  <Star className="mr-1 size-3 text-amber-500 fill-current" />
+                  17 Videos Indexed
                 </Badge>
               </div>
-              <p className="text-xs text-muted-foreground">
-                Seasons 1 &amp; 2 — answers cite the exact second in the video.
+              <p className="text-xs text-muted-foreground font-medium">
+                Ask questions or run interview prep quizzes citing exact timestamps.
               </p>
             </div>
           </div>
-          <Button variant="outline" size="sm" asChild className="shrink-0">
+          <Button variant="outline" size="sm" asChild className="shrink-0 rounded-xl font-bold border-muted hover:border-primary/25 cursor-pointer shadow-sm">
             <a
               href="https://www.youtube.com/@akshaymarch7"
               target="_blank"
               rel="noreferrer"
             >
-              <SquarePlay />
+              <SquarePlay className="size-4" />
               <span className="hidden sm:inline">by Akshay Saini</span>
             </a>
           </Button>
         </div>
 
-        {/* Navigation Tabs */}
-        <div className="border-t bg-muted/20">
-          <div className="mx-auto flex max-w-3xl items-center gap-1 px-4">
+        {/* Header Navigation Tabs */}
+        <div className="border-t border-muted/30">
+          <div className="mx-auto flex max-w-4xl items-center gap-2">
             <button
               onClick={() => {
                 setMode('chat');
@@ -119,7 +121,7 @@ export default function HomePage() {
                 setQuizResult(null);
               }}
               className={cn(
-                'inline-flex items-center gap-2 border-b-2 px-4 py-2.5 text-xs sm:text-sm font-semibold transition-all cursor-pointer',
+                'inline-flex items-center gap-2 border-b-2 py-3 px-5 text-sm font-bold transition-all cursor-pointer relative',
                 mode === 'chat' && !activeAttempt && !quizResult
                   ? 'border-primary text-primary'
                   : 'border-transparent text-muted-foreground hover:text-foreground',
@@ -127,6 +129,9 @@ export default function HomePage() {
             >
               <MessageSquare className="size-4" />
               Chat Assistant
+              {mode === 'chat' && !activeAttempt && !quizResult && (
+                <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-primary animate-pulse" />
+              )}
             </button>
             <button
               onClick={() => {
@@ -135,7 +140,7 @@ export default function HomePage() {
                 setQuizResult(null);
               }}
               className={cn(
-                'inline-flex items-center gap-2 border-b-2 px-4 py-2.5 text-xs sm:text-sm font-semibold transition-all cursor-pointer',
+                'inline-flex items-center gap-2 border-b-2 py-3 px-5 text-sm font-bold transition-all cursor-pointer relative',
                 mode === 'interview' || activeAttempt || quizResult
                   ? 'border-primary text-primary'
                   : 'border-transparent text-muted-foreground hover:text-foreground',
@@ -143,20 +148,26 @@ export default function HomePage() {
             >
               <Award className="size-4" />
               Interview Prep
+              {(mode === 'interview' || activeAttempt || quizResult) && (
+                <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-primary animate-pulse" />
+              )}
             </button>
           </div>
         </div>
       </header>
 
-      {/* Main Container */}
-      <main className="min-h-0 flex-1 flex flex-col bg-background/50">
+      {/* Main Content Area */}
+      <main className="min-h-0 flex-1 flex flex-col bg-muted/10 overflow-hidden">
         {mode === 'chat' && <Chat />}
         {mode === 'interview' && (
           <div className="flex-1 overflow-y-auto">
             {loadingQuiz && (
-              <div className="flex h-[50vh] flex-col items-center justify-center gap-4 text-muted-foreground">
-                <Loader2 className="size-8 animate-spin text-primary" />
-                <p className="text-sm font-medium">Generating your customized JavaScript quiz...</p>
+              <div className="flex h-[60vh] flex-col items-center justify-center gap-4 text-center px-6 animate-in fade-in duration-300">
+                <Loader2 className="size-10 animate-spin text-primary" />
+                <h3 className="text-lg font-bold text-foreground mt-2">Customizing Practice Questions</h3>
+                <p className="text-sm text-muted-foreground max-w-xs leading-relaxed">
+                  Synthesizing JavaScript concepts into practice multiple choice questions...
+                </p>
               </div>
             )}
 
@@ -181,19 +192,19 @@ export default function HomePage() {
         )}
       </main>
 
-      <footer className="border-t bg-card/30">
-        <p className="mx-auto max-w-3xl px-4 py-2 text-center text-[0.7rem] text-muted-foreground">
-          A retrieval demo over the{' '}
+      {/* Footer */}
+      <footer className="border-t border-muted/50 bg-card/45 px-6 py-4">
+        <p className="mx-auto max-w-4xl text-center text-xs text-muted-foreground font-medium leading-relaxed">
+          Retrieval engine over the{' '}
           <a
-            className="underline underline-offset-2 transition-colors hover:text-foreground"
+            className="underline underline-offset-2 transition-colors hover:text-primary font-bold"
             href="https://www.youtube.com/playlist?list=PLlasXeu85E9cQ32gLCvAvr9vNaUccPVNP"
             target="_blank"
             rel="noreferrer"
           >
             Namaste JavaScript
           </a>{' '}
-          series by Akshay Saini. All content belongs to its creator; every
-          answer links back to the source video.
+          series by Akshay Saini. Citations link directly back to source segments.
         </p>
       </footer>
     </div>
