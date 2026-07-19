@@ -14,7 +14,7 @@ export function AssistantMarkdown({
   sources: readonly ChatSource[];
 }) {
   return (
-    <div className="prose-chat">
+    <div data-testid="assistant-answer" className="prose-chat">
       <ReactMarkdown
         components={{
           a: ({ href, children, ...props }) => {

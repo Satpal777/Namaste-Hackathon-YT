@@ -17,6 +17,7 @@ export function SourcesPanel({ sources }: { sources: readonly ChatSource[] }) {
           href={source.url}
           target="_blank"
           rel="noreferrer"
+          data-testid="source-card"
           className="group flex min-w-52 max-w-64 shrink-0 flex-col gap-1 rounded-lg border border-border bg-card p-3 text-left transition-colors hover:border-primary"
         >
           <span className="flex items-center gap-1.5 text-xs font-medium text-primary">

@@ -9,6 +9,7 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "test:watch": "vitest",
+    "test:e2e": "playwright test",
     "transcript:spike": "tsx scripts/fetch-one-transcript.ts",
     "seed:corpus": "tsx scripts/seed-corpus.ts",
     "seed": "tsx --env-file-if-exists=.env scripts/seed.ts",
@@ -36,6 +37,7 @@
     "youtubei.js": "^17.2.0"
   },
   "devDependencies": {
+    "@playwright/test": "^1.61.1",
     "@tailwindcss/postcss": "^4.3.3",
     "@types/node": "^26.1.1",
     "@types/react": "^19.2.17",

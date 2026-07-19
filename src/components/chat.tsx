@@ -3,12 +3,15 @@
 import { useChat } from '@ai-sdk/react';
 import { DefaultChatTransport } from 'ai';
 import { ArrowUp, Loader2 } from 'lucide-react';
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import type { ChatSource, NamasteUIMessage } from '~/chat/contract';
 import { SUGGESTED_QUESTIONS } from '~/chat/suggested-questions';
 import { cn } from '~/lib/utils';
 import { AssistantMarkdown } from './assistant-markdown';
 import { SourcesPanel } from './sources-panel';
+
+/** Within this of the bottom counts as "following along", so we keep scrolling. */
+const NEAR_BOTTOM_PX = 160;
 
 export function Chat() {
   const [input, setInput] = useState('');
@@ -18,6 +21,16 @@ export function Chat() {
   const scrollRef = useRef<HTMLDivElement>(null);
 
   const busy = status === 'submitted' || status === 'streaming';
+
+  // Follow the stream, but never yank the page back down on someone who has
+  // scrolled up to re-read.
+  useEffect(() => {
+    const el = scrollRef.current;
+    if (!el) return;
+    const nearBottom =
+      el.scrollHeight - el.scrollTop - el.clientHeight < NEAR_BOTTOM_PX;
+    if (nearBottom) el.scrollTo({ top: el.scrollHeight });
+  }, [messages]);
 
   const ask = (text: string) => {
     const question = text.trim();
@@ -30,9 +43,12 @@ export function Chat() {
   };
 
   return (
-    <div className="flex min-h-0 flex-1 flex-col">
+    <div data-status={status} className="flex min-h-0 flex-1 flex-col">
       <div ref={scrollRef} className="min-h-0 flex-1 overflow-y-auto">
-        <div className="mx-auto flex max-w-3xl flex-col gap-4 px-4 py-6">
+        <div
+          aria-live="polite"
+          className="mx-auto flex max-w-3xl flex-col gap-4 px-4 py-6"
+        >
           {messages.length === 0 && <EmptyState onPick={ask} />}
           {messages.map((message) => (
             <Message key={message.id} message={message} />
@@ -66,7 +82,7 @@ export function Chat() {
             onChange={(e) => setInput(e.target.value)}
             placeholder="Ask about hoisting, promises, the this keyword…"
             aria-label="Ask a question about the series"
-            className="min-w-0 flex-1 rounded-xl border border-border bg-card px-4 py-3 text-sm outline-none placeholder:text-muted-foreground focus:border-primary"
+            className="min-w-0 flex-1 rounded-xl border border-border bg-card px-4 py-3 text-base outline-none placeholder:text-muted-foreground focus:border-primary sm:text-sm"
           />
           <button
             type="submit"
