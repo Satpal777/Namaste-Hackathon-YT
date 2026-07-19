@@ -4,21 +4,26 @@ import { Play, SquarePlay, MessageSquare, Award, Loader2 } from 'lucide-react';
 import { useState } from 'react';
 import { Chat } from '~/components/chat';
 import { MasteryDashboard } from '~/components/mastery-dashboard';
+import { QuizRunner } from '~/components/quiz-runner';
+import { QuizResults } from '~/components/quiz-results';
 import { Badge } from '~/components/ui/badge';
 import { Button } from '~/components/ui/button';
 import { cn } from '~/lib/utils';
-import type { Difficulty, QuizQuestionPublic } from '~/interview/contract';
+import type { Difficulty, QuizQuestionPublic, QuizResultResponse } from '~/interview/contract';
 
 export default function HomePage() {
   const [mode, setMode] = useState<'chat' | 'interview'>('chat');
   const [loadingQuiz, setLoadingQuiz] = useState(false);
+  const [submittingQuiz, setSubmittingQuiz] = useState(false);
   const [activeAttempt, setActiveAttempt] = useState<{
     attemptId: string;
     questions: readonly QuizQuestionPublic[];
   } | null>(null);
+  const [quizResult, setQuizResult] = useState<QuizResultResponse | null>(null);
 
   const handleStartQuiz = async (difficulty: Difficulty) => {
     setLoadingQuiz(true);
+    setQuizResult(null);
     try {
       const res = await fetch('/api/interview/start', {
         method: 'POST',
@@ -38,6 +43,36 @@ export default function HomePage() {
     } finally {
       setLoadingQuiz(false);
     }
+  };
+
+  const handleSubmitQuiz = async (answers: readonly { questionId: string; chosenIndex: number }[]) => {
+    if (!activeAttempt) return;
+    setSubmittingQuiz(true);
+    try {
+      const res = await fetch('/api/interview/submit', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify({
+          attemptId: activeAttempt.attemptId,
+          answers,
+        }),
+      });
+      if (!res.ok) {
+        throw new Error('Failed to submit quiz');
+      }
+      const data = (await res.json()) as QuizResultResponse;
+      setQuizResult(data);
+      setActiveAttempt(null);
+    } catch (err) {
+      alert(err instanceof Error ? err.message : 'Something went wrong submitting the quiz');
+    } finally {
+      setSubmittingQuiz(false);
+    }
+  };
+
+  const handleCancelQuiz = () => {
+    setActiveAttempt(null);
+    setQuizResult(null);
   };
 
   return (
@@ -81,10 +116,11 @@ export default function HomePage() {
               onClick={() => {
                 setMode('chat');
                 setActiveAttempt(null);
+                setQuizResult(null);
               }}
               className={cn(
                 'inline-flex items-center gap-2 border-b-2 px-4 py-2.5 text-xs sm:text-sm font-semibold transition-all cursor-pointer',
-                mode === 'chat' && !activeAttempt
+                mode === 'chat' && !activeAttempt && !quizResult
                   ? 'border-primary text-primary'
                   : 'border-transparent text-muted-foreground hover:text-foreground',
               )}
@@ -96,10 +132,11 @@ export default function HomePage() {
               onClick={() => {
                 setMode('interview');
                 setActiveAttempt(null);
+                setQuizResult(null);
               }}
               className={cn(
                 'inline-flex items-center gap-2 border-b-2 px-4 py-2.5 text-xs sm:text-sm font-semibold transition-all cursor-pointer',
-                mode === 'interview' || activeAttempt
+                mode === 'interview' || activeAttempt || quizResult
                   ? 'border-primary text-primary'
                   : 'border-transparent text-muted-foreground hover:text-foreground',
               )}
@@ -123,35 +160,22 @@ export default function HomePage() {
               </div>
             )}
 
-            {!loadingQuiz && !activeAttempt && (
-              <MasteryDashboard onStartQuiz={handleStartQuiz} />
+            {!loadingQuiz && quizResult && (
+              <QuizResults result={quizResult} onRestart={handleCancelQuiz} />
             )}
 
-            {!loadingQuiz && activeAttempt && (
-              <div className="mx-auto max-w-xl px-4 py-12 flex flex-col items-center justify-center gap-4 text-center">
-                <div className="rounded-full bg-primary/10 p-3 text-primary">
-                  <Play className="size-6 fill-current" />
-                </div>
-                <h2 className="text-lg font-bold">Quiz Generated!</h2>
-                <p className="text-sm text-muted-foreground">
-                  Quiz attempt <span className="font-mono text-xs">{activeAttempt.attemptId.slice(0, 8)}</span> has been started with {activeAttempt.questions.length} questions.
-                </p>
-                <div className="text-left w-full border rounded-2xl bg-card p-4 mt-2">
-                  <span className="text-xs font-semibold text-muted-foreground block mb-2 uppercase tracking-wide">
-                    Sample Generated Stems:
-                  </span>
-                  <ul className="list-disc pl-5 text-sm space-y-1.5">
-                    {activeAttempt.questions.map((q) => (
-                      <li key={q.id} className="text-foreground/80 line-clamp-1">
-                        {q.stem}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                <Button variant="outline" className="mt-4" onClick={() => setActiveAttempt(null)}>
-                  Back to Dashboard
-                </Button>
-              </div>
+            {!loadingQuiz && !quizResult && activeAttempt && (
+              <QuizRunner
+                attemptId={activeAttempt.attemptId}
+                questions={activeAttempt.questions}
+                onSubmit={handleSubmitQuiz}
+                onCancel={handleCancelQuiz}
+                submitting={submittingQuiz}
+              />
+            )}
+
+            {!loadingQuiz && !quizResult && !activeAttempt && (
+              <MasteryDashboard onStartQuiz={handleStartQuiz} />
             )}
           </div>
         )}
