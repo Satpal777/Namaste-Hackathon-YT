@@ -28,6 +28,18 @@ Consequences, by design:
   worth retrying `tlang=en` from a different network some day, or if English
   captions get added upstream.
 
+## Abstention threshold: gemini 0.694 (2026-07-19)
+
+Tuned by hand with `pnpm tune:threshold` (11 questions: 6 on-corpus
+conceptual, 5 that must abstain — code retrieval, the dropped closures and
+event-loop episodes, and out-of-domain) against `gemini-embedding-2`. The
+sets separated at 0.697 (lowest on-corpus top-1) vs 0.690 (highest
+off-corpus: the event-loop question, which retrieves adjacent scope-chain
+material). 0.694 is the midpoint. The gap is thin — 0.007 — so the threshold
+must be re-measured after any corpus or embedding-model change; a real eval
+set is Stage 2. The OpenAI collection was not yet seeded at tuning time; run
+the same script once it is.
+
 ## Track preference
 
 Manual English captions ("en-IN", punctuated sentences) are preferred over

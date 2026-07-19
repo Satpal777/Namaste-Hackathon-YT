@@ -31,9 +31,12 @@ const CHAT_DEFAULTS = {
   gemini: {
     baseURL: 'https://generativelanguage.googleapis.com/v1beta/openai/',
     model: 'gemini-2.5-flash',
-    // gemini-embedding-001 cosine scores run high; irrelevant text still lands
-    // near ~0.5.
-    abstentionThreshold: 0.55,
+    // Measured 2026-07-19 against gemini-embedding-2 via `pnpm tune:threshold`:
+    // lowest on-corpus top-1 was 0.697, highest off-corpus 0.690 (the event
+    // loop — a dropped Hindi-only episode that must abstain, not answer from
+    // adjacent material). Midpoint of that gap; it is thin, so re-tune after
+    // any corpus or embedding-model change.
+    abstentionThreshold: 0.694,
   },
   openai: {
     baseURL: 'https://api.openai.com/v1',
