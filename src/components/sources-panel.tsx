@@ -47,7 +47,7 @@ function SourceCard({ source, index }: { source: ChatSource; index: number }) {
     >
       <Card
         size="sm"
-        className="h-full gap-0 rounded-3xl py-0 transition-all duration-300 group-hover:-translate-y-0.5 group-hover:shadow-lg group-hover:ring-primary/40 group-focus-visible:ring-2 group-focus-visible:ring-ring"
+        className="h-full gap-0 rounded-2xl py-0 shadow-sm transition-all duration-300 group-hover:-translate-y-0.5 group-hover:shadow-md group-hover:ring-primary/40 group-focus-visible:ring-2 group-focus-visible:ring-ring *:[img:first-child]:rounded-t-2xl"
       >
         <div className="relative aspect-video overflow-hidden bg-muted">
           <img

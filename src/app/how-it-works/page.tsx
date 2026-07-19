@@ -1,158 +1,117 @@
-'use client';
-
-import { Play, ArrowLeft, ArrowRight, Database, Search, Cpu, ListChecks, MessageSquare, Clock } from 'lucide-react';
+import {
+  ArrowRight,
+  Clock,
+  Cpu,
+  Database,
+  ListChecks,
+  MessageSquare,
+  Search,
+} from 'lucide-react';
 import Link from 'next/link';
 import { Button } from '~/components/ui/button';
-import { Badge } from '~/components/ui/badge';
+import { SiteFooter } from '~/components/site-footer';
+import { SiteHeader } from '~/components/site-header';
+
+const STEPS = [
+  {
+    icon: Database,
+    title: 'Transcription & indexing',
+    body: 'Every episode of the series is transcribed and split into small, overlapping segments — each one pinned to its start and end second in the video.',
+  },
+  {
+    icon: Cpu,
+    title: 'Vector embeddings',
+    body: 'Each segment is embedded into a dense vector that captures the meaning of what was said, not just the words.',
+  },
+  {
+    icon: Search,
+    title: 'Semantic retrieval',
+    body: 'Your question is embedded the same way, and a similarity search pulls the handful of segments most likely to contain the answer.',
+  },
+  {
+    icon: MessageSquare,
+    title: 'Grounded synthesis',
+    body: 'A language model writes the answer from those segments alone — and abstains when the series never covered the topic.',
+  },
+  {
+    icon: Clock,
+    title: 'Second-level citations',
+    body: 'Every claim carries a citation that deep-links to the exact second on YouTube, so you can hear the source say it.',
+  },
+  {
+    icon: ListChecks,
+    title: 'Quiz generation',
+    body: 'The same transcripts seed interview-prep quizzes, graded per topic with clips to rewatch for whatever you miss.',
+  },
+] as const;
 
 export default function HowItWorks() {
-  const steps = [
-    {
-      icon: <Database className="size-6 text-primary" />,
-      title: "1. Video Indexing & Transcription",
-      description: "We retrieve the Namaste JavaScript video series playlist, parsing timestamps and transcript logs to divide them into granular, searchable pieces."
-    },
-    {
-      icon: <Cpu className="size-6 text-primary" />,
-      title: "2. Vector Embedding Generation",
-      description: "Each transcript segment is converted into a high-dimensional dense vector representing the semantic meaning of the words spoken in the video."
-    },
-    {
-      icon: <Search className="size-6 text-primary" />,
-      title: "3. Semantic Context Retrieval",
-      description: "When you ask a question, the system vectorizes your query and performs a similarity search to fetch the most relevant video segments."
-    },
-    {
-      icon: <MessageSquare className="size-6 text-primary" />,
-      title: "4. LLM Synthesis & Verification",
-      description: "The AI model processes the user query along with retrieved transcripts to generate a precise answer, citing the source material exclusively."
-    },
-    {
-      icon: <Clock className="size-6 text-primary" />,
-      title: "5. Exact Timestamp Mapping",
-      description: "Citations are transformed into dynamic links targeting the exact video second. Click on any reference to watch Akshay Saini explain it."
-    },
-    {
-      icon: <ListChecks className="size-6 text-primary" />,
-      title: "6. Assessment & Quiz Prep",
-      description: "Using the same transcripts, the engine drafts custom practice interview quiz questions tailored to your target difficulty level."
-    }
-  ];
-
   return (
-    <div className="min-h-screen bg-background text-foreground flex flex-col selection:bg-primary/20 antialiased overflow-x-hidden relative">
-      
-      {/* Decorative Background Glow */}
-      <div className="absolute top-[-10%] right-[-10%] w-[50%] h-[50%] rounded-full bg-secondary/10 blur-[120px] pointer-events-none" />
-      <div className="absolute bottom-[10%] left-[-10%] w-[40%] h-[50%] rounded-full bg-primary/10 blur-[120px] pointer-events-none" />
+    <div className="flex min-h-dvh flex-col bg-background text-foreground antialiased selection:bg-primary/20">
+      <SiteHeader />
 
-      {/* Header */}
-      <header className="sticky top-0 z-50 border-b border-muted/50 bg-background/80 backdrop-blur-md px-6 shadow-sm">
-        <div className="mx-auto flex max-w-5xl items-center justify-between py-4">
-          <div className="flex items-center gap-3">
-            <span className="flex size-9 shrink-0 items-center justify-center rounded-xl bg-gradient-to-tr from-primary to-secondary text-primary-foreground shadow-md shadow-primary/10">
-              <Play className="ml-0.5 size-4 fill-current" />
-            </span>
-            <div className="flex items-center gap-2">
-              <h1 className="text-md font-extrabold tracking-tight text-foreground">
-                Ask Namaste JavaScript
-              </h1>
-            </div>
-          </div>
-
-          <nav className="flex items-center gap-4">
-            <Link 
-              href="/"
-              className="text-sm font-semibold text-muted-foreground hover:text-foreground px-3 py-2 rounded-lg transition-colors flex items-center gap-1.5"
-            >
-              <ArrowLeft className="size-4" />
-              <span>Back Home</span>
-            </Link>
-            <Button size="sm" asChild className="rounded-xl font-bold cursor-pointer shadow-sm">
-              <Link href="/dashboard">
-                Launch Dashboard
-              </Link>
-            </Button>
-          </nav>
-        </div>
-      </header>
-
-      {/* Main Content */}
-      <main className="flex-1 max-w-4xl mx-auto w-full px-6 py-12 md:py-20">
-        
-        {/* Title */}
-        <div className="text-center max-w-2xl mx-auto mb-16">
-          <Badge className="bg-primary/10 text-primary hover:bg-primary/20 border-primary/20 mb-4 px-3 py-1 text-xs font-semibold">
-            Technical Architecture
-          </Badge>
-          <h2 className="text-3xl sm:text-4xl font-black tracking-tight text-foreground mb-4">
-            How the Citation Engine Works
-          </h2>
-          <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-            By connecting state-of-the-art Vector DB indexers with large language models, we bridge the gap between video tutorials and text retrieval.
+      <main className="flex-1 px-6 py-20 sm:py-28">
+        <div className="mx-auto max-w-2xl">
+          <p className="text-xs font-medium tracking-[0.2em] text-muted-foreground uppercase">
+            Under the hood
           </p>
-        </div>
+          <h1 className="mt-4 text-3xl font-semibold tracking-tight text-balance sm:text-4xl">
+            From nine hours of video to{' '}
+            <span className="font-display text-primary italic">one cited answer</span>
+          </h1>
+          <p className="mt-5 max-w-xl text-base leading-relaxed text-muted-foreground">
+            A retrieval pipeline sits between your question and the series.
+            Six steps, no magic — every answer is traceable back to the second
+            it was spoken.
+          </p>
 
-        {/* Steps Grid/Timeline */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
-          {steps.map((step, idx) => (
-            <div 
-              key={idx}
-              className="flex flex-col p-6 rounded-2xl border border-muted bg-card hover:border-primary/25 hover:shadow-sm transition-all"
-            >
-              <div className="size-11 rounded-xl bg-primary/10 flex items-center justify-center mb-5">
-                {step.icon}
-              </div>
-              <h3 className="text-md font-bold text-foreground mb-2">
-                {step.title}
-              </h3>
-              <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
-                {step.description}
+          {/* Pipeline */}
+          <ol className="mt-16 flex flex-col">
+            {STEPS.map((step, i) => (
+              <li key={step.title} className="group relative flex gap-6 sm:gap-8">
+                {/* Number column with hairline connector */}
+                <div className="flex flex-col items-center">
+                  <span className="flex size-10 shrink-0 items-center justify-center rounded-xl border border-border/60 bg-card font-mono text-xs text-muted-foreground tabular-nums">
+                    {String(i + 1).padStart(2, '0')}
+                  </span>
+                  {i < STEPS.length - 1 && (
+                    <span aria-hidden className="w-px flex-1 bg-border/60" />
+                  )}
+                </div>
+                <div className="flex flex-col pb-12 group-last:pb-0">
+                  <div className="flex items-center gap-2.5 pt-2">
+                    <step.icon className="size-4 text-primary" />
+                    <h2 className="font-medium">{step.title}</h2>
+                  </div>
+                  <p className="mt-2 max-w-lg text-sm leading-relaxed text-muted-foreground">
+                    {step.body}
+                  </p>
+                </div>
+              </li>
+            ))}
+          </ol>
+
+          {/* CTA */}
+          <div className="mt-20 flex flex-col items-start gap-6 border-t border-border/60 pt-12 sm:flex-row sm:items-center sm:justify-between">
+            <div>
+              <h2 className="text-xl font-semibold tracking-tight">
+                See it answer for yourself
+              </h2>
+              <p className="mt-1.5 text-sm text-muted-foreground">
+                Ask a question and click the first citation it returns.
               </p>
             </div>
-          ))}
-        </div>
-
-        {/* Call-to-action Banner */}
-        <div className="border border-muted rounded-3xl p-8 sm:p-10 bg-gradient-to-tr from-muted/20 to-card text-center relative overflow-hidden">
-          <div className="absolute top-0 left-0 w-full h-full bg-primary/[0.02] pointer-events-none" />
-          <h3 className="text-xl sm:text-2xl font-black tracking-tight text-foreground mb-3">
-            Start Learning Efficiently Today
-          </h3>
-          <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed max-w-lg mx-auto mb-8">
-            Experience semantic searches and tailored JavaScript interview prep assessments now.
-          </p>
-          <div className="flex flex-col sm:flex-row items-center gap-4 justify-center">
-            <Button size="lg" asChild className="w-full sm:w-auto rounded-2xl font-bold cursor-pointer">
+            <Button size="lg" asChild className="shrink-0">
               <Link href="/dashboard">
-                Open App Dashboard
-                <ArrowRight className="size-4.5 ml-1.5" />
-              </Link>
-            </Button>
-            <Button size="lg" variant="outline" asChild className="w-full sm:w-auto rounded-2xl font-bold cursor-pointer border-muted hover:border-primary/20 bg-background/50">
-              <Link href="/">
-                Go Back Home
+                Open the app
+                <ArrowRight data-icon="inline-end" />
               </Link>
             </Button>
           </div>
         </div>
-
       </main>
 
-      {/* Footer */}
-      <footer className="border-t border-muted/50 bg-card/45 px-6 py-8 mt-auto text-center text-[0.7rem] text-muted-foreground leading-relaxed">
-        <div className="mx-auto max-w-4xl flex flex-col gap-2 items-center justify-center">
-          <p className="font-bold text-foreground">
-            Ask Namaste JavaScript &bull; AI Citation Engine
-          </p>
-          <p className="max-w-2xl text-muted-foreground/80">
-            Disclaimer: This is an unofficial, non-commercial hackathon project created solely for educational demonstration purposes. All course materials, video streams, transcripts, and branding are the exclusive property of Akshay Saini. 
-          </p>
-          <p className="text-muted-foreground/60 text-[0.65rem]">
-            Privacy: We value your privacy. No personal user data or search query logs are stored or collected by this application.
-          </p>
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }

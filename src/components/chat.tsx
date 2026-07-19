@@ -2,7 +2,7 @@
 
 import { useChat } from '@ai-sdk/react';
 import { DefaultChatTransport } from 'ai';
-import { ArrowUp, Clapperboard, Info, Square, Sparkles, Send } from 'lucide-react';
+import { ArrowUp, Clapperboard, Info, Square } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
 import type { ChatSource, NamasteUIMessage } from '~/chat/contract';
 import { SUGGESTED_QUESTIONS } from '~/chat/suggested-questions';
@@ -53,12 +53,11 @@ export function Chat() {
   };
 
   return (
-    <div data-status={status} className="flex min-h-0 flex-1 flex-col bg-background/30">
-      {/* Scrollable messages container with spacing */}
+    <div data-status={status} className="flex min-h-0 flex-1 flex-col">
       <div ref={scrollRef} className="min-h-0 flex-1 overflow-y-auto">
         <div
           aria-live="polite"
-          className="mx-auto flex max-w-3xl flex-col gap-6 px-6 py-8"
+          className="mx-auto flex max-w-3xl flex-col gap-8 px-6 py-10"
         >
           {messages.length === 0 && <EmptyState onPick={ask} />}
           {messages.map((message, i) => (
@@ -70,9 +69,9 @@ export function Chat() {
           ))}
           {status === 'submitted' && <RetrievalPending />}
           {error && (
-            <Alert variant="destructive" className="animate-in fade-in duration-300 rounded-2xl shadow-md border-destructive/20">
-              <Info className="size-5" />
-              <AlertDescription className="text-sm font-medium">
+            <Alert variant="destructive" className="animate-in fade-in duration-300">
+              <Info />
+              <AlertDescription>
                 {error.message.includes('429') ||
                 error.message.toLowerCase().includes('too many')
                   ? 'Too many questions too quickly — give it a moment and try again.'
@@ -83,48 +82,48 @@ export function Chat() {
         </div>
       </div>
 
-      {/* Floating Chat Input bar redone with breathable glassmorphism styling */}
-      <div className="border-t border-muted/50 bg-background/85 backdrop-blur-md px-6 py-5 shadow-inner">
+      {/* Composer */}
+      <div className="border-t border-border/60 bg-background/80 px-6 pt-4 pb-5 backdrop-blur-md">
         <form
-          className="mx-auto flex max-w-3xl items-center gap-3"
+          className="mx-auto flex max-w-3xl items-center gap-2.5"
           onSubmit={(e) => {
             e.preventDefault();
             ask(input);
           }}
         >
-          <div className="relative flex-1 flex items-center">
-            <Input
-              value={input}
-              onChange={(e) => setInput(e.target.value)}
-              placeholder="Ask about hoisting, promises, closures, scope, this behavior..."
-              aria-label="Ask a question about the series"
-              className="h-12 w-full pl-5 pr-12 rounded-2xl border-muted bg-card shadow-sm hover:border-primary/20 focus-visible:ring-primary/20 text-sm leading-relaxed"
-            />
-            <Sparkles className="absolute right-4 size-4 text-muted-foreground/50 pointer-events-none" />
-          </div>
+          <Input
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+            placeholder="Ask about hoisting, closures, the event loop…"
+            aria-label="Ask a question about the series"
+            className="h-11 flex-1 rounded-full border-border/60 bg-card px-5"
+          />
           {busy ? (
             <Button
               type="button"
               variant="secondary"
-              size="icon"
+              size="icon-lg"
               aria-label="Stop generating"
               onClick={() => void stop()}
-              className="size-12 rounded-2xl shrink-0 cursor-pointer hover:bg-muted/90 shadow-sm"
+              className="cursor-pointer rounded-full"
             >
-              <Square className="size-4 fill-current text-foreground/80" />
+              <Square className="size-3.5 fill-current" />
             </Button>
           ) : (
             <Button
               type="submit"
-              size="icon"
+              size="icon-lg"
               disabled={input.trim().length === 0}
               aria-label="Send"
-              className="size-12 rounded-2xl shrink-0 cursor-pointer shadow-md shadow-primary/10 transition-transform active:scale-95"
+              className="cursor-pointer rounded-full"
             >
-              <Send className="size-4" />
+              <ArrowUp />
             </Button>
           )}
         </form>
+        <p className="mt-3 text-center text-xs text-muted-foreground/80">
+          Every answer is grounded in the series and cites the exact second.
+        </p>
       </div>
     </div>
   );
@@ -143,7 +142,7 @@ function Message({
 }) {
   if (message.role === 'user') {
     return (
-      <div className="ml-auto max-w-[80%] animate-in fade-in slide-in-from-bottom-3 rounded-3xl rounded-br-lg bg-primary px-5 py-3.5 text-sm text-primary-foreground shadow-md leading-relaxed">
+      <div className="ml-auto max-w-[80%] rounded-2xl rounded-br-md bg-primary px-4 py-2.5 text-sm leading-relaxed text-primary-foreground animate-in fade-in slide-in-from-bottom-2">
         {messageText(message)}
       </div>
     );
@@ -169,13 +168,13 @@ function AssistantMessage({
 
   if (sourcesPart && sources.length === 0) {
     return (
-      <Alert className="animate-in fade-in slide-in-from-bottom-2 duration-300 rounded-3xl border-primary/10 bg-card/30 backdrop-blur-sm p-5 shadow-sm">
-        <Info className="size-5 text-primary" />
-        <AlertDescription className="text-sm leading-relaxed text-foreground">
+      <Alert className="animate-in fade-in slide-in-from-bottom-2 duration-300">
+        <Info className="text-primary" />
+        <AlertDescription className="text-foreground">
           <AssistantMarkdown
             text={text}
             sources={sources}
-            className={cn('text-foreground', streaming && 'streaming-caret')}
+            className={cn(streaming && 'streaming-caret')}
           />
         </AlertDescription>
       </Alert>
@@ -183,18 +182,18 @@ function AssistantMessage({
   }
 
   return (
-    <div className="max-w-full animate-in fade-in duration-300 text-sm leading-relaxed flex flex-col gap-4">
+    <div className="flex max-w-full flex-col gap-4 text-sm leading-relaxed animate-in fade-in duration-300">
       <SourcesPanel sources={sources} />
       {text ? (
-        <div className="bg-card/25 rounded-3xl p-5 border border-primary/5 shadow-sm">
-          <AssistantMarkdown
-            text={text}
-            sources={sources}
-            className={cn(streaming && 'streaming-caret', 'leading-relaxed text-foreground/90')}
-          />
-        </div>
+        <AssistantMarkdown
+          text={text}
+          sources={sources}
+          className={cn('text-foreground/90', streaming && 'streaming-caret')}
+        />
       ) : (
-        <StreamStage label={`Matched ${sources.length} video citations — generating answer...`} />
+        <StreamStage
+          label={`Matched ${sources.length} moments — writing the answer…`}
+        />
       )}
     </div>
   );
@@ -202,16 +201,16 @@ function AssistantMessage({
 
 function RetrievalPending() {
   return (
-    <div className="flex animate-in fade-in flex-col gap-4 duration-300">
-      <StreamStage label="Searching transcripts for relevant clips..." />
-      <div className="flex gap-4 overflow-hidden py-1">
+    <div className="flex flex-col gap-4 animate-in fade-in duration-300">
+      <StreamStage label="Searching the transcripts…" />
+      <div className="flex gap-3 overflow-hidden py-1">
         {[0, 1, 2].map((i) => (
           <div
             key={i}
-            className="w-60 shrink-0 animate-in fade-in slide-in-from-bottom-3 fill-mode-backwards duration-500"
+            className="w-56 shrink-0 animate-in fade-in slide-in-from-bottom-2 fill-mode-backwards duration-500"
             style={{ animationDelay: `${i * 120}ms` }}
           >
-            <Skeleton className="aspect-video w-full rounded-2xl border border-muted/30" />
+            <Skeleton className="aspect-video w-full rounded-xl" />
             <Skeleton className="mt-3 h-3 w-4/5 rounded-full" />
             <Skeleton className="mt-2 h-3 w-3/5 rounded-full" />
           </div>
@@ -223,36 +222,39 @@ function RetrievalPending() {
 
 function StreamStage({ label }: { label: string }) {
   return (
-    <div className="flex items-center gap-2.5 py-1 text-sm font-semibold text-primary/80">
+    <div className="flex items-center gap-2.5 py-1 text-sm">
       <Spinner className="size-4 text-primary" />
-      <span className="text-shimmer font-semibold">{label}</span>
+      <span className="text-shimmer font-medium">{label}</span>
     </div>
   );
 }
 
 function EmptyState({ onPick }: { onPick: (q: string) => void }) {
   return (
-    <Empty className="border-none py-12">
-      <EmptyHeader className="animate-in fade-in slide-in-from-bottom-3 duration-500 flex flex-col items-center text-center max-w-xl gap-4">
-        <EmptyMedia variant="icon" className="size-16 rounded-2xl bg-primary/10 text-primary shadow-inner">
-          <Clapperboard className="size-7" />
+    <Empty className="border-none py-16">
+      <EmptyHeader className="animate-in fade-in slide-in-from-bottom-2 duration-500">
+        <EmptyMedia variant="icon" className="rounded-xl border border-border/60 bg-card text-primary">
+          <Clapperboard />
         </EmptyMedia>
-        <EmptyTitle className="text-2xl font-extrabold tracking-tight">Ask about JavaScript concepts</EmptyTitle>
-        <EmptyDescription className="text-sm leading-relaxed text-muted-foreground mt-1">
-          Every response links directly to the exact timestamp in the Namaste JavaScript series.
-          Click a citation card and hear Akshay Saini explain it!
+        <EmptyTitle className="text-xl tracking-tight">
+          Ask about a{' '}
+          <span className="font-display text-primary italic">JavaScript</span>{' '}
+          concept
+        </EmptyTitle>
+        <EmptyDescription>
+          Answers come straight from the Namaste JavaScript series — every
+          claim links to the second it was said.
         </EmptyDescription>
       </EmptyHeader>
-      <div className="flex max-w-2xl flex-wrap justify-center gap-2.5 mt-8 px-4">
+      <div className="mt-6 grid w-full max-w-xl grid-cols-1 gap-2.5 sm:grid-cols-2">
         {SUGGESTED_QUESTIONS.map((q, i) => (
           <Button
             key={q}
             type="button"
             variant="outline"
-            size="sm"
             onClick={() => onPick(q)}
-            className="animate-in fade-in slide-in-from-bottom-2 fill-mode-backwards h-auto whitespace-normal rounded-2xl px-4 py-2 font-semibold text-xs text-muted-foreground/80 hover:text-foreground transition-all duration-300 hover:shadow-md border-muted/50"
-            style={{ animationDelay: `${150 + i * 60}ms` }}
+            className="h-auto justify-start rounded-xl border-border/60 px-4 py-2.5 text-left text-[0.8125rem] font-normal whitespace-normal text-muted-foreground animate-in fade-in slide-in-from-bottom-2 fill-mode-backwards duration-300 hover:text-foreground"
+            style={{ animationDelay: `${150 + i * 50}ms` }}
           >
             {q}
           </Button>

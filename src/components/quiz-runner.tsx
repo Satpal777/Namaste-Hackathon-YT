@@ -1,11 +1,12 @@
 'use client';
 
-import { ArrowLeft, ArrowRight, Award, CheckCircle, HelpCircle, Loader2, Compass } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Check, Loader2 } from 'lucide-react';
 import { useState } from 'react';
 import type { QuizQuestionPublic } from '~/interview/contract';
+import { Badge } from '~/components/ui/badge';
 import { Button } from '~/components/ui/button';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '~/components/ui/card';
-import { Badge } from '~/components/ui/badge';
+import { Progress } from '~/components/ui/progress';
 import { cn } from '~/lib/utils';
 
 export interface QuizRunnerProps {
@@ -60,64 +61,47 @@ export function QuizRunner({
     await onSubmit(formattedAnswers);
   };
 
-  const progressPercentage = ((currentIdx + 1) / questions.length) * 100;
-
   return (
-    <div className="mx-auto flex w-full max-w-2xl flex-col gap-8 px-6 py-12 animate-in fade-in zoom-in-95 duration-300">
-      {/* Progress Header Area */}
+    <div className="mx-auto flex w-full max-w-2xl flex-col gap-8 px-6 py-12 animate-in fade-in duration-300">
+      {/* Progress */}
       <div className="flex flex-col gap-3">
-        <div className="flex items-center justify-between text-xs font-bold text-muted-foreground uppercase tracking-widest">
-          <span className="flex items-center gap-1.5">
-            <Compass className="size-4 text-primary animate-pulse" />
-            <span>Active Practice Quiz</span>
+        <div className="flex items-baseline justify-between">
+          <span className="text-xs font-medium tracking-[0.2em] text-muted-foreground uppercase">
+            Practice quiz
           </span>
-          <span>
+          <span className="text-sm text-muted-foreground tabular-nums">
             Question {currentIdx + 1} of {questions.length}
           </span>
         </div>
-        <div className="relative h-2.5 w-full overflow-hidden rounded-full bg-muted shadow-inner ring-1 ring-foreground/5">
-          <div
-            style={{ width: `${progressPercentage}%` }}
-            className="h-full rounded-full bg-gradient-to-r from-primary to-secondary transition-all duration-300 shadow-sm"
-          />
-        </div>
+        <Progress
+          value={((currentIdx + 1) / questions.length) * 100}
+          className="h-1"
+        />
       </div>
 
-      {/* Main Question Card with Breathable Space */}
-      <Card className="border-primary/10 shadow-xl bg-card/45 backdrop-blur-md rounded-3xl overflow-hidden">
-        <CardHeader className="pb-6 border-b border-primary/5 p-8 flex flex-col gap-4">
-          <div className="flex flex-wrap gap-2.5">
-            <Badge variant="secondary" className="font-extrabold uppercase tracking-widest text-[0.65rem] px-2.5 py-0.5">
-              {currentQuestion.topicLabel}
-            </Badge>
+      <Card>
+        <CardHeader className="border-b border-border/60">
+          <div className="flex flex-wrap items-center gap-2">
+            <Badge variant="secondary">{currentQuestion.topicLabel}</Badge>
             <Badge
-              variant="outline"
-              className={cn(
-                'font-bold text-[0.65rem] border-primary/10 px-2.5 py-0.5',
-                currentQuestion.difficulty === 'hard' && 'bg-destructive/5 text-destructive border-destructive/20',
-              )}
+              variant={currentQuestion.difficulty === 'hard' ? 'destructive' : 'outline'}
+              className="capitalize"
             >
-              {currentQuestion.difficulty === 'hard' ? 'Hard Mode' : 'Foundational'}
+              {currentQuestion.difficulty}
             </Badge>
-            <Badge
-              variant="outline"
-              className={cn(
-                'font-bold text-[0.65rem] border-primary/10 px-2.5 py-0.5',
-                currentQuestion.grounded
-                  ? 'bg-emerald-500/5 text-emerald-600 border-emerald-500/20'
-                  : 'bg-muted text-muted-foreground',
-              )}
-            >
-              {currentQuestion.grounded ? 'Grounded in Akshay\'s Transcripts' : 'General Theory'}
-            </Badge>
+            {currentQuestion.grounded && (
+              <Badge variant="outline" className="gap-1.5 text-muted-foreground">
+                <span className="size-1.5 rounded-full bg-success" />
+                Grounded in the transcripts
+              </Badge>
+            )}
           </div>
-          <CardTitle className="text-lg font-bold leading-relaxed mt-2 text-foreground/95">
+          <CardTitle className="mt-3 text-base leading-relaxed font-medium text-balance">
             {currentQuestion.stem}
           </CardTitle>
         </CardHeader>
 
-        {/* Options List with Breathable Space */}
-        <CardContent className="p-8 flex flex-col gap-3.5 bg-muted/5">
+        <CardContent className="flex flex-col gap-2.5">
           {currentQuestion.options.map((option, idx) => {
             const isSelected = selectedIndex === idx;
             return (
@@ -126,84 +110,81 @@ export function QuizRunner({
                 type="button"
                 onClick={() => handleSelectOption(idx)}
                 disabled={submitting}
+                aria-pressed={isSelected}
                 className={cn(
-                  'flex w-full items-start gap-4 rounded-2xl border bg-card/75 p-5 text-left text-sm transition-all duration-300 cursor-pointer shadow-sm relative group/btn',
+                  'flex w-full cursor-pointer items-start gap-3.5 rounded-xl border p-4 text-left text-sm transition-colors',
                   isSelected
-                    ? 'border-primary bg-primary/5 ring-1 ring-primary shadow-md shadow-primary/5 font-semibold text-primary-foreground/90'
-                    : 'border-muted/60 hover:border-primary/25 hover:bg-primary/5/5 hover:shadow-md',
-                  submitting && 'opacity-65 cursor-not-allowed',
+                    ? 'border-primary/50 bg-primary/5 ring-1 ring-primary/40'
+                    : 'border-border/60 hover:bg-muted/40',
+                  submitting && 'cursor-not-allowed opacity-60',
                 )}
               >
                 <span
                   className={cn(
-                    'flex size-6 shrink-0 items-center justify-center rounded-full border text-xs font-black transition-all duration-300',
+                    'flex size-6 shrink-0 items-center justify-center rounded-full border text-xs font-semibold transition-colors',
                     isSelected
                       ? 'border-primary bg-primary text-primary-foreground'
-                      : 'border-muted-foreground/30 text-muted-foreground group-hover/btn:border-primary group-hover/btn:text-primary',
+                      : 'border-border text-muted-foreground',
                   )}
                 >
                   {String.fromCharCode(65 + idx)}
                 </span>
-                <span className="leading-relaxed text-foreground/90 group-hover/btn:text-foreground transition-colors">
-                  {option}
-                </span>
+                <span className="leading-relaxed text-foreground/90">{option}</span>
               </button>
             );
           })}
         </CardContent>
 
-        {/* Card Actions Footer */}
-        <CardFooter className="flex items-center justify-between border-t border-primary/5 p-6 bg-card/10">
+        <CardFooter className="justify-between border-t border-border/60">
           <Button
-            variant="outline"
-            size="default"
+            variant="ghost"
             onClick={handleBack}
             disabled={currentIdx === 0 || submitting}
-            className="cursor-pointer rounded-xl font-bold"
+            className="cursor-pointer"
           >
-            <ArrowLeft className="mr-2 size-4" /> Back
+            <ArrowLeft data-icon="inline-start" />
+            Back
           </Button>
 
           {isLastQuestion ? (
             <Button
-              size="default"
               onClick={handleSubmitQuiz}
               disabled={!hasAnsweredCurrent || submitting}
-              className="shadow-md shadow-primary/10 cursor-pointer rounded-xl font-bold transition-all hover:scale-[1.02]"
+              className="cursor-pointer"
             >
               {submitting ? (
                 <>
-                  <Loader2 className="mr-2 size-4 animate-spin" /> Submitting answers...
+                  <Loader2 data-icon="inline-start" className="animate-spin" />
+                  Submitting…
                 </>
               ) : (
                 <>
-                  <CheckCircle className="mr-2 size-4" /> Finish and Submit
+                  <Check data-icon="inline-start" />
+                  Submit Quiz
                 </>
               )}
             </Button>
           ) : (
             <Button
-              size="default"
               onClick={handleNext}
               disabled={!hasAnsweredCurrent || submitting}
-              className="cursor-pointer rounded-xl font-bold"
+              className="cursor-pointer"
             >
-              Next Question <ArrowRight className="ml-2 size-4" />
+              Next
+              <ArrowRight data-icon="inline-end" />
             </Button>
           )}
         </CardFooter>
       </Card>
 
-      {/* Navigation Cancellation */}
       <div className="text-center">
         <button
           type="button"
           onClick={onCancel}
           disabled={submitting}
-          className="inline-flex items-center gap-1.5 text-xs text-muted-foreground hover:text-foreground transition-colors cursor-pointer font-semibold uppercase tracking-wider"
+          className="cursor-pointer text-xs text-muted-foreground transition-colors hover:text-foreground"
         >
-          <HelpCircle className="size-4" />
-          Cancel Quiz and return to dashboard
+          Cancel quiz and return to the dashboard
         </button>
       </div>
     </div>

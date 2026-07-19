@@ -1,11 +1,17 @@
 import type { Metadata, Viewport } from 'next';
 import type { ReactNode } from 'react';
 import './globals.css';
-import { Inter } from 'next/font/google';
+import { Inter, Instrument_Serif } from 'next/font/google';
 import { TooltipProvider } from '~/components/ui/tooltip';
 import { cn } from '~/lib/utils';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
+const instrumentSerif = Instrument_Serif({
+  subsets: ['latin'],
+  weight: '400',
+  style: ['normal', 'italic'],
+  variable: '--font-display',
+});
 
 /**
  * The preset themes via a `.dark` class; the app has no toggle, so mirror the
@@ -47,7 +53,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html
       lang="en"
-      className={cn('font-sans', inter.variable)}
+      className={cn('font-sans', inter.variable, instrumentSerif.variable)}
       suppressHydrationWarning
     >
       <body className="min-h-dvh antialiased">
