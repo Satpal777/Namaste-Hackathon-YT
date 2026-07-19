@@ -30,7 +30,7 @@ export interface AppConfig {
 const CHAT_DEFAULTS = {
   gemini: {
     baseURL: 'https://generativelanguage.googleapis.com/v1beta/openai/',
-    model: 'gemini-2.5-flash',
+    model: 'gemini-3.5-flash',
     // Measured 2026-07-19 against gemini-embedding-2 via `pnpm tune:threshold`:
     // lowest on-corpus top-1 was 0.697, highest off-corpus 0.690 (the event
     // loop — a dropped Hindi-only episode that must abstain, not answer from
@@ -52,7 +52,14 @@ export function loadConfig(env: NodeJS.ProcessEnv = process.env): AppConfig {
     throw new Error(`PROVIDER must be "gemini" or "openai", got "${env.PROVIDER}"`);
   }
 
-  const defaults = CHAT_DEFAULTS[provider];
+  const defaults = {
+    ...CHAT_DEFAULTS[provider],
+    // Allow per-provider model override via GEMINI_MODEL / (future) OPENAI_MODEL
+    // before the catch-all CHAT_MODEL.
+    ...(provider === 'gemini' && env.GEMINI_MODEL
+      ? { model: env.GEMINI_MODEL }
+      : {}),
+  };
   const apiKeyVar = API_KEY_ENV_VAR[provider];
   const chatApiKey = env.CHAT_API_KEY ?? env[apiKeyVar];
 
