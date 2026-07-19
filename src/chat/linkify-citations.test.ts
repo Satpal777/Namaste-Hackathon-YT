@@ -12,6 +12,19 @@ describe('linkifyCitations', () => {
     expect(linkifyCitations('Made up [7].', 2)).toBe('Made up [7].');
   });
 
+  it('splits grouped markers into one chip per source', () => {
+    expect(linkifyCitations('Both agree [1, 2].', 3)).toBe(
+      'Both agree [1](#source-1)[2](#source-2).',
+    );
+    expect(linkifyCitations('All three [6, 7, 8].', 8)).toBe(
+      'All three [6](#source-6)[7](#source-7)[8](#source-8).',
+    );
+  });
+
+  it('leaves a grouped marker alone if any number has no source', () => {
+    expect(linkifyCitations('Suspicious [1, 9].', 2)).toBe('Suspicious [1, 9].');
+  });
+
   it('never rewrites inside inline code or fenced blocks', () => {
     expect(linkifyCitations('Use `arr[1]` here [1].', 3)).toBe(
       'Use `arr[1]` here [1](#source-1).',

@@ -1,0 +1,75 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-background: oklch(0.985 0.002 250);
+  --color-foreground: oklch(0.2 0.02 260);
+  --color-muted: oklch(0.94 0.005 250);
+  --color-muted-foreground: oklch(0.5 0.015 260);
+  --color-border: oklch(0.9 0.006 250);
+  --color-primary: oklch(0.55 0.2 262);
+  --color-primary-foreground: oklch(0.985 0.002 250);
+  --color-card: oklch(1 0 0);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: oklch(0.17 0.015 260);
+    --color-foreground: oklch(0.93 0.005 250);
+    --color-muted: oklch(0.23 0.015 260);
+    --color-muted-foreground: oklch(0.65 0.01 260);
+    --color-border: oklch(0.28 0.015 260);
+    --color-card: oklch(0.2 0.015 260);
+  }
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+}
+
+/* Assistant answer prose: markdown from react-markdown. */
+.prose-chat > * + * {
+  margin-top: 0.6rem;
+}
+.prose-chat h1,
+.prose-chat h2,
+.prose-chat h3 {
+  font-weight: 600;
+  font-size: 1rem;
+}
+.prose-chat ul,
+.prose-chat ol {
+  padding-left: 1.25rem;
+  display: grid;
+  gap: 0.25rem;
+}
+.prose-chat ul {
+  list-style: disc;
+}
+.prose-chat ol {
+  list-style: decimal;
+}
+.prose-chat code {
+  font-size: 0.8125rem;
+  background: var(--color-muted);
+  border-radius: 0.25rem;
+  padding: 0.1rem 0.3rem;
+}
+.prose-chat pre {
+  background: var(--color-muted);
+  border: 1px solid var(--color-border);
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  overflow-x: auto;
+}
+.prose-chat pre code {
+  background: none;
+  padding: 0;
+}
+.prose-chat a:not([href^='https://www.youtube.com/watch']) {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.prose-chat strong {
+  font-weight: 600;
+}

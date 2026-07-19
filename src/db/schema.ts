@@ -1,4 +1,5 @@
 import {
+  boolean,
   integer,
   jsonb,
   pgTable,
@@ -126,4 +127,64 @@ export const messages = pgTable(
     createdAt: timestamp('created_at', { withTimezone: true }).notNull().defaultNow(),
   },
   (t) => [index('messages_chat').on(t.chatId)],
+);
+
+/**
+ * Interview Prep lives on a different ownership axis than the corpus. The video
+ * corpus above is scoped by `workspaceId` (whose videos these are); a quiz is
+ * scoped by `userId` (the Clerk user, or an anon-cookie id when Clerk is not
+ * configured) — because the corpus is shared but progress is personal. So these
+ * two tables carry `userId`, never `workspaceId`.
+ */
+export const quizAttempts = pgTable(
+  'quiz_attempts',
+  {
+    id: uuid('id').primaryKey().defaultRandom(),
+    userId: text('user_id').notNull(),
+    total: integer('total').notNull(),
+    /** Number correct; null until the attempt is submitted. */
+    score: integer('score'),
+    createdAt: timestamp('created_at', { withTimezone: true }).notNull().defaultNow(),
+    submittedAt: timestamp('submitted_at', { withTimezone: true }),
+  },
+  (t) => [index('quiz_attempts_user').on(t.userId)],
+);
+
+/**
+ * One row per generated MCQ. It carries both the question (persisted at
+ * generation, so the answer key never travels to the browser) and the user's
+ * response (filled in at submit). Mastery is a `GROUP BY topic` over the
+ * answered rows — no materialised mastery table.
+ */
+export const quizQuestions = pgTable(
+  'quiz_questions',
+  {
+    id: uuid('id').primaryKey().defaultRandom(),
+    attemptId: uuid('attempt_id')
+      .notNull()
+      .references(() => quizAttempts.id),
+    /** Denormalised from the attempt so mastery aggregates need no join. */
+    userId: text('user_id').notNull(),
+    position: integer('position').notNull(),
+    topic: text('topic').notNull(),
+    difficulty: text('difficulty', { enum: ['foundational', 'hard'] }).notNull(),
+    /** True when written from retrieved transcript excerpts (cites a second). */
+    grounded: boolean('grounded').notNull(),
+    stem: text('stem').notNull(),
+    options: jsonb('options').$type<string[]>().notNull(),
+    correctIndex: integer('correct_index').notNull(),
+    explanation: text('explanation').notNull(),
+    /** Grounded source; all null for an open (non-sourced) question. */
+    sourceVideoId: text('source_video_id'),
+    sourceVideoTitle: text('source_video_title'),
+    sourceStartSeconds: real('source_start_seconds'),
+    sourceEndSeconds: real('source_end_seconds'),
+    /** The user's response; null until the attempt is submitted. */
+    chosenIndex: integer('chosen_index'),
+    correct: boolean('correct'),
+  },
+  (t) => [
+    index('quiz_questions_attempt').on(t.attemptId),
+    index('quiz_questions_user_topic').on(t.userId, t.topic),
+  ],
 );
