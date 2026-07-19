@@ -25,7 +25,7 @@ const QUESTION = 'What is hoisting in JavaScript?';
 test('ask a suggested question, watch it stream, land on the cited second', async ({
   page,
 }) => {
-  await page.goto('/');
+  await page.goto('/dashboard');
 
   // Landing state: conceptual suggested questions before anything is typed.
   const suggestion = page.getByRole('button', { name: QUESTION });
@@ -77,7 +77,7 @@ test('ask a suggested question, watch it stream, land on the cited second', asyn
 });
 
 test('quiz happy path: navigate, start, answer, submit, review results', async ({ page }) => {
-  await page.goto('/');
+  await page.goto('/dashboard');
 
   // 1. Switch to "Interview Prep" mode
   const tab = page.getByRole('button', { name: /Interview Prep/i });
@@ -102,7 +102,7 @@ test('quiz happy path: navigate, start, answer, submit, review results', async (
     await expect(page.getByText(`Question ${i} of 5`)).toBeVisible();
 
     // Select the first option (Option A)
-    const optionA = page.locator('button').filter({ hasText: /^A\b/ }).first();
+    const optionA = page.getByTestId('quiz-option').first();
     await expect(optionA).toBeVisible();
     await optionA.click();
 

@@ -108,6 +108,7 @@ export function QuizRunner({
               <button
                 key={idx}
                 type="button"
+                data-testid="quiz-option"
                 onClick={() => handleSelectOption(idx)}
                 disabled={submitting}
                 aria-pressed={isSelected}
