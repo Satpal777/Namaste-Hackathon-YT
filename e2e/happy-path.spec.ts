@@ -68,10 +68,58 @@ test('ask a suggested question, watch it stream, land on the cited second', asyn
     corpusVideoIds.has(videoId!),
     `cited video ${videoId} is not in the seeded corpus`,
   ).toBe(true);
-
+ 
   const visibleStart = (await card.innerText()).match(/(\d+):(\d{2})/);
   expect(visibleStart, 'card shows no M:SS start time').not.toBeNull();
   const expectedSeconds =
     Number(visibleStart![1]) * 60 + Number(visibleStart![2]);
   expect(url.searchParams.get('t')).toBe(`${expectedSeconds}s`);
+});
+
+test('quiz happy path: navigate, start, answer, submit, review results', async ({ page }) => {
+  await page.goto('/');
+
+  // 1. Switch to "Interview Prep" mode
+  const tab = page.getByRole('button', { name: /Interview Prep/i });
+  await expect(tab).toBeVisible();
+  await tab.click();
+
+  // 2. Mastery Dashboard loads
+  const header = page.getByText(/JavaScript Interview Prep/i);
+  await expect(header).toBeVisible();
+
+  // 3. Click "Start Quiz"
+  const startBtn = page.getByRole('button', { name: /Start Quiz/i });
+  await expect(startBtn).toBeVisible();
+  await startBtn.click();
+
+  // 4. Verify Quiz Runner loads
+  await expect(page.getByText(/Question 1 of 5/i)).toBeVisible({ timeout: 15_000 });
+
+  // 5. Answer all 5 questions
+  for (let i = 1; i <= 5; i++) {
+    // Check progress text
+    await expect(page.getByText(`Question ${i} of 5`)).toBeVisible();
+
+    // Select the first option (Option A)
+    const optionA = page.locator('button').filter({ hasText: /^A\b/ }).first();
+    await expect(optionA).toBeVisible();
+    await optionA.click();
+
+    // Click "Next" (or "Submit Quiz" on the last question)
+    if (i < 5) {
+      const nextBtn = page.getByRole('button', { name: /Next/i });
+      await expect(nextBtn).toBeVisible();
+      await nextBtn.click();
+    } else {
+      const submitBtn = page.getByRole('button', { name: /Submit Quiz/i });
+      await expect(submitBtn).toBeVisible();
+      await submitBtn.click();
+    }
+  }
+
+  // 6. Verify Quiz Results view
+  await expect(page.getByText(/Practice Complete/i)).toBeVisible({ timeout: 15_000 });
+  await expect(page.getByText(/Overall JavaScript Mastery/i)).toBeVisible();
+  await expect(page.getByText(/Question-by-Question Review/i)).toBeVisible();
 });

@@ -203,6 +203,7 @@ Rules:
         const { text } = await generateText({
           model: deps.chatModel,
           prompt,
+          maxRetries: 0,
         });
         const cleaned = cleanJsonResponse(text);
         const parsed = JSON.parse(cleaned) as {
@@ -268,6 +269,7 @@ Rules:
         const { text } = await generateText({
           model: deps.chatModel,
           prompt,
+          maxRetries: 0,
         });
         const cleaned = cleanJsonResponse(text);
         const parsed = JSON.parse(cleaned) as {
