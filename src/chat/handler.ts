@@ -16,6 +16,10 @@ import {
   type ChatSource,
   type NamasteUIMessage,
 } from './contract';
+import {
+  CONVERSATIONAL_REPLIES,
+  detectConversationalIntent,
+} from './conversational-intent';
 import type { HydratedChunk, HydratedChunkRow } from './hydrated-chunk';
 import { buildSystemPrompt } from './prompt';
 import { unlimited, type RateLimiter } from './rate-limit';
@@ -64,6 +68,13 @@ export function createChatHandler(deps: ChatHandlerDeps) {
     const question = latestUserText(messages);
     if (!question) {
       return Response.json({ error: 'No user question in messages' }, { status: 400 });
+    }
+
+    // Greetings, thanks, and "what can you do?" short-circuit before retrieval
+    // so a plain "hello" doesn't hit the abstention path.
+    const intent = detectConversationalIntent(question);
+    if (intent) {
+      return fixedMessageResponse(CONVERSATIONAL_REPLIES[intent]);
     }
 
     const vector = await deps.embedding.embedQuery(question);

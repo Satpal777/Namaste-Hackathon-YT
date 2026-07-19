@@ -291,4 +291,71 @@ describe('chat endpoint', () => {
     );
     expect(response.status).toBe(400);
   });
+
+  it('replies to a greeting without hitting retrieval or the model', async () => {
+    const searchCalls: { workspaceId: string; limit: number }[] = [];
+    const deps = makeDeps({
+      vectorStore: fakeVectorStore([], searchCalls),
+      chatModel: explodingModel(),
+    });
+    const response = await createChatHandler(deps)(ask('hello'));
+    expect(response.status).toBe(200);
+    expect(searchCalls).toHaveLength(0);
+
+    const chunks = await sseChunks(response);
+    const text = chunks
+      .filter((c) => c.type === 'text-delta')
+      .map((c) => c.delta)
+      .join('');
+    expect(text).toContain('Namaste');
+  });
+
+  it('replies to gratitude without retrieval', async () => {
+    const searchCalls: { workspaceId: string; limit: number }[] = [];
+    const deps = makeDeps({
+      vectorStore: fakeVectorStore([], searchCalls),
+      chatModel: explodingModel(),
+    });
+    const response = await createChatHandler(deps)(ask('thanks!'));
+    expect(response.status).toBe(200);
+    expect(searchCalls).toHaveLength(0);
+
+    const chunks = await sseChunks(response);
+    const text = chunks
+      .filter((c) => c.type === 'text-delta')
+      .map((c) => c.delta)
+      .join('');
+    expect(text).toContain('welcome');
+  });
+
+  it('replies to capability questions without retrieval', async () => {
+    const searchCalls: { workspaceId: string; limit: number }[] = [];
+    const deps = makeDeps({
+      vectorStore: fakeVectorStore([], searchCalls),
+      chatModel: explodingModel(),
+    });
+    const response = await createChatHandler(deps)(ask('what can you do?'));
+    expect(response.status).toBe(200);
+    expect(searchCalls).toHaveLength(0);
+
+    const chunks = await sseChunks(response);
+    const text = chunks
+      .filter((c) => c.type === 'text-delta')
+      .map((c) => c.delta)
+      .join('');
+    expect(text).toContain('Namaste JavaScript');
+  });
+
+  it('falls through to retrieval when the greeting is part of a real question', async () => {
+    const searchCalls: { workspaceId: string; limit: number }[] = [];
+    const deps = makeDeps({
+      vectorStore: fakeVectorStore(
+        [{ chunkId: 'chunk-closures', score: 0.82 }],
+        searchCalls,
+      ),
+    });
+    await createChatHandler(deps)(ask('hi, what is a closure?'));
+    // Not intercepted as a greeting — retrieval ran
+    expect(searchCalls).toHaveLength(1);
+  });
 });
