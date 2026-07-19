@@ -5,7 +5,7 @@ series by [Akshay Saini](https://www.youtube.com/@akshaymarch7) — every answer
 cites the exact second in the video, so you can click a timestamp and hear the
 source say it.
 
-**Live demo:** http://namaste-hackathon.satpal.cloud/
+**Live demo:** https://namaste-hackathon.satpal.cloud/
 
 Built for the OpenAI × NamasteDev hackathon (July 2026). All video content
 belongs to Akshay Saini; this is a non-commercial retrieval demo that
