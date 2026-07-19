@@ -1,0 +1,686 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Pitch deck for Ask Namaste JavaScript — an AI citation engine over the Namaste JavaScript series. OpenAI × NamasteDev Hackathon, July 2026.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🙏</text></svg>">
+<title>Ask Namaste JavaScript — Pitch Deck</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  body { margin: 0; }
+
+  :root {
+    --bg: #FBFAF6;
+    --surface: #FFFFFF;
+    --ink: #17161A;
+    --muted: #6E6C60;
+    --line: #E4E2D8;
+    --js: #F7DF1E;
+    --js-ink: #131208;
+    --gold: #857400;
+    --rec: #E5484D;
+    --display: Bahnschrift, "Avenir Next Condensed", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    --body: "Segoe UI", -apple-system, "SF Pro Text", system-ui, sans-serif;
+    --mono: "Cascadia Code", "SF Mono", Consolas, "Roboto Mono", monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #101014;
+      --surface: #1B1B22;
+      --ink: #F2F1EC;
+      --muted: #A3A198;
+      --line: #2B2B33;
+      --gold: #F7DF1E;
+    }
+  }
+
+  html, body { height: 100%; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: 16px;
+    line-height: 1.55;
+    overflow: hidden;
+  }
+  ::selection { background: var(--js); color: var(--js-ink); }
+  :focus-visible { outline: 2px solid var(--js); outline-offset: 2px; }
+  button { font: inherit; color: inherit; background: none; border: none; cursor: pointer; }
+  a { color: inherit; }
+
+  /* ---------- deck ---------- */
+  .deck { position: fixed; inset: 0 0 64px 0; }
+  .slide {
+    position: absolute; inset: 0;
+    overflow-y: auto;
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(28px);
+    transition: opacity .35s ease, transform .35s ease, visibility 0s linear .35s;
+  }
+  .slide.active {
+    visibility: visible;
+    opacity: 1;
+    transform: none;
+    transition: opacity .35s ease, transform .35s ease;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .slide, .slide.active { transition: none; transform: none; }
+  }
+  .inner {
+    margin: auto;
+    width: min(1080px, 92vw);
+    padding: 56px 0;
+    display: grid;
+    gap: 28px;
+    align-content: center;
+  }
+
+  /* ---------- kicker / headline ---------- */
+  .kicker {
+    display: flex; align-items: center; gap: 12px;
+    font-family: var(--mono);
+    font-size: .78rem;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .ts {
+    font-family: var(--mono);
+    font-size: .78rem;
+    letter-spacing: .02em;
+    background: var(--js);
+    color: var(--js-ink);
+    padding: 2px 9px;
+    border-radius: 3px;
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+  h1, h2 {
+    font-family: var(--display);
+    font-weight: 700;
+    line-height: 1.0;
+    letter-spacing: -.01em;
+    text-wrap: balance;
+    margin: 0;
+  }
+  h1 { font-size: clamp(2.8rem, 7.5vw, 5.2rem); }
+  h2 { font-size: clamp(2.1rem, 5vw, 3.4rem); }
+  .hl {
+    font-style: normal;
+    background: var(--js);
+    color: var(--js-ink);
+    padding: 0 .18em;
+    border-radius: 3px;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+  }
+  .lede { font-size: 1.15rem; max-width: 58ch; color: var(--muted); }
+  .lede strong, .note strong { color: var(--ink); }
+
+  /* ---------- shared blocks ---------- */
+  .cols2 { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: start; }
+  @media (max-width: 760px) { .cols2 { grid-template-columns: 1fr; } }
+
+  .panel {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 20px 22px;
+  }
+  .panel h3 {
+    font-family: var(--mono);
+    font-size: .75rem;
+    font-weight: 600;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0 0 12px;
+  }
+  .panel p { margin: 0; }
+
+  ul.plain { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+  ul.plain li { padding-left: 20px; position: relative; }
+  ul.plain li::before {
+    content: "▸";
+    position: absolute; left: 0;
+    color: var(--gold);
+  }
+
+  code {
+    font-family: var(--mono);
+    font-size: .88em;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 1px 5px;
+  }
+
+  /* ---------- stats ---------- */
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 16px;
+  }
+  .stat {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 18px 20px 16px;
+  }
+  .stat .n {
+    font-family: var(--display);
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    line-height: 1;
+    font-variant-numeric: tabular-nums;
+  }
+  .stat .l {
+    font-family: var(--mono);
+    font-size: .72rem;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-top: 8px;
+  }
+
+  /* ---------- chat mock ---------- */
+  .chat { display: grid; gap: 12px; }
+  .msg {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 16px 18px;
+  }
+  .msg .who {
+    font-family: var(--mono);
+    font-size: .72rem;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 8px;
+  }
+  .msg p { margin: 0; }
+  .srcrow { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; }
+  .src {
+    display: inline-flex; align-items: center; gap: 6px;
+    font-family: var(--mono);
+    font-size: .76rem;
+    background: var(--js);
+    color: var(--js-ink);
+    padding: 4px 10px;
+    border-radius: 3px;
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+  .cite {
+    font-family: var(--mono);
+    font-size: .68em;
+    background: var(--js);
+    color: var(--js-ink);
+    border-radius: 3px;
+    padding: 0 4px;
+    vertical-align: super;
+  }
+  .abstain { border-left: 3px solid var(--js); }
+
+  /* ---------- pipeline ---------- */
+  .steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; counter-reset: step; }
+  .steps li {
+    counter-increment: step;
+    display: flex; gap: 14px; align-items: baseline;
+    padding: 9px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .steps li:last-child { border-bottom: none; }
+  .steps li::before {
+    content: counter(step, decimal-leading-zero);
+    font-family: var(--mono);
+    font-size: .74rem;
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+    flex: none;
+  }
+  .steps .d { font-family: var(--mono); font-size: .8rem; color: var(--muted); display: block; }
+
+  /* ---------- title & close ---------- */
+  .rec {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-family: var(--mono);
+    font-size: .78rem;
+    letter-spacing: .16em;
+    color: var(--muted);
+  }
+  .rec::before {
+    content: "";
+    width: 9px; height: 9px; border-radius: 50%;
+    background: var(--rec);
+    animation: blink 1.6s steps(1) infinite;
+  }
+  @keyframes blink { 50% { opacity: .25; } }
+  @media (prefers-reduced-motion: reduce) { .rec::before { animation: none; } }
+  .url {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-family: var(--mono);
+    font-size: .95rem;
+    border: 1px solid var(--line);
+    background: var(--surface);
+    padding: 10px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    width: fit-content;
+  }
+  .url:hover { border-color: var(--js); }
+  .hint { font-family: var(--mono); font-size: .76rem; color: var(--muted); letter-spacing: .06em; }
+  .note { color: var(--muted); font-size: .95rem; max-width: 62ch; }
+
+  /* ---------- player bar ---------- */
+  .player {
+    position: fixed;
+    left: 0; right: 0; bottom: 0;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 0 18px;
+    background: var(--surface);
+    border-top: 1px solid var(--line);
+  }
+  .navbtn {
+    width: 36px; height: 36px;
+    display: grid; place-items: center;
+    border-radius: 6px;
+    border: 1px solid var(--line);
+    font-size: 1rem;
+    flex: none;
+  }
+  .navbtn:hover { border-color: var(--js); }
+  .chapname {
+    font-family: var(--mono);
+    font-size: .76rem;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 220px;
+    flex: none;
+  }
+  @media (max-width: 720px) { .chapname { display: none; } }
+  .timeline { position: relative; flex: 1; height: 36px; }
+  .track {
+    position: absolute; left: 0; right: 0; top: 50%;
+    height: 4px; transform: translateY(-50%);
+    background: var(--line);
+    border-radius: 2px;
+  }
+  .fill {
+    position: absolute; left: 0; top: 50%;
+    height: 4px; transform: translateY(-50%);
+    background: var(--js);
+    border-radius: 2px;
+    transition: width .3s ease;
+  }
+  @media (prefers-reduced-motion: reduce) { .fill { transition: none; } }
+  .mark {
+    position: absolute; top: 50%;
+    width: 20px; height: 20px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    display: grid; place-items: center;
+    padding: 0;
+  }
+  .mark::after {
+    content: "";
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--muted);
+    transition: transform .2s ease, background .2s ease;
+  }
+  .mark:hover::after { transform: scale(1.4); }
+  .mark.done::after { background: var(--js); }
+  .mark.now::after { background: var(--js); transform: scale(1.6); outline: 2px solid var(--bg); }
+  .clock {
+    font-family: var(--mono);
+    font-size: .82rem;
+    font-variant-numeric: tabular-nums;
+    color: var(--muted);
+    white-space: nowrap;
+    flex: none;
+  }
+  .clock b { color: var(--ink); font-weight: 600; }
+
+  /* ---------- print: one slide per page ---------- */
+  @media print {
+    body { overflow: visible; }
+    .deck { position: static; }
+    .slide {
+      position: static;
+      visibility: visible;
+      opacity: 1;
+      transform: none;
+      page-break-after: always;
+      min-height: 95vh;
+    }
+    .player, .hint { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="deck" id="deck">
+
+  <!-- 1 · TITLE -->
+  <section class="slide" data-t="0" data-name="Title" aria-roledescription="slide" aria-label="Slide 1: Title">
+    <div class="inner">
+      <span class="rec">REC · OPENAI × NAMASTEDEV HACKATHON · JULY 2026</span>
+      <h1>Ask <span class="hl">Namaste JavaScript</span></h1>
+      <p class="lede">Twenty hours of the best JavaScript teaching on YouTube — now answerable.
+        Ask a question in plain English; every answer cites <strong>the exact second</strong> Akshay Saini says it.</p>
+      <a class="url" href="https://namaste-hackathon.satpal.cloud/">▶ namaste-hackathon.satpal.cloud</a>
+      <span class="hint">Use ← → arrow keys, or click the chapter markers below</span>
+    </div>
+  </section>
+
+  <!-- 2 · PROBLEM -->
+  <section class="slide" data-t="30" data-name="The problem" aria-roledescription="slide" aria-label="Slide 2: The problem">
+    <div class="inner">
+      <div class="kicker"><span class="ts">0:30</span> Chapter 02 — The problem</div>
+      <h2>A wonderful course. A terrible reference.</h2>
+      <p class="lede">Namaste JavaScript is the gold standard for learning JS deeply — and none of it is searchable.
+        <strong>“Where does he explain why <code>undefined</code> and <em>not defined</em> are different?”</strong>
+        has no answer short of scrubbing through hours of chapters, usually the night before an interview.</p>
+      <div class="stats">
+        <div class="stat"><div class="n">~20 h</div><div class="l">of video teaching</div></div>
+        <div class="stat"><div class="n">28</div><div class="l">episodes across 2 seasons</div></div>
+        <div class="stat"><div class="n">0</div><div class="l">ways to search inside it</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 · SOLUTION -->
+  <section class="slide" data-t="65" data-name="The product" aria-roledescription="slide" aria-label="Slide 3: The product">
+    <div class="inner">
+      <div class="kicker"><span class="ts">1:05</span> Chapter 03 — The product</div>
+      <h2>Ask the series. <span class="hl">Hear the source.</span></h2>
+      <div class="chat">
+        <div class="msg">
+          <div class="who">You</div>
+          <p>Why are <code>undefined</code> and “not defined” different things?</p>
+        </div>
+        <div class="msg">
+          <div class="who">Sources — sent before the first token</div>
+          <div class="srcrow">
+            <span class="src">▶ Ep 6 · 02:41</span>
+            <span class="src">▶ Ep 6 · 05:17</span>
+            <span class="src">▶ Ep 1 · 08:03</span>
+          </div>
+        </div>
+        <div class="msg">
+          <div class="who">Ask Namaste JS — streaming</div>
+          <p><code>undefined</code> is a value: memory was allocated in the creation phase but nothing was assigned yet
+            <span class="cite">1</span>. “Not defined” means the variable was never allocated at all, so access throws
+            <span class="cite">2</span>. Click any citation to land on the exact second in the video.</p>
+        </div>
+      </div>
+      <p class="note">Answers stream grounded in the series’ own transcripts. Inline
+        <span class="cite">n</span> markers and source chips are YouTube deep links that open the video
+        at the second the claim was spoken — no scrubbing, no guessing.</p>
+    </div>
+  </section>
+
+  <!-- 4 · TRUST -->
+  <section class="slide" data-t="110" data-name="The trust mechanism" aria-roledescription="slide" aria-label="Slide 4: The trust mechanism">
+    <div class="inner">
+      <div class="kicker"><span class="ts">1:50</span> Chapter 04 — The trust mechanism</div>
+      <h2>Grounded with citations. Abstains below threshold.</h2>
+      <div class="cols2">
+        <div class="panel">
+          <h3>Why you can believe it</h3>
+          <ul class="plain">
+            <li><strong>Sources arrive before the first token.</strong> Retrieval finishes before generation starts — the model cites against a list the client already holds.</li>
+            <li><strong>Citations are resolved, never scraped out of prose.</strong> Every <span class="cite">n</span> maps to a real transcript chunk with an exact time.</li>
+            <li><strong>No confidence theater.</strong> LLM self-reported confidence peaks during fluent hallucination, so we show none — we show the source instead.</li>
+          </ul>
+        </div>
+        <div class="msg abstain">
+          <div class="who">Below the retrieval floor → it declines</div>
+          <p><strong>You:</strong> “Show me the debounce implementation from the video.”</p>
+          <p style="margin-top:10px"><strong>Ask Namaste JS:</strong> The transcripts don’t cover that — code lives on
+            screen, not in the captions. I’d rather say so than guess.</p>
+        </div>
+      </div>
+      <p class="note">“Never hallucinates” is a claim no known technique can back.
+        <strong>“Grounded, cited, and abstains below a per-provider retrieval threshold”</strong> is a claim we can defend.</p>
+    </div>
+  </section>
+
+  <!-- 5 · INTERVIEW PREP -->
+  <section class="slide" data-t="145" data-name="Interview prep" aria-roledescription="slide" aria-label="Slide 5: Interview prep">
+    <div class="inner">
+      <div class="kicker"><span class="ts">2:25</span> Chapter 05 — Interview prep</div>
+      <h2>Retrieval is half the battle. Then it quizzes you.</h2>
+      <p class="lede">The same knowledge base powers an <strong>interview-prep mode</strong>: dynamic quizzes
+        compiled from the course material itself, not from a generic question bank.</p>
+      <div class="cols2">
+        <div class="panel">
+          <h3>How a session runs</h3>
+          <ul class="plain">
+            <li>Pick a difficulty — Easy, Medium, or Hard.</li>
+            <li>Answer questions targeting real course concepts: closures, scope, the event loop, <code>this</code>, async.</li>
+            <li>Submit and get instant results — score, correct answers, and feedback to lock the knowledge in.</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3>Why it matters</h3>
+          <p>Watching is passive; interviews are not. Ask → understand → verify with a citation → test yourself —
+            one loop, one tool, matched to how people actually prepare.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 · PIPELINE -->
+  <section class="slide" data-t="175" data-name="How it works" aria-roledescription="slide" aria-label="Slide 6: How it works">
+    <div class="inner">
+      <div class="kicker"><span class="ts">2:55</span> Chapter 06 — How it works</div>
+      <h2>One pipeline in, one pipeline out.</h2>
+      <div class="cols2">
+        <div class="panel">
+          <h3>Corpus — local, one-time</h3>
+          <ol class="steps">
+            <li><span>YouTube captions pulled via <code>youtubei.js</code>, cached in-repo<span class="d">seeding never touches YouTube again</span></span></li>
+            <li><span>Chunked to ~400 tokens with exact start times preserved</span></li>
+            <li><span>Written to Neon Postgres — the source of truth</span></li>
+            <li><span>Embedded into two Qdrant collections<span class="d">one per embedding space: gemini + openai</span></span></li>
+          </ol>
+        </div>
+        <div class="panel">
+          <h3>Serving — per request</h3>
+          <ol class="steps">
+            <li><span>Embed the question in the active provider’s space</span></li>
+            <li><span>Qdrant top-k search, workspace-filtered</span></li>
+            <li><span>Hydrate hits from Neon — the leak guard<span class="d">a vector whose row is gone cannot be served</span></span></li>
+            <li><span>Below threshold? Abstain honestly</span></li>
+            <li><span>Stream: sources first, then tokens</span></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 · ARCHITECTURE -->
+  <section class="slide" data-t="210" data-name="Architecture decisions" aria-roledescription="slide" aria-label="Slide 7: Architecture decisions">
+    <div class="inner">
+      <div class="kicker"><span class="ts">3:30</span> Chapter 07 — Decisions, and why</div>
+      <h2>Boring architecture, sharp edges filed off.</h2>
+      <div class="cols2">
+        <div class="panel">
+          <h3>Postgres is the truth; Qdrant is only an index</h3>
+          <p>Every vector hit joins back to Neon before it can be shown. Stale index entries and half-failed deletes
+            fail closed instead of leaking.</p>
+        </div>
+        <div class="panel">
+          <h3>Two embedding spaces, seeded up front</h3>
+          <p>One <code>PROVIDER</code> flag flips chat and embeddings together — the dev→submission provider switch
+            needs no reindex and cannot mix vector spaces.</p>
+        </div>
+        <div class="panel">
+          <h3>A startup assertion refuses to serve</h3>
+          <p>If the configured embedding model doesn’t match its collection, the app won’t boot. Wrong-space cosine
+            scores look plausible and fail silently; this fails loudly.</p>
+        </div>
+        <div class="panel">
+          <h3><code>workspaceId</code> on every table, day one</h3>
+          <p>Stage 3 is multi-tenant SaaS. Retrofitting tenancy is brutal; carrying one column is cheap.</p>
+        </div>
+      </div>
+      <p class="note"><strong>Stack:</strong> Next.js App Router on Vercel · Neon Postgres + Drizzle · Qdrant ·
+        Vercel AI SDK (OpenAI / Gemini) · Upstash. Five vendors, no more.</p>
+    </div>
+  </section>
+
+  <!-- 8 · SHIP -->
+  <section class="slide" data-t="245" data-name="Built to ship" aria-roledescription="slide" aria-label="Slide 8: Built to ship">
+    <div class="inner">
+      <div class="kicker"><span class="ts">4:05</span> Chapter 08 — Built to ship</div>
+      <h2>Tested, capped, and honest about scope.</h2>
+      <div class="stats">
+        <div class="stat"><div class="n">36</div><div class="l">vitest correctness tests</div></div>
+        <div class="stat"><div class="n">2</div><div class="l">viewports on the Playwright happy path, run against the deployed URL</div></div>
+        <div class="stat"><div class="n">295</div><div class="l">transcript chunks indexed</div></div>
+        <div class="stat"><div class="n">17</div><div class="l">English episodes in the corpus</div></div>
+      </div>
+      <div class="cols2">
+        <div class="panel">
+          <h3>An open LLM endpoint is a free proxy</h3>
+          <p>Per-IP sliding-window limits shape organic traffic; a hard global daily cap bounds liability, because
+            abusers rotate IPs. Worst case is a politely disabled demo — never a surprise bill.</p>
+        </div>
+        <div class="panel">
+          <h3>Deliberately not built (Stage 1 discipline)</h3>
+          <p>Hybrid search, reranking, MMR, query rewriting, semantic chunking, the eval harness. Each deserves a
+            measured before/after — not a deadline-week guess.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9 · ROADMAP -->
+  <section class="slide" data-t="270" data-name="Roadmap" aria-roledescription="slide" aria-label="Slide 9: Roadmap">
+    <div class="inner">
+      <div class="kicker"><span class="ts">4:30</span> Chapter 09 — Where this goes</div>
+      <h2>From demo to benchmark to product.</h2>
+      <div class="cols2">
+        <div class="panel">
+          <h3>Stage 2 — retrieval depth, measured</h3>
+          <p>A ~50-question eval set written <em>first</em>; then hybrid search, reranking, query rewriting, MMR, and a
+            chunking experiment — each landing with a before/after number, ending in a published benchmark table. The
+            abstention threshold gets tuned against the eval set instead of by hand.</p>
+        </div>
+        <div class="panel">
+          <h3>Stage 3 — the SaaS</h3>
+          <p>Auth and orgs, user-triggered ingestion with progress and retries, deletion that removes vectors with the
+            video, an embeddable widget, API keys, analytics. The tenancy column every table already carries is the
+            down payment.</p>
+        </div>
+      </div>
+      <p class="note">The same engine generalizes: <strong>any long-form educational channel</strong> becomes a
+        citable, searchable reference — with the creator credited on every answer.</p>
+    </div>
+  </section>
+
+  <!-- 10 · CLOSE -->
+  <section class="slide" data-t="290" data-name="Thank you" aria-roledescription="slide" aria-label="Slide 10: Close">
+    <div class="inner">
+      <div class="kicker"><span class="ts">4:50</span> Chapter 10 — Close</div>
+      <h1>Stop scrubbing. <span class="hl">Start asking.</span></h1>
+      <p class="lede">The ultimate study companion for the best JavaScript course on the internet —
+        grounded, cited to the second, and honest when it doesn’t know.</p>
+      <a class="url" href="https://namaste-hackathon.satpal.cloud/">▶ namaste-hackathon.satpal.cloud</a>
+      <p class="note">🙏 All teaching content is by <strong>Akshay Saini</strong> — this demo is a map of
+        Namaste JavaScript, not a replacement for it. Built for the OpenAI × NamasteDev Hackathon, July 2026.</p>
+    </div>
+  </section>
+
+</div>
+
+<!-- player bar -->
+<footer class="player" aria-label="Deck navigation">
+  <button class="navbtn" id="prev" aria-label="Previous slide">‹</button>
+  <button class="navbtn" id="next" aria-label="Next slide">›</button>
+  <span class="chapname" id="chapname"></span>
+  <div class="timeline" id="timeline">
+    <div class="track"></div>
+    <div class="fill" id="fill"></div>
+  </div>
+  <span class="clock" id="clock"></span>
+</footer>
+
+<script>
+  const slides = Array.from(document.querySelectorAll('.slide'));
+  const TOTAL = 300;
+  const fill = document.getElementById('fill');
+  const clock = document.getElementById('clock');
+  const chapname = document.getElementById('chapname');
+  const timeline = document.getElementById('timeline');
+  let idx = 0;
+
+  const fmt = s => Math.floor(s / 60) + ':' + String(s % 60).padStart(2, '0');
+
+  const marks = slides.map((s, i) => {
+    const t = +s.dataset.t;
+    const b = document.createElement('button');
+    b.className = 'mark';
+    b.style.left = (t / TOTAL * 100) + '%';
+    b.setAttribute('aria-label', 'Go to ' + s.dataset.name + ' (' + fmt(t) + ')');
+    b.title = fmt(t) + ' · ' + s.dataset.name;
+    b.addEventListener('click', () => go(i));
+    timeline.appendChild(b);
+    return b;
+  });
+
+  function go(i) {
+    idx = Math.max(0, Math.min(slides.length - 1, i));
+    const t = +slides[idx].dataset.t;
+    slides.forEach((s, j) => {
+      s.classList.toggle('active', j === idx);
+      s.setAttribute('aria-hidden', j === idx ? 'false' : 'true');
+    });
+    marks.forEach((m, j) => {
+      m.classList.toggle('now', j === idx);
+      m.classList.toggle('done', j < idx);
+    });
+    fill.style.width = (t / TOTAL * 100) + '%';
+    clock.innerHTML = '<b>' + fmt(t) + '</b> / ' + fmt(TOTAL);
+    chapname.textContent = String(idx + 1).padStart(2, '0') + ' · ' + slides[idx].dataset.name;
+    history.replaceState(null, '', '#' + (idx + 1));
+  }
+
+  document.getElementById('prev').addEventListener('click', () => go(idx - 1));
+  document.getElementById('next').addEventListener('click', () => go(idx + 1));
+
+  addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight' || e.key === 'PageDown' || e.key === ' ') { e.preventDefault(); go(idx + 1); }
+    else if (e.key === 'ArrowLeft' || e.key === 'PageUp') { e.preventDefault(); go(idx - 1); }
+    else if (e.key === 'Home') { e.preventDefault(); go(0); }
+    else if (e.key === 'End') { e.preventDefault(); go(slides.length - 1); }
+  });
+
+  let x0 = null;
+  addEventListener('touchstart', e => { x0 = e.touches[0].clientX; }, { passive: true });
+  addEventListener('touchend', e => {
+    if (x0 === null) return;
+    const dx = e.changedTouches[0].clientX - x0;
+    if (Math.abs(dx) > 60) go(idx + (dx < 0 ? 1 : -1));
+    x0 = null;
+  }, { passive: true });
+
+  const fromHash = parseInt(location.hash.slice(1), 10);
+  go(Number.isFinite(fromHash) ? fromHash - 1 : 0);
+</script>
+</body>
+</html>
