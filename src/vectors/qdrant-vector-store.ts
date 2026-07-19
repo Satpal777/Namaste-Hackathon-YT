@@ -31,6 +31,20 @@ export class QdrantVectorStore implements VectorStore {
     });
   }
 
+  /**
+   * Which of these point IDs already exist — a seeding concern (resume without
+   * re-embedding, sparing embed quota), so it lives on the class, not the
+   * VectorStore product seam.
+   */
+  async existingIds(ids: readonly string[]): Promise<Set<string>> {
+    const points = await this.#client.retrieve(this.collectionName, {
+      ids: [...ids],
+      with_payload: false,
+      with_vector: false,
+    });
+    return new Set(points.map((p) => String(p.id)));
+  }
+
   async describeCollection(): Promise<{ dimensions: number } | undefined> {
     const { exists } = await this.#client.collectionExists(this.collectionName);
     if (!exists) return undefined;

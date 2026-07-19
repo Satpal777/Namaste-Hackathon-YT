@@ -28,13 +28,13 @@ function geminiEmbeddings(): EmbeddingProvider {
   // re-normalisation below 3072, and at this corpus size memory saving is
   // worthless.
   const dimensions = 3072;
-  const model = google.textEmbedding('gemini-embedding-001');
+  const model = google.textEmbedding('gemini-embedding-2');
   const options = (taskType: 'RETRIEVAL_DOCUMENT' | 'RETRIEVAL_QUERY') => ({
     google: { taskType, outputDimensionality: dimensions },
   });
   return {
     provider: 'gemini',
-    model: 'gemini-embedding-001',
+    model: 'gemini-embedding-2',
     dimensions,
     async embedDocuments(texts) {
       const { embeddings } = await embedMany({

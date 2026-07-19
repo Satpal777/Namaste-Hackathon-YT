@@ -24,6 +24,7 @@ import {
   createEmbeddingProvider,
   type EmbeddingProviderName,
 } from '../src/embeddings/providers';
+import { withQuotaRetry } from '../src/embeddings/quota-retry';
 import { collectionNameFor } from '../src/vectors/collection-name';
 import { QdrantVectorStore } from '../src/vectors/qdrant-vector-store';
 import type { VectorPoint } from '../src/vectors/vector-store';
@@ -157,7 +158,12 @@ console.log(`\nTotal chunks: ${allChunks.length}`);
 
 // --- Qdrant: both collections, so the provider switch never reindexes ---
 
-const providers: EmbeddingProviderName[] = ['gemini', 'openai'];
+// openai first: it is the collection the submitted build serves from, and the
+// gemini free tier can exhaust its embed quota mid-run. One provider failing
+// must never cost the other its seeding — points upsert by deterministic ID,
+// so a rerun resumes instead of duplicating.
+const providers: EmbeddingProviderName[] = ['openai', 'gemini'];
+const failed: EmbeddingProviderName[] = [];
 for (const name of providers) {
   const keyVar = API_KEY_ENV_VAR[name];
   if (!process.env[keyVar]) {
@@ -174,17 +180,47 @@ for (const name of providers) {
   await store.ensureCollection();
 
   const BATCH = 100;
-  for (let i = 0; i < allChunks.length; i += BATCH) {
-    const batch = allChunks.slice(i, i + BATCH);
-    const vectors = await embedding.embedDocuments(batch.map((c) => c.text));
-    const points: VectorPoint[] = batch.map((c, j) => ({
-      id: c.id,
-      vector: vectors[j]!,
-      payload: { workspaceId: ws, videoId: c.videoRowId, chunkId: c.id },
-    }));
-    await store.upsert(points);
-    console.log(`${store.collectionName}  ${Math.min(i + BATCH, allChunks.length)}/${allChunks.length}`);
+  try {
+    for (let i = 0; i < allChunks.length; i += BATCH) {
+      const batch = allChunks.slice(i, i + BATCH);
+      const done = Math.min(i + BATCH, allChunks.length);
+      // Resume for free: chunks already in the collection are not re-embedded,
+      // so a rerun after a quota failure spends quota only on what's missing.
+      // (Delete the collection to force a full re-embed.)
+      const existing = await store.existingIds(batch.map((c) => c.id));
+      const todo = batch.filter((c) => !existing.has(c.id));
+      if (todo.length === 0) {
+        console.log(`${store.collectionName}  ${done}/${allChunks.length} (already seeded)`);
+        continue;
+      }
+      const vectors = await withQuotaRetry(
+        () => embedding.embedDocuments(todo.map((c) => c.text)),
+        {
+          onWait: (seconds, attempt) =>
+            console.warn(
+              `${store.collectionName}  quota window hit — waiting ${Math.ceil(seconds)}s (attempt ${attempt})`,
+            ),
+        },
+      );
+      const points: VectorPoint[] = todo.map((c, j) => ({
+        id: c.id,
+        vector: vectors[j]!,
+        payload: { workspaceId: ws, videoId: c.videoRowId, chunkId: c.id },
+      }));
+      await store.upsert(points);
+      console.log(`${store.collectionName}  ${done}/${allChunks.length}`);
+    }
+  } catch (error) {
+    failed.push(name);
+    console.error(
+      `\n${name} seeding failed — the other provider's collection is unaffected; rerun \`pnpm seed\` to resume from what's already upserted.\n`,
+      error instanceof Error ? error.message : error,
+    );
   }
 }
 
+if (failed.length > 0) {
+  console.error(`\nSeed INCOMPLETE — failed: ${failed.join(', ')}.`);
+  process.exit(1);
+}
 console.log('\nSeed complete.');
